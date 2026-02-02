@@ -51,8 +51,6 @@ class _LessonContentPageState extends ConsumerState<LessonContentPage> {
         return 'de-DE';
       case 'italian':
         return 'it-IT';
-      case 'punjabi':
-        return 'pa-IN';
       case 'dutch':
         return 'nl-NL';
       case 'portuguese':

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../services/tts_service.dart';
 import '../widgets/chirpolly_logo.dart';
 
@@ -50,8 +51,6 @@ class _LiarGamePageState extends State<LiarGamePage> {
         return 'de-DE';
       case 'italian':
         return 'it-IT';
-      case 'punjabi':
-        return 'pa-IN';
       case 'dutch':
         return 'nl-NL';
       case 'portuguese':
@@ -428,5 +427,26 @@ class _LiarGamePageState extends State<LiarGamePage> {
         ),
       ),
     );
+  }
+
+  TextStyle _getTargetTextStyle(String languageId) {
+    final baseStyle = const TextStyle(
+      fontSize: 32,
+      fontWeight: FontWeight.bold,
+      height: 1.2,
+      color: Colors.black,
+    );
+
+    switch (languageId.toLowerCase()) {
+      case 'japanese':
+        return GoogleFonts.notoSansJp(textStyle: baseStyle);
+      case 'korean':
+        return GoogleFonts.notoSansKr(textStyle: baseStyle);
+      case 'hindi':
+      case 'sanskrit':
+        return GoogleFonts.notoSansDevanagari(textStyle: baseStyle);
+      default:
+        return GoogleFonts.notoSans(textStyle: baseStyle);
+    }
   }
 }
