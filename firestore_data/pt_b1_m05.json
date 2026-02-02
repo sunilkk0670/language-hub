@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_b1_m05",
+    "theme": "Science & Modern Innovation",
+    "order": 25,
+    "lessons": [
+        {
+            "targetText": "Método científico",
+            "english": "Scientific method",
+            "phoneticTranscription": "Me-to-doo syen-chee-fee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hipótese verificável",
+            "english": "Testable hypothesis",
+            "phoneticTranscription": "Ee-po-te-zee ve-ree-fee-ka-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Evidência empírica",
+            "english": "Empirical evidence",
+            "phoneticTranscription": "E-vee-den-syah em-pee-ree-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Teoria da relatividade",
+            "english": "Theory of relativity",
+            "phoneticTranscription": "Te-o-ree-a da he-la-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mecânica quântica",
+            "english": "Quantum mechanics",
+            "phoneticTranscription": "Me-kan-nee-ka kwan-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Partículas subatômicas",
+            "english": "Subatomic particles",
+            "phoneticTranscription": "Par-chee-koo-las soob-a-to-mee-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acelerador de partículas",
+            "english": "Particle accelerator",
+            "phoneticTranscription": "A-se-le-ra-dor de par-chee-koo-las",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Física nuclear",
+            "english": "Nuclear physics",
+            "phoneticTranscription": "Fee-zee-ka noo-kle-ar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fusão nuclear",
+            "english": "Nuclear fusion",
+            "phoneticTranscription": "Foo-zown noo-kle-ar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fissão nuclear",
+            "english": "Nuclear fission",
+            "phoneticTranscription": "Fee-sown noo-kle-ar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Astrofísica",
+            "english": "Astrophysics",
+            "phoneticTranscription": "As-tro-fee-zee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cosmologia moderna",
+            "english": "Modern cosmology",
+            "phoneticTranscription": "Koz-mo-lo-zhyah mo-der-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Buraco negro",
+            "english": "Black hole",
+            "phoneticTranscription": "Boo-ra-koo ne-groo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Matéria escura",
+            "english": "Dark matter",
+            "phoneticTranscription": "Ma-te-ryah es-koo-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Expansão do universo",
+            "english": "Expansion of the universe",
+            "phoneticTranscription": "Es-pan-sown doo oo-nee-ver-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Exploração espacial",
+            "english": "Space exploration",
+            "phoneticTranscription": "Es-plo-ra-sown es-pa-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Satélite geoestacionário",
+            "english": "Geostationary satellite",
+            "phoneticTranscription": "Sa-te-lee-chee zhe-o-es-ta-syo-na-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sonda espacial",
+            "english": "Space probe",
+            "phoneticTranscription": "Son-da es-pa-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Telescópio orbital",
+            "english": "Orbital telescope",
+            "phoneticTranscription": "Te-les-ko-pyoo or-bee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biologia molecular",
+            "english": "Molecular biology",
+            "phoneticTranscription": "Byo-lo-zhyah mo-le-koo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sequenciamento de DNA",
+            "english": "DNA sequencing",
+            "phoneticTranscription": "Se-kwen-sya-men-too de De-Ene-Ah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Engenharia genética",
+            "english": "Genetic engineering",
+            "phoneticTranscription": "En-zhe-nya-ryah zhe-ne-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clonagem terapêutica",
+            "english": "Therapeutic cloning",
+            "phoneticTranscription": "Klo-na-zhem te-ra-pe-oo-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Células-tronco",
+            "english": "Stem cells",
+            "phoneticTranscription": "Se-loo-las tron-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bioinformática",
+            "english": "Bioinformatics",
+            "phoneticTranscription": "Byo-een-for-ma-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nanotecnologia",
+            "english": "Nanotechnology",
+            "phoneticTranscription": "Na-no-tek-no-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nanomateriais",
+            "english": "Nanomaterials",
+            "phoneticTranscription": "Na-no-ma-te-ryays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sistemas embarcados",
+            "english": "Embedded systems",
+            "phoneticTranscription": "Sees-te-mas em-bar-ka-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aprendizado profundo",
+            "english": "Deep learning",
+            "phoneticTranscription": "A-pren-jee-za-doo pro-foon-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Redes neurais",
+            "english": "Neural networks",
+            "phoneticTranscription": "He-jees new-rays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Processamento de linguagem",
+            "english": "Language processing (NLP)",
+            "phoneticTranscription": "Pro-se-sa-men-too de leen-gwa-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Visão computacional",
+            "english": "Computer vision",
+            "phoneticTranscription": "Vee-zown kom-poo-ta-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Robótica avançada",
+            "english": "Advanced robotics",
+            "phoneticTranscription": "Ro-bo-chee-ka a-van-sa-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cibernética",
+            "english": "Cybernetics",
+            "phoneticTranscription": "See-ber-ne-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imersão digital",
+            "english": "Digital immersion",
+            "phoneticTranscription": "Ee-mer-sown jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Computação em nuvem",
+            "english": "Cloud computing",
+            "phoneticTranscription": "Kom-poo-ta-sown em noo-ven",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Armazenamento de dados",
+            "english": "Data storage",
+            "phoneticTranscription": "Ar-ma-ze-na-men-too de da-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Análise preditiva",
+            "english": "Predictive analysis",
+            "phoneticTranscription": "A-na-lee-zee pre-jee-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Algoritmos genéticos",
+            "english": "Genetic algorithms",
+            "phoneticTranscription": "Al-go-ree-chee-moos zhe-ne-chee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Criptografia quântica",
+            "english": "Quantum cryptography",
+            "phoneticTranscription": "Kreep-to-gra-fee-a kwan-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Blockchain empresarial",
+            "english": "Enterprise blockchain",
+            "phoneticTranscription": "Blok-shayn em-pre-sa-ryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Contratos inteligentes",
+            "english": "Smart contracts",
+            "phoneticTranscription": "Kon-tra-toos in-te-lee-zhen-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fintechs inovadoras",
+            "english": "Innovative fintechs",
+            "phoneticTranscription": "Fin-te-kees ee-no-va-do-ras",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transformação digital",
+            "english": "Digital transformation",
+            "phoneticTranscription": "Trans-for-ma-sown jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Economia digital",
+            "english": "Digital economy",
+            "phoneticTranscription": "E-ko-no-mee-a jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Negócios escaláveis",
+            "english": "Scalable businesses",
+            "phoneticTranscription": "Ne-go-syoos es-ka-la-vays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Modelos de negócio",
+            "english": "Business models",
+            "phoneticTranscription": "Mo-de-loos de ne-go-syoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Propriedade intelectual",
+            "english": "Intellectual property",
+            "phoneticTranscription": "Pro-prye-da-jee in-te-le-ktoo-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Patente industrial",
+            "english": "Industrial patent",
+            "phoneticTranscription": "Pa-ten-chee in-doos-tryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direitos de patente",
+            "english": "Patent rights",
+            "phoneticTranscription": "Jee-ray-toos de pa-ten-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inovação aberta",
+            "english": "Open innovation",
+            "phoneticTranscription": "Ee-no-va-sown a-ber-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ecossistema de inovação",
+            "english": "Innovation ecosystem",
+            "phoneticTranscription": "E-ko-sees-te-ma de ee-no-va-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Parques tecnológicos",
+            "english": "Technology parks",
+            "phoneticTranscription": "Par-kees tek-no-lo-zhee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Incubadoras de empresas",
+            "english": "Business incubators",
+            "phoneticTranscription": "In-koo-ba-do-ras de em-pre-zas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aceleradoras de startups",
+            "english": "Startup accelerators",
+            "phoneticTranscription": "A-se-le-ra-do-ras de star-tah-pees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Capital de risco",
+            "english": "Venture capital",
+            "phoneticTranscription": "Ka-pee-tal de rees-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aporte de capital",
+            "english": "Capital injection/contribution",
+            "phoneticTranscription": "A-por-chee de ka-pee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rodada de investimento",
+            "english": "Investment round",
+            "phoneticTranscription": "Ho-da-da de in-ves-chee-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Valor de mercado",
+            "english": "Market value",
+            "phoneticTranscription": "Va-lor de mer-ka-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Unicórnio tecnológico",
+            "english": "Technology unicorn",
+            "phoneticTranscription": "Oo-nee-kor-nyoo tek-no-lo-zhee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fusões e aquisições",
+            "english": "Mergers and acquisitions",
+            "phoneticTranscription": "Foo-zown-ees e a-kee-zee-sown-ees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Governança de TI",
+            "english": "IT Governance",
+            "phoneticTranscription": "Go-ver-nan-sa de te-ee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Infraestrutura crítica",
+            "english": "Critical infrastructure",
+            "phoneticTranscription": "In-fra-es-troo-too-ra kree-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resiliência cibernética",
+            "english": "Cyber resilience",
+            "phoneticTranscription": "Re-zee-lyen-syah see-ber-ne-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Forense digital",
+            "english": "Digital forensics",
+            "phoneticTranscription": "Fo-ren-see jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Crimes eletrônicos",
+            "english": "Electronic crimes",
+            "phoneticTranscription": "Kree-mees e-le-tro-nee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vazamento de informações",
+            "english": "Information leak",
+            "phoneticTranscription": "Va-za-men-too de in-for-ma-sown-ees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Proteção de dados",
+            "english": "Data protection",
+            "phoneticTranscription": "Pro-te-sown de da-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Marco civil da internet",
+            "english": "Internet Civil Framework",
+            "phoneticTranscription": "Mar-koo see-veel da in-ter-ne-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lei Geral de Proteção",
+            "english": "General Data Protection Law (LGPD)",
+            "phoneticTranscription": "Lay zhe-hal de pro-te-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bioética clínica",
+            "english": "Clinical bioethics",
+            "phoneticTranscription": "Byo-e-chee-ka klee-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Eutanásia e ortotanásia",
+            "english": "Euthanasia and orthothanasia",
+            "phoneticTranscription": "E-oo-ta-na-zyah e or-to-ta-na-zyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transplante de órgãos",
+            "english": "Organ transplant",
+            "phoneticTranscription": "Trans-plan-chee de or-gown-ees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Medicina regenerativa",
+            "english": "Regenerative medicine",
+            "phoneticTranscription": "Me-jee-see-na he-zhe-ne-ra-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Terapia gênica",
+            "english": "Gene therapy",
+            "phoneticTranscription": "Te-ra-pyah zhe-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Farmacologia avançada",
+            "english": "Advanced pharmacology",
+            "phoneticTranscription": "Far-ma-ko-lo-zhyah a-van-sa-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imunoterapia",
+            "english": "Immunotherapy",
+            "phoneticTranscription": "Ee-moo-no-te-ra-pyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ensaios clínicos",
+            "english": "Clinical trials",
+            "phoneticTranscription": "En-sahy-oos klee-nee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Epidemiologia espacial",
+            "english": "Spatial epidemiology",
+            "phoneticTranscription": "Ee-pee-de-myo-lo-zhyah es-pa-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Saúde pública global",
+            "english": "Global public health",
+            "phoneticTranscription": "Sa-oo-jee poo-blee-ka glo-bal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Neurociência cognitiva",
+            "english": "Cognitive neuroscience",
+            "phoneticTranscription": "Ne-oo-ro-syen-syah ko-gnee-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Plasmocitose",
+            "english": "Plasmacytosis",
+            "phoneticTranscription": "Plas-mo-see-to-zee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Eletroquímica",
+            "english": "Electrochemistry",
+            "phoneticTranscription": "E-le-tro-kee-mee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Termodinâmica aplicada",
+            "english": "Applied thermodynamics",
+            "phoneticTranscription": "Ter-mo-jee-na-mee-ka a-plee-ka-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mecânica dos fluidos",
+            "english": "Fluid mechanics",
+            "phoneticTranscription": "Me-kan-nee-ka doos floo-ee-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Engenharia de materiais",
+            "english": "Materials engineering",
+            "phoneticTranscription": "En-zhe-nya-ryah de ma-te-ryays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resistência dos materiais",
+            "english": "Strength of materials",
+            "phoneticTranscription": "He-zees-ten-syah doos ma-te-ryays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cálculo estrutural",
+            "english": "Structural calculation",
+            "phoneticTranscription": "Kal-koo-loo es-troo-too-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Automação predial",
+            "english": "Building automation",
+            "phoneticTranscription": "Aw-to-ma-sown pre-jyal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cidades inteligentes",
+            "english": "Smart cities",
+            "phoneticTranscription": "See-da-jees in-te-lee-zhen-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Internet de banda larga",
+            "english": "Broadband internet",
+            "phoneticTranscription": "In-ter-ne-chee de ban-da lar-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Redes de fibra óptica",
+            "english": "Fiber optic networks",
+            "phoneticTranscription": "He-jees de fee-bra op-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comunicação via satélite",
+            "english": "Satellite communication",
+            "phoneticTranscription": "Ko-moo-nee-ka-sown vee-a sa-te-lee-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Processamento de sinais",
+            "english": "Signal processing",
+            "phoneticTranscription": "Pro-se-sa-men-too de see-nays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Teoria da informação",
+            "english": "Information theory",
+            "phoneticTranscription": "Te-o-ree-a da in-for-ma-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sistemas de controle",
+            "english": "Control systems",
+            "phoneticTranscription": "Sees-te-mas de kon-tro-lee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Otimização de processos",
+            "english": "Process optimization",
+            "phoneticTranscription": "O-chee-mee-za-sown de pro-se-soos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Manufatura aditiva",
+            "english": "Additive manufacturing/3D printing",
+            "phoneticTranscription": "Ma-noo-fa-too-ra a-jee-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prototipagem rápida",
+            "english": "Rapid prototyping",
+            "phoneticTranscription": "Pro-to-chee-pa-zhem ha-pee-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desenho industrial",
+            "english": "Industrial design",
+            "phoneticTranscription": "De-ze-nyoo in-doos-tryal",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Engenho",
+        "correctVersion": "Means 'Engine' or 'Sugar mill'. For 'Ingenuity', use 'Ingenuidade' or 'Engenhosidade'.",
+        "explanation": "Trap level: Medium"
+    }
+}

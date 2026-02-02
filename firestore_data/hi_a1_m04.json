@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a1_m04",
+    "language": "hi",
+    "level": "a1",
+    "theme": "Food, Drink & Kitchen",
+    "order": 4,
+    "lessons": [
+        {
+            "word": "रोटी",
+            "translation": "Bread / Flatbread",
+            "phonetic": "Roti"
+        },
+        {
+            "word": "तण्डुल",
+            "translation": "Rice",
+            "phonetic": "Chawal"
+        },
+        {
+            "word": "दाल",
+            "translation": "Lentils",
+            "phonetic": "Daal"
+        },
+        {
+            "word": "शाक",
+            "translation": "Vegetable / Curry",
+            "phonetic": "Sabzi"
+        },
+        {
+            "word": "चीनी",
+            "translation": "Sugar",
+            "phonetic": "Cheeni"
+        },
+        {
+            "word": "नमक",
+            "translation": "Salt",
+            "phonetic": "Namak"
+        },
+        {
+            "word": "मिर्च",
+            "translation": "Chili",
+            "phonetic": "Mirch"
+        },
+        {
+            "word": "हल्दी",
+            "translation": "Turmeric",
+            "phonetic": "Haldi"
+        },
+        {
+            "word": "मसाला",
+            "translation": "Spice mix",
+            "phonetic": "Masala"
+        },
+        {
+            "word": "तेल",
+            "translation": "Oil",
+            "phonetic": "Teel"
+        },
+        {
+            "word": "घृत",
+            "translation": "Clarified butter",
+            "phonetic": "Ghee"
+        },
+        {
+            "word": "मक्खन",
+            "translation": "Butter",
+            "phonetic": "Makkhan"
+        },
+        {
+            "word": "दधि",
+            "translation": "Yogurt / Curd",
+            "phonetic": "Dahi"
+        },
+        {
+            "word": "पनीर",
+            "translation": "Cottage cheese",
+            "phonetic": "Paneer"
+        },
+        {
+            "word": "अंडा",
+            "translation": "Egg",
+            "phonetic": "Anda"
+        },
+        {
+            "word": "मांस",
+            "translation": "Meat",
+            "phonetic": "Maans"
+        },
+        {
+            "word": "मछली",
+            "translation": "Fish",
+            "phonetic": "Machli"
+        },
+        {
+            "word": "फलम्",
+            "translation": "Fruit",
+            "phonetic": "Fal"
+        },
+        {
+            "word": "आम",
+            "translation": "Mango",
+            "phonetic": "Aam"
+        },
+        {
+            "word": "केला",
+            "translation": "Banana",
+            "phonetic": "Kela"
+        },
+        {
+            "word": "सेब",
+            "translation": "Apple",
+            "phonetic": "Seb"
+        },
+        {
+            "word": "संतरा",
+            "translation": "Orange",
+            "phonetic": "Santra"
+        },
+        {
+            "word": "अंगूर",
+            "translation": "Grapes",
+            "phonetic": "Angoor"
+        },
+        {
+            "word": "पपीता",
+            "translation": "Papaya",
+            "phonetic": "Papita"
+        },
+        {
+            "word": "तरबूज",
+            "translation": "Watermelon",
+            "phonetic": "Tarbooj"
+        },
+        {
+            "word": "नींबू",
+            "translation": "Lemon",
+            "phonetic": "Nimbu"
+        },
+        {
+            "word": "आलू",
+            "translation": "Potato",
+            "phonetic": "Aaloo"
+        },
+        {
+            "word": "प्याज",
+            "translation": "Onion",
+            "phonetic": "Pyaaz"
+        },
+        {
+            "word": "टमाटर",
+            "translation": "Tomato",
+            "phonetic": "Tamatar"
+        },
+        {
+            "word": "अदरक",
+            "translation": "Ginger",
+            "phonetic": "Adrak"
+        },
+        {
+            "word": "लहसुन",
+            "translation": "Garlic",
+            "phonetic": "Lehsun"
+        },
+        {
+            "word": "पुष्पगोभी",
+            "translation": "Cauliflower",
+            "phonetic": "Phoolgobhi"
+        },
+        {
+            "word": "पत्तागोभी",
+            "translation": "Cabbage",
+            "phonetic": "Pattagobhi"
+        },
+        {
+            "word": "मटर",
+            "translation": "Peas",
+            "phonetic": "Matar"
+        },
+        {
+            "word": "बैंगन",
+            "translation": "Eggplant",
+            "phonetic": "Baingan"
+        },
+        {
+            "word": "भिंडी",
+            "translation": "Okra",
+            "phonetic": "Bhindi"
+        },
+        {
+            "word": "गाजर",
+            "translation": "Carrot",
+            "phonetic": "Gaajar"
+        },
+        {
+            "word": "मूली",
+            "translation": "Radish",
+            "phonetic": "Mooli"
+        },
+        {
+            "word": "धनिया",
+            "translation": "Coriander",
+            "phonetic": "Dhaniya"
+        },
+        {
+            "word": "पुदीना",
+            "translation": "Mint",
+            "phonetic": "Pudina"
+        },
+        {
+            "word": "शिकंजी",
+            "translation": "Lemonade",
+            "phonetic": "Shikanji"
+        },
+        {
+            "word": "काढ़ा",
+            "translation": "Decoction / Herbal Tea",
+            "phonetic": "Kadha"
+        },
+        {
+            "word": "कॉफी",
+            "translation": "Coffee",
+            "phonetic": "Coffee"
+        },
+        {
+            "word": "शरबत",
+            "translation": "Cold drink / Syrup",
+            "phonetic": "Sharbat"
+        },
+        {
+            "word": "रस",
+            "translation": "Juice",
+            "phonetic": "Ras"
+        },
+        {
+            "word": "नाश्ता",
+            "translation": "Breakfast",
+            "phonetic": "Nashta"
+        },
+        {
+            "word": "दोपहर का भोजन",
+            "translation": "Lunch",
+            "phonetic": "Dopahar ka khana"
+        },
+        {
+            "word": "रात का भोजन",
+            "translation": "Dinner",
+            "phonetic": "Raat ka khana"
+        },
+        {
+            "word": "मिष्टान्न",
+            "translation": "Sweets",
+            "phonetic": "Mithai"
+        },
+        {
+            "word": "पकवान",
+            "translation": "Dish / Cuisine",
+            "phonetic": "Pakwan"
+        },
+        {
+            "word": "थाली",
+            "translation": "Plate / Platter",
+            "phonetic": "Thaali"
+        },
+        {
+            "word": "कटोरी",
+            "translation": "Bowl",
+            "phonetic": "Katori"
+        },
+        {
+            "word": "चम्मच",
+            "translation": "Spoon",
+            "phonetic": "Chammach"
+        },
+        {
+            "word": "काँटा",
+            "translation": "Fork",
+            "phonetic": "Kaanta"
+        },
+        {
+            "word": "छुरिका",
+            "translation": "Knife",
+            "phonetic": "Chaaku"
+        },
+        {
+            "word": "गिलास",
+            "translation": "Glass",
+            "phonetic": "Gilaas"
+        },
+        {
+            "word": "कप",
+            "translation": "Cup",
+            "phonetic": "Kap"
+        },
+        {
+            "word": "चूल्हा",
+            "translation": "Stove",
+            "phonetic": "Chulha"
+        },
+        {
+            "word": "कड़ाही",
+            "translation": "Wok",
+            "phonetic": "Kadahi"
+        },
+        {
+            "word": "तवा",
+            "translation": "Griddle",
+            "phonetic": "Tava"
+        },
+        {
+            "word": "बेलन",
+            "translation": "Rolling pin",
+            "phonetic": "Belan"
+        },
+        {
+            "word": "परात",
+            "translation": "Large mixing plate",
+            "phonetic": "Paraat"
+        },
+        {
+            "word": "मटका",
+            "translation": "Earthen pot",
+            "phonetic": "Matka"
+        },
+        {
+            "word": "ढक्कन",
+            "translation": "Lid",
+            "phonetic": "Dhakkan"
+        },
+        {
+            "word": "बाल्टी",
+            "translation": "Bucket",
+            "phonetic": "Baalti"
+        },
+        {
+            "word": "छलनी",
+            "translation": "Sieve / Strainer",
+            "phonetic": "Chhalni"
+        },
+        {
+            "word": "रसोई",
+            "translation": "Kitchen",
+            "phonetic": "Rasoi"
+        },
+        {
+            "word": "पकाना",
+            "translation": "To cook",
+            "phonetic": "Pakana"
+        },
+        {
+            "word": "उबालना",
+            "translation": "To boil",
+            "phonetic": "Ubalna"
+        },
+        {
+            "word": "तलना",
+            "translation": "To fry",
+            "phonetic": "Talna"
+        },
+        {
+            "word": "सेकना",
+            "translation": "To roast / bake",
+            "phonetic": "Sekna"
+        },
+        {
+            "word": "काटना",
+            "translation": "To cut",
+            "phonetic": "Kaatna"
+        },
+        {
+            "word": "छीलना",
+            "translation": "To peel",
+            "phonetic": "Chheelna"
+        },
+        {
+            "word": "पीसना",
+            "translation": "To grind",
+            "phonetic": "Peesna"
+        },
+        {
+            "word": "घोलना",
+            "translation": "To dissolve",
+            "phonetic": "Gholna"
+        },
+        {
+            "word": "बनाना",
+            "translation": "To make / prepare",
+            "phonetic": "Banana"
+        },
+        {
+            "word": "आहार",
+            "translation": "Diet / Food",
+            "phonetic": "Aahaar"
+        },
+        {
+            "word": "पीना",
+            "translation": "To drink",
+            "phonetic": "Peena"
+        },
+        {
+            "word": "चखना",
+            "translation": "To taste",
+            "phonetic": "Chakhna"
+        },
+        {
+            "word": "प्यास",
+            "translation": "Thirst",
+            "phonetic": "Pyaas"
+        },
+        {
+            "word": "भूख",
+            "translation": "Hunger",
+            "phonetic": "Bhookh"
+        },
+        {
+            "word": "मीठा",
+            "translation": "Sweet",
+            "phonetic": "Meetha"
+        },
+        {
+            "word": "नमकीन",
+            "translation": "Salty / Savory",
+            "phonetic": "Namkeen"
+        },
+        {
+            "word": "कड़वा",
+            "translation": "Bitter",
+            "phonetic": "Kadva"
+        },
+        {
+            "word": "खट्टा",
+            "translation": "Sour",
+            "phonetic": "Khatta"
+        },
+        {
+            "word": "तीखा",
+            "translation": "Spicy / Hot",
+            "phonetic": "Teekha"
+        },
+        {
+            "word": "उष्ण",
+            "translation": "Hot (temperature)",
+            "phonetic": "Garam"
+        },
+        {
+            "word": "ठंडा",
+            "translation": "Cold",
+            "phonetic": "Thanda"
+        },
+        {
+            "word": "ताजा",
+            "translation": "Fresh",
+            "phonetic": "Taaza"
+        },
+        {
+            "word": "बासी",
+            "translation": "Stale",
+            "phonetic": "Baasi"
+        },
+        {
+            "word": "कच्चा",
+            "translation": "Raw",
+            "phonetic": "Kaccha"
+        },
+        {
+            "word": "पका हुआ",
+            "translation": "Cooked / Ripe",
+            "phonetic": "Paka hua"
+        },
+        {
+            "word": "भारी",
+            "translation": "Heavy",
+            "phonetic": "Bhaari"
+        },
+        {
+            "word": "हल्का",
+            "translation": "Light",
+            "phonetic": "Halka"
+        },
+        {
+            "word": "स्वादिष्ट",
+            "translation": "Delicious",
+            "phonetic": "Swadisht"
+        },
+        {
+            "word": "बेस्वाद",
+            "translation": "Tasteless",
+            "phonetic": "Beswaad"
+        },
+        {
+            "word": "ज्यादा",
+            "translation": "More",
+            "phonetic": "Zyada"
+        },
+        {
+            "word": "कम",
+            "translation": "Less",
+            "phonetic": "Kam"
+        },
+        {
+            "word": "पूरा",
+            "translation": "Full / Complete",
+            "phonetic": "Poora"
+        },
+        {
+            "word": "आधा",
+            "translation": "Half",
+            "phonetic": "Aadha"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Chai-Pani' Code",
+        "question": "If an official asks you for 'Chai-Pani' (Tea-Water), what is he most likely asking for in a bureaucratic context?",
+        "options": [
+            "A refreshment break",
+            "A recipe for masala chai",
+            "A small bribe or 'speed money'",
+            "Directions to the nearest cafeteria"
+        ],
+        "correct_answer_index": 2,
+        "explanation": "In Indian English and Hindi slang, 'Chai-Pani' (literally Tea and Water) is a euphemism for a bribe. It's often presented as a request for 'nominal expenses' for the person's time or effort."
+    }
+}

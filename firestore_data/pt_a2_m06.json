@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a2_m06",
+    "theme": "Media, News & Internet",
+    "order": 16,
+    "lessons": [
+        {
+            "targetText": "Jornalismo",
+            "english": "Journalism",
+            "phoneticTranscription": "Zhor-na-lees-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reportagem",
+            "english": "Reporting/Feature story",
+            "phoneticTranscription": "He-por-ta-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Redação",
+            "english": "Newsroom/Composition",
+            "phoneticTranscription": "He-da-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Editor-chefe",
+            "english": "Editor-in-chief",
+            "phoneticTranscription": "E-gee-tor she-fee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Manchete",
+            "english": "Headline",
+            "phoneticTranscription": "Man-she-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Artigo de opinião",
+            "english": "Opinion piece",
+            "phoneticTranscription": "Ar-chee-goo de o-pee-nyown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coluna",
+            "english": "Column",
+            "phoneticTranscription": "Ko-loo-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Editorial",
+            "english": "Editorial",
+            "phoneticTranscription": "E-gee-to-ryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Periódico",
+            "english": "Periodical",
+            "phoneticTranscription": "Pe-ryo-jee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tabloide",
+            "english": "Tabloid",
+            "phoneticTranscription": "Ta-bloy-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imprensa",
+            "english": "The Press",
+            "phoneticTranscription": "Im-pren-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mídia social",
+            "english": "Social media",
+            "phoneticTranscription": "Mee-jyah so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Difusão",
+            "english": "Broadcast/Diffusion",
+            "phoneticTranscription": "Jee-foo-zown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transmissão ao vivo",
+            "english": "Live broadcast",
+            "phoneticTranscription": "Trans-mee-sown aw vee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Emissora de TV",
+            "english": "TV Station",
+            "phoneticTranscription": "E-mee-so-ra de te-ve",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Audiência",
+            "english": "Audience",
+            "phoneticTranscription": "Aw-jyen-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Telespectador",
+            "english": "TV Viewer",
+            "phoneticTranscription": "Te-le-es-pek-ta-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ouvinte",
+            "english": "Listener",
+            "phoneticTranscription": "Oo-veen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Microfone",
+            "english": "Microphone",
+            "phoneticTranscription": "Mee-kro-fo-nee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Locutor",
+            "english": "Broadcaster/Announcer",
+            "phoneticTranscription": "Lo-koo-tor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comentarista",
+            "english": "Commentator",
+            "phoneticTranscription": "Ko-men-ta-rees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Censura",
+            "english": "Censorship",
+            "phoneticTranscription": "Sen-soo-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Liberdade de imprensa",
+            "english": "Freedom of the press",
+            "phoneticTranscription": "Lee-ber-da-jee de im-pren-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Privacidade digital",
+            "english": "Digital privacy",
+            "phoneticTranscription": "Pree-va-see-da-jee jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Furo de reportagem",
+            "english": "Scoop",
+            "phoneticTranscription": "Foo-roo de he-por-ta-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fonte de informação",
+            "english": "Information source",
+            "phoneticTranscription": "Fon-chee de in-for-ma-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Divulgação",
+            "english": "Disclosure/Publicity",
+            "phoneticTranscription": "Jee-vool-ga-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Anúncio publicitário",
+            "english": "Advertisement",
+            "phoneticTranscription": "A-noon-syoo poo-blee-see-ta-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Patrocínio",
+            "english": "Sponsorship",
+            "phoneticTranscription": "Pa-tro-see-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Propaganda enganosa",
+            "english": "False advertising",
+            "phoneticTranscription": "Pro-pa-gan-da en-ga-no-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Público-alvo",
+            "english": "Target audience",
+            "phoneticTranscription": "Poo-blee-koo al-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Banda larga",
+            "english": "Broadband",
+            "phoneticTranscription": "Ban-da lar-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Navegador de internet",
+            "english": "Web browser",
+            "phoneticTranscription": "Na-ve-ga-dor de in-ter-ne-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Portal de notícias",
+            "english": "News portal",
+            "phoneticTranscription": "Por-tal de no-chee-syas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Domínio",
+            "english": "Domain",
+            "phoneticTranscription": "Do-mee-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Endereço eletrônico",
+            "english": "Email address/URL",
+            "phoneticTranscription": "En-de-re-soo e-le-tro-nee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hiperlink",
+            "english": "Hyperlink",
+            "phoneticTranscription": "Ee-per-leen-kee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clique aqui",
+            "english": "Click here",
+            "phoneticTranscription": "Klee-kee a-kee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cursor do mouse",
+            "english": "Mouse cursor",
+            "phoneticTranscription": "Koor-sor doo maw-zee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aba do navegador",
+            "english": "Browser tab",
+            "phoneticTranscription": "A-ba doo na-ve-ga-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Favoritos",
+            "english": "Bookmarks/Favorites",
+            "phoneticTranscription": "Fa-vo-ree-toos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Histórico de navegação",
+            "english": "Browsing history",
+            "phoneticTranscription": "Ees-to-ree-koo de na-ve-ga-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Download de arquivos",
+            "english": "File download",
+            "phoneticTranscription": "Dow-nlo-a-jee de ar-kee-voos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Upload de fotos",
+            "english": "Photo upload",
+            "phoneticTranscription": "Up-lo-a-jee de fo-toos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nuvem de dados",
+            "english": "Data cloud",
+            "phoneticTranscription": "Noo-vem de da-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Armazenamento remoto",
+            "english": "Remote storage",
+            "phoneticTranscription": "Ar-ma-ze-na-men-too he-mo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Servidor dedicado",
+            "english": "Dedicated server",
+            "phoneticTranscription": "Ser-vee-dor de-jee-ka-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Banco de dados",
+            "english": "Database",
+            "phoneticTranscription": "Ban-koo de da-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Algoritmo complexo",
+            "english": "Complex algorithm",
+            "phoneticTranscription": "Al-go-ree-tmoo kom-ple-ksoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Código-fonte",
+            "english": "Source code",
+            "phoneticTranscription": "Ko-jee-goo fon-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Software gratuito",
+            "english": "Free software",
+            "phoneticTranscription": "So-ftoo-ay-re gra-twee-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aplicativo móvel",
+            "english": "Mobile app",
+            "phoneticTranscription": "A-plee-ka-chee-voo mo-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Perfil público",
+            "english": "Public profile",
+            "phoneticTranscription": "Per-feel poo-blee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Seguidores ativos",
+            "english": "Active followers",
+            "phoneticTranscription": "Se-gee-do-rees a-chee-voos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Curtida",
+            "english": "Like",
+            "phoneticTranscription": "Koor-chee-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Compartilhamento",
+            "english": "Sharing",
+            "phoneticTranscription": "Kom-par-chee-lya-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Notificação",
+            "english": "Notification",
+            "phoneticTranscription": "No-chee-fee-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Feed de notícias",
+            "english": "News feed",
+            "phoneticTranscription": "Feed de no-chee-syas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Story temporário",
+            "english": "Temporary story",
+            "phoneticTranscription": "Sto-ree tem-po-ra-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hashtag popular",
+            "english": "Popular hashtag",
+            "phoneticTranscription": "He-she-ta-gee po-poo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Viralizar",
+            "english": "To go viral",
+            "phoneticTranscription": "Vee-ra-lee-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Influenciador digital",
+            "english": "Digital influencer",
+            "phoneticTranscription": "In-floo-en-syah-dor jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Podcast semanal",
+            "english": "Weekly podcast",
+            "phoneticTranscription": "Pod-kes-chee se-ma-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Serviço de streaming",
+            "english": "Streaming service",
+            "phoneticTranscription": "Ser-vee-soo de stree-meen",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vídeo conferência",
+            "english": "Video conference",
+            "phoneticTranscription": "Vee-jyo kon-fe-ren-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Áudio original",
+            "english": "Original audio",
+            "phoneticTranscription": "Aw-jyo o-ree-zhee-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Blog corporativo",
+            "english": "Corporate blog",
+            "phoneticTranscription": "Blo-ghee kor-po-ra-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fórum de discussão",
+            "english": "Discussion forum",
+            "phoneticTranscription": "Fo-room de jees-koo-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Chat em tempo real",
+            "english": "Real-time chat",
+            "phoneticTranscription": "She-chee em tem-poo he-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conteúdo digital",
+            "english": "Digital content",
+            "phoneticTranscription": "Kon-te-oo-doo jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Emoji engraçado",
+            "english": "Funny emoji",
+            "phoneticTranscription": "E-mo-zhee en-gra-sa-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Figurinha/Sticker",
+            "english": "Sticker",
+            "phoneticTranscription": "Fee-goo-ree-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Teclado qwerty",
+            "english": "Qwerty keyboard",
+            "phoneticTranscription": "Te-kla-doo kwer-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Segurança de rede",
+            "english": "Network security",
+            "phoneticTranscription": "Se-goo-ran-sa de he-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Criptografia de ponta",
+            "english": "End-to-end encryption",
+            "phoneticTranscription": "Kreep-to-gra-fee-a de pon-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Firewall ativo",
+            "english": "Active firewall",
+            "phoneticTranscription": "Fye-re-wal a-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hacker ético",
+            "english": "Ethical hacker",
+            "phoneticTranscription": "He-ker e-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Malware perigoso",
+            "english": "Dangerous malware",
+            "phoneticTranscription": "Mal-way-re pe-ree-go-zoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Spam indesejado",
+            "english": "Unwanted spam",
+            "phoneticTranscription": "Es-pam in-de-ze-zha-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Phishing bancário",
+            "english": "Bank phishing",
+            "phoneticTranscription": "Fee-sheen ban-ka-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conexão estável",
+            "english": "Stable connection",
+            "phoneticTranscription": "Ko-nek-sown es-ta-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Roteador sem fio",
+            "english": "Wireless router",
+            "phoneticTranscription": "Ho-te-a-dor sem fee-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Assinatura digital",
+            "english": "Digital signature",
+            "phoneticTranscription": "A-see-na-too-ra jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pirataria online",
+            "english": "Online piracy",
+            "phoneticTranscription": "Pee-ra-ta-ree-a on-line",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direitos autorais",
+            "english": "Copyright",
+            "phoneticTranscription": "Jee-ray-toos aw-to-hays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Interface do usuário",
+            "english": "User interface",
+            "phoneticTranscription": "In-ter-fa-see doo oo-zoo-ah-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Experiência do usuário",
+            "english": "User experience",
+            "phoneticTranscription": "Es-pe-ryen-syah doo oo-zoo-ah-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acessibilidade",
+            "english": "Accessibility",
+            "phoneticTranscription": "A-se-see-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Realidade aumentada",
+            "english": "Augmented reality",
+            "phoneticTranscription": "Re-a-lee-da-jee aw-men-ta-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inteligência artificial",
+            "english": "Artificial intelligence",
+            "phoneticTranscription": "In-te-lee-zhen-syah ar-chee-fee-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aprendizado de máquina",
+            "english": "Machine learning",
+            "phoneticTranscription": "A-pren-jee-za-doo de ma-kee-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Big data",
+            "english": "Big data",
+            "phoneticTranscription": "Beeg de-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Análise de dados",
+            "english": "Data analysis",
+            "phoneticTranscription": "A-na-lee-zee de da-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Otimização",
+            "english": "Optimization",
+            "phoneticTranscription": "O-chee-mee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mecanismo de busca",
+            "english": "Search engine",
+            "phoneticTranscription": "Me-ka-nees-moo de boos-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ranking",
+            "english": "Ranking",
+            "phoneticTranscription": "Ran-keen",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Engajamento",
+            "english": "Engagement",
+            "phoneticTranscription": "En-ga-zha-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Personalização",
+            "english": "Personalization",
+            "phoneticTranscription": "Per-so-na-lee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Interatividade",
+            "english": "Interactivity",
+            "phoneticTranscription": "In-te-ra-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Globalização",
+            "english": "Globalization",
+            "phoneticTranscription": "Glo-ba-lee-za-sown",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Pasta",
+        "correctVersion": "Means a 'Folder' or 'Paste'. Do not confuse with Italian 'Pasta' (Macarrão).",
+        "explanation": "Trap level: Low"
+    }
+}

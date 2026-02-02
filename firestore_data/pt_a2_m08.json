@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a2_m08",
+    "theme": "Geography, Environment & Climate",
+    "order": 18,
+    "lessons": [
+        {
+            "targetText": "Geografia física",
+            "english": "Physical geography",
+            "phoneticTranscription": "Zhe-o-gra-fee-a fee-zee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Relevo",
+            "english": "Relief",
+            "phoneticTranscription": "He-le-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Planície",
+            "english": "Plain/Lowland",
+            "phoneticTranscription": "Pla-nee-syee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Planalto",
+            "english": "Plateau",
+            "phoneticTranscription": "Pla-nal-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pico nevado",
+            "english": "Snowy peak",
+            "phoneticTranscription": "Pee-koo ne-va-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Serra",
+            "english": "Mountain range",
+            "phoneticTranscription": "Se-ha",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cordilheira",
+            "english": "Range (mountains)",
+            "phoneticTranscription": "Kor-jee-lye-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vale",
+            "english": "Valley",
+            "phoneticTranscription": "Va-lee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cânion",
+            "english": "Canyon",
+            "phoneticTranscription": "Ka-nyon",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Duna",
+            "english": "Dune",
+            "phoneticTranscription": "Doo-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pântano",
+            "english": "Swamp/Marsh",
+            "phoneticTranscription": "Pan-ta-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Manguezal",
+            "english": "Mangrove",
+            "phoneticTranscription": "Man-ge-zal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Litoral",
+            "english": "Coastline/Coast",
+            "phoneticTranscription": "Lee-to-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Golfo marítimo",
+            "english": "Marine gulf",
+            "phoneticTranscription": "Gol-foo ma-ree-chee-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arquipélago",
+            "english": "Archipelago",
+            "phoneticTranscription": "Ar-kee-pe-la-goo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Península",
+            "english": "Peninsula",
+            "phoneticTranscription": "Pe-neen-soo-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estreito",
+            "english": "Strait",
+            "phoneticTranscription": "Es-tray-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Foz",
+            "english": "River mouth",
+            "phoneticTranscription": "Fos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Afluente",
+            "english": "Tributary",
+            "phoneticTranscription": "A-floo-en-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nascente",
+            "english": "Source/Spring",
+            "phoneticTranscription": "Na-sen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Leito do rio",
+            "english": "Riverbed",
+            "phoneticTranscription": "Lay-too doo hee-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Margem",
+            "english": "Margin/Bank",
+            "phoneticTranscription": "Mar-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Correnteza",
+            "english": "Current (water)",
+            "phoneticTranscription": "Ko-hen-te-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Queda d'água",
+            "english": "Water drop/fall",
+            "phoneticTranscription": "Ke-da da-gwa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cachoeira",
+            "english": "Waterfall",
+            "phoneticTranscription": "Ka-sho-ay-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Recife de corais",
+            "english": "Coral reef",
+            "phoneticTranscription": "He-see-fee de ko-hays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Abismo",
+            "english": "Abyss/Chasm",
+            "phoneticTranscription": "A-beez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vulcanismo",
+            "english": "Volcanism",
+            "phoneticTranscription": "Vool-ka-neez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sismo",
+            "english": "Seismic event/Earthquake",
+            "phoneticTranscription": "Seez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Maremoto",
+            "english": "Seaquake",
+            "phoneticTranscription": "Ma-he-mo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tsunami",
+            "english": "Tsunami",
+            "phoneticTranscription": "Tsoo-na-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Furacão",
+            "english": "Hurricane",
+            "phoneticTranscription": "Foo-ra-kown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tornado",
+            "english": "Tornado",
+            "phoneticTranscription": "Tor-na-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ciclone tropical",
+            "english": "Tropical cyclone",
+            "phoneticTranscription": "See-klo-nee tro-pee-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tormenta",
+            "english": "Storm/Torment",
+            "phoneticTranscription": "Tor-men-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estrondo",
+            "english": "Bang/Thunderous crash",
+            "phoneticTranscription": "Es-tron-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Faísca",
+            "english": "Spark/Flash",
+            "phoneticTranscription": "Fa-ees-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Granizo",
+            "english": "Hail",
+            "phoneticTranscription": "Gra-nee-zoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Geada",
+            "english": "Frost",
+            "phoneticTranscription": "Zhe-a-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Seca extrema",
+            "english": "Extreme drought",
+            "phoneticTranscription": "Se-ka es-tre-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inundação",
+            "english": "Flood",
+            "phoneticTranscription": "Ee-noon-da-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Enchente",
+            "english": "High water/Flow",
+            "phoneticTranscription": "En-shen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Deslizamento",
+            "english": "Landslide",
+            "phoneticTranscription": "Des-lee-za-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Avalanche",
+            "english": "Avalanche",
+            "phoneticTranscription": "A-va-lan-she",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Erosão",
+            "english": "Erosion",
+            "phoneticTranscription": "E-ro-zown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sedimentação",
+            "english": "Sedimentation",
+            "phoneticTranscription": "Se-jee-men-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biodiversidade",
+            "english": "Biodiversity",
+            "phoneticTranscription": "Byo-jee-ver-see-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ecossistema",
+            "english": "Ecosystem",
+            "phoneticTranscription": "E-ko-sees-te-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hábito natural",
+            "english": "Natural habit",
+            "phoneticTranscription": "A-bee-too na-too-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Extinção",
+            "english": "Extinction",
+            "phoneticTranscription": "Es-cheen-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Preservação",
+            "english": "Preservation",
+            "phoneticTranscription": "Pre-zer-va-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conservação",
+            "english": "Conservation",
+            "phoneticTranscription": "Kon-ser-va-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reflorestamento",
+            "english": "Reforestation",
+            "phoneticTranscription": "Re-flo-res-ta-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desmatamento",
+            "english": "Deforestation",
+            "phoneticTranscription": "Des-ma-ta-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Poluição sonora",
+            "english": "Noise pollution",
+            "phoneticTranscription": "Po-loo-ee-sown so-no-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resíduos sólidos",
+            "english": "Solid waste",
+            "phoneticTranscription": "Re-zee-doos so-lee-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tratamento de esgoto",
+            "english": "Sewage treatment",
+            "phoneticTranscription": "Tra-ta-men-too de es-go-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Emissão de carbono",
+            "english": "Carbon emission",
+            "phoneticTranscription": "E-mee-sown de kar-bo-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Efeito estufa",
+            "english": "Greenhouse effect",
+            "phoneticTranscription": "E-fay-too es-too-fa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Camada de ozônio",
+            "english": "Ozone layer",
+            "phoneticTranscription": "Ka-ma-da de o-zo-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aquecimento global",
+            "english": "Global warming",
+            "phoneticTranscription": "A-ke-see-men-too glo-bal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mudança climática",
+            "english": "Climate change",
+            "phoneticTranscription": "Moo-dan-sa klee-ma-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Energia renovável",
+            "english": "Renewable energy",
+            "phoneticTranscription": "E-ner-zhyah he-no-va-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Energia solar",
+            "english": "Solar energy",
+            "phoneticTranscription": "E-ner-zhyah so-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Energia eólica",
+            "english": "Wind energy",
+            "phoneticTranscription": "E-ner-zhyah e-o-lee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hidrelétrica",
+            "english": "Hydroelectric",
+            "phoneticTranscription": "Ee-dre-le-tree-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biocombustível",
+            "english": "Biofuel",
+            "phoneticTranscription": "Byo-kom-boos-chee-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fronteira",
+            "english": "Border",
+            "phoneticTranscription": "Fron-tay-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Território",
+            "english": "Territory",
+            "phoneticTranscription": "Te-hee-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Continente",
+            "english": "Continent",
+            "phoneticTranscription": "Kon-chee-nen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hemisfério Norte",
+            "english": "Northern Hemisphere",
+            "phoneticTranscription": "E-mees-fe-ryoo nor-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Equador",
+            "english": "Equator",
+            "phoneticTranscription": "E-kwa-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Meridiano",
+            "english": "Meridian",
+            "phoneticTranscription": "Me-ree-jya-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coordenadas",
+            "english": "Coordinates",
+            "phoneticTranscription": "Koor-de-na-das",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Latitude",
+            "english": "Latitude",
+            "phoneticTranscription": "La-chee-too-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Longitude",
+            "english": "Longitude",
+            "phoneticTranscription": "Lon-zhee-too-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mapa-múndi",
+            "english": "World map",
+            "phoneticTranscription": "Ma-pa moon-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atlas",
+            "english": "Atlas",
+            "phoneticTranscription": "At-las",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Globo terrestre",
+            "english": "Terrestrial globe",
+            "phoneticTranscription": "Glo-boo te-hes-tree",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cartografia",
+            "english": "Cartography",
+            "phoneticTranscription": "Kar-to-gra-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Astrolábio",
+            "english": "Astrolabe",
+            "phoneticTranscription": "As-tro-la-byoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Orientação",
+            "english": "Orientation",
+            "phoneticTranscription": "O-ryen-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fuso horário",
+            "english": "Time zone",
+            "phoneticTranscription": "Foo-zoo o-rah-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clima temperado",
+            "english": "Temperate climate",
+            "phoneticTranscription": "Klee-ma tem-pe-ra-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clima tropical",
+            "english": "Tropical climate",
+            "phoneticTranscription": "Klee-ma tro-pee-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clima polar",
+            "english": "Polar climate",
+            "phoneticTranscription": "Klee-ma po-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clima árido",
+            "english": "Arid climate",
+            "phoneticTranscription": "Klee-ma ah-ree-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Umidade do ar",
+            "english": "Air humidity",
+            "phoneticTranscription": "Oo-mee-da-jee doo ar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Precipitação",
+            "english": "Precipitation",
+            "phoneticTranscription": "Pre-see-pee-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pressão atmosférica",
+            "english": "Atmospheric pressure",
+            "phoneticTranscription": "Pre-sown at-mos-fe-ree-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Meteorologia",
+            "english": "Meteorology",
+            "phoneticTranscription": "Me-te-o-ro-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Previsão do tempo",
+            "english": "Weather forecast",
+            "phoneticTranscription": "Pre-vee-sown doo tem-poo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Isolamento térmico",
+            "english": "Thermal insulation",
+            "phoneticTranscription": "Ee-zo-la-men-too ter-mee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Radiação UV",
+            "english": "UV Radiation",
+            "phoneticTranscription": "Ha-jya-sown oo-ve",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Solstício",
+            "english": "Solstice",
+            "phoneticTranscription": "Sols-chee-syoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Equinócio",
+            "english": "Equinox",
+            "phoneticTranscription": "E-kwee-no-syoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aurora boreal",
+            "english": "Northern lights",
+            "phoneticTranscription": "Aw-ho-ra bo-re-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fenômeno natural",
+            "english": "Natural phenomenon",
+            "phoneticTranscription": "Fe-no-me-noo na-too-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Paisagem exuberante",
+            "english": "Exuberant landscape",
+            "phoneticTranscription": "Pay-za-zhem e-zoo-be-ran-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Patrimônio da humanidade",
+            "english": "World heritage",
+            "phoneticTranscription": "Pa-tree-mo-nyo da oo-ma-nee-da-jee",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Preservativo",
+        "correctVersion": "Means 'Condom' in Portuguese. For 'Preservative (food)', use 'Conservante'.",
+        "explanation": "Trap level: High"
+    }
+}

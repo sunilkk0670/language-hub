@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_b1_m01",
+    "language": "hi",
+    "level": "b1",
+    "theme": "Philosophy, Ethics & Spirituality",
+    "order": 21,
+    "lessons": [
+        {
+            "word": "तत्वमीमांसा",
+            "translation": "Metaphysics",
+            "phonetic": "Tattvamimansa"
+        },
+        {
+            "word": "नीтиशास्त्र",
+            "translation": "Ethics",
+            "phonetic": "Nitishastra"
+        },
+        {
+            "word": "आध्यात्मिकता",
+            "translation": "Spirituality",
+            "phonetic": "Aadhyatmikta"
+        },
+        {
+            "word": "परमार्थ",
+            "translation": "Supreme truth / Altruism",
+            "phonetic": "Paramarth"
+        },
+        {
+            "word": "ब्रह्म",
+            "translation": "The Ultimate Reality",
+            "phonetic": "Brahma"
+        },
+        {
+            "word": "आत्मा",
+            "translation": "Soul / Self",
+            "phonetic": "Aatma"
+        },
+        {
+            "word": "चेतना",
+            "translation": "Consciousness",
+            "phonetic": "Chetana"
+        },
+        {
+            "word": "बोधिसत्व",
+            "translation": "Enlightened being",
+            "phonetic": "Bodhisattva"
+        },
+        {
+            "word": "अपवर्ग",
+            "translation": "Supreme Liberation / Salvation",
+            "phonetic": "Apavarga"
+        },
+        {
+            "word": "निर्वाण",
+            "translation": "Nirvana / Extinction of desire",
+            "phonetic": "Nirvana"
+        },
+        {
+            "word": "पुण्य",
+            "translation": "Virtuous deed / Merit",
+            "phonetic": "Punya"
+        },
+        {
+            "word": "पाप",
+            "translation": "Sin / Vice",
+            "phonetic": "Paap"
+        },
+        {
+            "word": "विवेक",
+            "translation": "Discrimination / Wisdom",
+            "phonetic": "Vivek"
+        },
+        {
+            "word": "वैराग्य",
+            "translation": "Detachment / Renunciation",
+            "phonetic": "Vairagya"
+        },
+        {
+            "word": "संन्यास",
+            "translation": "Asceticism",
+            "phonetic": "Sannyas"
+        },
+        {
+            "word": "तपस्या",
+            "translation": "Penance / Austerity",
+            "phonetic": "Tapasyā"
+        },
+        {
+            "word": "औदार्य",
+            "translation": "Magnanimity / Generosity",
+            "phonetic": "Audarya"
+        },
+        {
+            "word": "स्थितप्रज्ञ",
+            "translation": "One with steady wisdom",
+            "phonetic": "Sthitapragya"
+        },
+        {
+            "word": "सदाचार",
+            "translation": "Righteous conduct",
+            "phonetic": "Sadachar"
+        },
+        {
+            "word": "लोकोपकार",
+            "translation": "Public welfare / Philanthropy",
+            "phonetic": "Lokopakar"
+        },
+        {
+            "word": "अहिंसा",
+            "translation": "Non-violence",
+            "phonetic": "Ahinsa"
+        },
+        {
+            "word": "क्षमाशीलता",
+            "translation": "Forgiveness / Patience",
+            "phonetic": "Kshamashilta"
+        },
+        {
+            "word": "सहिष्णुता",
+            "translation": "Tolerance",
+            "phonetic": "Sahishnuta"
+        },
+        {
+            "word": "अपरिग्रह",
+            "translation": "Non-possessiveness",
+            "phonetic": "Aparigrah"
+        },
+        {
+            "word": "ब्रह्मचर्य",
+            "translation": "Celibacy / Right conduct",
+            "phonetic": "Brahmacharya"
+        },
+        {
+            "word": "आत्मचिन्तन",
+            "translation": "Self-contemplation / Meditation",
+            "phonetic": "Aatmanchintan"
+        },
+        {
+            "word": "प्राण-नियमन",
+            "translation": "Breath regulation",
+            "phonetic": "Pran-niyaman"
+        },
+        {
+            "word": "प्रत्याहार",
+            "translation": "Withdrawal of senses",
+            "phonetic": "Pratyahar"
+        },
+        {
+            "word": "धारणा",
+            "translation": "Concentration / Mental focus",
+            "phonetic": "Dharana"
+        },
+        {
+            "word": "अन्तर्ध्यान",
+            "translation": "Deep inward meditation",
+            "phonetic": "Antardhyan"
+        },
+        {
+            "word": "महा-समाधि",
+            "translation": "Final meditative state",
+            "phonetic": "Maha-samadhi"
+        },
+        {
+            "word": "माया",
+            "translation": "Illusion",
+            "phonetic": "Maya"
+        },
+        {
+            "word": "अविद्या",
+            "translation": "Ignorance (Philosophical)",
+            "phonetic": "Avidya"
+        },
+        {
+            "word": "जगत-बीज",
+            "translation": "Primal Matter / Universe seed",
+            "phonetic": "Jagat-beej"
+        },
+        {
+            "word": "पुरुष",
+            "translation": "Pure Consciousness / Being",
+            "phonetic": "Purusha"
+        },
+        {
+            "word": "द्वैत",
+            "translation": "Duality",
+            "phonetic": "Dvait"
+        },
+        {
+            "word": "अभेद",
+            "translation": "Non-duality / Oneness",
+            "phonetic": "Abhed"
+        },
+        {
+            "word": "विशिष्टद्वैत",
+            "translation": "Qualified non-duality",
+            "phonetic": "Vishishtadvait"
+        },
+        {
+            "word": "प्रबोधन",
+            "translation": "Sacrament / Awakening",
+            "phonetic": "Prabodhan"
+        },
+        {
+            "word": "प्रारब्ध",
+            "translation": "Accumulated fate / Destiny",
+            "phonetic": "Prarabdh"
+        },
+        {
+            "word": "सृष्टि",
+            "translation": "Creation",
+            "phonetic": "Srishti"
+        },
+        {
+            "word": "प्रलय",
+            "translation": "Dissolution / Cataclysm",
+            "phonetic": "Pralay"
+        },
+        {
+            "word": "ईश्वर",
+            "translation": "God / Supreme Lord",
+            "phonetic": "Ishwar"
+        },
+        {
+            "word": "अवतार",
+            "translation": "Incarnation",
+            "phonetic": "Avatar"
+        },
+        {
+            "word": "लीला",
+            "translation": "Divine play",
+            "phonetic": "Leela"
+        },
+        {
+            "word": "अनुराग",
+            "translation": "Devotion / Spiritual love",
+            "phonetic": "Anurag"
+        },
+        {
+            "word": "प्रज्ञा",
+            "translation": "Wisdom / Insight",
+            "phonetic": "Pragya"
+        },
+        {
+            "word": "वैष्णव",
+            "translation": "Follower of Vishnu",
+            "phonetic": "Vaishnav"
+        },
+        {
+            "word": "शैव",
+            "translation": "Follower of Shiva",
+            "phonetic": "Shaiva"
+        },
+        {
+            "word": "शाक्त",
+            "translation": "Follower of Shakti",
+            "phonetic": "Shakta"
+        },
+        {
+            "word": "अर्चा",
+            "translation": "Iconography / Worship image",
+            "phonetic": "Archa"
+        },
+        {
+            "word": "प्राणप्रतिष्ठा",
+            "translation": "Consecration ceremony",
+            "phonetic": "Pran-pratishtha"
+        },
+        {
+            "word": "तीर्थंकर",
+            "translation": "Jain spiritual teacher",
+            "phonetic": "Tirthankara"
+        },
+        {
+            "word": "मन्त्र",
+            "translation": "Sacred chant",
+            "phonetic": "Mantra"
+        },
+        {
+            "word": "स्तोत्र",
+            "translation": "Hymn / Prayer",
+            "phonetic": "Stotra"
+        },
+        {
+            "word": "आरती",
+            "translation": "Ritual of light",
+            "phonetic": "Aarti"
+        },
+        {
+            "word": "यज्ञ",
+            "translation": "Sacrificial fire-ritual",
+            "phonetic": "Yagya"
+        },
+        {
+            "word": "हवन",
+            "translation": "Fire offering",
+            "phonetic": "Havan"
+        },
+        {
+            "word": "वेदी",
+            "translation": "Altar",
+            "phonetic": "Vedi"
+        },
+        {
+            "word": "प्रसाद",
+            "translation": "Blessed food",
+            "phonetic": "Prasad"
+        },
+        {
+            "word": "अन्तर्दृष्टि",
+            "translation": "Inner Vision / Insight",
+            "phonetic": "Antardrishti"
+        },
+        {
+            "word": "परिक्रमा",
+            "translation": "Circumambulation",
+            "phonetic": "Parikrama"
+        },
+        {
+            "word": "शौच",
+            "translation": "Purity / Cleanliness (Internal)",
+            "phonetic": "Shauch"
+        },
+        {
+            "word": "दीप्ति",
+            "translation": "Radiance / Luster",
+            "phonetic": "Deepti"
+        },
+        {
+            "word": "ओज",
+            "translation": "Vitality / Spiritual energy",
+            "phonetic": "Oj"
+        },
+        {
+            "word": "निस्तब्धता",
+            "translation": "Absolute Silence",
+            "phonetic": "Nistabdhta"
+        },
+        {
+            "word": "सत्य",
+            "translation": "Truth",
+            "phonetic": "Satya"
+        },
+        {
+            "word": "धर्मग्रंथ",
+            "translation": "Holy Scripture",
+            "phonetic": "Dharmagranth"
+        },
+        {
+            "word": "आरण्यक",
+            "translation": "Esoteric Forest Texts",
+            "phonetic": "Aranyak"
+        },
+        {
+            "word": "श्रीमद्भगवद्गीता",
+            "translation": "The Song of God (Text)",
+            "phonetic": "Shrimadbhagavadgita"
+        },
+        {
+            "word": "रामायण",
+            "translation": "The Journey of Rama (Epic)",
+            "phonetic": "Ramayana"
+        },
+        {
+            "word": "महाभारत",
+            "translation": "The Great Bharata (Epic)",
+            "phonetic": "Mahabharata"
+        },
+        {
+            "word": "पुरातन-संहिता",
+            "translation": "Ancient lore collection",
+            "phonetic": "Puratan-samhita"
+        },
+        {
+            "word": "स्मृति",
+            "translation": "Post-Vedic scriptures / Memory",
+            "phonetic": "Smriti"
+        },
+        {
+            "word": "श्रुति",
+            "translation": "Vedic scriptures / Divine hearing",
+            "phonetic": "Shruti"
+        },
+        {
+            "word": "ऋषि",
+            "translation": "Sage / Seer",
+            "phonetic": "Rishi"
+        },
+        {
+            "word": "मुनि",
+            "translation": "Ascetic / Silent sage",
+            "phonetic": "Muni"
+        },
+        {
+            "word": "गुरुवर्य",
+            "translation": "Venerable Master Teacher",
+            "phonetic": "Guruvarya"
+        },
+        {
+            "word": "अन्तेवासी",
+            "translation": "Resident disciple",
+            "phonetic": "Antevasi"
+        },
+        {
+            "word": "आश्रम",
+            "translation": "Hermitage / Stage of life",
+            "phonetic": "Ashram"
+        },
+        {
+            "word": "गुरुकुल",
+            "translation": "Traditional boarding school",
+            "phonetic": "Gurukul"
+        },
+        {
+            "word": "साधना",
+            "translation": "Spiritual practice",
+            "phonetic": "Sadhana"
+        },
+        {
+            "word": "सिद्ध",
+            "translation": "Perfected being",
+            "phonetic": "Siddha"
+        },
+        {
+            "word": "अनंत",
+            "translation": "Infinite / Endless",
+            "phonetic": "Anant"
+        },
+        {
+            "word": "अविनाशी",
+            "translation": "Indestructible",
+            "phonetic": "Avinashi"
+        },
+        {
+            "word": "अजर",
+            "translation": "Ageless",
+            "phonetic": "Ajar"
+        },
+        {
+            "word": "अमर",
+            "translation": "Immortal",
+            "phonetic": "Amar"
+        },
+        {
+            "word": "सर्वव्यापी",
+            "translation": "Omnipresent",
+            "phonetic": "Sarvavyapi"
+        },
+        {
+            "word": "सर्वज्ञ",
+            "translation": "Omniscient",
+            "phonetic": "Sarvagya"
+        },
+        {
+            "word": "सर्वशक्तिमान",
+            "translation": "Omnipotent",
+            "phonetic": "Sarvashaktiman"
+        },
+        {
+            "word": "ईश्वरनिष्ठा",
+            "translation": "Faith in God",
+            "phonetic": "Ishwarnishta"
+        },
+        {
+            "word": "श्रद्धा",
+            "translation": "Deep faith / Reverence",
+            "phonetic": "Shraddha"
+        },
+        {
+            "word": "अनुग्रह",
+            "translation": "Grace / Divine favor",
+            "phonetic": "Anugrah"
+        },
+        {
+            "word": "अनुकम्पा",
+            "translation": "Compassion / Mercy (Formal)",
+            "phonetic": "Anukampa"
+        },
+        {
+            "word": "वात्सल्य",
+            "translation": "Parental Affection / Pure love",
+            "phonetic": "Vatsalya"
+        },
+        {
+            "word": "अनुप्राण",
+            "translation": "Inspiration / Vitalization",
+            "phonetic": "Anupran"
+        },
+        {
+            "word": "प्रमोद",
+            "translation": "Joy / Enthusiasm (Formal)",
+            "phonetic": "Pramod"
+        },
+        {
+            "word": "सद्भावना",
+            "translation": "Goodwill",
+            "phonetic": "Sadbhavna"
+        },
+        {
+            "word": "विश्वशांति",
+            "translation": "Universal peace",
+            "phonetic": "Vishwaśānti"
+        },
+        {
+            "word": "परमानंद",
+            "translation": "Supreme Bliss",
+            "phonetic": "Paramānand"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Avidya' Illusion",
+        "question": "In Indian philosophy, 'Avidya' (अविद्या) is considered the root cause of suffering. What does it literally mean?",
+        "options": [
+            "Lack of education",
+            "Ignorance of the true self",
+            "Hate for wisdom",
+            "Poor memory"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Avidya' is not just a lack of schooling; it is the spiritual ignorance of one's true divine nature, which leads to the cycle of birth and death."
+    }
+}

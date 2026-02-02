@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_b1_m08",
+    "theme": "Healthcare & Wellness",
+    "order": 28,
+    "lessons": [
+        {
+            "targetText": "Sistema Único de Saúde",
+            "english": "Unified Health System (SUS)",
+            "phoneticTranscription": "Sees-te-ma Oo-nee-koo de Sa-oo-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Saúde suplementar",
+            "english": "Supplementary healthcare",
+            "phoneticTranscription": "Sa-oo-jee soo-ple-men-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Convênio médico",
+            "english": "Health insurance / Medical agreement",
+            "phoneticTranscription": "Kon-ve-nyoo me-jee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cobertura assistencial",
+            "english": "Assistance coverage",
+            "phoneticTranscription": "Ko-ber-too-ra a-sees-ten-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carência contratual",
+            "english": "Contractual waiting period",
+            "phoneticTranscription": "Ka-ren-syah kon-tra-too-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atenção primária",
+            "english": "Primary care",
+            "phoneticTranscription": "A-ten-sown pree-ma-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Medicina de família",
+            "english": "Family medicine",
+            "phoneticTranscription": "Me-jee-see-na de fa-mee-lyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pronto atendimento",
+            "english": "Ready care/ER",
+            "phoneticTranscription": "Pron-too a-ten-jee-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Unidade de terapia",
+            "english": "Therapy unit (ICU/UTI)",
+            "phoneticTranscription": "Oo-nee-da-jee de te-ra-pyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Centro cirúrgico",
+            "english": "Surgical center",
+            "phoneticTranscription": "Sen-troo see-hoor-zhee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Anestesia geral",
+            "english": "General anesthesia",
+            "phoneticTranscription": "A-nes-te-zyah zhe-hal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pós-operatório",
+            "english": "Post-operative",
+            "phoneticTranscription": "Pos-o-pe-ra-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diagnóstico precoce",
+            "english": "Early diagnosis",
+            "phoneticTranscription": "Jya-gnos-chee-koo pre-ko-see",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Exames complementares",
+            "english": "Complementary exams",
+            "phoneticTranscription": "E-za-mees kom-ple-men-ta-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hemograma completo",
+            "english": "Complete blood count",
+            "phoneticTranscription": "E-mo-gra-ma kom-ple-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ressonância magnética",
+            "english": "Magnetic resonance",
+            "phoneticTranscription": "He-so-nan-syah mag-ne-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tomografia computadorizada",
+            "english": "Computed tomography",
+            "phoneticTranscription": "To-mo-gra-fee-a kom-poo-ta-zee-za-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ultrassonografia",
+            "english": "Ultrasonography",
+            "phoneticTranscription": "Ool-tra-so-no-gra-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Eletrocardiograma",
+            "english": "Electrocardiogram",
+            "phoneticTranscription": "E-le-tro-kar-zyo-gra-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tensão arterial",
+            "english": "Blood pressure / Arterial tension",
+            "phoneticTranscription": "Ten-sown ar-te-ryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Glicemia de jejum",
+            "english": "Fasting glucose",
+            "phoneticTranscription": "Glee-se-myah de zhe-zhoon",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colesterol total",
+            "english": "Total cholesterol",
+            "phoneticTranscription": "Ko-les-te-hol to-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Triglicerídeos",
+            "english": "Triglycerides",
+            "phoneticTranscription": "Tree-glee-se-ree-je-oos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Doenças crônicas",
+            "english": "Chronic diseases",
+            "phoneticTranscription": "Do-en-sas kro-nee-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diabetes mellitus",
+            "english": "Diabetes mellitus",
+            "phoneticTranscription": "Jya-be-chees me-lee-toos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hipertensão sistêmica",
+            "english": "Systemic hypertension",
+            "phoneticTranscription": "Ee-per-ten-sown sees-te-mee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Insuficiência cardíaca",
+            "english": "Heart failure",
+            "phoneticTranscription": "In-soo-fee-syen-syah kar-jee-a-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arritmia cardíaca",
+            "english": "Cardiac arrhythmia",
+            "phoneticTranscription": "A-hee-chee-myah kar-jee-a-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Infarto do miocárdio",
+            "english": "Myocardial infarction",
+            "phoneticTranscription": "In-far-too doo myo-kar-jyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acidente vascular",
+            "english": "Vascular accident (Stroke/AVC)",
+            "phoneticTranscription": "A-see-den-chee vas-koo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Isquemia cerebral",
+            "english": "Cerebral ischemia",
+            "phoneticTranscription": "Ees-ke-myah se-re-bral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hemorragia interna",
+            "english": "Internal hemorrhage",
+            "phoneticTranscription": "E-mo-ha-zhyah in-ter-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Oncologia clínica",
+            "english": "Clinical oncology",
+            "phoneticTranscription": "On-ko-lo-zhyah klee-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Quimioterapia",
+            "english": "Chemotherapy",
+            "phoneticTranscription": "Kee-myo-te-ra-pyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Radioterapia",
+            "english": "Radiotherapy",
+            "phoneticTranscription": "Ha-zyo-te-ra-pyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Remissão da doença",
+            "english": "Disease remission",
+            "phoneticTranscription": "He-mee-sown da do-en-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cuidados paliativos",
+            "english": "Palliative care",
+            "phoneticTranscription": "Kwee-da-doos pa-lyah-chee-voos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Higiene mental",
+            "english": "Mental hygiene / Mental health",
+            "phoneticTranscription": "Ee-zhee-e-nee men-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transtorno bipolar",
+            "english": "Bipolar disorder",
+            "phoneticTranscription": "Trans-tor-noo bee-po-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Depressão profunda",
+            "english": "Deep depression",
+            "phoneticTranscription": "De-pre-sown pro-foon-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Crise de ansiedade",
+            "english": "Anxiety attack",
+            "phoneticTranscription": "Kree-zee de an-sye-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ataque de pânico",
+            "english": "Panic attack",
+            "phoneticTranscription": "A-ta-kee de pa-nee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Esquizofrenia",
+            "english": "Schizophrenia",
+            "phoneticTranscription": "Es-kee-zo-fre-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Psicoterapia",
+            "english": "Psychotherapy",
+            "phoneticTranscription": "Psee-ko-te-ra-pyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Psicanálise lacaiana",
+            "english": "Lacanian psychoanalysis",
+            "phoneticTranscription": "Psee-ka-na-lee-zee la-ka-yah-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Neurotransmissores",
+            "english": "Neurotransmitters",
+            "phoneticTranscription": "Ne-oo-ro-trans-mee-so-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Serotonina e dopamina",
+            "english": "Serotonin and dopamine",
+            "phoneticTranscription": "Se-ro-to-nee-na e do-pa-mee-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Endorfina natural",
+            "english": "Natural endorphin",
+            "phoneticTranscription": "En-dor-fee-na na-too-hal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Qualidade de vida",
+            "english": "Quality of life",
+            "phoneticTranscription": "Kwa-lee-da-jee de vee-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bem-estar físico",
+            "english": "Physical well-being",
+            "phoneticTranscription": "Bem-es-tar fee-zee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hábitos saudáveis",
+            "english": "Healthy habits",
+            "phoneticTranscription": "A-bee-toos saw-da-vays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alimentação balanceada",
+            "english": "Balanced diet",
+            "phoneticTranscription": "A-lee-men-ta-sown ba-lan-se-a-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nutrição funcional",
+            "english": "Functional nutrition",
+            "phoneticTranscription": "Noo-tree-sown foon-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Suplementação alimentar",
+            "english": "Food supplementation",
+            "phoneticTranscription": "Soo-ple-men-ta-sown a-lee-men-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atividade aeróbica",
+            "english": "Aerobic activity",
+            "phoneticTranscription": "A-chee-vee-da-jee a-e-ro-bee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fortalecimento muscular",
+            "english": "Muscle strengthening",
+            "phoneticTranscription": "For-ta-le-see-men-too moos-koo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Flexibilidade corporal",
+            "english": "Body flexibility",
+            "phoneticTranscription": "Fle-ksee-bee-lee-da-jee kor-po-hal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prevenção de doenças",
+            "english": "Disease prevention",
+            "phoneticTranscription": "Pre-ven-sown de do-en-sas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imunização em massa",
+            "english": "Mass immunization",
+            "phoneticTranscription": "Ee-moo-nee-za-sown em ma-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Calendário vacinal",
+            "english": "Vaccination calendar",
+            "phoneticTranscription": "Ka-len-da-ryoo va-see-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vigilância sanitária",
+            "english": "Sanitary surveillance",
+            "phoneticTranscription": "Vee-zhee-lan-syah sa-nee-ta-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Controle de endemias",
+            "english": "Endemic control",
+            "phoneticTranscription": "Kon-tro-lee de en-de-myas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Saneamento ambiental",
+            "english": "Environmental sanitation",
+            "phoneticTranscription": "Sa-ne-a-men-too am-byen-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ruído ambiental",
+            "english": "Environmental noise / Noise pollution",
+            "phoneticTranscription": "Hoo-ee-doo am-byen-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ergonomia no trabalho",
+            "english": "Ergonomics at work",
+            "phoneticTranscription": "Er-go-no-myah noo tra-ba-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Medicina do trabalho",
+            "english": "Occupational medicine",
+            "phoneticTranscription": "Me-jee-see-na doo tra-ba-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Saúde ocupacional",
+            "english": "Occupational health",
+            "phoneticTranscription": "Sa-oo-jee o-koo-pa-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atendimento de emergência",
+            "english": "Emergency care / First aid",
+            "phoneticTranscription": "A-ten-jee-men-too de e-mer-zhen-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ressuscitação",
+            "english": "Resuscitation (CPR)",
+            "phoneticTranscription": "He-soo-see-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desfribilador externo",
+            "english": "External defibrillator",
+            "phoneticTranscription": "Des-free-bee-la-dor es-ter-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fratura exposta",
+            "english": "Compound fracture",
+            "phoneticTranscription": "Fra-too-ra es-pos-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imobilização",
+            "english": "Immobilization",
+            "phoneticTranscription": "Ee-mo-bee-lee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Queimadura de grau",
+            "english": "Degree burn",
+            "phoneticTranscription": "Kay-ma-doo-ra de graw",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reação alérgica",
+            "english": "Allergic reaction",
+            "phoneticTranscription": "He-a-sown a-ler-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Choque anafilático",
+            "english": "Anaphylactic shock",
+            "phoneticTranscription": "Sho-ke-a-na-fee-la-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Intoxicação alimentar",
+            "english": "Food poisoning",
+            "phoneticTranscription": "In-to-ksee-ka-sown a-lee-men-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Virologia e bacteriologia",
+            "english": "Virology and bacteriology",
+            "phoneticTranscription": "Vee-ro-lo-zhyah e bak-te-ryo-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resistência bacteriana",
+            "english": "Bacterial resistance",
+            "phoneticTranscription": "He-zees-ten-syah bak-te-ry-ah-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Antibióticos de espectro",
+            "english": "Spectrum antibiotics",
+            "phoneticTranscription": "An-chee-byo-chee-koos de es-pe-ktroo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Antivirais específicos",
+            "english": "Specific antivirals",
+            "phoneticTranscription": "An-chee-vee-rays es-pe-see-fee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inovação farmacêutica",
+            "english": "Pharmaceutical innovation",
+            "phoneticTranscription": "Ee-no-va-sown far-ma-se-oo-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biotecnologia médica",
+            "english": "Medical biotechnology",
+            "phoneticTranscription": "Byo-tek-no-lo-zhyah me-jee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Genética clínica",
+            "english": "Clinical genetics",
+            "phoneticTranscription": "Zhe-ne-chee-ka klee-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hereditariedade",
+            "english": "Heredity",
+            "phoneticTranscription": "E-re-jee-ta-rye-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Malformação congênita",
+            "english": "Congenital malformation",
+            "phoneticTranscription": "Mal-for-ma-sown kon-zhe-nee-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desenvolvimento fetal",
+            "english": "Fetal development",
+            "phoneticTranscription": "De-zen-vol-vee-men-too fe-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Amamentação exclusiva",
+            "english": "Exclusive breastfeeding",
+            "phoneticTranscription": "A-ma-men-ta-sown es-kloo-zee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pediatria e geriatria",
+            "english": "Pediatrics and geriatrics",
+            "phoneticTranscription": "Pe-jya-tryah e zhe-ryah-tryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Longevidade saudável",
+            "english": "Healthy longevity",
+            "phoneticTranscription": "Lon-zhe-vee-da-jee saw-da-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Envelhecimento ativo",
+            "english": "Active aging",
+            "phoneticTranscription": "En-ve-lye-see-men-too a-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Degeneração macular",
+            "english": "Macular degeneration",
+            "phoneticTranscription": "De-zhe-ne-ra-sown ma-koo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Osteoporose severa",
+            "english": "Severe osteoporosis",
+            "phoneticTranscription": "Os-te-o-po-ro-zee se-ve-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Artrite reumatoide",
+            "english": "Rheumatoid arthritis",
+            "phoneticTranscription": "Ar-tree-chee he-oo-ma-toy-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fibrilação atrial",
+            "english": "Atrial fibrillation",
+            "phoneticTranscription": "Fee-bree-la-sown a-tryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estilo de vida",
+            "english": "Lifestyle",
+            "phoneticTranscription": "Es-chee-loo de vee-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Robustez psicológica",
+            "english": "Psychological robustness / Resilience",
+            "phoneticTranscription": "Ho-boos-tes psee-ko-lo-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mindfulness e meditação",
+            "english": "Mindfulness and meditation",
+            "phoneticTranscription": "Mahynd-fool-nes e me-jee-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Equilíbrio hormonal",
+            "english": "Hormonal balance",
+            "phoneticTranscription": "Ee-kee-lee-bryoo or-mo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Homeostase",
+            "english": "Homeostasis",
+            "phoneticTranscription": "O-me-os-ta-zee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metabolismo basal",
+            "english": "Basal metabolism",
+            "phoneticTranscription": "Me-ta-bo-leez-moo ba-zal",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Parentes",
+        "correctVersion": "Means 'Relatives' (general). For 'Parents (mother/father)', use 'Pais'.",
+        "explanation": "Trap level: High"
+    }
+}

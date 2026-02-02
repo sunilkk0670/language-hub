@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_b1_m02",
+    "theme": "Environment & Sustainability",
+    "order": 22,
+    "lessons": [
+        {
+            "targetText": "Mitigação climática",
+            "english": "Climate mitigation",
+            "phoneticTranscription": "Mee-chee-ga-sown klee-ma-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Adaptação ambiental",
+            "english": "Environmental adaptation",
+            "phoneticTranscription": "A-dap-ta-sown am-byen-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Captura de carbono",
+            "english": "Carbon capture",
+            "phoneticTranscription": "Kap-too-ra de kar-bo-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acidificação dos oceanos",
+            "english": "Ocean acidification",
+            "phoneticTranscription": "A-see-jee-fee-ka-sown doos o-se-a-noos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Degelo das calotas polares",
+            "english": "Melting of polar ice caps",
+            "phoneticTranscription": "De-zhe-loo das ka-lo-tas po-la-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Elevação do nível do mar",
+            "english": "Sea level rise",
+            "phoneticTranscription": "E-le-va-sown doo nee-vel doo mar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ponto de não retorno",
+            "english": "Tipping point",
+            "phoneticTranscription": "Pon-too de nown he-tor-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resiliência climática",
+            "english": "Climate resilience",
+            "phoneticTranscription": "Re-zee-lyen-syah klee-ma-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Justiça climática",
+            "english": "Climate justice",
+            "phoneticTranscription": "Zhoos-chee-sa klee-ma-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Refugiados ambientais",
+            "english": "Environmental refugees",
+            "phoneticTranscription": "He-foo-zhyah-doos am-byen-tays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escassez hídrica",
+            "english": "Water scarcity",
+            "phoneticTranscription": "Es-ka-ses ee-dree-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dessalinização",
+            "english": "Desalination",
+            "phoneticTranscription": "De-sa-lee-nee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Eutrofização",
+            "english": "Eutrophication",
+            "phoneticTranscription": "E-oo-tro-fee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Microplásticos",
+            "english": "Microplastics",
+            "phoneticTranscription": "Mee-kro-plas-chee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Contaminação química",
+            "english": "Chemical contamination",
+            "phoneticTranscription": "Kon-ta-mee-na-sown kee-mee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metais pesados",
+            "english": "Heavy metals",
+            "phoneticTranscription": "Me-tays pe-za-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bioacumulação",
+            "english": "Bioaccumulation",
+            "phoneticTranscription": "Byo-a-koo-moo-la-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Agrotóxicos",
+            "english": "Pesticides",
+            "phoneticTranscription": "A-gro-tok-see-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fertilização sintética",
+            "english": "Synthetic fertilization",
+            "phoneticTranscription": "Fer-chee-lee-za-sown seen-te-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Agroecologia",
+            "english": "Agroecology",
+            "phoneticTranscription": "A-gro-e-ko-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Permacultura",
+            "english": "Permaculture",
+            "phoneticTranscription": "Per-ma-kool-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Agricultura regenerativa",
+            "english": "Regenerative agriculture",
+            "phoneticTranscription": "A-gree-kool-too-ra he-zhe-ne-ra-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Segurança alimentar",
+            "english": "Food security",
+            "phoneticTranscription": "Se-goo-ran-sa a-lee-men-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Soberania alimentar",
+            "english": "Food sovereignty",
+            "phoneticTranscription": "So-be-ra-nee-a a-lee-men-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biodiversidade funcional",
+            "english": "Functional biodiversity",
+            "phoneticTranscription": "Byo-jee-ver-see-da-jee foon-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Espécies endêmicas",
+            "english": "Endemic species",
+            "phoneticTranscription": "Es-pe-sees en-de-mee-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Espécies invasoras",
+            "english": "Invasive species",
+            "phoneticTranscription": "Es-pe-sees in-va-zo-ras",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Corredores ecológicos",
+            "english": "Ecological corridors",
+            "phoneticTranscription": "Ko-he-do-rees e-ko-lo-zhee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fragmentação de habitat",
+            "english": "Habitat fragmentation",
+            "phoneticTranscription": "Frag-men-ta-sown de a-bee-tat",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Preservação permanente",
+            "english": "Permanent preservation",
+            "phoneticTranscription": "Pre-zer-va-sown per-ma-nen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reserva legal",
+            "english": "Legal reserve",
+            "phoneticTranscription": "Re-zer-va le-gal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Unidades de conservação",
+            "english": "Conservation units",
+            "phoneticTranscription": "Oo-nee-da-jees de kon-ser-va-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Uso sustentável",
+            "english": "Sustainable use",
+            "phoneticTranscription": "Oo-zoo soos-ten-ta-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Manejo florestal",
+            "english": "Forest management",
+            "phoneticTranscription": "Ma-ne-zhoo flo-res-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Exploração madeireira",
+            "english": "Logging/Timber exploration",
+            "phoneticTranscription": "Es-plo-ra-sown ma-day-ray-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Combustíveis fósseis",
+            "english": "Fossil fuels",
+            "phoneticTranscription": "Kom-boos-chee-vays fo-says",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carvão mineral",
+            "english": "Mineral coal",
+            "phoneticTranscription": "Kar-vown mee-ne-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gás natural",
+            "english": "Natural gas",
+            "phoneticTranscription": "Gas na-too-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Petróleo bruto",
+            "english": "Crude oil",
+            "phoneticTranscription": "Pe-tro-lyoo broo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Energia nuclear",
+            "english": "Nuclear energy",
+            "phoneticTranscription": "E-ner-zhyah noo-kle-ar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Radioatividade",
+            "english": "Radioactivity",
+            "phoneticTranscription": "Ha-jyo-a-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resíduos tóxicos",
+            "english": "Toxic waste",
+            "phoneticTranscription": "Re-zee-doos tok-see-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lixão a céu aberto",
+            "english": "Open-air landfill",
+            "phoneticTranscription": "Lee-shown a sew a-ber-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aterro sanitário",
+            "english": "Sanitary landfill",
+            "phoneticTranscription": "A-te-hoo sa-nee-ta-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Incineração de resíduos",
+            "english": "Waste incineration",
+            "phoneticTranscription": "In-see-ne-ra-sown de re-zee-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reciclagem de vidro",
+            "english": "Glass recycling",
+            "phoneticTranscription": "Re-see-kla-zhem de vee-droo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coleta seletiva",
+            "english": "Selective collection",
+            "phoneticTranscription": "Ko-le-ta se-le-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consumismo consciente",
+            "english": "Conscious consumerism",
+            "phoneticTranscription": "Kon-soo-meez-moo kon-syen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Economia circular",
+            "english": "Circular economy",
+            "phoneticTranscription": "E-ko-no-mee-a seer-koo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ciclo de vida do produto",
+            "english": "Product life cycle",
+            "phoneticTranscription": "See-kloo de vee-da doo pro-doo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pegada ecológica",
+            "english": "Ecological footprint",
+            "phoneticTranscription": "Pe-ga-da e-ko-lo-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Capacidade de carga",
+            "english": "Carrying capacity",
+            "phoneticTranscription": "Ka-pa-see-da-jee de kar-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Superpopulação",
+            "english": "Overpopulation",
+            "phoneticTranscription": "Soo-per-po-poo-la-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Urbanismo sustentável",
+            "english": "Sustainable urbanism",
+            "phoneticTranscription": "Oor-ba-neez-moo soos-ten-ta-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cidades resilientes",
+            "english": "Resilient cities",
+            "phoneticTranscription": "See-da-jees he-zee-lyen-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transporte intermodal",
+            "english": "Intermodal transport",
+            "phoneticTranscription": "Trans-por-chee in-ter-mo-dal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mobilidade urbana",
+            "english": "Urban mobility",
+            "phoneticTranscription": "Mo-bee-lee-da-jee oor-ba-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Poluição atmosférica",
+            "english": "Atmospheric pollution",
+            "phoneticTranscription": "Po-loo-ee-sown at-mos-fe-ree-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inversão térmica",
+            "english": "Thermal inversion",
+            "phoneticTranscription": "In-ver-sown ter-mee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ilhas de calor",
+            "english": "Heat islands",
+            "phoneticTranscription": "Ee-lyas de ka-lor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Chuva ácida",
+            "english": "Acid rain",
+            "phoneticTranscription": "Shoo-va a-see-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Degradação do solo",
+            "english": "Soil degradation",
+            "phoneticTranscription": "De-gra-da-sown doo so-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desertificação",
+            "english": "Desertification",
+            "phoneticTranscription": "De-zer-chee-fee-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Salinização",
+            "english": "Salinization",
+            "phoneticTranscription": "Sa-lee-nee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Recuperação de áreas",
+            "english": "Area recovery/reclamation",
+            "phoneticTranscription": "Re-koo-pe-ra-sown de a-ryas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fitoextração",
+            "english": "Phytoextraction",
+            "phoneticTranscription": "Fee-to-e-stra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biorremediação",
+            "english": "Bioremediation",
+            "phoneticTranscription": "Byo-he-me-jya-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tecnologia ambiental",
+            "english": "Environmental technology",
+            "phoneticTranscription": "Tek-no-lo-zhyah am-byen-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Eco-inovação",
+            "english": "Eco-innovation",
+            "phoneticTranscription": "E-ko-ee-no-va-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Selos ecológicos",
+            "english": "Eco-labels",
+            "phoneticTranscription": "Se-loos e-ko-lo-zhee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Certificação ambiental",
+            "english": "Environmental certification",
+            "phoneticTranscription": "Ser-chee-fee-ka-sown am-byen-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Protocolo de Quioto",
+            "english": "Kyoto Protocol",
+            "phoneticTranscription": "Pro-to-ko-loo de Ky-o-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acordo de Paris",
+            "english": "Paris Agreement",
+            "phoneticTranscription": "A-kor-doo de Pa-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conferência das Partes",
+            "english": "Conference of the Parties (COP)",
+            "phoneticTranscription": "Kon-fe-ren-syah das Par-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metas de redução",
+            "english": "Reduction targets",
+            "phoneticTranscription": "Me-tas de he-doo-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Créditos de carbono",
+            "english": "Carbon credits",
+            "phoneticTranscription": "Kre-jee-toos de kar-bo-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mercado voluntário",
+            "english": "Voluntary market",
+            "phoneticTranscription": "Mer-ka-doo vo-loon-ta-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Responsabilidade social",
+            "english": "Social responsibility",
+            "phoneticTranscription": "Hes-pon-sa-bee-lee-da-jee so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Governança corporativa",
+            "english": "Corporate governance",
+            "phoneticTranscription": "Go-ver-nan-sa kor-po-ra-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Investimento de impacto",
+            "english": "Impact investment",
+            "phoneticTranscription": "In-ves-chee-men-too de im-pak-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Filantropia estratégica",
+            "english": "Strategic philanthropy",
+            "phoneticTranscription": "Fee-lan-tro-pee-a es-tra-te-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ética ambiental",
+            "english": "Environmental ethics",
+            "phoneticTranscription": "E-chee-ka am-byen-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direito ambiental",
+            "english": "Environmental law",
+            "phoneticTranscription": "Jee-ray-too am-byen-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Crime ambiental",
+            "english": "Environmental crime",
+            "phoneticTranscription": "Kree-mee am-byen-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tribunal de Justiça",
+            "english": "Court of Justice",
+            "phoneticTranscription": "Tree-boo-nal de zhoos-chee-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ministério do Meio Ambiente",
+            "english": "Ministry of Environment",
+            "phoneticTranscription": "Mee-nees-te-ryoo doo may-oo am-byen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Órgãos fiscalizadores",
+            "english": "Regulatory bodies",
+            "phoneticTranscription": "Or-gown-ees fees-ka-lee-za-do-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Licenciamento ambiental",
+            "english": "Environmental licensing",
+            "phoneticTranscription": "Lee-sen-sya-men-too am-byen-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Relatório de impacto",
+            "english": "Impact report",
+            "phoneticTranscription": "He-la-to-ryoo de im-pak-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Audiência pública",
+            "english": "Public hearing",
+            "phoneticTranscription": "Aw-jy-en-syah poo-blee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Engajamento local",
+            "english": "Local engagement",
+            "phoneticTranscription": "En-ga-zha-men-too lo-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Empoderamento comunitário",
+            "english": "Community empowerment",
+            "phoneticTranscription": "Em-po-de-ra-men-too ko-moo-nee-ta-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Povos tradicionais",
+            "english": "Traditional peoples",
+            "phoneticTranscription": "Po-voos tra-jee-syo-nays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Terras indígenas",
+            "english": "Indigenous lands",
+            "phoneticTranscription": "Te-has in-jee-zhe-nas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Demarcação de terras",
+            "english": "Land demarcation",
+            "phoneticTranscription": "De-mar-ka-sown de te-has",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conflito agrário",
+            "english": "Agrarian conflict",
+            "phoneticTranscription": "Kon-flee-too a-gra-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reforma agrária",
+            "english": "Land reform",
+            "phoneticTranscription": "He-for-ma a-gra-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desenvolvimento rural",
+            "english": "Rural development",
+            "phoneticTranscription": "De-zen-vol-vee-men-too roo-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Extensão rural",
+            "english": "Rural extension",
+            "phoneticTranscription": "Es-ten-sown roo-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cooperativa agrícola",
+            "english": "Agricultural cooperative",
+            "phoneticTranscription": "Koo-pe-ra-chee-va a-gree-ko-la",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Petróleo",
+        "correctVersion": "Means 'Oil (crude/petroleum)'. For 'Cooking oil', use 'Óleo'.",
+        "explanation": "Trap level: Low"
+    }
+}

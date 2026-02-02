@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a2_m07",
+    "theme": "Shopping, Fashion & E-commerce",
+    "order": 17,
+    "lessons": [
+        {
+            "targetText": "Comércio eletrônico",
+            "english": "E-commerce",
+            "phoneticTranscription": "Ko-mer-syoo e-le-tro-nee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Varejo",
+            "english": "Retail",
+            "phoneticTranscription": "Va-re-zhoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atacado",
+            "english": "Wholesale",
+            "phoneticTranscription": "A-ta-ka-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consumidor",
+            "english": "Consumer",
+            "phoneticTranscription": "Kon-soo-mee-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carrinho de compras",
+            "english": "Shopping cart",
+            "phoneticTranscription": "Ka-hee-nyoo de kom-pras",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Checkout",
+            "english": "Checkout",
+            "phoneticTranscription": "She-kow-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Forma de pagamento",
+            "english": "Payment method",
+            "phoneticTranscription": "For-ma de pa-ga-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Boleto bancário",
+            "english": "Bank slip/invoice",
+            "phoneticTranscription": "Bo-le-too ban-ka-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cartão de débito",
+            "english": "Debit card",
+            "phoneticTranscription": "Kar-town de de-bee-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Parcelamento",
+            "english": "Installment payment",
+            "phoneticTranscription": "Par-se-la-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Juros",
+            "english": "Interest",
+            "phoneticTranscription": "Zhoo-roos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desconto progressivo",
+            "english": "Progressive discount",
+            "phoneticTranscription": "Des-kon-too pro-gre-see-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cupom promocional",
+            "english": "Promo coupon",
+            "phoneticTranscription": "Koo-pon pro-mo-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Oferta relâmpago",
+            "english": "Flash offer",
+            "phoneticTranscription": "O-fer-ta he-lam-pa-goo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Liquidação",
+            "english": "Liquidation/Clearance sale",
+            "phoneticTranscription": "Lee-kwee-da-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estoque disponível",
+            "english": "Available stock",
+            "phoneticTranscription": "Es-to-kee dees-po-nee-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prazo de entrega",
+            "english": "Delivery deadline",
+            "phoneticTranscription": "Pra-zoo de en-tre-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Frete grátis",
+            "english": "Free shipping",
+            "phoneticTranscription": "Fre-chee gra-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rastreamento",
+            "english": "Tracking",
+            "phoneticTranscription": "Has-tra-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transportadora",
+            "english": "Carrier/Shipping company",
+            "phoneticTranscription": "Trans-por-ta-do-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Logística reversa",
+            "english": "Reverse logistics",
+            "phoneticTranscription": "Lo-zhees-chee-ka he-ver-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Devolução",
+            "english": "Return",
+            "phoneticTranscription": "De-vo-loo-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Troca de produto",
+            "english": "Product exchange",
+            "phoneticTranscription": "Tro-ka de pro-doo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Garantia estendida",
+            "english": "Extended warranty",
+            "phoneticTranscription": "Ga-ran-chee-a es-ten-jee-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nota fiscal",
+            "english": "Invoice/Receipt",
+            "phoneticTranscription": "No-ta fees-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atendimento ao cliente",
+            "english": "Customer service",
+            "phoneticTranscription": "A-ten-jee-men-too aw klee-en-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fidelização",
+            "english": "Loyalty program",
+            "phoneticTranscription": "Fee-de-lee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tendência de moda",
+            "english": "Fashion trend",
+            "phoneticTranscription": "Ten-den-syah de mo-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estilista",
+            "english": "Stylist/Designer",
+            "phoneticTranscription": "Es-chee-lees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alta costura",
+            "english": "Haute couture",
+            "phoneticTranscription": "Al-ta kos-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prêt-à-porter",
+            "english": "Ready-to-wear",
+            "phoneticTranscription": "Pre-ta-por-te",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desfile de moda",
+            "english": "Fashion show",
+            "phoneticTranscription": "Des-fee-lee de mo-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Passarela",
+            "english": "Runway",
+            "phoneticTranscription": "Pa-sa-re-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Modelo fotográfico",
+            "english": "Photo model",
+            "phoneticTranscription": "Mo-de-loo fo-to-gra-fee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Manequim",
+            "english": "Mannequin/Model size",
+            "phoneticTranscription": "Ma-ne-keem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tecido sintético",
+            "english": "Synthetic fabric",
+            "phoneticTranscription": "Te-see-doo seen-te-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Algodão orgânico",
+            "english": "Organic cotton",
+            "phoneticTranscription": "Al-go-down or-ga-nee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Seda natural",
+            "english": "Natural silk",
+            "phoneticTranscription": "Se-da na-too-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lã cardada",
+            "english": "Carded wool",
+            "phoneticTranscription": "La kar-da-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Linho",
+            "english": "Linen",
+            "phoneticTranscription": "Lee-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Veludo",
+            "english": "Velvet",
+            "phoneticTranscription": "Ve-loo-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Couro legítimo",
+            "english": "Genuine leather",
+            "phoneticTranscription": "Kow-roo le-zhee-chee-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estampa",
+            "english": "Print/Pattern",
+            "phoneticTranscription": "Es-tam-pa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Listrado",
+            "english": "Striped",
+            "phoneticTranscription": "Lees-tra-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estampa Pied-de-poule",
+            "english": "Houndstooth pattern",
+            "phoneticTranscription": "Es-tam-pa pye-de-pool",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Poá",
+            "english": "Polka dot",
+            "phoneticTranscription": "Po-ah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bordado",
+            "english": "Embroidery",
+            "phoneticTranscription": "Bor-da-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Renda",
+            "english": "Lace/Income",
+            "phoneticTranscription": "Hen-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Costura invisível",
+            "english": "Invisible stitching",
+            "phoneticTranscription": "Kos-too-ra in-vee-zee-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bainha",
+            "english": "Hem",
+            "phoneticTranscription": "Ba-ee-nya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gola V",
+            "english": "V-neck",
+            "phoneticTranscription": "Go-la ve",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Decote",
+            "english": "Cleavage/Neckline",
+            "phoneticTranscription": "De-ko-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Manga longa",
+            "english": "Long sleeve",
+            "phoneticTranscription": "Man-ga lon-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Punho",
+            "english": "Cuff/Wrist",
+            "phoneticTranscription": "Poo-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Zíper",
+            "english": "Zipper",
+            "phoneticTranscription": "Zee-per",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Botão",
+            "english": "Button",
+            "phoneticTranscription": "Bo-town",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fivela",
+            "english": "Buckle",
+            "phoneticTranscription": "Fee-ve-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acessório",
+            "english": "Accessory",
+            "phoneticTranscription": "A-se-so-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bijuteria",
+            "english": "Costume jewelry",
+            "phoneticTranscription": "Bee-zhoo-te-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Joalheria",
+            "english": "Jewelry shop/Jewelry",
+            "phoneticTranscription": "Zho-a-lye-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tornozeleira",
+            "english": "Anklet",
+            "phoneticTranscription": "Tor-no-ze-lay-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Brinco de pérola",
+            "english": "Pearl earring",
+            "phoneticTranscription": "Breen-koo de pe-ro-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gargantilha",
+            "english": "Choker",
+            "phoneticTranscription": "Gar-gan-chee-lya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Anel de compromisso",
+            "english": "Promise ring",
+            "phoneticTranscription": "A-nel de kom-pro-mee-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Relógio de pulso",
+            "english": "Wristwatch",
+            "phoneticTranscription": "Re-lo-zhyoo de pool-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bolsa de mão",
+            "english": "Handbag",
+            "phoneticTranscription": "Bol-sa de mawn",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mochila escolar",
+            "english": "School backpack",
+            "phoneticTranscription": "Mo-shee-la es-ko-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carteira de couro",
+            "english": "Leather wallet",
+            "phoneticTranscription": "Kar-tay-ra de kow-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cinto de couro",
+            "english": "Leather belt",
+            "phoneticTranscription": "Seen-too de kow-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Óculos de sol",
+            "english": "Sunglasses",
+            "phoneticTranscription": "O-koo-loos de sol",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Provedor de serviços",
+            "english": "Service provider",
+            "phoneticTranscription": "Pro-ve-dor de ser-vee-soos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estadia prolongada",
+            "english": "Extended stay",
+            "phoneticTranscription": "Es-ta-jya pro-lon-ga-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Assinatura mensal",
+            "english": "Monthly subscription",
+            "phoneticTranscription": "A-see-na-too-ra men-sal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Anulação",
+            "english": "Annulling/Cancellation",
+            "phoneticTranscription": "A-noo-la-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Revogação",
+            "english": "Revocation",
+            "phoneticTranscription": "Re-vo-ga-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Taxa de serviço",
+            "english": "Service fee",
+            "phoneticTranscription": "Ta-sha de ser-vee-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comissão",
+            "english": "Commission",
+            "phoneticTranscription": "Ko-mee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Faturamento líquido",
+            "english": "Net revenue",
+            "phoneticTranscription": "Fa-too-ra-men-too lee-kee-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Margem de lucro",
+            "english": "Profit margin",
+            "phoneticTranscription": "Mar-zhem de loo-kroo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Investidor anjo",
+            "english": "Angel investor",
+            "phoneticTranscription": "In-ves-chee-dor an-zhoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Startup inovadora",
+            "english": "Innovative startup",
+            "phoneticTranscription": "Star-tap ee-no-va-do-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Plano de negócios",
+            "english": "Business plan",
+            "phoneticTranscription": "Pla-noo de ne-go-syoos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Marketing de influência",
+            "english": "Influence marketing",
+            "phoneticTranscription": "Mar-ke-cheen de in-floo-en-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rede de afiliados",
+            "english": "Affiliate network",
+            "phoneticTranscription": "He-jee de a-fee-lyah-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conversão",
+            "english": "Conversion",
+            "phoneticTranscription": "Kon-ver-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tráfego pago",
+            "english": "Paid traffic",
+            "phoneticTranscription": "Tra-fe-goo pa-goo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aderência",
+            "english": "Adherence/Buy-in",
+            "phoneticTranscription": "A-de-ren-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alcance",
+            "english": "Reach",
+            "phoneticTranscription": "Al-kan-see",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Impressão",
+            "english": "Impression",
+            "phoneticTranscription": "Im-pre-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Visualização",
+            "english": "View/Visualization",
+            "phoneticTranscription": "Vee-zoo-a-lee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sustentabilidade",
+            "english": "Sustainability",
+            "phoneticTranscription": "Soos-ten-ta-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Eco-friendly",
+            "english": "Eco-friendly",
+            "phoneticTranscription": "E-ko-fren-dlee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reciclagem",
+            "english": "Recycling",
+            "phoneticTranscription": "Re-se-kla-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biodegradável",
+            "english": "Biodegradable",
+            "phoneticTranscription": "Byo-de-gra-da-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ética no consumo",
+            "english": "Ethics in consumption",
+            "phoneticTranscription": "E-chee-ka no kon-soo-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transparência",
+            "english": "Transparency",
+            "phoneticTranscription": "Trans-pa-ren-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Governança",
+            "english": "Governance",
+            "phoneticTranscription": "Go-ver-nan-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Compliance",
+            "english": "Compliance",
+            "phoneticTranscription": "Kom-ply-an-see",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inovação disruptiva",
+            "english": "Disruptive innovation",
+            "phoneticTranscription": "Ee-no-va-sown jees-roop-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escalabilidade",
+            "english": "Scalability",
+            "phoneticTranscription": "Es-ka-la-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Custo",
+        "correctVersion": "Means 'Cost'. For 'Custom/Personalized', use 'Personalizado'.",
+        "explanation": "Trap level: Medium"
+    }
+}

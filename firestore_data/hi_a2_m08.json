@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a2_m08",
+    "language": "hi",
+    "level": "a2",
+    "theme": "Arts, Culture & History",
+    "order": 18,
+    "lessons": [
+        {
+            "word": "सभ्यता",
+            "translation": "Civilization",
+            "phonetic": "Sabhyata"
+        },
+        {
+            "word": "पुराकथा",
+            "translation": "History / Ancient tale (Formal)",
+            "phonetic": "Purakatha"
+        },
+        {
+            "word": "पुरातत्व",
+            "translation": "Archeology",
+            "phonetic": "Puratatva"
+        },
+        {
+            "word": "स्थापत्य",
+            "translation": "Architecture",
+            "phonetic": "Sthapatya"
+        },
+        {
+            "word": "तक्षण",
+            "translation": "Sculpture Art / Carving (Formal)",
+            "phonetic": "Takshan"
+        },
+        {
+            "word": "चित्रकला",
+            "translation": "Painting Art",
+            "phonetic": "Chitrakala"
+        },
+        {
+            "word": "हस्तशिल्प",
+            "translation": "Handicrafts",
+            "phonetic": "Hastashilp"
+        },
+        {
+            "word": "लोककला",
+            "translation": "Folk Art",
+            "phonetic": "Lokkala"
+        },
+        {
+            "word": "शास्त्रीय",
+            "translation": "Classical",
+            "phonetic": "Shastriya"
+        },
+        {
+            "word": "वाद्ययंत्र",
+            "translation": "Musical instrument",
+            "phonetic": "Vadyayantra"
+        },
+        {
+            "word": "गान क्रिया",
+            "translation": "Singing activity (Formal)",
+            "phonetic": "Gaan kriya"
+        },
+        {
+            "word": "नर्तन",
+            "translation": "Dance (Formal Sanskrit)",
+            "phonetic": "Nartan"
+        },
+        {
+            "word": "अभिनय",
+            "translation": "Acting",
+            "phonetic": "Abhinay"
+        },
+        {
+            "word": "मंचन",
+            "translation": "Staging / Production",
+            "phonetic": "Manchan"
+        },
+        {
+            "word": "कथानक",
+            "translation": "Plot / Project (Literary)",
+            "phonetic": "Kathanak"
+        },
+        {
+            "word": "पात्र",
+            "translation": "Character / Vessel",
+            "phonetic": "Patra"
+        },
+        {
+            "word": "रूपक",
+            "translation": "Metaphor / Drama",
+            "phonetic": "Roopak"
+        },
+        {
+            "word": "छंद",
+            "translation": "Metre / Verse",
+            "phonetic": "Chhand"
+        },
+        {
+            "word": "अलंकार",
+            "translation": "Figure of speech / Ornament",
+            "phonetic": "Alankar"
+        },
+        {
+            "word": "सृजन",
+            "translation": "Creation / Composition (Formal)",
+            "phonetic": "Srijan"
+        },
+        {
+            "word": "गद्य-काव्य",
+            "translation": "Novel / Prose-poetry (Formal)",
+            "phonetic": "Gadya-kavya"
+        },
+        {
+            "word": "प्रबंध",
+            "translation": "Essay / Thesis (Formal)",
+            "phonetic": "Prabandh"
+        },
+        {
+            "word": "छंदबद्ध",
+            "translation": "Poetry / Verse form (Formal)",
+            "phonetic": "Chhandbaddh"
+        },
+        {
+            "word": "गद्य",
+            "translation": "Prose",
+            "phonetic": "Gadya"
+        },
+        {
+            "word": "पांडुलिपि",
+            "translation": "Manuscript",
+            "phonetic": "Pandulipi"
+        },
+        {
+            "word": "अभिलेख",
+            "translation": "Inscription / Record",
+            "phonetic": "Abhilekh"
+        },
+        {
+            "word": "शिरक्त-वर्णेख",
+            "translation": "Stone inscription",
+            "phonetic": "Shilalekh"
+        },
+        {
+            "word": "स्मारक",
+            "translation": "Monument / Memorial",
+            "phonetic": "Smarak"
+        },
+        {
+            "word": "समाधि",
+            "translation": "Tomb / Final meditation",
+            "phonetic": "Samadhi"
+        },
+        {
+            "word": "प्रासाद",
+            "translation": "Palace (Formal Sanskrit)",
+            "phonetic": "Prasad"
+        },
+        {
+            "word": "दुर्ग",
+            "translation": "Fort / Fortress (Formal)",
+            "phonetic": "Durg"
+        },
+        {
+            "word": "मंदिर",
+            "translation": "Temple",
+            "phonetic": "Mandir"
+        },
+        {
+            "word": "देवालय",
+            "translation": "Abode of God",
+            "phonetic": "Devalay"
+        },
+        {
+            "word": "मठ",
+            "translation": "Monastery / Hermitage",
+            "phonetic": "Math"
+        },
+        {
+            "word": "विहार",
+            "translation": "Promenade / Buddhist dwelling",
+            "phonetic": "Vihar"
+        },
+        {
+            "word": "चैत्य",
+            "translation": "Buddhist prayer hall",
+            "phonetic": "Chaitya"
+        },
+        {
+            "word": "स्तूप",
+            "translation": "Stupa",
+            "phonetic": "Stoop"
+        },
+        {
+            "word": "वेद",
+            "translation": "Veda (Ancient knowledge)",
+            "phonetic": "Ved"
+        },
+        {
+            "word": "उपनिषद",
+            "translation": "Upanishad (Ancient texts)",
+            "phonetic": "Upanishad"
+        },
+        {
+            "word": "गाथा",
+            "translation": "Saga / Epic tale",
+            "phonetic": "Gatha"
+        },
+        {
+            "word": "पुराण",
+            "translation": "Purana / Ancient legend",
+            "phonetic": "Puran"
+        },
+        {
+            "word": "पौराणिक",
+            "translation": "Mythological",
+            "phonetic": "Pauranik"
+        },
+        {
+            "word": "प्राचीन",
+            "translation": "Ancient",
+            "phonetic": "Pracheen"
+        },
+        {
+            "word": "अर्वाचीन",
+            "translation": "Modern / Recent (Formal)",
+            "phonetic": "Arvacheen"
+        },
+        {
+            "word": "मध्यकालीन",
+            "translation": "Medieval",
+            "phonetic": "Madhyakaleen"
+        },
+        {
+            "word": "आधुनिक",
+            "translation": "Modern",
+            "phonetic": "Aadhunik"
+        },
+        {
+            "word": "पुनर्जागरण",
+            "translation": "Renaissance",
+            "phonetic": "Punurjagran"
+        },
+        {
+            "word": "सुधारक",
+            "translation": "Reformer",
+            "phonetic": "Sudharak"
+        },
+        {
+            "word": "क्रांतिकारी",
+            "translation": "Revolutionary",
+            "phonetic": "Krantikari"
+        },
+        {
+            "word": "आंदोलन",
+            "translation": "Movement / Agitation",
+            "phonetic": "Aandolan"
+        },
+        {
+            "word": "धरोहर",
+            "translation": "Heritage / Trust",
+            "phonetic": "Dharohar"
+        },
+        {
+            "word": "पुरासंपदा",
+            "translation": "Museum / Ancient assets (Formal)",
+            "phonetic": "Purasampada"
+        },
+        {
+            "word": "विथिका",
+            "translation": "Gallery / Alley",
+            "phonetic": "Vithika"
+        },
+        {
+            "word": "कला वीथी",
+            "translation": "Art Gallery",
+            "phonetic": "Kala Veethi"
+        },
+        {
+            "word": "प्रदर्शनी",
+            "translation": "Exhibition",
+            "phonetic": "Pradarshani"
+        },
+        {
+            "word": "पर्व",
+            "translation": "Festival / Occasion (Formal)",
+            "phonetic": "Parv"
+        },
+        {
+            "word": "प्रपा",
+            "translation": "Fair / Gathering (Formal Sanskrit)",
+            "phonetic": "Prapa"
+        },
+        {
+            "word": "परंपरा",
+            "translation": "Tradition",
+            "phonetic": "Parampara"
+        },
+        {
+            "word": "रीति-रिवाज",
+            "translation": "Customs",
+            "phonetic": "Reeti-riwaj"
+        },
+        {
+            "word": "संस्कार",
+            "translation": "Sacrament / Rite",
+            "phonetic": "Sanskar"
+        },
+        {
+            "word": "परिणय",
+            "translation": "Marriage / Wedlock",
+            "phonetic": "Parinay"
+        },
+        {
+            "word": "तीर्थ",
+            "translation": "Pilgrimage site",
+            "phonetic": "Teerth"
+        },
+        {
+            "word": "यजमान",
+            "translation": "Host / Patron",
+            "phonetic": "Yajman"
+        },
+        {
+            "word": "दर्शन",
+            "translation": "Philosophy / Vision",
+            "phonetic": "Darshan"
+        },
+        {
+            "word": "आध्यात्मिक",
+            "translation": "Spiritual",
+            "phonetic": "Aadhyatmik"
+        },
+        {
+            "word": "भक्ति",
+            "translation": "Devotion",
+            "phonetic": "Bhakti"
+        },
+        {
+            "word": "मोक्ष",
+            "translation": "Liberation / Salvation",
+            "phonetic": "Moksha"
+        },
+        {
+            "word": "कर्म",
+            "translation": "Action / Deed",
+            "phonetic": "Karma"
+        },
+        {
+            "word": "पुनर्जन्म",
+            "translation": "Reincarnation",
+            "phonetic": "Punurjanm"
+        },
+        {
+            "word": "शूरवीर",
+            "translation": "Warrior / Hero",
+            "phonetic": "Shoorveer"
+        },
+        {
+            "word": "वीरांगना",
+            "translation": "Warrior woman",
+            "phonetic": "Veerangana"
+        },
+        {
+            "word": "बलिदान",
+            "translation": "Sacrifice",
+            "phonetic": "Balidan"
+        },
+        {
+            "word": "शौर्य",
+            "translation": "Valor",
+            "phonetic": "Shaurya"
+        },
+        {
+            "word": "पराक्रम",
+            "translation": "Bravery / Might",
+            "phonetic": "Parakram"
+        },
+        {
+            "word": "दिग्विजय",
+            "translation": "World conquest",
+            "phonetic": "Digvijay"
+        },
+        {
+            "word": "साम्राज्य",
+            "translation": "Empire",
+            "phonetic": "Samrajya"
+        },
+        {
+            "word": "राजवंश",
+            "translation": "Dynasty",
+            "phonetic": "Rajvansh"
+        },
+        {
+            "word": "उत्तराधिकारी",
+            "translation": "Heir / Successor",
+            "phonetic": "Uttaraadhikari"
+        },
+        {
+            "word": "राज्याभिषेक",
+            "translation": "Coronation",
+            "phonetic": "Rajyabhishek"
+        },
+        {
+            "word": "प्रजा",
+            "translation": "Subjects / Citizens",
+            "phonetic": "Praja"
+        },
+        {
+            "word": "जनपद",
+            "translation": "Republic / Territory",
+            "phonetic": "Janpad"
+        },
+        {
+            "word": "मुद्राशास्त्र",
+            "translation": "Numismatics",
+            "phonetic": "Mudrashastra"
+        },
+        {
+            "word": "सिक्के",
+            "translation": "Coins",
+            "phonetic": "Sikke"
+        },
+        {
+            "word": "टकसाल",
+            "translation": "Mint",
+            "phonetic": "Taksal"
+        },
+        {
+            "word": "चित्रकार",
+            "translation": "Painter",
+            "phonetic": "Chitrakar"
+        },
+        {
+            "word": "मूर्तिकार",
+            "translation": "Sculptor",
+            "phonetic": "Moortikar"
+        },
+        {
+            "word": "वास्तुकार",
+            "translation": "Architect",
+            "phonetic": "Vastukar"
+        },
+        {
+            "word": "स्वर्णकार",
+            "translation": "Goldsmith",
+            "phonetic": "Swarnakar"
+        },
+        {
+            "word": "कुंभकार",
+            "translation": "Potter",
+            "phonetic": "Kumbhkar"
+        },
+        {
+            "word": "तंतुवाय",
+            "translation": "Weaver (Formal Sanskrit)",
+            "phonetic": "Tantuvay"
+        },
+        {
+            "word": "चर्मकार",
+            "translation": "Cobbler / Leather worker",
+            "phonetic": "Charmakar"
+        },
+        {
+            "word": "लौहकार",
+            "translation": "Blacksmith",
+            "phonetic": "Lauhkar"
+        },
+        {
+            "word": "वैश्य",
+            "translation": "Trader class",
+            "phonetic": "Vaishya"
+        },
+        {
+            "word": "शूद्र",
+            "translation": "Working class (Historic term)",
+            "phonetic": "Shudra"
+        },
+        {
+            "word": "क्षत्रिय",
+            "translation": "Warrior class",
+            "phonetic": "Kshatriya"
+        },
+        {
+            "word": "ब्राह्मण",
+            "translation": "Priestly/Intellectual class",
+            "phonetic": "Brahmin"
+        },
+        {
+            "word": "संप्रदाय",
+            "translation": "Sect / Community",
+            "phonetic": "Sampraday"
+        },
+        {
+            "word": "पाषाण काल",
+            "translation": "Stone Age",
+            "phonetic": "Pashan Kaal"
+        },
+        {
+            "word": "लौह युग",
+            "translation": "Iron Age",
+            "phonetic": "Lauh Yug"
+        },
+        {
+            "word": "कंस्य युग",
+            "translation": "Bronze Age",
+            "phonetic": "Kansya Yug"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Durg' Defense",
+        "question": "If you are visiting a historical site and it is called a 'Durg' (दुर्ग), what are you looking at?",
+        "options": [
+            "A large temple",
+            "A fortified fort",
+            "A public garden",
+            "A royal palace"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Durg' is the formal Sanskrit word for a fort or fortress, often appearing in the names of historical cities like Chittorgarh or Ranthambore."
+    }
+}

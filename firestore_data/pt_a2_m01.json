@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a2_m01",
+    "theme": "Travel & Transportation",
+    "order": 11,
+    "lessons": [
+        {
+            "targetText": "Passaporte",
+            "english": "Passport",
+            "phoneticTranscription": "Pa-sa-por-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Visto",
+            "english": "Visa",
+            "phoneticTranscription": "Vees-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Embarque",
+            "english": "Boarding",
+            "phoneticTranscription": "Em-bar-kee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desembarque",
+            "english": "Disembarking",
+            "phoneticTranscription": "De-zem-bar-kee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conexão",
+            "english": "Connection",
+            "phoneticTranscription": "Ko-nek-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escala",
+            "english": "Layover",
+            "phoneticTranscription": "Es-ka-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Portão",
+            "english": "Gate",
+            "phoneticTranscription": "Por-town",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pista",
+            "english": "Runway",
+            "phoneticTranscription": "Pees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Decolagem",
+            "english": "Takeoff",
+            "phoneticTranscription": "De-ko-la-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aterrissagem",
+            "english": "Landing",
+            "phoneticTranscription": "A-te-hee-sa-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bagagem",
+            "english": "Luggage",
+            "phoneticTranscription": "Ba-ga-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mala",
+            "english": "Suitcase",
+            "phoneticTranscription": "Ma-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carrinho",
+            "english": "Trolley/Cart",
+            "phoneticTranscription": "Ka-hee-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alfândega",
+            "english": "Customs",
+            "phoneticTranscription": "Al-fan-de-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imigração",
+            "english": "Immigration",
+            "phoneticTranscription": "Ee-mee-gra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Passagem",
+            "english": "Ticket/Passage",
+            "phoneticTranscription": "Pa-sa-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bilhete",
+            "english": "Ticket",
+            "phoneticTranscription": "Bee-lye-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reserva",
+            "english": "Reservation",
+            "phoneticTranscription": "He-zer-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Confirmação",
+            "english": "Confirmation",
+            "phoneticTranscription": "Kon-feer-ma-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atraso",
+            "english": "Delay",
+            "phoneticTranscription": "A-tra-zoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cancelamento",
+            "english": "Cancellation",
+            "phoneticTranscription": "Kan-se-la-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Destino",
+            "english": "Destination",
+            "phoneticTranscription": "Des-chee-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Origem",
+            "english": "Origin",
+            "phoneticTranscription": "O-ree-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Passageiro",
+            "english": "Passenger",
+            "phoneticTranscription": "Pa-sa-zhay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tripulação",
+            "english": "Crew",
+            "phoneticTranscription": "Tree-poo-la-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comissário",
+            "english": "Flight attendant",
+            "phoneticTranscription": "Ko-mee-sa-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Piloto",
+            "english": "Pilot",
+            "phoneticTranscription": "Pee-lo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Copiloto",
+            "english": "Co-pilot",
+            "phoneticTranscription": "Ko-pee-lo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Assento",
+            "english": "Seat",
+            "phoneticTranscription": "A-sen-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Poltrona",
+            "english": "Seat (plane/bus)",
+            "phoneticTranscription": "Pol-tro-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Corredor",
+            "english": "Aisle",
+            "phoneticTranscription": "Ko-he-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Classe econômica",
+            "english": "Economy class",
+            "phoneticTranscription": "Kla-see e-ko-no-mee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Classe executiva",
+            "english": "Business class",
+            "phoneticTranscription": "Kla-see e-ze-koo-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Primeira classe",
+            "english": "First class",
+            "phoneticTranscription": "Pree-may-ra kla-see",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cartão de embarque",
+            "english": "Boarding pass",
+            "phoneticTranscription": "Kar-town de em-bar-kee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Check-in",
+            "english": "Check-in",
+            "phoneticTranscription": "Shek-een",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Check-out",
+            "english": "Check-out",
+            "phoneticTranscription": "Shek-owt",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Recepção",
+            "english": "Reception",
+            "phoneticTranscription": "He-sep-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hospedagem",
+            "english": "Lodging",
+            "phoneticTranscription": "Os-pe-da-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acomodação",
+            "english": "Accommodation",
+            "phoneticTranscription": "A-ko-mo-da-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pousada",
+            "english": "Inn",
+            "phoneticTranscription": "Pow-za-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resort",
+            "english": "Resort",
+            "phoneticTranscription": "He-zor-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Albergue",
+            "english": "Hostel",
+            "phoneticTranscription": "Al-ber-gee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tarifa",
+            "english": "Fare",
+            "phoneticTranscription": "Ta-ree-fa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imposto",
+            "english": "Tax",
+            "phoneticTranscription": "Im-pos-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Assistência",
+            "english": "Assistance",
+            "phoneticTranscription": "A-see-sten-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Itinerário",
+            "english": "Itinerary",
+            "phoneticTranscription": "Ee-chee-ne-ra-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Roteiro",
+            "english": "Route/Tour plan",
+            "phoneticTranscription": "Ho-tay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Guia",
+            "english": "Guide",
+            "phoneticTranscription": "Gee-ah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Excursão",
+            "english": "Excursion",
+            "phoneticTranscription": "Es-koor-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Passeio",
+            "english": "Tour/Walk",
+            "phoneticTranscription": "Pa-say-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Traslado",
+            "english": "Transfer",
+            "phoneticTranscription": "Tras-la-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aluguel",
+            "english": "Rent",
+            "phoneticTranscription": "A-loo-gel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Locação",
+            "english": "Leasing",
+            "phoneticTranscription": "Lo-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Veículo",
+            "english": "Vehicle",
+            "phoneticTranscription": "Ve-ee-koo-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Automóvel",
+            "english": "Automobile",
+            "phoneticTranscription": "Aw-to-mo-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Caminhonete",
+            "english": "Pickup truck",
+            "phoneticTranscription": "Ka-mee-nyo-ne-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Motocicleta",
+            "english": "Motorcycle",
+            "phoneticTranscription": "Mo-to-see-kle-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Scooter",
+            "english": "Scooter",
+            "phoneticTranscription": "Sku-ter",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Capacete",
+            "english": "Helmet",
+            "phoneticTranscription": "Ka-pa-se-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Combustível",
+            "english": "Fuel",
+            "phoneticTranscription": "Kom-boos-chee-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diesel",
+            "english": "Diesel",
+            "phoneticTranscription": "Jee-zel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lubrificante",
+            "english": "Lubricant",
+            "phoneticTranscription": "Loo-bree-fee-kan-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pneu",
+            "english": "Tire",
+            "phoneticTranscription": "Pne-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Motor",
+            "english": "Engine",
+            "phoneticTranscription": "Mo-tor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Freio",
+            "english": "Brake",
+            "phoneticTranscription": "Fray-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acelerador",
+            "english": "Accelerator",
+            "phoneticTranscription": "A-se-le-ra-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Volante",
+            "english": "Steering wheel",
+            "phoneticTranscription": "Vo-lan-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Marcha",
+            "english": "Gear",
+            "phoneticTranscription": "Mar-sha",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Farol",
+            "english": "Headlight/Lighthouse",
+            "phoneticTranscription": "Fa-rol",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sinalização",
+            "english": "Signage",
+            "phoneticTranscription": "See-na-lee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Radar",
+            "english": "Radar/Speed camera",
+            "phoneticTranscription": "Ra-dar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Multa",
+            "english": "Fine",
+            "phoneticTranscription": "Mool-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pedágio",
+            "english": "Toll",
+            "phoneticTranscription": "Pe-da-zhyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rodovia",
+            "english": "Highway",
+            "phoneticTranscription": "Ho-do-vee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Autoestrada",
+            "english": "Motorway",
+            "phoneticTranscription": "Aw-to-es-tra-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Viaduto",
+            "english": "Viaduct",
+            "phoneticTranscription": "Vya-doo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Túnel",
+            "english": "Tunnel",
+            "phoneticTranscription": "Too-nel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cais",
+            "english": "Pier/Quay",
+            "phoneticTranscription": "Kays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Porto",
+            "english": "Port",
+            "phoneticTranscription": "Por-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Navio",
+            "english": "Ship",
+            "phoneticTranscription": "Na-vee-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cruzeiro",
+            "english": "Cruise",
+            "phoneticTranscription": "Kroo-zay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Balsa",
+            "english": "Ferry",
+            "phoneticTranscription": "Bal-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Barco",
+            "english": "Boat",
+            "phoneticTranscription": "Bar-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lancha",
+            "english": "Motorboat",
+            "phoneticTranscription": "Lan-sha",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Veleiro",
+            "english": "Sailboat",
+            "phoneticTranscription": "Ve-lay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Âncora",
+            "english": "Anchor",
+            "phoneticTranscription": "An-ko-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bússola",
+            "english": "Compass",
+            "phoneticTranscription": "Boos-so-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Navegação",
+            "english": "Navigation",
+            "phoneticTranscription": "Na-ve-ga-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Embarcação",
+            "english": "Vessel",
+            "phoneticTranscription": "Em-bar-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tripulante",
+            "english": "Crew member",
+            "phoneticTranscription": "Tree-poo-lan-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trem",
+            "english": "Train",
+            "phoneticTranscription": "Trem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vagão",
+            "english": "Carriage/Wagon",
+            "phoneticTranscription": "Va-gown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trilhos",
+            "english": "Tracks",
+            "phoneticTranscription": "Tree-lyoos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Locomotiva",
+            "english": "Locomotive",
+            "phoneticTranscription": "Lo-ko-mo-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bilheteria",
+            "english": "Ticket office",
+            "phoneticTranscription": "Bee-lye-te-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Guichê",
+            "english": "Ticket window/Counter",
+            "phoneticTranscription": "Ghee-she",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Plataforma",
+            "english": "Platform",
+            "phoneticTranscription": "Pla-ta-for-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bagageiro",
+            "english": "Luggage rack/Trunk",
+            "phoneticTranscription": "Ba-ga-zhay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Terminal",
+            "english": "Terminal",
+            "phoneticTranscription": "Ter-mee-nal",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Balcão",
+        "correctVersion": "Means a 'Counter', do not confuse with 'Balcony' (which is 'Varanda').",
+        "explanation": "Trap level: Medium"
+    }
+}

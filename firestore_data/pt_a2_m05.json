@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a2_m05",
+    "theme": "Leisure, Sports & Hobbies",
+    "order": 15,
+    "lessons": [
+        {
+            "targetText": "Lazer",
+            "english": "Leisure",
+            "phoneticTranscription": "La-zer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Entretenimento",
+            "english": "Entertainment",
+            "phoneticTranscription": "En-tre-te-nee-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Passatempo",
+            "english": "Pastime",
+            "phoneticTranscription": "Pa-sa-tem-poo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hobby",
+            "english": "Hobby",
+            "phoneticTranscription": "Ho-bee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Divertimento",
+            "english": "Fun/Amusement",
+            "phoneticTranscription": "Dee-ver-chee-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Recreação",
+            "english": "Recreation",
+            "phoneticTranscription": "He-kre-a-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Esporte radical",
+            "english": "Extreme sport",
+            "phoneticTranscription": "Es-por-chee ha-jee-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Competição esportiva",
+            "english": "Sports competition",
+            "phoneticTranscription": "Kom-pe-chee-sown es-por-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Campeonato",
+            "english": "Championship",
+            "phoneticTranscription": "Kam-pe-o-na-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Torneio",
+            "english": "Tournament",
+            "phoneticTranscription": "Tor-nay-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Partida",
+            "english": "Match/Game",
+            "phoneticTranscription": "Par-chee-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Placar",
+            "english": "Scoreboard/Score",
+            "phoneticTranscription": "Pla-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Empate",
+            "english": "Tie/Draw",
+            "phoneticTranscription": "Em-pa-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vitória",
+            "english": "Victory",
+            "phoneticTranscription": "Vee-to-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Derrota",
+            "english": "Defeat",
+            "phoneticTranscription": "De-ho-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atleta",
+            "english": "Athlete",
+            "phoneticTranscription": "A-tle-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Treinador",
+            "english": "Coach/Trainer",
+            "phoneticTranscription": "Tray-na-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Árbitro",
+            "english": "Referee/Umpire",
+            "phoneticTranscription": "Ar-bee-troo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estádio",
+            "english": "Stadium",
+            "phoneticTranscription": "Es-ta-jyo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ginásio",
+            "english": "Gymnasium",
+            "phoneticTranscription": "Zhee-na-zyo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Quadra",
+            "english": "Court",
+            "phoneticTranscription": "Kwa-dra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Campo de futebol",
+            "english": "Soccer field",
+            "phoneticTranscription": "Kam-poo de foo-te-bol",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Piscina olímpica",
+            "english": "Olympic pool",
+            "phoneticTranscription": "Pee-see-na o-leem-pee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pista de atletismo",
+            "english": "Athletics track",
+            "phoneticTranscription": "Pees-ta de a-tle-chees-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Equipamento",
+            "english": "Equipment",
+            "phoneticTranscription": "E-kee-pa-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Uniforme",
+            "english": "Uniform",
+            "phoneticTranscription": "Oo-nee-for-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Chuteira",
+            "english": "Soccer shoes/Cleats",
+            "phoneticTranscription": "Shoo-tay-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Raquete",
+            "english": "Racket",
+            "phoneticTranscription": "Ha-ke-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prancha de surfe",
+            "english": "Surfboard",
+            "phoneticTranscription": "Pran-sha de soor-fee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Esqui",
+            "english": "Skiing",
+            "phoneticTranscription": "Es-kee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Patinação",
+            "english": "Skating",
+            "phoneticTranscription": "Pa-chee-na-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ciclismo",
+            "english": "Cycling",
+            "phoneticTranscription": "See-klees-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Natação",
+            "english": "Swimming",
+            "phoneticTranscription": "Na-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Musculação",
+            "english": "Weightlifting/Bodybuilding",
+            "phoneticTranscription": "Moos-koo-la-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ginástica",
+            "english": "Gymnastics",
+            "phoneticTranscription": "Zhee-nas-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ioga",
+            "english": "Yoga",
+            "phoneticTranscription": "Yo-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Caminhada",
+            "english": "Walking/Hiking",
+            "phoneticTranscription": "Ka-mee-nya-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trilha",
+            "english": "Trail",
+            "phoneticTranscription": "Tree-lya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acampamento",
+            "english": "Camping",
+            "phoneticTranscription": "A-kam-pa-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pescaria",
+            "english": "Fishing",
+            "phoneticTranscription": "Pes-ka-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Instrumento musical",
+            "english": "Musical instrument",
+            "phoneticTranscription": "In-stroo-men-too moo-zee-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Violão",
+            "english": "Acoustic guitar",
+            "phoneticTranscription": "Vyo-lown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Guitarra elétrica",
+            "english": "Electric guitar",
+            "phoneticTranscription": "Gee-ta-ha e-le-tree-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Piano",
+            "english": "Piano",
+            "phoneticTranscription": "Pyah-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Teclado musical",
+            "english": "Keyboard (music)",
+            "phoneticTranscription": "Te-kla-doo moo-zee-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bateria",
+            "english": "Drums",
+            "phoneticTranscription": "Ba-te-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Contrabaixo",
+            "english": "Double bass",
+            "phoneticTranscription": "Kon-tra-bye-shoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Violino",
+            "english": "Violin",
+            "phoneticTranscription": "Vyo-lee-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Flauta",
+            "english": "Flute",
+            "phoneticTranscription": "Flaw-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Saxofone",
+            "english": "Saxophone",
+            "phoneticTranscription": "Sak-so-fo-nee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trompete",
+            "english": "Trumpet",
+            "phoneticTranscription": "Trom-pe-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Canto",
+            "english": "Singing",
+            "phoneticTranscription": "Kan-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coral",
+            "english": "Choir",
+            "phoneticTranscription": "Ko-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ensaio",
+            "english": "Rehearsal",
+            "phoneticTranscription": "En-sigh-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Concerto",
+            "english": "Concert",
+            "phoneticTranscription": "Kon-ser-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Show",
+            "english": "Show/Performance",
+            "phoneticTranscription": "Show",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Espetáculo",
+            "english": "Spectacle/Show",
+            "phoneticTranscription": "Es-pe-ta-koo-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dramaturgia",
+            "english": "Dramaturgy/Playwriting",
+            "phoneticTranscription": "Dra-ma-toor-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cinematografia",
+            "english": "Cinematography",
+            "phoneticTranscription": "See-ne-ma-to-gra-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Filme",
+            "english": "Movie",
+            "phoneticTranscription": "Feel-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Série",
+            "english": "Series",
+            "phoneticTranscription": "Se-ryee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Documentário",
+            "english": "Documentary",
+            "phoneticTranscription": "Do-koo-men-ta-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Animação",
+            "english": "Animation",
+            "phoneticTranscription": "A-nee-ma-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fotografia",
+            "english": "Photography",
+            "phoneticTranscription": "Fo-to-gra-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Câmera",
+            "english": "Camera",
+            "phoneticTranscription": "Ka-me-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lente",
+            "english": "Lens",
+            "phoneticTranscription": "Len-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Flash",
+            "english": "Flash",
+            "phoneticTranscription": "Fle-she",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pintura",
+            "english": "Painting",
+            "phoneticTranscription": "Peen-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escultura",
+            "english": "Sculpture",
+            "phoneticTranscription": "Es-kool-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desenho",
+            "english": "Drawing",
+            "phoneticTranscription": "De-ze-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Artesanato",
+            "english": "Handicraft",
+            "phoneticTranscription": "Ar-te-za-na-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Costura",
+            "english": "Sewing",
+            "phoneticTranscription": "Kos-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tricô",
+            "english": "Knitting",
+            "phoneticTranscription": "Tree-ko",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Crochê",
+            "english": "Crochet",
+            "phoneticTranscription": "Kro-she",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Culinária",
+            "english": "Cooking/Culinary",
+            "phoneticTranscription": "Koo-lee-na-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gastronomia",
+            "english": "Gastronomy",
+            "phoneticTranscription": "Gas-tro-no-mee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Jardinagem",
+            "english": "Gardening",
+            "phoneticTranscription": "Zhar-jee-na-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bibliografia",
+            "english": "Bibliography",
+            "phoneticTranscription": "Bee-blyo-gra-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Caligrafia",
+            "english": "Calligraphy",
+            "phoneticTranscription": "Ka-lee-gra-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Poesia",
+            "english": "Poetry",
+            "phoneticTranscription": "Po-e-zee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Antologia",
+            "english": "Anthology",
+            "phoneticTranscription": "An-to-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coleção",
+            "english": "Collection",
+            "phoneticTranscription": "Ko-le-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Antiguidade",
+            "english": "Antiquity/Antique",
+            "phoneticTranscription": "An-chee-gee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Numismática",
+            "english": "Numismatics/Coin collecting",
+            "phoneticTranscription": "Noo-mees-ma-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Filatelia",
+            "english": "Philately/Stamp collecting",
+            "phoneticTranscription": "Fee-la-te-lyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Jogos de tabuleiro",
+            "english": "Board games",
+            "phoneticTranscription": "Zho-goos de ta-boo-lay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Xadrez",
+            "english": "Chess",
+            "phoneticTranscription": "Sha-dres",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Damas",
+            "english": "Checkers",
+            "phoneticTranscription": "Da-mas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cartas/Baralho",
+            "english": "Cards",
+            "phoneticTranscription": "Kar-tas / Ba-ra-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Videogame",
+            "english": "Video game",
+            "phoneticTranscription": "Vee-jyo-gay-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Console",
+            "english": "Console",
+            "phoneticTranscription": "Kon-so-lee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Controle",
+            "english": "Controller",
+            "phoneticTranscription": "Kon-tro-lee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Realidade virtual",
+            "english": "Virtual reality",
+            "phoneticTranscription": "Re-a-lee-da-jee veer-too-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Turismo de aventura",
+            "english": "Adventure tourism",
+            "phoneticTranscription": "Too-rees-moo de a-ven-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Parque de diversões",
+            "english": "Amusement park",
+            "phoneticTranscription": "Par-kee de jee-ver-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Montanha-russa",
+            "english": "Roller coaster",
+            "phoneticTranscription": "Mon-ta-nya hoo-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Roda-gigante",
+            "english": "Ferris wheel",
+            "phoneticTranscription": "Ho-da zhee-gan-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Safari",
+            "english": "Safari",
+            "phoneticTranscription": "Sa-fa-ree",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aquário",
+            "english": "Aquarium",
+            "phoneticTranscription": "A-kwa-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pinacoteca",
+            "english": "Art gallery",
+            "phoneticTranscription": "Pee-na-ko-te-ka",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Novela",
+        "correctVersion": "Means a 'Soap Opera/Telenovela', not a 'Novel' (which is 'Romance').",
+        "explanation": "Trap level: High"
+    }
+}

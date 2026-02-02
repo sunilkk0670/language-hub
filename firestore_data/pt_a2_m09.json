@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a2_m09",
+    "theme": "Politics, Society & Governance",
+    "order": 19,
+    "lessons": [
+        {
+            "targetText": "Democracia representativa",
+            "english": "Representative democracy",
+            "phoneticTranscription": "De-mo-kra-see-a he-pre-zen-ta-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estado de direito",
+            "english": "Rule of law",
+            "phoneticTranscription": "Es-ta-doo de jee-ray-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cidadania ativa",
+            "english": "Active citizenship",
+            "phoneticTranscription": "See-da-da-nee-a a-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direitos humanos",
+            "english": "Human rights",
+            "phoneticTranscription": "Jee-ray-toos oo-ma-noos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Soberania nacional",
+            "english": "National sovereignty",
+            "phoneticTranscription": "So-be-ra-nee-a na-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Constituição federal",
+            "english": "Federal constitution",
+            "phoneticTranscription": "Kon-stee-twee-sown fe-de-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Três poderes",
+            "english": "Three branches of power",
+            "phoneticTranscription": "Trays po-de-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Poder Executivo",
+            "english": "Executive branch",
+            "phoneticTranscription": "Po-der e-ze-koo-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Poder Legislativo",
+            "english": "Legislative branch",
+            "phoneticTranscription": "Po-der le-zhees-la-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Poder Judiciário",
+            "english": "Judiciary branch",
+            "phoneticTranscription": "Po-der zhoo-jee-syah-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Supremo Tribunal",
+            "english": "Supreme Court",
+            "phoneticTranscription": "Soo-pre-moo tree-boo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ministério Público",
+            "english": "Public Prosecutor's Office",
+            "phoneticTranscription": "Mee-nees-te-ryoo poo-blee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Políticas públicas",
+            "english": "Public policies",
+            "phoneticTranscription": "Po-lee-chee-kas poo-blee-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Administração pública",
+            "english": "Public administration",
+            "phoneticTranscription": "Ad-mee-nees-tra-sown poo-blee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Orçamento anual",
+            "english": "Annual budget",
+            "phoneticTranscription": "Or-sa-men-too a-noo-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imposto predial",
+            "english": "Property tax",
+            "phoneticTranscription": "Im-pos-too pre-jyal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arrecadação",
+            "english": "Collection (tax)",
+            "phoneticTranscription": "A-he-ka-da-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dívida pública",
+            "english": "Public debt",
+            "phoneticTranscription": "Jee-vee-da poo-blee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inflação galopante",
+            "english": "Galloping inflation",
+            "phoneticTranscription": "In-fla-sown ga-lo-pan-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "PIB Nacional",
+            "english": "National GDP",
+            "phoneticTranscription": "Pe-ee-be na-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Eleições gerais",
+            "english": "General elections",
+            "phoneticTranscription": "E-lay-sown-ees zhe-hays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Candidato eleito",
+            "english": "Elected candidate",
+            "phoneticTranscription": "Kan-jee-da-too e-lay-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Partido político",
+            "english": "Political party",
+            "phoneticTranscription": "Par-chee-doo po-lee-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coligação",
+            "english": "Coalition",
+            "phoneticTranscription": "Ko-lee-ga-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Campanha eleitoral",
+            "english": "Electoral campaign",
+            "phoneticTranscription": "Kam-pa-nya e-lay-to-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Voto obrigatório",
+            "english": "Compulsory voting",
+            "phoneticTranscription": "Vo-too o-bree-ga-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Urna eletrônica",
+            "english": "Electronic voting machine",
+            "phoneticTranscription": "Oor-na e-le-tro-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Apuração de votos",
+            "english": "Vote counting",
+            "phoneticTranscription": "A-poo-ra-sown de vo-toos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Senado Federal",
+            "english": "Federal Senate",
+            "phoneticTranscription": "Se-na-doo fe-de-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Câmara dos Deputados",
+            "english": "Chamber of Deputies",
+            "phoneticTranscription": "Ka-ma-ra doos de-poo-ta-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Governadoria",
+            "english": "Governor's office",
+            "phoneticTranscription": "Go-ver-na-do-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prefeitura",
+            "english": "City hall",
+            "phoneticTranscription": "Pre-fay-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Câmara Municipal",
+            "english": "City Council",
+            "phoneticTranscription": "Ka-ma-ra moo-nee-see-pal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Autarquia",
+            "english": "Autarchy/Independent agency",
+            "phoneticTranscription": "Aw-tar-kee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Burocracia estatal",
+            "english": "State bureaucracy",
+            "phoneticTranscription": "Boo-ro-kra-see-a es-ta-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transparência pública",
+            "english": "Public transparency",
+            "phoneticTranscription": "Trans-pa-ren-syah poo-blee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lei de Diretrizes",
+            "english": "Guidelines Law",
+            "phoneticTranscription": "Lay de jee-re-tree-zees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reforma tributária",
+            "english": "Tax reform",
+            "phoneticTranscription": "He-for-ma tree-boo-ta-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Seguridade social",
+            "english": "Social security",
+            "phoneticTranscription": "Se-goo-ree-da-jee so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Previdência",
+            "english": "Pension/Providence",
+            "phoneticTranscription": "Pre-vee-den-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Jubilação",
+            "english": "Retirement/Exultation",
+            "phoneticTranscription": "Zhoo-bee-la-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sindicato laboral",
+            "english": "Labor union",
+            "phoneticTranscription": "Seen-jee-ka-too la-bo-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Greve geral",
+            "english": "General strike",
+            "phoneticTranscription": "Gre-vee zhe-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Manifestação popular",
+            "english": "Popular protest",
+            "phoneticTranscription": "Ma-nee-fes-ta-sown po-poo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Movimento social",
+            "english": "Social movement",
+            "phoneticTranscription": "Mo-vee-men-too so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desigualdade social",
+            "english": "Social inequality",
+            "phoneticTranscription": "De-ze-gwal-da-jee so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inclusão social",
+            "english": "Social inclusion",
+            "phoneticTranscription": "In-kloo-zown so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diversidade cultural",
+            "english": "Cultural diversity",
+            "phoneticTranscription": "Jee-ver-see-da-jee kool-too-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Minorias",
+            "english": "Minorities",
+            "phoneticTranscription": "Mee-no-ree-as",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Assistência social",
+            "english": "Social assistance",
+            "phoneticTranscription": "A-sees-ten-syah so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reduzir a pobreza",
+            "english": "To reduce poverty",
+            "phoneticTranscription": "He-doo-zeer a po-bre-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Saneamento básico",
+            "english": "Basic sanitation",
+            "phoneticTranscription": "Sa-ne-a-men-too ba-zee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Saúde pública",
+            "english": "Public health",
+            "phoneticTranscription": "Sa-oo-jee poo-blee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Educação inclusiva",
+            "english": "Inclusive education",
+            "phoneticTranscription": "E-doo-ka-sown in-kloo-zee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Erudição",
+            "english": "Erudition/Scholarliness",
+            "phoneticTranscription": "E-roo-jee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desenvolvimento",
+            "english": "Development",
+            "phoneticTranscription": "De-zen-vol-vee-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Infraestrutura",
+            "english": "Infrastructure",
+            "phoneticTranscription": "In-fra-es-troo-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Urbanização",
+            "english": "Urbanization",
+            "phoneticTranscription": "Oor-ba-nee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ecologia urbana",
+            "english": "Urban ecology",
+            "phoneticTranscription": "E-ko-lo-zhyah oor-ba-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Código florestal",
+            "english": "Forest code",
+            "phoneticTranscription": "Ko-jee-goo flo-res-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Relações diplomáticas",
+            "english": "Diplomatic relations",
+            "phoneticTranscription": "He-la-sown-ees jee-plo-ma-chee-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Embaixada",
+            "english": "Embassy",
+            "phoneticTranscription": "Em-bye-sha-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consulado",
+            "english": "Consulate",
+            "phoneticTranscription": "Kon-soo-la-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tratado de paz",
+            "english": "Peace treaty",
+            "phoneticTranscription": "Tra-ta-doo de pas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acordo bilateral",
+            "english": "Bilateral agreement",
+            "phoneticTranscription": "A-kor-doo bee-la-te-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Organismo internacional",
+            "english": "International body",
+            "phoneticTranscription": "Or-ga-neez-moo in-ter-na-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ajuda humanitária",
+            "english": "Humanitarian aid",
+            "phoneticTranscription": "A-zhoo-da oo-ma-nee-ta-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Refugiado",
+            "english": "Refugee",
+            "phoneticTranscription": "He-foo-zhyah-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Migração",
+            "english": "Migration",
+            "phoneticTranscription": "Mee-gra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fronteira aberta",
+            "english": "Open border",
+            "phoneticTranscription": "Fron-tay-ra a-ber-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Defesa nacional",
+            "english": "National defense",
+            "phoneticTranscription": "De-fe-za na-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Forças Armadas",
+            "english": "Armed Forces",
+            "phoneticTranscription": "For-sas ar-ma-das",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Segurança interna",
+            "english": "Internal security",
+            "phoneticTranscription": "Se-goo-ran-sa in-ter-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Combate ao crime",
+            "english": "Combating crime",
+            "phoneticTranscription": "Kom-ba-chee aw kree-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Narcotráfico",
+            "english": "Drug trafficking",
+            "phoneticTranscription": "Nar-ko-tra-fee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Corrupção passiva",
+            "english": "Passive corruption",
+            "phoneticTranscription": "Ko-hoop-sown pa-see-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Improbidade",
+            "english": "Improbity/Misconduct",
+            "phoneticTranscription": "Im-pro-bee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estatuto",
+            "english": "Statute/Bylaws",
+            "phoneticTranscription": "Es-ta-too-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Decreto-lei",
+            "english": "Decree-law",
+            "phoneticTranscription": "De-kre-too lay",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Veto presidencial",
+            "english": "Presidential veto",
+            "phoneticTranscription": "Ve-too pre-zee-den-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Poder moderador",
+            "english": "Moderating power",
+            "phoneticTranscription": "Po-der mo-de-ra-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Corte de Justiça",
+            "english": "Court of Justice",
+            "phoneticTranscription": "Kor-chee de zhoos-chee-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Magistratura",
+            "english": "Magistracy",
+            "phoneticTranscription": "Ma-zhees-tra-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Advocacia-Geral",
+            "english": "General Advocacy",
+            "phoneticTranscription": "Ad-vo-ka-see-a zhe-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Procuradoria",
+            "english": "Prosecutor's Office",
+            "phoneticTranscription": "Pro-koo-ra-do-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Defensoria Pública",
+            "english": "Public Defender's Office",
+            "phoneticTranscription": "De-fen-so-ree-a poo-blee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direito civil",
+            "english": "Civil law",
+            "phoneticTranscription": "Jee-ray-too see-veel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direito penal",
+            "english": "Criminal law",
+            "phoneticTranscription": "Jee-ray-too pe-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Código de Ética",
+            "english": "Code of Ethics",
+            "phoneticTranscription": "Ko-jee-goo de e-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Norma jurídica",
+            "english": "Legal norm",
+            "phoneticTranscription": "Nor-ma zhoo-ree-jee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sanção",
+            "english": "Sanction",
+            "phoneticTranscription": "San-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Privatização",
+            "english": "Privatization",
+            "phoneticTranscription": "Pree-va-chee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estatização",
+            "english": "State ownership",
+            "phoneticTranscription": "Es-ta-chee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Parceria pública",
+            "english": "Public partnership",
+            "phoneticTranscription": "Par-se-ree-a poo-blee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Agência reguladora",
+            "english": "Regulatory agency",
+            "phoneticTranscription": "A-zhen-syah he-goo-la-do-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fiscalização",
+            "english": "Fiscalization/Inspection",
+            "phoneticTranscription": "Fees-ka-lee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Controle social",
+            "english": "Social control",
+            "phoneticTranscription": "Kon-tro-lee so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Iniciativa popular",
+            "english": "Popular initiative",
+            "phoneticTranscription": "Ee-nee-sya-chee-va po-poo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Plebiscito",
+            "english": "Plebiscite",
+            "phoneticTranscription": "Ple-bees-see-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Referendo",
+            "english": "Referendum",
+            "phoneticTranscription": "Re-fe-ren-doo",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Câmara",
+        "correctVersion": "Means 'Chamber' (Political) or 'Camera' (Archaic/Specific). Modern 'Camera' is 'Câmera'.",
+        "explanation": "Trap level: Low"
+    }
+}

@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a1_m06",
+    "theme": "The City & Directions",
+    "order": 6,
+    "lessons": [
+        {
+            "targetText": "Rua",
+            "english": "Street",
+            "phoneticTranscription": "Hoo-ah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Avenida",
+            "english": "Avenue",
+            "phoneticTranscription": "A-ve-nee-dah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Praça",
+            "english": "Square/Plaza",
+            "phoneticTranscription": "Pra-sah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Esquina",
+            "english": "Corner",
+            "phoneticTranscription": "Es-kee-nah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cruzamento",
+            "english": "Intersection",
+            "phoneticTranscription": "Kroo-za-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cidade",
+            "english": "City",
+            "phoneticTranscription": "See-dah-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bairro",
+            "english": "Neighborhood",
+            "phoneticTranscription": "Bye-hoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Centro",
+            "english": "Downtown/Center",
+            "phoneticTranscription": "Sen-troo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Perto",
+            "english": "Near",
+            "phoneticTranscription": "Per-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Longe",
+            "english": "Far",
+            "phoneticTranscription": "Lon-zhee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direita",
+            "english": "Right",
+            "phoneticTranscription": "Dee-ray-tah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Esquerda",
+            "english": "Left",
+            "phoneticTranscription": "Es-ker-dah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direto",
+            "english": "Straight",
+            "phoneticTranscription": "Dee-re-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atrás",
+            "english": "Behind",
+            "phoneticTranscription": "A-tras",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Na frente",
+            "english": "In front",
+            "phoneticTranscription": "Na fren-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ao lado",
+            "english": "Next to",
+            "phoneticTranscription": "Ao la-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Entre",
+            "english": "Between",
+            "phoneticTranscription": "En-tree",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Em cima",
+            "english": "On top",
+            "phoneticTranscription": "En see-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Embaixo",
+            "english": "Under",
+            "phoneticTranscription": "Em-bye-shoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Neste local",
+            "english": "In this place",
+            "phoneticTranscription": "Nes-chee lo-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ali",
+            "english": "There",
+            "phoneticTranscription": "A-lee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acolá",
+            "english": "Yonder",
+            "phoneticTranscription": "A-ko-lah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Norte",
+            "english": "North",
+            "phoneticTranscription": "Nor-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sul",
+            "english": "South",
+            "phoneticTranscription": "Sool",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Leste",
+            "english": "East",
+            "phoneticTranscription": "Les-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Oeste",
+            "english": "West",
+            "phoneticTranscription": "O-es-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mapa",
+            "english": "Map",
+            "phoneticTranscription": "Ma-pa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Endereço",
+            "english": "Address",
+            "phoneticTranscription": "En-de-re-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Número",
+            "english": "Number",
+            "phoneticTranscription": "Noo-me-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "CEP",
+            "english": "Zip code",
+            "phoneticTranscription": "Se-pe",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Loja",
+            "english": "Store",
+            "phoneticTranscription": "Lo-zhah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Supermercado",
+            "english": "Supermarket",
+            "phoneticTranscription": "Soo-per-mer-kah-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Farmácia",
+            "english": "Pharmacy",
+            "phoneticTranscription": "Far-ma-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hospital",
+            "english": "Hospital",
+            "phoneticTranscription": "Os-pee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escola",
+            "english": "School",
+            "phoneticTranscription": "Es-ko-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Universidade",
+            "english": "University",
+            "phoneticTranscription": "Oo-nee-ver-see-dah-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Banco",
+            "english": "Bank",
+            "phoneticTranscription": "Bahn-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Correio",
+            "english": "Post Office",
+            "phoneticTranscription": "Ko-hay-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Delegacia",
+            "english": "Police Station",
+            "phoneticTranscription": "De-le-ga-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bombeiros",
+            "english": "Fire Station",
+            "phoneticTranscription": "Bom-bay-roos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Igreja",
+            "english": "Church",
+            "phoneticTranscription": "Ee-gre-zhah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Museu",
+            "english": "Museum",
+            "phoneticTranscription": "Moo-ze-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Teatro",
+            "english": "Theater",
+            "phoneticTranscription": "Te-ah-troo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cinema",
+            "english": "Cinema",
+            "phoneticTranscription": "See-ne-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Parque",
+            "english": "Park",
+            "phoneticTranscription": "Par-kee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Zoológico",
+            "english": "Zoo",
+            "phoneticTranscription": "Zo-o-lo-zhee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Praia",
+            "english": "Beach",
+            "phoneticTranscription": "Pra-yah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lanchonete",
+            "english": "Snackbar",
+            "phoneticTranscription": "Lan-sho-ne-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bar",
+            "english": "Bar",
+            "phoneticTranscription": "Bar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Confeitaria",
+            "english": "Confectionery",
+            "phoneticTranscription": "Kon-fay-ta-ree-ah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Açougue",
+            "english": "Butcher shop",
+            "phoneticTranscription": "A-so-gee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Feira",
+            "english": "Street market",
+            "phoneticTranscription": "Fay-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Shopping",
+            "english": "Mall",
+            "phoneticTranscription": "Sho-peen",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hotel",
+            "english": "Hotel",
+            "phoneticTranscription": "O-tel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aeroporto",
+            "english": "Airport",
+            "phoneticTranscription": "A-e-ro-por-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rodoviária",
+            "english": "Bus station",
+            "phoneticTranscription": "Ho-do-vya-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estação",
+            "english": "Station",
+            "phoneticTranscription": "Es-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metrô",
+            "english": "Subway",
+            "phoneticTranscription": "Me-tro",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ponto de ônibus",
+            "english": "Bus stop",
+            "phoneticTranscription": "Pon-too de o-nee-boos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Táxi",
+            "english": "Taxi",
+            "phoneticTranscription": "Tak-see",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carro",
+            "english": "Car",
+            "phoneticTranscription": "Ka-hoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ônibus",
+            "english": "Bus",
+            "phoneticTranscription": "O-nee-boos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bicicleta",
+            "english": "Bicycle",
+            "phoneticTranscription": "Bee-see-kle-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Moto",
+            "english": "Motorcycle",
+            "phoneticTranscription": "Mo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Caminhar",
+            "english": "To walk",
+            "phoneticTranscription": "Ka-mee-nyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Correr",
+            "english": "To run",
+            "phoneticTranscription": "Ko-her",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dirigir",
+            "english": "To drive",
+            "phoneticTranscription": "Dee-ree-zheer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Locomover-se",
+            "english": "To move/travel locally",
+            "phoneticTranscription": "Lo-ko-mo-ver-se",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Chegar",
+            "english": "To arrive",
+            "phoneticTranscription": "She-gar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Partir",
+            "english": "To depart",
+            "phoneticTranscription": "Par-cheer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Perder-se",
+            "english": "To get lost",
+            "phoneticTranscription": "Per-der-se",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Achar",
+            "english": "To find",
+            "phoneticTranscription": "A-shar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Procurar",
+            "english": "To look for",
+            "phoneticTranscription": "Pro-koo-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Entrar",
+            "english": "To enter",
+            "phoneticTranscription": "En-trar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sair",
+            "english": "To exit",
+            "phoneticTranscription": "Sa-eer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Subir",
+            "english": "To go up",
+            "phoneticTranscription": "Soo-beer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Descer",
+            "english": "To go down",
+            "phoneticTranscription": "De-ser",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atravessar",
+            "english": "To cross",
+            "phoneticTranscription": "A-tra-ve-sar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Semáforo",
+            "english": "Traffic light",
+            "phoneticTranscription": "Se-ma-fo-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Faixa de pedestre",
+            "english": "Crosswalk",
+            "phoneticTranscription": "Fay-sha de pe-des-tree",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Calçada",
+            "english": "Sidewalk",
+            "phoneticTranscription": "Kal-sah-dah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ponte",
+            "english": "Bridge",
+            "phoneticTranscription": "Pon-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rio",
+            "english": "River",
+            "phoneticTranscription": "Hee-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lago",
+            "english": "Lake",
+            "phoneticTranscription": "La-goo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Montanha",
+            "english": "Mountain",
+            "phoneticTranscription": "Mon-ta-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Campo",
+            "english": "Field",
+            "phoneticTranscription": "Kam-poo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prédio",
+            "english": "Building",
+            "phoneticTranscription": "Pre-dyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estacionamento",
+            "english": "Parking lot",
+            "phoneticTranscription": "Es-ta-syo-na-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gasolina",
+            "english": "Gasoline",
+            "phoneticTranscription": "Ga-zo-lee-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Posto de gasolina",
+            "english": "Gas station",
+            "phoneticTranscription": "Pos-too de ga-zo-lee-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sinal",
+            "english": "Signal/Sign",
+            "phoneticTranscription": "See-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Placa",
+            "english": "License plate / Sign",
+            "phoneticTranscription": "Pla-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trânsito",
+            "english": "Traffic",
+            "phoneticTranscription": "Tran-zee-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Seguro",
+            "english": "Safe",
+            "phoneticTranscription": "Se-goo-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Perigoso",
+            "english": "Dangerous",
+            "phoneticTranscription": "Pe-ree-go-zoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Limpo",
+            "english": "Clean",
+            "phoneticTranscription": "Leem-poo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sujo",
+            "english": "Dirty",
+            "phoneticTranscription": "Soo-zhoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Barulhento",
+            "english": "Noisy",
+            "phoneticTranscription": "Ba-roo-lyen-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Silencioso",
+            "english": "Quiet",
+            "phoneticTranscription": "See-len-syo-zoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Turista",
+            "english": "Tourist",
+            "phoneticTranscription": "Too-rees-ta",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Livraria",
+        "correctVersion": "Means a 'Bookstore' where you buy books, not a 'Library' (which is 'biblioteca').",
+        "explanation": "Trap level: High"
+    }
+}

@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a1_m02",
+    "language": "hi",
+    "level": "a1",
+    "theme": "Numbers, Days & Time",
+    "order": 2,
+    "lessons": [
+        {
+            "word": "ग्यारह",
+            "translation": "Eleven",
+            "phonetic": "Gyarah"
+        },
+        {
+            "word": "बारह",
+            "translation": "Twelve",
+            "phonetic": "Baarah"
+        },
+        {
+            "word": "तेरह",
+            "translation": "Thirteen",
+            "phonetic": "Terah"
+        },
+        {
+            "word": "चौदह",
+            "translation": "Fourteen",
+            "phonetic": "Chaudah"
+        },
+        {
+            "word": "पंद्रह",
+            "translation": "Fifteen",
+            "phonetic": "Pandrah"
+        },
+        {
+            "word": "सोलह",
+            "translation": "Sixteen",
+            "phonetic": "Solah"
+        },
+        {
+            "word": "सत्रह",
+            "translation": "Seventeen",
+            "phonetic": "Satrah"
+        },
+        {
+            "word": "अठारह",
+            "translation": "Eighteen",
+            "phonetic": "Atharah"
+        },
+        {
+            "word": "उन्नीस",
+            "translation": "Nineteen",
+            "phonetic": "Unnees"
+        },
+        {
+            "word": "बीस",
+            "translation": "Twenty",
+            "phonetic": "Bees"
+        },
+        {
+            "word": "इक्कीस",
+            "translation": "Twenty-one",
+            "phonetic": "Ikkees"
+        },
+        {
+            "word": "बाईस",
+            "translation": "Twenty-two",
+            "phonetic": "Baees"
+        },
+        {
+            "word": "तेईस",
+            "translation": "Twenty-three",
+            "phonetic": "Teees"
+        },
+        {
+            "word": "चौबीस",
+            "translation": "Twenty-four",
+            "phonetic": "Chaubees"
+        },
+        {
+            "word": "पच्चीस",
+            "translation": "Twenty-five",
+            "phonetic": "Pachees"
+        },
+        {
+            "word": "छब्बीस",
+            "translation": "Twenty-six",
+            "phonetic": "Chabbees"
+        },
+        {
+            "word": "सत्ताईस",
+            "translation": "Twenty-seven",
+            "phonetic": "Sattaees"
+        },
+        {
+            "word": "अट्ठाईस",
+            "translation": "Twenty-eight",
+            "phonetic": "Atthaees"
+        },
+        {
+            "word": "उनतीस",
+            "translation": "Twenty-nine",
+            "phonetic": "Untees"
+        },
+        {
+            "word": "तीस",
+            "translation": "Thirty",
+            "phonetic": "Tees"
+        },
+        {
+            "word": "इकतीस",
+            "translation": "Thirty-one",
+            "phonetic": "Iktees"
+        },
+        {
+            "word": "बत्तीस",
+            "translation": "Thirty-two",
+            "phonetic": "Battees"
+        },
+        {
+            "word": "तैंतीस",
+            "translation": "Thirty-three",
+            "phonetic": "Taintees"
+        },
+        {
+            "word": "चौंतीस",
+            "translation": "Thirty-four",
+            "phonetic": "Chauntees"
+        },
+        {
+            "word": "पैंतीस",
+            "translation": "Thirty-five",
+            "phonetic": "Paintees"
+        },
+        {
+            "word": "छत्तीस",
+            "translation": "Thirty-six",
+            "phonetic": "Chattees"
+        },
+        {
+            "word": "सैंतीस",
+            "translation": "Thirty-seven",
+            "phonetic": "Saintees"
+        },
+        {
+            "word": "अड़तीस",
+            "translation": "Thirty-eight",
+            "phonetic": "Artees"
+        },
+        {
+            "word": "उनतालीस",
+            "translation": "Thirty-nine",
+            "phonetic": "Untalees"
+        },
+        {
+            "word": "चालीस",
+            "translation": "Forty",
+            "phonetic": "Chalees"
+        },
+        {
+            "word": "इकतालीस",
+            "translation": "Forty-one",
+            "phonetic": "Iktalees"
+        },
+        {
+            "word": "बयालीस",
+            "translation": "Forty-two",
+            "phonetic": "Bayalees"
+        },
+        {
+            "word": "तैंतालीस",
+            "translation": "Forty-three",
+            "phonetic": "Taintalees"
+        },
+        {
+            "word": "चवालीस",
+            "translation": "Forty-four",
+            "phonetic": "Chawalees"
+        },
+        {
+            "word": "पैंतालीस",
+            "translation": "Forty-five",
+            "phonetic": "Paintalees"
+        },
+        {
+            "word": "छियालीस",
+            "translation": "Forty-six",
+            "phonetic": "Chiyalees"
+        },
+        {
+            "word": "सैंतालीस",
+            "translation": "Forty-seven",
+            "phonetic": "Saintalees"
+        },
+        {
+            "word": "अड़तालीस",
+            "translation": "Forty-eight",
+            "phonetic": "Artalees"
+        },
+        {
+            "word": "उनचास",
+            "translation": "Forty-nine",
+            "phonetic": "Unchaas"
+        },
+        {
+            "word": "पचास",
+            "translation": "Fifty",
+            "phonetic": "Pachaas"
+        },
+        {
+            "word": "इकयावन",
+            "translation": "Fifty-one",
+            "phonetic": "Ikyavan"
+        },
+        {
+            "word": "बावन",
+            "translation": "Fifty-two",
+            "phonetic": "Baavan"
+        },
+        {
+            "word": "तिरेपन",
+            "translation": "Fifty-three",
+            "phonetic": "Tirepan"
+        },
+        {
+            "word": "चौवन",
+            "translation": "Fifty-four",
+            "phonetic": "Chauvan"
+        },
+        {
+            "word": "पचपन",
+            "translation": "Fifty-five",
+            "phonetic": "Pachpan"
+        },
+        {
+            "word": "छप्पन",
+            "translation": "Fifty-six",
+            "phonetic": "Chappan"
+        },
+        {
+            "word": "सतावन",
+            "translation": "Fifty-seven",
+            "phonetic": "Satavan"
+        },
+        {
+            "word": "अ्ठावन",
+            "translation": "Fifty-eight",
+            "phonetic": "Athavan"
+        },
+        {
+            "word": "उनसठ",
+            "translation": "Fifty-nine",
+            "phonetic": "Unsath"
+        },
+        {
+            "word": "साठ",
+            "translation": "Sixty",
+            "phonetic": "Saath"
+        },
+        {
+            "word": "इकसठ",
+            "translation": "Sixty-one",
+            "phonetic": "Iksath"
+        },
+        {
+            "word": "बासठ",
+            "translation": "Sixty-two",
+            "phonetic": "Baasath"
+        },
+        {
+            "word": "तिरसठ",
+            "translation": "Sixty-three",
+            "phonetic": "Tirsath"
+        },
+        {
+            "word": "चौंसठ",
+            "translation": "Sixty-four",
+            "phonetic": "Chaunsath"
+        },
+        {
+            "word": "पैंसठ",
+            "translation": "Sixty-five",
+            "phonetic": "Painsath"
+        },
+        {
+            "word": "छियासठ",
+            "translation": "Sixty-six",
+            "phonetic": "Chiyasath"
+        },
+        {
+            "word": "सरसठ",
+            "translation": "Sixty-seven",
+            "phonetic": "Sarsath"
+        },
+        {
+            "word": "अड़सठ",
+            "translation": "Sixty-eight",
+            "phonetic": "Arsath"
+        },
+        {
+            "word": "उनहत्तर",
+            "translation": "Sixty-nine",
+            "phonetic": "Unhattar"
+        },
+        {
+            "word": "सत्तर",
+            "translation": "Seventy",
+            "phonetic": "Sattar"
+        },
+        {
+            "word": "इकहत्तर",
+            "translation": "Seventy-one",
+            "phonetic": "Ikhattar"
+        },
+        {
+            "word": "बहत्तर",
+            "translation": "Seventy-two",
+            "phonetic": "Bahattar"
+        },
+        {
+            "word": "तिहत्तर",
+            "translation": "Seventy-three",
+            "phonetic": "Tihattar"
+        },
+        {
+            "word": "चौहत्तर",
+            "translation": "Seventy-four",
+            "phonetic": "Chauhattar"
+        },
+        {
+            "word": "पचहत्तर",
+            "translation": "Seventy-five",
+            "phonetic": "Pachhattar"
+        },
+        {
+            "word": "छहत्तर",
+            "translation": "Seventy-six",
+            "phonetic": "Chahattar"
+        },
+        {
+            "word": "सतहत्तर",
+            "translation": "Seventy-seven",
+            "phonetic": "Sathattar"
+        },
+        {
+            "word": "अठहत्तर",
+            "translation": "Seventy-eight",
+            "phonetic": "Athattar"
+        },
+        {
+            "word": "उनासी",
+            "translation": "Seventy-nine",
+            "phonetic": "Unasee"
+        },
+        {
+            "word": "अस्सी",
+            "translation": "Eighty",
+            "phonetic": "Assee"
+        },
+        {
+            "word": "सोमवार",
+            "translation": "Monday",
+            "phonetic": "Somvaar"
+        },
+        {
+            "word": "भौमवार",
+            "translation": "Tuesday",
+            "phonetic": "Mangalvaar"
+        },
+        {
+            "word": "सौम्यवार",
+            "translation": "Wednesday",
+            "phonetic": "Budhvaar"
+        },
+        {
+            "word": "गुरुवार",
+            "translation": "Thursday",
+            "phonetic": "Guruvaar"
+        },
+        {
+            "word": "भृगुवार",
+            "translation": "Friday",
+            "phonetic": "Shukravaar"
+        },
+        {
+            "word": "शनिवार",
+            "translation": "Saturday",
+            "phonetic": "Shanivaar"
+        },
+        {
+            "word": "रविवार",
+            "translation": "Sunday",
+            "phonetic": "Ravivaar"
+        },
+        {
+            "word": "जनवरी",
+            "translation": "January",
+            "phonetic": "Janvari"
+        },
+        {
+            "word": "फरवरी",
+            "translation": "February",
+            "phonetic": "Farvari"
+        },
+        {
+            "word": "मार्च",
+            "translation": "March",
+            "phonetic": "March"
+        },
+        {
+            "word": "अप्रैल",
+            "translation": "April",
+            "phonetic": "April"
+        },
+        {
+            "word": "मई",
+            "translation": "May",
+            "phonetic": "Maye"
+        },
+        {
+            "word": "जून",
+            "translation": "June",
+            "phonetic": "June"
+        },
+        {
+            "word": "जुलाई",
+            "translation": "July",
+            "phonetic": "Julaye"
+        },
+        {
+            "word": "अगस्त",
+            "translation": "August",
+            "phonetic": "Agast"
+        },
+        {
+            "word": "सितंबर",
+            "translation": "September",
+            "phonetic": "Sitambar"
+        },
+        {
+            "word": "अक्टूबर",
+            "translation": "October",
+            "phonetic": "Aktubar"
+        },
+        {
+            "word": "नवंबर",
+            "translation": "November",
+            "phonetic": "Navambar"
+        },
+        {
+            "word": "दिसंबर",
+            "translation": "December",
+            "phonetic": "Disambar"
+        },
+        {
+            "word": "हफ़्ता",
+            "translation": "Week",
+            "phonetic": "Hafta"
+        },
+        {
+            "word": "महीना",
+            "translation": "Month",
+            "phonetic": "Maheena"
+        },
+        {
+            "word": "साल",
+            "translation": "Year",
+            "phonetic": "Saal"
+        },
+        {
+            "word": "मिनट",
+            "translation": "Minute",
+            "phonetic": "Minat"
+        },
+        {
+            "word": "घंटा",
+            "translation": "Hour",
+            "phonetic": "Ghanta"
+        },
+        {
+            "word": "सदी",
+            "translation": "Century",
+            "phonetic": "Sadee"
+        },
+        {
+            "word": "दोपहर",
+            "translation": "Noon",
+            "phonetic": "Dopahar"
+        },
+        {
+            "word": "आधी रात",
+            "translation": "Midnight",
+            "phonetic": "Aadhi Raat"
+        },
+        {
+            "word": "सवा",
+            "translation": "Quarter past",
+            "phonetic": "Sava"
+        },
+        {
+            "word": "साढ़े",
+            "translation": "Half past",
+            "phonetic": "Saadhe"
+        },
+        {
+            "word": "पौने",
+            "translation": "Quarter to",
+            "phonetic": "Paune"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Hafta' Mystery",
+        "question": "In a colloquial Bollywood or Mumbai context, if someone says 'Hafta nikaal!', what are they likely demanding besides 'a week'?",
+        "options": [
+            "A seven-day schedule",
+            "Protection money / Extortion",
+            "Seven kilos of rice",
+            "A weekend getaway"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "While 'Hafta' (हफ़्ता) literally means 'week', in Indian slang/street context, it frequently refers to illegal extortion or protection money collected weekly by underworld elements or corrupt officials."
+    }
+}

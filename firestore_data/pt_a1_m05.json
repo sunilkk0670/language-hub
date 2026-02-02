@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a1_m05",
+    "theme": "Home & Daily Life",
+    "order": 5,
+    "lessons": [
+        {
+            "targetText": "Casa",
+            "english": "House",
+            "phoneticTranscription": "Ka-zah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Apartamento",
+            "english": "Apartment",
+            "phoneticTranscription": "A-par-ta-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Quarto",
+            "english": "Bedroom",
+            "phoneticTranscription": "Kwar-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cozinha",
+            "english": "Kitchen",
+            "phoneticTranscription": "Ko-zee-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Banheiro",
+            "english": "Bathroom",
+            "phoneticTranscription": "Ba-nyay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sala de estar",
+            "english": "Living room",
+            "phoneticTranscription": "Sah-la de es-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sala de jantar",
+            "english": "Dining room",
+            "phoneticTranscription": "Sah-la de zhan-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Varanda",
+            "english": "Balcony",
+            "phoneticTranscription": "Va-ran-dah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Jardim",
+            "english": "Garden",
+            "phoneticTranscription": "Zhar-jeem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Garagem",
+            "english": "Garage",
+            "phoneticTranscription": "Ga-ra-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mesa",
+            "english": "Table",
+            "phoneticTranscription": "Me-zah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cadeira",
+            "english": "Chair",
+            "phoneticTranscription": "Ka-day-rah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cama",
+            "english": "Bed",
+            "phoneticTranscription": "Ka-mah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sofá",
+            "english": "Sofa",
+            "phoneticTranscription": "So-fah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Armário",
+            "english": "Cabinet/Closet",
+            "phoneticTranscription": "Ar-ma-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Geladeira",
+            "english": "Refrigerator",
+            "phoneticTranscription": "Zhe-la-day-rah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fogão",
+            "english": "Stove",
+            "phoneticTranscription": "Fo-gown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Micro-ondas",
+            "english": "Microwave",
+            "phoneticTranscription": "Mee-kro-on-das",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pia",
+            "english": "Sink",
+            "phoneticTranscription": "Pee-ah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Chuveiro",
+            "english": "Shower",
+            "phoneticTranscription": "Shoo-vay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Janela",
+            "english": "Window",
+            "phoneticTranscription": "Zha-ne-lah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Porta",
+            "english": "Door",
+            "phoneticTranscription": "Por-tah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Parede",
+            "english": "Wall",
+            "phoneticTranscription": "Pa-re-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Teto",
+            "english": "Ceiling",
+            "phoneticTranscription": "Te-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Chão",
+            "english": "Floor",
+            "phoneticTranscription": "Shown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Luz",
+            "english": "Light",
+            "phoneticTranscription": "Loos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Chave",
+            "english": "Key",
+            "phoneticTranscription": "Sha-vee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tapete",
+            "english": "Rug",
+            "phoneticTranscription": "Ta-pe-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Espelho",
+            "english": "Mirror",
+            "phoneticTranscription": "Es-pe-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Televisão",
+            "english": "Television",
+            "phoneticTranscription": "Te-le-vee-zown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Computador",
+            "english": "Computer",
+            "phoneticTranscription": "Kom-poo-ta-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Telefone",
+            "english": "Telephone",
+            "phoneticTranscription": "Te-le-fo-nee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Travesseiro",
+            "english": "Pillow",
+            "phoneticTranscription": "Tra-ve-say-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cobertor",
+            "english": "Blanket",
+            "phoneticTranscription": "Ko-ber-tor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Toalha",
+            "english": "Towel",
+            "phoneticTranscription": "To-ah-lya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sabonete",
+            "english": "Soap",
+            "phoneticTranscription": "Sa-bo-ne-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escova",
+            "english": "Brush",
+            "phoneticTranscription": "Es-ko-vah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vassoura",
+            "english": "Broom",
+            "phoneticTranscription": "Va-so-rah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lixo",
+            "english": "Trash",
+            "phoneticTranscription": "Lee-shoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escada",
+            "english": "Stairs",
+            "phoneticTranscription": "Es-ka-dah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Elevador",
+            "english": "Elevator",
+            "phoneticTranscription": "E-le-va-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acordar",
+            "english": "To wake up",
+            "phoneticTranscription": "A-kor-dar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Levantar",
+            "english": "To get up",
+            "phoneticTranscription": "Le-van-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lavar",
+            "english": "To wash",
+            "phoneticTranscription": "La-var",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Limpar",
+            "english": "To clean",
+            "phoneticTranscription": "Leem-par",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arrumar",
+            "english": "To tidy up",
+            "phoneticTranscription": "A-hoo-mar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dormir",
+            "english": "To sleep",
+            "phoneticTranscription": "Dor-meer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Descansar",
+            "english": "To rest",
+            "phoneticTranscription": "Des-kan-sar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Relaxar",
+            "english": "To relax",
+            "phoneticTranscription": "He-lak-sar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aprender",
+            "english": "To learn",
+            "phoneticTranscription": "A-pren-der",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ler",
+            "english": "To read",
+            "phoneticTranscription": "Ler",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escrever",
+            "english": "To write",
+            "phoneticTranscription": "Es-kre-ver",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ouvir",
+            "english": "To hear",
+            "phoneticTranscription": "O-veer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conversar",
+            "english": "To chat/converse",
+            "phoneticTranscription": "Kon-ver-sar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alimentar",
+            "english": "To feed/nourish",
+            "phoneticTranscription": "A-lee-men-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hidratar",
+            "english": "To hydrate",
+            "phoneticTranscription": "Ee-dra-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aquecer",
+            "english": "To heat up",
+            "phoneticTranscription": "A-ke-ser",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comprar",
+            "english": "To buy",
+            "phoneticTranscription": "Kom-prar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vender",
+            "english": "To sell",
+            "phoneticTranscription": "Ven-der",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pagar",
+            "english": "To pay",
+            "phoneticTranscription": "Pa-gar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sair",
+            "english": "To go out",
+            "phoneticTranscription": "Sa-eer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Entrar",
+            "english": "To enter",
+            "phoneticTranscription": "En-trar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Abrir",
+            "english": "To open",
+            "phoneticTranscription": "A-breer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fechar",
+            "english": "To close",
+            "phoneticTranscription": "Fe-shar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ligar",
+            "english": "To turn on",
+            "phoneticTranscription": "Lee-gar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desligar",
+            "english": "To turn off",
+            "phoneticTranscription": "Des-lee-gar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mudar",
+            "english": "To change",
+            "phoneticTranscription": "Moo-dar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ficar",
+            "english": "To stay",
+            "phoneticTranscription": "Fee-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Voltar",
+            "english": "To return",
+            "phoneticTranscription": "Vol-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aguardar",
+            "english": "To await",
+            "phoneticTranscription": "A-gwar-dar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lembrar",
+            "english": "To remember",
+            "phoneticTranscription": "Lem-brar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Esquecer",
+            "english": "To forget",
+            "phoneticTranscription": "Es-ke-ser",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acreditar",
+            "english": "To believe",
+            "phoneticTranscription": "A-kre-jee-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pensar",
+            "english": "To think",
+            "phoneticTranscription": "Pen-sar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sentir",
+            "english": "To feel",
+            "phoneticTranscription": "Sen-cheer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Adorar",
+            "english": "To adore",
+            "phoneticTranscription": "A-do-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Amar",
+            "english": "To love",
+            "phoneticTranscription": "A-mar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Odiar",
+            "english": "To hate",
+            "phoneticTranscription": "O-dyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Preferir",
+            "english": "To prefer",
+            "phoneticTranscription": "Pre-fe-reer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Poder",
+            "english": "To be able to",
+            "phoneticTranscription": "Po-der",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dever",
+            "english": "Must / Should",
+            "phoneticTranscription": "De-ver",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conseguir",
+            "english": "To achieve/manage",
+            "phoneticTranscription": "Kon-se-geer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tentar",
+            "english": "To try",
+            "phoneticTranscription": "Ten-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Começar",
+            "english": "To start",
+            "phoneticTranscription": "Ko-me-sar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Terminar",
+            "english": "To finish",
+            "phoneticTranscription": "Ter-mee-nar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Continuar",
+            "english": "To continue",
+            "phoneticTranscription": "Kon-chee-nwar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Parar",
+            "english": "To stop",
+            "phoneticTranscription": "Pa-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rir",
+            "english": "To laugh",
+            "phoneticTranscription": "Heer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Chorar",
+            "english": "To cry",
+            "phoneticTranscription": "Sho-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Brincar",
+            "english": "To play",
+            "phoneticTranscription": "Breen-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sorrir",
+            "english": "To smile",
+            "phoneticTranscription": "So-heer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Explorar",
+            "english": "To explore",
+            "phoneticTranscription": "Es-plo-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Passear",
+            "english": "To take a walk",
+            "phoneticTranscription": "Pa-syar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Convidar",
+            "english": "To invite",
+            "phoneticTranscription": "Kon-vee-dar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Visitar",
+            "english": "To visit",
+            "phoneticTranscription": "Vee-zee-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Receber",
+            "english": "To receive",
+            "phoneticTranscription": "He-se-ber",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Oferecer",
+            "english": "To offer",
+            "phoneticTranscription": "O-fe-re-ser",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Solicitar",
+            "english": "To request",
+            "phoneticTranscription": "So-lee-see-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Agradecer",
+            "english": "To thank",
+            "phoneticTranscription": "A-gra-de-ser",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desculpar",
+            "english": "To forgive",
+            "phoneticTranscription": "Des-kool-par",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Pasta",
+        "correctVersion": "Means a 'folder' or 'briefcase', not Italian noodles (which is 'massa').",
+        "explanation": "Trap level: High"
+    }
+}

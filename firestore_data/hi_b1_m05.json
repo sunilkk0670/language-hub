@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_b1_m05",
+    "language": "hi",
+    "level": "b1",
+    "theme": "Psychology & Cognitive Science",
+    "order": 25,
+    "lessons": [
+        {
+            "word": "मानस-शास्त्र",
+            "translation": "Psychology / Science of mind",
+            "phonetic": "Manas-shastra"
+        },
+        {
+            "word": "सं संज्ञानात्मक",
+            "translation": "Cognitive",
+            "phonetic": "Sangyanatmak"
+        },
+        {
+            "word": "मनोवृत्ति",
+            "translation": "Attitude / Mental disposition",
+            "phonetic": "Manovritti"
+        },
+        {
+            "word": "अन्तःकरण",
+            "translation": "Conscience / Psyche",
+            "phonetic": "Antahkaran"
+        },
+        {
+            "word": "अवचेतन",
+            "translation": "Subconscious",
+            "phonetic": "Avchetan"
+        },
+        {
+            "word": "अचेतन",
+            "translation": "Unconscious",
+            "phonetic": "Achetan"
+        },
+        {
+            "word": "चेतन",
+            "translation": "Conscious",
+            "phonetic": "Chetan"
+        },
+        {
+            "word": "धारणा-शक्ति",
+            "translation": "Perception / Retention power",
+            "phonetic": "Dharana-shakti"
+        },
+        {
+            "word": "स्मृति-पटल",
+            "translation": "Memory / Recapping surface",
+            "phonetic": "Smriti-patal"
+        },
+        {
+            "word": "विस्मरण",
+            "translation": "Forgetting / Amnesia",
+            "phonetic": "Vismaran"
+        },
+        {
+            "word": "चित्त-विक्षेप",
+            "translation": "Distraction / Mental oscillation",
+            "phonetic": "Chitta-vikshep"
+        },
+        {
+            "word": "चित्त-शुद्धि",
+            "translation": "Purification of mind",
+            "phonetic": "Chitta-shuddhi"
+        },
+        {
+            "word": "अन्तर्बोध",
+            "translation": "Insight / Intuition (Formal)",
+            "phonetic": "Antarbodh"
+        },
+        {
+            "word": "इन्द्रिय-बोध",
+            "translation": "Sensory perception / Sensation",
+            "phonetic": "Indriya-bodh"
+        },
+        {
+            "word": "संवेग",
+            "translation": "Emotion / Impulse",
+            "phonetic": "Samveg"
+        },
+        {
+            "word": "अभिप्रेरणा",
+            "translation": "Motivation",
+            "phonetic": "Abhiprerana"
+        },
+        {
+            "word": "व्यक्तित्व",
+            "translation": "Personality",
+            "phonetic": "Vyaktitva"
+        },
+        {
+            "word": "आचरण",
+            "translation": "Conduct / Behavior",
+            "phonetic": "Aacharan"
+        },
+        {
+            "word": "व्यवहारवाद",
+            "translation": "Behaviorism",
+            "phonetic": "Vyavaharvad"
+        },
+        {
+            "word": "बुद्धि-लब्धि",
+            "translation": "Intelligence Quotient (IQ)",
+            "phonetic": "Buddhi-labdhi"
+        },
+        {
+            "word": "तर्कशक्ति",
+            "translation": "Reasoning power",
+            "phonetic": "Tarkashakti"
+        },
+        {
+            "word": "अमूर्त्तता",
+            "translation": "Abstractness",
+            "phonetic": "Amurttata"
+        },
+        {
+            "word": "साकार-रूप",
+            "translation": "Concrete form / Manifested",
+            "phonetic": "Sakar-roop"
+        },
+        {
+            "word": "अवधारणा",
+            "translation": "Concept",
+            "phonetic": "Avadharna"
+        },
+        {
+            "word": "वैचारिक-सूत्र",
+            "translation": "Conceptual thread / Theory",
+            "phonetic": "Vaicharik-sutra"
+        },
+        {
+            "word": "प्राक्कल्पित-वाद",
+            "translation": "Hypothetical theory / Hypothesis",
+            "phonetic": "Prakkalpit-vadh"
+        },
+        {
+            "word": "तत्त्व-विवेचन",
+            "translation": "Elemental analysis",
+            "phonetic": "Tattva-vivechan"
+        },
+        {
+            "word": "समन्वयात्मक-बोध",
+            "translation": "Synthesized understanding / Synthesis",
+            "phonetic": "Samanvayatmak-bodh"
+        },
+        {
+            "word": "निरीक्षण",
+            "translation": "Observation",
+            "phonetic": "Nirikshan"
+        },
+        {
+            "word": "परीक्षण",
+            "translation": "Testing / Experimentation",
+            "phonetic": "Parikshan"
+        },
+        {
+            "word": "मनोग्रंथि",
+            "translation": "Complex (Psychological)",
+            "phonetic": "Manogranthi"
+        },
+        {
+            "word": "मानस-व्यामोह",
+            "translation": "Mental delusion / Confusion",
+            "phonetic": "Manas-vyamoh"
+        },
+        {
+            "word": "विभ्रम",
+            "translation": "Hallucination",
+            "phonetic": "Vibhram"
+        },
+        {
+            "word": "चित्त-अवसाद",
+            "translation": "Mental depression",
+            "phonetic": "Chitta-avsad"
+        },
+        {
+            "word": "उत्कण्ठा",
+            "translation": "Anxiety / Intense desire",
+            "phonetic": "Utkantha"
+        },
+        {
+            "word": "तनाव-प्रबंधन",
+            "translation": "Stress Management",
+            "phonetic": "Tanav-prabandhan"
+        },
+        {
+            "word": "सहनशीलता",
+            "translation": "Resilience / Tolerance",
+            "phonetic": "Sahanshiilta"
+        },
+        {
+            "word": "आत्म-सम्मान",
+            "translation": "Self-esteem",
+            "phonetic": "Aatm-samman"
+        },
+        {
+            "word": "आत्म-साक्षात्कार",
+            "translation": "Self-realization",
+            "phonetic": "Aatm-sakshatkar"
+        },
+        {
+            "word": "सहानुभूति",
+            "translation": "Sympathy",
+            "phonetic": "Sahanubhuti"
+        },
+        {
+            "word": "परदुःखकातरता",
+            "translation": "Altruism / Empathy (High Formal)",
+            "phonetic": "Pardukhkatarta"
+        },
+        {
+            "word": "अन्तःप्रेरणा",
+            "translation": "Internal Inspiration / Intuition",
+            "phonetic": "Antahprerana"
+        },
+        {
+            "word": "मस्तिष्क-तरंगें",
+            "translation": "Brain Waves",
+            "phonetic": "Mastishk-tarangen"
+        },
+        {
+            "word": "तंत्रिका-तंत्र",
+            "translation": "Nervous System",
+            "phonetic": "Tantrika-tantra"
+        },
+        {
+            "word": "मस्तिष्क-क्षमता",
+            "translation": "Brain Capacity",
+            "phonetic": "Mastishk-kshamta"
+        },
+        {
+            "word": "स्मरण-शक्ति",
+            "translation": "Memory power",
+            "phonetic": "Smaran-shakti"
+        },
+        {
+            "word": "प्रक्षालन",
+            "translation": "Catharsis / Cleaning",
+            "phonetic": "Prakshalan"
+        },
+        {
+            "word": "मनोविकार",
+            "translation": "Mental Disorder",
+            "phonetic": "Manovikar"
+        },
+        {
+            "word": "मनश्चिकित्सा",
+            "translation": "Psychiatry",
+            "phonetic": "Manashchikitsa"
+        },
+        {
+            "word": "मार्गदर्शक",
+            "translation": "Guide / Mentor (Counselor)",
+            "phonetic": "Margdarshak"
+        },
+        {
+            "word": "चिकित्सीय",
+            "translation": "Therapeutic",
+            "phonetic": "Chikitsiya"
+        },
+        {
+            "word": "उपचारात्मक",
+            "translation": "Remedial",
+            "phonetic": "Upcharatmak"
+        },
+        {
+            "word": "ज्ञानार्जन",
+            "translation": "Acquisition of knowledge / Learning",
+            "phonetic": "Gyanarjan"
+        },
+        {
+            "word": "कौशल-विकास",
+            "translation": "Skill Development",
+            "phonetic": "Kaushal-vikas"
+        },
+        {
+            "word": "क्षमता-वर्धन",
+            "translation": "Capacity Building",
+            "phonetic": "Kshamta-vardhan"
+        },
+        {
+            "word": "मान्यता",
+            "translation": "Belief / Recognition (Notion)",
+            "phonetic": "Manyata"
+        },
+        {
+            "word": "रूढ़िवादिता",
+            "translation": "Stereotyping / Orthodoxy",
+            "phonetic": "Rudhivadita"
+        },
+        {
+            "word": "पूर्वाग्रह",
+            "translation": "Prejudice",
+            "phonetic": "Purvagrah"
+        },
+        {
+            "word": "लोक-व्यवहार",
+            "translation": "Social Etiquette / Public Conduct",
+            "phonetic": "Lok-vyavahar"
+        },
+        {
+            "word": "पारस्परिक संबंध",
+            "translation": "Interpersonal Relationships",
+            "phonetic": "Parasparik sambandh"
+        },
+        {
+            "word": "सामूहिक चेतना",
+            "translation": "Collective Consciousness",
+            "phonetic": "Samoohik chetana"
+        },
+        {
+            "word": "सांकेतिक",
+            "translation": "Symbolic",
+            "phonetic": "Sanketik"
+        },
+        {
+            "word": "अशाब्दिक संवाद",
+            "translation": "Non-verbal communication",
+            "phonetic": "Ashabdik samvad"
+        },
+        {
+            "word": "भाव-भंगिमा",
+            "translation": "Gestures / Expression",
+            "phonetic": "Bhav-bhangima"
+        },
+        {
+            "word": "दैहिक भाषा",
+            "translation": "Body Language (Pure Hindi)",
+            "phonetic": "Daihik bhasha"
+        },
+        {
+            "word": "हौसला-अफ़ज़ाई",
+            "translation": "Encouragement (Common, using Ur-H mix)",
+            "phonetic": "Hausla-afzai"
+        },
+        {
+            "word": "मनोबल",
+            "translation": "Morale",
+            "phonetic": "Manobal"
+        },
+        {
+            "word": "आत्म-श्रद्धा",
+            "translation": "Faith in self / confidence",
+            "phonetic": "Aatm-shraddha"
+        },
+        {
+            "word": "संयम",
+            "translation": "Restraint / Discipline",
+            "phonetic": "Sanyam"
+        },
+        {
+            "word": "चित्त-स्थिरता",
+            "translation": "Mental steadiness / Concentration",
+            "phonetic": "Chitta-sthirta"
+        },
+        {
+            "word": "धृति",
+            "translation": "Fortitude / Patience",
+            "phonetic": "Dhriti"
+        },
+        {
+            "word": "दृढ़-निश्चय",
+            "translation": "Determination",
+            "phonetic": "Dridh-nishchay"
+        },
+        {
+            "word": "संकल्प-शक्ति",
+            "translation": "Will-power",
+            "phonetic": "Sankalp-shakti"
+        },
+        {
+            "word": "नैतिक मूल्य",
+            "translation": "Moral Values",
+            "phonetic": "Naitik mulya"
+        },
+        {
+            "word": "आदर्श",
+            "translation": "Ideal / Standard",
+            "phonetic": "Aadarsh"
+        },
+        {
+            "word": "चरित्र-निर्माण",
+            "translation": "Character Building",
+            "phonetic": "Charitra-nirrman"
+        },
+        {
+            "word": "स्वच्छिक",
+            "translation": "Voluntary",
+            "phonetic": "Swachchik"
+        },
+        {
+            "word": "लोक-हित",
+            "translation": "Welfare of the people / Philanthropy",
+            "phonetic": "Lok-hit"
+        },
+        {
+            "word": "उदारवाद",
+            "translation": "Liberalism (Psychological context)",
+            "phonetic": "Udarvad"
+        },
+        {
+            "word": "कट्टरपंथ",
+            "translation": "Fanaticism / Extremism",
+            "phonetic": "Kattarpanth"
+        },
+        {
+            "word": "मानसिक शांति",
+            "translation": "Mental Peace",
+            "phonetic": "Mansik shanti"
+        },
+        {
+            "word": "अहम्-भाव",
+            "translation": "Sense of 'I' / Ego",
+            "phonetic": "Aham-bhav"
+        },
+        {
+            "word": "दर्प",
+            "translation": "Pride / Hubris (Negative)",
+            "phonetic": "Darp"
+        },
+        {
+            "word": "स्व-बोध",
+            "translation": "Self-awareness / Identity",
+            "phonetic": "Swa-bodh"
+        },
+        {
+            "word": "परमात्मा",
+            "translation": "Supreme Soul / God (High psych)",
+            "phonetic": "Parmatma"
+        },
+        {
+            "word": "सायुज्य",
+            "translation": "Union / Communion",
+            "phonetic": "Sayujya"
+        },
+        {
+            "word": "कैवल्य-प्राप्ति",
+            "translation": "Attainment of Liberation",
+            "phonetic": "Kaivalya-prapti"
+        },
+        {
+            "word": "अनित्यता",
+            "translation": "Impermanence",
+            "phonetic": "Anityata"
+        },
+        {
+            "word": "शून्यता",
+            "translation": "Emptiness / Void",
+            "phonetic": "Shunyata"
+        },
+        {
+            "word": "विवशता",
+            "translation": "Helplessness",
+            "phonetic": "Vivashata"
+        },
+        {
+            "word": "आनंदानुभूति",
+            "translation": "Experience of Bliss / Happiness",
+            "phonetic": "Anandanubhuti"
+        },
+        {
+            "word": "परम-सुख",
+            "translation": "Supreme Bliss",
+            "phonetic": "Param-sukh"
+        },
+        {
+            "word": "दुःखद",
+            "translation": "Sorrowful / Tragic",
+            "phonetic": "Dukhad"
+        },
+        {
+            "word": "सुखद",
+            "translation": "Pleasant / Happy",
+            "phonetic": "Sukhad"
+        },
+        {
+            "word": "विषाद",
+            "translation": "Deep melancholy",
+            "phonetic": "Vishad"
+        },
+        {
+            "word": "हर्षोल्लास",
+            "translation": "Extreme joy",
+            "phonetic": "Harshollas"
+        },
+        {
+            "word": "क्रोध-नियमन",
+            "translation": "Anger regulation",
+            "phonetic": "Krodh-niyaman"
+        },
+        {
+            "word": "लुब्धता",
+            "translation": "Greediness",
+            "phonetic": "Lubdhata"
+        },
+        {
+            "word": "आसक्ति",
+            "translation": "Attachment / Addiction",
+            "phonetic": "Aasakti"
+        },
+        {
+            "word": "मत्सर",
+            "translation": "Jealousy / Envy",
+            "phonetic": "Matsar"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Pardukhkatarta' Empathy",
+        "question": "What does the extremely high-register word 'Perdukhkatarta' (परदुःखकातरता) literally mean?",
+        "options": [
+            "Hating others' success",
+            "Suffering when others are in pain (Empathy)",
+            "Having a poor memory",
+            "A fear of public speaking"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Per' (Other), 'Dukh' (Suffering), 'Katarta' (Being disturbed/moved). It is the highest formal Hindi term for pure empathy and compassion."
+    }
+}

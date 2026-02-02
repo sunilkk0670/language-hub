@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a1_m10",
+    "language": "hi",
+    "level": "a1",
+    "theme": "Feelings, Colors & Adjectives",
+    "order": 10,
+    "lessons": [
+        {
+            "word": "रंग",
+            "translation": "Color",
+            "phonetic": "Rang"
+        },
+        {
+            "word": "रक्त-वर्ण",
+            "translation": "Red",
+            "phonetic": "Laal"
+        },
+        {
+            "word": "नील",
+            "translation": "Blue",
+            "phonetic": "Neela"
+        },
+        {
+            "word": "हरित",
+            "translation": "Green",
+            "phonetic": "Hara"
+        },
+        {
+            "word": "पीत",
+            "translation": "Yellow",
+            "phonetic": "Peela"
+        },
+        {
+            "word": "श्वेत",
+            "translation": "White",
+            "phonetic": "Safed"
+        },
+        {
+            "word": "श्यामल",
+            "translation": "Black",
+            "phonetic": "Kaala"
+        },
+        {
+            "word": "नारंगी",
+            "translation": "Orange (Color)",
+            "phonetic": "Narangi"
+        },
+        {
+            "word": "गुलाबी",
+            "translation": "Pink",
+            "phonetic": "Gulabi"
+        },
+        {
+            "word": "बैंगनी",
+            "translation": "Purple / Violet",
+            "phonetic": "Baingani"
+        },
+        {
+            "word": "भूरा",
+            "translation": "Brown",
+            "phonetic": "Bhoora"
+        },
+        {
+            "word": "सुनहरित",
+            "translation": "Golden",
+            "phonetic": "Sunhera"
+        },
+        {
+            "word": "रूपहला",
+            "translation": "Silvery",
+            "phonetic": "Roopahla"
+        },
+        {
+            "word": "गहरित",
+            "translation": "Dark / Deep",
+            "phonetic": "Gahra"
+        },
+        {
+            "word": "फीका",
+            "translation": "Pale / Light (color)",
+            "phonetic": "Pheeka"
+        },
+        {
+            "word": "चमकीला",
+            "translation": "Bright / Shiny",
+            "phonetic": "Chamkeela"
+        },
+        {
+            "word": "धुंधला",
+            "translation": "Blurred / Faint",
+            "phonetic": "Dhundhla"
+        },
+        {
+            "word": "भावना",
+            "translation": "Emotion / Feeling",
+            "phonetic": "Bhaavna"
+        },
+        {
+            "word": "हर्ष",
+            "translation": "Joy / Happiness (Formal)",
+            "phonetic": "Harsh"
+        },
+        {
+            "word": "व्यथा",
+            "translation": "Pain / Suffering",
+            "phonetic": "Vyatha"
+        },
+        {
+            "word": "अमर्ष",
+            "translation": "Impatience / Anger",
+            "phonetic": "Amarsha"
+        },
+        {
+            "word": "भय",
+            "translation": "Fear / Terror (Formal)",
+            "phonetic": "Bhay"
+        },
+        {
+            "word": "चिंता",
+            "translation": "Worry / Anxiety",
+            "phonetic": "Chinta"
+        },
+        {
+            "word": "शांति",
+            "translation": "Peace / Quiet",
+            "phonetic": "Shanti"
+        },
+        {
+            "word": "जलन",
+            "translation": "Jealousy / Envy",
+            "phonetic": "Jalan"
+        },
+        {
+            "word": "चकिती",
+            "translation": "Surprise / Wonder",
+            "phonetic": "Hairani"
+        },
+        {
+            "word": "संतोष",
+            "translation": "Satisfaction",
+            "phonetic": "Santosh"
+        },
+        {
+            "word": "उदासी",
+            "translation": "Melancholy",
+            "phonetic": "Udasi"
+        },
+        {
+            "word": "उत्साह",
+            "translation": "Excitement / Enthusiasm",
+            "phonetic": "Utsah"
+        },
+        {
+            "word": "साहस",
+            "translation": "Courage",
+            "phonetic": "Sahas"
+        },
+        {
+            "word": "कायरता",
+            "translation": "Cowardice",
+            "phonetic": "Kayarta"
+        },
+        {
+            "word": "करुणा",
+            "translation": "Compassion",
+            "phonetic": "Karuna"
+        },
+        {
+            "word": "दया",
+            "translation": "Pity / Mercy",
+            "phonetic": "Daya"
+        },
+        {
+            "word": "ममता",
+            "translation": "Motherly love",
+            "phonetic": "Mamta"
+        },
+        {
+            "word": "जुगुप्सा",
+            "translation": "Abhorrence / Disgust",
+            "phonetic": "Jugupsa"
+        },
+        {
+            "word": "लोभ",
+            "translation": "Greed",
+            "phonetic": "Lobh"
+        },
+        {
+            "word": "मोह",
+            "translation": "Attachment / Infatuation",
+            "phonetic": "Moh"
+        },
+        {
+            "word": "अहंकार",
+            "translation": "Ego / Arrogance",
+            "phonetic": "Ahankar"
+        },
+        {
+            "word": "तृष्णा",
+            "translation": "Thirst / Desire",
+            "phonetic": "Trishna"
+        },
+        {
+            "word": "क्षुधा",
+            "translation": "Hunger (Formal)",
+            "phonetic": "Kshudha"
+        },
+        {
+            "word": "विशेषण",
+            "translation": "Adjective",
+            "phonetic": "Visheshan"
+        },
+        {
+            "word": "लघु",
+            "translation": "Tiny / Small (Formal)",
+            "phonetic": "Laghu"
+        },
+        {
+            "word": "विशाल",
+            "translation": "Huge / Vast",
+            "phonetic": "Vishaal"
+        },
+        {
+            "word": "ऊँचा",
+            "translation": "High",
+            "phonetic": "Ooncha"
+        },
+        {
+            "word": "नीचा",
+            "translation": "Low",
+            "phonetic": "Neecha"
+        },
+        {
+            "word": "मोटा",
+            "translation": "Fat / Thick",
+            "phonetic": "Mota"
+        },
+        {
+            "word": "पतला",
+            "translation": "Thin",
+            "phonetic": "Patla"
+        },
+        {
+            "word": "संकीर्ण",
+            "translation": "Narrow",
+            "phonetic": "Sankirn"
+        },
+        {
+            "word": "कड़ा",
+            "translation": "Hard / Tough",
+            "phonetic": "Kada"
+        },
+        {
+            "word": "मुलायम",
+            "translation": "Soft",
+            "phonetic": "Mulayam"
+        },
+        {
+            "word": "चिकना",
+            "translation": "Smooth / Oily",
+            "phonetic": "Chikna"
+        },
+        {
+            "word": "खुरदरा",
+            "translation": "Rough",
+            "phonetic": "Khurdara"
+        },
+        {
+            "word": "तेज",
+            "translation": "Fast / Sharp",
+            "phonetic": "Tez"
+        },
+        {
+            "word": "धीरे",
+            "translation": "Slowly",
+            "phonetic": "Dheere"
+        },
+        {
+            "word": "अमीर",
+            "translation": "Rich",
+            "phonetic": "Ameer"
+        },
+        {
+            "word": "गरीब",
+            "translation": "Poor",
+            "phonetic": "Gareeb"
+        },
+        {
+            "word": "दयालु",
+            "translation": "Kind",
+            "phonetic": "Dayalu"
+        },
+        {
+            "word": "निर्दयी",
+            "translation": "Cruel",
+            "phonetic": "Nirdayi"
+        },
+        {
+            "word": "चतुर",
+            "translation": "Clever / Smart",
+            "phonetic": "Chatur"
+        },
+        {
+            "word": "मूर्ख",
+            "translation": "Foolish",
+            "phonetic": "Moorkh"
+        },
+        {
+            "word": "बहादुर",
+            "translation": "Brave",
+            "phonetic": "Bahadur"
+        },
+        {
+            "word": "डरपोक",
+            "translation": "Cowardly",
+            "phonetic": "Darpok"
+        },
+        {
+            "word": "आलसी",
+            "translation": "Lazy",
+            "phonetic": "Aalsi"
+        },
+        {
+            "word": "मेहनती",
+            "translation": "Hardworking",
+            "phonetic": "Mehnati"
+        },
+        {
+            "word": "प्यासा",
+            "translation": "Thirsty (Person)",
+            "phonetic": "Pyaasa"
+        },
+        {
+            "word": "भूखा",
+            "translation": "Hungry (Person)",
+            "phonetic": "Bhookha"
+        },
+        {
+            "word": "शांत",
+            "translation": "Quiet / Peaceful",
+            "phonetic": "Shaant"
+        },
+        {
+            "word": "शोर",
+            "translation": "Noise",
+            "phonetic": "Shor"
+        },
+        {
+            "word": "गीला",
+            "translation": "Wet",
+            "phonetic": "Geela"
+        },
+        {
+            "word": "सूखा",
+            "translation": "Dry",
+            "phonetic": "Sookha"
+        },
+        {
+            "word": "टेढ़ा",
+            "translation": "Crooked",
+            "phonetic": "Tedha"
+        },
+        {
+            "word": "गोल",
+            "translation": "Round",
+            "phonetic": "Gol"
+        },
+        {
+            "word": "चौकोर",
+            "translation": "Square",
+            "phonetic": "Chaukor"
+        },
+        {
+            "word": "त्रिकोण",
+            "translation": "Triangle",
+            "phonetic": "Trikon"
+        },
+        {
+            "word": "असली",
+            "translation": "Real / Original",
+            "phonetic": "Asli"
+        },
+        {
+            "word": "नकली",
+            "translation": "Fake / Artificial",
+            "phonetic": "Nakli"
+        },
+        {
+            "word": "आसान",
+            "translation": "Easy",
+            "phonetic": "Aasan"
+        },
+        {
+            "word": "कठिन",
+            "translation": "Difficult",
+            "phonetic": "Kathin"
+        },
+        {
+            "word": "संभव",
+            "translation": "Possible",
+            "phonetic": "Sambhav"
+        },
+        {
+            "word": "असंभव",
+            "translation": "Impossible",
+            "phonetic": "Asambhav"
+        },
+        {
+            "word": "ज़रूरी",
+            "translation": "Necessary / Important",
+            "phonetic": "Zaroori"
+        },
+        {
+            "word": "बेकार",
+            "translation": "Useless",
+            "phonetic": "Bekaar"
+        },
+        {
+            "word": "खास",
+            "translation": "Special / Particular",
+            "phonetic": "Khaas"
+        },
+        {
+            "word": "साधारण",
+            "translation": "Ordinary / Common",
+            "phonetic": "Sadharan"
+        },
+        {
+            "word": "स्वतंत्र",
+            "translation": "Independent",
+            "phonetic": "Svatantra"
+        },
+        {
+            "word": "गुलाम",
+            "translation": "Slave",
+            "phonetic": "Gulaam"
+        },
+        {
+            "word": "आजाद",
+            "translation": "Free",
+            "phonetic": "Aazaad"
+        },
+        {
+            "word": "कैद",
+            "translation": "Imprisoned / Captivity",
+            "phonetic": "Kaid"
+        },
+        {
+            "word": "प्रसन्नबू",
+            "translation": "Fragrance / Good smell",
+            "phonetic": "Khushboo"
+        },
+        {
+            "word": "बदबू",
+            "translation": "Stink / Bad smell",
+            "phonetic": "Badboo"
+        },
+        {
+            "word": "स्वाद",
+            "translation": "Taste",
+            "phonetic": "Svaad"
+        },
+        {
+            "word": "महक",
+            "translation": "Aroma",
+            "phonetic": "Mahak"
+        },
+        {
+            "word": "दृश्य",
+            "translation": "View / Scene",
+            "phonetic": "Drishya"
+        },
+        {
+            "word": "सुरीला",
+            "translation": "Melodious",
+            "phonetic": "Sureela"
+        },
+        {
+            "word": "कर्कश",
+            "translation": "Harsh (sound)",
+            "phonetic": "Karkash"
+        },
+        {
+            "word": "भारीपन",
+            "translation": "Heaviness",
+            "phonetic": "Bhaaripan"
+        },
+        {
+            "word": "हल्कापन",
+            "translation": "Lightness",
+            "phonetic": "Halkapan"
+        },
+        {
+            "word": "निकट",
+            "translation": "Near (Formal)",
+            "phonetic": "Nikat"
+        },
+        {
+            "word": "विपरीत",
+            "translation": "Opposite (Formal)",
+            "phonetic": "Viprit"
+        },
+        {
+            "word": "पूर्ण",
+            "translation": "Complete / Full (Formal)",
+            "phonetic": "Poorn"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Nila' Confusion",
+        "question": "In Hindi, if a part of the body is described as 'Nila' (नील - Blue) after an injury, what does it mean?",
+        "options": [
+            "It is healthy",
+            "It is bruised",
+            "It is cold",
+            "It is wet"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "Just like the English 'Black and blue', in Hindi, 'Nila padna' (turning blue) refers to the discoloration of a bruise."
+    }
+}

@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a2_m04",
+    "theme": "Health, Clinic & Pharmacy",
+    "order": 14,
+    "lessons": [
+        {
+            "targetText": "Sintoma",
+            "english": "Symptom",
+            "phoneticTranscription": "Seen-to-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diagnóstico",
+            "english": "Diagnosis",
+            "phoneticTranscription": "Jya-gnos-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prostação",
+            "english": "Prostration/Exhaustion",
+            "phoneticTranscription": "Pros-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Calafrio",
+            "english": "Chills",
+            "phoneticTranscription": "Ka-la-free-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Espirro",
+            "english": "Sneeze",
+            "phoneticTranscription": "Es-pee-hoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inflamação",
+            "english": "Inflammation",
+            "phoneticTranscription": "In-fla-ma-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Infecção",
+            "english": "Infection",
+            "phoneticTranscription": "In-fek-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vírus",
+            "english": "Virus",
+            "phoneticTranscription": "Vee-roos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bactéria",
+            "english": "Bacteria",
+            "phoneticTranscription": "Bak-te-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Antibiótico",
+            "english": "Antibiotic",
+            "phoneticTranscription": "An-chee-byo-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Anti-inflamatório",
+            "english": "Anti-inflammatory",
+            "phoneticTranscription": "An-chee-in-fla-ma-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Analgésico",
+            "english": "Painkiller",
+            "phoneticTranscription": "A-nal-zhe-zee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Xarope",
+            "english": "Syrup/Cough syrup",
+            "phoneticTranscription": "Sha-ho-pee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pomada",
+            "english": "Ointment",
+            "phoneticTranscription": "Po-ma-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colírio",
+            "english": "Eye drops",
+            "phoneticTranscription": "Ko-lee-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Suplemento",
+            "english": "Supplement",
+            "phoneticTranscription": "Soo-ple-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nutriente",
+            "english": "Nutrient",
+            "phoneticTranscription": "Noo-tryen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pressão arterial",
+            "english": "Blood pressure",
+            "phoneticTranscription": "Pre-sown ar-te-ryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Glicose",
+            "english": "Glucose",
+            "phoneticTranscription": "Glee-ko-zee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colesterol",
+            "english": "Cholesterol",
+            "phoneticTranscription": "Ko-les-te-rol",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Anemia",
+            "english": "Anemia",
+            "phoneticTranscription": "A-ne-mee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diabetes",
+            "english": "Diabetes",
+            "phoneticTranscription": "Dya-be-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hipertensão",
+            "english": "Hypertension",
+            "phoneticTranscription": "Ee-per-ten-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Insônia",
+            "english": "Insomnia",
+            "phoneticTranscription": "In-so-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ansiedade",
+            "english": "Anxiety",
+            "phoneticTranscription": "An-syee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Depressão",
+            "english": "Depression",
+            "phoneticTranscription": "De-pre-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estresse",
+            "english": "Stress",
+            "phoneticTranscription": "Es-tre-see",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consulta",
+            "english": "Appointment/Consultation",
+            "phoneticTranscription": "Kon-sool-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Especialista",
+            "english": "Specialist",
+            "phoneticTranscription": "Es-pe-syah-lees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pediatra",
+            "english": "Pediatrician",
+            "phoneticTranscription": "Pe-jyah-tra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ginecologista",
+            "english": "Gynecologist",
+            "phoneticTranscription": "Zhee-ne-ko-lo-zhees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cardiologista",
+            "english": "Cardiologist",
+            "phoneticTranscription": "Kar-jyo-lo-zhees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dermatologista",
+            "english": "Dermatologist",
+            "phoneticTranscription": "Der-ma-to-lo-zhees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Oftalmologista",
+            "english": "Ophthalmologist",
+            "phoneticTranscription": "Of-tal-mo-lo-zhees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ortopedista",
+            "english": "Orthopedist",
+            "phoneticTranscription": "Or-to-pe-jees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dentista",
+            "english": "Dentist",
+            "phoneticTranscription": "Den-chees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Psicólogo",
+            "english": "Psychologist",
+            "phoneticTranscription": "Psee-ko-lo-goo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Psiquiatra",
+            "english": "Psychiatrist",
+            "phoneticTranscription": "Psee-kyah-tra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fisioterapeuta",
+            "english": "Physiotherapist",
+            "phoneticTranscription": "Fee-zyo-te-ra-pew-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Radiografia",
+            "english": "X-ray",
+            "phoneticTranscription": "Ha-dyo-gra-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ultrassom",
+            "english": "Ultrasound",
+            "phoneticTranscription": "Ool-tra-som",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ressonância",
+            "english": "Resonance/MRI",
+            "phoneticTranscription": "He-so-nan-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tomografia",
+            "english": "CT Scan",
+            "phoneticTranscription": "To-mo-gra-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hemograma",
+            "english": "Blood count",
+            "phoneticTranscription": "E-mo-gra-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Urina",
+            "english": "Urine",
+            "phoneticTranscription": "Oo-ree-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fezes",
+            "english": "Feces",
+            "phoneticTranscription": "Fe-zeez",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Internação",
+            "english": "Hospitalization",
+            "phoneticTranscription": "In-ter-na-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alta hospitalar",
+            "english": "Hospital discharge",
+            "phoneticTranscription": "Al-ta os-pee-la-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prontuário",
+            "english": "Medical record",
+            "phoneticTranscription": "Pron-too-ah-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Plano de saúde",
+            "english": "Health insurance",
+            "phoneticTranscription": "Pla-noo de sa-oo-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cobertura",
+            "english": "Coverage",
+            "phoneticTranscription": "Ko-ber-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carência",
+            "english": "Waiting period (insurance)",
+            "phoneticTranscription": "Ka-ren-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reembolso",
+            "english": "Reimbursement",
+            "phoneticTranscription": "He-em-bol-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Primeiros socorros",
+            "english": "First aid",
+            "phoneticTranscription": "Pree-may-roos so-ko-hoos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atadura",
+            "english": "Bandage/Dressings",
+            "phoneticTranscription": "A-ta-doo-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gaze",
+            "english": "Gauze",
+            "phoneticTranscription": "Ga-zee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Algodão hidrófilo",
+            "english": "Absorbent cotton",
+            "phoneticTranscription": "Al-go-down ee-dro-fee-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Antisséptico",
+            "english": "Antiseptic",
+            "phoneticTranscription": "An-chee-sep-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Álcool em gel",
+            "english": "Hand sanitizer",
+            "phoneticTranscription": "Al-ko-ol em zhel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Termômetro",
+            "english": "Thermometer",
+            "phoneticTranscription": "Ter-mo-me-troo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Seringa",
+            "english": "Syringe",
+            "phoneticTranscription": "Se-reen-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Agulha",
+            "english": "Needle",
+            "phoneticTranscription": "A-goo-lya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Soro",
+            "english": "Serum/IV fluid",
+            "phoneticTranscription": "So-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transfusão",
+            "english": "Transfusion",
+            "phoneticTranscription": "Trans-foo-zown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Doador",
+            "english": "Donor",
+            "phoneticTranscription": "Do-a-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Órgão",
+            "english": "Organ",
+            "phoneticTranscription": "Or-gown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transplante",
+            "english": "Transplant",
+            "phoneticTranscription": "Trans-plan-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cérebro",
+            "english": "Brain",
+            "phoneticTranscription": "Se-re-broo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fígado",
+            "english": "Liver",
+            "phoneticTranscription": "Fee-ga-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rins",
+            "english": "Kidneys",
+            "phoneticTranscription": "Heens",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estômago",
+            "english": "Stomach",
+            "phoneticTranscription": "Es-to-ma-goo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Intestino",
+            "english": "Intestine",
+            "phoneticTranscription": "In-tes-chee-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Articulação",
+            "english": "Joint",
+            "phoneticTranscription": "Ar-chee-koo-la-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tendão",
+            "english": "Tendon",
+            "phoneticTranscription": "Ten-down",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ligamento",
+            "english": "Ligament",
+            "phoneticTranscription": "Lee-ga-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vaso sanguíneo",
+            "english": "Blood vessel",
+            "phoneticTranscription": "Va-zoo san-gwee-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Artéria",
+            "english": "Artery",
+            "phoneticTranscription": "Ar-te-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Veia",
+            "english": "Vein",
+            "phoneticTranscription": "Vay-ya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Glóbulo",
+            "english": "Globule/Blood cell",
+            "phoneticTranscription": "Glo-boo-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resiliência",
+            "english": "Resilience",
+            "phoneticTranscription": "Re-zee-lyen-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Anticorpo",
+            "english": "Antibody",
+            "phoneticTranscription": "An-chee-kor-poo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Epidemia",
+            "english": "Epidemic",
+            "phoneticTranscription": "E-pee-de-mee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pandemia",
+            "english": "Pandemic",
+            "phoneticTranscription": "Pan-de-mee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Quarentena",
+            "english": "Quarantine",
+            "phoneticTranscription": "Kwa-ren-te-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Isolamento",
+            "english": "Isolation",
+            "phoneticTranscription": "Ee-zo-la-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prevenção",
+            "english": "Prevention",
+            "phoneticTranscription": "Pre-ven-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reabilitação",
+            "english": "Rehabilitation",
+            "phoneticTranscription": "He-a-bee-lee-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Terapia",
+            "english": "Therapy",
+            "phoneticTranscription": "Te-ra-pyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Curativo lateral",
+            "english": "Side dressing",
+            "phoneticTranscription": "Koo-ra-chee-voo la-te-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Remissão",
+            "english": "Remission",
+            "phoneticTranscription": "He-mee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Efeito colateral",
+            "english": "Side effect",
+            "phoneticTranscription": "E-fay-too ko-la-te-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bula",
+            "english": "Package insert",
+            "phoneticTranscription": "Boo-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cápsula",
+            "english": "Capsule",
+            "phoneticTranscription": "Kap-soo-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comprimido",
+            "english": "Tablet",
+            "phoneticTranscription": "Kom-pree-mee-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gotas",
+            "english": "Drops",
+            "phoneticTranscription": "Go-tas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inalação",
+            "english": "Inhalation",
+            "phoneticTranscription": "Ee-na-la-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nebulização",
+            "english": "Nebulization",
+            "phoneticTranscription": "Ne-boo-lee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Farmacêutico",
+            "english": "Pharmacist",
+            "phoneticTranscription": "Far-ma-se-oo-chee-kooo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Balcão de atendimento",
+            "english": "Service counter",
+            "phoneticTranscription": "Bal-kown de a-ten-jee-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prateleira",
+            "english": "Shelf",
+            "phoneticTranscription": "Pra-te-lay-ra",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Exame",
+        "correctVersion": "Can mean a medical 'Test/Exam' but also a 'Review' or 'Survey'.",
+        "explanation": "Trap level: Medium"
+    }
+}

@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a1_m06",
+    "language": "hi",
+    "level": "a1",
+    "theme": "Home, Household Objects & Directions",
+    "order": 6,
+    "lessons": [
+        {
+            "word": "बैठक",
+            "translation": "Living Room / Sitting Room",
+            "phonetic": "Baithak"
+        },
+        {
+            "word": "बिस्तर",
+            "translation": "Bed",
+            "phonetic": "Bistar"
+        },
+        {
+            "word": "मेज़",
+            "translation": "Table",
+            "phonetic": "Mez"
+        },
+        {
+            "word": "आसन",
+            "translation": "Chair",
+            "phonetic": "Kursi"
+        },
+        {
+            "word": "अलमारी",
+            "translation": "Almirah / Wardrobe",
+            "phonetic": "Almari"
+        },
+        {
+            "word": "पंखा",
+            "translation": "Fan",
+            "phonetic": "Pankha"
+        },
+        {
+            "word": "खिड़की",
+            "translation": "Window",
+            "phonetic": "Khidki"
+        },
+        {
+            "word": "दरवाजा",
+            "translation": "Door",
+            "phonetic": "Darvaza"
+        },
+        {
+            "word": "चादर",
+            "translation": "Bed sheet",
+            "phonetic": "Chadar"
+        },
+        {
+            "word": "तकिया",
+            "translation": "Pillow",
+            "phonetic": "Takiya"
+        },
+        {
+            "word": "कंबल",
+            "translation": "Blanket",
+            "phonetic": "Kambal"
+        },
+        {
+            "word": "आईना",
+            "translation": "Mirror",
+            "phonetic": "Aaina"
+        },
+        {
+            "word": "पर्दा",
+            "translation": "Curtain",
+            "phonetic": "Parda"
+        },
+        {
+            "word": "कालीन",
+            "translation": "Carpet / Rug",
+            "phonetic": "Kaleen"
+        },
+        {
+            "word": "दीवार",
+            "translation": "Wall",
+            "phonetic": "Deevar"
+        },
+        {
+            "word": "छत",
+            "translation": "Roof / Ceiling",
+            "phonetic": "Chhat"
+        },
+        {
+            "word": "फर्श",
+            "translation": "Floor",
+            "phonetic": "Farsh"
+        },
+        {
+            "word": "ताला",
+            "translation": "Lock",
+            "phonetic": "Taala"
+        },
+        {
+            "word": "चाबी",
+            "translation": "Key",
+            "phonetic": "Chaabi"
+        },
+        {
+            "word": "बत्ती",
+            "translation": "Light / Lamp",
+            "phonetic": "Batti"
+        },
+        {
+            "word": "दीपक",
+            "translation": "Earthen lamp",
+            "phonetic": "Deepak"
+        },
+        {
+            "word": "नल",
+            "translation": "Tap / Faucet",
+            "phonetic": "Nal"
+        },
+        {
+            "word": "साबुन",
+            "translation": "Soap",
+            "phonetic": "Sabun"
+        },
+        {
+            "word": "तौलिया",
+            "translation": "Towel",
+            "phonetic": "Tauliya"
+        },
+        {
+            "word": "कंघृत",
+            "translation": "Comb",
+            "phonetic": "Kanghi"
+        },
+        {
+            "word": "मथानी",
+            "translation": "Churner",
+            "phonetic": "Mathani"
+        },
+        {
+            "word": "मग्गा",
+            "translation": "Mug",
+            "phonetic": "Magga"
+        },
+        {
+            "word": "झाड़ू",
+            "translation": "Broom",
+            "phonetic": "Jhaadu"
+        },
+        {
+            "word": "पोंछा",
+            "translation": "Mop",
+            "phonetic": "Poncha"
+        },
+        {
+            "word": "कूड़ेदान",
+            "translation": "Dustbin",
+            "phonetic": "Koodedaan"
+        },
+        {
+            "word": "घड़ी",
+            "translation": "Clock / Watch",
+            "phonetic": "Ghadi"
+        },
+        {
+            "word": "कैमरा",
+            "translation": "Camera",
+            "phonetic": "Camera"
+        },
+        {
+            "word": "पोथी",
+            "translation": "Tome / Volume",
+            "phonetic": "Pothi"
+        },
+        {
+            "word": "समाचार पत्र",
+            "translation": "Newspaper",
+            "phonetic": "Akhbaar"
+        },
+        {
+            "word": "पैसा",
+            "translation": "Money",
+            "phonetic": "Paisa"
+        },
+        {
+            "word": "बटुआ",
+            "translation": "Wallet / Purse",
+            "phonetic": "Batua"
+        },
+        {
+            "word": "झोला",
+            "translation": "Bag",
+            "phonetic": "Jhola"
+        },
+        {
+            "word": "छतरी",
+            "translation": "Umbrella",
+            "phonetic": "Chhatri"
+        },
+        {
+            "word": "कैंची",
+            "translation": "Scissors",
+            "phonetic": "Kainchi"
+        },
+        {
+            "word": "सुई",
+            "translation": "Needle",
+            "phonetic": "Suee"
+        },
+        {
+            "word": "धागा",
+            "translation": "Thread",
+            "phonetic": "Dhaaga"
+        },
+        {
+            "word": "खिलौना",
+            "translation": "Toy",
+            "phonetic": "Khilauna"
+        },
+        {
+            "word": "सीढ़ी",
+            "translation": "Stairs / Ladder",
+            "phonetic": "Seedhi"
+        },
+        {
+            "word": "आँगन",
+            "translation": "Courtyard",
+            "phonetic": "Aangan"
+        },
+        {
+            "word": "बगीचा",
+            "translation": "Garden",
+            "phonetic": "Bageecha"
+        },
+        {
+            "word": "किराया",
+            "translation": "Rent",
+            "phonetic": "Kiraya"
+        },
+        {
+            "word": "दस्तावेज़",
+            "translation": "Document",
+            "phonetic": "Dastavez"
+        },
+        {
+            "word": "अंकनी",
+            "translation": "Pencil / Writing tool",
+            "phonetic": "Ankani"
+        },
+        {
+            "word": "पेन्सिल",
+            "translation": "Pencil",
+            "phonetic": "Pencil"
+        },
+        {
+            "word": "मेजपोश",
+            "translation": "Tablecloth",
+            "phonetic": "Mezposh"
+        },
+        {
+            "word": "कूड़ा",
+            "translation": "Trash / Garbage",
+            "phonetic": "Kooda"
+        },
+        {
+            "word": "डगर",
+            "translation": "Trail / Path",
+            "phonetic": "Dagar"
+        },
+        {
+            "word": "मोड़",
+            "translation": "Turn / Curve",
+            "phonetic": "Mod"
+        },
+        {
+            "word": "चौराहा",
+            "translation": "Crossroad / Intersection",
+            "phonetic": "Chauraha"
+        },
+        {
+            "word": "कोना",
+            "translation": "Corner",
+            "phonetic": "Kona"
+        },
+        {
+            "word": "किनारा",
+            "translation": "Edge / Bank",
+            "phonetic": "Kinara"
+        },
+        {
+            "word": "दूरी",
+            "translation": "Distance",
+            "phonetic": "Doori"
+        },
+        {
+            "word": "नक्शा",
+            "translation": "Map",
+            "phonetic": "Naksha"
+        },
+        {
+            "word": "निशान",
+            "translation": "Landmark / Sign",
+            "phonetic": "Nishaan"
+        },
+        {
+            "word": "मकान",
+            "translation": "Building / House",
+            "phonetic": "Makaan"
+        },
+        {
+            "word": "बगल में",
+            "translation": "Next to",
+            "phonetic": "Bagal mein"
+        },
+        {
+            "word": "बीच में",
+            "translation": "In the middle / Between",
+            "phonetic": "Beech mein"
+        },
+        {
+            "word": "सामने",
+            "translation": "In front",
+            "phonetic": "Saamne"
+        },
+        {
+            "word": "ऊपर",
+            "translation": "Up / Above",
+            "phonetic": "Oopar"
+        },
+        {
+            "word": "नीचे",
+            "translation": "Down / Below",
+            "phonetic": "Neeche"
+        },
+        {
+            "word": "अंदर",
+            "translation": "Inside",
+            "phonetic": "Andar"
+        },
+        {
+            "word": "बाहर",
+            "translation": "Outside",
+            "phonetic": "Baahar"
+        },
+        {
+            "word": "बाएँ",
+            "translation": "Left",
+            "phonetic": "Baayein"
+        },
+        {
+            "word": "दाएँ",
+            "translation": "Right",
+            "phonetic": "Daayein"
+        },
+        {
+            "word": "सीधा",
+            "translation": "Straight",
+            "phonetic": "Seedha"
+        },
+        {
+            "word": "उल्टा",
+            "translation": "Opposite / Reverse",
+            "phonetic": "Ulta"
+        },
+        {
+            "word": "इधर",
+            "translation": "This way / Hither",
+            "phonetic": "Idhar"
+        },
+        {
+            "word": "उधर",
+            "translation": "That way / Thither",
+            "phonetic": "Udhar"
+        },
+        {
+            "word": "जहाँ",
+            "translation": "Wherever",
+            "phonetic": "Jahan"
+        },
+        {
+            "word": "किधर",
+            "translation": "Whither / Which way",
+            "phonetic": "Kidhar"
+        },
+        {
+            "word": "उत्तर",
+            "translation": "North",
+            "phonetic": "Uttar"
+        },
+        {
+            "word": "दक्षिण",
+            "translation": "South",
+            "phonetic": "Dakshin"
+        },
+        {
+            "word": "पूर्व",
+            "translation": "East",
+            "phonetic": "Poorv"
+        },
+        {
+            "word": "पश्चिम",
+            "translation": "West",
+            "phonetic": "Pashchim"
+        },
+        {
+            "word": "पीढ़ी",
+            "translation": "Generation",
+            "phonetic": "Peedhi"
+        },
+        {
+            "word": "दूर",
+            "translation": "Far",
+            "phonetic": "Door"
+        },
+        {
+            "word": "पास",
+            "translation": "Near / Close",
+            "phonetic": "Paas"
+        },
+        {
+            "word": "ऊंचाई",
+            "translation": "Height",
+            "phonetic": "Oonchayi"
+        },
+        {
+            "word": "गहरितई",
+            "translation": "Depth",
+            "phonetic": "Gahrayi"
+        },
+        {
+            "word": "लंबाई",
+            "translation": "Length",
+            "phonetic": "Lambayi"
+        },
+        {
+            "word": "चौड़ाई",
+            "translation": "Width",
+            "phonetic": "Chaudayi"
+        },
+        {
+            "word": "स्थान",
+            "translation": "Place",
+            "phonetic": "Sthan"
+        },
+        {
+            "word": "इलाका",
+            "translation": "Area / Territory",
+            "phonetic": "Ilaka"
+        },
+        {
+            "word": "जगह",
+            "translation": "Space / Place",
+            "phonetic": "Jagah"
+        },
+        {
+            "word": "दिशा",
+            "translation": "Direction",
+            "phonetic": "Disha"
+        },
+        {
+            "word": "आगे",
+            "translation": "Forward",
+            "phonetic": "Aage"
+        },
+        {
+            "word": "वापसी",
+            "translation": "Return / Way back",
+            "phonetic": "Vaapsi"
+        },
+        {
+            "word": "वापस",
+            "translation": "Back / Return",
+            "phonetic": "Wapas"
+        },
+        {
+            "word": "अगल-बगल",
+            "translation": "Side by side",
+            "phonetic": "Agal-bagal"
+        },
+        {
+            "word": "सब जगह",
+            "translation": "Everywhere",
+            "phonetic": "Sab jagah"
+        },
+        {
+            "word": "कहीं नहीं",
+            "translation": "Nowhere",
+            "phonetic": "Kahin nahin"
+        },
+        {
+            "word": "कहीं और",
+            "translation": "Somewhere else",
+            "phonetic": "Kahin aur"
+        },
+        {
+            "word": "नजदीक",
+            "translation": "Nearby",
+            "phonetic": "Nazdeek"
+        },
+        {
+            "word": "आर-पार",
+            "translation": "Across",
+            "phonetic": "Aar-paar"
+        },
+        {
+            "word": "पगडंडी",
+            "translation": "Footpath / Trail",
+            "phonetic": "Pagdandi"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Ulta-Pulta' Mixup",
+        "question": "If someone tells you an item is 'Ulta' (उल्टा), what could that mean besides 'opposite'?",
+        "options": [
+            "It is very expensive",
+            "It is upside down or inside out",
+            "It is imported from another country",
+            "It is brand new"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "In Hindi, 'Ulta' means opposite, but in daily life, it's the standard word for 'upside down' or 'inside out' (like a t-shirt worn incorrectly). The phrase 'Ulta-Pulta' is often used to describe messy or chaotic situations!"
+    }
+}

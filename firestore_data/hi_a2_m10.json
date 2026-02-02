@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a2_m10",
+    "language": "hi",
+    "level": "a2",
+    "theme": "Review & Advanced Mastery",
+    "order": 20,
+    "lessons": [
+        {
+            "word": "पराकाष्ठा",
+            "translation": "Pinnacle / Zenith",
+            "phonetic": "Parakashta"
+        },
+        {
+            "word": "चरमोत्कर्ष",
+            "translation": "Climax / Peak achievement",
+            "phonetic": "Charmotkarsh"
+        },
+        {
+            "word": "विलक्षण",
+            "translation": "Extraordinary / Unique",
+            "phonetic": "Vilakshan"
+        },
+        {
+            "word": "अतुलनीय",
+            "translation": "Incomparable",
+            "phonetic": "Atulaneeya"
+        },
+        {
+            "word": "अनुकरणीय",
+            "translation": "Exemplary",
+            "phonetic": "Anukaraneeya"
+        },
+        {
+            "word": "प्रतिबद्धता",
+            "translation": "Commitment",
+            "phonetic": "Pratibaddhata"
+        },
+        {
+            "word": "संकल्प",
+            "translation": "Resolution / Determination",
+            "phonetic": "Sankalp"
+        },
+        {
+            "word": "जिज्ञासा",
+            "translation": "Curiosity",
+            "phonetic": "Jigyasa"
+        },
+        {
+            "word": "धैर्य",
+            "translation": "Patience",
+            "phonetic": "Dhairya"
+        },
+        {
+            "word": "तूष्णीं",
+            "translation": "Satisfaction / Silence (Formal Sanskrit)",
+            "phonetic": "Tooshnim"
+        },
+        {
+            "word": "कृतज्ञता",
+            "translation": "Gratitude",
+            "phonetic": "Kritagyata"
+        },
+        {
+            "word": "संवेदना",
+            "translation": "Sensitivity / Empathy",
+            "phonetic": "Samvedana"
+        },
+        {
+            "word": "दयाभाव",
+            "translation": "Compassion / Kindness (Formal)",
+            "phonetic": "Dayabhav"
+        },
+        {
+            "word": "उदारता",
+            "translation": "Generosity",
+            "phonetic": "Udarata"
+        },
+        {
+            "word": "सत्यनिष्ठा",
+            "translation": "Integrity / Truthfulness",
+            "phonetic": "Satyanishta"
+        },
+        {
+            "word": "नैतिकता",
+            "translation": "Ethics / Morality",
+            "phonetic": "Naitikta"
+        },
+        {
+            "word": "शुचिता",
+            "translation": "Purity / Sanctity",
+            "phonetic": "Shuchita"
+        },
+        {
+            "word": "गरिमा",
+            "translation": "Dignity",
+            "phonetic": "Garima"
+        },
+        {
+            "word": "अस्मिता",
+            "translation": "Identity",
+            "phonetic": "Asmita"
+        },
+        {
+            "word": "स्वावलंबन",
+            "translation": "Self-reliance",
+            "phonetic": "Swavalamban"
+        },
+        {
+            "word": "आत्मनिर्भरता",
+            "translation": "Self-sufficiency",
+            "phonetic": "Aatmanirbharata"
+        },
+        {
+            "word": "दूरदर्शिता",
+            "translation": "Farsightedness",
+            "phonetic": "Doordarshita"
+        },
+        {
+            "word": "सूक्ष्मता",
+            "translation": "Subtlety / Fineness",
+            "phonetic": "Sukshmata"
+        },
+        {
+            "word": "व्यापकता",
+            "translation": "Vastness / Scope",
+            "phonetic": "Vyapakta"
+        },
+        {
+            "word": "गहनता",
+            "translation": "Depth / Intensity",
+            "phonetic": "Gahanta"
+        },
+        {
+            "word": "निपुणता",
+            "translation": "Proficiency / Skill",
+            "phonetic": "Nipunata"
+        },
+        {
+            "word": "पाटव",
+            "translation": "Efficiency / Shrewdness (Formal)",
+            "phonetic": "Patav"
+        },
+        {
+            "word": "सामर्थ्य",
+            "translation": "Capability / Might",
+            "phonetic": "Samarthya"
+        },
+        {
+            "word": "वर्चस्व",
+            "translation": "Dominance / Hegemony",
+            "phonetic": "Varchasva"
+        },
+        {
+            "word": "आधिपत्य",
+            "translation": "Sovereignty / Supremacy",
+            "phonetic": "Aadhipatya"
+        },
+        {
+            "word": "अखंडता",
+            "translation": "Integrity / Indivisibility",
+            "phonetic": "Akhandata"
+        },
+        {
+            "word": "प्रभुसत्ता",
+            "translation": "Sovereignty",
+            "phonetic": "Prabhusatta"
+        },
+        {
+            "word": "गणराज्य",
+            "translation": "Republic",
+            "phonetic": "Ganarajya"
+        },
+        {
+            "word": "लोकतंत्र",
+            "translation": "Democracy",
+            "phonetic": "Loktantra"
+        },
+        {
+            "word": "धर्मनिरपेक्षता",
+            "translation": "Secularism",
+            "phonetic": "Dharmanirpekshta"
+        },
+        {
+            "word": "समावेशी",
+            "translation": "Inclusive",
+            "phonetic": "Samaveshi"
+        },
+        {
+            "word": "सतत",
+            "translation": "Continuous / Constant",
+            "phonetic": "Satat"
+        },
+        {
+            "word": "चिरस्थायी",
+            "phonetic": "Chirasthayi",
+            "translation": "Everlasting"
+        },
+        {
+            "word": "क्षणभंगुर",
+            "translation": "Ephemeral / Fleeting",
+            "phonetic": "Kshanbhangur"
+        },
+        {
+            "word": "अमूर्त",
+            "translation": "Abstract",
+            "phonetic": "Amoort"
+        },
+        {
+            "word": "मूर्त",
+            "translation": "Concrete",
+            "phonetic": "Moort"
+        },
+        {
+            "word": "शाश्वत",
+            "translation": "Eternal",
+            "phonetic": "Shashwat"
+        },
+        {
+            "word": "कालजयी",
+            "translation": "Timeless",
+            "phonetic": "Kaaljayi"
+        },
+        {
+            "word": "पारदर्शी",
+            "translation": "Transparent",
+            "phonetic": "Paardarshi"
+        },
+        {
+            "word": "अपारदर्शी",
+            "translation": "Opaque",
+            "phonetic": "Apaardarshi"
+        },
+        {
+            "word": "समकालीन",
+            "translation": "Contemporary",
+            "phonetic": "Samkaleen"
+        },
+        {
+            "word": "युगांतरकारी",
+            "translation": "Epoch-making",
+            "phonetic": "Yugantarkari"
+        },
+        {
+            "word": "परिवर्तनकारी",
+            "translation": "Transformational",
+            "phonetic": "Parivartankari"
+        },
+        {
+            "word": "प्रगतिशील",
+            "translation": "Progressive",
+            "phonetic": "Pragatishil"
+        },
+        {
+            "word": "रूढ़िवादी",
+            "translation": "Orthodox / Conservative",
+            "phonetic": "Rudhivadi"
+        },
+        {
+            "word": "प्रतिगामी",
+            "translation": "Regressive",
+            "phonetic": "Pratigami"
+        },
+        {
+            "word": "अभिनव",
+            "translation": "Innovative / New",
+            "phonetic": "Abhinav"
+        },
+        {
+            "word": "मौलिक",
+            "translation": "Original",
+            "phonetic": "Maulik"
+        },
+        {
+            "word": "काल्पनिक",
+            "translation": "Imaginary",
+            "phonetic": "Kalpanik"
+        },
+        {
+            "word": "यथार्थवादी",
+            "translation": "Realistic",
+            "phonetic": "Yatharthvadi"
+        },
+        {
+            "word": "आदर्शवादी",
+            "translation": "Idealistic",
+            "phonetic": "Aadarshvadi"
+        },
+        {
+            "word": "व्यावहारिक",
+            "translation": "Practical",
+            "phonetic": "Vyavaharik"
+        },
+        {
+            "word": "सैद्धांतिक",
+            "translation": "Theoretical",
+            "phonetic": "Siddhantik"
+        },
+        {
+            "word": "तार्किक",
+            "translation": "Logical",
+            "phonetic": "Tarkik"
+        },
+        {
+            "word": "अतार्किक",
+            "translation": "Illogical",
+            "phonetic": "Atarkik"
+        },
+        {
+            "word": "विडंबना",
+            "translation": "Irony",
+            "phonetic": "Vidambana"
+        },
+        {
+            "word": "विरोधाभास",
+            "translation": "Paradox",
+            "phonetic": "Virodhabhas"
+        },
+        {
+            "word": "सामंजस्य",
+            "translation": "Harmony",
+            "phonetic": "Samanjasya"
+        },
+        {
+            "word": "समन्वय",
+            "translation": "Coordination",
+            "phonetic": "Samanvay"
+        },
+        {
+            "word": "सद्भाव",
+            "translation": "Goodwill / Harmony",
+            "phonetic": "Sadbhav"
+        },
+        {
+            "word": "द्वेष",
+            "translation": "Malice / Hatred",
+            "phonetic": "Dwesh"
+        },
+        {
+            "word": "ईर्ष्या",
+            "translation": "Jealousy",
+            "phonetic": "Irshya"
+        },
+        {
+            "word": "मद",
+            "translation": "Ego / Pride (Formal Sanskrit)",
+            "phonetic": "Mad"
+        },
+        {
+            "word": "विनम्रता",
+            "translation": "Humility",
+            "phonetic": "Vinamrata"
+        },
+        {
+            "word": "शील",
+            "translation": "Modesty / Virtue",
+            "phonetic": "Sheel"
+        },
+        {
+            "word": "मर्यादा",
+            "translation": "Boundary / Conduct code",
+            "phonetic": "Maryada"
+        },
+        {
+            "word": "स्वनियमन",
+            "translation": "Discipline / Self-regulation (Formal)",
+            "phonetic": "Swaniyaman"
+        },
+        {
+            "word": "स्वाध्याय",
+            "translation": "Self-study",
+            "phonetic": "Swadhyay"
+        },
+        {
+            "word": "चिन्तन",
+            "translation": "Contemplation (Formal)",
+            "phonetic": "Chintan"
+        },
+        {
+            "word": "मनन",
+            "translation": "Reflection / Musing",
+            "phonetic": "Manan"
+        },
+        {
+            "word": "विमर्श",
+            "translation": "Discussion / Deliberation",
+            "phonetic": "Vimarsh"
+        },
+        {
+            "word": "तर्क-वितर्क",
+            "translation": "Debate / Argument",
+            "phonetic": "Tark-vitark"
+        },
+        {
+            "word": "निष्कर्ष",
+            "translation": "Conclusion",
+            "phonetic": "Nishkarsh"
+        },
+        {
+            "word": "प्रमाण",
+            "translation": "Proof / Evidence",
+            "phonetic": "Praman"
+        },
+        {
+            "word": "साक्ष्य",
+            "translation": "Testimony / Witness evidence",
+            "phonetic": "Sakshya"
+        },
+        {
+            "word": "अभिपुष्टि",
+            "translation": "Validation",
+            "phonetic": "Abhipushti"
+        },
+        {
+            "word": "प्रत्यायन",
+            "translation": "Accreditation",
+            "phonetic": "Pratyayan"
+        },
+        {
+            "word": "मानकीकरण",
+            "translation": "Standardization",
+            "phonetic": "Manakikaran"
+        },
+        {
+            "word": "सुदृढ़ीकरण",
+            "translation": "Strengthening",
+            "phonetic": "Sudaradhikaran"
+        },
+        {
+            "word": "उन्नयन",
+            "translation": "Upgrade / Elevation",
+            "phonetic": "Unnayan"
+        },
+        {
+            "word": "सवर्धन",
+            "translation": "Promotion / Growth",
+            "phonetic": "Savardhan"
+        },
+        {
+            "word": "रक्षण",
+            "translation": "Protection (Formal)",
+            "phonetic": "Rakshan"
+        },
+        {
+            "word": "कल्याण",
+            "translation": "Welfare",
+            "phonetic": "Kalyan"
+        },
+        {
+            "word": "लोकहित",
+            "translation": "Public interest",
+            "phonetic": "Lokhit"
+        },
+        {
+            "word": "परोपकार",
+            "translation": "Philanthropy",
+            "phonetic": "Paropkar"
+        },
+        {
+            "word": "सेवाभाव",
+            "translation": "Spirit of service",
+            "phonetic": "Sevabhav"
+        },
+        {
+            "word": "समर्पण",
+            "translation": "Dedication / Surrender",
+            "phonetic": "Samarpan"
+        },
+        {
+            "word": "सिद्धी",
+            "translation": "Achievement / Perfection",
+            "phonetic": "Siddhi"
+        },
+        {
+            "word": "कैवल्य",
+            "translation": "Liberation / Isolation (Philosophical)",
+            "phonetic": "Kaivalya"
+        },
+        {
+            "word": "अद्वैत",
+            "translation": "Non-duality",
+            "phonetic": "Advaita"
+        },
+        {
+            "word": "अनुभूति",
+            "translation": "Realization / Feeling",
+            "phonetic": "Anubhooti"
+        },
+        {
+            "word": "परिहार",
+            "translation": "Avoidance / Remedy",
+            "phonetic": "Parihar"
+        },
+        {
+            "word": "अपरिहार्य",
+            "translation": "Inevitable / Unavoidable",
+            "phonetic": "Apariharya"
+        },
+        {
+            "word": "संज्ञान",
+            "translation": "Cognizance / Knowledge",
+            "phonetic": "Sangyan"
+        },
+        {
+            "word": "अभिलाषा",
+            "translation": "Desire / Wish (Formal)",
+            "phonetic": "Abhilasha"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Laksh(ya)' Confusion",
+        "question": "The word 'Lakshya' (लक्ष्य) means target or goal. However, in Sanskrit, the word 'Laksh' (लक्ष) is the root for a specific large number. Which one?",
+        "options": [
+            "1,000",
+            "10,000",
+            "100,000",
+            "1,000,000"
+        ],
+        "correct_answer_index": 2,
+        "explanation": "'Laksh' (लक्ष) is the Sanskrit root for 100,000, which became the Hindi 'Lakh'. 'Lakshya' (लक्ष्य) means the target or aim one is looking at."
+    }
+}

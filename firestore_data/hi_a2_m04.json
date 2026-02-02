@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a2_m04",
+    "language": "hi",
+    "level": "a2",
+    "theme": "Health, Clinic & Pharmacy",
+    "order": 14,
+    "lessons": [
+        {
+            "word": "आरोग्य",
+            "translation": "Well-being / Health (Sanskrit)",
+            "phonetic": "Aarogya"
+        },
+        {
+            "word": "चिकित्सा",
+            "translation": "Medical Treatment",
+            "phonetic": "Chikitsa"
+        },
+        {
+            "word": "चिकित्सालय",
+            "translation": "Hospital (Formal)",
+            "phonetic": "Chikitsalay"
+        },
+        {
+            "word": "औषधालय",
+            "translation": "Pharmacy / Dispensary",
+            "phonetic": "Aushadhalay"
+        },
+        {
+            "word": "निरामय केंद्र",
+            "translation": "Wellness Center",
+            "phonetic": "Niramay Kendra"
+        },
+        {
+            "word": "चिकित्सक",
+            "translation": "Doctor / Physician (Formal)",
+            "phonetic": "Chikitsak"
+        },
+        {
+            "word": "परिचारिका",
+            "translation": "Nurse (Formal)",
+            "phonetic": "Paricharika"
+        },
+        {
+            "word": "रुग्ण",
+            "translation": "Sick / Patient (Formal)",
+            "phonetic": "Rugna"
+        },
+        {
+            "word": "रोगी",
+            "translation": "Patient (Common Hindi)",
+            "phonetic": "Rogi"
+        },
+        {
+            "word": "मंत्रणा",
+            "translation": "Consultation / Deliberation (Formal)",
+            "phonetic": "Mantrana"
+        },
+        {
+            "word": "परीक्षण-केंद्र",
+            "translation": "Diagnostic Lab / Testing Center",
+            "phonetic": "Parikshan-kendra"
+        },
+        {
+            "word": "एक्स-रे",
+            "translation": "X-ray",
+            "phonetic": "X-ray"
+        },
+        {
+            "word": "रक्त परीक्षण",
+            "translation": "Blood test",
+            "phonetic": "Rakt parikshan"
+        },
+        {
+            "word": "ताप-मानक",
+            "translation": "Temperature standard / Reading",
+            "phonetic": "Tap-manak"
+        },
+        {
+            "word": "रक्त प्रवाह",
+            "translation": "Blood flow",
+            "phonetic": "Rakt pravah"
+        },
+        {
+            "word": "धड़कन",
+            "translation": "Heartbeat",
+            "phonetic": "Dhadkan"
+        },
+        {
+            "word": "नाड़ी",
+            "translation": "Pulse",
+            "phonetic": "Naadi"
+        },
+        {
+            "word": "औषधि",
+            "translation": "Medicine (Sanskrit)",
+            "phonetic": "Aushadhi"
+        },
+        {
+            "word": "गोली",
+            "translation": "Pill / Tablet",
+            "phonetic": "Goli"
+        },
+        {
+            "word": "कैप्सूल",
+            "translation": "Capsule",
+            "phonetic": "Capsule"
+        },
+        {
+            "word": "सिरप",
+            "translation": "Syrup",
+            "phonetic": "Syrup"
+        },
+        {
+            "word": "मलहम",
+            "translation": "Ointment",
+            "phonetic": "Malham"
+        },
+        {
+            "word": "पट्टी",
+            "translation": "Bandage",
+            "phonetic": "Patti"
+        },
+        {
+            "word": "चिकित्सा विधान",
+            "translation": "Prescription",
+            "phonetic": "Chikitsa Vidhan"
+        },
+        {
+            "word": "ओषधि-मात्रा",
+            "translation": "Medicine Dose",
+            "phonetic": "Aushadhi-maatra"
+        },
+        {
+            "word": "टीकाकरण",
+            "translation": "Vaccination",
+            "phonetic": "Teekakaran"
+        },
+        {
+            "word": "सुई लगाना",
+            "translation": "Injection",
+            "phonetic": "Sui lagana"
+        },
+        {
+            "word": "दर्द निवारक",
+            "translation": "Painkiller",
+            "phonetic": "Dard nivarak"
+        },
+        {
+            "word": "एंटीबायोटिक",
+            "translation": "Antibiotic",
+            "phonetic": "Antibiotic"
+        },
+        {
+            "word": "भार न्यूनता",
+            "translation": "Weight loss",
+            "phonetic": "Bhaar nyunta"
+        },
+        {
+            "word": "भार वृद्धि",
+            "translation": "Weight gain",
+            "phonetic": "Bhaar vriddhi"
+        },
+        {
+            "word": "आहार संयम",
+            "translation": "Dietary regulation",
+            "phonetic": "Aahar sanyam"
+        },
+        {
+            "word": "व्यायाम",
+            "translation": "Exercise",
+            "phonetic": "Vyayam"
+        },
+        {
+            "word": "योग",
+            "translation": "Yoga",
+            "phonetic": "Yoga"
+        },
+        {
+            "word": "प्राणायाम",
+            "translation": "Breathing technique",
+            "phonetic": "Pranayam"
+        },
+        {
+            "word": "ध्यान",
+            "translation": "Meditation",
+            "phonetic": "Dhyan"
+        },
+        {
+            "word": "आहार-चर्चा",
+            "translation": "Dietary Consultation / Diet plan",
+            "phonetic": "Aahar-charcha"
+        },
+        {
+            "word": "पोषण",
+            "translation": "Nutrition",
+            "phonetic": "Poshan"
+        },
+        {
+            "word": "विटामिन",
+            "translation": "Vitamin",
+            "phonetic": "Vitamin"
+        },
+        {
+            "word": "कैल्शियम",
+            "translation": "Calcium",
+            "phonetic": "Calcium"
+        },
+        {
+            "word": "प्रोटीन",
+            "translation": "Protein",
+            "phonetic": "Protein"
+        },
+        {
+            "word": "मधुमेह",
+            "translation": "Diabetes",
+            "phonetic": "Madhumeh"
+        },
+        {
+            "word": "अस्थमा",
+            "translation": "Asthma",
+            "phonetic": "Asthma"
+        },
+        {
+            "word": "एलर्जी",
+            "translation": "Allergy",
+            "phonetic": "Allergy"
+        },
+        {
+            "word": "संक्रमण",
+            "translation": "Infection",
+            "phonetic": "Sankraman"
+        },
+        {
+            "word": "शोथ",
+            "translation": "Inflammation",
+            "phonetic": "Shoth"
+        },
+        {
+            "word": "दाह",
+            "translation": "Burning sensation",
+            "phonetic": "Daah"
+        },
+        {
+            "word": "खुजली",
+            "translation": "Itching",
+            "phonetic": "Khujli"
+        },
+        {
+            "word": "भ्रम",
+            "translation": "Dizziness / Confusion (Formal)",
+            "phonetic": "Bhram"
+        },
+        {
+            "word": "वमन",
+            "translation": "Vomiting (Formal)",
+            "phonetic": "Vaman"
+        },
+        {
+            "word": "जी मिचलाना",
+            "translation": "Nausea",
+            "phonetic": "Ji michlana"
+        },
+        {
+            "word": "अतिसार",
+            "translation": "Diarrhea (Medical)",
+            "phonetic": "Atisar"
+        },
+        {
+            "word": "कोष्ठबद्धता",
+            "translation": "Constipation (Medical)",
+            "phonetic": "Kosthabaddhata"
+        },
+        {
+            "word": "अम्लता",
+            "translation": "Acidity",
+            "phonetic": "Amlata"
+        },
+        {
+            "word": "शिथिलता",
+            "translation": "Laxity / Fatigue",
+            "phonetic": "Shithilta"
+        },
+        {
+            "word": "निर्बलता",
+            "translation": "Weakness",
+            "phonetic": "Nirbalta"
+        },
+        {
+            "word": "अनिद्रा",
+            "translation": "Insomnia (Sanskrit)",
+            "phonetic": "Anidra"
+        },
+        {
+            "word": "तनाव",
+            "translation": "Stress",
+            "phonetic": "Tanav"
+        },
+        {
+            "word": "अवसाद",
+            "translation": "Depression",
+            "phonetic": "Avsad"
+        },
+        {
+            "word": "घबराहट",
+            "translation": "Anxiety",
+            "phonetic": "Ghabrahat"
+        },
+        {
+            "word": "शल्यक्रिया",
+            "translation": "Surgery (Formal)",
+            "phonetic": "Shalyakriya"
+        },
+        {
+            "word": "टांके",
+            "translation": "Stitches",
+            "phonetic": "Taanke"
+        },
+        {
+            "word": "चिह्न",
+            "translation": "Mark / Scar",
+            "phonetic": "Chihnu"
+        },
+        {
+            "word": "व्रण",
+            "translation": "Wound / Ulcer",
+            "phonetic": "Vran"
+        },
+        {
+            "word": "खरोंच",
+            "translation": "Scratch",
+            "phonetic": "Kharonch"
+        },
+        {
+            "word": "मोच",
+            "translation": "Sprain",
+            "phonetic": "Moch"
+        },
+        {
+            "word": "अस्थि भंग",
+            "translation": "Fracture",
+            "phonetic": "Asthi bhang"
+        },
+        {
+            "word": "लेप",
+            "translation": "Plaster / Coating",
+            "phonetic": "Lep"
+        },
+        {
+            "word": "बैसाखी",
+            "translation": "Crutches",
+            "phonetic": "Baisakhi"
+        },
+        {
+            "word": "चल-आसन",
+            "translation": "Wheelchair (Hindi literal)",
+            "phonetic": "Chal-kursi"
+        },
+        {
+            "word": "शिबिका",
+            "translation": "Stretcher (Palanquin style)",
+            "phonetic": "Shibika"
+        },
+        {
+            "word": "रुग्णवाहन",
+            "translation": "Ambulance (Formal)",
+            "phonetic": "Rugnavahan"
+        },
+        {
+            "word": "आपातकालीन कक्ष",
+            "translation": "Emergency Room",
+            "phonetic": "Aapatkaleen kaksh"
+        },
+        {
+            "word": "वार्ड",
+            "translation": "Ward",
+            "phonetic": "Ward"
+        },
+        {
+            "word": "कार्यमुक्त",
+            "translation": "Discharge (Job/Med)",
+            "phonetic": "Karyamukt"
+        },
+        {
+            "word": "स्वास्थ्य लाभ",
+            "translation": "Recovery",
+            "phonetic": "Swasthya labh"
+        },
+        {
+            "word": "सुधार",
+            "translation": "Improvement",
+            "phonetic": "Sudhar"
+        },
+        {
+            "word": "सावधानी",
+            "translation": "Precaution",
+            "phonetic": "Saavdhani"
+        },
+        {
+            "word": "स्वच्छता",
+            "translation": "Sanitation",
+            "phonetic": "Swachhta"
+        },
+        {
+            "word": "कीटाणु",
+            "translation": "Germs",
+            "phonetic": "Keetanu"
+        },
+        {
+            "word": "रोग-विषाणु",
+            "translation": "Disease-virus (Formal)",
+            "phonetic": "Rog-vishanu"
+        },
+        {
+            "word": "मुखावरण",
+            "translation": "Face Mask",
+            "phonetic": "Mukhavaran"
+        },
+        {
+            "word": "हस्तदस्ताने",
+            "translation": "Hand gloves",
+            "phonetic": "Hastadastane"
+        },
+        {
+            "word": "प्रक्षालक",
+            "translation": "Cleanser / Sanitizer",
+            "phonetic": "Prakshalak"
+        },
+        {
+            "word": "प्रथम उपचार",
+            "translation": "First Aid",
+            "phonetic": "Pratham upchar"
+        },
+        {
+            "word": "जीवन रक्षक",
+            "translation": "Lifesaving",
+            "phonetic": "Jeevan rakshak"
+        },
+        {
+            "word": "आतप",
+            "translation": "Sunshine / Solar heat",
+            "phonetic": "Aatap"
+        },
+        {
+            "word": "पवन",
+            "translation": "Wind",
+            "phonetic": "Pavan"
+        },
+        {
+            "word": "जलपान",
+            "translation": "Consumption of water",
+            "phonetic": "Jalpan"
+        },
+        {
+            "word": "सूप",
+            "translation": "Soup / Broth",
+            "phonetic": "Soop"
+        },
+        {
+            "word": "सस्यम",
+            "translation": "Fruit / Produce (Formal Sanskrit)",
+            "phonetic": "Sasyam"
+        },
+        {
+            "word": "शाकाहारी",
+            "translation": "Vegetarian",
+            "phonetic": "Shakahari"
+        },
+        {
+            "word": "मांसाहारी",
+            "translation": "Non-vegetarian",
+            "phonetic": "Mansahari"
+        },
+        {
+            "word": "श्वास",
+            "translation": "Breath (Formal)",
+            "phonetic": "Shwas"
+        },
+        {
+            "word": "मुस्कान",
+            "translation": "Smile",
+            "phonetic": "Muskan"
+        },
+        {
+            "word": "प्रसन्नता",
+            "translation": "Happiness / Contentment",
+            "phonetic": "Prasannata"
+        },
+        {
+            "word": "निरोधक",
+            "translation": "Preventive",
+            "phonetic": "Nirodhak"
+        },
+        {
+            "word": "निवृत्ति",
+            "translation": "Recovery / Cessation of disease",
+            "phonetic": "Nivrutti"
+        },
+        {
+            "word": "पथ्य",
+            "translation": "Dietary prescription (Sanskrit)",
+            "phonetic": "Pathya"
+        },
+        {
+            "word": "आरोग्यशाला",
+            "translation": "Wellness house",
+            "phonetic": "Aarogyashala"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Naadi' Connection",
+        "question": "When a traditional Indian doctor (Vaidya) checks your 'Naadi' (नाड़ी), what are they doing?",
+        "options": [
+            "Checking your breathing",
+            "Checking your pulse",
+            "Checking your temperature",
+            "Checking your throat"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Naadi' literally refers to the veins or arteries, but in medical contexts, it specifically means the pulse. 'Naadi Pariksha' (pulse examination) is a core diagnostic method in Ayurveda."
+    }
+}

@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a1_m09",
+    "language": "hi",
+    "level": "a1",
+    "theme": "Body Parts, Health & Clothing",
+    "order": 9,
+    "lessons": [
+        {
+            "word": "शरीर",
+            "translation": "Body",
+            "phonetic": "Shareer"
+        },
+        {
+            "word": "सिर",
+            "translation": "Head",
+            "phonetic": "Sir"
+        },
+        {
+            "word": "बाल",
+            "translation": "Hair",
+            "phonetic": "Baal"
+        },
+        {
+            "word": "चेहरित",
+            "translation": "Face",
+            "phonetic": "Chehra"
+        },
+        {
+            "word": "माथा",
+            "translation": "Forehead",
+            "phonetic": "Maatha"
+        },
+        {
+            "word": "आँख",
+            "translation": "Eye",
+            "phonetic": "Aankh"
+        },
+        {
+            "word": "कान",
+            "translation": "Ear",
+            "phonetic": "Kaan"
+        },
+        {
+            "word": "नाक",
+            "translation": "Nose",
+            "phonetic": "Naak"
+        },
+        {
+            "word": "गाल",
+            "translation": "Cheek",
+            "phonetic": "Gaal"
+        },
+        {
+            "word": "मुँह",
+            "translation": "Mouth",
+            "phonetic": "Munh"
+        },
+        {
+            "word": "होंठ",
+            "translation": "Lips",
+            "phonetic": "Honth"
+        },
+        {
+            "word": "दाँत",
+            "translation": "Tooth / Teeth",
+            "phonetic": "Daant"
+        },
+        {
+            "word": "जीभ",
+            "translation": "Tongue",
+            "phonetic": "Jeebh"
+        },
+        {
+            "word": "ठोड़ी",
+            "translation": "Chin",
+            "phonetic": "Thodi"
+        },
+        {
+            "word": "गर्दन",
+            "translation": "Neck",
+            "phonetic": "Gardan"
+        },
+        {
+            "word": "कंधा",
+            "translation": "Shoulder",
+            "phonetic": "Kandha"
+        },
+        {
+            "word": "बाजू",
+            "translation": "Arm / Side",
+            "phonetic": "Baaju"
+        },
+        {
+            "word": "कोहनी",
+            "translation": "Elbow",
+            "phonetic": "Kohani"
+        },
+        {
+            "word": "हाथ",
+            "translation": "Hand",
+            "phonetic": "Haath"
+        },
+        {
+            "word": "हथेली",
+            "translation": "Palm",
+            "phonetic": "Hathelee"
+        },
+        {
+            "word": "उँगली",
+            "translation": "Finger",
+            "phonetic": "Ungli"
+        },
+        {
+            "word": "अँगूठा",
+            "translation": "Thumb",
+            "phonetic": "Angootha"
+        },
+        {
+            "word": "कलाइ",
+            "translation": "Wrist",
+            "phonetic": "Kalai"
+        },
+        {
+            "word": "पेट",
+            "translation": "Stomach",
+            "phonetic": "Pet"
+        },
+        {
+            "word": "सीना",
+            "translation": "Chest",
+            "phonetic": "Seena"
+        },
+        {
+            "word": "कमर",
+            "translation": "Waist",
+            "phonetic": "Kamar"
+        },
+        {
+            "word": "पीठ",
+            "translation": "Back",
+            "phonetic": "Peeth"
+        },
+        {
+            "word": "पैर",
+            "translation": "Leg / Foot",
+            "phonetic": "Pair"
+        },
+        {
+            "word": "घुटना",
+            "translation": "Knee",
+            "phonetic": "Ghutna"
+        },
+        {
+            "word": "एड़ी",
+            "translation": "Heel",
+            "phonetic": "Aidi"
+        },
+        {
+            "word": "पैर की उँगली",
+            "translation": "Toe",
+            "phonetic": "Pair ki ungli"
+        },
+        {
+            "word": "हड्डी",
+            "translation": "Bone",
+            "phonetic": "Haddi"
+        },
+        {
+            "word": "खून",
+            "translation": "Blood",
+            "phonetic": "Khoon"
+        },
+        {
+            "word": "त्वचा",
+            "translation": "Skin",
+            "phonetic": "Tvacha"
+        },
+        {
+            "word": "दिल",
+            "translation": "Heart",
+            "phonetic": "Dil"
+        },
+        {
+            "word": "दिमाग",
+            "translation": "Brain / Mind",
+            "phonetic": "Dimag"
+        },
+        {
+            "word": "फेफड़े",
+            "translation": "Lungs",
+            "phonetic": "Phephade"
+        },
+        {
+            "word": "मांसपेशी",
+            "translation": "Muscle",
+            "phonetic": "Maanspeshi"
+        },
+        {
+            "word": "स्वास्थ्य",
+            "translation": "Health",
+            "phonetic": "Svasthya"
+        },
+        {
+            "word": "बीमारी",
+            "translation": "Illness / Sickness",
+            "phonetic": "Beemari"
+        },
+        {
+            "word": "बुखार",
+            "translation": "Fever",
+            "phonetic": "Bukhaar"
+        },
+        {
+            "word": "दर्द",
+            "translation": "Pain",
+            "phonetic": "Dard"
+        },
+        {
+            "word": "जुकार्य",
+            "translation": "Common cold",
+            "phonetic": "Zukaam"
+        },
+        {
+            "word": "खाँसी",
+            "translation": "Cough",
+            "phonetic": "Khaansi"
+        },
+        {
+            "word": "छींक",
+            "translation": "Sneeze",
+            "phonetic": "Chheenk"
+        },
+        {
+            "word": "चोट",
+            "translation": "Injury",
+            "phonetic": "Chot"
+        },
+        {
+            "word": "घाव",
+            "translation": "Wound",
+            "phonetic": "Ghaav"
+        },
+        {
+            "word": "सूजन",
+            "translation": "Swelling",
+            "phonetic": "Soojan"
+        },
+        {
+            "word": "कमजोरी",
+            "translation": "Weakness",
+            "phonetic": "Kamjori"
+        },
+        {
+            "word": "थकान",
+            "translation": "Tiredness / Fatigue",
+            "phonetic": "Thakaan"
+        },
+        {
+            "word": "दवाई",
+            "translation": "Medicine",
+            "phonetic": "Davayi"
+        },
+        {
+            "word": "उपचार",
+            "translation": "Treatment / Cure",
+            "phonetic": "Ilaaj"
+        },
+        {
+            "word": "अस्पताल",
+            "translation": "Hospital",
+            "phonetic": "Aspataal"
+        },
+        {
+            "word": "इंजेक्शन",
+            "translation": "Injection",
+            "phonetic": "Injection"
+        },
+        {
+            "word": "नब्ज",
+            "translation": "Pulse",
+            "phonetic": "Nabz"
+        },
+        {
+            "word": "रक्तचाप",
+            "translation": "Blood Pressure",
+            "phonetic": "Raktchap"
+        },
+        {
+            "word": "साँस",
+            "translation": "Breath",
+            "phonetic": "Saans"
+        },
+        {
+            "word": "कपड़ा",
+            "translation": "Cloth",
+            "phonetic": "Kapda"
+        },
+        {
+            "word": "पोशाक",
+            "translation": "Outfit / Dress",
+            "phonetic": "Poshak"
+        },
+        {
+            "word": "साड़ी",
+            "translation": "Sari",
+            "phonetic": "Saari"
+        },
+        {
+            "word": "कुर्ता",
+            "translation": "Kurta",
+            "phonetic": "Kurta"
+        },
+        {
+            "word": "पायजामा",
+            "translation": "Pajamas",
+            "phonetic": "Pyjama"
+        },
+        {
+            "word": "धोती",
+            "translation": "Dhoti",
+            "phonetic": "Dhoti"
+        },
+        {
+            "word": "पगड़ी",
+            "translation": "Turban",
+            "phonetic": "Pagdi"
+        },
+        {
+            "word": "दुपट्टा",
+            "translation": "Scarf / Stole",
+            "phonetic": "Dupatta"
+        },
+        {
+            "word": "जूता",
+            "translation": "Shoe",
+            "phonetic": "Joota"
+        },
+        {
+            "word": "चप्पल",
+            "translation": "Slipper",
+            "phonetic": "Chappal"
+        },
+        {
+            "word": "मोजा",
+            "translation": "Sock",
+            "phonetic": "Moja"
+        },
+        {
+            "word": "टोपी",
+            "translation": "Cap / Hat",
+            "phonetic": "Topi"
+        },
+        {
+            "word": "कमीज",
+            "translation": "Shirt",
+            "phonetic": "Kameez"
+        },
+        {
+            "word": "पतलून",
+            "phonetic": "Trousers / Pants",
+            "translation": "Patloon"
+        },
+        {
+            "word": "कोट",
+            "translation": "Coat",
+            "phonetic": "Coat"
+        },
+        {
+            "word": "स्वेटर",
+            "translation": "Sweater",
+            "phonetic": "Sweater"
+        },
+        {
+            "word": "रुमाल",
+            "translation": "Handkerchief",
+            "phonetic": "Rumaal"
+        },
+        {
+            "word": "चश्मा",
+            "translation": "Glasses / Spectacles",
+            "phonetic": "Chashma"
+        },
+        {
+            "word": "कंगन",
+            "translation": "Bracelet / Bangle",
+            "phonetic": "Kangan"
+        },
+        {
+            "word": "अंगूठी",
+            "translation": "Ring",
+            "phonetic": "Angoothi"
+        },
+        {
+            "word": "हार",
+            "translation": "Necklace",
+            "phonetic": "Haar"
+        },
+        {
+            "word": "चूड़ी",
+            "translation": "Bangle",
+            "phonetic": "Choodi"
+        },
+        {
+            "word": "गहना",
+            "translation": "Jewelry",
+            "phonetic": "Gehna"
+        },
+        {
+            "word": "सिलाई",
+            "translation": "Stitching",
+            "phonetic": "Silayi"
+        },
+        {
+            "word": "बुनाई",
+            "translation": "Knitting",
+            "phonetic": "Bunayi"
+        },
+        {
+            "word": "तौक",
+            "translation": "Collar / Torque",
+            "phonetic": "Tauq"
+        },
+        {
+            "word": "बटन",
+            "translation": "Button",
+            "phonetic": "Button"
+        },
+        {
+            "word": "जेब",
+            "translation": "Pocket",
+            "phonetic": "Jeb"
+        },
+        {
+            "word": "कोमलता",
+            "translation": "Softness",
+            "phonetic": "Komaltā"
+        },
+        {
+            "word": "मजबूती",
+            "translation": "Strength / Durability",
+            "phonetic": "Mazbootee"
+        },
+        {
+            "word": "पुराना",
+            "translation": "Old (Object)",
+            "phonetic": "Purana"
+        },
+        {
+            "word": "नया",
+            "translation": "New",
+            "phonetic": "Naya"
+        },
+        {
+            "word": "कीमती",
+            "translation": "Expensive / Valuable",
+            "phonetic": "Keemti"
+        },
+        {
+            "word": "सस्ता",
+            "translation": "Cheap",
+            "phonetic": "Sasta"
+        },
+        {
+            "word": "गंदा",
+            "translation": "Dirty",
+            "phonetic": "Ganda"
+        },
+        {
+            "word": "स्वच्छ",
+            "translation": "Clean",
+            "phonetic": "Saaf"
+        },
+        {
+            "word": "ढीला",
+            "translation": "Loose",
+            "phonetic": "Dheela"
+        },
+        {
+            "word": "तंग",
+            "translation": "Tight",
+            "phonetic": "Tang"
+        },
+        {
+            "word": "लम्बा",
+            "translation": "Long / Tall",
+            "phonetic": "Lamba"
+        },
+        {
+            "word": "नाटा",
+            "translation": "Short (Height)",
+            "phonetic": "Naata"
+        },
+        {
+            "word": "हसीन",
+            "translation": "Charming / Beautiful",
+            "phonetic": "Haseen"
+        },
+        {
+            "word": "कुरूप",
+            "translation": "Ugly",
+            "phonetic": "Kuroop"
+        },
+        {
+            "word": "नाखून",
+            "translation": "Nail",
+            "phonetic": "Naakhoon"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Ghadi' Double Meaning",
+        "question": "The word 'Ghadi' (घड़ी) appeared earlier for 'Clock'. What does it mean in the context of Clothing/Accessories?",
+        "options": [
+            "A specific type of formal shirt",
+            "A wristwatch",
+            "A belt",
+            "A hat"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "In Hindi, 'Ghadi' is a universal term for any device that tells time, whether it's a wall clock or a wristwatch worn as an accessory."
+    }
+}

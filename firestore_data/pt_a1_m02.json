@@ -1,0 +1,612 @@
+{
+  "module_id": "pt_a1_m02",
+  "theme": "Numbers, Dates & Time",
+  "order": 2,
+  "lessons": [
+    {
+      "targetText": "Zero",
+      "english": "Zero",
+      "phoneticTranscription": "Ze-roo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Um",
+      "english": "One",
+      "phoneticTranscription": "Oom",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Dois",
+      "english": "Two",
+      "phoneticTranscription": "Doys",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Três",
+      "english": "Three",
+      "phoneticTranscription": "Trehs",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Quatro",
+      "english": "Four",
+      "phoneticTranscription": "Kwa-troo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cinco",
+      "english": "Five",
+      "phoneticTranscription": "Seen-koo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Seis",
+      "english": "Six",
+      "phoneticTranscription": "Says",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sete",
+      "english": "Seven",
+      "phoneticTranscription": "Se-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Oito",
+      "english": "Eight",
+      "phoneticTranscription": "Oy-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Nove",
+      "english": "Nine",
+      "phoneticTranscription": "No-vee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Dez",
+      "english": "Ten",
+      "phoneticTranscription": "Dehs",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Onze",
+      "english": "Eleven",
+      "phoneticTranscription": "On-zee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Doze",
+      "english": "Twelve",
+      "phoneticTranscription": "Do-zee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Treze",
+      "english": "Thirteen",
+      "phoneticTranscription": "Tre-zee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Catorze",
+      "english": "Fourteen",
+      "phoneticTranscription": "Ka-tor-zee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Quinze",
+      "english": "Fifteen",
+      "phoneticTranscription": "Keen-zee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Dezesseis",
+      "english": "Sixteen",
+      "phoneticTranscription": "De-ze-says",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Dezessete",
+      "english": "Seventeen",
+      "phoneticTranscription": "De-ze-se-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Dezoito",
+      "english": "Eighteen",
+      "phoneticTranscription": "De-zoy-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Dezenove",
+      "english": "Nineteen",
+      "phoneticTranscription": "De-ze-no-vee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Vinte",
+      "english": "Twenty",
+      "phoneticTranscription": "Veen-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Trinta",
+      "english": "Thirty",
+      "phoneticTranscription": "Treen-ta",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Quarenta",
+      "english": "Forty",
+      "phoneticTranscription": "Kwa-ren-ta",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cinquenta",
+      "english": "Fifty",
+      "phoneticTranscription": "Seen-kwen-ta",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sessenta",
+      "english": "Sixty",
+      "phoneticTranscription": "Se-sen-ta",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Setenta",
+      "english": "Seventy",
+      "phoneticTranscription": "Se-ten-ta",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Oitenta",
+      "english": "Eighty",
+      "phoneticTranscription": "Oy-ten-ta",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Noventa",
+      "english": "Ninety",
+      "phoneticTranscription": "No-ven-ta",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cem",
+      "english": "One hundred",
+      "phoneticTranscription": "Sehm",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Mil",
+      "english": "One thousand",
+      "phoneticTranscription": "Meel",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Primeiro",
+      "english": "First",
+      "phoneticTranscription": "Pree-may-roo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Segundo",
+      "english": "Second",
+      "phoneticTranscription": "Se-goon-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Terceiro",
+      "english": "Third",
+      "phoneticTranscription": "Ter-say-roo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Último",
+      "english": "Last",
+      "phoneticTranscription": "Ool-chee-moo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Metade",
+      "english": "Half",
+      "phoneticTranscription": "Me-ta-jee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Dobro",
+      "english": "Double",
+      "phoneticTranscription": "Do-broo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Segunda-feira",
+      "english": "Monday",
+      "phoneticTranscription": "Se-goon-da fay-ra",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Terça-feira",
+      "english": "Tuesday",
+      "phoneticTranscription": "Ter-sa fay-ra",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Quarta-feira",
+      "english": "Wednesday",
+      "phoneticTranscription": "Kwar-ta fay-ra",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Quinta-feira",
+      "english": "Thursday",
+      "phoneticTranscription": "Keen-ta fay-ra",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sexta-feira",
+      "english": "Friday",
+      "phoneticTranscription": "Ses-ta fay-ra",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sábado",
+      "english": "Saturday",
+      "phoneticTranscription": "Sa-ba-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Domingo",
+      "english": "Sunday",
+      "phoneticTranscription": "Do-meen-goo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Semana",
+      "english": "Week",
+      "phoneticTranscription": "Se-ma-na",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Mês",
+      "english": "Month",
+      "phoneticTranscription": "Mehs",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ano",
+      "english": "Year",
+      "phoneticTranscription": "Ah-noo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Janeiro",
+      "english": "January",
+      "phoneticTranscription": "Zha-nay-roo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Fevereiro",
+      "english": "February",
+      "phoneticTranscription": "Fe-ve-ray-roo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Março",
+      "english": "March",
+      "phoneticTranscription": "Mar-soo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Abril",
+      "english": "April",
+      "phoneticTranscription": "A-breel",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Maio",
+      "english": "May",
+      "phoneticTranscription": "My-oo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Junho",
+      "english": "June",
+      "phoneticTranscription": "Zhoo-nyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Julho",
+      "english": "July",
+      "phoneticTranscription": "Zhoo-lyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Agosto",
+      "english": "August",
+      "phoneticTranscription": "A-gos-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Setembro",
+      "english": "September",
+      "phoneticTranscription": "Se-tem-broo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Outubro",
+      "english": "October",
+      "phoneticTranscription": "Ow-too-broo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Novembro",
+      "english": "November",
+      "phoneticTranscription": "No-vem-broo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Dezembro",
+      "english": "December",
+      "phoneticTranscription": "De-zem-broo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Primavera",
+      "english": "Spring",
+      "phoneticTranscription": "Pree-ma-ve-ra",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Verão",
+      "english": "Summer",
+      "phoneticTranscription": "Ve-rown",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Outono",
+      "english": "Autumn",
+      "phoneticTranscription": "Ow-to-noo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Inverno",
+      "english": "Winter",
+      "phoneticTranscription": "In-ver-noo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Hora",
+      "english": "Hour",
+      "phoneticTranscription": "O-ra",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Minuto",
+      "english": "Minute",
+      "phoneticTranscription": "Mee-noo-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Instante",
+      "english": "Instant",
+      "phoneticTranscription": "In-stan-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Relógio",
+      "english": "Clock",
+      "phoneticTranscription": "Re-lo-zhyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Calendário",
+      "english": "Calendar",
+      "phoneticTranscription": "Ka-len-da-ryoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Manhã",
+      "english": "Morning",
+      "phoneticTranscription": "Ma-nyah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Tarde",
+      "english": "Afternoon",
+      "phoneticTranscription": "Tar-jee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Noite",
+      "english": "Night",
+      "phoneticTranscription": "Noy-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Madrugada",
+      "english": "Dawn/Early morning",
+      "phoneticTranscription": "Ma-droo-ga-da",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Meio-dia",
+      "english": "Noon",
+      "phoneticTranscription": "May-oo jee-ah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Meia-noite",
+      "english": "Midnight",
+      "phoneticTranscription": "May-a noy-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cedo",
+      "english": "Early",
+      "phoneticTranscription": "Se-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Atrasado",
+      "english": "Late/Delayed",
+      "phoneticTranscription": "A-tra-zah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Logo",
+      "english": "Soon",
+      "phoneticTranscription": "Lo-goo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Depois",
+      "english": "Later",
+      "phoneticTranscription": "De-poys",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Antes",
+      "english": "Before",
+      "phoneticTranscription": "An-chees",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Durante",
+      "english": "During",
+      "phoneticTranscription": "Doo-ran-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Enquanto",
+      "english": "While",
+      "phoneticTranscription": "En-kwan-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Rápido",
+      "english": "Fast",
+      "phoneticTranscription": "Ra-pee-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Devagar",
+      "english": "Slowly",
+      "phoneticTranscription": "De-va-gar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Freqüentemente",
+      "english": "Frequently",
+      "phoneticTranscription": "Fre-kwen-te-men-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Às vezes",
+      "english": "Sometimes",
+      "phoneticTranscription": "As ve-zees",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Raramente",
+      "english": "Rarely",
+      "phoneticTranscription": "Ra-ra-men-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Diário",
+      "english": "Daily",
+      "phoneticTranscription": "Dya-ryoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Semanal",
+      "english": "Weekly",
+      "phoneticTranscription": "Se-ma-nal",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Mensal",
+      "english": "Monthly",
+      "phoneticTranscription": "Men-sal",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Anual",
+      "english": "Annual",
+      "phoneticTranscription": "A-nwal",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Data",
+      "english": "Date",
+      "phoneticTranscription": "Da-ta",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Nascimento",
+      "english": "Birth",
+      "phoneticTranscription": "Nas-see-men-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Feriado",
+      "english": "Holiday",
+      "phoneticTranscription": "Fe-rya-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Fim de semana",
+      "english": "Weekend",
+      "phoneticTranscription": "Feem de se-ma-na",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Passado",
+      "english": "Past",
+      "phoneticTranscription": "Pa-sa-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Presente",
+      "english": "Present",
+      "phoneticTranscription": "Pre-zen-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Futuro",
+      "english": "Future",
+      "phoneticTranscription": "Foo-too-roo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Eternidade",
+      "english": "Eternity",
+      "phoneticTranscription": "E-ter-nee-da-jee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Imediato",
+      "english": "Immediate",
+      "phoneticTranscription": "Ee-me-dya-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Lento",
+      "english": "Slow",
+      "phoneticTranscription": "Len-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Veloz",
+      "english": "Swift",
+      "phoneticTranscription": "Ve-los",
+      "radicalBreakdown": ""
+    }
+  ],
+  "liarGameData": {
+    "trap": "Atualmente",
+    "correctVersion": "Means 'Currently/Nowadays', not 'Actually' (which is 'na verdade').",
+    "explanation": "Trap level: Extreme"
+  }
+}

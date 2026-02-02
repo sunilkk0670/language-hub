@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_b1_m09",
+    "language": "hi",
+    "level": "b1",
+    "theme": "Abstract Sciences & Cosmology",
+    "order": 29,
+    "lessons": [
+        {
+            "word": "खशास्त्र",
+            "translation": "Astronomy / Science of Spheres",
+            "phonetic": "Khagolshastra"
+        },
+        {
+            "word": "ब्रह्मांड-विज्ञान",
+            "translation": "Cosmology",
+            "phonetic": "Brahmand-vigyan"
+        },
+        {
+            "word": "खगोलीय पिंड",
+            "translation": "Celestial Body",
+            "phonetic": "Khagoliya pind"
+        },
+        {
+            "word": "तारामंडल",
+            "translation": "Constellation",
+            "phonetic": "Taramandal"
+        },
+        {
+            "word": "निहारिका",
+            "translation": "Nebula",
+            "phonetic": "Niharika"
+        },
+        {
+            "word": "कृष्ण विवर",
+            "translation": "Black Hole",
+            "phonetic": "Krishan vivar"
+        },
+        {
+            "word": "मंदाकिनी",
+            "translation": "Celestial River / Galaxy (Formal)",
+            "phonetic": "Mandakini"
+        },
+        {
+            "word": "गुरुत्वीय-बल",
+            "translation": "Gravitational Force",
+            "phonetic": "Gurutviya-bal"
+        },
+        {
+            "word": "सापेक्षता-सिद्धांत",
+            "translation": "Theory of Relativity",
+            "phonetic": "Sapekshata-siddhant"
+        },
+        {
+            "word": "प्रमात्रा भौतिकी",
+            "translation": "Quantum Physics",
+            "phonetic": "Pramatra bhautiki"
+        },
+        {
+            "word": "कण-भौतिकी",
+            "translation": "Particle Physics",
+            "phonetic": "Kan-bhautiki"
+        },
+        {
+            "word": "नाभिकीय विखंडन",
+            "translation": "Nuclear Fission",
+            "phonetic": "Nabhikiya vikhandan"
+        },
+        {
+            "word": "नाभिकीय संलयन",
+            "translation": "Nuclear Fusion",
+            "phonetic": "Nabhikiya sanlayan"
+        },
+        {
+            "word": "रश्मि-विकिरण",
+            "translation": "Ray Radiation",
+            "phonetic": "Rashmi-vikiran"
+        },
+        {
+            "word": "तरंग-दैर्ध्य",
+            "translation": "Wavelength",
+            "phonetic": "Tarang-dairghya"
+        },
+        {
+            "word": "विद्युत-चुंबकीय",
+            "translation": "Electromagnetic",
+            "phonetic": "Vidyut-chumbakiya"
+        },
+        {
+            "word": "ऊष्मप्रवैगिकी",
+            "translation": "Thermodynamics",
+            "phonetic": "Ushmapravaigiki"
+        },
+        {
+            "word": "प्रकाश की गति",
+            "translation": "Speed of Light",
+            "phonetic": "Prakash ki gati"
+        },
+        {
+            "word": "शून्य-गुरुत्व",
+            "translation": "Zero Gravity / Microgravity",
+            "phonetic": "Shunya-gurutva"
+        },
+        {
+            "word": "दिनांत",
+            "translation": "Evening / End of Day (Cosmic cycle)",
+            "phonetic": "Dinant"
+        },
+        {
+            "word": "कल्प",
+            "translation": "Aeon / Cosmic Period",
+            "phonetic": "Kalpa"
+        },
+        {
+            "word": "युग-चक्र",
+            "translation": "Epoch Cycle / Cycle of Ages",
+            "phonetic": "Yug-chakra"
+        },
+        {
+            "word": "महाशून्य",
+            "translation": "The Great Void / Deep Space",
+            "phonetic": "Mahashunya"
+        },
+        {
+            "word": "अनंततः",
+            "translation": "Infinitely / Ad infinitum",
+            "phonetic": "Anantatah"
+        },
+        {
+            "word": "सूक्ष्म-जगत",
+            "translation": "Micro-world / Quantum realm",
+            "phonetic": "Sukshma-jagat"
+        },
+        {
+            "word": "स्थूल-जगत",
+            "translation": "Macro-world / Physical realm",
+            "phonetic": "Sthul-jagat"
+        },
+        {
+            "word": "पदार्थ",
+            "translation": "Matter",
+            "phonetic": "Padarth"
+        },
+        {
+            "word": "प्रतिपदार्थ",
+            "translation": "Antimatter",
+            "phonetic": "Pratipadarth"
+        },
+        {
+            "word": "अणु-रचना",
+            "translation": "Molecular Structure",
+            "phonetic": "Anu-rachna"
+        },
+        {
+            "word": "परम-अणु",
+            "translation": "Ultimate Atom",
+            "phonetic": "Param-anu"
+        },
+        {
+            "word": "इलेक्ट्रॉन",
+            "translation": "Electron",
+            "phonetic": "Electron"
+        },
+        {
+            "word": "न्यूट्रॉन",
+            "translation": "Neutron",
+            "phonetic": "Neutron"
+        },
+        {
+            "word": "प्रोटॉन",
+            "translation": "Proton",
+            "phonetic": "Proton"
+        },
+        {
+            "word": "विषुव",
+            "translation": "Equinox",
+            "phonetic": "Vishuv"
+        },
+        {
+            "word": "अयनांत",
+            "translation": "Solstice",
+            "phonetic": "Ayanant"
+        },
+        {
+            "word": "ग्रहण",
+            "translation": "Eclipse",
+            "phonetic": "Grahan"
+        },
+        {
+            "word": "परिक्रमा-पथ",
+            "translation": "Orbit / Revolving path",
+            "phonetic": "Parikrama-path"
+        },
+        {
+            "word": "अक्षीय झुकाव",
+            "translation": "Axial Tilt",
+            "phonetic": "Akshiya jhukav"
+        },
+        {
+            "word": "घूर्णन",
+            "translation": "Rotation",
+            "phonetic": "Ghurnan"
+        },
+        {
+            "word": "विस्थापन-वेग",
+            "translation": "Escape Velocity",
+            "phonetic": "Visthapan-veg"
+        },
+        {
+            "word": "खगोलीय इकाई",
+            "translation": "Astronomical Unit (AU)",
+            "phonetic": "Khagoliya ekai"
+        },
+        {
+            "word": "प्रकाश-वर्ष",
+            "translation": "Light-year",
+            "phonetic": "Prakash-varsh"
+        },
+        {
+            "word": "पारसेक",
+            "translation": "Parsec",
+            "phonetic": "Parsec"
+        },
+        {
+            "word": "दृश्य-प्रकाश",
+            "translation": "Visible Light",
+            "phonetic": "Drishya-prakash"
+        },
+        {
+            "word": "अवरक्त",
+            "translation": "Infrared",
+            "phonetic": "Avrakt"
+        },
+        {
+            "word": "पराबैंगनी",
+            "translation": "Ultraviolet",
+            "phonetic": "Parabaingani"
+        },
+        {
+            "word": "क्ष-किरणें",
+            "translation": "X-rays",
+            "phonetic": "Ksha-kiranen"
+        },
+        {
+            "word": "गामा-किरणें",
+            "translation": "Gamma-rays",
+            "phonetic": "Gama-kiranen"
+        },
+        {
+            "word": "रेडियो तरंगें",
+            "translation": "Radio Waves",
+            "phonetic": "Radio tarangen"
+        },
+        {
+            "word": "दूरबीन",
+            "translation": "Telescope",
+            "phonetic": "Doorbeen"
+        },
+        {
+            "word": "वेधशाला",
+            "translation": "Observatory",
+            "phonetic": "Vedhshala"
+        },
+        {
+            "word": "व्योम-यान",
+            "translation": "Sky-craft / Spacecraft",
+            "phonetic": "Vyom-yaan"
+        },
+        {
+            "word": "प्रक्षेपण-यान",
+            "translation": "Launch Vehicle",
+            "phonetic": "Prakshepan-yaan"
+        },
+        {
+            "word": "भू-स्थिर",
+            "translation": "Geostationary",
+            "phonetic": "Bhu-sthir"
+        },
+        {
+            "word": "अंतरिक्ष स्टेशन",
+            "translation": "Space Station",
+            "phonetic": "Antariksh station"
+        },
+        {
+            "word": "यंत्र-प्रज्ञा",
+            "translation": "Machine Intelligence (AI)",
+            "phonetic": "Yantra-pragya"
+        },
+        {
+            "word": "मशीन लर्निंग",
+            "translation": "Machine Learning",
+            "phonetic": "Machine learning"
+        },
+        {
+            "word": "डेटा माइनिंग",
+            "translation": "Data Mining",
+            "phonetic": "Data mining"
+        },
+        {
+            "word": "एलगोरिद्म",
+            "translation": "Algorithm",
+            "phonetic": "Algorithm"
+        },
+        {
+            "word": "साइबर-सुरक्षा",
+            "translation": "Cybersecurity",
+            "phonetic": "Cyber-suraksha"
+        },
+        {
+            "word": "कूट-लेखन",
+            "translation": "Cryptography / Encoding",
+            "phonetic": "Koot-lekhan"
+        },
+        {
+            "word": "ब्लॉक-चेन",
+            "translation": "Blockchain",
+            "phonetic": "Blockchain"
+        },
+        {
+            "word": "क्वांटम कंप्यूटिंग",
+            "translation": "Quantum Computing",
+            "phonetic": "Quantum computing"
+        },
+        {
+            "word": "यंत्रीकरण",
+            "translation": "Mechanization / Automation",
+            "phonetic": "Yantrikaran"
+        },
+        {
+            "word": "यंत्र-मानविकी",
+            "translation": "Robotics / Science of androids",
+            "phonetic": "Yantra-manviki"
+        },
+        {
+            "word": "नैनो-प्रौद्योगिकी",
+            "translation": "Nanotechnology",
+            "phonetic": "Nano-praudyogiki"
+        },
+        {
+            "word": "जैव-प्रौद्योगिकी",
+            "translation": "Biotechnology",
+            "phonetic": "Jaiv-praudyogiki"
+        },
+        {
+            "word": "आनुवंशिक इंजीनियरिंग",
+            "translation": "Genetic Engineering",
+            "phonetic": "Anuvanshik engineering"
+        },
+        {
+            "word": "क्लोनिंग",
+            "translation": "Cloning",
+            "phonetic": "Cloning"
+        },
+        {
+            "word": "स्टेम सेल",
+            "translation": "Stem Cell",
+            "phonetic": "Stem cell"
+        },
+        {
+            "word": "शोध-शाला",
+            "translation": "Research Center / Laboratory",
+            "phonetic": "Shodh-shala"
+        },
+        {
+            "word": "परिकरण",
+            "translation": "Accessories / Apparatus",
+            "phonetic": "Parikaran"
+        },
+        {
+            "word": "अन्विष्टि",
+            "translation": "Formal Investigation / Search",
+            "phonetic": "Anvishti"
+        },
+        {
+            "word": "नूतन-सृजन",
+            "translation": "New creation / Invention",
+            "phonetic": "Nutan-srijan"
+        },
+        {
+            "word": "प्रत्यभिज्ञान",
+            "translation": "Recall / Discovery / Recognition",
+            "phonetic": "Pratyabhigyan"
+        },
+        {
+            "word": "वैज्ञानिक विधि",
+            "translation": "Scientific Method",
+            "phonetic": "Vaigyanik vidhi"
+        },
+        {
+            "word": "तथ्य",
+            "translation": "Fact",
+            "phonetic": "Tathya"
+        },
+        {
+            "word": "तर्काधार",
+            "translation": "Logical Basis",
+            "phonetic": "Tarkadhar"
+        },
+        {
+            "word": "प्रामाण्य",
+            "translation": "Validity / Evidentiary Proof",
+            "phonetic": "Pramanya"
+        },
+        {
+            "word": "उपसंहार",
+            "translation": "Epilogue / Conclusion",
+            "phonetic": "Upsamhar"
+        },
+        {
+            "word": "प्रतिमान",
+            "translation": "Paradigm / Model",
+            "phonetic": "Pratiman"
+        },
+        {
+            "word": "अपरिवर्तनीय",
+            "translation": "Immutable / Unchangeable",
+            "phonetic": "Aparivartaniya"
+        },
+        {
+            "word": "परिवर्तनशील",
+            "translation": "Variable / Dynamic",
+            "phonetic": "Parivartansheel"
+        },
+        {
+            "word": "सर्व-व्याप्ति",
+            "translation": "Universal Pervasiveness",
+            "phonetic": "Sarva-vyapti"
+        },
+        {
+            "word": "निरपेक्ष",
+            "translation": "Absolute / Independent",
+            "phonetic": "Nirpekshta"
+        },
+        {
+            "word": "सापेक्ष",
+            "translation": "Relative / Dependent",
+            "phonetic": "Sapekshta"
+        },
+        {
+            "word": "अवकाश-समय",
+            "translation": "Space-time",
+            "phonetic": "Avkash-samay"
+        },
+        {
+            "word": "बहुआयामी",
+            "translation": "Multi-dimensional",
+            "phonetic": "Bahu-aayami"
+        },
+        {
+            "word": "आयाम",
+            "translation": "Dimension",
+            "phonetic": "Aayam"
+        },
+        {
+            "word": "समानांतर ब्रह्मांड",
+            "translation": "Parallel Universe",
+            "phonetic": "Samanantar brahmand"
+        },
+        {
+            "word": "अधिभौतिक",
+            "translation": "Metaphysical (Scientific sense)",
+            "phonetic": "Adhibhautik"
+        },
+        {
+            "word": "गूढ़-विज्ञान",
+            "translation": "Occult science / Esoteric science",
+            "phonetic": "Goodh-vigyan"
+        },
+        {
+            "word": "चमत्कार",
+            "translation": "Miracle / Phenomenon",
+            "phonetic": "Chamatkar"
+        },
+        {
+            "word": "रहस्यवाद",
+            "translation": "Mysticism",
+            "phonetic": "Rahasyavad"
+        },
+        {
+            "word": "प्राकृतिक घटना",
+            "translation": "Natural Phenomenon",
+            "phonetic": "Prakritik ghatna"
+        },
+        {
+            "word": "अदृश्य शक्ति",
+            "translation": "Invisible Force",
+            "phonetic": "Adrishya shakti"
+        },
+        {
+            "word": "प्रलय-सिद्धांत",
+            "translation": "Catastrophe Theory",
+            "phonetic": "Pralay-siddhant"
+        },
+        {
+            "word": "महा-विस्फोट",
+            "translation": "Big Bang",
+            "phonetic": "Maha-visphot"
+        },
+        {
+            "word": "ब्रह्मांडीय विकिरण",
+            "translation": "Cosmic Radiation",
+            "phonetic": "Brahmandiya vikiran"
+        },
+        {
+            "word": "खगोलीय-पर्यवेक्षण",
+            "translation": "Celestial Observation",
+            "phonetic": "Khagoliya-paryavekshan"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Krishna Vivar' Paradox",
+        "question": "If you are reading an Indian space research paper and come across the term 'Krishna Vivar' (कृष्ण विवर), what cosmic object is it describing?",
+        "options": [
+            "A Sun Spot",
+            "A Black Hole",
+            "A Supernova",
+            "The North Star"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Krishna' means Black and 'Vivar' means Hole/Void. It is the formal Sanskritized Hindi term for a Black Hole."
+    }
+}

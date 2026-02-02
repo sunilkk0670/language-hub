@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_b1_m07",
+    "language": "hi",
+    "level": "b1",
+    "theme": "Archaeology & Epigraphy",
+    "order": 27,
+    "lessons": [
+        {
+            "word": "पुरातत्व-विद्या",
+            "translation": "Archaeological Science / Archaeology",
+            "phonetic": "Puratattva-vidya"
+        },
+        {
+            "word": "पुरालेखशास्त्र",
+            "translation": "Epigraphy",
+            "phonetic": "Puralekhshastra"
+        },
+        {
+            "word": "उत्खनन",
+            "translation": "Excavation",
+            "phonetic": "Utkhanan"
+        },
+        {
+            "word": "अवशेष",
+            "translation": "Remains / Artifacts",
+            "phonetic": "Avshesh"
+        },
+        {
+            "word": "पुरातात्विक",
+            "translation": "Archaeological",
+            "phonetic": "Puratattvik"
+        },
+        {
+            "word": "बौद्ध-स्तूप",
+            "translation": "Buddhist Stupa / Relic Hound",
+            "phonetic": "Bauddh-stupa"
+        },
+        {
+            "word": "संघाराम",
+            "translation": "Sangharama / Buddhist Monastery",
+            "phonetic": "Sangharama"
+        },
+        {
+            "word": "वन्दन-शाला",
+            "translation": "Prayer Hall / Temple hall",
+            "phonetic": "Vandan-shala"
+        },
+        {
+            "word": "पाषाण-युग",
+            "translation": "Stone Age",
+            "phonetic": "Pashan-yug"
+        },
+        {
+            "word": "ताम्र-पाषाण",
+            "translation": "Chalcolithic / Copper-Stone",
+            "phonetic": "Tamru-pashan"
+        },
+        {
+            "word": "lौह-युग",
+            "translation": "Iron Age",
+            "phonetic": "Lauh-yug"
+        },
+        {
+            "word": "सिंधु-घाटी",
+            "translation": "Indus Valley",
+            "phonetic": "Sindhu-ghati"
+        },
+        {
+            "word": "हड़प्पा",
+            "translation": "Harappa",
+            "phonetic": "Harappa"
+        },
+        {
+            "word": "मिट्टी के पात्र",
+            "translation": "Pottery / Earthenware",
+            "phonetic": "Mitti ke patra"
+        },
+        {
+            "word": "मृद्भाण्ड",
+            "translation": "Terra-cotta / Clay vessel",
+            "phonetic": "Mridbhaand"
+        },
+        {
+            "word": "राज-मुद्रा",
+            "translation": "Royal Seal / Coin",
+            "phonetic": "Raj-mudra"
+        },
+        {
+            "word": "सिक्का-विज्ञान",
+            "translation": "Numismatics",
+            "phonetic": "Sikka-vigyan"
+        },
+        {
+            "word": "अभिलेख-विद्या",
+            "translation": "Epigraphic science",
+            "phonetic": "Abhilekh-vidya"
+        },
+        {
+            "word": "ताम्रपत्र",
+            "translation": "Copper-plate inscription",
+            "phonetic": "Tamrupatra"
+        },
+        {
+            "word": "भोजपत्र",
+            "translation": "Birch bark script",
+            "phonetic": "Bhojpatra"
+        },
+        {
+            "word": "लिपि-शास्त्र",
+            "translation": "Palaeography",
+            "phonetic": "Lipi-shastra"
+        },
+        {
+            "word": "ब्राह्मी लिपि",
+            "translation": "Brahmi Script",
+            "phonetic": "Brahmi lipi"
+        },
+        {
+            "word": "खरोष्ठी लिपि",
+            "translation": "Kharosthi Script",
+            "phonetic": "Kharosthi lipi"
+        },
+        {
+            "word": "कूट-लिपि",
+            "translation": "Cryptic script",
+            "phonetic": "Koot-lipi"
+        },
+        {
+            "word": "पठन-पाठन",
+            "translation": "Deciphering / Reading",
+            "phonetic": "Pathan-pathan"
+        },
+        {
+            "word": "पुरावशेष",
+            "translation": "Ancient relics",
+            "phonetic": "Puravshesh"
+        },
+        {
+            "word": "अक्षय-धरोहर",
+            "translation": "Eternal Heritage / Legacy",
+            "phonetic": "Akshay-dharohar"
+        },
+        {
+            "word": "विरासत",
+            "translation": "Inheritance / Legacy",
+            "phonetic": "Virasat"
+        },
+        {
+            "word": "पुरातत्वविद्",
+            "translation": "Archaeologist",
+            "phonetic": "Puratattvavid"
+        },
+        {
+            "word": "पुराविद्",
+            "translation": "Antiquarian",
+            "phonetic": "Puravid"
+        },
+        {
+            "word": "स्तंभ-लेख",
+            "translation": "Pillar Edict",
+            "phonetic": "Stambh-lekh"
+        },
+        {
+            "word": "गुहा-लेख",
+            "translation": "Cave Inscription",
+            "phonetic": "Guha-lekh"
+        },
+        {
+            "word": "प्रशस्ति",
+            "translation": "Eulogy (Inscription)",
+            "phonetic": "Prashasti"
+        },
+        {
+            "word": "वंशावली",
+            "translation": "Genealogy / Dynasty tree",
+            "phonetic": "Vanshavali"
+        },
+        {
+            "word": "कालक्रम",
+            "translation": "Chronology",
+            "phonetic": "Kaalkram"
+        },
+        {
+            "word": "स्तरीकरण",
+            "translation": "Stratigraphy",
+            "phonetic": "Starikaran"
+        },
+        {
+            "word": "कार्बन-तिथि",
+            "translation": "Carbon Dating",
+            "phonetic": "Carbon-tithi"
+        },
+        {
+            "word": "जीवाश्म",
+            "translation": "Fossil",
+            "phonetic": "Jivashm"
+        },
+        {
+            "word": "प्राचीनता",
+            "translation": "Antiquity",
+            "phonetic": "Prachinta"
+        },
+        {
+            "word": "ऐतिहासिकता",
+            "translation": "Historicity",
+            "phonetic": "Aitihasikta"
+        },
+        {
+            "word": "सांस्कृतिक स्रोत",
+            "translation": "Cultural Sources",
+            "phonetic": "Sanskritik srot"
+        },
+        {
+            "word": "पुरातात्विक स्थल",
+            "translation": "Archaeological Site",
+            "phonetic": "Puratattvik sthal"
+        },
+        {
+            "word": "टीला",
+            "translation": "Mound",
+            "phonetic": "Teela"
+        },
+        {
+            "word": "परकोट-युक्त दुर्ग",
+            "translation": "Fortified Citadel / Fort",
+            "phonetic": "Parkot-yukt-durga"
+        },
+        {
+            "word": "नगर-नियोजन",
+            "translation": "Town Planning",
+            "phonetic": "Nagar-niyojan"
+        },
+        {
+            "word": "जल-निकासी",
+            "translation": "Drainage / Water exit",
+            "phonetic": "Jal-nikasi"
+        },
+        {
+            "word": "अन्नागार",
+            "translation": "Granary / Storehouse",
+            "phonetic": "Annagar"
+        },
+        {
+            "word": "स्नानागार",
+            "translation": "Bathhouse",
+            "phonetic": "Snanagar"
+        },
+        {
+            "word": "हौद",
+            "translation": "Cistern / Reservoir",
+            "phonetic": "Haud"
+        },
+        {
+            "word": "भित्ति-चित्र",
+            "translation": "Mural / Wall painting",
+            "phonetic": "Bhitti-chitr"
+        },
+        {
+            "word": "शैली-विज्ञान",
+            "translation": "Stylistics (Artistic)",
+            "phonetic": "Shaili-vigyan"
+        },
+        {
+            "word": "कला-वीथी",
+            "translation": "Art Gallery",
+            "phonetic": "Kala-veethi"
+        },
+        {
+            "word": "पुरा-संग्रहालय",
+            "translation": "Archaic Museum",
+            "phonetic": "Pura-sangrahalay"
+        },
+        {
+            "word": "पुरा-संरक्षण",
+            "translation": "Conservation of antiquities",
+            "phonetic": "Pura-sanrakshan"
+        },
+        {
+            "word": "जीर्णोद्धार",
+            "translation": "Restoration / Renovation",
+            "phonetic": "Jirnoddhar"
+        },
+        {
+            "word": "जीर्ण-पुनरुद्धार",
+            "translation": "Renovation-Revival / Restoration",
+            "phonetic": "Jirn-punuruddhar"
+        },
+        {
+            "word": "सांस्कृतिक सम्पदा",
+            "translation": "Cultural Property / Wealth",
+            "phonetic": "Sanskritik sampada"
+        },
+        {
+            "word": "कला-प्रदर्शनी",
+            "translation": "Art Exhibition",
+            "phonetic": "Kala-pradarshani"
+        },
+        {
+            "word": "कलामंडन",
+            "translation": "Art Pavilion / Guild",
+            "phonetic": "Kalamandan"
+        },
+        {
+            "word": "कलाकृतियां",
+            "translation": "Artifacts / Masterpieces",
+            "phonetic": "Kalakritiyan"
+        },
+        {
+            "word": "नक्काशी",
+            "translation": "Carving / Engraving",
+            "phonetic": "Nakkashi"
+        },
+        {
+            "word": "प्रस्तर-कला",
+            "translation": "Stone Art / Sculpture",
+            "phonetic": "Prastar-kala"
+        },
+        {
+            "word": "तक्षण-कला",
+            "translation": "Art of Carving / Sculpture",
+            "phonetic": "Takshan-kala"
+        },
+        {
+            "word": "वास्तुकला",
+            "translation": "Architecture",
+            "phonetic": "Vastukala"
+        },
+        {
+            "word": "वास्तु-शिल्प",
+            "translation": "Architectural craft (Formal)",
+            "phonetic": "Vastu-shilp"
+        },
+        {
+            "word": "खंभे",
+            "translation": "Pillars",
+            "phonetic": "Khambhe"
+        },
+        {
+            "word": "मेहरितब",
+            "translation": "Arch",
+            "phonetic": "Mehrab"
+        },
+        {
+            "word": "गुंबद",
+            "translation": "Dome",
+            "phonetic": "Gumbad"
+        },
+        {
+            "word": "कलश-शिखर",
+            "translation": "Spire / Peak of temple",
+            "phonetic": "Kalash-shikhar"
+        },
+        {
+            "word": "गर्भगृह",
+            "translation": "Sanctum Sanctorum",
+            "phonetic": "Garbhagriha"
+        },
+        {
+            "word": "मंडप",
+            "translation": "Hall / Pavilion",
+            "phonetic": "Mandap"
+        },
+        {
+            "word": "प्रदिक्षणा पथ",
+            "translation": "Circumambulatory path",
+            "phonetic": "Pradikhshana path"
+        },
+        {
+            "word": "आदिम",
+            "translation": "Primitive / Ancient",
+            "phonetic": "Aadim"
+        },
+        {
+            "word": "प्रगैतिहासिक",
+            "translation": "Prehistoric",
+            "phonetic": "Pragaitihasik"
+        },
+        {
+            "word": "आद्य-इतिहास",
+            "translation": "Proto-history",
+            "phonetic": "Aadya-itihas"
+        },
+        {
+            "word": "मानव-सभ्यता",
+            "translation": "Human Civilization",
+            "phonetic": "Manav-sabhyata"
+        },
+        {
+            "word": "संस्कृति",
+            "translation": "Culture",
+            "phonetic": "Sanskriti"
+        },
+        {
+            "word": "पतन",
+            "translation": "Decline / Downfall",
+            "phonetic": "Patan"
+        },
+        {
+            "word": "उत्कर्ष",
+            "translation": "Rise / Zenith",
+            "phonetic": "Utkarsh"
+        },
+        {
+            "word": "चक्रवर्ती-साम्राज्य",
+            "translation": "Sovereign Empire",
+            "phonetic": "Chakravarti-samrajya"
+        },
+        {
+            "word": "राज-परंपरा",
+            "translation": "Royal Lineage / Dynasty",
+            "phonetic": "Raj-parampara"
+        },
+        {
+            "word": "पट्टाभिषेक",
+            "translation": "Ritual Coronation",
+            "phonetic": "Pattabhishek"
+        },
+        {
+            "word": "सामंतवाद",
+            "translation": "Feudalism",
+            "phonetic": "Samantavad"
+        },
+        {
+            "word": "सैन्य-अभियान",
+            "translation": "Military Campaign",
+            "phonetic": "Sainya-abhiyan"
+        },
+        {
+            "word": "युद्ध-कौशल",
+            "translation": "Warfare Skills",
+            "phonetic": "Yuddh-kaushal"
+        },
+        {
+            "word": "किलेबंदी",
+            "translation": "Fortification",
+            "phonetic": "Kilebandi"
+        },
+        {
+            "word": "परकोटा",
+            "translation": "Rampart / Outer wall",
+            "phonetic": "Parkota"
+        },
+        {
+            "word": "बुर्ज",
+            "translation": "Bastion / Turret",
+            "phonetic": "Burj"
+        },
+        {
+            "word": "खाई",
+            "translation": "Moat / Ditch",
+            "phonetic": "Khai"
+        },
+        {
+            "word": "आक्रमण",
+            "translation": "Invasion / Attack",
+            "phonetic": "Aakraman"
+        },
+        {
+            "word": "प्रतिरक्षा",
+            "translation": "Defense",
+            "phonetic": "Pratiraksha"
+        },
+        {
+            "word": "विजय",
+            "translation": "Victory",
+            "phonetic": "Vijay"
+        },
+        {
+            "word": "रण-अतिपात",
+            "translation": "Defeat in Battle / Downfall",
+            "phonetic": "Ran-atipat"
+        },
+        {
+            "word": "संधि-पत्र",
+            "translation": "Treaty Document",
+            "phonetic": "Sandhi-patra"
+        },
+        {
+            "word": "दूत",
+            "translation": "Messenger / Envoy",
+            "phonetic": "Doot"
+        },
+        {
+            "word": "राजस्व-प्रणाली",
+            "translation": "Revenue System",
+            "phonetic": "Rajaswa-pranali"
+        },
+        {
+            "word": "मुद्रा-प्रणाली",
+            "translation": "Currency System",
+            "phonetic": "Mudra-pranali"
+        },
+        {
+            "word": "व्यापारिक संबंध",
+            "translation": "Trade Ties",
+            "phonetic": "Vyaparik sambandh"
+        },
+        {
+            "word": "धार्मिक सहिष्णुता",
+            "translation": "Religious Tolerance",
+            "phonetic": "Dharmik sahishnuta"
+        },
+        {
+            "word": "सांस्कृतिक आदान-प्रदान",
+            "translation": "Cultural Exchange",
+            "phonetic": "Sanskritik aadan-pradan"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Mridbhaand' Mystery",
+        "question": "An archaeologist discovers 'Mridbhaand' (मृद्भाण्ड) at a site. What did they find?",
+        "options": [
+            "Gold coins",
+            "Clay pottery",
+            "Iron swords",
+            "Stone pillars"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Mrit' (Clay) + 'Bhaand' (Vessel). It is the formal Sanskritized term used in archaeology for terra-cotta or earthenware pottery."
+    }
+}

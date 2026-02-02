@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_b1_m04",
+    "theme": "History & Cultural Heritage",
+    "order": 24,
+    "lessons": [
+        {
+            "targetText": "Era das descobertas",
+            "english": "Age of Discovery",
+            "phoneticTranscription": "E-ra das des-ko-ber-tas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Navegação marítima",
+            "english": "Maritime navigation",
+            "phoneticTranscription": "Na-ve-ga-sown ma-ree-chee-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Expedição ultramarina",
+            "english": "Overseas expedition",
+            "phoneticTranscription": "Es-pe-jee-sown ool-tra-ma-ree-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colonização portuguesa",
+            "english": "Portuguese colonization",
+            "phoneticTranscription": "Ko-lo-nee-za-sown por-too-ge-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Capitanias hereditárias",
+            "english": "Hereditary Captaincies",
+            "phoneticTranscription": "Ka-pee-ta-nee-as e-re-jee-ta-ryas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escravidão",
+            "english": "Slavery",
+            "phoneticTranscription": "Es-kra-vee-down",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Abolicionismo",
+            "english": "Abolitionism",
+            "phoneticTranscription": "A-bo-lee-syo-neez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Monarquia constitucional",
+            "english": "Constitutional monarchy",
+            "phoneticTranscription": "Mo-nar-kee-a kon-stee-too-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Proclamação da República",
+            "english": "Proclamation of the Republic",
+            "phoneticTranscription": "Pro-kla-ma-sown da He-poo-blee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Independência ou morte",
+            "english": "Independence or death",
+            "phoneticTranscription": "In-de-pen-den-syah ow mor-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inconfidência mineira",
+            "english": "Minas Conspiracy",
+            "phoneticTranscription": "In-kon-fee-den-syah mee-nay-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Revolução dos cravos",
+            "english": "Carnation Revolution",
+            "phoneticTranscription": "He-vo-loo-sown doos kra-voos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estado novo",
+            "english": "New State (Salazar/Vargas)",
+            "phoneticTranscription": "Es-ta-doo no-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Patrimônio mundial",
+            "english": "World heritage",
+            "phoneticTranscription": "Pa-tree-mo-nyoo moon-jyal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arquitetura colonial",
+            "english": "Colonial architecture",
+            "phoneticTranscription": "Ar-kee-te-too-ra ko-lo-nyal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estilo manuelino",
+            "english": "Manueline style",
+            "phoneticTranscription": "Es-chee-loo ma-nwe-lee-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Igrejas barrocas",
+            "english": "Baroque churches",
+            "phoneticTranscription": "Ee-gre-zhas ba-ho-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Azulejos portugueses",
+            "english": "Portuguese tiles",
+            "phoneticTranscription": "A-zoo-le-zhoos por-too-ge-zees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Festa do Divino",
+            "english": "Divine Festival",
+            "phoneticTranscription": "Fes-ta doo Jee-vee-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Folclore regional",
+            "english": "Regional folklore",
+            "phoneticTranscription": "Fol-klo-ree he-zhyo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bumba meu boi",
+            "english": "Bumba meu boi (tradition)",
+            "phoneticTranscription": "Boom-ba mew boy",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Festa junina",
+            "english": "June festival",
+            "phoneticTranscription": "Fes-ta zhoo-nee-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mitos brasileiros",
+            "english": "Brazilian myths",
+            "phoneticTranscription": "Mee-toos bra-zee-lay-roos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lendas urbanas",
+            "english": "Urban legends",
+            "phoneticTranscription": "Len-das oor-ba-nas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Danças folclóricas",
+            "english": "Folk dances",
+            "phoneticTranscription": "Dan-sas fol-klo-ree-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Maracatu",
+            "english": "Maracatu (dance/rhythm)",
+            "phoneticTranscription": "Ma-ra-ka-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Frevo pernambucano",
+            "english": "Frevo from Pernambuco",
+            "phoneticTranscription": "Fre-voo per-nam-boo-ka-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Capoeira angola",
+            "english": "Angola Capoeira",
+            "phoneticTranscription": "Ka-pway-ra an-go-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Roda de samba",
+            "english": "Samba circle",
+            "phoneticTranscription": "Ho-da de sam-ba",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acervo histórico",
+            "english": "Historical collection",
+            "phoneticTranscription": "A-ser-voo ees-to-ree-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sítio arqueológico",
+            "english": "Archaeological site",
+            "phoneticTranscription": "See-choo ar-ke-o-lo-zhee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pintura rupestre",
+            "english": "Cave painting",
+            "phoneticTranscription": "Peen-too-ra hoo-pes-tree",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cidades históricas",
+            "english": "Historical cities",
+            "phoneticTranscription": "See-da-jees ees-to-ree-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Casarios antigos",
+            "english": "Old rows of houses",
+            "phoneticTranscription": "Ka-za-ryoos an-chee-goos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Monumentos públicos",
+            "english": "Public monuments",
+            "phoneticTranscription": "Mo-noo-men-toos poo-blee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Relíquias sagradas",
+            "english": "Sacred relics",
+            "phoneticTranscription": "He-lee-kyas sa-gra-das",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sincretismo religioso",
+            "english": "Religious syncretism",
+            "phoneticTranscription": "Seen-kre-cheez-moo he-lee-zhyo-zoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Candomblé e Umbanda",
+            "english": "Candomble and Umbanda",
+            "phoneticTranscription": "Kan-dom-ble e Oom-ban-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Identidade nacional",
+            "english": "National identity",
+            "phoneticTranscription": "Ee-den-chee-da-jee na-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lusofonia",
+            "english": "Lusophony/Portuguese-speaking world",
+            "phoneticTranscription": "Loo-zo-fo-nee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Países de língua oficial",
+            "english": "Official language countries",
+            "phoneticTranscription": "Pa-ee-zees de leen-gwa o-fee-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comunidade dos países",
+            "english": "Community of countries (CPLP)",
+            "phoneticTranscription": "Ko-moo-nee-da-jee doos pa-ee-zees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Culinária tradicional",
+            "english": "Traditional cuisine",
+            "phoneticTranscription": "Koo-lee-na-ryah tra-jee-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gastronomia regional",
+            "english": "Regional gastronomy",
+            "phoneticTranscription": "Gas-tro-no-mee-a he-zhyo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Feijoada completa",
+            "english": "Complete Feijoada",
+            "phoneticTranscription": "Fay-zho-a-da kom-ple-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bacalhau à Brás",
+            "english": "Codfish Brás style",
+            "phoneticTranscription": "Ba-ka-lyow a Bras",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pasteis de nata",
+            "english": "Custard tarts",
+            "phoneticTranscription": "Pas-tays de na-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pão de queijo",
+            "english": "Cheese bread",
+            "phoneticTranscription": "Pown de kay-zhoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Moqueca capixaba",
+            "english": "Moqueca (fish stew)",
+            "phoneticTranscription": "Mo-ke-ka ka-pee-sha-ba",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Churrasco gaúcho",
+            "english": "Gaucho barbecue",
+            "phoneticTranscription": "Shoo-ha-skoo ga-oo-shoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hino nacional",
+            "english": "National anthem",
+            "phoneticTranscription": "Ee-noo na-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bandeira histórica",
+            "english": "Historical flag",
+            "phoneticTranscription": "Ban-day-ra ees-to-ree-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Símbolos pátrios",
+            "english": "Patriotic symbols",
+            "phoneticTranscription": "Seem-bo-loos pa-tryoos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Civismo consciente",
+            "english": "Conscious civism",
+            "phoneticTranscription": "See-veez-moo kon-syen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Heróis nacionais",
+            "english": "National heroes",
+            "phoneticTranscription": "E-roy-ees na-syo-nays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bravura militar",
+            "english": "Military bravery",
+            "phoneticTranscription": "Bra-voo-ra mee-lee-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Guerra e paz",
+            "english": "War and peace",
+            "phoneticTranscription": "Ge-ha e pas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tratados diplomáticos",
+            "english": "Diplomatic treaties",
+            "phoneticTranscription": "Tra-ta-doos jee-plo-ma-chee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fronteiras terrestres",
+            "english": "Land borders",
+            "phoneticTranscription": "Fron-tay-ras te-hes-trees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Descoberta da América",
+            "english": "Discovery of America",
+            "phoneticTranscription": "Des-ko-ber-ta da A-me-ree-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tratado de Tordesilhas",
+            "english": "Treaty of Tordesillas",
+            "phoneticTranscription": "Tra-ta-doo de Tor-de-zee-lyas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ciclo do ouro",
+            "english": "Gold cycle",
+            "phoneticTranscription": "See-kloo doo ow-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ciclo do café",
+            "english": "Coffee cycle",
+            "phoneticTranscription": "See-kloo doo ka-fe",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Industrialização tardia",
+            "english": "Late industrialization",
+            "phoneticTranscription": "In-doos-trya-lee-za-sown tar-jee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Urbanização acelerada",
+            "english": "Accelerated urbanization",
+            "phoneticTranscription": "Oor-ba-nee-za-sown a-se-le-ra-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Êxodo rural",
+            "english": "Rural exodus",
+            "phoneticTranscription": "E-zo-doo roo-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Modernização social",
+            "english": "Social modernization",
+            "phoneticTranscription": "Mo-der-nee-za-sown so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conquistas trabalhistas",
+            "english": "Labor achievements",
+            "phoneticTranscription": "Kon-kees-tas tra-ba-lyees-tas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Voto feminino",
+            "english": "Women's vote",
+            "phoneticTranscription": "Vo-too fe-mee-nee-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Redemocratização",
+            "english": "Redemocratization",
+            "phoneticTranscription": "Re-de-mo-kra-chee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Constituinte",
+            "english": "Constituent assembly",
+            "phoneticTranscription": "Kon-stee-tween-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diretas já",
+            "english": "Direct elections now",
+            "phoneticTranscription": "Jee-he-tas zha",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Milagre econômico",
+            "english": "Economic miracle",
+            "phoneticTranscription": "Mee-la-gree e-ko-no-mee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ditadura militar",
+            "english": "Military dictatorship",
+            "phoneticTranscription": "Jee-ta-doo-ra mee-lee-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tortura e repressão",
+            "english": "Torture and repression",
+            "phoneticTranscription": "Tor-too-ra e he-pre-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Anistia política",
+            "english": "Political amnesty",
+            "phoneticTranscription": "A-nees-tyah po-lee-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Movimento estudantil",
+            "english": "Student movement",
+            "phoneticTranscription": "Mo-vee-men-too es-too-dan-cheel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Música de protesto",
+            "english": "Protest music",
+            "phoneticTranscription": "Moo-zee-ka de pro-tes-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tropicalismo",
+            "english": "Tropicalismo (movement)",
+            "phoneticTranscription": "Tro-pee-ka-leez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bossa nova clássica",
+            "english": "Classic Bossa Nova",
+            "phoneticTranscription": "Bo-sa no-va kla-see-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fado lisboeta",
+            "english": "Fado from Lisbon",
+            "phoneticTranscription": "Fa-doo leez-bo-e-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Saudade profunda",
+            "english": "Deep nostalgia/saudade",
+            "phoneticTranscription": "Saw-da-jee pro-foon-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Destino e fado",
+            "english": "Fate and fado",
+            "phoneticTranscription": "Des-chee-noo e fa-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Guitarrada",
+            "english": "Guitar play (Portuguese guitar)",
+            "phoneticTranscription": "Gee-ta-ha-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rancho folclórico",
+            "english": "Folk dance group",
+            "phoneticTranscription": "Ran-shoo fol-klo-ree-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Artesanato de barro",
+            "english": "Clay handicraft",
+            "phoneticTranscription": "Ar-te-za-na-too de ba-ho",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rendeiras",
+            "english": "Lacemakers",
+            "phoneticTranscription": "Hen-day-ras",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tecelagem manual",
+            "english": "Manual weaving",
+            "phoneticTranscription": "Te-se-la-zhem ma-noo-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sabedoria ancestral",
+            "english": "Ancestral wisdom",
+            "phoneticTranscription": "Sa-be-do-ree-a an-ses-tral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tradições milenares",
+            "english": "Millenary traditions",
+            "phoneticTranscription": "Tra-jee-sown-ees mee-le-na-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Preservação da memória",
+            "english": "Memory preservation",
+            "phoneticTranscription": "Pre-zer-va-sown da me-mo-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Raízes culturais",
+            "english": "Cultural roots",
+            "phoneticTranscription": "Ra-ee-zees kool-too-rays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diversidade étnica",
+            "english": "Ethnic diversity",
+            "phoneticTranscription": "Jee-ver-see-da-jee et-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Miscigenação",
+            "english": "Misadventure/Miscigenation",
+            "phoneticTranscription": "Mees-see-zhe-na-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Povo brasileiro",
+            "english": "Brazilian people",
+            "phoneticTranscription": "Po-voo bra-zee-lay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Povo português",
+            "english": "Portuguese people",
+            "phoneticTranscription": "Po-voo por-too-gees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nacionalismo sadio",
+            "english": "Healthy nationalism",
+            "phoneticTranscription": "Na-syo-na-leez-moo sa-jyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Patriotismo",
+            "english": "Patriotism",
+            "phoneticTranscription": "Pa-tryo-cheez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Legado histórico",
+            "english": "Historical legacy",
+            "phoneticTranscription": "Le-ga-doo ees-to-ree-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Futuro ancestral",
+            "english": "Ancestral future",
+            "phoneticTranscription": "Foo-too-roo an-ses-tral",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Descobrimento",
+        "correctVersion": "Means 'Discovery' (historical context). For 'Discovery (scientific)', use 'Descoberta'.",
+        "explanation": "Trap level: Medium"
+    }
+}

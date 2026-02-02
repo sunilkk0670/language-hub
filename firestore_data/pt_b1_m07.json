@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_b1_m07",
+    "theme": "Law & Justice",
+    "order": 27,
+    "lessons": [
+        {
+            "targetText": "Prevalência da lei",
+            "english": "Rule of Law / Prevalence of law",
+            "phoneticTranscription": "Pre-va-len-syah da lay",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carta Magna",
+            "english": "Magna Carta / Constitution",
+            "phoneticTranscription": "Kar-ta Ma-gna",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Instância jurisdicional",
+            "english": "Judiciary instance/power",
+            "phoneticTranscription": "In-stan-syah zhoo-rees-jee-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Assembleia legislativa",
+            "english": "Legislative assembly/power",
+            "phoneticTranscription": "A-sem-blay-a le-zhees-la-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gestão administrativa",
+            "english": "Administrative management/power",
+            "phoneticTranscription": "Zhes-town ad-mee-nees-tra-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Supremo Tribunal Federal",
+            "english": "Supreme Federal Court (STF)",
+            "phoneticTranscription": "Soo-pre-moo Tree-boo-nal Fe-de-hal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cargo de juiz",
+            "english": "Judge position / Magistracy",
+            "phoneticTranscription": "Kar-goo de zhoo-ees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Órgão acusador",
+            "english": "Accusing body / Public Prosecutor",
+            "phoneticTranscription": "Or-gown a-koo-za-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Assistência judiciária",
+            "english": "Judiciary assistance/public defense",
+            "phoneticTranscription": "A-sees-ten-syah zhoo-rees-jee-syah-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Justiça eleitoral",
+            "english": "Electoral justice",
+            "phoneticTranscription": "Zhoos-chee-sa e-lay-to-hal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Justiça do trabalho",
+            "english": "Labor justice",
+            "phoneticTranscription": "Zhoos-chee-sa doo tra-ba-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Justiça militar",
+            "english": "Military justice",
+            "phoneticTranscription": "Zhoos-chee-sa mee-lee-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Código Civil",
+            "english": "Civil Code",
+            "phoneticTranscription": "Ko-jee-goo See-veel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Código Penal",
+            "english": "Penal Code",
+            "phoneticTranscription": "Ko-jee-goo Pe-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Código de Defesa do Consumidor",
+            "english": "Consumer Defense Code",
+            "phoneticTranscription": "Ko-jee-goo de De-fe-za doo Kon-soo-mee-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Processo administrativo",
+            "english": "Administrative process",
+            "phoneticTranscription": "Pro-se-soo ad-mee-nees-tra-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Processo judicial",
+            "english": "Judicial process",
+            "phoneticTranscription": "Pro-se-soo zhoo-jee-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ação de indenização",
+            "english": "Indemnification action",
+            "phoneticTranscription": "A-sown de in-de-nee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Danos morais e materiais",
+            "english": "Moral and material damages",
+            "phoneticTranscription": "Da-noos mo-rays e ma-te-ryays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lucros cessantes",
+            "english": "Lost profits",
+            "phoneticTranscription": "Loo-kroos se-san-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Petição inicial",
+            "english": "Initial petition",
+            "phoneticTranscription": "Pe-chee-sown ee-nee-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Contestação judicial",
+            "english": "Judicial defense/Answer",
+            "phoneticTranscription": "Kon-tes-ta-sown zhoo-jee-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Réplicas e tréplicas",
+            "english": "Rebuttals and rejoinders",
+            "phoneticTranscription": "He-plee-kas e tre-plee-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sentença judicial",
+            "english": "Judicial sentence",
+            "phoneticTranscription": "Sen-ten-sa zhoo-jee-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acórdão unânime",
+            "english": "Unanimous judgement (higher court)",
+            "phoneticTranscription": "A-kor-down oo-na-nee-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Jurisprudência",
+            "english": "Jurisprudence",
+            "phoneticTranscription": "Zhoo-rees-proo-den-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Doutrina jurídica",
+            "english": "Legal doctrine",
+            "phoneticTranscription": "Dow-tree-na zhoo-ree-jee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Súmula vinculante",
+            "english": "Binding precedent",
+            "phoneticTranscription": "Soo-moo-la veen-koo-lan-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Recurso de apelação",
+            "english": "Appeal resource",
+            "phoneticTranscription": "He-koor-soo de a-pe-la-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Embargos de declaração",
+            "english": "Clarification motions",
+            "phoneticTranscription": "Em-bar-goos de de-kla-ra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mandado de segurança",
+            "english": "Writ of mandamus",
+            "phoneticTranscription": "Man-da-doo de se-goo-ran-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Habeas corpus",
+            "english": "Habeas corpus",
+            "phoneticTranscription": "A-be-as kor-poos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inquérito policial",
+            "english": "Police investigation",
+            "phoneticTranscription": "In-ke-ree-too po-lee-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prisão preventiva",
+            "english": "Preventive detention",
+            "phoneticTranscription": "Pree-zown pre-ven-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prisão em flagrante",
+            "english": "Caught in the act",
+            "phoneticTranscription": "Pree-zown em fla-gran-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Liberdade provisória",
+            "english": "Provisional freedom",
+            "phoneticTranscription": "Lee-ber-da-jee pro-vee-zo-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Réu confesso",
+            "english": "Confessed defendant",
+            "phoneticTranscription": "He-oo kon-fe-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Litisconsórcio",
+            "english": "Joinder of parties",
+            "phoneticTranscription": "Lee-chees-kon-sor-syoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Citação judicial",
+            "english": "Judicial summons",
+            "phoneticTranscription": "See-ta-sown zhoo-jee-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Intimação",
+            "english": "Notice/Subpoena",
+            "phoneticTranscription": "In-chee-ma-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Testemunha ocular",
+            "english": "Eyewitness",
+            "phoneticTranscription": "Tes-te-moo-nya o-koo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Depoimento pessoal",
+            "english": "Personal testimony",
+            "phoneticTranscription": "De-poy-men-too pe-so-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acareação",
+            "english": "Confrontation (of witnesses)",
+            "phoneticTranscription": "A-ka-re-a-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Perícia técnica",
+            "english": "Technical expert report",
+            "phoneticTranscription": "Pe-ree-syah tek-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prova documental",
+            "english": "Documentary evidence",
+            "phoneticTranscription": "Pro-va do-koo-men-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prova testemunhal",
+            "english": "Witness evidence",
+            "phoneticTranscription": "Pro-va tes-te-moo-nyal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prova pericial",
+            "english": "Expert evidence",
+            "phoneticTranscription": "Pro-va pe-ree-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ônus da prova",
+            "english": "Burden of proof",
+            "phoneticTranscription": "O-noos da pro-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Preclusão consumativa",
+            "english": "Consummative foreclosure",
+            "phoneticTranscription": "Pre-kloo-zown kon-soo-ma-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prescrição e decadência",
+            "english": "Prescription and decay/expiration",
+            "phoneticTranscription": "Pres-kree-sown e de-ka-den-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trânsito em julgado",
+            "english": "Final judgement (cannot be appealed)",
+            "phoneticTranscription": "Tran-zee-too em zhool-ga-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coisa julgada",
+            "english": "Res judicata",
+            "phoneticTranscription": "Koy-za zhool-ga-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Execução de sentença",
+            "english": "Sentence execution",
+            "phoneticTranscription": "E-ze-koo-sown de sen-ten-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Penhora de bens",
+            "english": "Seizure of assets",
+            "phoneticTranscription": "Pe-nyo-ra de bens",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Leilão judicial",
+            "english": "Judicial auction",
+            "phoneticTranscription": "Lay-lown zhoo-jee-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arbitragem comercial",
+            "english": "Commercial arbitration",
+            "phoneticTranscription": "Ar-bee-tra-zhem ko-mer-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mediação familiar",
+            "english": "Family mediation",
+            "phoneticTranscription": "Me-jya-sown fa-mee-lyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conciliação prévia",
+            "english": "Preliminary conciliation",
+            "phoneticTranscription": "Kon-see-lya-sown pre-vyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direitos fundamentais",
+            "english": "Fundamental rights",
+            "phoneticTranscription": "Jee-ray-toos foon-da-men-tays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prerrogativas humanas",
+            "english": "Human prerogatives/rights",
+            "phoneticTranscription": "Pre-ho-ga-chee-vas oo-ma-nas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direito de manifestação",
+            "english": "Right of manifestation/expression",
+            "phoneticTranscription": "Jee-ray-too de ma-nee-fes-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Liberdade religiosa",
+            "english": "Religious freedom",
+            "phoneticTranscription": "Lee-ber-da-jee he-lee-zhyo-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Igualdade perante a lei",
+            "english": "Equality before the law",
+            "phoneticTranscription": "Ee-gwal-da-jee pe-ran-chee a lay",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Devido processo legal",
+            "english": "Due process of law",
+            "phoneticTranscription": "De-vee-doo pro-se-soo le-gal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ampla defesa",
+            "english": "Full defense",
+            "phoneticTranscription": "Am-pla de-fe-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Contraditório",
+            "english": "Adversarial principle",
+            "phoneticTranscription": "Kon-tra-jee-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Presunção de inocência",
+            "english": "Presumption of innocence",
+            "phoneticTranscription": "Pre-zoon-sown de ee-no-sen-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sigilo profissional",
+            "english": "Professional secrecy",
+            "phoneticTranscription": "See-zhee-loo pro-fee-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Segredo de justiça",
+            "english": "Confidential judicial proceedings",
+            "phoneticTranscription": "Se-gre-doo de zhoos-chee-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Abuso de autoridade",
+            "english": "Abuse of authority",
+            "phoneticTranscription": "A-boo-zoo de aw-to-ree-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Improbidade administrativa",
+            "english": "Administrative misconduct",
+            "phoneticTranscription": "Eem-pro-bee-da-jee ad-mee-nees-tra-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aliciamento de servidor",
+            "english": "Enticing a public servant / Passive corruption",
+            "phoneticTranscription": "A-lee-sya-men-too de ser-vee-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Corrupção ativa",
+            "english": "Active corruption",
+            "phoneticTranscription": "Ko-hoop-sown a-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Peculato",
+            "english": "Embezzlement",
+            "phoneticTranscription": "Pe-koo-la-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prevaricação",
+            "english": "Malfeasance/Prevarication",
+            "phoneticTranscription": "Pre-va-ree-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Falsidade ideológica",
+            "english": "Ideological falsehood",
+            "phoneticTranscription": "Fal-see-da-jee ee-de-o-lo-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estelionato",
+            "english": "Larceny/Fraud",
+            "phoneticTranscription": "Es-te-lyo-na-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Extorsão",
+            "english": "Extortion",
+            "phoneticTranscription": "Es-tor-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sequestro e cárcere",
+            "english": "Kidnapping and imprisonment",
+            "phoneticTranscription": "Se-kwes-troo e kar-se-ree",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Homicídio doloso",
+            "english": "Intentional homicide",
+            "phoneticTranscription": "O-mee-see-jyoo do-lo-zoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Homicídio culposo",
+            "english": "Involuntary manslaughter",
+            "phoneticTranscription": "O-mee-see-jyoo kool-po-zoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lesão corporal",
+            "english": "Bodily injury",
+            "phoneticTranscription": "Le-zown kor-po-hal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Legítima defesa",
+            "english": "Self-defense",
+            "phoneticTranscription": "Le-zhee-chee-ma de-fe-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estado de necessidade",
+            "english": "State of necessity",
+            "phoneticTranscription": "Es-ta-doo de ne-se-see-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inimputabilidade",
+            "english": "Unaccountability (legal)",
+            "phoneticTranscription": "Ee-neem-poo-ta-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Criminologia",
+            "english": "Criminology",
+            "phoneticTranscription": "Kree-mee-no-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Política criminal",
+            "english": "Criminal policy",
+            "phoneticTranscription": "Po-lee-chee-ka kree-mee-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ressocialização",
+            "english": "Rehabilitation/Resocialization",
+            "phoneticTranscription": "He-so-sya-lee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sistema prisional",
+            "english": "Prison system",
+            "phoneticTranscription": "Sees-te-ma pree-zyo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Regime semiaberto",
+            "english": "Semi-open regime",
+            "phoneticTranscription": "Re-zhee-mee se-mya-ber-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Livramento condicional",
+            "english": "Parole",
+            "phoneticTranscription": "Lee-vra-men-too kon-jee-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Indulto natalino",
+            "english": "Christmas pardon",
+            "phoneticTranscription": "In-dool-too na-ta-lee-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pena de morte",
+            "english": "Death penalty",
+            "phoneticTranscription": "Pe-na de mor-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prisão perpétua",
+            "english": "Life imprisonment",
+            "phoneticTranscription": "Pree-zown per-pe-twah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trabalho escravo",
+            "english": "Slave labor",
+            "phoneticTranscription": "Tra-ba-lyoo es-kra-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tráfico de influência",
+            "english": "Influence peddling",
+            "phoneticTranscription": "Tra-fee-koo de een-floo-en-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Assédio moral",
+            "english": "Moral harassment",
+            "phoneticTranscription": "A-se-jyoo mo-hal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Assédio sexual",
+            "english": "Sexual harassment",
+            "phoneticTranscription": "A-se-jyoo se-ksoo-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dignidade humana",
+            "english": "Human dignity",
+            "phoneticTranscription": "Jeeg-nee-da-jee oo-ma-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Equidade social",
+            "english": "Social equity",
+            "phoneticTranscription": "E-kwee-da-jee so-syal",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Legenda",
+        "correctVersion": "Means 'Subtitles' or 'Caption'. For 'Legend (myth)', use 'Lenda'.",
+        "explanation": "Trap level: Medium"
+    }
+}

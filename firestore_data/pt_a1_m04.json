@@ -1,0 +1,612 @@
+{
+  "module_id": "pt_a1_m04",
+  "theme": "Food, Drink & Cafe Culture",
+  "order": 4,
+  "lessons": [
+    {
+      "targetText": "Comida",
+      "english": "Food",
+      "phoneticTranscription": "Ko-mee-dah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Bebida",
+      "english": "Drink",
+      "phoneticTranscription": "Be-bee-dah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Água",
+      "english": "Water",
+      "phoneticTranscription": "Ah-gwah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Pão",
+      "english": "Bread",
+      "phoneticTranscription": "Pown",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Café",
+      "english": "Coffee",
+      "phoneticTranscription": "Ka-feh",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Leite",
+      "english": "Milk",
+      "phoneticTranscription": "Lay-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Chá",
+      "english": "Tea",
+      "phoneticTranscription": "Shah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Suco",
+      "english": "Juice",
+      "phoneticTranscription": "Soo-koo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cerveja",
+      "english": "Beer",
+      "phoneticTranscription": "Ser-ve-zhah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Vinho",
+      "english": "Wine",
+      "phoneticTranscription": "Vee-nyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Arroz",
+      "english": "Rice",
+      "phoneticTranscription": "Ah-hoce",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Feijão",
+      "english": "Beans",
+      "phoneticTranscription": "Fay-zhown",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Carne",
+      "english": "Meat",
+      "phoneticTranscription": "Kar-nee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Frango",
+      "english": "Chicken",
+      "phoneticTranscription": "Frahn-goo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Peixe",
+      "english": "Fish",
+      "phoneticTranscription": "Pay-shee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ovo",
+      "english": "Egg",
+      "phoneticTranscription": "Oh-voo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Salada",
+      "english": "Salad",
+      "phoneticTranscription": "Sa-la-dah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Fruta",
+      "english": "Fruit",
+      "phoneticTranscription": "Froo-tah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Maçã",
+      "english": "Apple",
+      "phoneticTranscription": "Ma-sah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Banana",
+      "english": "Banana",
+      "phoneticTranscription": "Ba-na-na",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Laranja",
+      "english": "Orange",
+      "phoneticTranscription": "La-rahn-zhah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Uva",
+      "english": "Grape",
+      "phoneticTranscription": "Oo-vah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Morango",
+      "english": "Strawberry",
+      "phoneticTranscription": "Mo-rahn-goo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Limão",
+      "english": "Lemon",
+      "phoneticTranscription": "Lee-mown",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Abacaxi",
+      "english": "Pineapple",
+      "phoneticTranscription": "A-ba-ka-shee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Vegetal",
+      "english": "Vegetable",
+      "phoneticTranscription": "Ve-zhe-tal",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Batata",
+      "english": "Potato",
+      "phoneticTranscription": "Ba-ta-ta",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Tomate",
+      "english": "Tomato",
+      "phoneticTranscription": "To-ma-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cebola",
+      "english": "Onion",
+      "phoneticTranscription": "Se-bo-la",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Alho",
+      "english": "Garlic",
+      "phoneticTranscription": "A-lyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cenoura",
+      "english": "Carrot",
+      "phoneticTranscription": "Se-now-rah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Queijo",
+      "english": "Cheese",
+      "phoneticTranscription": "Kay-zhoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Manteiga",
+      "english": "Butter",
+      "phoneticTranscription": "Man-tay-gah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Iogurte",
+      "english": "Yogurt",
+      "phoneticTranscription": "Yo-goor-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Açúcar",
+      "english": "Sugar",
+      "phoneticTranscription": "A-soo-kar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sal",
+      "english": "Salt",
+      "phoneticTranscription": "Sal",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Pimenta",
+      "english": "Pepper",
+      "phoneticTranscription": "Pee-men-tah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Azeite",
+      "english": "Olive Oil",
+      "phoneticTranscription": "A-zay-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Vinagre",
+      "english": "Vinegar",
+      "phoneticTranscription": "Vee-na-gree",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Doce",
+      "english": "Sweet",
+      "phoneticTranscription": "Do-see",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Salgado",
+      "english": "Salty",
+      "phoneticTranscription": "Sal-ga-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Azedo",
+      "english": "Sour",
+      "phoneticTranscription": "A-ze-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Quente",
+      "english": "Hot",
+      "phoneticTranscription": "Kwen-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Frio",
+      "english": "Cold",
+      "phoneticTranscription": "Free-oo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Fome",
+      "english": "Hunger",
+      "phoneticTranscription": "Fo-mee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sede",
+      "english": "Thirst",
+      "phoneticTranscription": "Se-jee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Café da manhã",
+      "english": "Breakfast",
+      "phoneticTranscription": "Ka-feh da ma-nyah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Almoço",
+      "english": "Lunch",
+      "phoneticTranscription": "Al-mo-soo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Jantar",
+      "english": "Dinner",
+      "phoneticTranscription": "Zhan-tar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Lanche",
+      "english": "Snack",
+      "phoneticTranscription": "Lahn-shee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sobremesa",
+      "english": "Dessert",
+      "phoneticTranscription": "So-bre-me-za",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Bolo",
+      "english": "Cake",
+      "phoneticTranscription": "Bo-loo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Biscoito",
+      "english": "Cookie/Biscuit",
+      "phoneticTranscription": "Bees-koy-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sorvete",
+      "english": "Ice cream",
+      "phoneticTranscription": "Sor-ve-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Chocolate",
+      "english": "Chocolate",
+      "phoneticTranscription": "Sho-ko-la-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Restaurante",
+      "english": "Restaurant",
+      "phoneticTranscription": "Hes-tau-rahn-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Padaria",
+      "english": "Bakery",
+      "phoneticTranscription": "Pa-da-ree-ah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Mercado",
+      "english": "Market",
+      "phoneticTranscription": "Mer-kah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cozinhar",
+      "english": "To cook",
+      "phoneticTranscription": "Ko-zee-nyar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Comer",
+      "english": "To eat",
+      "phoneticTranscription": "Ko-mer",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Beber",
+      "english": "To drink",
+      "phoneticTranscription": "Be-ber",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Pedir",
+      "english": "To order/ask",
+      "phoneticTranscription": "Pe-jeer",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cardápio",
+      "english": "Menu",
+      "phoneticTranscription": "Kar-da-pyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Conta",
+      "english": "Bill",
+      "phoneticTranscription": "Kon-tah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Garçom",
+      "english": "Waiter",
+      "phoneticTranscription": "Gar-sown",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Garrafa",
+      "english": "Bottle",
+      "phoneticTranscription": "Ga-ha-fah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Copo",
+      "english": "Glass",
+      "phoneticTranscription": "Ko-poo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Prato",
+      "english": "Plate",
+      "phoneticTranscription": "Pra-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Talher",
+      "english": "Cutlery",
+      "phoneticTranscription": "Ta-lyer",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Garfo",
+      "english": "Fork",
+      "phoneticTranscription": "Gar-foo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Faca",
+      "english": "Knife",
+      "phoneticTranscription": "Fa-ka",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Colher",
+      "english": "Spoon",
+      "phoneticTranscription": "Ko-lyer",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Guardanapo",
+      "english": "Napkin",
+      "phoneticTranscription": "Gwar-da-na-poo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Xícara",
+      "english": "Cup",
+      "phoneticTranscription": "Shee-ka-ra",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cozido",
+      "english": "Cooked/Boiled",
+      "phoneticTranscription": "Ko-zee-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Assado",
+      "english": "Roasted/Baked",
+      "phoneticTranscription": "A-sa-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Frito",
+      "english": "Fried",
+      "phoneticTranscription": "Free-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cru",
+      "english": "Raw",
+      "phoneticTranscription": "Kroo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Fresco",
+      "english": "Fresh",
+      "phoneticTranscription": "Fres-koo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Especial",
+      "english": "Special",
+      "phoneticTranscription": "Es-pe-syal",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Gostoso",
+      "english": "Tasty",
+      "phoneticTranscription": "Gos-to-zoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ruim",
+      "english": "Bad",
+      "phoneticTranscription": "Hoo-eem",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Extra",
+      "english": "More",
+      "phoneticTranscription": "Ma-ees",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Reduzido",
+      "english": "Less",
+      "phoneticTranscription": "Me-noos",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cheio",
+      "english": "Full",
+      "phoneticTranscription": "Shay-oo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Vazio",
+      "english": "Empty",
+      "phoneticTranscription": "Va-zee-oo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Preparar",
+      "english": "To prepare",
+      "phoneticTranscription": "Pre-pa-rar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Servir",
+      "english": "To serve",
+      "phoneticTranscription": "Ser-veer",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Degustar",
+      "english": "To taste",
+      "phoneticTranscription": "De-goos-tar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Nutrição",
+      "english": "Nutrition",
+      "phoneticTranscription": "Noo-tree-sown",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Vitamina",
+      "english": "Vitamin",
+      "phoneticTranscription": "Vee-ta-mee-na",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Saúde",
+      "english": "Health",
+      "phoneticTranscription": "Sa-oo-jee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Dieta",
+      "english": "Diet",
+      "phoneticTranscription": "Dye-ta",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ingrediente",
+      "english": "Ingredient",
+      "phoneticTranscription": "In-gre-dyen-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Receita",
+      "english": "Recipe",
+      "phoneticTranscription": "He-say-tah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Gordura",
+      "english": "Fat",
+      "phoneticTranscription": "Gor-doo-rah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Proteína",
+      "english": "Protein",
+      "phoneticTranscription": "Pro-te-ee-na",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Caloria",
+      "english": "Calorie",
+      "phoneticTranscription": "Ka-lo-ree-ah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Piquenique",
+      "english": "Picnic",
+      "phoneticTranscription": "Pee-ke-nee-kee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sabor",
+      "english": "Flavor",
+      "phoneticTranscription": "Sa-bor",
+      "radicalBreakdown": ""
+    }
+  ],
+  "liarGameData": {
+    "trap": "Lanche",
+    "correctVersion": "Means a 'Snack' or a light meal, not specifically 'Lunch' (which is 'Almoço').",
+    "explanation": "Trap level: High"
+  }
+}

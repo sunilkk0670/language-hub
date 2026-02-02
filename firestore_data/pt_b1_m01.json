@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_b1_m01",
+    "theme": "Media & Digital Society",
+    "order": 21,
+    "lessons": [
+        {
+            "targetText": "Desinformação deliberada",
+            "english": "Deliberate misinformation",
+            "phoneticTranscription": "De-zin-for-ma-sown de-lee-be-ra-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Literacia mediática",
+            "english": "Media literacy",
+            "phoneticTranscription": "Lee-te-ra-syah me-jee-a-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Viés algorítmico",
+            "english": "Algorithmic bias",
+            "phoneticTranscription": "Vee-es al-go-ree-chee-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Privacidade de dados",
+            "english": "Data privacy",
+            "phoneticTranscription": "Pree-va-see-da-jee de da-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cibersegurança",
+            "english": "Cybersecurity",
+            "phoneticTranscription": "See-ber-se-goo-ran-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vigilância em massa",
+            "english": "Mass surveillance",
+            "phoneticTranscription": "Vee-zhee-lan-syah em ma-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Manipulação de opinião",
+            "english": "Opinion manipulation",
+            "phoneticTranscription": "Ma-nee-poo-la-sown de o-pee-nyown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conteúdo viral",
+            "english": "Viral content",
+            "phoneticTranscription": "Kon-te-oo-doo vee-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rede de difusão",
+            "english": "Broadcast network",
+            "phoneticTranscription": "He-jee de jee-foo-zown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Plataforma digital",
+            "english": "Digital platform",
+            "phoneticTranscription": "Pla-ta-for-ma jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Engenharia social",
+            "english": "Social engineering",
+            "phoneticTranscription": "En-zhe-nya-ree-a so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Roubo de identidade",
+            "english": "Identity theft",
+            "phoneticTranscription": "How-boo de ee-den-chee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Criptografia assimétrica",
+            "english": "Asymmetric encryption",
+            "phoneticTranscription": "Kreep-to-gra-fee-a a-see-me-tree-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Autenticação em dois fatores",
+            "english": "Two-factor authentication",
+            "phoneticTranscription": "Aw-ten-chee-ka-sown em doys fa-to-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Armazenamento em nuvem",
+            "english": "Cloud storage",
+            "phoneticTranscription": "Ar-ma-ze-na-men-too em noo-ven",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Infraestrutura de rede",
+            "english": "Network infrastructure",
+            "phoneticTranscription": "In-fra-es-troo-too-ra de he-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Protocolo de segurança",
+            "english": "Security protocol",
+            "phoneticTranscription": "Pro-to-ko-loo de se-goo-ran-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acesso restrito",
+            "english": "Restricted access",
+            "phoneticTranscription": "A-se-soo hes-tree-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Termos de serviço",
+            "english": "Terms of service",
+            "phoneticTranscription": "Ter-moos de ser-vee-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consentimento digital",
+            "english": "Digital consent",
+            "phoneticTranscription": "Kon-sen-chee-men-too jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ética na internet",
+            "english": "Internet ethics",
+            "phoneticTranscription": "E-chee-ka na in-ter-ne-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Responsabilidade civil",
+            "english": "Civil liability",
+            "phoneticTranscription": "Hes-pon-sa-bee-lee-da-jee see-veel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Liberdade de expressão",
+            "english": "Freedom of speech",
+            "phoneticTranscription": "Lee-ber-da-jee de es-pre-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Censura governamental",
+            "english": "Government censorship",
+            "phoneticTranscription": "Sen-soo-ra go-ver-na-men-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ativismo digital",
+            "english": "Digital activism",
+            "phoneticTranscription": "A-chee-veez-moo jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Engajamento cívico",
+            "english": "Civic engagement",
+            "phoneticTranscription": "En-ga-zha-men-too see-vee-kooo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Impacto socioeconômico",
+            "english": "Socioeconomic impact",
+            "phoneticTranscription": "Im-pak-too so-syo-e-ko-no-mee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inclusão digital",
+            "english": "Digital inclusion",
+            "phoneticTranscription": "In-kloo-zown jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Exclusão social",
+            "english": "Social exclusion",
+            "phoneticTranscription": "Es-kloo-zown so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Capitalismo de vigilância",
+            "english": "Surveillance capitalism",
+            "phoneticTranscription": "Ka-pee-ta-leez-moo de vee-zhee-lan-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Economia do compartilhamento",
+            "english": "Sharing economy",
+            "phoneticTranscription": "E-ko-no-mee-a doo kom-par-chee-lya-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Moeda digital",
+            "english": "Digital currency",
+            "phoneticTranscription": "Mo-e-da jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mercado financeiro",
+            "english": "Financial market",
+            "phoneticTranscription": "Mer-ka-doo fee-nan-say-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consumo sustentável",
+            "english": "Sustainable consumption",
+            "phoneticTranscription": "Kon-soo-moo soos-ten-ta-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Obsolescência programada",
+            "english": "Planned obsolescence",
+            "phoneticTranscription": "Ob-so-le-sen-syah pro-gra-ma-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resíduo eletrônico",
+            "english": "Electronic waste",
+            "phoneticTranscription": "Re-zee-doo e-le-tro-nee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sustentabilidade ambiental",
+            "english": "Environmental sustainability",
+            "phoneticTranscription": "Soos-ten-ta-bee-lee-da-jee am-byen-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Energia limpa",
+            "english": "Clean energy",
+            "phoneticTranscription": "E-ner-zhyah lee-m-pa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pegada de carbono",
+            "english": "Carbon footprint",
+            "phoneticTranscription": "Pe-ga-da de kar-bo-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transição energética",
+            "english": "Energy transition",
+            "phoneticTranscription": "Tran-zee-sown e-ner-zhe-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inteligência coletiva",
+            "english": "Collective intelligence",
+            "phoneticTranscription": "In-te-lee-zhen-syah ko-le-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mapeamento genético",
+            "english": "Genetic mapping",
+            "phoneticTranscription": "Ma-pe-a-men-too zhe-ne-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biotecnologia",
+            "english": "Biotechnology",
+            "phoneticTranscription": "Byo-tek-no-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Holografia digital",
+            "english": "Digital holography",
+            "phoneticTranscription": "O-lo-gra-fee-a jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Simulação virtual",
+            "english": "Virtual simulation",
+            "phoneticTranscription": "See-moo-la-sown veer-too-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Internet das Coisas",
+            "english": "Internet of Things",
+            "phoneticTranscription": "In-ter-ne-chee das Koy-zas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conectividade global",
+            "english": "Global connectivity",
+            "phoneticTranscription": "Ko-nek-chee-vee-da-jee glo-bal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Soberania tecnológica",
+            "english": "Technological sovereignty",
+            "phoneticTranscription": "So-be-ra-nee-a tek-no-lo-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dependência digital",
+            "english": "Digital dependency",
+            "phoneticTranscription": "De-pen-den-syah jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Saúde mental",
+            "english": "Mental health",
+            "phoneticTranscription": "Sa-oo-jee men-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bem-estar subjetivo",
+            "english": "Subjective well-being",
+            "phoneticTranscription": "Bem-es-tar soob-zhe-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Relações interpessoais",
+            "english": "Interpersonal relationships",
+            "phoneticTranscription": "He-la-sown-ees in-ter-pe-so-ays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Identidade cultural",
+            "english": "Cultural identity",
+            "phoneticTranscription": "Ee-den-chee-da-jee kool-too-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Globalização cultural",
+            "english": "Cultural globalization",
+            "phoneticTranscription": "Glo-ba-lee-za-sown kool-too-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tradição oral",
+            "english": "Oral tradition",
+            "phoneticTranscription": "Tra-jee-sown o-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Patrimônio imaterial",
+            "english": "Intangible heritage",
+            "phoneticTranscription": "Pa-tree-mo-nyoo ee-ma-te-ryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diversidade linguística",
+            "english": "Linguistic diversity",
+            "phoneticTranscription": "Jee-ver-see-da-jee leen-gwees-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dialeto regional",
+            "english": "Regional dialect",
+            "phoneticTranscription": "Jya-le-too he-zhyo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Intercâmbio cultural",
+            "english": "Cultural exchange",
+            "phoneticTranscription": "In-ter-kam-byoo kool-too-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Turismo de massa",
+            "english": "Mass tourism",
+            "phoneticTranscription": "Too-reez-moo de ma-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fluxo migratório",
+            "english": "Migratory flow",
+            "phoneticTranscription": "Floo-ksoo mee-gra-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direito de asilo",
+            "english": "Right of asylum",
+            "phoneticTranscription": "Jee-ray-too de a-zee-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Políticas de imigração",
+            "english": "Immigration policies",
+            "phoneticTranscription": "Po-lee-chee-kas de ee-mee-gra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Integração social",
+            "english": "Social integration",
+            "phoneticTranscription": "In-te-gra-sown so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Xenofobia",
+            "english": "Xenophobia",
+            "phoneticTranscription": "Ske-no-fo-bee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tolerância religiosa",
+            "english": "Religious tolerance",
+            "phoneticTranscription": "To-le-ran-syah he-lee-zhyo-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Liberdade de culto",
+            "english": "Freedom of worship",
+            "phoneticTranscription": "Lee-ber-da-jee de kool-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estado laico",
+            "english": "Secular state",
+            "phoneticTranscription": "Es-ta-doo lye-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Justiça social",
+            "english": "Social justice",
+            "phoneticTranscription": "Zhoos-chee-sa so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Igualdade de gênero",
+            "english": "Gender equality",
+            "phoneticTranscription": "Ee-gwal-da-jee de zhe-ne-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Empoderamento feminino",
+            "english": "Female empowerment",
+            "phoneticTranscription": "Em-po-de-ra-men-too fe-mee-nee-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Luta de classes",
+            "english": "Class struggle",
+            "phoneticTranscription": "Loo-ta de kla-sees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consciência política",
+            "english": "Political consciousness",
+            "phoneticTranscription": "Kon-syen-syah po-lee-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Representatividade",
+            "english": "Representativeness",
+            "phoneticTranscription": "He-pre-zen-ta-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Participação popular",
+            "english": "Popular participation",
+            "phoneticTranscription": "Par-chee-see-pa-sown po-poo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Democracia direta",
+            "english": "Direct democracy",
+            "phoneticTranscription": "De-mo-kra-see-a jee-he-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gestão pública",
+            "english": "Public management",
+            "phoneticTranscription": "Zhes-town poo-blee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transparência administrativa",
+            "english": "Administrative transparency",
+            "phoneticTranscription": "Trans-pa-ren-syah ad-mee-nees-tra-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Combate à corrupção",
+            "english": "Combating corruption",
+            "phoneticTranscription": "Kom-ba-chee a ko-hoop-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ética na gestão",
+            "english": "Ethics in management",
+            "phoneticTranscription": "E-chee-ka na zhes-town",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Responsabilidade fiscal",
+            "english": "Fiscal responsibility",
+            "phoneticTranscription": "Hes-pon-sa-bee-lee-da-jee fees-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Crise econômica",
+            "english": "Economic crisis",
+            "phoneticTranscription": "Kree-zee e-ko-no-mee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inflação moderada",
+            "english": "Moderate inflation",
+            "phoneticTranscription": "In-fla-sown mo-de-ra-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Taxa de juros",
+            "english": "Interest rate",
+            "phoneticTranscription": "Ta-sha de zhoo-roos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Investimento estrangeiro",
+            "english": "Foreign investment",
+            "phoneticTranscription": "In-ves-chee-men-too es-tran-zhey-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comércio exterior",
+            "english": "Foreign trade",
+            "phoneticTranscription": "Ko-mer-syoo es-te-ryor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Déficit orçamentário",
+            "english": "Budget deficit",
+            "phoneticTranscription": "De-fee-seet or-sa-men-ta-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Superávit comercial",
+            "english": "Trade surplus",
+            "phoneticTranscription": "Soo-pe-ra-veet ko-mer-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mercado de trabalho",
+            "english": "Labor market",
+            "phoneticTranscription": "Mer-ka-doo de tra-ba-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Precarização",
+            "english": "Precarization",
+            "phoneticTranscription": "Pre-ka-ree-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Terceirização",
+            "english": "Outsourcing",
+            "phoneticTranscription": "Ter-say-ree-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Automação industrial",
+            "english": "Industrial automation",
+            "phoneticTranscription": "Aw-to-ma-sown in-doos-tryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Revolução tecnológica",
+            "english": "Technological revolution",
+            "phoneticTranscription": "He-vo-loo-sown tek-no-lo-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ruptura tecnológica",
+            "english": "Technological rupture",
+            "phoneticTranscription": "Hoop-too-ra tek-no-lo-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pesquisa científica",
+            "english": "Scientific research",
+            "phoneticTranscription": "Pes-kee-za syen-chee-fee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desenvolvimento sustentável",
+            "english": "Sustainable development",
+            "phoneticTranscription": "De-zen-vol-vee-men-too soos-ten-ta-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Geração de valor",
+            "english": "Value generation",
+            "phoneticTranscription": "Zhe-ra-sown de va-lor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vantagem competitiva",
+            "english": "Competitive advantage",
+            "phoneticTranscription": "Van-ta-zhem kom-pe-chee-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Planejamento estratégico",
+            "english": "Strategic planning",
+            "phoneticTranscription": "Pla-ne-zha-men-too es-tra-te-zhee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Visão de futuro",
+            "english": "Vision for the future",
+            "phoneticTranscription": "Vee-zown de foo-too-roo",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Legenda",
+        "correctVersion": "Means 'Subtitle' or 'Legend (map)'. For an 'Urban Legend', use 'Lenda urbana'.",
+        "explanation": "Trap level: Medium"
+    }
+}

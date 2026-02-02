@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a1_m10",
+    "theme": "Essential Verbs & Review",
+    "order": 10,
+    "lessons": [
+        {
+            "targetText": "Analisar",
+            "english": "To analyze",
+            "phoneticTranscription": "A-na-lee-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Organizar",
+            "english": "To organize",
+            "phoneticTranscription": "Or-ga-nee-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Planejar",
+            "english": "To plan",
+            "phoneticTranscription": "Pla-ne-zhyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sugerir",
+            "english": "To suggest",
+            "phoneticTranscription": "Soo-zhe-reer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Confirmar",
+            "english": "To confirm",
+            "phoneticTranscription": "Kon-feer-mar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cancelar",
+            "english": "To cancel",
+            "phoneticTranscription": "Kan-se-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reservar",
+            "english": "To reserve",
+            "phoneticTranscription": "Re-zer-var",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Entregar",
+            "english": "To deliver",
+            "phoneticTranscription": "En-tre-gar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atender",
+            "english": "To attend/answer",
+            "phoneticTranscription": "A-ten-der",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Informar",
+            "english": "To inform",
+            "phoneticTranscription": "In-for-mar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Explicar",
+            "english": "To explain",
+            "phoneticTranscription": "Es-plee-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Demonstrar",
+            "english": "To demonstrate",
+            "phoneticTranscription": "De-mons-trar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Observar",
+            "english": "To observe",
+            "phoneticTranscription": "Ob-ser-var",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comparar",
+            "english": "To compare",
+            "phoneticTranscription": "Kom-pa-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Identificar",
+            "english": "To identify",
+            "phoneticTranscription": "Ee-den-chee-fee-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Definir",
+            "english": "To define",
+            "phoneticTranscription": "De-fee-neer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resolver",
+            "english": "To resolve",
+            "phoneticTranscription": "Re-zol-ver",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Participar",
+            "english": "To participate",
+            "phoneticTranscription": "Par-chee-see-par",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Recomendar",
+            "english": "To recommend",
+            "phoneticTranscription": "Re-ko-men-dar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Garantir",
+            "english": "To guarantee",
+            "phoneticTranscription": "Ga-ran-cheer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Permitir",
+            "english": "To allow",
+            "phoneticTranscription": "Per-mee-cheer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Proibir",
+            "english": "To prohibit",
+            "phoneticTranscription": "Pro-ee-beer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Evitar",
+            "english": "To avoid",
+            "phoneticTranscription": "E-vee-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arranjar",
+            "english": "To arrange/fix",
+            "phoneticTranscription": "A-han-zhyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Melhorar",
+            "english": "To improve",
+            "phoneticTranscription": "Me-lyo-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Apoiar",
+            "english": "To support",
+            "phoneticTranscription": "A-poy-ar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Compartilhar",
+            "english": "To share",
+            "phoneticTranscription": "Kom-par-chee-lyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colaborar",
+            "english": "To collaborate",
+            "phoneticTranscription": "Ko-la-bo-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Negociar",
+            "english": "To negotiate",
+            "phoneticTranscription": "Ne-go-syar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Convencer",
+            "english": "To convince",
+            "phoneticTranscription": "Kon-ven-ser",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aceitar",
+            "english": "To accept",
+            "phoneticTranscription": "A-say-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Recusar",
+            "english": "To refuse",
+            "phoneticTranscription": "Re-koo-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Admitir",
+            "english": "To admit",
+            "phoneticTranscription": "Ad-mee-cheer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ignorar",
+            "english": "To ignore",
+            "phoneticTranscription": "Ee-gno-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Valorizar",
+            "english": "To value",
+            "phoneticTranscription": "Va-lo-ree-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Respeitar",
+            "english": "To respect",
+            "phoneticTranscription": "Hes-pay-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Admirar",
+            "english": "To admire",
+            "phoneticTranscription": "Ad-mee-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Confiar",
+            "english": "To trust",
+            "phoneticTranscription": "Kon-fyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desconfiar",
+            "english": "To distrust",
+            "phoneticTranscription": "Des-kon-fyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Surpreender",
+            "english": "To surprise",
+            "phoneticTranscription": "Soor-pre-en-der",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Assustar",
+            "english": "To frighten",
+            "phoneticTranscription": "A-soos-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Preocupar",
+            "english": "To worry",
+            "phoneticTranscription": "Pre-o-koo-par",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aliviar",
+            "english": "To relieve",
+            "phoneticTranscription": "A-lee-vyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Incentivar",
+            "english": "To encourage",
+            "phoneticTranscription": "In-sen-chee-var",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inspirar",
+            "english": "To inspire",
+            "phoneticTranscription": "In-spee-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Criar",
+            "english": "To create",
+            "phoneticTranscription": "Kree-ar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desenvolver",
+            "english": "To develop",
+            "phoneticTranscription": "De-zen-vol-ver",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Construir",
+            "english": "To build",
+            "phoneticTranscription": "Kons-troo-eer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Destruir",
+            "english": "To destroy",
+            "phoneticTranscription": "Des-troo-eer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resguardar",
+            "english": "To guard/shelter",
+            "phoneticTranscription": "Hes-gwar-dar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atacar",
+            "english": "To attack",
+            "phoneticTranscription": "A-ta-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Defender",
+            "english": "To defend",
+            "phoneticTranscription": "De-fen-der",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vencer",
+            "english": "To win",
+            "phoneticTranscription": "Ven-ser",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Falhar",
+            "english": "To fail",
+            "phoneticTranscription": "Fa-lyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arriscar",
+            "english": "To risk",
+            "phoneticTranscription": "A-hees-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lucrar",
+            "english": "To profit",
+            "phoneticTranscription": "Loo-krar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Extraviar",
+            "english": "To misplace",
+            "phoneticTranscription": "Es-tra-vyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Deparar",
+            "english": "To encounter",
+            "phoneticTranscription": "De-pa-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Buscar",
+            "english": "To search/seek",
+            "phoneticTranscription": "Boos-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alcançar",
+            "english": "To reach",
+            "phoneticTranscription": "Al-kan-sar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Superar",
+            "english": "To overcome",
+            "phoneticTranscription": "Soo-pe-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Adaptar",
+            "english": "To adapt",
+            "phoneticTranscription": "A-dap-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Evoluir",
+            "english": "To evolve",
+            "phoneticTranscription": "E-vo-loo-eer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imaginar",
+            "english": "To imagine",
+            "phoneticTranscription": "Ee-ma-zhee-nar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sonhar",
+            "english": "To dream",
+            "phoneticTranscription": "So-nyar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Realizar",
+            "english": "To perform/realize",
+            "phoneticTranscription": "Re-a-lee-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Exercer",
+            "english": "To exercise/practice",
+            "phoneticTranscription": "E-zer-ser",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Treinar",
+            "english": "To train",
+            "phoneticTranscription": "Tray-nar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Instruir",
+            "english": "To instruct",
+            "phoneticTranscription": "Ins-troo-eer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ensinar",
+            "english": "To teach",
+            "phoneticTranscription": "En-see-nar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Divulgar",
+            "english": "To disclose",
+            "phoneticTranscription": "Dee-vool-gar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Publicar",
+            "english": "To publish",
+            "phoneticTranscription": "Poo-blee-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comentar",
+            "english": "To comment",
+            "phoneticTranscription": "Ko-men-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Debater",
+            "english": "To debate",
+            "phoneticTranscription": "De-ba-ter",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Examinar",
+            "english": "To examine",
+            "phoneticTranscription": "E-za-mee-nar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Investigar",
+            "english": "To investigate",
+            "phoneticTranscription": "In-ves-chee-gar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Descobrir",
+            "english": "To discover",
+            "phoneticTranscription": "Des-ko-breer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Revelar",
+            "english": "To reveal",
+            "phoneticTranscription": "Re-ve-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ocultar",
+            "english": "To hide",
+            "phoneticTranscription": "O-kool-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cobrir",
+            "english": "To cover",
+            "phoneticTranscription": "Ko-breer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desvendar",
+            "english": "To unveil",
+            "phoneticTranscription": "Des-ven-dar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Unir",
+            "english": "To unite",
+            "phoneticTranscription": "Oo-neer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Separar",
+            "english": "To separate",
+            "phoneticTranscription": "Se-pa-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Misturar",
+            "english": "To mix",
+            "phoneticTranscription": "Mees-too-rar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dividir",
+            "english": "To divide",
+            "phoneticTranscription": "Dee-vee-jeer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Somar",
+            "english": "To add/sum",
+            "phoneticTranscription": "So-mar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Multiplicar",
+            "english": "To multiply",
+            "phoneticTranscription": "Mool-chee-plee-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Calcular",
+            "english": "To calculate",
+            "phoneticTranscription": "Kal-koo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Medir",
+            "english": "To measure",
+            "phoneticTranscription": "Me-jeer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pesar",
+            "english": "To weigh",
+            "phoneticTranscription": "Pe-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Testar",
+            "english": "To test",
+            "phoneticTranscription": "Tes-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aprovar",
+            "english": "To approve",
+            "phoneticTranscription": "A-pro-var",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reprovar",
+            "english": "To fail/reject",
+            "phoneticTranscription": "Re-pro-var",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Qualificar",
+            "english": "To qualify",
+            "phoneticTranscription": "Kwa-lee-fee-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Classificar",
+            "english": "To classify",
+            "phoneticTranscription": "Kla-see-fee-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Selecionar",
+            "english": "To select",
+            "phoneticTranscription": "Se-le-syo-nar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Priorizar",
+            "english": "To prioritize",
+            "phoneticTranscription": "Pryo-ree-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Finalizar",
+            "english": "To finalize",
+            "phoneticTranscription": "Fee-na-lee-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atualizar",
+            "english": "To update",
+            "phoneticTranscription": "A-too-a-lee-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sincronizar",
+            "english": "To synchronize",
+            "phoneticTranscription": "Seen-kro-nee-zar",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Ficar",
+        "correctVersion": "One of the most versatile verbs; means 'To stay', but also 'To become', 'To be located', or even 'To hook up'.",
+        "explanation": "Trap level: Extreme"
+    }
+}

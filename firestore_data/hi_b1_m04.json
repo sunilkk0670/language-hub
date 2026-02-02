@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_b1_m04",
+    "language": "hi",
+    "level": "b1",
+    "theme": "Literary Theory & Classical Poetry",
+    "order": 24,
+    "lessons": [
+        {
+            "word": "वाङ्मय-शिल्प",
+            "translation": "Literary Craft / Literature (Formal)",
+            "phonetic": "Vangmay-shilp"
+        },
+        {
+            "word": "काव्यशास्त्र",
+            "translation": "Poetics",
+            "phonetic": "Kavyashastra"
+        },
+        {
+            "word": "रस-सिद्धांत",
+            "translation": "Theory of Sentiment (Aesthetics)",
+            "phonetic": "Rasa-siddhant"
+        },
+        {
+            "word": "शब्दालंकार",
+            "translation": "Verbal Ornamentation (Literary figure)",
+            "phonetic": "Shabdalankar"
+        },
+        {
+            "word": "छन्द",
+            "translation": "Meter / Verse",
+            "phonetic": "Chhanda"
+        },
+        {
+            "word": "साहित्यिक",
+            "translation": "Literary",
+            "phonetic": "Sahityik"
+        },
+        {
+            "word": "साहित्यिक-प्रवाह",
+            "translation": "Literary flow / Prose style",
+            "phonetic": "Sahityik-pravah"
+        },
+        {
+            "word": "छन्दोबद्ध",
+            "translation": "Metric poetry (Formal)",
+            "phonetic": "Chhandobaddh"
+        },
+        {
+            "word": "आलोचना",
+            "translation": "Criticism / Critique",
+            "phonetic": "Aalochna"
+        },
+        {
+            "word": "गुणदोष-विवेचन",
+            "translation": "Critical Analysis of merits/demerits",
+            "phonetic": "Gundosha-vivechan"
+        },
+        {
+            "word": "व्याख्या",
+            "translation": "Interpretation / Commentary",
+            "phonetic": "Vyakhyā"
+        },
+        {
+            "word": "भाष्य",
+            "translation": "Deep Commentary",
+            "phonetic": "Bhashya"
+        },
+        {
+            "word": "ग्रन्थ",
+            "translation": "Volume / Scripture / Book",
+            "phonetic": "Granth"
+        },
+        {
+            "word": "रचनाकार",
+            "translation": "Creator / Author",
+            "phonetic": "Rachnakar"
+        },
+        {
+            "word": "तत्ववेत्ता",
+            "translation": "Scholar / Philosopher specialized in letters",
+            "phonetic": "Tattvavetta"
+        },
+        {
+            "word": "कवि",
+            "translation": "Poet",
+            "phonetic": "Kavi"
+        },
+        {
+            "word": "कवयित्री",
+            "translation": "Poetess",
+            "phonetic": "Kavayitri"
+        },
+        {
+            "word": "लेखक-रत्न",
+            "translation": "Exemplary Writer (Formal scholar)",
+            "phonetic": "Lekhak-ratna"
+        },
+        {
+            "word": "नाटककार",
+            "translation": "Playwright",
+            "phonetic": "Natakkar"
+        },
+        {
+            "word": "उपन्यासकार",
+            "translation": "Novelist",
+            "phonetic": "Upanyaskar"
+        },
+        {
+            "word": "कहानीकार",
+            "translation": "Storyteller",
+            "phonetic": "Kahanikar"
+        },
+        {
+            "word": "अनुवादक",
+            "translation": "Translator",
+            "phonetic": "Anuvadak"
+        },
+        {
+            "word": "सम्पादक",
+            "translation": "Editor",
+            "phonetic": "Sampadak"
+        },
+        {
+            "word": "ग्रन्थ-प्रसारक",
+            "translation": "Book Publisher (Literal pure)",
+            "phonetic": "Granth-prasarak"
+        },
+        {
+            "word": "पाण्डुलिपि",
+            "translation": "Manuscript",
+            "phonetic": "Pandulipi"
+        },
+        {
+            "word": "पाषाण-लेख",
+            "translation": "Stone Inscription (Technical)",
+            "phonetic": "Pashan-lekh"
+        },
+        {
+            "word": "पुरा-लेख",
+            "translation": "Historical Record / Inscription",
+            "phonetic": "Pura-lekh"
+        },
+        {
+            "word": "अनुप्रास",
+            "translation": "Alliteration",
+            "phonetic": "Anupras"
+        },
+        {
+            "word": "यमक",
+            "translation": "Pun / Repetition with diff meaning",
+            "phonetic": "Yamak"
+        },
+        {
+            "word": "श्लेष",
+            "translation": "Ambiguity / Double meaning",
+            "phonetic": "Shlesh"
+        },
+        {
+            "word": "उपमा",
+            "translation": "Simile",
+            "phonetic": "Upma"
+        },
+        {
+            "word": "लाक्षणिक-रूपक",
+            "translation": "Indicative Metaphor",
+            "phonetic": "Lakshanik-roopak"
+        },
+        {
+            "word": "अतिशयोक्ति",
+            "translation": "Hyperbole",
+            "phonetic": "Atishayokti"
+        },
+        {
+            "word": "उत्प्रेक्षा",
+            "translation": "Poetic fancy / Imagination",
+            "phonetic": "Utpreksha"
+        },
+        {
+            "word": "करुण रस",
+            "translation": "Sentiment of Pathos",
+            "phonetic": "Karun Rasa"
+        },
+        {
+            "word": "वीर रस",
+            "translation": "Sentiment of Heroism",
+            "phonetic": "Veer Rasa"
+        },
+        {
+            "word": "शृंगार रस",
+            "translation": "Sentiment of Love / Eroticism",
+            "phonetic": "Shringar Rasa"
+        },
+        {
+            "word": "हास्य रस",
+            "translation": "Sentiment of Comedy",
+            "phonetic": "Hasya Rasa"
+        },
+        {
+            "word": "रौद्र रस",
+            "translation": "Sentiment of Fury",
+            "phonetic": "Raudra Rasa"
+        },
+        {
+            "word": "भयानक रस",
+            "translation": "Sentiment of Fear",
+            "phonetic": "Bhayanak Rasa"
+        },
+        {
+            "word": "वीभत्स रस",
+            "translation": "Sentiment of Disgust",
+            "phonetic": "Veebhatsa Rasa"
+        },
+        {
+            "word": "अद्भुत रस",
+            "translation": "Sentiment of Wonder",
+            "phonetic": "Adbhut Rasa"
+        },
+        {
+            "word": "शान्त रस",
+            "translation": "Sentiment of Tranquility",
+            "phonetic": "Shant Rasa"
+        },
+        {
+            "word": "नवरस",
+            "translation": "The Nine Sentiments",
+            "phonetic": "Navrasa"
+        },
+        {
+            "word": "काव्यालंकार",
+            "translation": "Poetic Ornamentation",
+            "phonetic": "Kavyalankar"
+        },
+        {
+            "word": "माधुर्य",
+            "translation": "Sweetness (Poetic quality)",
+            "phonetic": "Madhurya"
+        },
+        {
+            "word": "काव्य-दीप्ति",
+            "translation": "Poetic Vigor / Energy",
+            "phonetic": "Kavya-deepti"
+        },
+        {
+            "word": "प्रसाद गुण",
+            "translation": "Clarity / Lucidity",
+            "phonetic": "Prasad guna"
+        },
+        {
+            "word": "ध्वनि",
+            "translation": "Suggestion / Tone",
+            "phonetic": "Dhwani"
+        },
+        {
+            "word": "व्यंजना",
+            "translation": "Implicit meaning",
+            "phonetic": "Vyanjana"
+        },
+        {
+            "word": "लक्षण",
+            "translation": "Inductive meaning / Characteristic",
+            "phonetic": "Lakshan"
+        },
+        {
+            "word": "अभिधा",
+            "translation": "Literal meaning",
+            "phonetic": "Abhidha"
+        },
+        {
+            "word": "वस्तु-विन्यास",
+            "translation": "Plot construction / Narrative setup",
+            "phonetic": "Vastu-vinyas"
+        },
+        {
+            "word": "पात्र-चित्रण",
+            "translation": "Characterization",
+            "phonetic": "Patra-chitran"
+        },
+        {
+            "word": "वातावरण-सृजन",
+            "translation": "Atmospheric Setting / Environment",
+            "phonetic": "Vatavaran-srijan"
+        },
+        {
+            "word": "संवाद",
+            "translation": "Dialogue",
+            "phonetic": "Samvad"
+        },
+        {
+            "word": "शैली",
+            "translation": "Style / Diction",
+            "phonetic": "Shaili"
+        },
+        {
+            "word": "भाषा-शिल्प",
+            "translation": "Linguistic Craft",
+            "phonetic": "Bhasha-shilp"
+        },
+        {
+            "word": "विधा",
+            "translation": "Genre / Form",
+            "phonetic": "Vidha"
+        },
+        {
+            "word": "रूपक-मंचन",
+            "translation": "Theatrical Play Performance",
+            "phonetic": "Roopak-manchan"
+        },
+        {
+            "word": "एकांकी",
+            "translation": "One-act Play",
+            "phonetic": "Ekanki"
+        },
+        {
+            "word": "निबन्ध",
+            "translation": "Essay",
+            "phonetic": "Nibandh"
+        },
+        {
+            "word": "संस्मरण",
+            "translation": "Reminiscence / Memoir",
+            "phonetic": "Sansmaran"
+        },
+        {
+            "word": "रेखाचित्र",
+            "translation": "Sketch / Portrait",
+            "phonetic": "Rekhachitru"
+        },
+        {
+            "word": "जीवनी",
+            "translation": "Biography",
+            "phonetic": "Jeevni"
+        },
+        {
+            "word": "आत्मकथा",
+            "translation": "Autobiography",
+            "phonetic": "Aatmakatha"
+        },
+        {
+            "word": "यात्रा-वृत्तांत",
+            "translation": "Travelogue",
+            "phonetic": "Yatra-vrittant"
+        },
+        {
+            "word": "रिपोर्ताज",
+            "translation": "Reportage",
+            "phonetic": "Riportaj"
+        },
+        {
+            "word": "मुक्तक",
+            "translation": "Isolated couplet / Poem",
+            "phonetic": "Muktak"
+        },
+        {
+            "word": "महाकाव्य",
+            "translation": "Epic Poem",
+            "phonetic": "Mahakavya"
+        },
+        {
+            "word": "खण्डकाव्य",
+            "translation": "Semi-epic / Narrative poem",
+            "phonetic": "Khandakavya"
+        },
+        {
+            "word": "गीतिकाव्य",
+            "translation": "Lyric Poetry",
+            "phonetic": "Geetikavya"
+        },
+        {
+            "word": "दोहा",
+            "translation": "Couplet (Metric form)",
+            "phonetic": "Doha"
+        },
+        {
+            "word": "चौपाई",
+            "translation": "Quatrain (Metric form)",
+            "phonetic": "Chaupai"
+        },
+        {
+            "word": "सोरठा",
+            "translation": "Inverted couplet",
+            "phonetic": "Sortha"
+        },
+        {
+            "word": "सवैया",
+            "translation": "Lyrical meter",
+            "phonetic": "Savaiya"
+        },
+        {
+            "word": "रचनात्मकता",
+            "translation": "Creativity",
+            "phonetic": "Rachnatmakta"
+        },
+        {
+            "word": "मौलिकता",
+            "phonetic": "Maulikta",
+            "translation": "Originality"
+        },
+        {
+            "word": "बुद्धि-वैभव",
+            "translation": "Intellectual Genius",
+            "phonetic": "Buddhi-vaibhav"
+        },
+        {
+            "word": "व्युत्पत्ति",
+            "translation": "Learning / Derivation",
+            "phonetic": "Vyutpatti"
+        },
+        {
+            "word": "प्रयोगात्मक-अभ्यास",
+            "translation": "Experimental Practice",
+            "phonetic": "Prayogatmak-abhyas"
+        },
+        {
+            "word": "प्रेरणा-श्रोत",
+            "translation": "Source of Inspiration",
+            "phonetic": "Prerana-shrot"
+        },
+        {
+            "word": "भाव-सौन्दर्य",
+            "translation": "Emotional Beauty",
+            "phonetic": "Bhav-saundarya"
+        },
+        {
+            "word": "शिल्प-विधान",
+            "translation": "Craft structure",
+            "phonetic": "Shilp-vidhan"
+        },
+        {
+            "word": "अजर-कृति",
+            "translation": "Ageless Work / Timeless creation",
+            "phonetic": "Ajar-kriti"
+        },
+        {
+            "word": "लोकप्रियता",
+            "translation": "Popularity",
+            "phonetic": "Lokpriyata"
+        },
+        {
+            "word": "सांस्कृतिक चेतना",
+            "translation": "Cultural Consciousness",
+            "phonetic": "Sanskritik chetana"
+        },
+        {
+            "word": "साहित्यिक चोरी",
+            "translation": "Plagiarism",
+            "phonetic": "Sahityik chori"
+        },
+        {
+            "word": "सर्वाधिकार",
+            "translation": "Copyright / All rights",
+            "phonetic": "Sarvadhikar"
+        },
+        {
+            "word": "मुद्रण",
+            "translation": "Printing",
+            "phonetic": "Mudran"
+        },
+        {
+            "word": "ग्रन्थागार",
+            "translation": "Library / Archive",
+            "phonetic": "Granthagar"
+        },
+        {
+            "word": "वाचनालय",
+            "translation": "Reading room",
+            "phonetic": "Vachnalay"
+        },
+        {
+            "word": "हस्तलिपि",
+            "translation": "Handwriting / Script",
+            "phonetic": "Hastlipi"
+        },
+        {
+            "word": "वाङ्मय",
+            "translation": "Literature / Speech (Sanskritized)",
+            "phonetic": "Vangmay"
+        },
+        {
+            "word": "अंक",
+            "translation": "Act (in a play) / Number",
+            "phonetic": "Ank"
+        },
+        {
+            "word": "प्रेक्षणीय-अंक",
+            "translation": "Visible Scene / Appearance (Formal)",
+            "phonetic": "Prekshaniya-ank"
+        },
+        {
+            "word": "रंगावतरण",
+            "translation": "Stage Performance / Descending to stage",
+            "phonetic": "Rangavtaran"
+        },
+        {
+            "word": "सूत्रधार",
+            "translation": "Narrator / Stage director",
+            "phonetic": "Sutradhar"
+        },
+        {
+            "word": "अलंकारिक",
+            "translation": "Ornate / Rhetorical",
+            "phonetic": "Alankarik"
+        },
+        {
+            "word": "भावात्मक",
+            "translation": "Emotional / Sentimental",
+            "phonetic": "Bhavatmak"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The Navrasa Sentiments",
+        "question": "In classical Indian poetics, which 'Rasa' (Sentiment) represents 'Pathos' or 'Sorrow'?",
+        "options": [
+            "Veer Rasa",
+            "Karun Rasa",
+            "Hasya Rasa",
+            "Raudra Rasa"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Karun' (करुण) literally means compassionate or pathetic in a literary sense. 'Karun Rasa' is the aesthetic sentiment associated with grief and pity."
+    }
+}

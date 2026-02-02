@@ -1,0 +1,612 @@
+{
+  "module_id": "pt_a1_m01",
+  "theme": "Greetings & Introductions",
+  "order": 1,
+  "lessons": [
+    {
+      "targetText": "Olá",
+      "english": "Hello",
+      "phoneticTranscription": "Oh-lah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Oi",
+      "english": "Hi",
+      "phoneticTranscription": "Oy",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Bom dia",
+      "english": "Good morning",
+      "phoneticTranscription": "Bohn dee-ah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Boa tarde",
+      "english": "Good afternoon",
+      "phoneticTranscription": "Boh-ah tar-dee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Boa noite",
+      "english": "Good night",
+      "phoneticTranscription": "Boh-ah noy-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Tchau",
+      "english": "Goodbye",
+      "phoneticTranscription": "Chow",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Até logo",
+      "english": "See you later",
+      "phoneticTranscription": "Ah-teh lo-goo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Até amanhã",
+      "english": "See you tomorrow",
+      "phoneticTranscription": "Ah-teh ah-ma-nyah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Adeus",
+      "english": "Farewell",
+      "phoneticTranscription": "Ah-de-oos",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Por favor",
+      "english": "Please",
+      "phoneticTranscription": "Por fa-vor",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Obrigado",
+      "english": "Thank you (m)",
+      "phoneticTranscription": "Oh-bree-gah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Obrigada",
+      "english": "Thank you (f)",
+      "phoneticTranscription": "Oh-bree-gah-dah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "De nada",
+      "english": "You're welcome",
+      "phoneticTranscription": "Dee nah-dah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Com licença",
+      "english": "Excuse me",
+      "phoneticTranscription": "Kohn lee-sen-sah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Desculpe",
+      "english": "Sorry",
+      "phoneticTranscription": "Dees-kool-pee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Perdão",
+      "english": "Pardon",
+      "phoneticTranscription": "Per-down",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sim",
+      "english": "Yes",
+      "phoneticTranscription": "Seem",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Não",
+      "english": "No",
+      "phoneticTranscription": "Now",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Talvez",
+      "english": "Maybe",
+      "phoneticTranscription": "Tal-vays",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Eu",
+      "english": "I",
+      "phoneticTranscription": "E-oo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Você",
+      "english": "You",
+      "phoneticTranscription": "Voh-seh",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ele",
+      "english": "He",
+      "phoneticTranscription": "Eh-lee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ela",
+      "english": "She",
+      "phoneticTranscription": "Eh-lah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Nós",
+      "english": "We",
+      "phoneticTranscription": "Noce",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Eles",
+      "english": "They (m)",
+      "phoneticTranscription": "Eh-lees",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Elas",
+      "english": "They (f)",
+      "phoneticTranscription": "Eh-las",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Como vai?",
+      "english": "How are you?",
+      "phoneticTranscription": "Koh-moo vye",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Tudo bem?",
+      "english": "Everything good?",
+      "phoneticTranscription": "Too-doo behm",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Qual é o seu nome?",
+      "english": "What is your name?",
+      "phoneticTranscription": "Kwal eh oo seh-oo noh-mee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Meu nome é",
+      "english": "My name is",
+      "phoneticTranscription": "Meh-oo noh-mee eh",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Prazer",
+      "english": "Pleasure/Nice to meet you",
+      "phoneticTranscription": "Prah-zehr",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Senhor",
+      "english": "Mr./Sir",
+      "phoneticTranscription": "Seh-nyor",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Senhora",
+      "english": "Mrs./Ma'am",
+      "phoneticTranscription": "Seh-nyo-rah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Amigo",
+      "english": "Friend",
+      "phoneticTranscription": "Ah-mee-goo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Pessoa",
+      "english": "Person",
+      "phoneticTranscription": "Peh-so-ah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Gente",
+      "english": "People",
+      "phoneticTranscription": "Zhen-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Homem",
+      "english": "Man",
+      "phoneticTranscription": "Oh-mehm",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Mulher",
+      "english": "Woman",
+      "phoneticTranscription": "Moo-lyehr",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Criança",
+      "english": "Child",
+      "phoneticTranscription": "Kree-ahn-sah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Brasileiro",
+      "english": "Brazilian",
+      "phoneticTranscription": "Brah-zee-lay-roo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Estrangeiro",
+      "english": "Foreigner",
+      "phoneticTranscription": "Es-trahn-zhay-roo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Falar",
+      "english": "To speak",
+      "phoneticTranscription": "Fah-lar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Entender",
+      "english": "To understand",
+      "phoneticTranscription": "En-ten-dehr",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Saber",
+      "english": "To know",
+      "phoneticTranscription": "Sah-behr",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ser",
+      "english": "To be",
+      "phoneticTranscription": "Sehr",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Estar",
+      "english": "To be (temp)",
+      "phoneticTranscription": "Es-tar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ter",
+      "english": "To have",
+      "phoneticTranscription": "Tehr",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Morar",
+      "english": "To live/reside",
+      "phoneticTranscription": "Moh-rar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Vir",
+      "english": "To come",
+      "phoneticTranscription": "Veer",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ir",
+      "english": "To go",
+      "phoneticTranscription": "Eer",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Chamar",
+      "english": "To call",
+      "phoneticTranscription": "Sha-mar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Conhecer",
+      "english": "To meet/know",
+      "phoneticTranscription": "Kon-ye-ser",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Apresentar",
+      "english": "To introduce",
+      "phoneticTranscription": "A-pre-zen-tar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Responder",
+      "english": "To answer",
+      "phoneticTranscription": "Hes-pon-der",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Perguntar",
+      "english": "To ask",
+      "phoneticTranscription": "Per-goon-tar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Onde",
+      "english": "Where",
+      "phoneticTranscription": "On-jee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Quando",
+      "english": "When",
+      "phoneticTranscription": "Kwan-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Quem",
+      "english": "Who",
+      "phoneticTranscription": "Kehm",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Por que",
+      "english": "Why",
+      "phoneticTranscription": "Por ke",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Como",
+      "english": "How",
+      "phoneticTranscription": "Ko-moo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Muito",
+      "english": "Much/Very",
+      "phoneticTranscription": "Moo-ee-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Pouco",
+      "english": "Little",
+      "phoneticTranscription": "Pow-koo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Bem",
+      "english": "Well",
+      "phoneticTranscription": "Behm",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Mal",
+      "english": "Badly",
+      "phoneticTranscription": "Mal",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Aqui",
+      "english": "Here",
+      "phoneticTranscription": "A-kee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Lá",
+      "english": "There",
+      "phoneticTranscription": "Lah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Certo",
+      "english": "Right/Correct",
+      "phoneticTranscription": "Ser-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Errado",
+      "english": "Wrong",
+      "phoneticTranscription": "E-ha-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Novo",
+      "english": "New",
+      "phoneticTranscription": "No-voo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Velho",
+      "english": "Old",
+      "phoneticTranscription": "Ve-lyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Grande",
+      "english": "Big",
+      "phoneticTranscription": "Gran-jee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Pequeno",
+      "english": "Small",
+      "phoneticTranscription": "Pe-ke-noo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Bom",
+      "english": "Good",
+      "phoneticTranscription": "Bohn",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Mau",
+      "english": "Bad",
+      "phoneticTranscription": "Mow",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Mais",
+      "english": "More",
+      "phoneticTranscription": "Ma-ees",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Menos",
+      "english": "Less",
+      "phoneticTranscription": "Me-noos",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Tudo",
+      "english": "Everything",
+      "phoneticTranscription": "Too-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Nada",
+      "english": "Nothing",
+      "phoneticTranscription": "Na-dah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sempre",
+      "english": "Always",
+      "phoneticTranscription": "Sem-pree",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Nunca",
+      "english": "Never",
+      "phoneticTranscription": "Noon-ka",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Agora",
+      "english": "Now",
+      "phoneticTranscription": "A-go-ra",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Hoje",
+      "english": "Today",
+      "phoneticTranscription": "O-zhee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Amanhã",
+      "english": "Tomorrow",
+      "phoneticTranscription": "A-ma-nyah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ontem",
+      "english": "Yesterday",
+      "phoneticTranscription": "On-tehm",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Linguagem",
+      "english": "Language",
+      "phoneticTranscription": "Lin-gwa-zhem",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Palavra",
+      "english": "Word",
+      "phoneticTranscription": "Pa-la-vra",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Frase",
+      "english": "Sentence",
+      "phoneticTranscription": "Fra-zee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Significado",
+      "english": "Meaning",
+      "phoneticTranscription": "Sig-nee-fee-ka-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Escrita",
+      "english": "Writing",
+      "phoneticTranscription": "Es-kree-ta",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Leitura",
+      "english": "Reading",
+      "phoneticTranscription": "Lay-too-ra",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Escutar",
+      "english": "To listen",
+      "phoneticTranscription": "Es-koo-tar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ver",
+      "english": "To see",
+      "phoneticTranscription": "Ver",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ajudar",
+      "english": "To help",
+      "phoneticTranscription": "A-zhoo-dar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Esperar",
+      "english": "To wait",
+      "phoneticTranscription": "Es-pe-rar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Gostar",
+      "english": "To like",
+      "phoneticTranscription": "Gos-tar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Querer",
+      "english": "To want",
+      "phoneticTranscription": "Ke-rer",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Precisar",
+      "english": "To need",
+      "phoneticTranscription": "Pre-see-zar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Trabalhar",
+      "english": "To work",
+      "phoneticTranscription": "Tra-ba-lyar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Estudar",
+      "english": "To study",
+      "phoneticTranscription": "Es-too-dar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Viajar",
+      "english": "To travel",
+      "phoneticTranscription": "Vya-zhar",
+      "radicalBreakdown": ""
+    }
+  ],
+  "liarGameData": {
+    "trap": "Pretender",
+    "correctVersion": "Means 'to Intend', not 'to Pretend' (which is 'fingir').",
+    "explanation": "Trap level: High"
+  }
+}

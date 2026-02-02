@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a1_m07",
+    "language": "hi",
+    "level": "a1",
+    "theme": "School, Work & Education",
+    "order": 7,
+    "lessons": [
+        {
+            "word": "विद्यालय",
+            "translation": "School",
+            "phonetic": "Vidyalay"
+        },
+        {
+            "word": "महाविद्यालय",
+            "translation": "College",
+            "phonetic": "Mahavidyalay"
+        },
+        {
+            "word": "कक्षा",
+            "translation": "Class",
+            "phonetic": "Kaksha"
+        },
+        {
+            "word": "पाठशाला",
+            "translation": "Primary school",
+            "phonetic": "Pathshala"
+        },
+        {
+            "word": "परीक्षा",
+            "translation": "Examination / Test",
+            "phonetic": "Pariksha"
+        },
+        {
+            "word": "प्रश्न",
+            "translation": "Question",
+            "phonetic": "Prashn"
+        },
+        {
+            "word": "प्रतिवचन",
+            "translation": "Reply / Response",
+            "phonetic": "Prativachan"
+        },
+        {
+            "word": "परिणाम",
+            "translation": "Result",
+            "phonetic": "Parinaam"
+        },
+        {
+            "word": "गणित",
+            "translation": "Mathematics",
+            "phonetic": "Ganit"
+        },
+        {
+            "word": "विज्ञान",
+            "translation": "Science",
+            "phonetic": "Vigyan"
+        },
+        {
+            "word": "इतिहास",
+            "translation": "History",
+            "phonetic": "Itihas"
+        },
+        {
+            "word": "भूगोल",
+            "translation": "Geography",
+            "phonetic": "Bhugool"
+        },
+        {
+            "word": "साहित्य",
+            "translation": "Literature",
+            "phonetic": "Sahitya"
+        },
+        {
+            "word": "भाषा",
+            "translation": "Language",
+            "phonetic": "Bhasha"
+        },
+        {
+            "word": "व्याकरण",
+            "translation": "Grammar",
+            "phonetic": "Vyakaran"
+        },
+        {
+            "word": "लेख",
+            "translation": "Article / Writing",
+            "phonetic": "Lekh"
+        },
+        {
+            "word": "कहानी",
+            "translation": "Story",
+            "phonetic": "Kahani"
+        },
+        {
+            "word": "कविता",
+            "translation": "Poem",
+            "phonetic": "Kavita"
+        },
+        {
+            "word": "शब्द",
+            "translation": "Word",
+            "phonetic": "Shabd"
+        },
+        {
+            "word": "वाक्य",
+            "translation": "Sentence",
+            "phonetic": "Vaakya"
+        },
+        {
+            "word": "पन्ना",
+            "translation": "Page (of a book)",
+            "phonetic": "Panna"
+        },
+        {
+            "word": "स्याही",
+            "translation": "Ink",
+            "phonetic": "Syahi"
+        },
+        {
+            "word": "स्यूत",
+            "translation": "School bag",
+            "phonetic": "Basta"
+        },
+        {
+            "word": "छात्र",
+            "translation": "Student (Male)",
+            "phonetic": "Chhatra"
+        },
+        {
+            "word": "छात्रा",
+            "translation": "Student (Female)",
+            "phonetic": "Chhatra"
+        },
+        {
+            "word": "प्रधानाचार्य",
+            "translation": "Principal",
+            "phonetic": "Pradhanacharya"
+        },
+        {
+            "word": "शिक्षक",
+            "translation": "Teacher (Male)",
+            "phonetic": "Shikshak"
+        },
+        {
+            "word": "शिक्षिका",
+            "translation": "Teacher (Female)",
+            "phonetic": "Shikshika"
+        },
+        {
+            "word": "पुस्तकालय",
+            "translation": "Library",
+            "phonetic": "Pustakalay"
+        },
+        {
+            "word": "प्रयोगशाला",
+            "translation": "Laboratory",
+            "phonetic": "Prayogshala"
+        },
+        {
+            "word": "क्रीड़ास्थल",
+            "translation": "Field / Playground",
+            "phonetic": "Maidan"
+        },
+        {
+            "word": "खेल",
+            "translation": "Game",
+            "phonetic": "Khel"
+        },
+        {
+            "word": "प्रतियोगिता",
+            "translation": "Competition",
+            "phonetic": "Pratiyogita"
+        },
+        {
+            "word": "गौरव-दान",
+            "translation": "Honor / Awarding",
+            "phonetic": "Gaurav-daan"
+        },
+        {
+            "word": "छात्रवृत्ति",
+            "translation": "Scholarship",
+            "phonetic": "Chhatravritti"
+        },
+        {
+            "word": "प्रवेश",
+            "translation": "Admission",
+            "phonetic": "Dakhila"
+        },
+        {
+            "word": "नियम",
+            "translation": "Rule",
+            "phonetic": "Niyam"
+        },
+        {
+            "word": "अनुशासन",
+            "translation": "Discipline",
+            "phonetic": "Anushasan"
+        },
+        {
+            "word": "हाजिरी",
+            "translation": "Attendance",
+            "phonetic": "Haajiri"
+        },
+        {
+            "word": "अवकाश",
+            "translation": "Vacation / Leave",
+            "phonetic": "Avakash"
+        },
+        {
+            "word": "कार्यालय",
+            "translation": "Office",
+            "phonetic": "Karyalay"
+        },
+        {
+            "word": "कार्यस्थल",
+            "translation": "Workplace",
+            "phonetic": "Karyasthal"
+        },
+        {
+            "word": "सेवा",
+            "translation": "Job",
+            "phonetic": "Naukri"
+        },
+        {
+            "word": "व्यवसाय",
+            "translation": "Profession",
+            "phonetic": "Pesha"
+        },
+        {
+            "word": "वेतन",
+            "translation": "Salary",
+            "phonetic": "Vetan"
+        },
+        {
+            "word": "बोनस",
+            "translation": "Bonus",
+            "phonetic": "Bonus"
+        },
+        {
+            "word": "अर्जन",
+            "translation": "Earnings",
+            "phonetic": "Kamayi"
+        },
+        {
+            "word": "व्यय",
+            "translation": "Expense",
+            "phonetic": "Kharch"
+        },
+        {
+            "word": "संचय",
+            "translation": "Savings",
+            "phonetic": "Bachat"
+        },
+        {
+            "word": "लेखा",
+            "translation": "Account",
+            "phonetic": "Khata"
+        },
+        {
+            "word": "बैंक",
+            "translation": "Bank",
+            "phonetic": "Bank"
+        },
+        {
+            "word": "ऋण-भार",
+            "translation": "Loan / Debt",
+            "phonetic": "Udhaar"
+        },
+        {
+            "word": "ऋण",
+            "translation": "Debt",
+            "phonetic": "Karz"
+        },
+        {
+            "word": "व्यापार",
+            "translation": "Trade / Commerce",
+            "phonetic": "Vyapar"
+        },
+        {
+            "word": "ग्राहक",
+            "translation": "Customer",
+            "phonetic": "Grahak"
+        },
+        {
+            "word": "हाट",
+            "translation": "Local Fair / Market",
+            "phonetic": "Haat"
+        },
+        {
+            "word": "आपणदार",
+            "translation": "Shopkeeper",
+            "phonetic": "Dukandaar"
+        },
+        {
+            "word": "कर्मचारी",
+            "translation": "Employee",
+            "phonetic": "Karmachari"
+        },
+        {
+            "word": "अधिकारी",
+            "translation": "Officer / Official",
+            "phonetic": "Adhikari"
+        },
+        {
+            "word": "मजदूर",
+            "translation": "Laborer",
+            "phonetic": "Mazdoor"
+        },
+        {
+            "word": "किसान",
+            "translation": "Farmer",
+            "phonetic": "Kisan"
+        },
+        {
+            "word": "सैनिक",
+            "translation": "Soldier",
+            "phonetic": "Sainik"
+        },
+        {
+            "word": "डॉक्टर",
+            "translation": "Doctor",
+            "phonetic": "Doctor"
+        },
+        {
+            "word": "नर्स",
+            "translation": "Nurse",
+            "phonetic": "Nurse"
+        },
+        {
+            "word": "वैज्ञानिक",
+            "translation": "Scientist",
+            "phonetic": "Vaigyanik"
+        },
+        {
+            "word": "लेखक",
+            "translation": "Author",
+            "phonetic": "Lekhak"
+        },
+        {
+            "word": "कलाकार",
+            "translation": "Artist",
+            "phonetic": "Kalakaar"
+        },
+        {
+            "word": "गायक",
+            "translation": "Singer",
+            "phonetic": "Gayak"
+        },
+        {
+            "word": "अभिनेता",
+            "translation": "Actor",
+            "phonetic": "Abhineta"
+        },
+        {
+            "word": "नेत्री",
+            "translation": "Leader (Female)",
+            "phonetic": "Netri"
+        },
+        {
+            "word": "नेता",
+            "translation": "Leader (Male)",
+            "phonetic": "Neta"
+        },
+        {
+            "word": "मंत्री",
+            "translation": "Minister",
+            "phonetic": "Mantri"
+        },
+        {
+            "word": "प्रधान मंत्री",
+            "translation": "Prime Minister",
+            "phonetic": "Pradhan Mantri"
+        },
+        {
+            "word": "राष्ट्रपति",
+            "translation": "President",
+            "phonetic": "Rashtrapati"
+        },
+        {
+            "word": "कानून",
+            "translation": "Law",
+            "phonetic": "Kanoon"
+        },
+        {
+            "word": "अदालत",
+            "translation": "Court",
+            "phonetic": "Adalat"
+        },
+        {
+            "word": "फैसला",
+            "translation": "Decision / Judgment",
+            "phonetic": "Faisla"
+        },
+        {
+            "word": "अपराध",
+            "translation": "Crime",
+            "phonetic": "Apradh"
+        },
+        {
+            "word": "कैदी",
+            "translation": "Prisoner",
+            "phonetic": "Kaidi"
+        },
+        {
+            "word": "जेल",
+            "translation": "Jail / Prison",
+            "phonetic": "Jail"
+        },
+        {
+            "word": "सुरक्षा",
+            "translation": "Security",
+            "phonetic": "Suraksha"
+        },
+        {
+            "word": "खबर",
+            "translation": "News",
+            "phonetic": "Khabar"
+        },
+        {
+            "word": "चिट्ठी",
+            "translation": "Letter",
+            "phonetic": "Chitthi"
+        },
+        {
+            "word": "डाक",
+            "translation": "Mail / Post",
+            "phonetic": "Daak"
+        },
+        {
+            "word": "तार",
+            "translation": "Telegram / Wire",
+            "phonetic": "Taar"
+        },
+        {
+            "word": "पुरस्कार",
+            "translation": "Award / Prize",
+            "phonetic": "Puraskar"
+        },
+        {
+            "word": "तरक्की",
+            "translation": "Progress / Promotion",
+            "phonetic": "Tarakki"
+        },
+        {
+            "word": "अनुभव",
+            "translation": "Experience",
+            "phonetic": "Anubhav"
+        },
+        {
+            "word": "कौशल",
+            "translation": "Skill",
+            "phonetic": "Kaushal"
+        },
+        {
+            "word": "मेहनत",
+            "translation": "Hard work",
+            "phonetic": "Mehnat"
+        },
+        {
+            "word": "सफलम्ता",
+            "translation": "Success",
+            "phonetic": "Safalta"
+        },
+        {
+            "word": "असफलम्ता",
+            "translation": "Failure",
+            "phonetic": "Asafalta"
+        },
+        {
+            "word": "प्रयास",
+            "translation": "Effort",
+            "phonetic": "Koshish"
+        },
+        {
+            "word": "विचार",
+            "translation": "Idea / Thought",
+            "phonetic": "Vichaar"
+        },
+        {
+            "word": "योजना",
+            "translation": "Plan",
+            "phonetic": "Yojana"
+        },
+        {
+            "word": "लक्ष्य",
+            "translation": "Goal / Target",
+            "phonetic": "Lakshya"
+        },
+        {
+            "word": "समय सीमा",
+            "translation": "Deadline",
+            "phonetic": "Samay Seema"
+        },
+        {
+            "word": "सभा",
+            "translation": "Assembly / Meeting",
+            "phonetic": "Sabha"
+        },
+        {
+            "word": "चर्चा",
+            "translation": "Discussion",
+            "phonetic": "Charcha"
+        },
+        {
+            "word": "भाषण",
+            "translation": "Speech",
+            "phonetic": "Bhashan"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Daftar' Loanword",
+        "question": "The word 'Daftar' (दफ़्तर) means office, but which language does it originally come from?",
+        "options": [
+            "Sanskrit",
+            "Persian",
+            "Portuguese",
+            "English"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Daftar' is a loanword from Persian. Hindi has a high number of administrative and legal terms borrowed from Persian and Arabic due to the Mughal influence in history."
+    }
+}

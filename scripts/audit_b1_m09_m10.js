@@ -1,47 +1,36 @@
 const fs = require('fs');
-const path = require('path');
 
-const dataDir = path.join(__dirname, '..', 'firestore_data');
+async function auditB1Modules() {
+    const baselinePath = 'c:/Users/Sindhu/Desktop/chirp-polly/scripts/pt_baseline_full.json';
+    const baseline = new Set(JSON.parse(fs.readFileSync(baselinePath, 'utf8')).map(w => w.toLowerCase().trim()));
+    console.log(`Baseline size: ${baseline.size}`);
 
-const b1_m09_json = JSON.parse(fs.readFileSync(path.join(dataDir, 'de_b1_m09.json'), 'utf8'));
-const b1_m10_json = JSON.parse(fs.readFileSync(path.join(dataDir, 'de_b1_m10.json'), 'utf8'));
+    function checkFile(mid) {
+        const path = `c:/Users/Sindhu/Desktop/chirp-polly/firestore_data/${mid}.json`;
+        if (!fs.existsSync(path)) return;
 
-const b1_m09_words = b1_m09_json.lessons[0].vocabularyItems.map(vi => vi.word);
-const b1_m10_words = b1_m10_json.lessons[0].vocabularyItems.map(vi => vi.word);
+        const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+        const words = (data.lessons || []).map(l => l.targetText.toLowerCase().trim());
 
-const existingFiles = fs.readdirSync(dataDir).filter(f => f.startsWith('de_') && f.endsWith('.json') && f !== 'de_b1_m09.json' && f !== 'de_b1_m10.json');
-const corpus = {};
+        console.log(`\nAudit for ${mid}:`);
+        const internalDups = new Set();
+        const crossDups = new Set();
+        const seen = new Set();
 
-existingFiles.forEach(file => {
-    const data = JSON.parse(fs.readFileSync(path.join(dataDir, file), 'utf8'));
-    let words = [];
-    if (data.lessons) {
-        data.lessons.forEach(l => {
-            l.vocabularyItems.forEach(vi => words.push(vi.word));
+        words.forEach(w => {
+            if (seen.has(w)) internalDups.add(w);
+            if (baseline.has(w)) crossDups.add(w);
+            seen.add(w);
         });
+
+        if (internalDups.size > 0) console.log(`  Internal Duplicates: ${Array.from(internalDups).join(', ')}`);
+        if (crossDups.size > 0) console.log(`  Cross-Module Overlaps: ${Array.from(crossDups).join(', ')}`);
+        if (internalDups.size === 0 && crossDups.size === 0) console.log("  ✅ Zero Overlap");
+        console.log(`  Total unique words: ${seen.size}`);
     }
-    corpus[file] = words;
-});
 
-function cleanForAudit(word) {
-    if (!word) return "";
-    return word.replace(/\s\([^)]+\)/g, '').replace(/\[TRAP\]/g, '').trim().toLowerCase();
+    checkFile('pt_b1_m09');
+    checkFile('pt_b1_m10');
 }
 
-function checkOverlaps(list, listName) {
-    console.log(`\n--- Auditing ${listName} ---`);
-    let count = 0;
-    list.forEach(word => {
-        const cleanWord = cleanForAudit(word);
-        for (const [file, words] of Object.entries(corpus)) {
-            if (words.some(w => cleanForAudit(w) === cleanWord)) {
-                console.log(`❌ Overlap: "${word}" found in ${file}`);
-                count++;
-            }
-        }
-    });
-    if (count === 0) console.log("✅ Zero overlaps found.");
-}
-
-checkOverlaps(b1_m09_words, "Module 09");
-checkOverlaps(b1_m10_words, "Module 10");
+auditB1Modules();

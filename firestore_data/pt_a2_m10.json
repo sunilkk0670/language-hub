@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a2_m10",
+    "theme": "Review & Advanced Mastery",
+    "order": 20,
+    "lessons": [
+        {
+            "targetText": "Aperfeiçoamento",
+            "english": "Improvement/Refinement",
+            "phoneticTranscription": "A-per-fay-so-a-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conhecimento vasto",
+            "english": "Vast knowledge",
+            "phoneticTranscription": "Ko-nye-see-men-too vas-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Habilidade técnica",
+            "english": "Technical skill",
+            "phoneticTranscription": "A-bee-lee-da-jee tek-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Competência",
+            "english": "Competence",
+            "phoneticTranscription": "Kom-pe-ten-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Performance técnica",
+            "english": "Technical performance",
+            "phoneticTranscription": "Per-for-man-see tek-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rendimento laboral",
+            "english": "Labor yield/productivity",
+            "phoneticTranscription": "Hen-jee-men-too la-bo-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Eficiência energética",
+            "english": "Energy efficiency",
+            "phoneticTranscription": "E-fee-syen-syah e-ner-zhe-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resolutividade",
+            "english": "Resolving power/Efficiency",
+            "phoneticTranscription": "Re-zo-loo-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estrategista",
+            "english": "Strategist",
+            "phoneticTranscription": "Es-tra-te-zhees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Planejamento",
+            "english": "Planning",
+            "phoneticTranscription": "Pla-ne-zha-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pedagogia avançada",
+            "english": "Advanced pedagogy",
+            "phoneticTranscription": "Pe-da-go-zhyah a-van-sa-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sistematização",
+            "english": "Systematization",
+            "phoneticTranscription": "Sees-te-ma-chee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Uniformização",
+            "english": "Uniformization/Standardization",
+            "phoneticTranscription": "Oo-nee-for-mee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Otimização de tempo",
+            "english": "Time optimization",
+            "phoneticTranscription": "O-chee-mee-za-sown de tem-poo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Perspectiva",
+            "english": "Perspective",
+            "phoneticTranscription": "Per-spek-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ponto de vista",
+            "english": "Point of view",
+            "phoneticTranscription": "Pon-too de vees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Abordagem",
+            "english": "Approach",
+            "phoneticTranscription": "A-bor-da-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conceitualização",
+            "english": "Conceptualization",
+            "phoneticTranscription": "Kon-say-too-a-lee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Teoria e prática",
+            "english": "Theory and practice",
+            "phoneticTranscription": "Te-o-ree-a e pra-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Evidência científica",
+            "english": "Scientific evidence",
+            "phoneticTranscription": "E-vee-den-syah syen-chee-fee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hipótese",
+            "english": "Hypothesis",
+            "phoneticTranscription": "Ee-po-te-zee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Questionamento",
+            "english": "Questioning",
+            "phoneticTranscription": "Kes-tyo-na-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reflexão profunda",
+            "english": "Deep reflection",
+            "phoneticTranscription": "Re-fle-ksown pro-foon-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Senso crítico",
+            "english": "Critical sense",
+            "phoneticTranscription": "Sen-soo kree-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Discernimento",
+            "english": "Discernment",
+            "phoneticTranscription": "Dees-ser-nee-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Intuição",
+            "english": "Intuition",
+            "phoneticTranscription": "In-twee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Percepção",
+            "english": "Perception",
+            "phoneticTranscription": "Per-sep-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sensibilidade",
+            "english": "Sensitivity",
+            "phoneticTranscription": "Sen-see-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Empatia",
+            "english": "Empathy",
+            "phoneticTranscription": "Em-pa-chee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resiliência emocional",
+            "english": "Emotional resilience",
+            "phoneticTranscription": "Re-zee-lyen-syah e-mo-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Autoconhecimento",
+            "english": "Self-knowledge",
+            "phoneticTranscription": "Aw-to-ko-nye-see-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Autoestima",
+            "english": "Self-esteem",
+            "phoneticTranscription": "Aw-to-es-chee-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Autoconfiança",
+            "english": "Self-confidence",
+            "phoneticTranscription": "Aw-to-kon-fyan-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Motivação intrínseca",
+            "english": "Intrinsic motivation",
+            "phoneticTranscription": "Mo-chee-va-sown in-treen-se-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tenacidade",
+            "english": "Tenacity",
+            "phoneticTranscription": "Te-na-see-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Obstinação",
+            "english": "Obstinacy/Persistence",
+            "phoneticTranscription": "Obs-chee-na-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Superação",
+            "english": "Overcoming/Exceeding",
+            "phoneticTranscription": "Soo-pe-ra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conquista",
+            "english": "Conquest/Achievement",
+            "phoneticTranscription": "Kon-kees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Êxito profissional",
+            "english": "Professional success",
+            "phoneticTranscription": "E-zee-too pro-fee-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reconhecimento",
+            "english": "Recognition",
+            "phoneticTranscription": "Re-ko-nye-see-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prestígio",
+            "english": "Prestige",
+            "phoneticTranscription": "Pres-chee-zhyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Influência",
+            "english": "Influence",
+            "phoneticTranscription": "In-floo-en-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Protagonismo",
+            "english": "Protagonism/Leadership role",
+            "phoneticTranscription": "Pro-ta-go-neez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carisma",
+            "english": "Charisma",
+            "phoneticTranscription": "Ka-reez-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Integridade",
+            "english": "Integrity",
+            "phoneticTranscription": "In-te-gree-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Honestidade",
+            "english": "Honesty",
+            "phoneticTranscription": "O-nes-chee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ética profissional",
+            "english": "Professional ethics",
+            "phoneticTranscription": "E-chee-ka pro-fee-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lealdade",
+            "english": "Loyalty",
+            "phoneticTranscription": "Le-al-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Altruísmo",
+            "english": "Altruism",
+            "phoneticTranscription": "Al-trwee-zmoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Generosidade",
+            "english": "Generosity",
+            "phoneticTranscription": "Zhe-ne-ro-zee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gratidão",
+            "english": "Gratitude",
+            "phoneticTranscription": "Gra-chee-down",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Solidariedade",
+            "english": "Solidarity",
+            "phoneticTranscription": "So-lee-da-ree-e-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cooperativismo",
+            "english": "Cooperativism",
+            "phoneticTranscription": "Koo-pe-ra-chee-veez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colaboração mútua",
+            "english": "Mutual collaboration",
+            "phoneticTranscription": "Ko-la-bo-ra-sown moo-too-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sinergia",
+            "english": "Synergy",
+            "phoneticTranscription": "See-ner-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Harmonia",
+            "english": "Harmony",
+            "phoneticTranscription": "Ar-mo-nee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Equilíbrio",
+            "english": "Balance",
+            "phoneticTranscription": "E-kee-lee-bryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Paz interior",
+            "english": "Inner peace",
+            "phoneticTranscription": "Pas in-te-ryor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Serenidade",
+            "english": "Serenity",
+            "phoneticTranscription": "Se-re-nee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tranquilidade",
+            "english": "Tranquility",
+            "phoneticTranscription": "Tran-kwee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Plenitude",
+            "english": "Plenitude/Fullness",
+            "phoneticTranscription": "Ple-nee-too-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Evolução",
+            "english": "Evolution",
+            "phoneticTranscription": "E-vo-loo-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transformação",
+            "english": "Transformation",
+            "phoneticTranscription": "Trans-for-ma-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mudança de hábito",
+            "english": "Habit change",
+            "phoneticTranscription": "Moo-dan-sa de a-bee-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inovação contínua",
+            "english": "Continuous innovation",
+            "phoneticTranscription": "Ee-no-va-sown kon-chee-noo-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inventividade",
+            "english": "Inventiveness",
+            "phoneticTranscription": "In-ven-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Originalidade",
+            "english": "Originality",
+            "phoneticTranscription": "O-ree-zhee-na-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Autenticidade",
+            "english": "Authenticity",
+            "phoneticTranscription": "Aw-ten-chee-see-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Espontaneidade",
+            "english": "Spontaneity",
+            "phoneticTranscription": "Es-pon-ta-ne-e-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Versatilidade",
+            "english": "Versatility",
+            "phoneticTranscription": "Ver-sa-chee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Flexibilidade",
+            "english": "Flexibility",
+            "phoneticTranscription": "Fle-ksee-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Adaptabilidade",
+            "english": "Adaptability",
+            "phoneticTranscription": "A-dap-ta-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dinamismo",
+            "english": "Dynamism",
+            "phoneticTranscription": "Jee-na-meez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Proatividade",
+            "english": "Proactivity",
+            "phoneticTranscription": "Pro-a-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Espírito empreendedor",
+            "english": "Entrepreneurial spirit",
+            "phoneticTranscription": "Es-pee-ree-too em-pre-en-de-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ousadia",
+            "english": "Boldness/Daring",
+            "phoneticTranscription": "Ow-za-jee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coragem",
+            "english": "Courage",
+            "phoneticTranscription": "Ko-ra-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Audácia",
+            "english": "Audacity",
+            "phoneticTranscription": "Aw-da-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Astúcia",
+            "english": "Cunning/Shrewdness",
+            "phoneticTranscription": "As-too-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sagacidade",
+            "english": "Sagacity",
+            "phoneticTranscription": "Sa-ga-see-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inteligência",
+            "english": "Intelligence",
+            "phoneticTranscription": "In-te-lee-zhen-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Abstração",
+            "english": "Abstraction",
+            "phoneticTranscription": "Abs-tra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Silogismo",
+            "english": "Syllogism",
+            "phoneticTranscription": "See-lo-zheez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cognição",
+            "english": "Cognition",
+            "phoneticTranscription": "Ko-gnee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Análise crítica",
+            "english": "Critical analysis",
+            "phoneticTranscription": "A-na-lee-zee kree-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Compêndio",
+            "english": "Compendium/Summary",
+            "phoneticTranscription": "Kom-pen-dyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Generalização",
+            "english": "Generalization",
+            "phoneticTranscription": "Zhe-ne-ra-lee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Especificação",
+            "english": "Specification",
+            "phoneticTranscription": "Es-pe-see-fee-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diferenciação",
+            "english": "Differentiation",
+            "phoneticTranscription": "Jee-fe-ren-sya-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Categorização",
+            "english": "Categorization",
+            "phoneticTranscription": "Ka-te-go-ree-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mapeamento",
+            "english": "Mapping",
+            "phoneticTranscription": "Ma-pe-a-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fluxograma",
+            "english": "Flowchart",
+            "phoneticTranscription": "Floo-kso-gra-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cronograma",
+            "english": "Schedule/Timeline",
+            "phoneticTranscription": "Kro-no-gra-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Priorização",
+            "english": "Prioritization",
+            "phoneticTranscription": "Pree-o-ree-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Viabilidade",
+            "english": "Viability",
+            "phoneticTranscription": "Vya-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Perenidade",
+            "english": "Perenity/Continuity",
+            "phoneticTranscription": "Pe-re-nee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dominância",
+            "english": "Dominance",
+            "phoneticTranscription": "Do-mee-nan-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Excelência",
+            "english": "Excellence",
+            "phoneticTranscription": "Es-se-len-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Maestria",
+            "english": "Mastery",
+            "phoneticTranscription": "Ma-es-tree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Legado",
+            "english": "Legacy",
+            "phoneticTranscription": "Le-ga-doo",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Novela",
+        "correctVersion": "Means 'Soap Opera'. For a 'Novel (literary)', use 'Romance'.",
+        "explanation": "Trap level: Medium"
+    }
+}

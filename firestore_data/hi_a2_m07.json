@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a2_m07",
+    "language": "hi",
+    "level": "a2",
+    "theme": "Nature & Environment",
+    "order": 17,
+    "lessons": [
+        {
+            "word": "जीवसृष्टि",
+            "translation": "Nature / Living world (Formal)",
+            "phonetic": "Jeevsrishti"
+        },
+        {
+            "word": "परिवेश",
+            "translation": "Environment / Surroundings",
+            "phonetic": "Parivesh"
+        },
+        {
+            "word": "वातावरण",
+            "translation": "Atmosphere / Environment",
+            "phonetic": "Vatavaran"
+        },
+        {
+            "word": "ब्रह्मांड",
+            "translation": "Universe",
+            "phonetic": "Brahmand"
+        },
+        {
+            "word": "अंतरिक्ष",
+            "translation": "Space",
+            "phonetic": "Antariksh"
+        },
+        {
+            "word": "नक्षत्र",
+            "translation": "Constellation / Star",
+            "phonetic": "Nakshatra"
+        },
+        {
+            "word": "ग्रह",
+            "translation": "Planet",
+            "phonetic": "Grah"
+        },
+        {
+            "word": "उपग्रह",
+            "translation": "Satellite",
+            "phonetic": "Upgrah"
+        },
+        {
+            "word": "आकाशगंगा",
+            "translation": "Galaxy",
+            "phonetic": "Akashganga"
+        },
+        {
+            "word": "सूर्योदय",
+            "translation": "Sunrise",
+            "phonetic": "Suryoday"
+        },
+        {
+            "word": "सूर्यास्त",
+            "translation": "Sunset",
+            "phonetic": "Suryast"
+        },
+        {
+            "word": "क्षितिज",
+            "translation": "Horizon",
+            "phonetic": "Kshitij"
+        },
+        {
+            "word": "तुहिन",
+            "translation": "Dew / Frost (Formal Sanskrit)",
+            "phonetic": "Tuhin"
+        },
+        {
+            "word": "कुहासा",
+            "translation": "Fog / Mist (Formal)",
+            "phonetic": "Kuhasa"
+        },
+        {
+            "word": "हिमपात",
+            "translation": "Snowfall",
+            "phonetic": "Himpaat"
+        },
+        {
+            "word": "ओला",
+            "translation": "Hail",
+            "phonetic": "Ola"
+        },
+        {
+            "word": "झंझावात",
+            "translation": "Thunderstorm (Formal)",
+            "phonetic": "Jhanjhavat"
+        },
+        {
+            "word": "तड़ित",
+            "translation": "Lightning (Formal Sanskrit)",
+            "phonetic": "Tadit"
+        },
+        {
+            "word": "गर्जन",
+            "translation": "Thunder",
+            "phonetic": "Garjan"
+        },
+        {
+            "word": "वर्षा ऋतु",
+            "translation": "Monsoon season",
+            "phonetic": "Varsha ritu"
+        },
+        {
+            "word": "शरद ऋतु",
+            "translation": "Autumn",
+            "phonetic": "Sharad ritu"
+        },
+        {
+            "word": "ग्रीष्म ऋतु",
+            "translation": "Summer season",
+            "phonetic": "Grishma ritu"
+        },
+        {
+            "word": "वसंत ऋतु",
+            "translation": "Spring season",
+            "phonetic": "Vasant ritu"
+        },
+        {
+            "word": "हेमंत",
+            "translation": "Pre-winter season",
+            "phonetic": "Hemant"
+        },
+        {
+            "word": "शिशिर",
+            "translation": "Late winter season",
+            "phonetic": "Shishir"
+        },
+        {
+            "word": "मरुस्थल",
+            "translation": "Desert",
+            "phonetic": "Marusthal"
+        },
+        {
+            "word": "द्वीप",
+            "translation": "Island",
+            "phonetic": "Dweep"
+        },
+        {
+            "word": "प्रायद्वीप",
+            "translation": "Peninsula",
+            "phonetic": "Prayadweep"
+        },
+        {
+            "word": "खाड़ी",
+            "translation": "Bay / Gulf",
+            "phonetic": "Khadi"
+        },
+        {
+            "word": "महासागर",
+            "translation": "Ocean",
+            "phonetic": "Mahasagar"
+        },
+        {
+            "word": "निर्झर",
+            "translation": "Waterfall / Fountain (Formal)",
+            "phonetic": "Nirjhar"
+        },
+        {
+            "word": "तटिनी",
+            "translation": "River (Formal Sanskrit)",
+            "phonetic": "Tatini"
+        },
+        {
+            "word": "संगम",
+            "translation": "Confluence (of rivers)",
+            "phonetic": "Sangam"
+        },
+        {
+            "word": "उद्गम",
+            "translation": "Source / Origin",
+            "phonetic": "Udgam"
+        },
+        {
+            "word": "मुहाना",
+            "translation": "Mouth of a river",
+            "phonetic": "Muhana"
+        },
+        {
+            "word": "ज्वार",
+            "translation": "High tide",
+            "phonetic": "Jwar"
+        },
+        {
+            "word": "भाटा",
+            "translation": "Low tide",
+            "phonetic": "Bhata"
+        },
+        {
+            "word": "प्रवाल",
+            "translation": "Coral",
+            "phonetic": "Praval"
+        },
+        {
+            "word": "पर्वतमाला",
+            "translation": "Mountain range",
+            "phonetic": "Parvatmala"
+        },
+        {
+            "word": "दहर",
+            "translation": "Valley / Cavity (Formal)",
+            "phonetic": "Dahar"
+        },
+        {
+            "word": "गिरिद्वार",
+            "translation": "Mountain pass (Formal)",
+            "phonetic": "Giridwar"
+        },
+        {
+            "word": "कंदरा",
+            "translation": "Cave / Grotto (Formal)",
+            "phonetic": "Kandara"
+        },
+        {
+            "word": "श्रृंग",
+            "translation": "Peak / Horn (Formal)",
+            "phonetic": "Shring"
+        },
+        {
+            "word": "पठार",
+            "translation": "Plateau",
+            "phonetic": "Pathar"
+        },
+        {
+            "word": "अजिर",
+            "translation": "Plain / Courtyard (Formal Sanskrit)",
+            "phonetic": "Ajir"
+        },
+        {
+            "word": "मृदा",
+            "translation": "Soil",
+            "phonetic": "Mrida"
+        },
+        {
+            "word": "शिला",
+            "translation": "Rock / Stone (Formal)",
+            "phonetic": "Shila"
+        },
+        {
+            "word": "खनिज",
+            "translation": "Mineral",
+            "phonetic": "Khanij"
+        },
+        {
+            "word": "वनस्पति",
+            "translation": "Vegetation",
+            "phonetic": "Vanaspati"
+        },
+        {
+            "word": "औषधीय पौधे",
+            "translation": "Medicinal plants",
+            "phonetic": "Aushadhiya paudhe"
+        },
+        {
+            "word": "कुसुम",
+            "translation": "Flower / Blossom",
+            "phonetic": "Kusum"
+        },
+        {
+            "word": "दल",
+            "translation": "Petal / Leaf (Formal)",
+            "phonetic": "Dal"
+        },
+        {
+            "word": "शाखा",
+            "translation": "Branch",
+            "phonetic": "Shakha"
+        },
+        {
+            "word": "पादप-स्तंभ",
+            "translation": "Plant-stem / Column (Formal)",
+            "phonetic": "Paadap-stambh"
+        },
+        {
+            "word": "मूल",
+            "translation": "Root / Base",
+            "phonetic": "Mool"
+        },
+        {
+            "word": "पराग",
+            "translation": "Pollen",
+            "phonetic": "Parag"
+        },
+        {
+            "word": "सुगंध",
+            "translation": "Fragrance",
+            "phonetic": "Sugandh"
+        },
+        {
+            "word": "सौरभ",
+            "translation": "Aroma / Fragrance (Formal)",
+            "phonetic": "Saurabh"
+        },
+        {
+            "word": "गुल्म",
+            "translation": "Shrub / Bush",
+            "phonetic": "Gulm"
+        },
+        {
+            "word": "लता",
+            "translation": "Creeper / Vine",
+            "phonetic": "Lata"
+        },
+        {
+            "word": "वृक्ष",
+            "translation": "Tree (Formal)",
+            "phonetic": "Vriksh"
+        },
+        {
+            "word": "अरण्य",
+            "translation": "Forest (Formal Sanskrit)",
+            "phonetic": "Aranya"
+        },
+        {
+            "word": "वन्यजीव",
+            "translation": "Wildlife",
+            "phonetic": "Vanyajeev"
+        },
+        {
+            "word": "जीव-जंतु",
+            "translation": "Animals / Creatures",
+            "phonetic": "Jeev-jantu"
+        },
+        {
+            "word": "खग",
+            "translation": "Bird (Formal Sanskrit)",
+            "phonetic": "Khag"
+        },
+        {
+            "word": "नभचर",
+            "translation": "Sky-dweller (Bird/Cloud)",
+            "phonetic": "Nabhchar"
+        },
+        {
+            "word": "जलचर",
+            "translation": "Aquatic creature",
+            "phonetic": "Jalchar"
+        },
+        {
+            "word": "थलचर",
+            "translation": "Land creature",
+            "phonetic": "Thalchar"
+        },
+        {
+            "word": "उभयचर",
+            "translation": "Amphibian",
+            "phonetic": "Ubhaychar"
+        },
+        {
+            "word": "सरीसृप",
+            "translation": "Reptile",
+            "phonetic": "Sarisrip"
+        },
+        {
+            "word": "कीट",
+            "translation": "Insect / Worm",
+            "phonetic": "Keet"
+        },
+        {
+            "word": "शलभ",
+            "translation": "Moth / Butterfly (Formal Sanskrit)",
+            "phonetic": "Shalabh"
+        },
+        {
+            "word": "भ्रमर",
+            "translation": "Bumblebee (Formal)",
+            "phonetic": "Bhramar"
+        },
+        {
+            "word": "खद्योत",
+            "translation": "Firefly (Formal Sanskrit)",
+            "phonetic": "Khadyot"
+        },
+        {
+            "word": "पारिस्थितिकी",
+            "translation": "Ecology",
+            "phonetic": "Paristhitiki"
+        },
+        {
+            "word": "कल्मष",
+            "translation": "Pollution / Impurity (Formal Sanskrit)",
+            "phonetic": "Kalmash"
+        },
+        {
+            "word": "संरक्षण",
+            "translation": "Conservation",
+            "phonetic": "Sanrakshan"
+        },
+        {
+            "word": "पुनर्चक्रण",
+            "translation": "Recycling",
+            "phonetic": "Punarchakran"
+        },
+        {
+            "word": "अक्षय ऊर्जा",
+            "translation": "Renewable energy",
+            "phonetic": "Akshay urja"
+        },
+        {
+            "word": "सौर ऊर्जा",
+            "translation": "Solar energy",
+            "phonetic": "Saur urja"
+        },
+        {
+            "word": "पवन ऊर्जा",
+            "translation": "Wind energy",
+            "phonetic": "Pavan urja"
+        },
+        {
+            "word": "भूकम्प",
+            "translation": "Earthquake",
+            "phonetic": "Bhookamp"
+        },
+        {
+            "word": "आग्नेयगिरि",
+            "translation": "Volcano (Formal Sanskrit literal)",
+            "phonetic": "Agneyagiri"
+        },
+        {
+            "word": "त्सुनामी",
+            "translation": "Tsunami",
+            "phonetic": "Tsunami"
+        },
+        {
+            "word": "दुर्भिक्ष",
+            "translation": "Famine / Scarcity (Formal Sanskrit)",
+            "phonetic": "Durbhiksh"
+        },
+        {
+            "word": "जलप्लावन",
+            "translation": "Flood / Inundation (Formal)",
+            "phonetic": "Jalplavan"
+        },
+        {
+            "word": "अनावृष्टि",
+            "translation": "Drought (Formal Sanskrit)",
+            "phonetic": "Anavrishti"
+        },
+        {
+            "word": "चक्रवात",
+            "translation": "Cyclone",
+            "phonetic": "Chakravat"
+        },
+        {
+            "word": "ओजोन परत",
+            "translation": "Ozone layer",
+            "phonetic": "Ozone parat"
+        },
+        {
+            "word": "हरित गृह प्रभाव",
+            "translation": "Greenhouse effect",
+            "phonetic": "Harit grih prabhav"
+        },
+        {
+            "word": "जैव विविधता",
+            "translation": "Biodiversity",
+            "phonetic": "Jaiv vividhata"
+        },
+        {
+            "word": "विलुप्त",
+            "translation": "Extinct",
+            "phonetic": "Vilupt"
+        },
+        {
+            "word": "संकटापन्न",
+            "translation": "Endangered",
+            "phonetic": "Sankatapann"
+        },
+        {
+            "word": "प्राकृतिक संपदा",
+            "translation": "Natural resources",
+            "phonetic": "Prakritik sampada"
+        },
+        {
+            "word": "टिकाऊ विकास",
+            "translation": "Sustainable development",
+            "phonetic": "Tikau vikas"
+        },
+        {
+            "word": "जलवायु परिवर्तन",
+            "translation": "Climate change",
+            "phonetic": "Jalvayu parivartan"
+        },
+        {
+            "word": "वैश्विक तापन",
+            "translation": "Global warming",
+            "phonetic": "Vaishvik tapan"
+        },
+        {
+            "word": "वनरोपण",
+            "translation": "Afforestation",
+            "phonetic": "Van-ropan"
+        },
+        {
+            "word": "मृदा अपरदन",
+            "translation": "Soil erosion",
+            "phonetic": "Mrida apardan"
+        },
+        {
+            "word": "संवहनीयता",
+            "translation": "Sustainability",
+            "phonetic": "Samvahaneeyata"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Kshitij' Horizon",
+        "question": "In Hindi poetry, 'Kshitij' (क्षितिज) refers to the horizon. What is the literal Sanskrit meaning of this word?",
+        "options": [
+            "Born from the sky",
+            "Born from the earth",
+            "The end of the path",
+            "Meeting of gods"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Kshitij' is composed of 'Kshiti' (earth) and 'Ja' (born). It literally means 'born from the earth,' describing the point where the sky seems to emerge from the ground."
+    }
+}

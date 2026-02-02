@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a1_m08",
+    "language": "hi",
+    "level": "a1",
+    "theme": "Nature, Weather & Animals",
+    "order": 8,
+    "lessons": [
+        {
+            "word": "प्रकृति",
+            "translation": "Nature",
+            "phonetic": "Prakriti"
+        },
+        {
+            "word": "आकाश",
+            "translation": "Sky",
+            "phonetic": "Aakash"
+        },
+        {
+            "word": "धरती",
+            "translation": "Earth / Land",
+            "phonetic": "Dharti"
+        },
+        {
+            "word": "पर्वत",
+            "translation": "Mountain",
+            "phonetic": "Parvat"
+        },
+        {
+            "word": "पहाड़ी",
+            "translation": "Hill",
+            "phonetic": "Pahadi"
+        },
+        {
+            "word": "घाटी",
+            "translation": "Valley",
+            "phonetic": "Ghati"
+        },
+        {
+            "word": "नदी",
+            "translation": "River",
+            "phonetic": "Nadi"
+        },
+        {
+            "word": "सागर",
+            "translation": "Sea / Ocean",
+            "phonetic": "Sagar"
+        },
+        {
+            "word": "झील",
+            "translation": "Lake",
+            "phonetic": "Jheel"
+        },
+        {
+            "word": "झरना",
+            "translation": "Waterfall",
+            "phonetic": "Jharna"
+        },
+        {
+            "word": "जंगल",
+            "translation": "Forest / Jungle",
+            "phonetic": "Jangal"
+        },
+        {
+            "word": "पेड़",
+            "translation": "Tree",
+            "phonetic": "Ped"
+        },
+        {
+            "word": "पत्ता",
+            "translation": "Leaf",
+            "phonetic": "Patta"
+        },
+        {
+            "word": "पुष्प",
+            "translation": "Flower",
+            "phonetic": "Phool"
+        },
+        {
+            "word": "कली",
+            "translation": "Bud",
+            "phonetic": "Kali"
+        },
+        {
+            "word": "टहनी",
+            "translation": "Branch / Twig",
+            "phonetic": "Tahni"
+        },
+        {
+            "word": "बीज",
+            "translation": "Seed",
+            "phonetic": "Beej"
+        },
+        {
+            "word": "सूरज",
+            "translation": "Sun",
+            "phonetic": "Sooraj"
+        },
+        {
+            "word": "चाँद",
+            "translation": "Moon",
+            "phonetic": "Chaand"
+        },
+        {
+            "word": "सितारा",
+            "translation": "Star",
+            "phonetic": "Sitara"
+        },
+        {
+            "word": "बादल",
+            "translation": "Cloud",
+            "phonetic": "Baadal"
+        },
+        {
+            "word": "बारिश",
+            "translation": "Rain",
+            "phonetic": "Baarish"
+        },
+        {
+            "word": "वर्षा",
+            "translation": "Rainfall (Formal)",
+            "phonetic": "Varsha"
+        },
+        {
+            "word": "ओले",
+            "translation": "Hailstones",
+            "phonetic": "Ole"
+        },
+        {
+            "word": "हिम",
+            "translation": "Snow / Ice",
+            "phonetic": "Barf"
+        },
+        {
+            "word": "बिजली",
+            "translation": "Lightning",
+            "phonetic": "Bijli"
+        },
+        {
+            "word": "तूफान",
+            "translation": "Storm",
+            "phonetic": "Toofaan"
+        },
+        {
+            "word": "वायु",
+            "translation": "Air / Wind",
+            "phonetic": "Hava"
+        },
+        {
+            "word": "धूप",
+            "translation": "Sunlight",
+            "phonetic": "Dhoop"
+        },
+        {
+            "word": "धूल",
+            "translation": "Dust",
+            "phonetic": "Dhool"
+        },
+        {
+            "word": "पत्थर",
+            "translation": "Stone",
+            "phonetic": "Patthar"
+        },
+        {
+            "word": "रेत",
+            "translation": "Sand",
+            "phonetic": "Ret"
+        },
+        {
+            "word": "मिट्टी",
+            "translation": "Soil / Mud",
+            "phonetic": "Mitti"
+        },
+        {
+            "word": "मौसम",
+            "translation": "Weather",
+            "phonetic": "Mausam"
+        },
+        {
+            "word": "गर्मी",
+            "translation": "Heat / Summer",
+            "phonetic": "Garmi"
+        },
+        {
+            "word": "सर्दी",
+            "translation": "Cold / Winter",
+            "phonetic": "Sardi"
+        },
+        {
+            "word": "वसंत",
+            "translation": "Spring",
+            "phonetic": "Vasant"
+        },
+        {
+            "word": "पतझड़",
+            "translation": "Autumn",
+            "phonetic": "Patjhad"
+        },
+        {
+            "word": "पालतू",
+            "translation": "Pet / Domesticated",
+            "phonetic": "Paaltu"
+        },
+        {
+            "word": "जंगली",
+            "translation": "Wild",
+            "phonetic": "Jangali"
+        },
+        {
+            "word": "कुत्ता",
+            "translation": "Dog",
+            "phonetic": "Kutta"
+        },
+        {
+            "word": "बिल्ली",
+            "translation": "Cat",
+            "phonetic": "Billi"
+        },
+        {
+            "word": "गाय",
+            "translation": "Cow",
+            "phonetic": "Gaay"
+        },
+        {
+            "word": "बैल",
+            "translation": "Ox / Bull",
+            "phonetic": "Bail"
+        },
+        {
+            "word": "भैंस",
+            "translation": "Buffalo",
+            "phonetic": "Bhains"
+        },
+        {
+            "word": "घोड़ा",
+            "translation": "Horse",
+            "phonetic": "Ghoda"
+        },
+        {
+            "word": "गधा",
+            "translation": "Donkey",
+            "phonetic": "Gadha"
+        },
+        {
+            "word": "बकरी",
+            "translation": "Goat",
+            "phonetic": "Bakri"
+        },
+        {
+            "word": "भेड़",
+            "translation": "Sheep",
+            "phonetic": "Bhed"
+        },
+        {
+            "word": "सूअर",
+            "translation": "Pig",
+            "phonetic": "Suar"
+        },
+        {
+            "word": "हाथी",
+            "translation": "Elephant",
+            "phonetic": "Haathi"
+        },
+        {
+            "word": "शेर",
+            "translation": "Lion",
+            "phonetic": "Sher"
+        },
+        {
+            "word": "बाघ",
+            "translation": "Tiger",
+            "phonetic": "Baagh"
+        },
+        {
+            "word": "चीता",
+            "translation": "Leopard / Cheetah",
+            "phonetic": "Cheeta"
+        },
+        {
+            "word": "भालू",
+            "translation": "Bear",
+            "phonetic": "Bhaalu"
+        },
+        {
+            "word": "हिरण",
+            "translation": "Deer",
+            "phonetic": "Hiran"
+        },
+        {
+            "word": "लोमड़ी",
+            "translation": "Fox",
+            "phonetic": "Lomadi"
+        },
+        {
+            "word": "भेड़िया",
+            "translation": "Wolf",
+            "phonetic": "Bhediya"
+        },
+        {
+            "word": "बंदर",
+            "translation": "Monkey",
+            "phonetic": "Bandar"
+        },
+        {
+            "word": "खरगोश",
+            "translation": "Rabbit",
+            "phonetic": "Khargosh"
+        },
+        {
+            "word": "चूहा",
+            "translation": "Mouse / Rat",
+            "phonetic": "Chooha"
+        },
+        {
+            "word": "पक्षी",
+            "translation": "Bird",
+            "phonetic": "Pakshi"
+        },
+        {
+            "word": "चिड़िया",
+            "translation": "Sparrow / Small bird",
+            "phonetic": "Chidiya"
+        },
+        {
+            "word": "तोता",
+            "translation": "Parrot",
+            "phonetic": "Tota"
+        },
+        {
+            "word": "मैना",
+            "translation": "Myna",
+            "phonetic": "Maina"
+        },
+        {
+            "word": "मोर",
+            "translation": "Peacock",
+            "phonetic": "Mor"
+        },
+        {
+            "word": "कोयल",
+            "translation": "Cuckoo",
+            "phonetic": "Koyal"
+        },
+        {
+            "word": "कौआ",
+            "translation": "Crow",
+            "phonetic": "Kaua"
+        },
+        {
+            "word": "बत्तख",
+            "translation": "Duck",
+            "phonetic": "Battakh"
+        },
+        {
+            "word": "मुर्गी",
+            "translation": "Hen",
+            "phonetic": "Murgi"
+        },
+        {
+            "word": "बाज",
+            "translation": "Eagle / Hawk",
+            "phonetic": "Baaj"
+        },
+        {
+            "word": "उल्लू",
+            "translation": "Owl",
+            "phonetic": "Ullu"
+        },
+        {
+            "word": "साँप",
+            "translation": "Snake",
+            "phonetic": "Saanp"
+        },
+        {
+            "word": "कछुआ",
+            "translation": "Turtle",
+            "phonetic": "Kachhua"
+        },
+        {
+            "word": "मेंढक",
+            "translation": "Frog",
+            "phonetic": "Mendhak"
+        },
+        {
+            "word": "मउष्णच्छ",
+            "translation": "Crocodile",
+            "phonetic": "Magarmacch"
+        },
+        {
+            "word": "कीड़ा",
+            "translation": "Insect",
+            "phonetic": "Keeda"
+        },
+        {
+            "word": "तितली",
+            "translation": "Butterfly",
+            "phonetic": "Titli"
+        },
+        {
+            "word": "मधुमक्खी",
+            "translation": "Honey bee",
+            "phonetic": "Madhumakkhi"
+        },
+        {
+            "word": "मक्खी",
+            "translation": "Fly",
+            "phonetic": "Makkhi"
+        },
+        {
+            "word": "मच्छर",
+            "translation": "Mosquito",
+            "phonetic": "Macchar"
+        },
+        {
+            "word": "मकड़ी",
+            "translation": "Spider",
+            "phonetic": "Makadi"
+        },
+        {
+            "word": "चींटी",
+            "translation": "Ant",
+            "phonetic": "Cheenti"
+        },
+        {
+            "word": "छिपकली",
+            "translation": "Lizard",
+            "phonetic": "Chhipkali"
+        },
+        {
+            "word": "पर्यावरण",
+            "translation": "Environment",
+            "phonetic": "Paryavaran"
+        },
+        {
+            "word": "प्रदूषण",
+            "translation": "Pollution",
+            "phonetic": "Pradushan"
+        },
+        {
+            "word": "धुआँ",
+            "translation": "Smoke",
+            "phonetic": "Dhuaan"
+        },
+        {
+            "word": "आग",
+            "translation": "Fire",
+            "phonetic": "Aag"
+        },
+        {
+            "word": "राख",
+            "translation": "Ash",
+            "phonetic": "Raakh"
+        },
+        {
+            "word": "तट",
+            "translation": "Coast / Shore",
+            "phonetic": "Tat"
+        },
+        {
+            "word": "लहर",
+            "translation": "Wave",
+            "phonetic": "Lahar"
+        },
+        {
+            "word": "प्रकाश",
+            "translation": "Light",
+            "phonetic": "Prakash"
+        },
+        {
+            "word": "अँधेरा",
+            "translation": "Darkness",
+            "phonetic": "Andhera"
+        },
+        {
+            "word": "साया",
+            "translation": "Shadow",
+            "phonetic": "Saaya"
+        },
+        {
+            "word": "नमी",
+            "translation": "Moisture / Humidity",
+            "phonetic": "Nami"
+        },
+        {
+            "word": "ओस",
+            "translation": "Dew",
+            "phonetic": "Os"
+        },
+        {
+            "word": "कोहरित",
+            "translation": "Fog",
+            "phonetic": "Kohra"
+        },
+        {
+            "word": "ज्वालामुखी",
+            "translation": "Volcano",
+            "phonetic": "Jwalamukhi"
+        },
+        {
+            "word": "भूकंप",
+            "translation": "Earthquake",
+            "phonetic": "Bhukamp"
+        },
+        {
+            "word": "अकाल",
+            "translation": "Famine",
+            "phonetic": "Akaal"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The Tiger/Lion Trap",
+        "question": "If you see a Tiger in India, what is the most common Hindi word used for it?",
+        "options": [
+            "Sher (शेर)",
+            "Baagh (बाघ)",
+            "Cheeta (चीता)",
+            "Billa (बिल्ला)"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "While 'Sher' is colloquially used for both Lion and Tiger, in formal Hindi and Indian biology, 'Baagh' (बाघ) is specifically the Tiger (India's national animal) and 'Sher' is the Lion."
+    }
+}

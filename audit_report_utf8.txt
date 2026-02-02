@@ -1,0 +1,30 @@
+﻿--- HINDI A1 DUPLICATE AUDIT (M01 - M06) ---
+
+Total Words Scanned: 600
+Unique Words: 577
+Duplicates Found: 23
+
+--- DUPLICATE DETAILS ---
+Γ¥î "αñªαÑïαñ╕αÑìαññ" found in hi_a1_m03.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñªαÑüαñ╢αÑìαñ«αñ¿" found in hi_a1_m03.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñ¼αñÜαÑìαñÜαñ╛" found in hi_a1_m03.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñ¿αñ╛αñ«" found in hi_a1_m03.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñ¬αÑìαñ»αñ╛αñ░" found in hi_a1_m03.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñªαÑéαñº" found in hi_a1_m04.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñ¬αñ╛αñ¿αÑÇ" found in hi_a1_m04.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñÜαñ╛αñ»" found in hi_a1_m04.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñûαñ╛αñ¿αñ╛" found in hi_a1_m04.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñ╕αÑÇαñûαñ¿αñ╛" found in hi_a1_m05.json (Already exists in hi_a1_m05.json)
+Γ¥î "αñ¼αÑêαñáαñ¿αñ╛" found in hi_a1_m05.json (Already exists in hi_a1_m05.json)
+Γ¥î "αñòαñ«αñ░αñ╛" found in hi_a1_m06.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñ¼αñ╛αñ▓αÑìαñƒαÑÇ" found in hi_a1_m06.json (Already exists in hi_a1_m04.json)
+Γ¥î "αñòαñ┐αññαñ╛αñ¼" found in hi_a1_m06.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñòαñ╛αñùαñ£" found in hi_a1_m06.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñòαñ▓αñ«" found in hi_a1_m06.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñ░αñ╛αñ╕αÑìαññαñ╛" found in hi_a1_m06.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñ¬αññαñ╛" found in hi_a1_m06.json (Already exists in hi_a1_m03.json)
+Γ¥î "αñ»αñ╣αñ╛αñü" found in hi_a1_m06.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñ╡αñ╣αñ╛αñü" found in hi_a1_m06.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñòαñ╣αñ╛αñü" found in hi_a1_m06.json (Already exists in hi_a1_m01.json)
+Γ¥î "αñ¬αÑéαñ░αÑìαñ╡αñ£" found in hi_a1_m06.json (Already exists in hi_a1_m03.json)
+Γ¥î "αñ¬αÑÇαñ¢αÑç" found in hi_a1_m06.json (Already exists in hi_a1_m06.json)

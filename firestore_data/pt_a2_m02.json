@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a2_m02",
+    "theme": "Work & Office Culture",
+    "order": 12,
+    "lessons": [
+        {
+            "targetText": "Emprego",
+            "english": "Job/Employment",
+            "phoneticTranscription": "Em-pre-goo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Profissional",
+            "english": "Professional",
+            "phoneticTranscription": "Pro-fee-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colaborador",
+            "english": "Collaborator/Employee",
+            "phoneticTranscription": "Ko-la-bo-ra-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gestor",
+            "english": "Gestor/Manager",
+            "phoneticTranscription": "Zhes-tor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gerente",
+            "english": "Manager",
+            "phoneticTranscription": "Zhe-ren-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diretor",
+            "english": "Director",
+            "phoneticTranscription": "Dee-re-tor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estagiário",
+            "english": "Intern",
+            "phoneticTranscription": "Es-ta-zhyah-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escritório",
+            "english": "Office",
+            "phoneticTranscription": "Es-kree-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mesa de trabalho",
+            "english": "Desk",
+            "phoneticTranscription": "Me-za de tra-ba-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cadeira de escritório",
+            "english": "Office chair",
+            "phoneticTranscription": "Ka-day-ra de es-kree-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Computador portátil",
+            "english": "Laptop",
+            "phoneticTranscription": "Kom-poo-ta-dor por-ta-cheel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Teclado",
+            "english": "Keyboard",
+            "phoneticTranscription": "Te-kla-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mouse",
+            "english": "Mouse",
+            "phoneticTranscription": "Maw-zee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Monitor",
+            "english": "Monitor",
+            "phoneticTranscription": "Mo-nee-tor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Impressora",
+            "english": "Printer",
+            "phoneticTranscription": "Im-pre-so-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Scanner",
+            "english": "Scanner",
+            "phoneticTranscription": "Es-ka-ner",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Telefone fixo",
+            "english": "Landline",
+            "phoneticTranscription": "Te-le-fo-nee feek-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Correio eletrônico",
+            "english": "Email",
+            "phoneticTranscription": "Ko-hay-oo e-le-tro-nee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mensagem",
+            "english": "Message",
+            "phoneticTranscription": "Men-sa-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reunião",
+            "english": "Meeting",
+            "phoneticTranscription": "He-oo-nyown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Videoconferência",
+            "english": "Video conference",
+            "phoneticTranscription": "Vee-dyo-kon-fe-ren-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Apresentação",
+            "english": "Presentation",
+            "phoneticTranscription": "A-pre-zen-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Relatório",
+            "english": "Report",
+            "phoneticTranscription": "He-la-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Documento",
+            "english": "Document",
+            "phoneticTranscription": "Do-koo-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arquivo",
+            "english": "File/Archive",
+            "phoneticTranscription": "Ar-kee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pasta suspensa",
+            "english": "Hanging folder",
+            "phoneticTranscription": "Pas-ta soos-pen-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Grampeador",
+            "english": "Stapler",
+            "phoneticTranscription": "Gram-pe-a-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clipes",
+            "english": "Paperclips",
+            "phoneticTranscription": "Klee-pees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Papel de rascunho",
+            "english": "Scrap paper",
+            "phoneticTranscription": "Pa-pel de has-koo-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Agenda",
+            "english": "Schedule/Planner",
+            "phoneticTranscription": "A-zhen-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prazo",
+            "english": "Deadline",
+            "phoneticTranscription": "Pra-zoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Projeto",
+            "english": "Project",
+            "phoneticTranscription": "Pro-zhe-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tarefa",
+            "english": "Task",
+            "phoneticTranscription": "Ta-re-fa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Meta",
+            "english": "Goal/Target",
+            "phoneticTranscription": "Me-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resultado",
+            "english": "Result",
+            "phoneticTranscription": "Re-zool-ta-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sucesso",
+            "english": "Success",
+            "phoneticTranscription": "Soo-se-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fracasso",
+            "english": "Failure",
+            "phoneticTranscription": "Fra-ka-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Promoção de cargo",
+            "english": "Promotion",
+            "phoneticTranscription": "Pro-mo-sown de kar-goo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aumento salarial",
+            "english": "Salary increase",
+            "phoneticTranscription": "Aw-men-too sa-la-ryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Remuneração",
+            "english": "Remuneration",
+            "phoneticTranscription": "Re-moo-ne-ra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Benefícios",
+            "english": "Benefits",
+            "phoneticTranscription": "Be-ne-fee-syoos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aposentadoria",
+            "english": "Retirement",
+            "phoneticTranscription": "A-po-zen-ta-do-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Demissão",
+            "english": "Dismissal/Layoff",
+            "phoneticTranscription": "De-mee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Contratação",
+            "english": "Hiring",
+            "phoneticTranscription": "Kon-tra-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Entrevista",
+            "english": "Interview",
+            "phoneticTranscription": "En-tre-vees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Currículo",
+            "english": "Resumé/CV",
+            "phoneticTranscription": "Koo-hee-koo-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Experiência",
+            "english": "Experience",
+            "phoneticTranscription": "Es-pe-ryen-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Qualificação",
+            "english": "Qualification",
+            "phoneticTranscription": "Kwa-lee-fee-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Habilidade",
+            "english": "Skill",
+            "phoneticTranscription": "A-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conhecimento",
+            "english": "Knowledge",
+            "phoneticTranscription": "Ko-nye-see-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Liderança",
+            "english": "Leadership",
+            "phoneticTranscription": "Lee-de-ran-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estratégia",
+            "english": "Strategy",
+            "phoneticTranscription": "Es-tra-te-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Negócio",
+            "english": "Business",
+            "phoneticTranscription": "Ne-go-syoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Empresa",
+            "english": "Company",
+            "phoneticTranscription": "Em-pre-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Corporação",
+            "english": "Corporation",
+            "phoneticTranscription": "Kor-po-ra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Indústria",
+            "english": "Industry",
+            "phoneticTranscription": "In-doos-tryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Setor",
+            "english": "Sector/Department",
+            "phoneticTranscription": "Se-tor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Segmento",
+            "english": "Market segment",
+            "phoneticTranscription": "Seg-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Competição",
+            "english": "Competition",
+            "phoneticTranscription": "Kom-pe-chee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Concorrência",
+            "english": "Competition (business)",
+            "phoneticTranscription": "Kon-ko-hen-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cliente em potencial",
+            "english": "Prospect",
+            "phoneticTranscription": "Klee-en-chee em po-ten-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fornecedor",
+            "english": "Supplier",
+            "phoneticTranscription": "For-ne-se-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Parceria",
+            "english": "Partnership",
+            "phoneticTranscription": "Par-se-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Investimento",
+            "english": "Investment",
+            "phoneticTranscription": "In-ves-chee-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Capital",
+            "english": "Capital",
+            "phoneticTranscription": "Ka-pee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lucratividade",
+            "english": "Profitability",
+            "phoneticTranscription": "Loo-kra-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Custo",
+            "english": "Cost",
+            "phoneticTranscription": "Koos-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Orçamento",
+            "english": "Budget",
+            "phoneticTranscription": "Or-sa-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Faturamento",
+            "english": "Revenue/Turnover",
+            "phoneticTranscription": "Fa-too-ra-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Despesa",
+            "english": "Expense",
+            "phoneticTranscription": "Des-pe-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imposto de renda",
+            "english": "Income tax",
+            "phoneticTranscription": "Im-pos-too de hen-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Contabilidade",
+            "english": "Accounting",
+            "phoneticTranscription": "Kon-ta-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Auditoria",
+            "english": "Audit",
+            "phoneticTranscription": "Aw-jee-to-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consultoria",
+            "english": "Consulting",
+            "phoneticTranscription": "Kon-sool-to-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Recursos Humanos",
+            "english": "Human Resources",
+            "phoneticTranscription": "Re-koor-soos oo-ma-noos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Marketing",
+            "english": "Marketing",
+            "phoneticTranscription": "Mar-ke-cheen",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vendas",
+            "english": "Sales",
+            "phoneticTranscription": "Ven-das",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Publicidade",
+            "english": "Advertising",
+            "phoneticTranscription": "Poo-blee-see-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Logística",
+            "english": "Logistics",
+            "phoneticTranscription": "Lo-zhees-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Manutenção",
+            "english": "Maintenance",
+            "phoneticTranscription": "Ma-noo-ten-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Segurança do trabalho",
+            "english": "Work safety",
+            "phoneticTranscription": "Se-goo-ran-sa doo tra-ba-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ética",
+            "english": "Ethics",
+            "phoneticTranscription": "E-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conduta",
+            "english": "Conduct",
+            "phoneticTranscription": "Kon-doo-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Responsabilidade",
+            "english": "Responsibility",
+            "phoneticTranscription": "Hes-pon-sa-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inovação",
+            "english": "Innovation",
+            "phoneticTranscription": "Ee-no-va-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Criatividade",
+            "english": "Creativity",
+            "phoneticTranscription": "Kree-a-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Produtividade",
+            "english": "Productivity",
+            "phoneticTranscription": "Pro-doo-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Eficiência",
+            "english": "Efficiency",
+            "phoneticTranscription": "E-fee-syen-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Eficácia",
+            "english": "Effectiveness",
+            "phoneticTranscription": "E-fee-ka-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Qualidade",
+            "english": "Quality",
+            "phoneticTranscription": "Kwa-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Padronização",
+            "english": "Standardization",
+            "phoneticTranscription": "Pa-dro-nee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Certificação",
+            "english": "Certification",
+            "phoneticTranscription": "Ser-chee-fee-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Feedback",
+            "english": "Feedback",
+            "phoneticTranscription": "Feed-ba-kee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Avaliação",
+            "english": "Evaluation",
+            "phoneticTranscription": "A-va-lya-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desempenho",
+            "english": "Performance",
+            "phoneticTranscription": "De-zem-pe-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carreira",
+            "english": "Career",
+            "phoneticTranscription": "Ka-hay-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Profissão",
+            "english": "Profession",
+            "phoneticTranscription": "Pro-fee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vocação",
+            "english": "Vocation",
+            "phoneticTranscription": "Vo-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Iniciativa",
+            "english": "Initiative",
+            "phoneticTranscription": "Ee-nee-syah-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Determinação",
+            "english": "Determination",
+            "phoneticTranscription": "De-ter-mee-na-sown",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Pretend",
+        "correctVersion": "The Portuguese 'Pretende' means 'To intend'. To say 'Pretend', use 'Fingir'.",
+        "explanation": "Trap level: High"
+    }
+}

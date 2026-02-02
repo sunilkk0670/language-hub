@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a2_m01",
+    "language": "hi",
+    "level": "a2",
+    "theme": "Travel & Transportation",
+    "order": 11,
+    "lessons": [
+        {
+            "word": "यात्रा",
+            "translation": "Journey / Travel",
+            "phonetic": "Yatra"
+        },
+        {
+            "word": "पर्यटन",
+            "translation": "Tourism",
+            "phonetic": "Paryatan"
+        },
+        {
+            "word": "यात्री",
+            "translation": "Traveler / Passenger",
+            "phonetic": "Yaatri"
+        },
+        {
+            "word": "टिकट",
+            "translation": "Ticket",
+            "phonetic": "Ticket"
+        },
+        {
+            "word": "आरक्षण",
+            "translation": "Reservation",
+            "phonetic": "Arakshan"
+        },
+        {
+            "word": "पुष्टि",
+            "translation": "Confirmation",
+            "phonetic": "Pushti"
+        },
+        {
+            "word": "प्रभार",
+            "translation": "Charges / Fees",
+            "phonetic": "Prabhar"
+        },
+        {
+            "word": "गंतव्य",
+            "translation": "Destination",
+            "phonetic": "Gantavya"
+        },
+        {
+            "word": "अध्व",
+            "translation": "Path / Distance (Formal)",
+            "phonetic": "Adhva"
+        },
+        {
+            "word": "मानचित्र",
+            "translation": "Map / Chart",
+            "phonetic": "Maanchitra"
+        },
+        {
+            "word": "दिग्",
+            "translation": "Direction (Sanskrit)",
+            "phonetic": "Dig"
+        },
+        {
+            "word": "अनुसूची",
+            "translation": "Schedule / Timetable",
+            "phonetic": "Anusoochi"
+        },
+        {
+            "word": "विलंब",
+            "translation": "Delay (Formal)",
+            "phonetic": "Vilamb"
+        },
+        {
+            "word": "निरस्त",
+            "translation": "Cancelled / Annulled",
+            "phonetic": "Nirast"
+        },
+        {
+            "word": "विमान",
+            "translation": "Airplane",
+            "phonetic": "Vimaan"
+        },
+        {
+            "word": "वायुईअड्डा",
+            "translation": "Airport",
+            "phonetic": "Hawaiadda"
+        },
+        {
+            "word": "विमानक्षेत्र",
+            "translation": "Airfield",
+            "phonetic": "Vimaankshetra"
+        },
+        {
+            "word": "उड़ान",
+            "translation": "Flight",
+            "phonetic": "Udaan"
+        },
+        {
+            "word": "आरोहण पत्र",
+            "translation": "Boarding pass (Formal)",
+            "phonetic": "Aarohan patra"
+        },
+        {
+            "word": "अनुमति पत्र",
+            "translation": "Permit / Entry Pass",
+            "phonetic": "Anumati Patra"
+        },
+        {
+            "word": "जांच",
+            "translation": "Check / Inspection",
+            "phonetic": "Jaanch"
+        },
+        {
+            "word": "प्रस्थान",
+            "translation": "Departure (Formal)",
+            "phonetic": "Prasthan"
+        },
+        {
+            "word": "आगमन",
+            "translation": "Arrival (Formal)",
+            "phonetic": "Aagaman"
+        },
+        {
+            "word": "परावर्तन",
+            "translation": "Reflection / Return",
+            "phonetic": "Paravartan"
+        },
+        {
+            "word": "रेल",
+            "translation": "Rail / Train",
+            "phonetic": "Rail"
+        },
+        {
+            "word": "लोहपथगामिनी",
+            "translation": "Train (Literal iron path traveler)",
+            "phonetic": "Lohpathgamini"
+        },
+        {
+            "word": "रेलवे स्टेशन",
+            "translation": "Railway Station",
+            "phonetic": "Railway Station"
+        },
+        {
+            "word": "मंच",
+            "translation": "Platform / Stage",
+            "phonetic": "Manch"
+        },
+        {
+            "word": "प्रकोष्ठ",
+            "translation": "Coach / Chamber (Formal)",
+            "phonetic": "Prakoshth"
+        },
+        {
+            "word": "पीठासन",
+            "translation": "Pedestal / Seat",
+            "phonetic": "Pithasan"
+        },
+        {
+            "word": "गवाक्ष",
+            "translation": "Window (Formal Sanskrit)",
+            "phonetic": "Gavaksh"
+        },
+        {
+            "word": "गलियारा",
+            "translation": "Aisle",
+            "phonetic": "Galiyara"
+        },
+        {
+            "word": "बस",
+            "translation": "Bus",
+            "phonetic": "Bus"
+        },
+        {
+            "word": "बस टर्मिनल",
+            "translation": "Bus Terminal",
+            "phonetic": "Bus Terminal"
+        },
+        {
+            "word": "टैक्सी",
+            "translation": "Taxi",
+            "phonetic": "Taxi"
+        },
+        {
+            "word": "रिक्शा",
+            "translation": "Rickshaw",
+            "phonetic": "Rickshaw"
+        },
+        {
+            "word": "शिखर",
+            "translation": "Peak / Top",
+            "phonetic": "Shikhar"
+        },
+        {
+            "word": "चक्र",
+            "translation": "Wheel (Formal)",
+            "phonetic": "Chakra"
+        },
+        {
+            "word": "यंत्र",
+            "translation": "Engine / Machine",
+            "phonetic": "Yantra"
+        },
+        {
+            "word": "ईंधन",
+            "translation": "Fuel",
+            "phonetic": "Indhan"
+        },
+        {
+            "word": "पेट्रोल",
+            "translation": "Petrol",
+            "phonetic": "Petrol"
+        },
+        {
+            "word": "डीजल",
+            "translation": "Diesel",
+            "phonetic": "Diesel"
+        },
+        {
+            "word": "संचालक",
+            "translation": "Driver / Operator (Formal)",
+            "phonetic": "Sanchalak"
+        },
+        {
+            "word": "वाहक",
+            "translation": "Conductor / Carrier",
+            "phonetic": "Vahak"
+        },
+        {
+            "word": "पोत",
+            "translation": "Large ship / Vessel (Formal)",
+            "phonetic": "Pot"
+        },
+        {
+            "word": "नौका",
+            "translation": "Boat (Formal)",
+            "phonetic": "Nauka"
+        },
+        {
+            "word": "पत्तन",
+            "translation": "Port / Harbor (Formal)",
+            "phonetic": "Pattan"
+        },
+        {
+            "word": "अर्णव",
+            "translation": "Sea / Ocean (Formal Sanskrit)",
+            "phonetic": "Arnav"
+        },
+        {
+            "word": "तरंगें",
+            "translation": "Waves (Formal)",
+            "phonetic": "Tarangein"
+        },
+        {
+            "word": "सरणि",
+            "translation": "Way / Path",
+            "phonetic": "Sarani"
+        },
+        {
+            "word": "राजपथ",
+            "translation": "Highway (Formal)",
+            "phonetic": "Rajpath"
+        },
+        {
+            "word": "सेतु",
+            "translation": "Bridge (Sanskrit)",
+            "phonetic": "Setu"
+        },
+        {
+            "word": "विवर",
+            "translation": "Tunnel / Hole (Formal)",
+            "phonetic": "Vivar"
+        },
+        {
+            "word": "यातायात",
+            "translation": "Traffic",
+            "phonetic": "Yatayat"
+        },
+        {
+            "word": "संकेत",
+            "translation": "Signal",
+            "phonetic": "Sanket"
+        },
+        {
+            "word": "जनसमूह",
+            "translation": "Crowd / People mass",
+            "phonetic": "Jansamooh"
+        },
+        {
+            "word": "दुर्घटना",
+            "translation": "Accident",
+            "phonetic": "Durghatna"
+        },
+        {
+            "word": "सतर्क",
+            "translation": "Careful / Alert",
+            "phonetic": "Satark"
+        },
+        {
+            "word": "संकट",
+            "translation": "Danger / Crisis",
+            "phonetic": "Sankat"
+        },
+        {
+            "word": "औसरे",
+            "translation": "Hotel (Old Hindi/Formal)",
+            "phonetic": "Ausare"
+        },
+        {
+            "word": "विश्रामगृह",
+            "translation": "Rest house / Inn",
+            "phonetic": "Vishramgriha"
+        },
+        {
+            "word": "कक्ष",
+            "translation": "Chamber / Room (Formal)",
+            "phonetic": "Kaksh"
+        },
+        {
+            "word": "सुविधा",
+            "translation": "Facility / Convenience",
+            "phonetic": "Suvidha"
+        },
+        {
+            "word": "वस्तुएं",
+            "translation": "Goods / Items",
+            "phonetic": "Vastuein"
+        },
+        {
+            "word": "थैला",
+            "translation": "Bag",
+            "phonetic": "Thaila"
+        },
+        {
+            "word": "पेटी",
+            "translation": "Box / Suitcase style",
+            "phonetic": "Peti"
+        },
+        {
+            "word": "भार",
+            "translation": "Weight",
+            "phonetic": "Bhaar"
+        },
+        {
+            "word": "सीमा",
+            "translation": "Border / Limit",
+            "phonetic": "Seema"
+        },
+        {
+            "word": "पारपत्र",
+            "translation": "Passport (Pure Hindi)",
+            "phonetic": "Parpatra"
+        },
+        {
+            "word": "प्रवेशाज्ञा",
+            "translation": "Visa (Pure Hindi)",
+            "phonetic": "Praveshajna"
+        },
+        {
+            "word": "विदेशी",
+            "translation": "Foreigner / Foreign",
+            "phonetic": "Videshi"
+        },
+        {
+            "word": "मुद्रा",
+            "translation": "Currency",
+            "phonetic": "Mudra"
+        },
+        {
+            "word": "विनिमय",
+            "translation": "Exchange",
+            "phonetic": "Vinimay"
+        },
+        {
+            "word": "प्रतिनिधि",
+            "translation": "Agent / Representative",
+            "phonetic": "Pratinidhi"
+        },
+        {
+            "word": "पथप्रदर्शक",
+            "translation": "Guide (Pure Hindi)",
+            "phonetic": "Pathpradarshak"
+        },
+        {
+            "word": "स्थानीय",
+            "translation": "Local",
+            "phonetic": "Sthaniya"
+        },
+        {
+            "word": "कीर्तिमान",
+            "translation": "Renowned / Record setting",
+            "phonetic": "Keertimaan"
+        },
+        {
+            "word": "सुंदरता",
+            "translation": "Beauty",
+            "phonetic": "Sundarta"
+        },
+        {
+            "word": "पेरदृश्य",
+            "translation": "Scenery (Formal)",
+            "phonetic": "Paridrishya"
+        },
+        {
+            "word": "चित्र",
+            "translation": "Photo / Picture",
+            "phonetic": "Chitra"
+        },
+        {
+            "word": "प्रतिबिंबक",
+            "translation": "Camera / Reflector",
+            "phonetic": "Pratibimbak"
+        },
+        {
+            "word": "अनुस्मृति",
+            "translation": "Recollection / Memory (Formal)",
+            "phonetic": "Anusmriti"
+        },
+        {
+            "word": "उपहार",
+            "translation": "Gift",
+            "phonetic": "Upahar"
+        },
+        {
+            "word": "अल्पव्ययी",
+            "translation": "Economical / Frugal",
+            "phonetic": "Alpavyayi"
+        },
+        {
+            "word": "बहुमूल्य",
+            "translation": "Expensive / Valuable",
+            "phonetic": "Bahumoolya"
+        },
+        {
+            "word": "धन",
+            "translation": "Money",
+            "phonetic": "Dhan"
+        },
+        {
+            "word": "रोकड़",
+            "translation": "Cash",
+            "phonetic": "Rokad"
+        },
+        {
+            "word": "विवृत",
+            "translation": "Open (Formal)",
+            "phonetic": "Vivrit"
+        },
+        {
+            "word": "पिहित",
+            "translation": "Closed (Formal)",
+            "phonetic": "Pihit"
+        },
+        {
+            "word": "आरंभ",
+            "translation": "Start",
+            "phonetic": "Aarambh"
+        },
+        {
+            "word": "समाप्त",
+            "translation": "Finished / Completed",
+            "phonetic": "Samapt"
+        },
+        {
+            "word": "शीघ्र",
+            "translation": "Quickly / Soon",
+            "phonetic": "Sheeghra"
+        },
+        {
+            "word": "विश्राम",
+            "translation": "Rest / Relaxation",
+            "phonetic": "Vishram"
+        },
+        {
+            "word": "सुरक्षित",
+            "translation": "Safe",
+            "phonetic": "Surakshit"
+        },
+        {
+            "word": "एकल",
+            "translation": "Alone / Solo",
+            "phonetic": "Ekal"
+        },
+        {
+            "word": "सह",
+            "translation": "With / Along with",
+            "phonetic": "Sah"
+        },
+        {
+            "word": "समूह",
+            "translation": "Group",
+            "phonetic": "Samooh"
+        },
+        {
+            "word": "संकुल",
+            "translation": "Crowded / Dense",
+            "phonetic": "Sankul"
+        },
+        {
+            "word": "आनंद",
+            "translation": "Joy / Pleasure",
+            "phonetic": "Anand"
+        },
+        {
+            "word": "शुभ",
+            "translation": "Auspicious (travel)",
+            "phonetic": "Shubh"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Lohpathgamini' Train",
+        "question": "If you hear someone refer to a train as 'Lohpathgamini' (लोहपथगामिनी), what are they doing?",
+        "options": [
+            "Using a rare Sanskritized technical term",
+            "Referring to a coal ship",
+            "Talking about a mountain trail",
+            "Referring to a cycle"
+        ],
+        "correct_answer_index": 0,
+        "explanation": "'Lohpathgamini' is the pure Hindi/Sanskrit construction for train (Iron-path-traveler). While rare in speech, it's often used as a humorous example of extreme Hindi formalization."
+    }
+}

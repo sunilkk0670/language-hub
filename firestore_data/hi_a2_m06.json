@@ -1,0 +1,520 @@
+{
+    "moduleId": "hi_a2_m06",
+    "language": "hi",
+    "level": "a2",
+    "theme": "Media, News & Internet",
+    "order": 16,
+    "lessons": [
+        {
+            "word": "माध्यम",
+            "translation": "Medium / Media (Formal)",
+            "phonetic": "Madhyam"
+        },
+        {
+            "word": "जनसंचार",
+            "translation": "Mass Communication",
+            "phonetic": "Jansanchar"
+        },
+        {
+            "word": "समाचार",
+            "translation": "News",
+            "phonetic": "Samachar"
+        },
+        {
+            "word": "वृत्तांत",
+            "translation": "Account / Report (Formal)",
+            "phonetic": "Vrittant"
+        },
+        {
+            "word": "पत्रकार",
+            "translation": "Journalist / Reporter",
+            "phonetic": "Patrakar"
+        },
+        {
+            "word": "संपादक",
+            "translation": "Editor",
+            "phonetic": "Sampadak"
+        },
+        {
+            "word": "संवाददाता",
+            "translation": "Correspondent",
+            "phonetic": "Samvaddata"
+        },
+        {
+            "word": "दैनिक पत्र",
+            "translation": "Daily Newspaper (Formal)",
+            "phonetic": "Dainik patra"
+        },
+        {
+            "word": "पत्रिका",
+            "translation": "Magazine",
+            "phonetic": "Patrika"
+        },
+        {
+            "word": "साहित्यकार",
+            "translation": "Man of letters / Writer (Formal)",
+            "phonetic": "Sahityakar"
+        },
+        {
+            "word": "प्रकाशक",
+            "translation": "Publisher",
+            "phonetic": "Prakashak"
+        },
+        {
+            "word": "छापाभोजन",
+            "translation": "Printing Press",
+            "phonetic": "Chhapakhana"
+        },
+        {
+            "word": "शीर्षक",
+            "translation": "Headline / Title",
+            "phonetic": "Shirshak"
+        },
+        {
+            "word": "कथन",
+            "translation": "Statement / Verdict (Formal)",
+            "phonetic": "Kathan"
+        },
+        {
+            "word": "भेंटवार्ता",
+            "translation": "Interview (Formal Hindi)",
+            "phonetic": "Bhentvarta"
+        },
+        {
+            "word": "टेलीविजन",
+            "translation": "Television",
+            "phonetic": "Television"
+        },
+        {
+            "word": "आकाशवाणी",
+            "translation": "Radio (Formal Indian name)",
+            "phonetic": "Akashvani"
+        },
+        {
+            "word": "चैनल",
+            "translation": "Channel",
+            "phonetic": "Channel"
+        },
+        {
+            "word": "प्रसारण",
+            "translation": "Broadcast",
+            "phonetic": "Prasaran"
+        },
+        {
+            "word": "सीधा प्रसारण",
+            "translation": "Live broadcast",
+            "phonetic": "Seedha prasaran"
+        },
+        {
+            "word": "दर्शक",
+            "translation": "Viewer / Spectator",
+            "phonetic": "Darshak"
+        },
+        {
+            "word": "श्रोता",
+            "translation": "Listener",
+            "phonetic": "Shrota"
+        },
+        {
+            "word": "विज्ञापन पट्टी",
+            "translation": "Advertising banner / Poster",
+            "phonetic": "Vigyapan patti"
+        },
+        {
+            "word": "प्रसार",
+            "translation": "Spread / Publicity",
+            "phonetic": "Prasar"
+        },
+        {
+            "word": "किंवदंती",
+            "translation": "Rumor / Myth",
+            "phonetic": "Kimvadanti"
+        },
+        {
+            "word": "यथार्थ",
+            "translation": "Reality / Truth (Formal)",
+            "phonetic": "Yatharth"
+        },
+        {
+            "word": "इंटरनेट",
+            "translation": "Internet",
+            "phonetic": "Internet"
+        },
+        {
+            "word": "जाल द्वार",
+            "translation": "Web Portal (Pure Hindi literal)",
+            "phonetic": "Jaal dwar"
+        },
+        {
+            "word": "सोशल मीडिया",
+            "translation": "Social Media",
+            "phonetic": "Social Media"
+        },
+        {
+            "word": "संजाल",
+            "translation": "Network (Hindi)",
+            "phonetic": "Sanjal"
+        },
+        {
+            "word": "लेखकी",
+            "translation": "Record / Account (Formal derivative)",
+            "phonetic": "Lekhaki"
+        },
+        {
+            "word": "प्रोफाइल",
+            "translation": "Profile",
+            "phonetic": "Profile"
+        },
+        {
+            "word": "अनुयायी",
+            "translation": "Follower",
+            "phonetic": "Anuyayi"
+        },
+        {
+            "word": "वरियता",
+            "translation": "Preference / Like (Formal)",
+            "phonetic": "Variyata"
+        },
+        {
+            "word": "साझा करना",
+            "translation": "To share",
+            "phonetic": "Saajha karna"
+        },
+        {
+            "word": "समीक्षा",
+            "translation": "Review / Commentary",
+            "phonetic": "Sameeksha"
+        },
+        {
+            "word": "संदेश",
+            "translation": "Message",
+            "phonetic": "Sandesh"
+        },
+        {
+            "word": "अपलोड",
+            "translation": "Upload",
+            "phonetic": "Upload"
+        },
+        {
+            "word": "डाउनलोड",
+            "translation": "Download",
+            "phonetic": "Download"
+        },
+        {
+            "word": "लिंक",
+            "translation": "Link",
+            "phonetic": "Link"
+        },
+        {
+            "word": "क्लिक",
+            "translation": "Click",
+            "phonetic": "Click"
+        },
+        {
+            "word": "खोज इंजन",
+            "translation": "Search Engine",
+            "phonetic": "Khoj engine"
+        },
+        {
+            "word": "ब्राउज़र",
+            "translation": "Browser",
+            "phonetic": "Browser"
+        },
+        {
+            "word": "ऑनलाइन",
+            "translation": "Online",
+            "phonetic": "Online"
+        },
+        {
+            "word": "ऑफलम्ाइन",
+            "translation": "Offline",
+            "phonetic": "Offline"
+        },
+        {
+            "word": "डिजिटल",
+            "translation": "Digital",
+            "phonetic": "Digital"
+        },
+        {
+            "word": "अंकिकी साक्षरता",
+            "translation": "Digital Literacy",
+            "phonetic": "Ankiki saksharta"
+        },
+        {
+            "word": "परिरक्षण",
+            "translation": "Preservation / Security (Formal)",
+            "phonetic": "Parirakshan"
+        },
+        {
+            "word": "गोपनीयता",
+            "translation": "Privacy",
+            "phonetic": "Gopniyata"
+        },
+        {
+            "word": "छल",
+            "translation": "Fraud / Deceit (Formal)",
+            "phonetic": "Chhal"
+        },
+        {
+            "word": "सावधान",
+            "translation": "Alert / Vigilant (Formal)",
+            "phonetic": "Saavdhan"
+        },
+        {
+            "word": "एप",
+            "translation": "App / Application",
+            "phonetic": "App"
+        },
+        {
+            "word": "स्मार्टफोन",
+            "translation": "Smartphone",
+            "phonetic": "Smartphone"
+        },
+        {
+            "word": "डाटा",
+            "translation": "Data",
+            "phonetic": "Data"
+        },
+        {
+            "word": "इंगित",
+            "translation": "Signal / Gesture (Formal)",
+            "phonetic": "Ingit"
+        },
+        {
+            "word": "टॉवर",
+            "translation": "Tower",
+            "phonetic": "Tower"
+        },
+        {
+            "word": "बैटरी",
+            "translation": "Battery",
+            "phonetic": "Battery"
+        },
+        {
+            "word": "चार्जर",
+            "translation": "Charger",
+            "phonetic": "Charger"
+        },
+        {
+            "word": "ई-मेल",
+            "translation": "E-mail",
+            "phonetic": "E-mail"
+        },
+        {
+            "word": "इनबॉक्स",
+            "translation": "Inbox",
+            "phonetic": "Inbox"
+        },
+        {
+            "word": "स्पैम",
+            "translation": "Spam",
+            "phonetic": "Spam"
+        },
+        {
+            "word": "अटैचमेंट",
+            "translation": "Attachment",
+            "phonetic": "Attachment"
+        },
+        {
+            "word": "वीडियो",
+            "translation": "Video",
+            "phonetic": "Video"
+        },
+        {
+            "word": "ऑडियो",
+            "translation": "Audio",
+            "phonetic": "Audio"
+        },
+        {
+            "word": "प्रतिबिंब",
+            "translation": "Reflection / Image",
+            "phonetic": "Pratibimb"
+        },
+        {
+            "word": "प्रकाशचित्रक",
+            "translation": "Camera Machine (Formal)",
+            "phonetic": "Prakashchitrak"
+        },
+        {
+            "word": "सेल्फी",
+            "translation": "Selfie",
+            "phonetic": "Selfie"
+        },
+        {
+            "word": "फिल्टर",
+            "translation": "Filter",
+            "phonetic": "Filter"
+        },
+        {
+            "word": "संपादन",
+            "translation": "Editing",
+            "phonetic": "Sampadan"
+        },
+        {
+            "word": "प्रभाव",
+            "translation": "Influence / Effect",
+            "phonetic": "Prabhav"
+        },
+        {
+            "word": "लोकप्रिय",
+            "translation": "Popular",
+            "phonetic": "Lokpriya"
+        },
+        {
+            "word": "यशस्वी",
+            "translation": "Renowned / Famous (Formal)",
+            "phonetic": "Yashasvi"
+        },
+        {
+            "word": "विवाद",
+            "translation": "Controversy / Dispute",
+            "phonetic": "Vivad"
+        },
+        {
+            "word": "मंथन",
+            "translation": "Churning / Discussion (Formal)",
+            "phonetic": "Manthan"
+        },
+        {
+            "word": "प्रसंग",
+            "translation": "Issue / Context",
+            "phonetic": "Prasang"
+        },
+        {
+            "word": "मत",
+            "translation": "Opinion / Vote",
+            "phonetic": "Mat"
+        },
+        {
+            "word": "दृष्टिकोण",
+            "translation": "Perspective / Point of view",
+            "phonetic": "Drishtikon"
+        },
+        {
+            "word": "निष्पक्ष",
+            "translation": "Unbiased / Impartial",
+            "phonetic": "Nishpaksh"
+        },
+        {
+            "word": "पक्षपात",
+            "translation": "Bias / Favoritism",
+            "phonetic": "Pakshpaat"
+        },
+        {
+            "word": "रचना",
+            "translation": "Composition / Writing",
+            "phonetic": "Rachna"
+        },
+        {
+            "word": "स्तंभ",
+            "translation": "Column (in a paper)",
+            "phonetic": "Stambh"
+        },
+        {
+            "word": "कार्टून",
+            "translation": "Cartoon",
+            "phonetic": "Cartoon"
+        },
+        {
+            "word": "कॉमिक्स",
+            "translation": "Comics",
+            "phonetic": "Comics"
+        },
+        {
+            "word": "होड़",
+            "translation": "Rivalry / Contest",
+            "phonetic": "Hod"
+        },
+        {
+            "word": "गौरव",
+            "translation": "Pride / Honor",
+            "phonetic": "Gaurav"
+        },
+        {
+            "word": "आयोजन",
+            "translation": "Event / Ceremony",
+            "phonetic": "Aayojan"
+        },
+        {
+            "word": "आमंत्रित",
+            "translation": "Invited",
+            "phonetic": "Aamantrit"
+        },
+        {
+            "word": "अतिथि",
+            "translation": "Guest (Formal)",
+            "phonetic": "Atithi"
+        },
+        {
+            "word": "आतिथ्यकर्ता",
+            "translation": "Host (Formal)",
+            "phonetic": "Aatithyakarta"
+        },
+        {
+            "word": "वेदिका",
+            "translation": "Stage / Altar (Formal)",
+            "phonetic": "Vedika"
+        },
+        {
+            "word": "उद्बोधन",
+            "translation": "Address / Formal Speech",
+            "phonetic": "Udbodhan"
+        },
+        {
+            "word": "घोषणा",
+            "translation": "Announcement / Declaration",
+            "phonetic": "Ghoshna"
+        },
+        {
+            "word": "अपील",
+            "translation": "Appeal",
+            "phonetic": "Appeal"
+        },
+        {
+            "word": "जागरूकता",
+            "translation": "Awareness",
+            "phonetic": "Jagrookta"
+        },
+        {
+            "word": "अभियान",
+            "phonetic": "Abhiyan"
+        },
+        {
+            "word": "फलम्स्रोत",
+            "translation": "Result / Outcome (Formal)",
+            "phonetic": "Phalsrot"
+        },
+        {
+            "word": "प्राप्ति",
+            "translation": "Attainment / Receipt",
+            "phonetic": "Prapti"
+        },
+        {
+            "word": "विफलम्ता",
+            "translation": "Failure (Formal)",
+            "phonetic": "Vifalta"
+        },
+        {
+            "word": "महत्वपूर्ण",
+            "translation": "Important",
+            "phonetic": "Mahatvapoorna"
+        },
+        {
+            "word": "आवश्यक",
+            "translation": "Necessary / Essential",
+            "phonetic": "Aavashyak"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Samachar' Flow",
+        "question": "The word 'Samachar' (समाचार) for news is formed by combining 'Sama' (equal/balanced) and 'Achar' (conduct). What was the ancient way news was spread?",
+        "options": [
+            "Through written letters",
+            "Through traveling bards (Charan/Bhat)",
+            "Through smoke signals",
+            "Through bird carriers"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "In ancient India, news and history were primarily spread by 'Charans' or 'Bhats' (traveling bards) who would recite news in the form of poems and songs from village to village."
+    }
+}

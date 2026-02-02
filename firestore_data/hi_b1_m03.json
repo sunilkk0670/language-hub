@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_b1_m03",
+    "language": "hi",
+    "level": "b1",
+    "theme": "Advanced Economics & Global Trade",
+    "order": 23,
+    "lessons": [
+        {
+            "word": "कौटिल्य-विद्या",
+            "translation": "Economics / Political economy (Sanskritized lore)",
+            "phonetic": "Kautilya-vidya"
+        },
+        {
+            "word": "वैश्वीकरण",
+            "translation": "Globalization",
+            "phonetic": "Vaishvikaran"
+        },
+        {
+            "word": "उदारीकरण",
+            "translation": "Liberalization",
+            "phonetic": "Udarikaran"
+        },
+        {
+            "word": "निजीकरण",
+            "translation": "Privatization",
+            "phonetic": "Nijikaran"
+        },
+        {
+            "word": "मुद्रास्फीति",
+            "translation": "Inflation",
+            "phonetic": "Mudrasphiti"
+        },
+        {
+            "word": "राजस्व-नीति",
+            "translation": "Fiscal Policy",
+            "phonetic": "Rajaswa-neeti"
+        },
+        {
+            "word": "मौद्रिक-नीति",
+            "translation": "Monetary Policy",
+            "phonetic": "Maudrik-neeti"
+        },
+        {
+            "word": "विनिमय-दर",
+            "translation": "Exchange Rate",
+            "phonetic": "Vinimay-dar"
+        },
+        {
+            "word": "सकल घरेलू उत्पाद",
+            "translation": "Gross Domestic Product (GDP)",
+            "phonetic": "Sakal gharelu utpad"
+        },
+        {
+            "word": "पूंजी-विपणि",
+            "translation": "Capital Market",
+            "phonetic": "Poonji-bazar"
+        },
+        {
+            "word": "वित्तीय-समावेशन",
+            "translation": "Financial Inclusion",
+            "phonetic": "Vittiya-samaveshan"
+        },
+        {
+            "word": "प्रत्यक्ष विदेशी निवेश",
+            "translation": "Foreign Direct Investment (FDI)",
+            "phonetic": "Pratyaksha videshi nivesh"
+        },
+        {
+            "word": "व्यापार-संतुलन",
+            "translation": "Balance of Trade",
+            "phonetic": "Vyapar-santulan"
+        },
+        {
+            "word": "भुगतान-संतुलन",
+            "translation": "Balance of Payments",
+            "phonetic": "Bhugtan-santulan"
+        },
+        {
+            "word": "लाभांश",
+            "translation": "Dividend / Profit share",
+            "phonetic": "Labhansh"
+        },
+        {
+            "word": "अधिमूल्यन",
+            "translation": "Appreciation (Currency)",
+            "phonetic": "Adhimulyan"
+        },
+        {
+            "word": "अवमूल्यन",
+            "translation": "Devaluation",
+            "phonetic": "Avamulyan"
+        },
+        {
+            "word": "राजकोषीय घाटा",
+            "translation": "Fiscal Deficit",
+            "phonetic": "Rajkoshiya ghata"
+        },
+        {
+            "word": "विनिवेश",
+            "translation": "Divestment",
+            "phonetic": "Vinivesh"
+        },
+        {
+            "word": "अधिग्रहण",
+            "translation": "Acquisition",
+            "phonetic": "Adhigrahan"
+        },
+        {
+            "word": "विलय",
+            "translation": "Merger",
+            "phonetic": "Vilay"
+        },
+        {
+            "word": "वाणिज्य",
+            "translation": "Commerce",
+            "phonetic": "Vanijya"
+        },
+        {
+            "word": "परिसंपत्ति",
+            "translation": "Asset (Formal)",
+            "phonetic": "Parisampatti"
+        },
+        {
+            "word": "देयता",
+            "translation": "Liability",
+            "phonetic": "Deyata"
+        },
+        {
+            "word": "निवेशक",
+            "translation": "Investor",
+            "phonetic": "Niveshak"
+        },
+        {
+            "word": "ऋणभार",
+            "translation": "Debt burden (Formal)",
+            "phonetic": "Rinbhar"
+        },
+        {
+            "word": "दिवालियपन",
+            "translation": "Bankruptcy / Insolvency",
+            "phonetic": "Diwaliyapan"
+        },
+        {
+            "word": "दिवाला",
+            "translation": "Insolvency",
+            "phonetic": "Diwala"
+        },
+        {
+            "word": "सट्टा",
+            "translation": "Speculation",
+            "phonetic": "Satta"
+        },
+        {
+            "word": "जोखिम-प्रबंधन",
+            "translation": "Risk Management",
+            "phonetic": "Jokhim-prabandhan"
+        },
+        {
+            "word": "सावधि जमा",
+            "translation": "Fixed Deposit",
+            "phonetic": "Savadhi jama"
+        },
+        {
+            "word": "आवर्ती जमा",
+            "translation": "Recurring Deposit",
+            "phonetic": "Avarti jama"
+        },
+        {
+            "word": "तरलता",
+            "translation": "Liquidity",
+            "phonetic": "Taralta"
+        },
+        {
+            "word": "उपभोक्तावाद",
+            "translation": "Consumerism",
+            "phonetic": "Upbhoktavad"
+        },
+        {
+            "word": "विपणि-शक्तियाँ",
+            "translation": "Market Forces",
+            "phonetic": "Bazar-shaktiyan"
+        },
+        {
+            "word": "पूर्वापेक्षा",
+            "translation": "Prerequisite / Anticipation",
+            "phonetic": "Purvapeksha"
+        },
+        {
+            "word": "प्राक्कल्पना",
+            "translation": "Hypothesis / Pre-estimation",
+            "phonetic": "Prakkalpana"
+        },
+        {
+            "word": "आर्थिक-मंदी",
+            "translation": "Economic Recession",
+            "phonetic": "Arthik-mandi"
+        },
+        {
+            "word": "पुनरुद्धार",
+            "translation": "Recovery / Revival",
+            "phonetic": "Punuruddhar"
+        },
+        {
+            "word": "सृजनशीलता",
+            "translation": "Productivity / Creative power (Formal)",
+            "phonetic": "Srijanshilta"
+        },
+        {
+            "word": "प्रतिस्पर्धा",
+            "translation": "Competition",
+            "phonetic": "Pratispardha"
+        },
+        {
+            "word": "एकाधिकार",
+            "translation": "Monopoly",
+            "phonetic": "Ekadhikar"
+        },
+        {
+            "word": "अल्पाधिकार",
+            "translation": "Oligopoly",
+            "phonetic": "Alpadhikar"
+        },
+        {
+            "word": "मुद्रा-मुद्रण",
+            "translation": "Currency Printing",
+            "phonetic": "Mudras-mudrun"
+        },
+        {
+            "word": "बैंकिंग-प्रणाली",
+            "translation": "Banking System",
+            "phonetic": "Banking-pranali"
+        },
+        {
+            "word": "ऋणपत्र",
+            "translation": "Debenture / Bond",
+            "phonetic": "Rinpatra"
+        },
+        {
+            "word": "शेयर-विपणि",
+            "translation": "Stock Market",
+            "phonetic": "Share-bazar"
+        },
+        {
+            "word": "सूचकांक",
+            "translation": "Index / Indicator",
+            "phonetic": "Suchkank"
+        },
+        {
+            "word": "दरक्त-वर्ण",
+            "translation": "Broker (Common, but technical)",
+            "phonetic": "Dalal"
+        },
+        {
+            "word": "बिचौलिया",
+            "translation": "Middleman",
+            "phonetic": "Bicholiya"
+        },
+        {
+            "word": "वस्तु एवं सेवा कर",
+            "translation": "Goods & Services Tax (GST)",
+            "phonetic": "Vastu evam seva kar"
+        },
+        {
+            "word": "आयकर",
+            "translation": "Income Tax",
+            "phonetic": "Aayakar"
+        },
+        {
+            "word": "अप्रत्यक्ष-कर",
+            "translation": "Indirect Tax",
+            "phonetic": "Apratyaksha-kar"
+        },
+        {
+            "word": "प्रत्यक्ष-कर",
+            "translation": "Direct Tax",
+            "phonetic": "Pratyaksha-kar"
+        },
+        {
+            "word": "कर-चोरी",
+            "translation": "Tax Evasion",
+            "phonetic": "Kar-chori"
+        },
+        {
+            "word": "कर-वंचन",
+            "translation": "Tax Avoidance",
+            "phonetic": "Kar-vanchan"
+        },
+        {
+            "word": "राजस्व-संग्रह",
+            "translation": "Revenue Collection",
+            "phonetic": "Rajaswa-sangrah"
+        },
+        {
+            "word": "वित्तीय-वर्ष",
+            "translation": "Financial Year",
+            "phonetic": "Vittiya-varsh"
+        },
+        {
+            "word": "बजट-प्रस्ताव",
+            "translation": "Budget Proposal",
+            "phonetic": "Budget-prastav"
+        },
+        {
+            "word": "घाटे की अर्थव्यवस्था",
+            "translation": "Deficit Financing",
+            "phonetic": "Ghate ki arthavyavastha"
+        },
+        {
+            "word": "स्वावलम्बन",
+            "translation": "Self-reliance / Independence",
+            "phonetic": "Swavlambun"
+        },
+        {
+            "word": "श्रम-शक्ति",
+            "translation": "Labor Force",
+            "phonetic": "Shram-shakti"
+        },
+        {
+            "word": "बेरोजगारी-दर",
+            "translation": "Unemployment Rate",
+            "phonetic": "Berozgari-dar"
+        },
+        {
+            "word": "निर्धनता-रेखा",
+            "translation": "Poverty Line",
+            "phonetic": "Nirdhanta-rekha"
+        },
+        {
+            "word": "सतत विकास",
+            "translation": "Sustainable Development",
+            "phonetic": "Satat vikas"
+        },
+        {
+            "word": "आधारभूत संरचना",
+            "translation": "Infrastructure",
+            "phonetic": "Aadharbhut sanrachna"
+        },
+        {
+            "word": "औद्योगीकरण",
+            "phonetic": "Audyogikaran",
+            "translation": "Industrialization"
+        },
+        {
+            "word": "कृषि-अर्थव्यवस्था",
+            "translation": "Agrarian Economy",
+            "phonetic": "Krishi-arthavyavastha"
+        },
+        {
+            "word": "वैश्विक मंच",
+            "translation": "Global Platform",
+            "phonetic": "Vaishvik manch"
+        },
+        {
+            "word": "द्विपक्षीय व्यापार",
+            "translation": "Bilateral Trade",
+            "phonetic": "Dwipakshiya vyapar"
+        },
+        {
+            "word": "बहुपक्षीय संधि",
+            "translation": "Multilateral Treaty",
+            "phonetic": "Bahupakshiya sandhi"
+        },
+        {
+            "word": "व्यापारिक बाधाएं",
+            "translation": "Trade Barriers",
+            "phonetic": "Vyaparik badhaen"
+        },
+        {
+            "word": "सीमा शुल्क",
+            "translation": "Customs Duty",
+            "phonetic": "Seema shulk"
+        },
+        {
+            "word": "आयात-शुल्क",
+            "translation": "Import Duty",
+            "phonetic": "Aayat-shulk"
+        },
+        {
+            "word": "निर्यात-प्रोत्साहन",
+            "translation": "Export Promotion",
+            "phonetic": "Niryat-protsahan"
+        },
+        {
+            "word": "मुक्त व्यापार क्षेत्र",
+            "translation": "Free Trade Zone",
+            "phonetic": "Mukt vyapar kshetra"
+        },
+        {
+            "word": "कोटा-प्रणाली",
+            "translation": "Quota System",
+            "phonetic": "Quota-pranali"
+        },
+        {
+            "word": "संरक्षणवाद",
+            "translation": "Protectionism",
+            "phonetic": "Sanrakshanvad"
+        },
+        {
+            "word": "आपूर्ति-श्रृंखला",
+            "translation": "Supply Chain",
+            "phonetic": "Aapurti-shringkhla"
+        },
+        {
+            "word": "लॉजिस्टिक",
+            "translation": "Logistics",
+            "phonetic": "Logistic"
+        },
+        {
+            "word": "मालगोदाम",
+            "translation": "Warehousing (Pure Hindi combo)",
+            "phonetic": "Malgodam"
+        },
+        {
+            "word": "वितरण-नेटवर्क",
+            "translation": "Distribution Network",
+            "phonetic": "Vitran-network"
+        },
+        {
+            "word": "पूंजीगत लाभ",
+            "translation": "Capital Gains",
+            "phonetic": "Poonjigat labh"
+        },
+        {
+            "word": "सम्पत्ति-कर",
+            "translation": "Property Tax",
+            "phonetic": "Sampatti-kar"
+        },
+        {
+            "word": "वस्तु-विनिमय",
+            "translation": "Barter System",
+            "phonetic": "Vastu-vinimay"
+        },
+        {
+            "word": "लेन-देन",
+            "translation": "Transactions / Giving & Taking",
+            "phonetic": "Len-den"
+        },
+        {
+            "word": "पारस्परिक",
+            "translation": "Mutual / Reciprocal",
+            "phonetic": "Parasparik"
+        },
+        {
+            "word": "लाभान्वित",
+            "translation": "Benefited",
+            "phonetic": "Labhanvit"
+        },
+        {
+            "word": "क्षतिपूर्ति",
+            "translation": "Compensation / Indemnity",
+            "phonetic": "Kshatipurti"
+        },
+        {
+            "word": "बीमा-पॉलिसी",
+            "translation": "Insurance Policy",
+            "phonetic": "Bima-policy"
+        },
+        {
+            "word": "प्रीमियम",
+            "translation": "Premium",
+            "phonetic": "Premium"
+        },
+        {
+            "word": "दावा",
+            "translation": "Claim",
+            "phonetic": "Dawa"
+        },
+        {
+            "word": "किस्त",
+            "translation": "Installment",
+            "phonetic": "Kist"
+        },
+        {
+            "word": "साख",
+            "translation": "Credit / Reputation",
+            "phonetic": "Saakh"
+        },
+        {
+            "word": "अग्रिम-भुगतान",
+            "translation": "Advance Payment",
+            "phonetic": "Agrim-bhugtan"
+        },
+        {
+            "word": "बकाया",
+            "translation": "Arrears / Pending",
+            "phonetic": "Bakaya"
+        },
+        {
+            "word": "हस्तांतरण",
+            "translation": "Transfer",
+            "phonetic": "Hastantaran"
+        },
+        {
+            "word": "प्राधिकरण-पत्र",
+            "translation": "Authorization Letter",
+            "phonetic": "Pradhikaran-patra"
+        },
+        {
+            "word": "अनुबंध",
+            "translation": "Contract / Agreement",
+            "phonetic": "Anubandh"
+        },
+        {
+            "word": "उप-नियम",
+            "translation": "By-laws",
+            "phonetic": "Up-niyam"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The Barter Trap",
+        "question": "The term 'Vastu-vinimay' (वस्तु-विनिमय) refers to an economic system. What is it commonly known as in English?",
+        "options": [
+            "Digital Banking",
+            "Barter System",
+            "Cryptocurrency",
+            "Tax Collection"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Vastu' means object/goods and 'Vinimay' means exchange. Together it perfectly translates to the Barter System where goods are exchanged for goods without money."
+    }
+}

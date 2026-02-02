@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a1_m08",
+    "theme": "Body & Health",
+    "order": 8,
+    "lessons": [
+        {
+            "targetText": "Corpo",
+            "english": "Body",
+            "phoneticTranscription": "Kor-poo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cabeça",
+            "english": "Head",
+            "phoneticTranscription": "Ka-be-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cabelo",
+            "english": "Hair",
+            "phoneticTranscription": "Ka-be-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rosto",
+            "english": "Face",
+            "phoneticTranscription": "Hos-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Olho",
+            "english": "Eye",
+            "phoneticTranscription": "O-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Orelha",
+            "english": "Ear",
+            "phoneticTranscription": "O-re-lya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nariz",
+            "english": "Nose",
+            "phoneticTranscription": "Na-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Boca",
+            "english": "Mouth",
+            "phoneticTranscription": "Bo-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dente",
+            "english": "Tooth",
+            "phoneticTranscription": "Den-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Língua",
+            "english": "Tongue",
+            "phoneticTranscription": "Leen-gwa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pescoço",
+            "english": "Neck",
+            "phoneticTranscription": "Pes-ko-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ombro",
+            "english": "Shoulder",
+            "phoneticTranscription": "Om-broo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Braço",
+            "english": "Arm",
+            "phoneticTranscription": "Bra-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cotovelo",
+            "english": "Elbow",
+            "phoneticTranscription": "Ko-to-ve-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mão",
+            "english": "Hand",
+            "phoneticTranscription": "Mown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dedo",
+            "english": "Finger/Toe",
+            "phoneticTranscription": "De-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Unha",
+            "english": "Nail",
+            "phoneticTranscription": "Oo-nya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Peito",
+            "english": "Chest",
+            "phoneticTranscription": "Pay-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Barriga",
+            "english": "Belly/Stomach",
+            "phoneticTranscription": "Ba-hee-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Costas",
+            "english": "Back",
+            "phoneticTranscription": "Kos-tas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cintura",
+            "english": "Waist",
+            "phoneticTranscription": "Seen-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Quadril",
+            "english": "Hip",
+            "phoneticTranscription": "Kwa-dreel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Perna",
+            "english": "Leg",
+            "phoneticTranscription": "Per-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Joelho",
+            "english": "Knee",
+            "phoneticTranscription": "Zho-e-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tornozelo",
+            "english": "Ankle",
+            "phoneticTranscription": "Tor-no-ze-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pé",
+            "english": "Foot",
+            "phoneticTranscription": "Pe",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coração",
+            "english": "Heart",
+            "phoneticTranscription": "Ko-ra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pulmão",
+            "english": "Lung",
+            "phoneticTranscription": "Pool-mown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sangue",
+            "english": "Blood",
+            "phoneticTranscription": "San-gee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Osso",
+            "english": "Bone",
+            "phoneticTranscription": "O-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pele",
+            "english": "Skin",
+            "phoneticTranscription": "Pe-lee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Músculo",
+            "english": "Muscle",
+            "phoneticTranscription": "Moos-koo-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bem-estar",
+            "english": "Well-being",
+            "phoneticTranscription": "Behm-es-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Doença",
+            "english": "Illness",
+            "phoneticTranscription": "Doo-en-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dor",
+            "english": "Pain",
+            "phoneticTranscription": "Dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Febre",
+            "english": "Fever",
+            "phoneticTranscription": "Fe-bree",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gripe",
+            "english": "Flu",
+            "phoneticTranscription": "Gree-pee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tosse",
+            "english": "Cough",
+            "phoneticTranscription": "To-see",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resfriado",
+            "english": "Cold (illness)",
+            "phoneticTranscription": "Hes-fry-ah-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alergia",
+            "english": "Allergy",
+            "phoneticTranscription": "A-ler-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cansaço",
+            "english": "Fatigue",
+            "phoneticTranscription": "Kan-sa-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sono",
+            "english": "Sleep",
+            "phoneticTranscription": "So-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Apetite",
+            "english": "Appetite",
+            "phoneticTranscription": "A-pe-chee-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hidratação",
+            "english": "Hydration",
+            "phoneticTranscription": "Ee-dra-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Remédio",
+            "english": "Medicine",
+            "phoneticTranscription": "Re-me-dyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pílula",
+            "english": "Pill",
+            "phoneticTranscription": "Pee-loo-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vacina",
+            "english": "Vaccine",
+            "phoneticTranscription": "Va-see-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prescrição",
+            "english": "Prescription",
+            "phoneticTranscription": "Pres-kree-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Médico",
+            "english": "Doctor (m)",
+            "phoneticTranscription": "Me-jee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Médica",
+            "english": "Doctor (f)",
+            "phoneticTranscription": "Me-jee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Enfermeiro",
+            "english": "Nurse (m)",
+            "phoneticTranscription": "En-fer-may-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pronto-socorro",
+            "english": "Emergency room",
+            "phoneticTranscription": "Pron-too-so-ko-hoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clínica",
+            "english": "Clinic",
+            "phoneticTranscription": "Klee-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Drogaria",
+            "english": "Drugstore",
+            "phoneticTranscription": "Dro-ga-ree-ah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ambulância",
+            "english": "Ambulance",
+            "phoneticTranscription": "Am-boo-lan-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Emergência",
+            "english": "Emergency",
+            "phoneticTranscription": "E-mer-zhen-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tratamento",
+            "english": "Treatment",
+            "phoneticTranscription": "Tra-ta-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Exame",
+            "english": "Exam/Test",
+            "phoneticTranscription": "E-za-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cirurgia",
+            "english": "Surgery",
+            "phoneticTranscription": "See-roor-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fratura",
+            "english": "Fracture",
+            "phoneticTranscription": "Fra-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Corte",
+            "english": "Cut",
+            "phoneticTranscription": "Kor-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ferida",
+            "english": "Wound",
+            "phoneticTranscription": "Fe-ree-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sangramento",
+            "english": "Bleeding",
+            "phoneticTranscription": "San-gra-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Queimadura",
+            "english": "Burn",
+            "phoneticTranscription": "Kay-ma-doo-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Enjoado",
+            "english": "Nauseous",
+            "phoneticTranscription": "En-zho-ah-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tonto",
+            "english": "Dizzy",
+            "phoneticTranscription": "Ton-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desmaio",
+            "english": "Fainting",
+            "phoneticTranscription": "Des-my-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Higiene",
+            "english": "Hygiene",
+            "phoneticTranscription": "Ee-zhyen-ee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Banho",
+            "english": "Bath/Shower",
+            "phoneticTranscription": "Ba-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escovar",
+            "english": "To brush",
+            "phoneticTranscription": "Es-ko-var",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sanitizar",
+            "english": "To sanitize",
+            "phoneticTranscription": "Sa-nee-chee-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Higienizar",
+            "english": "To hygienize",
+            "phoneticTranscription": "Ee-zhyen-ee-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Detergente",
+            "english": "Detergent/Cleaner",
+            "phoneticTranscription": "De-ter-zhen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Shampoo",
+            "english": "Shampoo",
+            "phoneticTranscription": "Sham-poo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pasta de dente",
+            "english": "Toothpaste",
+            "phoneticTranscription": "Pas-ta de den-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escova de dentes",
+            "english": "Toothbrush",
+            "phoneticTranscription": "Es-ko-va de den-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fio dental",
+            "english": "Dental floss",
+            "phoneticTranscription": "Fee-oo den-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lençol",
+            "english": "Sheet",
+            "phoneticTranscription": "Len-sol",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desodorante",
+            "english": "Deodorant",
+            "phoneticTranscription": "De-zo-do-ran-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Perfume",
+            "english": "Perfume",
+            "phoneticTranscription": "Per-foo-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Óculos",
+            "english": "Glasses",
+            "phoneticTranscription": "O-koo-loos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lentes de contato",
+            "english": "Contact lenses",
+            "phoneticTranscription": "Len-chees de kon-ta-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Muleta",
+            "english": "Crutch",
+            "phoneticTranscription": "Moo-le-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cadeira de rodas",
+            "english": "Wheelchair",
+            "phoneticTranscription": "Ka-day-rah de ho-das",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gesso",
+            "english": "Cast",
+            "phoneticTranscription": "Zhe-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Curativo",
+            "english": "Bandage",
+            "phoneticTranscription": "Koo-ra-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Peso",
+            "english": "Weight",
+            "phoneticTranscription": "Pe-zoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Altura",
+            "english": "Height",
+            "phoneticTranscription": "Al-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Regime",
+            "english": "Diet",
+            "phoneticTranscription": "He-zhee-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Exercício",
+            "english": "Exercise",
+            "phoneticTranscription": "E-zer-see-syoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Academia",
+            "english": "Gym",
+            "phoneticTranscription": "A-ka-de-mya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Esporte",
+            "english": "Sport",
+            "phoneticTranscription": "Es-por-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Energia",
+            "english": "Energy",
+            "phoneticTranscription": "E-ner-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Força",
+            "english": "Strength",
+            "phoneticTranscription": "For-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vitalidade",
+            "english": "Vitality",
+            "phoneticTranscription": "Vee-ta-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Respiração",
+            "english": "Breathing",
+            "phoneticTranscription": "Hes-pee-ra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Digestão",
+            "english": "Digestion",
+            "phoneticTranscription": "Dee-zhes-town",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metabolismo",
+            "english": "Metabolism",
+            "phoneticTranscription": "Me-ta-bo-leez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imunidade",
+            "english": "Immunity",
+            "phoneticTranscription": "Ee-moo-nee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Recuperação",
+            "english": "Recovery",
+            "phoneticTranscription": "He-koo-pe-ra-sown",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Constipado",
+        "correctVersion": "Means 'having a cold' (European PT) or congested, not 'constipated' (which is 'preso de ventre').",
+        "explanation": "Trap level: High"
+    }
+}

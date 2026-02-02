@@ -1,0 +1,519 @@
+{
+    "moduleId": "hi_b1_m06",
+    "language": "hi",
+    "level": "b1",
+    "theme": "Diplomacy & International Relations",
+    "order": 26,
+    "lessons": [
+        {
+            "word": "राजनय",
+            "translation": "Diplomacy",
+            "phonetic": "Rajnaya"
+        },
+        {
+            "word": "राजनय-विशेषज्ञ",
+            "translation": "Diplomatic Expert / Diplomat",
+            "phonetic": "Rajnay-visheshagya"
+        },
+        {
+            "word": "परराष्ट्र-नीति",
+            "translation": "Foreign Policy",
+            "phonetic": "Parrashtra-neeti"
+        },
+        {
+            "word": "द्विपक्षीय",
+            "translation": "Bilateral",
+            "phonetic": "Dwipakshiya"
+        },
+        {
+            "word": "बहुपक्षीय",
+            "translation": "Multilateral",
+            "phonetic": "Bahupakshiya"
+        },
+        {
+            "word": "त्रिपक्षीय",
+            "translation": "Trilateral",
+            "phonetic": "Tripakshiya"
+        },
+        {
+            "word": "वैदेशिक संबंध",
+            "translation": "Foreign Relations",
+            "phonetic": "Vaideshik sambandh"
+        },
+        {
+            "word": "राजनयिक दूत",
+            "translation": "Diplomatic Envoy",
+            "phonetic": "Rajnayik doot"
+        },
+        {
+            "word": "राजदूत",
+            "translation": "Ambassador",
+            "phonetic": "Rajdoot"
+        },
+        {
+            "word": "उच्चायोग",
+            "translation": "High Commission",
+            "phonetic": "Uchchayog"
+        },
+        {
+            "word": "दूतावास",
+            "translation": "Embassy",
+            "phonetic": "Dootavas"
+        },
+        {
+            "word": "वाणिज्य दूतावास",
+            "translation": "Consulate",
+            "phonetic": "Vanijya dootavas"
+        },
+        {
+            "word": "राजनयिक विशेषाधिकार",
+            "translation": "Diplomatic Immunity",
+            "phonetic": "Rajnayik visheshadhikar"
+        },
+        {
+            "word": "प्रत्यार्पण-संधि",
+            "translation": "Extradition Treaty",
+            "phonetic": "Pratyarpan-sandhi"
+        },
+        {
+            "word": "शांति-संधि",
+            "translation": "Peace Treaty",
+            "phonetic": "Shanti-sandhi"
+        },
+        {
+            "word": "युद्धविराम",
+            "translation": "Ceasefire",
+            "phonetic": "Yuddhaviram"
+        },
+        {
+            "word": "शस्त्र-नियंत्रण",
+            "translation": "Arms Control",
+            "phonetic": "Shastra-niyantran"
+        },
+        {
+            "word": "निःशस्त्रीकरण",
+            "translation": "Disarmament",
+            "phonetic": "Nihshastrikaran"
+        },
+        {
+            "word": "परमाणु अप्रसार",
+            "translation": "Nuclear Non-proliferation",
+            "phonetic": "Paramanu aprasar"
+        },
+        {
+            "word": "शक्ति-संतुलन",
+            "translation": "Balance of Power",
+            "phonetic": "Shakti-santulan"
+        },
+        {
+            "word": "वैश्विक व्यवस्था",
+            "translation": "Global Order",
+            "phonetic": "Vaishvik vyavastha"
+        },
+        {
+            "word": "सर्वाधिकारिता",
+            "translation": "Absolute Sovereignty / Authority",
+            "phonetic": "Sarvadhikarita"
+        },
+        {
+            "word": "क्षेत्रीय अखंडता",
+            "translation": "Territorial Integrity",
+            "phonetic": "Kshetriya akhandata"
+        },
+        {
+            "word": "अहस्तक्षेप",
+            "translation": "Non-interference",
+            "phonetic": "Ahastakshep"
+        },
+        {
+            "word": "शांतिपूर्ण सह-अस्तित्व",
+            "translation": "Peaceful Co-existence",
+            "phonetic": "Shantipurna seh-astitva"
+        },
+        {
+            "word": "गुटनिरपेक्षता",
+            "translation": "Non-alignment",
+            "phonetic": "Gutnirpekshta"
+        },
+        {
+            "word": "शीत-युद्ध",
+            "translation": "Cold War",
+            "phonetic": "Sheet-yuddh"
+        },
+        {
+            "word": "भू-राजनीति",
+            "translation": "Geopolitics",
+            "phonetic": "Bhu-rajneeti"
+        },
+        {
+            "word": "रणनीतिक साझेदारी",
+            "translation": "Strategic Partnership",
+            "phonetic": "Rannaitik sajhedari"
+        },
+        {
+            "word": "राजनयिक गतिरोध",
+            "translation": "Diplomatic Deadlock",
+            "phonetic": "Rajnayik gatirodh"
+        },
+        {
+            "word": "अंतरराष्ट्रीय मंच",
+            "translation": "International Forum",
+            "phonetic": "Antarrashtriya manch"
+        },
+        {
+            "word": "संयुक्त राष्ट्र",
+            "translation": "United Nations",
+            "phonetic": "Sanyukta Rashtra"
+        },
+        {
+            "word": "सुरक्षा परिषद",
+            "translation": "Security Council",
+            "phonetic": "Suraksha parishad"
+        },
+        {
+            "word": "महासभा",
+            "translation": "General Assembly",
+            "phonetic": "Mahasabha"
+        },
+        {
+            "word": "वीटो शक्ति",
+            "translation": "Veto Power",
+            "phonetic": "Veto shakti"
+        },
+        {
+            "word": "शिखर सम्मेलन",
+            "translation": "Summit Meeting",
+            "phonetic": "Shikhar sammelan"
+        },
+        {
+            "word": "घोषणा-पत्र",
+            "translation": "Manifesto / Declaration",
+            "phonetic": "Ghoshana-patra"
+        },
+        {
+            "word": "राजनयिक-अवरोध",
+            "translation": "Diplomatic Sanctions / Bar",
+            "phonetic": "Rajnayik-avrodh"
+        },
+        {
+            "word": "सीमा विवाद",
+            "translation": "Border Dispute",
+            "phonetic": "Seema vivad"
+        },
+        {
+            "word": "नियंत्रण रेखा",
+            "translation": "Line of Control (LOC)",
+            "phonetic": "Niyantran rekha"
+        },
+        {
+            "word": "घुसपैठ",
+            "translation": "Infiltration",
+            "phonetic": "Ghuspaith"
+        },
+        {
+            "word": "आतंकवाद",
+            "translation": "Terrorism",
+            "phonetic": "Aatankvad"
+        },
+        {
+            "word": "मानवाधिकार",
+            "translation": "Human Rights",
+            "phonetic": "Manavadhikar"
+        },
+        {
+            "word": "शरणार्थी-संकट",
+            "translation": "Refugee Crisis",
+            "phonetic": "Sharanarthi-sankat"
+        },
+        {
+            "word": "विस्थापन",
+            "translation": "Displacement",
+            "phonetic": "Visthapan"
+        },
+        {
+            "word": "प्रवासन",
+            "translation": "Migration",
+            "phonetic": "Pravasan"
+        },
+        {
+            "word": "प्रत्यर्पण",
+            "translation": "Extradition",
+            "phonetic": "Pratyarpan"
+        },
+        {
+            "word": "राजनयिक शिष्टाचार",
+            "translation": "Diplomatic Protocol / Etiquette",
+            "phonetic": "Rajnayik shishtachar"
+        },
+        {
+            "word": "क्रेडेंशियल्स",
+            "translation": "Credentials (Pure translations often use 'प्रमाण-पत्र')",
+            "phonetic": "Credentials"
+        },
+        {
+            "word": "प्रमाण-पत्र",
+            "translation": "Certificate / Credentials",
+            "phonetic": "Praman-patra"
+        },
+        {
+            "word": "राजनयिक सम्बन्ध विच्छेद",
+            "translation": "Severance of Diplomatic Relations",
+            "phonetic": "Rajnayik sambandh vichched"
+        },
+        {
+            "word": "अवांछित व्यक्ति",
+            "translation": "Persona Non Grata",
+            "phonetic": "Avanchit vyakti"
+        },
+        {
+            "word": "द्विपक्षीय वार्ता",
+            "translation": "Bilateral Talk",
+            "phonetic": "Dwipakshiya varta"
+        },
+        {
+            "word": "मध्यस्थता",
+            "translation": "Mediation",
+            "phonetic": "Madhyasthata"
+        },
+        {
+            "word": "पंचैती",
+            "translation": "Arbitration (Formal Hindi contextual)",
+            "phonetic": "Panchaiti"
+        },
+        {
+            "word": "सुलह-सफाई",
+            "translation": "Conciliation",
+            "phonetic": "Sulah-safai"
+        },
+        {
+            "word": "राजनयिक मिशन",
+            "translation": "Diplomatic Mission",
+            "phonetic": "Rajnayik mission"
+        },
+        {
+            "word": "विशेष दूत",
+            "translation": "Special Envoy",
+            "phonetic": "Vishesh doot"
+        },
+        {
+            "word": "राजनयिक बैग",
+            "translation": "Diplomatic Bag / Pouch",
+            "phonetic": "Rajnayik bag"
+        },
+        {
+            "word": "अंतरराष्ट्रीय कानून",
+            "translation": "International Law",
+            "phonetic": "Antarrashtriya kanoon"
+        },
+        {
+            "word": "समुद्री कानून",
+            "translation": "Law of the Sea",
+            "phonetic": "Samudri kanoon"
+        },
+        {
+            "word": "वायुई क्षेत्र",
+            "phonetic": "Hawai kshetra"
+        },
+        {
+            "word": "विशेष आर्थिक क्षेत्र",
+            "translation": "Special Economic Zone (EEZ)",
+            "phonetic": "Vishesh arthik kshetra"
+        },
+        {
+            "word": "व्यापार और विकास",
+            "translation": "Trade and Development",
+            "phonetic": "Vyapar aur vikas"
+        },
+        {
+            "word": "बौद्धिक संपदा",
+            "translation": "Intellectual Property",
+            "phonetic": "Bauddhik sampada"
+        },
+        {
+            "word": "कापीराइट",
+            "translation": "Copyright",
+            "phonetic": "Copyright"
+        },
+        {
+            "word": "पेटेंट",
+            "translation": "Patent",
+            "phonetic": "Patent"
+        },
+        {
+            "word": "ट्रेडमार्क",
+            "phonetic": "Trademark"
+        },
+        {
+            "word": "भूमंडल-तापवृद्धि",
+            "translation": "Global Temp Increase / Global Warming",
+            "phonetic": "Bhumandal-tapvriddhi"
+        },
+        {
+            "word": "ऋतु-परिवर्तन",
+            "translation": "Season/Climate Change",
+            "phonetic": "Ritu-parivartan"
+        },
+        {
+            "word": "पेरिस समझौता",
+            "translation": "Paris Agreement",
+            "phonetic": "Paris samjhauta"
+        },
+        {
+            "word": "सतत विकास लक्ष्य",
+            "translation": "Sustainable Development Goals (SDG)",
+            "phonetic": "Satat vikas lakshya"
+        },
+        {
+            "word": "वैश्विक महामारी",
+            "translation": "Global Pandemic",
+            "phonetic": "Vaishvik mahamari"
+        },
+        {
+            "word": "आतंकवाद-विरोधी",
+            "translation": "Counter-terrorism",
+            "phonetic": "Aatankvad-virodhi"
+        },
+        {
+            "word": "खुफिया जानकारी",
+            "translation": "Intelligence Information",
+            "phonetic": "Khufiya jankari"
+        },
+        {
+            "word": "जासूसी",
+            "translation": "Espionage",
+            "phonetic": "Jasusi"
+        },
+        {
+            "word": "साइबर हमला",
+            "translation": "Cyber Attack",
+            "phonetic": "Cyber hamla"
+        },
+        {
+            "word": "क्रिप्टोग्राफी",
+            "translation": "Cryptography",
+            "phonetic": "Cryptography"
+        },
+        {
+            "word": "प्रौद्योगिकी हस्तांतरण",
+            "translation": "Technology Transfer",
+            "phonetic": "Praudyogiki hastantaran"
+        },
+        {
+            "word": "अंतरिक्ष रेस",
+            "translation": "Space Race",
+            "phonetic": "Antariksh race"
+        },
+        {
+            "word": "कृत्रिम-पिण्ड",
+            "translation": "Artificial Satellite / Object",
+            "phonetic": "Kritrim-pind"
+        },
+        {
+            "word": "दूरसंचार",
+            "translation": "Telecommunication",
+            "phonetic": "Doorsanchar"
+        },
+        {
+            "word": "सॉफ्ट पावर",
+            "translation": "Soft Power",
+            "phonetic": "Soft power"
+        },
+        {
+            "word": "सांस्कृतिक कूटनीति",
+            "translation": "Cultural Diplomacy",
+            "phonetic": "Sanskritik kootneeti"
+        },
+        {
+            "word": "ट्रैक टू डिप्लोमेसी",
+            "translation": "Track Two Diplomacy",
+            "phonetic": "Track Two Diplomacy"
+        },
+        {
+            "word": "जनादेश",
+            "translation": "Mandate / Public mandate",
+            "phonetic": "Janadesh"
+        },
+        {
+            "word": "राजनयिक रद",
+            "translation": "Diplomatic Recall",
+            "phonetic": "Rajnayik radd"
+        },
+        {
+            "word": "राजनयिक शरण",
+            "translation": "Diplomatic Asylum",
+            "phonetic": "Rajnayik sharan"
+        },
+        {
+            "word": "राजनयिक मान्यता",
+            "translation": "Diplomatic Recognition",
+            "phonetic": "Rajnayik manyata"
+        },
+        {
+            "word": "अंतरराष्ट्रीय न्यायालय",
+            "translation": "International Court of Justice",
+            "phonetic": "Antarrashtriya Nyayalaya"
+        },
+        {
+            "word": "राजनयिक वार्ताकार",
+            "translation": "Diplomatic Negotiator",
+            "phonetic": "Rajnayik vartakar"
+        },
+        {
+            "word": "शांतिरक्षक",
+            "translation": "Peacekeeper",
+            "phonetic": "Shantirakshak"
+        },
+        {
+            "word": "नीली हेलमेट",
+            "translation": "Blue Helmet (UN)",
+            "phonetic": "Neeli helmet"
+        },
+        {
+            "word": "राजनयिक संकट",
+            "translation": "Diplomatic Crisis",
+            "phonetic": "Rajnayik sankat"
+        },
+        {
+            "word": "तनावमुक्ति",
+            "translation": "Dètente",
+            "phonetic": "Tanavmukti"
+        },
+        {
+            "word": "राजनयिक सफलम्ता",
+            "translation": "Diplomatic Breakthrough",
+            "phonetic": "Rajnayik safalta"
+        },
+        {
+            "word": "राजनयिक असफलम्ता",
+            "translation": "Diplomatic Failure",
+            "phonetic": "Rajnayik asafalta"
+        },
+        {
+            "word": "राजनयिक संबंध सुधारना",
+            "translation": "Improving Diplomatic Ties",
+            "phonetic": "Rajnayik sambandh sudharna"
+        },
+        {
+            "word": "राजनयिक तनाव",
+            "translation": "Diplomatic Tension",
+            "phonetic": "Rajnayik tanav"
+        },
+        {
+            "word": "राजनयिक मोर्चा",
+            "translation": "Diplomatic Front",
+            "phonetic": "Rajnayik morcha"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Persona Non Grata' Protocol",
+        "question": "In diplomacy, what is an 'Avanchit vyakti' (अवांछित व्यक्ति) commonly known as internationally?",
+        "options": [
+            "Ambassador",
+            "Persona Non Grata",
+            "Special Envoy",
+            "Interpreter"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Avanchit' means unwanted/undesired and 'Vyakti' means person. This is the literal Hindi translation for the diplomatic term 'Persona Non Grata'."
+    }
+}

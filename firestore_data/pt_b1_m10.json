@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_b1_m10",
+    "theme": "Global Challenges & Future Outlook",
+    "order": 30,
+    "lessons": [
+        {
+            "targetText": "Crise do clima",
+            "english": "Climate crisis / Global warming",
+            "phoneticTranscription": "Kree-zee doo klee-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mudanças climáticas",
+            "english": "Climate changes",
+            "phoneticTranscription": "Moo-dan-sas klee-ma-chee-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gases de efeito estufa",
+            "english": "Greenhouse gases",
+            "phoneticTranscription": "Ga-zees de e-fay-too es-too-fa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Buraco na camada",
+            "english": "Hole in the layer / Ozone layer",
+            "phoneticTranscription": "Boo-ra-koo na ka-ma-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Degelo das calotas",
+            "english": "Melting of ice caps",
+            "phoneticTranscription": "De-zhe-loo das ka-lo-tas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Elevação do nível",
+            "english": "Rise of the (sea) level",
+            "phoneticTranscription": "E-le-va-sown doo nee-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desastres naturais",
+            "english": "Natural disasters",
+            "phoneticTranscription": "De-zas-trees na-too-rays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Refugiados climáticos",
+            "english": "Climate refugees",
+            "phoneticTranscription": "Re-foo-zhyah-doos klee-ma-chee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escassez de água",
+            "english": "Water scarcity",
+            "phoneticTranscription": "Es-ka-ses de a-gwa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Autossuficiência alimentar",
+            "english": "Food self-sufficiency",
+            "phoneticTranscription": "Aw-to-soo-fee-syen-syah a-lee-men-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biodiversidade em risco",
+            "english": "Biodiversity at risk",
+            "phoneticTranscription": "Byo-jee-ver-see-da-jee em rees-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Extinção de espécies",
+            "english": "Species extinction",
+            "phoneticTranscription": "Es-cheen-sown de es-pe-sees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Formação de desertos",
+            "english": "Desert formation / Desertification",
+            "phoneticTranscription": "For-ma-sown de de-zer-toos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Poluição plástica",
+            "english": "Plastic pollution",
+            "phoneticTranscription": "Po-loo-ee-sown plas-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nanofibras sintéticas",
+            "english": "Synthetic nanofibers / Microplastics",
+            "phoneticTranscription": "Na-no-fee-bras seen-te-chee-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reuso de recursos",
+            "english": "Recourse reuse / Circular economy",
+            "phoneticTranscription": "He-oo-zoo de he-koor-soos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consumo consciente",
+            "english": "Conscious consumption",
+            "phoneticTranscription": "Kon-soo-moo kon-syen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fonte renovável",
+            "english": "Renewable source / Clean energy",
+            "phoneticTranscription": "Fon-chee he-no-va-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Painéis fotovoltaicos",
+            "english": "Photovoltaic panels",
+            "phoneticTranscription": "Pay-nays fo-to-vol-tahy-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Força dos ventos",
+            "english": "Wind force / Wind energy",
+            "phoneticTranscription": "For-sa doos ven-toos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biocombustíveis",
+            "english": "Biofuels",
+            "phoneticTranscription": "Byo-kom-boos-chee-vays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hidrogênio verde",
+            "english": "Green hydrogen",
+            "phoneticTranscription": "Ee-dro-zhe-nyoo ver-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Descarbonização",
+            "english": "Decarbonization",
+            "phoneticTranscription": "Des-kar-bo-nee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Títulos de emissão",
+            "english": "Emission permits / Carbon credits",
+            "phoneticTranscription": "Chee-too-loos de e-mee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Impacto humano",
+            "english": "Human impact / Ecological footprint",
+            "phoneticTranscription": "Eem-pa-ktoo oo-ma-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Excesso populacional",
+            "english": "Population excess / Overpopulation",
+            "phoneticTranscription": "E-kse-soo po-poo-la-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Envelhecimento populacional",
+            "english": "Population aging",
+            "phoneticTranscription": "En-ve-lye-see-men-too po-poo-la-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Migração em massa",
+            "english": "Mass migration",
+            "phoneticTranscription": "Mee-gra-sown em ma-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Crise humanitária",
+            "english": "Humanitarian crisis",
+            "phoneticTranscription": "Kree-zee oo-ma-nee-ta-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conflitos geopolíticos",
+            "english": "Geopolitical conflicts",
+            "phoneticTranscription": "Kon-flee-toos zhe-o-po-lee-chee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Segurança na rede",
+            "english": "Network security / Cybersecurity",
+            "phoneticTranscription": "Se-goo-ran-sa na he-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Guerra híbrida",
+            "english": "Hybrid warfare",
+            "phoneticTranscription": "Ge-ha ee-bree-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desinformação digital",
+            "english": "Digital misinformation",
+            "phoneticTranscription": "De-zeen-for-ma-sown jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pós-verdade",
+            "english": "Post-truth",
+            "phoneticTranscription": "Pos-ver-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Algoritmos e ética",
+            "english": "Algorithms and ethics",
+            "phoneticTranscription": "Al-go-ree-chee-moos e e-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Monitoramento global",
+            "english": "Global monitoring / Mass surveillance",
+            "phoneticTranscription": "Mo-nee-to-ha-men-too glo-bal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reconhecimento facial",
+            "english": "Facial recognition",
+            "phoneticTranscription": "Re-ko-nye-see-men-too fa-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Privacidade online",
+            "english": "Online privacy",
+            "phoneticTranscription": "Pree-va-see-da-jee on-lahy-nee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dados biométricos",
+            "english": "Biometric data",
+            "phoneticTranscription": "Da-doos byo-me-tree-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ética na IA",
+            "english": "Ethics in AI",
+            "phoneticTranscription": "E-chee-ka na ee-ah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Singularidade",
+            "english": "Singularity",
+            "phoneticTranscription": "Seen-goo-la-ree-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transumanismo",
+            "english": "Transhumanism",
+            "phoneticTranscription": "Tran-zoo-ma-neez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biotecnologia ética",
+            "english": "Ethical biotechnology",
+            "phoneticTranscription": "Byo-tek-no-lo-zhyah e-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Edição genética",
+            "english": "Genetic editing",
+            "phoneticTranscription": "E-jee-sown zhe-ne-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bebês projetados",
+            "english": "Designer babies",
+            "phoneticTranscription": "Be-bees pro-zhe-ta-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prolongamento da vida",
+            "english": "Life extension",
+            "phoneticTranscription": "Pro-lon-ga-men-too da vee-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Futuro do trabalho",
+            "english": "Future of work",
+            "phoneticTranscription": "Foo-too-roo doo tra-ba-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Automatização",
+            "english": "Automation",
+            "phoneticTranscription": "Aw-to-ma-chee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Renda básica universal",
+            "english": "Universal basic income",
+            "phoneticTranscription": "Hen-da ba-zee-ka oo-nee-ver-sal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Economia do gig",
+            "english": "Gig economy",
+            "phoneticTranscription": "E-ko-no-myah doo gee-gee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trabalho remoto",
+            "english": "Remote work / Telework",
+            "phoneticTranscription": "Tra-ba-lyoo he-mo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nomadismo digital",
+            "english": "Digital nomadism",
+            "phoneticTranscription": "No-ma-jeez-moo jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Globalização 4.0",
+            "english": "Globalization 4.0",
+            "phoneticTranscription": "Glo-ba-lee-za-sown kwa-troo pon-too ze-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resiliência econômica",
+            "english": "Economic resilience",
+            "phoneticTranscription": "Re-zee-lyen-syah e-ko-no-mee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acesso tecnológico",
+            "english": "Technological access / Digital inclusion",
+            "phoneticTranscription": "A-se-soo tek-no-lo-zhee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Disparidade de renda",
+            "english": "Income disparity / Social inequality",
+            "phoneticTranscription": "Dees-pa-ree-da-jee de hen-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Erradicação da pobreza",
+            "english": "Poverty eradication",
+            "phoneticTranscription": "E-ha-jee-ka-sown da po-bre-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direito ao clima",
+            "english": "Right to climate / Climate justice",
+            "phoneticTranscription": "Jee-ray-too ow klee-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metas de sustentabilidade",
+            "english": "Sustainability goals (SDGs/ODS)",
+            "phoneticTranscription": "Me-tas de soos-ten-ta-bee-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Governança global",
+            "english": "Global governance",
+            "phoneticTranscription": "Go-ver-nan-sa glo-bal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diplomacia científica",
+            "english": "Scientific diplomacy",
+            "phoneticTranscription": "Jee-plo-ma-syah syen-chee-fee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tratados espaciais",
+            "english": "Space treaties",
+            "phoneticTranscription": "Tra-ta-doos es-pa-syays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mineração de asteroides",
+            "english": "Asteroid mining",
+            "phoneticTranscription": "Mee-ne-ra-sown de as-te-roy-jees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colonização de Marte",
+            "english": "Mars colonization",
+            "phoneticTranscription": "Ko-lo-nee-za-sown de Mar-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Exoplanetas habitáveis",
+            "english": "Habitable exoplanets",
+            "phoneticTranscription": "E-kso-pla-ne-tas a-bee-ta-vays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Busca por vida",
+            "english": "Search for life (extraterrestrial)",
+            "phoneticTranscription": "Boos-ka por vee-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Paradoxo de Fermi",
+            "english": "Fermi Paradox",
+            "phoneticTranscription": "Pa-ra-do-ksoo de Fer-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sinal do espaço",
+            "english": "Signal from space",
+            "phoneticTranscription": "See-nal doo es-pa-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Astrobiologia",
+            "english": "Astrobiology",
+            "phoneticTranscription": "As-tro-byo-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Propulsão quântica",
+            "english": "Quantum propulsion",
+            "phoneticTranscription": "Pro-pool-sown kwan-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Viagem interestelar",
+            "english": "Interstellar travel",
+            "phoneticTranscription": "Vya-zhem in-ter-es-te-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Buracos de minhoca",
+            "english": "Wormholes",
+            "phoneticTranscription": "Boo-ra-koos de mee-nyo-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dobra espacial",
+            "english": "Space warp/fold",
+            "phoneticTranscription": "Do-bra es-pa-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Civilização tipo I",
+            "english": "Type I civilization",
+            "phoneticTranscription": "See-vee-lee-za-sown chee-poo oon",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Energia estelar",
+            "english": "Stellar energy",
+            "phoneticTranscription": "E-ner-zhyah es-te-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Antimatéria",
+            "english": "Antimatter",
+            "phoneticTranscription": "An-chee-ma-te-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vácuo quântico",
+            "english": "Quantum vacuum",
+            "phoneticTranscription": "Va-kwoo kwan-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Teoria das cordas",
+            "english": "String theory",
+            "phoneticTranscription": "Te-o-ree-a das kor-das",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Multiverso infinito",
+            "english": "Infinite multiverse",
+            "phoneticTranscription": "Mool-chee-ver-soo een-fee-nee-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Realidade simulada",
+            "english": "Simulated reality",
+            "phoneticTranscription": "He-a-lee-da-jee see-moo-la-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Singularidade tecnológica",
+            "english": "Technological singularity",
+            "phoneticTranscription": "Seen-goo-la-ree-da-jee tek-no-lo-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consciência digital",
+            "english": "Digital consciousness",
+            "phoneticTranscription": "Kon-syen-syah jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Upload de mente",
+            "english": "Mind upload",
+            "phoneticTranscription": "Up-low-jee de men-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Imortalidade cibernética",
+            "english": "Cybernetic immortality",
+            "phoneticTranscription": "Ee-mor-ta-lee-da-jee see-ber-ne-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Legado planetário",
+            "english": "Planetary legacy",
+            "phoneticTranscription": "Le-ga-doo pla-ne-ta-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Paz mundial",
+            "english": "World peace",
+            "phoneticTranscription": "Pas moon-jyal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Solidariedade global",
+            "english": "Global solidarity",
+            "phoneticTranscription": "So-lee-da-rye-da-jee glo-bal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fraternidade humana",
+            "english": "Human fraternity",
+            "phoneticTranscription": "Fra-ter-nee-da-jee oo-ma-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Utopia ou distopia",
+            "english": "Utopia or dystopia",
+            "phoneticTranscription": "Oo-to-pyah ow dees-to-pyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Destino comum",
+            "english": "Common destiny",
+            "phoneticTranscription": "Des-chee-noo ko-moon",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Esperança no futuro",
+            "english": "Hope in the future",
+            "phoneticTranscription": "Es-pe-han-sa noo foo-too-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Evolução consciente",
+            "english": "Conscious evolution",
+            "phoneticTranscription": "E-vo-loo-sown kon-syen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Novos horizontes",
+            "english": "New horizons",
+            "phoneticTranscription": "No-voos o-ree-zon-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Era da sabedoria",
+            "english": "Age of wisdom",
+            "phoneticTranscription": "E-ra da sa-be-do-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Unidade na diversidade",
+            "english": "Unity in diversity",
+            "phoneticTranscription": "Oo-nee-da-jee na jee-ver-see-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Harmonia universal",
+            "english": "Universal harmony",
+            "phoneticTranscription": "Ar-mo-nyah oo-nee-ver-sal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Luz no fim do túnel",
+            "english": "Light at the end of the tunnel",
+            "phoneticTranscription": "Loos noo feem doo too-nel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Grandiosidade",
+            "english": "Grandeur/Grandiosity",
+            "phoneticTranscription": "Gran-jyo-zee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Perpetuidade",
+            "english": "Perpetuity / Eternity",
+            "phoneticTranscription": "Per-pe-twee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Meta alcançada",
+            "english": "Goal achieved",
+            "phoneticTranscription": "Me-ta al-kan-sa-da",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Pretender",
+        "correctVersion": "Means 'To intend'. For 'To pretend', use 'Fingir'.",
+        "explanation": "Trap level: High"
+    }
+}

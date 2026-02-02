@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a1_m07",
+    "theme": "Nature, Animals & Weather",
+    "order": 7,
+    "lessons": [
+        {
+            "targetText": "Natureza",
+            "english": "Nature",
+            "phoneticTranscription": "Na-too-re-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Animal",
+            "english": "Animal",
+            "phoneticTranscription": "A-nee-mal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cachorro",
+            "english": "Dog",
+            "phoneticTranscription": "Ka-sho-hoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gato",
+            "english": "Cat",
+            "phoneticTranscription": "Ga-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pássaro",
+            "english": "Bird",
+            "phoneticTranscription": "Pa-sa-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sardinha",
+            "english": "Sardine",
+            "phoneticTranscription": "Sar-jee-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cavalo",
+            "english": "Horse",
+            "phoneticTranscription": "Ka-va-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vaca",
+            "english": "Cow",
+            "phoneticTranscription": "Va-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Porco",
+            "english": "Pig",
+            "phoneticTranscription": "Por-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Galinha",
+            "english": "Chicken",
+            "phoneticTranscription": "Ga-lee-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Leão",
+            "english": "Lion",
+            "phoneticTranscription": "Le-own",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tigre",
+            "english": "Tiger",
+            "phoneticTranscription": "Chee-gree",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Elefante",
+            "english": "Elephant",
+            "phoneticTranscription": "E-le-fan-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Macaco",
+            "english": "Monkey",
+            "phoneticTranscription": "Ma-ka-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cobra",
+            "english": "Snake",
+            "phoneticTranscription": "Ko-brah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inseto",
+            "english": "Insect",
+            "phoneticTranscription": "In-se-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Árvore",
+            "english": "Tree",
+            "phoneticTranscription": "Ar-vo-ree",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Flor",
+            "english": "Flower",
+            "phoneticTranscription": "Flor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Planta",
+            "english": "Plant",
+            "phoneticTranscription": "Plan-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Grama",
+            "english": "Grass",
+            "phoneticTranscription": "Gra-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Floresta",
+            "english": "Forest",
+            "phoneticTranscription": "Flo-res-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pico",
+            "english": "Peak",
+            "phoneticTranscription": "Pee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Riacho",
+            "english": "Stream",
+            "phoneticTranscription": "Ree-ah-shoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lagoa",
+            "english": "Lagoon",
+            "phoneticTranscription": "La-go-ah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mar",
+            "english": "Sea",
+            "phoneticTranscription": "Mar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Oceano",
+            "english": "Ocean",
+            "phoneticTranscription": "O-se-a-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ilha",
+            "english": "Island",
+            "phoneticTranscription": "Ee-lya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Céu",
+            "english": "Sky",
+            "phoneticTranscription": "Se-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sol",
+            "english": "Sun",
+            "phoneticTranscription": "Sol",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lua",
+            "english": "Moon",
+            "phoneticTranscription": "Loo-ah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estrela",
+            "english": "Star",
+            "phoneticTranscription": "Es-tre-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nuvem",
+            "english": "Cloud",
+            "phoneticTranscription": "Noo-vehm",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Chuva",
+            "english": "Rain",
+            "phoneticTranscription": "Shoo-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vento",
+            "english": "Wind",
+            "phoneticTranscription": "Ven-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Neve",
+            "english": "Snow",
+            "phoneticTranscription": "Ne-vee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gelo",
+            "english": "Ice",
+            "phoneticTranscription": "Zhe-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tempestade",
+            "english": "Storm",
+            "phoneticTranscription": "Tem-pes-ta-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trovão",
+            "english": "Thunder",
+            "phoneticTranscription": "Tro-vown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Relâmpago",
+            "english": "Lightning",
+            "phoneticTranscription": "Re-lam-pa-goo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clima",
+            "english": "Climate/Weather",
+            "phoneticTranscription": "Klee-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Calor",
+            "english": "Heat",
+            "phoneticTranscription": "Ka-lor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gélido",
+            "english": "Freezing",
+            "phoneticTranscription": "Zhe-lee-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Umidade",
+            "english": "Humidity",
+            "phoneticTranscription": "Oo-mee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Seco",
+            "english": "Dry",
+            "phoneticTranscription": "Se-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Molhado",
+            "english": "Wet",
+            "phoneticTranscription": "Mo-lya-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Terra",
+            "english": "Earth/Soil",
+            "phoneticTranscription": "Te-ha",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pedra",
+            "english": "Stone",
+            "phoneticTranscription": "Pe-dra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Areia",
+            "english": "Sand",
+            "phoneticTranscription": "A-ray-ya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ouro",
+            "english": "Gold",
+            "phoneticTranscription": "Ow-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prata",
+            "english": "Silver",
+            "phoneticTranscription": "Pra-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Meio ambiente",
+            "english": "Environment",
+            "phoneticTranscription": "May-oo am-byen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ecosistema",
+            "english": "Ecosystem",
+            "phoneticTranscription": "E-ko-sis-te-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Planeta",
+            "english": "Planet",
+            "phoneticTranscription": "Pla-ne-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mundo",
+            "english": "World",
+            "phoneticTranscription": "Moon-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Espaço",
+            "english": "Space",
+            "phoneticTranscription": "Es-pa-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Universo",
+            "english": "Universe",
+            "phoneticTranscription": "Oo-nee-ver-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nascer do sol",
+            "english": "Sunrise",
+            "phoneticTranscription": "Nas-ser doo sol",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pôr do sol",
+            "english": "Sunset",
+            "phoneticTranscription": "Por doo sol",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ar",
+            "english": "Air",
+            "phoneticTranscription": "Ar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fogo",
+            "english": "Fire",
+            "phoneticTranscription": "Fo-goo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fumaça",
+            "english": "Smoke",
+            "phoneticTranscription": "Foo-ma-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Claridade",
+            "english": "Brightness",
+            "phoneticTranscription": "Kla-ree-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sombra",
+            "english": "Shadow",
+            "phoneticTranscription": "Som-bra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Caminho",
+            "english": "Path",
+            "phoneticTranscription": "Ka-mee-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prado",
+            "english": "Meadow",
+            "phoneticTranscription": "Pra-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fazenda",
+            "english": "Farm",
+            "phoneticTranscription": "Fa-zen-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Deserto",
+            "english": "Desert",
+            "phoneticTranscription": "De-zer-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Selva",
+            "english": "Jungle",
+            "phoneticTranscription": "Sel-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Onda",
+            "english": "Wave",
+            "phoneticTranscription": "On-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Maré",
+            "english": "Tide",
+            "phoneticTranscription": "Ma-re",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Costa",
+            "english": "Coast",
+            "phoneticTranscription": "Kos-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Baía",
+            "english": "Bay",
+            "phoneticTranscription": "Ba-ee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cascata",
+            "english": "Waterfall",
+            "phoneticTranscription": "Kas-ka-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vulcão",
+            "english": "Volcano",
+            "phoneticTranscription": "Vool-kown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Terremoto",
+            "english": "Earthquake",
+            "phoneticTranscription": "Te-he-mo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Temporada",
+            "english": "Season",
+            "phoneticTranscription": "Tem-po-ra-dah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inverno",
+            "english": "Winter",
+            "phoneticTranscription": "In-ver-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Verão",
+            "english": "Summer",
+            "phoneticTranscription": "Ve-rown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Outono",
+            "english": "Autumn",
+            "phoneticTranscription": "Ow-to-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Primavera",
+            "english": "Spring",
+            "phoneticTranscription": "Pree-ma-ve-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bicho",
+            "english": "Critter/Beast",
+            "phoneticTranscription": "Bee-shoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Formiga",
+            "english": "Ant",
+            "phoneticTranscription": "For-mee-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Abelha",
+            "english": "Bee",
+            "phoneticTranscription": "A-be-lya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aranha",
+            "english": "Spider",
+            "phoneticTranscription": "A-ra-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Borboleta",
+            "english": "Butterfly",
+            "phoneticTranscription": "Bor-bo-le-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mosquito",
+            "english": "Mosquito",
+            "phoneticTranscription": "Mos-kee-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rato",
+            "english": "Mouse/Rat",
+            "phoneticTranscription": "Ha-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coelho",
+            "english": "Rabbit",
+            "phoneticTranscription": "Ko-e-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tartaruga",
+            "english": "Turtle",
+            "phoneticTranscription": "Tar-ta-roo-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Jacaré",
+            "english": "Alligator",
+            "phoneticTranscription": "Zha-ka-re",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Urso",
+            "english": "Bear",
+            "phoneticTranscription": "Oor-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lobo",
+            "english": "Wolf",
+            "phoneticTranscription": "Lo-boo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Raposa",
+            "english": "Fox",
+            "phoneticTranscription": "Ra-po-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cervo",
+            "english": "Deer",
+            "phoneticTranscription": "Ser-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Baleia",
+            "english": "Whale",
+            "phoneticTranscription": "Ba-lay-ya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tubarão",
+            "english": "Shark",
+            "phoneticTranscription": "Too-ba-rown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Golfinho",
+            "english": "Dolphin",
+            "phoneticTranscription": "Gol-fee-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pinguim",
+            "english": "Penguin",
+            "phoneticTranscription": "Peen-gwim",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Proteção",
+            "english": "Protection",
+            "phoneticTranscription": "Pro-te-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Preservar",
+            "english": "To preserve",
+            "phoneticTranscription": "Pre-zer-var",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Esquilo",
+        "correctVersion": "Means 'Squirrel', do not confuse with 'Escola' (School).",
+        "explanation": "Trap level: Medium"
+    }
+}

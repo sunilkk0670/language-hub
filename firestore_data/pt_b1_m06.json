@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_b1_m06",
+    "theme": "Business & Economic Relations",
+    "order": 26,
+    "lessons": [
+        {
+            "targetText": "Macroeconomia global",
+            "english": "Global macroeconomics",
+            "phoneticTranscription": "Ma-kro-e-ko-no-mee-a glo-bal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Microeconomia aplicada",
+            "english": "Applied microeconomics",
+            "phoneticTranscription": "Mee-kro-e-ko-no-mee-a a-plee-ka-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Produto Interno Bruto",
+            "english": "Gross Domestic Product (GDP)",
+            "phoneticTranscription": "Pro-doo-too in-ter-noo broo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Renda per capita",
+            "english": "Income per capita",
+            "phoneticTranscription": "Hen-da per ka-pee-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Balança comercial",
+            "english": "Trade balance",
+            "phoneticTranscription": "Ba-lan-sa ko-mer-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Câmbio flutuante",
+            "english": "Floating exchange rate",
+            "phoneticTranscription": "Kam-byoo floo-too-an-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Política monetária",
+            "english": "Monetary policy",
+            "phoneticTranscription": "Po-lee-chee-ka mo-ne-ta-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Taxa Selic",
+            "english": "Selic Rate (Brazilian base interest)",
+            "phoneticTranscription": "Ta-sha Se-lee-kee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tesouro Nacional",
+            "english": "National Treasury",
+            "phoneticTranscription": "Te-zow-roo na-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arrecadação fiscal",
+            "english": "Tax collection",
+            "phoneticTranscription": "A-he-ka-da-sown fees-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carga tributária",
+            "english": "Tax burden",
+            "phoneticTranscription": "Kar-ga tree-boo-ta-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Isenção de impostos",
+            "english": "Tax exemption",
+            "phoneticTranscription": "Ee-zen-sown de eem-pos-toos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Paraíso fiscal",
+            "english": "Tax haven",
+            "phoneticTranscription": "Pa-ra-ee-zoo fees-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Evasão de divisas",
+            "english": "Capital flight/Currency evasion",
+            "phoneticTranscription": "E-va-zown de jee-vee-zas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lavagem de dinheiro",
+            "english": "Money laundering",
+            "phoneticTranscription": "La-va-zhem de jee-nyay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mercado de capitais",
+            "english": "Capital market",
+            "phoneticTranscription": "Mer-ka-doo de ka-pee-tays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bolsa de Valores",
+            "english": "Stock Exchange",
+            "phoneticTranscription": "Bol-sa de va-lo-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ações ordinárias",
+            "english": "Common shares/Ordinary shares",
+            "phoneticTranscription": "A-sown-ees or-jee-na-ryas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dividendos trimestrais",
+            "english": "Quarterly dividends",
+            "phoneticTranscription": "Jee-vee-den-doos tree-mes-trays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fundos de investimento",
+            "english": "Investment funds",
+            "phoneticTranscription": "Foon-doos de in-ves-chee-men-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Renda fixa e variável",
+            "english": "Fixed and variable income",
+            "phoneticTranscription": "Hen-da fee-ksa e va-ryah-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ativos financeiros",
+            "english": "Financial assets",
+            "phoneticTranscription": "A-chee-voos fee-nan-say-roos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Passivos circulantes",
+            "english": "Current liabilities",
+            "phoneticTranscription": "Pa-see-voos seer-koo-lan-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fluxo de caixa",
+            "english": "Cash flow",
+            "phoneticTranscription": "Floo-ksoo de ka-ee-shah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Demonstrativo contábil",
+            "english": "Accounting statement",
+            "phoneticTranscription": "De-mons-tra-chee-voo kon-ta-beel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Auditagem externa",
+            "english": "External audit",
+            "phoneticTranscription": "Aw-jee-ta-zhem es-ter-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Relatório anual",
+            "english": "Annual report",
+            "phoneticTranscription": "He-la-to-ryoo a-noo-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conselho de administração",
+            "english": "Board of directors",
+            "phoneticTranscription": "Kon-se-lyoo de ad-mee-nees-tra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diretor executivo",
+            "english": "Executive director / CEO",
+            "phoneticTranscription": "Jee-re-tor e-ze-koo-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gestão de pessoas",
+            "english": "People management / HR",
+            "phoneticTranscription": "Zhes-town de pe-so-as",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Capital intelectual",
+            "english": "Intellectual capital",
+            "phoneticTranscription": "Ka-pee-tal in-te-le-ktoo-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Plano de carreira",
+            "english": "Career plan",
+            "phoneticTranscription": "Pla-noo de ka-hay-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Retenção de talentos",
+            "english": "Talent retention",
+            "phoneticTranscription": "He-ten-sown de ta-len-toos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cultura organizacional",
+            "english": "Organizational culture",
+            "phoneticTranscription": "Kool-too-ra or-ga-nee-za-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clima organizacional",
+            "english": "Organizational climate",
+            "phoneticTranscription": "Klee-ma or-ga-nee-za-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Responsabilidade corporativa",
+            "english": "Corporate responsibility",
+            "phoneticTranscription": "Hes-pon-sa-bee-lee-da-jee kor-po-ra-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desenvolvimento gerencial",
+            "english": "Management development",
+            "phoneticTranscription": "De-zen-vol-vee-men-too zhe-ren-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Treinamento especializado",
+            "english": "Specialized training",
+            "phoneticTranscription": "Tray-na-men-too es-pe-sya-lee-za-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mentoria profissional",
+            "english": "Professional mentoring",
+            "phoneticTranscription": "Men-to-ryah pro-fee-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consultoria estratégica",
+            "english": "Strategic consulting",
+            "phoneticTranscription": "Kon-sool-to-ryah es-tra-te-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pesquisa de mercado",
+            "english": "Market research",
+            "phoneticTranscription": "Pes-kee-za de mer-ka-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Análise SWOT",
+            "english": "SWOT Analysis",
+            "phoneticTranscription": "A-na-lee-zee fow-fah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nicho de mercado",
+            "english": "Market niche",
+            "phoneticTranscription": "Nee-shoo de mer-ka-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Segmentação de mercado",
+            "english": "Market segmentation",
+            "phoneticTranscription": "Seg-men-ta-sown de mer-ka-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Posicionamento de marca",
+            "english": "Brand positioning",
+            "phoneticTranscription": "Po-zee-syo-na-men-too de mar-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Identidade visual",
+            "english": "Visual identity",
+            "phoneticTranscription": "Ee-den-chee-da-jee vee-zoo-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Canais de distribuição",
+            "english": "Distribution channels",
+            "phoneticTranscription": "Ka-nah-ees de dees-tree-bwee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Logística integrada",
+            "english": "Integrated logistics",
+            "phoneticTranscription": "Lo-zhees-chee-ka in-te-gra-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cadeia de suprimentos",
+            "english": "Supply chain",
+            "phoneticTranscription": "Ka-day-a de soo-pree-men-toos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gestão de estoques",
+            "english": "Inventory management",
+            "phoneticTranscription": "Zhes-town de es-to-kees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comércio atacadista",
+            "english": "Wholesale trade",
+            "phoneticTranscription": "Ko-mer-syoo a-ta-ka-jees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comércio varejista",
+            "english": "Retail trade",
+            "phoneticTranscription": "Ko-mer-syoo va-re-zhees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Franquia empresarial",
+            "english": "Business franchise",
+            "phoneticTranscription": "Fran-kee-a em-pre-sa-ryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Licenciamento de marca",
+            "english": "Brand licensing",
+            "phoneticTranscription": "Lee-sen-sya-men-too de mar-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Propriedade comercial",
+            "english": "Commercial property",
+            "phoneticTranscription": "Pro-prye-da-jee ko-mer-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arrendamento mercantil",
+            "english": "Leasing",
+            "phoneticTranscription": "A-hen-da-men-too mer-kan-cheel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Contrato de prestação",
+            "english": "Service contract",
+            "phoneticTranscription": "Kon-tra-too de pres-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cláusula de rescisão",
+            "english": "Termination clause",
+            "phoneticTranscription": "Klaw-zoo-la de hes-see-zown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Indenização trabalhista",
+            "english": "Labor compensation",
+            "phoneticTranscription": "In-de-nee-za-sown tra-ba-lyees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acordo extrajudicial",
+            "english": "Out-of-court settlement",
+            "phoneticTranscription": "A-kor-doo es-tra-zhoo-jee-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mediação e arbitragem",
+            "english": "Mediation and arbitration",
+            "phoneticTranscription": "Me-jya-sown e ar-bee-tra-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Concorrência desleal",
+            "english": "Unfair competition",
+            "phoneticTranscription": "Kon-ko-hen-syah des-le-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Propriedade intelectual",
+            "english": "Intellectual property",
+            "phoneticTranscription": "Pro-prye-da-jee in-te-le-ktoo-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direito de autor",
+            "english": "Copyright",
+            "phoneticTranscription": "Jee-ray-too de aw-tor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Marca registrada",
+            "english": "Registered trademark",
+            "phoneticTranscription": "Mar-ka he-zhees-tra-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Segredo industrial",
+            "english": "Trade secret",
+            "phoneticTranscription": "Se-gre-doo in-doos-tryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Patente de invenção",
+            "english": "Invention patent",
+            "phoneticTranscription": "Pa-ten-chee de in-ven-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inovação tecnológica",
+            "english": "Technological innovation",
+            "phoneticTranscription": "Ee-no-va-sown tek-no-lo-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Transferência de tecnologia",
+            "english": "Technology transfer",
+            "phoneticTranscription": "Trans-fe-ren-syah de tek-no-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Intercâmbio comercial",
+            "english": "Trade exchange",
+            "phoneticTranscription": "In-ter-kam-byoo ko-mer-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Globalização econômica",
+            "english": "Economic globalization",
+            "phoneticTranscription": "Glo-ba-lee-za-sown e-ko-no-mee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Blocos econômicos",
+            "english": "Economic blocs",
+            "phoneticTranscription": "Blo-koos e-ko-no-mee-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mercado Comum",
+            "english": "Common Market (Mercosul)",
+            "phoneticTranscription": "Mer-ka-doo Ko-moon",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "União Europeia",
+            "english": "European Union",
+            "phoneticTranscription": "Oo-nyown E-oo-ro-pay-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Livre comércio",
+            "english": "Free trade",
+            "phoneticTranscription": "Lee-vree ko-mer-syoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Barreiras alfandegárias",
+            "english": "Customs barriers",
+            "phoneticTranscription": "Ba-hay-ras al-fan-de-ga-ryas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tarifas de importação",
+            "english": "Import tariffs",
+            "phoneticTranscription": "Ta-ree-fas de eem-por-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Subsídios governamentais",
+            "english": "Government subsidies",
+            "phoneticTranscription": "Soob-see-jyoos go-ver-na-men-tays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dumping comercial",
+            "english": "Commercial dumping",
+            "phoneticTranscription": "Doom-peen ko-mer-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Protecionismo",
+            "english": "Protectionism",
+            "phoneticTranscription": "Pro-te-syo-neez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sanções econômicas",
+            "english": "Economic sanctions",
+            "phoneticTranscription": "San-sown-ees e-ko-no-mee-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Embargo comercial",
+            "english": "Trade embargo",
+            "phoneticTranscription": "Em-bar-goo ko-mer-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Corpo diplomático",
+            "english": "Diplomatic corps",
+            "phoneticTranscription": "Kor-poo jee-plo-ma-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tratado de amizade",
+            "english": "Friendship treaty",
+            "phoneticTranscription": "Tra-ta-doo de a-mee-za-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tratado multilateral",
+            "english": "Multilateral treaty",
+            "phoneticTranscription": "Tra-ta-doo mool-chee-la-te-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Organização Mundial",
+            "english": "World Organization (WTO/OMC)",
+            "phoneticTranscription": "Or-ga-nee-za-sown moon-jyal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fundo Monetário",
+            "english": "Monetary Fund (IMF)",
+            "phoneticTranscription": "Foon-doo mo-ne-ta-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Banco Mundial",
+            "english": "World Bank",
+            "phoneticTranscription": "Ban-koo moon-jyal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Socorro internacional",
+            "english": "International relief/aid",
+            "phoneticTranscription": "So-ko-hoo in-ter-na-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cooperação internacional",
+            "english": "International cooperation",
+            "phoneticTranscription": "Koo-pe-ra-sown in-ter-na-syo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desenvolvimento regional",
+            "english": "Regional development",
+            "phoneticTranscription": "De-zen-vol-vee-men-too He-zhyo-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Infraestrutura urbana",
+            "english": "Urban infrastructure",
+            "phoneticTranscription": "In-fra-es-troo-too-ra oor-ba-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Planejamento urbano",
+            "english": "Urban planning",
+            "phoneticTranscription": "Pla-ne-zha-men-too oor-ba-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Infraestrutura sanitária",
+            "english": "Sanitary infrastructure",
+            "phoneticTranscription": "In-fra-es-troo-too-ra sa-nee-ta-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Habitação popular",
+            "english": "Public housing",
+            "phoneticTranscription": "A-bee-ta-sown po-poo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Segurança pública",
+            "english": "Public safety",
+            "phoneticTranscription": "Se-goo-ran-sa poo-blee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Serviços essenciais",
+            "english": "Essential services",
+            "phoneticTranscription": "Ser-vee-soos e-sen-syays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bem comum",
+            "english": "Common good",
+            "phoneticTranscription": "Bem ko-moon",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Interesse público",
+            "english": "Public interest",
+            "phoneticTranscription": "In-te-re-see poo-blee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vontade política",
+            "english": "Political will",
+            "phoneticTranscription": "Von-ta-jee po-lee-chee-ka",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Ações",
+        "correctVersion": "Means 'Shares/Stocks' (finance) or 'Actions'. For 'Deeds (heroic)', use 'Feitos' or 'Proezas'.",
+        "explanation": "Trap level: Low"
+    }
+}

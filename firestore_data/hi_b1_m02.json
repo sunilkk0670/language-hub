@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_b1_m02",
+    "language": "hi",
+    "level": "b1",
+    "theme": "Governance, Law & Public Administration",
+    "order": 22,
+    "lessons": [
+        {
+            "word": "संविधान",
+            "translation": "Constitution",
+            "phonetic": "Samvidhan"
+        },
+        {
+            "word": "गणतंत्र",
+            "translation": "Republic",
+            "phonetic": "Ganatantra"
+        },
+        {
+            "word": "प्रजातंत्र",
+            "translation": "Democracy / Rule of People",
+            "phonetic": "Prajatantra"
+        },
+        {
+            "word": "संसद",
+            "translation": "Parliament",
+            "phonetic": "Sansad"
+        },
+        {
+            "word": "विधायिका",
+            "translation": "Legislature",
+            "phonetic": "Vidhayika"
+        },
+        {
+            "word": "कार्यपालिका",
+            "translation": "Executive",
+            "phonetic": "Karyapalika"
+        },
+        {
+            "word": "न्यायपालिका",
+            "translation": "Judiciary",
+            "phonetic": "Nyayapalika"
+        },
+        {
+            "word": "प्रस्तावना",
+            "translation": "Preamble",
+            "phonetic": "Prastavana"
+        },
+        {
+            "word": "संशोधन",
+            "translation": "Amendment",
+            "phonetic": "Sanshodhan"
+        },
+        {
+            "word": "अधिनियम",
+            "translation": "Act / Legislation",
+            "phonetic": "Adhiniyam"
+        },
+        {
+            "word": "विधेयक",
+            "translation": "Bill (Legislative)",
+            "phonetic": "Vidhayak"
+        },
+        {
+            "word": "विधि-खण्ड",
+            "translation": "Legal Section / Article",
+            "phonetic": "Vidhi-khand"
+        },
+        {
+            "word": "कोष्ठक",
+            "translation": "Schedule / Table (Formal)",
+            "phonetic": "Koshthak"
+        },
+        {
+            "word": "अध्यादेश",
+            "translation": "Ordinance",
+            "phonetic": "Adhyadesh"
+        },
+        {
+            "word": "प्रोटोकॉल",
+            "translation": "Protocol",
+            "phonetic": "Protocol"
+        },
+        {
+            "word": "प्रशासन",
+            "translation": "Administration",
+            "phonetic": "Prashashan"
+        },
+        {
+            "word": "शासन",
+            "translation": "Governance / Rule",
+            "phonetic": "Shashan"
+        },
+        {
+            "word": "राष्ट्राध्यक्ष",
+            "translation": "Head of State / President",
+            "phonetic": "Rashtradhyaksh"
+        },
+        {
+            "word": "उपराष्ट्रपति",
+            "translation": "Vice President",
+            "phonetic": "Uprashtrapati"
+        },
+        {
+            "word": "प्रधानमंत्री",
+            "translation": "Prime Minister",
+            "phonetic": "Pradhanmantri"
+        },
+        {
+            "word": "मुख्यमंत्री",
+            "translation": "Chief Minister",
+            "phonetic": "Mukhyamantri"
+        },
+        {
+            "word": "राज्यपाल",
+            "translation": "Governor",
+            "phonetic": "Rajyapal"
+        },
+        {
+            "word": "न्यायाधीश",
+            "translation": "Judge",
+            "phonetic": "Nyayadhish"
+        },
+        {
+            "word": "न्याय-पद्धति",
+            "translation": "Legal System / Methodology",
+            "phonetic": "Nyay-paddhati"
+        },
+        {
+            "word": "विधिवेत्ता",
+            "translation": "Legal Expert / Jurist",
+            "phonetic": "Vidhivetta"
+        },
+        {
+            "word": "अधिसमया",
+            "translation": "Advocate / Lawyer",
+            "phonetic": "Adhivakta"
+        },
+        {
+            "word": "न्यायालय",
+            "translation": "Court of Law",
+            "phonetic": "Nyayalaya"
+        },
+        {
+            "word": "सर्वोच्च न्यायालय",
+            "translation": "Supreme Court",
+            "phonetic": "Sarvochcha Nyayalaya"
+        },
+        {
+            "word": "उच्च न्यायालय",
+            "translation": "High Court",
+            "phonetic": "Uchcha Nyayalaya"
+        },
+        {
+            "word": "जनहित याचिका",
+            "translation": "Public Interest Litigation",
+            "phonetic": "Janhit yachika"
+        },
+        {
+            "word": "नागरिकता",
+            "translation": "Citizenship",
+            "phonetic": "Nagarikta"
+        },
+        {
+            "word": "मौलिक अधिकार",
+            "translation": "Fundamental Rights",
+            "phonetic": "Maulik adhikar"
+        },
+        {
+            "word": "उत्तरवादिता",
+            "translation": "Accountability (Sanskrit Formal)",
+            "phonetic": "Uttaravadita"
+        },
+        {
+            "word": "निर्वाचन",
+            "translation": "Election",
+            "phonetic": "Nirvachan"
+        },
+        {
+            "word": "निर्वाचक",
+            "translation": "Voter / Elector",
+            "phonetic": "Nirvachak"
+        },
+        {
+            "word": "सम्मति",
+            "translation": "Vote / Consent (Formal)",
+            "phonetic": "Sammati"
+        },
+        {
+            "word": "मतदान",
+            "translation": "Voting / Polling",
+            "phonetic": "Matdan"
+        },
+        {
+            "word": "प्रत्याशी",
+            "translation": "Candidate",
+            "phonetic": "Pratyashi"
+        },
+        {
+            "word": "बहुमत",
+            "translation": "Majority",
+            "phonetic": "Bahumat"
+        },
+        {
+            "word": "अल्पमत",
+            "translation": "Minority (Political)",
+            "phonetic": "Alpamat"
+        },
+        {
+            "word": "गठबंधन",
+            "translation": "Alliance / Coalition",
+            "phonetic": "Gathbandhan"
+        },
+        {
+            "word": "सत्तारूढ़",
+            "translation": "Ruling / In power",
+            "phonetic": "Sattarudh"
+        },
+        {
+            "word": "विपक्ष",
+            "translation": "Opposition",
+            "phonetic": "Vipaksh"
+        },
+        {
+            "word": "पद-त्याग",
+            "translation": "Resignation from post",
+            "phonetic": "Pad-tyag"
+        },
+        {
+            "word": "शपथ",
+            "translation": "Oath / Affirmation",
+            "phonetic": "Shapath"
+        },
+        {
+            "word": "सचिवालय",
+            "translation": "Secretariat",
+            "phonetic": "Sachivalay"
+        },
+        {
+            "word": "मंत्रालय",
+            "translation": "Ministry",
+            "phonetic": "Mantralay"
+        },
+        {
+            "word": "प्रभाग",
+            "translation": "Division / Department section",
+            "phonetic": "Prabhag"
+        },
+        {
+            "word": "विज्ञप्ति",
+            "translation": "Official Communique / Notification",
+            "phonetic": "Vigyapti"
+        },
+        {
+            "word": "राजपत्र",
+            "translation": "Gazette",
+            "phonetic": "Rajpatra"
+        },
+        {
+            "word": "आयोग",
+            "translation": "Commission",
+            "phonetic": "Ayog"
+        },
+        {
+            "word": "प्राधिकरण",
+            "translation": "Authority",
+            "phonetic": "Pradhikaran"
+        },
+        {
+            "word": "निगम",
+            "translation": "Corporation",
+            "phonetic": "Nigam"
+        },
+        {
+            "word": "परिषद",
+            "translation": "Council",
+            "phonetic": "Parishad"
+        },
+        {
+            "word": "समिति",
+            "translation": "Committee",
+            "phonetic": "Samiti"
+        },
+        {
+            "word": "नगरपालिका",
+            "translation": "Municipality",
+            "phonetic": "Nagarpalika"
+        },
+        {
+            "word": "नगर निगम",
+            "translation": "Municipal Corporation",
+            "phonetic": "Nagar Nigam"
+        },
+        {
+            "word": "पंचायती राज",
+            "translation": "Village Self-Governance",
+            "phonetic": "Panchayati Raj"
+        },
+        {
+            "word": "परिक्षेत्र",
+            "translation": "Zone / Admin Circle",
+            "phonetic": "Parikshetra"
+        },
+        {
+            "word": "पदाधिकारी",
+            "translation": "Office-bearer / Official",
+            "phonetic": "Padadhikari"
+        },
+        {
+            "word": "राज-कार्मिक",
+            "translation": "State Staff / Employee",
+            "phonetic": "Raj-karmik"
+        },
+        {
+            "word": "भ्रष्टाचार",
+            "translation": "Corruption",
+            "phonetic": "Bhrashtachar"
+        },
+        {
+            "word": "पारदर्शिता",
+            "translation": "Transparency",
+            "phonetic": "Pardarshita"
+        },
+        {
+            "word": "उत्तरदेही",
+            "translation": "Accountability (High Formal Sanskritized context)",
+            "phonetic": "Jawabdehi"
+        },
+        {
+            "word": "जनगणना",
+            "translation": "Census",
+            "phonetic": "Janganana"
+        },
+        {
+            "word": "कार्यनीति",
+            "translation": "Policy / Strategy",
+            "phonetic": "Karyaneeti"
+        },
+        {
+            "word": "बृहत-योजना",
+            "translation": "Grand Project / Plan",
+            "phonetic": "Brihat-yojana"
+        },
+        {
+            "word": "कार्यान्वयन",
+            "translation": "Implementation",
+            "phonetic": "Karyanvayan"
+        },
+        {
+            "word": "सशक्तिकरण",
+            "translation": "Empowerment",
+            "phonetic": "Sashaktikaran"
+        },
+        {
+            "word": "प्रभाग-नियमन",
+            "translation": "Reservation / Quota regulation",
+            "phonetic": "Prabhag-niyaman"
+        },
+        {
+            "word": "समानता",
+            "translation": "Equality",
+            "phonetic": "Samanata"
+        },
+        {
+            "word": "स्वतंत्रता",
+            "translation": "Freedom / Liberty",
+            "phonetic": "Swatantrata"
+        },
+        {
+            "word": "अविभाज्य",
+            "translation": "Indivisible",
+            "phonetic": "Avibhajya"
+        },
+        {
+            "word": "संप्रभुता",
+            "translation": "Sovereignty",
+            "phonetic": "Samprabhuta"
+        },
+        {
+            "word": "अविभाज्यता",
+            "translation": "Indivisibility / Integrity",
+            "phonetic": "Avibhajyata"
+        },
+        {
+            "word": "धर्मनिरपेक्ष",
+            "translation": "Secular",
+            "phonetic": "Dharmanirpekshta"
+        },
+        {
+            "word": "समाजवाद",
+            "translation": "Socialism",
+            "phonetic": "Samajvaad"
+        },
+        {
+            "word": "पूंजीवाद",
+            "translation": "Capitalism",
+            "phonetic": "Poonjivaad"
+        },
+        {
+            "word": "अर्थव्यवस्था",
+            "translation": "Economy",
+            "phonetic": "Arthavyavastha"
+        },
+        {
+            "word": "आयव्ययक",
+            "translation": "Budget (Formal Sanskrit)",
+            "phonetic": "Ayavyayak"
+        },
+        {
+            "word": "राजस्व",
+            "translation": "Revenue",
+            "phonetic": "Rajaswa"
+        },
+        {
+            "word": "राजकर",
+            "translation": "State Tax",
+            "phonetic": "Rajkar"
+        },
+        {
+            "word": "अधिभार",
+            "translation": "Surcharge / Excess fee",
+            "phonetic": "Adhibhar"
+        },
+        {
+            "word": "अनुदान",
+            "translation": "Grant / Subvention",
+            "phonetic": "Anudan"
+        },
+        {
+            "word": "अभ्युदय",
+            "translation": "Ascension / Development (Formal)",
+            "phonetic": "Abhyuday"
+        },
+        {
+            "word": "परमकल्याण",
+            "translation": "Supreme Welfare",
+            "phonetic": "Paramkalyan"
+        },
+        {
+            "word": "अभिरक्षा",
+            "translation": "Custody / Protection",
+            "phonetic": "Abhiraksha"
+        },
+        {
+            "word": "रक्षा मन्त्रालय",
+            "translation": "Ministry of Defence",
+            "phonetic": "Raksha mantralay"
+        },
+        {
+            "word": "गृह मन्त्रालय",
+            "translation": "Ministry of Home Affairs",
+            "phonetic": "Grih mantralay"
+        },
+        {
+            "word": "विदेशी मामले",
+            "translation": "Foreign Affairs",
+            "phonetic": "Videshi mamle"
+        },
+        {
+            "word": "राजनयिक",
+            "translation": "Diplomatic / Diplomat",
+            "phonetic": "Rajnayik"
+        },
+        {
+            "word": "संधि",
+            "translation": "Treaty / Alliance",
+            "phonetic": "Sandhi"
+        },
+        {
+            "word": "समझौता",
+            "translation": "Agreements",
+            "phonetic": "Samjhauta"
+        },
+        {
+            "word": "प्रतिबंध",
+            "translation": "Ban / Restriction",
+            "phonetic": "Pratibandh"
+        },
+        {
+            "word": "उल्लंघन",
+            "translation": "Violation / Breach",
+            "phonetic": "Ullanghan"
+        },
+        {
+            "word": "दोषी",
+            "translation": "Guilty / Convict",
+            "phonetic": "Doshi"
+        },
+        {
+            "word": "निर्दोष",
+            "translation": "Innocent",
+            "phonetic": "Nirdosh"
+        },
+        {
+            "word": "कारावास",
+            "translation": "Imprisonment",
+            "phonetic": "Karavas"
+        },
+        {
+            "word": "मृत्युदंड",
+            "translation": "Death penalty",
+            "phonetic": "Mrityudand"
+        },
+        {
+            "word": "न्याय",
+            "translation": "Justice",
+            "phonetic": "Nyaya"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Vidhivakta' Voice",
+        "question": "If you are in a Hindi court and someone introduces themselves as a 'Vidhivakta' (विधिसमया), what is their profession?",
+        "options": [
+            "A Judge",
+            "A Lawyer",
+            "A Police Officer",
+            "A Court Clerk"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Vidhi' means law and 'Vakta' means speaker. A 'Vidhivakta' is a formal and pure Hindi term for an advocate or lawyer, distinct from the more common 'Vakil'."
+    }
+}

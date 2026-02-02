@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a1_m03",
+    "language": "hi",
+    "level": "a1",
+    "theme": "Family, People & Relationships",
+    "order": 3,
+    "lessons": [
+        {
+            "word": "दादा",
+            "translation": "Paternal Grandfather",
+            "phonetic": "Dada"
+        },
+        {
+            "word": "दादी",
+            "translation": "Paternal Grandmother",
+            "phonetic": "Dadi"
+        },
+        {
+            "word": "नाना",
+            "translation": "Maternal Grandfather",
+            "phonetic": "Nana"
+        },
+        {
+            "word": "नानी",
+            "translation": "Maternal Grandmother",
+            "phonetic": "Nani"
+        },
+        {
+            "word": "चाचा",
+            "translation": "Paternal Uncle (Father's younger brother)",
+            "phonetic": "Chacha"
+        },
+        {
+            "word": "चाची",
+            "translation": "Paternal Aunt (Chacha's wife)",
+            "phonetic": "Chachi"
+        },
+        {
+            "word": "ताऊ",
+            "translation": "Paternal Uncle (Father's elder brother)",
+            "phonetic": "Tau"
+        },
+        {
+            "word": "ताई",
+            "translation": "Paternal Aunt (Tau's wife)",
+            "phonetic": "Tai"
+        },
+        {
+            "word": "बुआ",
+            "translation": "Paternal Aunt (Father's sister)",
+            "phonetic": "Bua"
+        },
+        {
+            "word": "फूफा",
+            "translation": "Paternal Uncle (Bua's husband)",
+            "phonetic": "Fufa"
+        },
+        {
+            "word": "मामा",
+            "translation": "Maternal Uncle (Mother's brother)",
+            "phonetic": "Mama"
+        },
+        {
+            "word": "मामी",
+            "translation": "Maternal Aunt (Mama's wife)",
+            "phonetic": "Mami"
+        },
+        {
+            "word": "मौसी",
+            "translation": "Maternal Aunt (Mother's sister)",
+            "phonetic": "Mausi"
+        },
+        {
+            "word": "मौसा",
+            "translation": "Maternal Uncle (Mausi's husband)",
+            "phonetic": "Mausa"
+        },
+        {
+            "word": "भांजा",
+            "translation": "Nephew (Sister's son)",
+            "phonetic": "Bhanja"
+        },
+        {
+            "word": "भांजी",
+            "translation": "Niece (Sister's daughter)",
+            "phonetic": "Bhanji"
+        },
+        {
+            "word": "भतीजा",
+            "translation": "Nephew (Brother's son)",
+            "phonetic": "Bhatija"
+        },
+        {
+            "word": "भतीजी",
+            "translation": "Niece (Brother's daughter)",
+            "phonetic": "Bhatiji"
+        },
+        {
+            "word": "पोता",
+            "translation": "Grandson (Son's son)",
+            "phonetic": "Pota"
+        },
+        {
+            "word": "पोती",
+            "translation": "Granddaughter (Son's daughter)",
+            "phonetic": "Poti"
+        },
+        {
+            "word": "नवासा",
+            "translation": "Grandson (Daughter's son)",
+            "phonetic": "Navasa"
+        },
+        {
+            "word": "नवासी",
+            "translation": "Granddaughter (Daughter's daughter)",
+            "phonetic": "Navasi"
+        },
+        {
+            "word": "पति",
+            "translation": "Husband",
+            "phonetic": "Pati"
+        },
+        {
+            "word": "पत्नी",
+            "translation": "Wife",
+            "phonetic": "Patni"
+        },
+        {
+            "word": "ससुर",
+            "translation": "Father-in-law",
+            "phonetic": "Sasur"
+        },
+        {
+            "word": "सास",
+            "translation": "Mother-in-law",
+            "phonetic": "Saas"
+        },
+        {
+            "word": "दामाद",
+            "translation": "Son-in-law",
+            "phonetic": "Damad"
+        },
+        {
+            "word": "बहू",
+            "translation": "Daughter-in-law",
+            "phonetic": "Bahu"
+        },
+        {
+            "word": "देवर",
+            "translation": "Brother-in-law (Husband's younger brother)",
+            "phonetic": "Devar"
+        },
+        {
+            "word": "देवरानी",
+            "translation": "Sister-in-law (Devar's wife)",
+            "phonetic": "Devrani"
+        },
+        {
+            "word": "जेठ",
+            "translation": "Brother-in-law (Husband's elder brother)",
+            "phonetic": "Jeth"
+        },
+        {
+            "word": "जेठानी",
+            "translation": "Sister-in-law (Jeth's wife)",
+            "phonetic": "Jethani"
+        },
+        {
+            "word": "ननद",
+            "translation": "Sister-in-law (Husband's sister)",
+            "phonetic": "Nanad"
+        },
+        {
+            "word": "साला",
+            "translation": "Brother-in-law (Wife's brother)",
+            "phonetic": "Saala"
+        },
+        {
+            "word": "साली",
+            "translation": "Sister-in-law (Wife's sister)",
+            "phonetic": "Saali"
+        },
+        {
+            "word": "समधी",
+            "translation": "Child's father-in-law",
+            "phonetic": "Samdhi"
+        },
+        {
+            "word": "समधन",
+            "translation": "Child's mother-in-law",
+            "phonetic": "Samdhan"
+        },
+        {
+            "word": "पड़ोसी",
+            "translation": "Neighbor",
+            "phonetic": "Padosi"
+        },
+        {
+            "word": "मेहमान",
+            "translation": "Guest",
+            "phonetic": "Mehmaan"
+        },
+        {
+            "word": "रिश्तेदार",
+            "translation": "Relative",
+            "phonetic": "Rishtedar"
+        },
+        {
+            "word": "अजनबी",
+            "translation": "Stranger",
+            "phonetic": "Ajnabi"
+        },
+        {
+            "word": "पड़ोसन",
+            "translation": "Female Neighbor",
+            "phonetic": "Padosan"
+        },
+        {
+            "word": "संगति",
+            "translation": "Company / Association",
+            "phonetic": "Sangati"
+        },
+        {
+            "word": "साथी",
+            "translation": "Partner / Companion",
+            "phonetic": "Saathi"
+        },
+        {
+            "word": "बुजुर्ग",
+            "translation": "Elderly person",
+            "phonetic": "Bujurg"
+        },
+        {
+            "word": "जवान",
+            "translation": "Young person",
+            "phonetic": "Jawan"
+        },
+        {
+            "word": "शिशु",
+            "translation": "Infant",
+            "phonetic": "Shishu"
+        },
+        {
+            "word": "इंसान",
+            "translation": "Human",
+            "phonetic": "Insaan"
+        },
+        {
+            "word": "भीड़",
+            "translation": "Crowd",
+            "phonetic": "Bheed"
+        },
+        {
+            "word": "विवाह",
+            "translation": "Marriage",
+            "phonetic": "Shaadi"
+        },
+        {
+            "word": "रिश्ता",
+            "translation": "Relationship",
+            "phonetic": "Rishta"
+        },
+        {
+            "word": "बचपन",
+            "translation": "Childhood",
+            "phonetic": "Bachpan"
+        },
+        {
+            "word": "यौवन",
+            "translation": "Youth",
+            "phonetic": "Yauvan"
+        },
+        {
+            "word": "बुढ़ापा",
+            "translation": "Old age",
+            "phonetic": "Budhapa"
+        },
+        {
+            "word": "जन्म",
+            "translation": "Birth",
+            "phonetic": "Janm"
+        },
+        {
+            "word": "मृत्यु",
+            "translation": "Death",
+            "phonetic": "Mrityu"
+        },
+        {
+            "word": "पदवी",
+            "translation": "Title / Rank",
+            "phonetic": "Padvee"
+        },
+        {
+            "word": "आयु",
+            "translation": "Age",
+            "phonetic": "Umr"
+        },
+        {
+            "word": "पता",
+            "translation": "Address",
+            "phonetic": "Pata"
+        },
+        {
+            "word": "गाँववाला",
+            "translation": "Villager",
+            "phonetic": "Gaonvala"
+        },
+        {
+            "word": "नगरवाला",
+            "translation": "City dweller",
+            "phonetic": "Shaharvala"
+        },
+        {
+            "word": "मालिक",
+            "translation": "Owner / Boss",
+            "phonetic": "Maalik"
+        },
+        {
+            "word": "नौकर",
+            "translation": "Servant / Helper",
+            "phonetic": "Naukar"
+        },
+        {
+            "word": "किरायेदार",
+            "translation": "Tenant",
+            "phonetic": "Kirayedar"
+        },
+        {
+            "word": "मकान मालिक",
+            "translation": "Landlord",
+            "phonetic": "Makaan Maalik"
+        },
+        {
+            "word": "सहेली",
+            "translation": "Female friend (for females)",
+            "phonetic": "Saheli"
+        },
+        {
+            "word": "सखा",
+            "translation": "Friend / Companion",
+            "phonetic": "Sakha"
+        },
+        {
+            "word": "अरि",
+            "translation": "Enemy / Foe",
+            "phonetic": "Ari"
+        },
+        {
+            "word": "गुरु",
+            "translation": "Teacher / Mentor",
+            "phonetic": "Guru"
+        },
+        {
+            "word": "शिष्य",
+            "translation": "Student / Disciple",
+            "phonetic": "Shishya"
+        },
+        {
+            "word": "परिचित",
+            "translation": "Acquaintance",
+            "phonetic": "Parichit"
+        },
+        {
+            "word": "अकेला",
+            "translation": "Alone",
+            "phonetic": "Akela"
+        },
+        {
+            "word": "साथ",
+            "translation": "Together",
+            "phonetic": "Saath"
+        },
+        {
+            "word": "सहायता",
+            "translation": "Help",
+            "phonetic": "Madad"
+        },
+        {
+            "word": "नेह",
+            "translation": "Affection",
+            "phonetic": "Neh"
+        },
+        {
+            "word": "घृणा",
+            "translation": "Hate",
+            "phonetic": "Nafrat"
+        },
+        {
+            "word": "भरोसा",
+            "translation": "Trust",
+            "phonetic": "Bharosa"
+        },
+        {
+            "word": "धोखा",
+            "translation": "Betrayal",
+            "phonetic": "Dhokha"
+        },
+        {
+            "word": "वादा",
+            "translation": "Promise",
+            "phonetic": "Vaada"
+        },
+        {
+            "word": "जिम्मेदारी",
+            "translation": "Responsibility",
+            "phonetic": "Jimmedari"
+        },
+        {
+            "word": "हक़",
+            "translation": "Right / Entitlement",
+            "phonetic": "Haq"
+        },
+        {
+            "word": "सम्मान",
+            "translation": "Respect",
+            "phonetic": "Samman"
+        },
+        {
+            "word": "अपमान",
+            "translation": "Insult",
+            "phonetic": "Apman"
+        },
+        {
+            "word": "गर्व",
+            "translation": "Pride",
+            "phonetic": "Garv"
+        },
+        {
+            "word": "शर्म",
+            "translation": "Shame",
+            "phonetic": "Sharm"
+        },
+        {
+            "word": "लड़ाई",
+            "translation": "Fight",
+            "phonetic": "Ladayi"
+        },
+        {
+            "word": "झगड़ा",
+            "translation": "Quarrel",
+            "phonetic": "Jhagda"
+        },
+        {
+            "word": "सुलह",
+            "translation": "Reconciliation",
+            "phonetic": "Sulah"
+        },
+        {
+            "word": "माफी",
+            "translation": "Forgiveness",
+            "phonetic": "Maafi"
+        },
+        {
+            "word": "दुआ",
+            "translation": "Blessing / Prayer",
+            "phonetic": "Dua"
+        },
+        {
+            "word": "बददुआ",
+            "translation": "Curse",
+            "phonetic": "Bad-dua"
+        },
+        {
+            "word": "सच्चाई",
+            "translation": "Truth",
+            "phonetic": "Sacchai"
+        },
+        {
+            "word": "झूठ",
+            "translation": "Lie",
+            "phonetic": "Jhooth"
+        },
+        {
+            "word": "ईमानदारी",
+            "translation": "Honesty",
+            "phonetic": "Eemandari"
+        },
+        {
+            "word": "बेईमानी",
+            "translation": "Dishonesty",
+            "phonetic": "Beeimani"
+        },
+        {
+            "word": "साथीदार",
+            "translation": "Partner",
+            "phonetic": "Saathidar"
+        },
+        {
+            "word": "कुल",
+            "translation": "Lineage / Clan",
+            "phonetic": "Kul"
+        },
+        {
+            "word": "वंश",
+            "translation": "Dynasty / Generation",
+            "phonetic": "Vansh"
+        },
+        {
+            "word": "पूर्वज",
+            "translation": "Ancestors",
+            "phonetic": "Purvaj"
+        },
+        {
+            "word": "वारिस",
+            "translation": "Heir",
+            "phonetic": "Waaris"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Bhaiya' Dynamic",
+        "question": "If a woman calls a random shopkeeper 'Bhaiya' (Brother), what is the primary social function of this term in India?",
+        "options": [
+            "She is literally identifying him as her sibling",
+            "She is trying to get a discount by acting like family",
+            "She is establishing a respectful but non-romantic boundary",
+            "She has forgotten his name"
+        ],
+        "correct_answer_index": 2,
+        "explanation": "In Indian culture, family terms like 'Bhaiya' (Brother) or 'Didi' (Sister) are used for strangers to navigate social spaces respectfully. Specifically, for women, it often serves to establish a protective, non-romantic boundary with men in public spaces."
+    }
+}

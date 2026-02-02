@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_b1_m10",
+    "language": "hi",
+    "level": "b1",
+    "theme": "Master Review & Complex Idioms",
+    "order": 30,
+    "lessons": [
+        {
+            "word": "अधोजगत",
+            "translation": "Underworld / Infernal realm",
+            "phonetic": "Adhojagat"
+        },
+        {
+            "word": "ऊर्ध्वजगत",
+            "translation": "Upper world / Celestial realm",
+            "phonetic": "Urdhvajagat"
+        },
+        {
+            "word": "आदि-अंत",
+            "translation": "Beginning and End / Alpha and Omega",
+            "phonetic": "Aadi-ant"
+        },
+        {
+            "word": "अविराम",
+            "translation": "Incessant / Continuous",
+            "phonetic": "Aviram"
+        },
+        {
+            "word": "सर्वोपरि",
+            "translation": "Paramount / Above all",
+            "phonetic": "Sarvopari"
+        },
+        {
+            "word": "परायण",
+            "translation": "Devoted to / Absorbed in",
+            "phonetic": "Parayan"
+        },
+        {
+            "word": "दुर्लभ",
+            "translation": "Rare / Hard to attain",
+            "phonetic": "Durlabh"
+        },
+        {
+            "word": "सुलभ",
+            "translation": "Easy / Readily available",
+            "phonetic": "Sulabh"
+        },
+        {
+            "word": "अतिवृष्टि",
+            "translation": "Excessive rain / Flood",
+            "phonetic": "Ativrishti"
+        },
+        {
+            "word": "अकाल-मृदा",
+            "translation": "Parched Earth / Drought condition",
+            "phonetic": "Akaal-mrida"
+        },
+        {
+            "word": "यथाशक्ति",
+            "translation": "As per one's power",
+            "phonetic": "Yathashakti"
+        },
+        {
+            "word": "यथासंभव",
+            "translation": "As far as possible",
+            "phonetic": "Yathasambhuv"
+        },
+        {
+            "word": "वस्तु-स्थिति",
+            "translation": "Objectivity / Reality",
+            "phonetic": "Vastu-sthiti"
+        },
+        {
+            "word": "अद्वितीय",
+            "translation": "Unique / Matchless",
+            "phonetic": "Advitiya"
+        },
+        {
+            "word": "अविस्मरणीय",
+            "translation": "Unforgettable",
+            "phonetic": "Avismarniya"
+        },
+        {
+            "word": "अकल्पनीय",
+            "translation": "Unimaginable",
+            "phonetic": "Akalpaniya"
+        },
+        {
+            "word": "अकथनीय",
+            "translation": "Ineffable / Unspeakable",
+            "phonetic": "Akathaniya"
+        },
+        {
+            "word": "अतुल्य",
+            "translation": "Incredible / Incomparable",
+            "phonetic": "Atulya"
+        },
+        {
+            "word": "अनुपमेय",
+            "translation": "Unrivaled / Incomparable",
+            "phonetic": "Anupmeya"
+        },
+        {
+            "word": "सर्व-गत",
+            "translation": "Pervasive / Universal",
+            "phonetic": "Sarva-gat"
+        },
+        {
+            "word": "सर्वाधिक",
+            "translation": "Maximum / Most",
+            "phonetic": "Sarvadhik"
+        },
+        {
+            "word": "सर्वांगीण",
+            "translation": "All-round / Holistic",
+            "phonetic": "Sarvangin"
+        },
+        {
+            "word": "सर्वसम्मति",
+            "translation": "Unanimously",
+            "phonetic": "Sarvasammati"
+        },
+        {
+            "word": "अधोमुखी",
+            "translation": "Downward facing / Introverted",
+            "phonetic": "Adhomukhi"
+        },
+        {
+            "word": "ऊर्ध्वमुखी",
+            "translation": "Upward facing / Extroverted",
+            "phonetic": "Urdhvamukhi"
+        },
+        {
+            "word": "प्रतिफलम्",
+            "translation": "Consequence / Result",
+            "phonetic": "Pratifal"
+        },
+        {
+            "word": "प्रतिध्वनि",
+            "translation": "Echo / Resonance",
+            "phonetic": "Pratidhwani"
+        },
+        {
+            "word": "प्रतिलिपि",
+            "translation": "Duplicate / Copy",
+            "phonetic": "Pratilipi"
+        },
+        {
+            "word": "स्पर्धा-शक्ति",
+            "translation": "Competitive Power",
+            "phonetic": "Spardha-shakti"
+        },
+        {
+            "word": "प्रतिशोध",
+            "translation": "Revenge / Retribution",
+            "phonetic": "Pratishodh"
+        },
+        {
+            "word": "प्रतिबोध",
+            "translation": "Awakening / Perception",
+            "phonetic": "Pratibodh"
+        },
+        {
+            "word": "अपरिहार्यता",
+            "translation": "Indispensability / Essentiality",
+            "phonetic": "Apariharyata"
+        },
+        {
+            "word": "ऐच्छिक",
+            "translation": "Optional / Voluntary",
+            "phonetic": "Aichchik"
+        },
+        {
+            "word": "सतर्कता",
+            "translation": "Watchfulness / Precaution",
+            "phonetic": "Satarkata"
+        },
+        {
+            "word": "सजगता",
+            "translation": "Vigilance / Awareness",
+            "phonetic": "Sajagta"
+        },
+        {
+            "word": "कर्मठता",
+            "translation": "Diligent / Working hard",
+            "phonetic": "Karmath-ta"
+        },
+        {
+            "word": "कुशल-प्रावीण्य",
+            "translation": "Skill Proficiency",
+            "phonetic": "Kushal-pravinya"
+        },
+        {
+            "word": "कुशलता",
+            "translation": "Well-being / Competence",
+            "phonetic": "Kushal-ta"
+        },
+        {
+            "word": "तन्मयता",
+            "translation": "Absorption / Single-mindedness",
+            "phonetic": "Tanmay-ta"
+        },
+        {
+            "word": "तल्लीनता",
+            "translation": "Deep absorption",
+            "phonetic": "Tallinta"
+        },
+        {
+            "word": "एकाग्रचित्त",
+            "translation": "Concentrated mind",
+            "phonetic": "Ekagrachitta"
+        },
+        {
+            "word": "निश्चल",
+            "translation": "Unmoving / Steady",
+            "phonetic": "Nishchal"
+        },
+        {
+            "word": "अविचल",
+            "translation": "Unwavering",
+            "phonetic": "Avichal"
+        },
+        {
+            "word": "शुद्ध-आचरण",
+            "translation": "Pure Conduct / High character",
+            "phonetic": "Shuddh-aacharan"
+        },
+        {
+            "word": "दुराचार",
+            "translation": "Bad conduct / Misconduct",
+            "phonetic": "Durachar"
+        },
+        {
+            "word": "अन्याय",
+            "translation": "Injustice",
+            "phonetic": "Anyaya"
+        },
+        {
+            "word": "अत्याचार",
+            "translation": "Atrocity / Oppression",
+            "phonetic": "Atyachar"
+        },
+        {
+            "word": "क्रूरता",
+            "translation": "Cruelty",
+            "phonetic": "Krurta"
+        },
+        {
+            "word": "मृदुता",
+            "translation": "Softness / Gentleness",
+            "phonetic": "Mriduta"
+        },
+        {
+            "word": "सरलता",
+            "translation": "Simplicity",
+            "phonetic": "Saralta"
+        },
+        {
+            "word": "जटिलता",
+            "translation": "Complexity",
+            "phonetic": "Jatil-ta"
+        },
+        {
+            "word": "विविधता",
+            "translation": "Diversity / Variety",
+            "phonetic": "Vividh-ta"
+        },
+        {
+            "word": "एकरूपता",
+            "translation": "Uniformity",
+            "phonetic": "Ekrupta"
+        },
+        {
+            "word": "तुल्यता",
+            "translation": "Equivalence / Equality",
+            "phonetic": "Tulyata"
+        },
+        {
+            "word": "विशिष्टता",
+            "translation": "Specificity / Specialty",
+            "phonetic": "Vishishtata"
+        },
+        {
+            "word": "महत्ता",
+            "translation": "Greatness / Significance",
+            "phonetic": "Mahatta"
+        },
+        {
+            "word": "गौरवमय",
+            "translation": "Majestic / Dignified",
+            "phonetic": "Gauravmay"
+        },
+        {
+            "word": "महिमा",
+            "translation": "Glory / Greatness",
+            "phonetic": "Mahima"
+        },
+        {
+            "word": "सौन्दर्य",
+            "translation": "Beauty",
+            "phonetic": "Saundarya"
+        },
+        {
+            "word": "रक्त-वर्णित्य",
+            "translation": "Grace / Elegance",
+            "phonetic": "Lalitya"
+        },
+        {
+            "word": "रमणीयता",
+            "translation": "Enchantment / Loveliness",
+            "phonetic": "Ramniyata"
+        },
+        {
+            "word": "विस्मय",
+            "translation": "Astonishment / Wonder",
+            "phonetic": "Vismay"
+        },
+        {
+            "word": "प्रशंसा",
+            "translation": "Praise / Appreciation",
+            "phonetic": "Prashansha"
+        },
+        {
+            "word": "अभिनंदन",
+            "translation": "Congratulation / Greeting",
+            "phonetic": "Abhinandan"
+        },
+        {
+            "word": "शुभाकांक्षा",
+            "translation": "Good wishes",
+            "phonetic": "Shubhakanksha"
+        },
+        {
+            "word": "मंगलकार्यना",
+            "translation": "Benevolent wishes",
+            "phonetic": "Mangalkamna"
+        },
+        {
+            "word": "आभार-प्रदर्शन",
+            "translation": "Expression of gratitude",
+            "phonetic": "Aabhar-pradarshan"
+        },
+        {
+            "word": "आभार",
+            "translation": "Obligation / Thanks",
+            "phonetic": "Aabhar"
+        },
+        {
+            "word": "ऋणी",
+            "translation": "Indebted",
+            "phonetic": "Rini"
+        },
+        {
+            "word": "अहसानमंद",
+            "translation": "Grateful (Ur-H common mix)",
+            "phonetic": "Ahsanmand"
+        },
+        {
+            "word": "स्वाभिमान",
+            "translation": "Self-respect",
+            "phonetic": "Swabhiman"
+        },
+        {
+            "word": "स्वाभिमान-बोध",
+            "translation": "Sense of self-respect",
+            "phonetic": "Swabhiman-bodh"
+        },
+        {
+            "word": "अभिमान",
+            "translation": "Pride (Haughty)",
+            "phonetic": "Abhiman"
+        },
+        {
+            "word": "घमंड",
+            "translation": "Arrogance",
+            "phonetic": "Ghamand"
+        },
+        {
+            "word": "नम्रता",
+            "translation": "Humility / Meekness",
+            "phonetic": "Namrta"
+        },
+        {
+            "word": "विनay",
+            "translation": "Modesty / Request",
+            "phonetic": "Vinay"
+        },
+        {
+            "word": "सौजन्य",
+            "translation": "Courtesy / Politeness",
+            "phonetic": "Saujanya"
+        },
+        {
+            "word": "शिष्टता",
+            "translation": "Civility / Decency",
+            "phonetic": "Shishtata"
+        },
+        {
+            "word": "संस्कृत-समाज",
+            "translation": "Cultured Society / Civilization",
+            "phonetic": "Sanskrit-samaj"
+        },
+        {
+            "word": "आत्मीयता",
+            "translation": "Intimacy / Kindliness",
+            "phonetic": "Aatmiyata"
+        },
+        {
+            "word": "स्नेह",
+            "translation": "Affection",
+            "phonetic": "Sneh"
+        },
+        {
+            "word": "प्रीति",
+            "translation": "Love / Fondness",
+            "phonetic": "Preeti"
+        },
+        {
+            "word": "अनुरक्ति",
+            "translation": "Attachment / Devotion",
+            "phonetic": "Anurakti"
+        },
+        {
+            "word": "विरक्ति",
+            "translation": "Detachment / Aversion",
+            "phonetic": "Virakti"
+        },
+        {
+            "word": "उदासीनता",
+            "translation": "Indifference / Apathy",
+            "phonetic": "Udasinta"
+        },
+        {
+            "word": "उपेक्षा",
+            "translation": "Neglect / Disregard",
+            "phonetic": "Upeksha"
+        },
+        {
+            "word": "तिस्कार",
+            "translation": "Scorn / Contempt",
+            "phonetic": "Tiraskar"
+        },
+        {
+            "word": "तिरुपति",
+            "translation": "Lord of Wealth (Name review context)",
+            "phonetic": "Tirupati"
+        },
+        {
+            "word": "तीव्र-इच्छा",
+            "translation": "Intense Desire",
+            "phonetic": "Teevra-ichcha"
+        },
+        {
+            "word": "आकांक्षा",
+            "translation": "Aspiration / Wish",
+            "phonetic": "Aakanksha"
+        },
+        {
+            "word": "मनोकार्यना",
+            "translation": "Heart's wish / Desire",
+            "phonetic": "Manokamna"
+        },
+        {
+            "word": "कार्यना",
+            "translation": "Desire / Wish",
+            "phonetic": "Kamna"
+        },
+        {
+            "word": "रक्त-वर्णसा",
+            "translation": "Longing / Craving",
+            "phonetic": "Lalsa"
+        },
+        {
+            "word": "ईप्सा",
+            "translation": "Expectation / Desire (Vedic)",
+            "phonetic": "Eepsa"
+        },
+        {
+            "word": "दृढ़-संकल्प",
+            "translation": "Firm Resolution",
+            "phonetic": "Dridh-sankalp"
+        },
+        {
+            "word": "विकल्प",
+            "translation": "Option / Alternative",
+            "phonetic": "Vikalp"
+        },
+        {
+            "word": "सुझाव",
+            "translation": "Suggestion",
+            "phonetic": "Sujhav"
+        },
+        {
+            "word": "मशवरा",
+            "translation": "Advice (Common mix)",
+            "phonetic": "Mashwara"
+        },
+        {
+            "word": "सम्भाषण",
+            "translation": "Formal Discussion / Deliberation",
+            "phonetic": "Sambhashan"
+        },
+        {
+            "word": "निर्णय",
+            "translation": "Decision",
+            "phonetic": "Nirnay"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Ativrishti' Weather",
+        "question": "If a B1 Hindi news report warns of 'Ativrishti' (अतिवृष्टि), what should you prepare for?",
+        "options": [
+            "A severe drought",
+            "Heavy rainfall and floods",
+            "A heatwave",
+            "A peaceful sunny day"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Ati' means excessive and 'Vrishti' means rain. 'Ativrishti' is the formal term for torrential rain leading to floods, whereas 'Anavrishti' is drought."
+    }
+}

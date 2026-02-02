@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a2_m03",
+    "theme": "Education & Learning",
+    "order": 13,
+    "lessons": [
+        {
+            "targetText": "Educação",
+            "english": "Education",
+            "phoneticTranscription": "E-doo-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aprendizado",
+            "english": "Learning",
+            "phoneticTranscription": "A-pren-jee-za-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escolaridade",
+            "english": "Schooling/Education level",
+            "phoneticTranscription": "Es-ko-la-ree-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alfabetização",
+            "english": "Literacy",
+            "phoneticTranscription": "Al-fa-be-chee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ensino fundamental",
+            "english": "Elementary school",
+            "phoneticTranscription": "En-see-noo foon-da-men-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ensino médio",
+            "english": "High school",
+            "phoneticTranscription": "En-see-noo me-dyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ensino superior",
+            "english": "Higher education",
+            "phoneticTranscription": "En-see-noo soo-pe-ryor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Faculdade",
+            "english": "College",
+            "phoneticTranscription": "Fa-kool-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acadêmico",
+            "english": "Academic",
+            "phoneticTranscription": "A-ka-de-mee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estudante universitário",
+            "english": "University student",
+            "phoneticTranscription": "Es-too-dan-chee oo-nee-ver-see-ta-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Professor doutor",
+            "english": "PhD Professor",
+            "phoneticTranscription": "Pro-fe-sor dow-tor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mestre",
+            "english": "Master",
+            "phoneticTranscription": "Mes-tree",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pesquisador",
+            "english": "Researcher",
+            "phoneticTranscription": "Pes-kee-za-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cientista",
+            "english": "Scientist",
+            "phoneticTranscription": "Syen-chees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bolsa de estudos",
+            "english": "Scholarship",
+            "phoneticTranscription": "Bol-sa de es-too-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inscrição",
+            "english": "Enrollment/Registration",
+            "phoneticTranscription": "In-skree-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Matrícula",
+            "english": "Enrolment",
+            "phoneticTranscription": "Ma-tree-koo-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Disciplina",
+            "english": "Subject/Discipline",
+            "phoneticTranscription": "Jee-see-plee-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Matemática",
+            "english": "Mathematics",
+            "phoneticTranscription": "Ma-te-ma-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Física",
+            "english": "Physics",
+            "phoneticTranscription": "Fee-zee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Química",
+            "english": "Chemistry",
+            "phoneticTranscription": "Kee-mee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biologia",
+            "english": "Biology",
+            "phoneticTranscription": "Byo-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "História",
+            "english": "History",
+            "phoneticTranscription": "Ees-to-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Geografia",
+            "english": "Geography",
+            "phoneticTranscription": "Zhe-o-gra-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Literatura",
+            "english": "Literature",
+            "phoneticTranscription": "Lee-te-ra-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Filosofia",
+            "english": "Philosophy",
+            "phoneticTranscription": "Fee-lo-zo-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sociologia",
+            "english": "Sociology",
+            "phoneticTranscription": "So-syo-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Artes",
+            "english": "Arts",
+            "phoneticTranscription": "Ar-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Educação física",
+            "english": "Physical education",
+            "phoneticTranscription": "E-doo-ka-sown fee-zee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Línguas estrangeiras",
+            "english": "Foreign languages",
+            "phoneticTranscription": "Leen-gwas es-tran-zhay-ras",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gramática",
+            "english": "Grammar",
+            "phoneticTranscription": "Gra-ma-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dicionário",
+            "english": "Dictionary",
+            "phoneticTranscription": "Jee-syo-na-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Enciclopédia",
+            "english": "Encyclopedia",
+            "phoneticTranscription": "En-see-klo-pe-dyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biblioteca",
+            "english": "Library",
+            "phoneticTranscription": "Bee-blyo-te-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sala de aula",
+            "english": "Classroom",
+            "phoneticTranscription": "Sah-la de aw-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Quadro negro",
+            "english": "Blackboard",
+            "phoneticTranscription": "Kwa-droo ne-groo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Giz",
+            "english": "Chalk",
+            "phoneticTranscription": "Zhees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Caderno",
+            "english": "Notebook",
+            "phoneticTranscription": "Ka-der-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lápis",
+            "english": "Pencil",
+            "phoneticTranscription": "La-pees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Caneta",
+            "english": "Pen",
+            "phoneticTranscription": "Ka-ne-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Borracha",
+            "english": "Eraser",
+            "phoneticTranscription": "Bo-ha-shah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Régua",
+            "english": "Ruler",
+            "phoneticTranscription": "He-gwa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Calculadora",
+            "english": "Calculator",
+            "phoneticTranscription": "Kal-koo-la-do-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Livro didático",
+            "english": "Textbook",
+            "phoneticTranscription": "Lee-vroo jee-da-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trabalho de casa",
+            "english": "Homework",
+            "phoneticTranscription": "Tra-ba-lyoo de ka-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prova",
+            "english": "Test/Exam",
+            "phoneticTranscription": "Pro-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Nota",
+            "english": "Grade",
+            "phoneticTranscription": "No-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Boletim",
+            "english": "Report card",
+            "phoneticTranscription": "Bo-le-cheem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aprovação",
+            "english": "Approval/Passing",
+            "phoneticTranscription": "A-pro-va-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Reprovação",
+            "english": "Failure/Failing",
+            "phoneticTranscription": "He-pro-va-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Faltas",
+            "english": "Absences",
+            "phoneticTranscription": "Fal-tas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Presença",
+            "english": "Attendance",
+            "phoneticTranscription": "Pre-zen-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Formatura",
+            "english": "Graduation",
+            "phoneticTranscription": "For-ma-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diploma",
+            "english": "Diploma",
+            "phoneticTranscription": "Jee-plo-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Certificado",
+            "english": "Certificate",
+            "phoneticTranscription": "Ser-chee-fee-ka-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cerimônia",
+            "english": "Ceremony",
+            "phoneticTranscription": "Se-ree-mo-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Campus",
+            "english": "Campus",
+            "phoneticTranscription": "Kam-poos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Laboratório",
+            "english": "Laboratory",
+            "phoneticTranscription": "La-bo-ra-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Auditório",
+            "english": "Auditorium",
+            "phoneticTranscription": "Aw-jee-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Refeitório",
+            "english": "Cafeteria",
+            "phoneticTranscription": "Re-fay-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dormitório",
+            "english": "Dormitory",
+            "phoneticTranscription": "Dor-mee-to-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Grêmio estudantil",
+            "english": "Student union",
+            "phoneticTranscription": "Gre-myoo es-too-dan-cheel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vestibular",
+            "english": "Entrance exam",
+            "phoneticTranscription": "Ves-chee-boo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Graduação",
+            "english": "Undergraduate",
+            "phoneticTranscription": "Gra-doo-a-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pós-graduação",
+            "english": "Post-graduate",
+            "phoneticTranscription": "Pos-gra-doo-a-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Especialização",
+            "english": "Specialization",
+            "phoneticTranscription": "Es-pe-syah-lee-za-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mestrado",
+            "english": "Master's degree",
+            "phoneticTranscription": "Mes-tra-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Doutorado",
+            "english": "Doctorate",
+            "phoneticTranscription": "Dow-to-ra-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tese",
+            "english": "Thesis",
+            "phoneticTranscription": "Te-zee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dissertação",
+            "english": "Dissertation",
+            "phoneticTranscription": "Jee-ser-ta-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Monografia",
+            "english": "Monograph",
+            "phoneticTranscription": "Mo-no-gra-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Artigo científico",
+            "english": "Scientific article",
+            "phoneticTranscription": "Ar-chee-goo syen-chee-fee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Teoria",
+            "english": "Theory",
+            "phoneticTranscription": "Te-o-ree-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prática",
+            "english": "Practice",
+            "phoneticTranscription": "Pra-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Método",
+            "english": "Method",
+            "phoneticTranscription": "Me-to-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Análise",
+            "english": "Analysis",
+            "phoneticTranscription": "A-na-lee-zee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Síntese",
+            "english": "Synthesis",
+            "phoneticTranscription": "Seen-te-zee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Crítica",
+            "english": "Criticism",
+            "phoneticTranscription": "Kree-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lógica",
+            "english": "Logic",
+            "phoneticTranscription": "Lo-zhee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Raciocínio",
+            "english": "Reasoning",
+            "phoneticTranscription": "Ra-syo-see-nyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Memória",
+            "english": "Memory",
+            "phoneticTranscription": "Me-mo-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Concentração",
+            "english": "Concentration",
+            "phoneticTranscription": "Kon-sen-tra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Atenção",
+            "english": "Attention",
+            "phoneticTranscription": "A-ten-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Curiosidade",
+            "english": "Curiosity",
+            "phoneticTranscription": "Koo-ryo-zee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Criatividade",
+            "english": "Creativity",
+            "phoneticTranscription": "Kree-a-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Talento",
+            "english": "Talento",
+            "phoneticTranscription": "Ta-len-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Esforço",
+            "english": "Effort",
+            "phoneticTranscription": "Es-for-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dedicação",
+            "english": "Dedication",
+            "phoneticTranscription": "De-jee-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Persistência",
+            "english": "Persistence",
+            "phoneticTranscription": "Per-sees-ten-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hábito de estudo",
+            "english": "Study habit",
+            "phoneticTranscription": "A-bee-too de es-too-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Autodidata",
+            "english": "Self-taught",
+            "phoneticTranscription": "Aw-to-jee-da-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pedagogia",
+            "english": "Pedagogy",
+            "phoneticTranscription": "Pe-da-go-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Didática",
+            "english": "Didactics",
+            "phoneticTranscription": "Jee-da-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metodologia",
+            "english": "Methodology",
+            "phoneticTranscription": "Me-to-do-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alfabeto",
+            "english": "Alphabet",
+            "phoneticTranscription": "Al-fa-be-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vogal",
+            "english": "Vowel",
+            "phoneticTranscription": "Vo-gal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Consoante",
+            "english": "Consonant",
+            "phoneticTranscription": "Kon-so-an-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pronúncia",
+            "english": "Pronunciation",
+            "phoneticTranscription": "Pro-noon-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vocabulário",
+            "english": "Vocabulary",
+            "phoneticTranscription": "Vo-ka-boo-la-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fluência",
+            "english": "Fluency",
+            "phoneticTranscription": "Floo-en-syah",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Library",
+        "correctVersion": "The Portuguese 'Livraria' means 'Bookstore'. To say 'Library', use 'Biblioteca'.",
+        "explanation": "Trap level: High"
+    }
+}

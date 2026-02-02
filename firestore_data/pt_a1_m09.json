@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_a1_m09",
+    "theme": "Clothes & Shopping",
+    "order": 9,
+    "lessons": [
+        {
+            "targetText": "Roupa",
+            "english": "Clothes",
+            "phoneticTranscription": "How-pa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Camisa",
+            "english": "Shirt",
+            "phoneticTranscription": "Ka-mee-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Camiseta",
+            "english": "T-shirt",
+            "phoneticTranscription": "Ka-mee-ze-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Calças",
+            "english": "Pants",
+            "phoneticTranscription": "Kal-sas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vestido",
+            "english": "Dress",
+            "phoneticTranscription": "Ves-chee-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Saia",
+            "english": "Skirt",
+            "phoneticTranscription": "Sa-ya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Casaco",
+            "english": "Coat/Jacket",
+            "phoneticTranscription": "Ka-za-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Suéter",
+            "english": "Sweater",
+            "phoneticTranscription": "Swe-ter",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bermuda",
+            "english": "Shorts",
+            "phoneticTranscription": "Ber-moo-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Meias",
+            "english": "Socks",
+            "phoneticTranscription": "May-as",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sapatos",
+            "english": "Shoes",
+            "phoneticTranscription": "Sa-pa-toos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tênis",
+            "english": "Sneakers",
+            "phoneticTranscription": "Te-nees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Botas",
+            "english": "Boots",
+            "phoneticTranscription": "Bo-tas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sandálias",
+            "english": "Sandals",
+            "phoneticTranscription": "San-da-lyas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Chinelo",
+            "english": "Flip-flops",
+            "phoneticTranscription": "Shee-ne-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Chapéu",
+            "english": "Hat",
+            "phoneticTranscription": "Sha-pe-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Boné",
+            "english": "Cap",
+            "phoneticTranscription": "Bo-ne",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Luvas",
+            "english": "Gloves",
+            "phoneticTranscription": "Loo-vas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cachecol",
+            "english": "Scarf",
+            "phoneticTranscription": "Ka-she-kol",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cinto",
+            "english": "Belt",
+            "phoneticTranscription": "Seen-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gravata",
+            "english": "Tie",
+            "phoneticTranscription": "Gra-va-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pijama",
+            "english": "Pajamas",
+            "phoneticTranscription": "Pee-zha-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Roupa de baixo",
+            "english": "Underwear",
+            "phoneticTranscription": "How-pa de bye-shoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sutiã",
+            "english": "Bra",
+            "phoneticTranscription": "Soo-tyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cueca",
+            "english": "Underpants (m)",
+            "phoneticTranscription": "Kway-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Calcinha",
+            "english": "Underpants (f)",
+            "phoneticTranscription": "Kal-see-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Biquíni",
+            "english": "Bikini",
+            "phoneticTranscription": "Bee-kee-nee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sunga",
+            "english": "Swim trunks",
+            "phoneticTranscription": "Soon-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Maiô",
+            "english": "Swimsuit",
+            "phoneticTranscription": "Ma-yo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acessórios",
+            "english": "Accessories",
+            "phoneticTranscription": "A-se-so-ryoos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cronômetro",
+            "english": "Stopwatch",
+            "phoneticTranscription": "Kro-no-me-troo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bolsa",
+            "english": "Purse/Bag",
+            "phoneticTranscription": "Bol-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mochila",
+            "english": "Backpack",
+            "phoneticTranscription": "Mo-shee-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Carteira",
+            "english": "Wallet",
+            "phoneticTranscription": "Kar-tay-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Joia",
+            "english": "Jewelry",
+            "phoneticTranscription": "Zho-ya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Anel",
+            "english": "Ring",
+            "phoneticTranscription": "A-nel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colar",
+            "english": "Necklace",
+            "phoneticTranscription": "Ko-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Brincos",
+            "english": "Earrings",
+            "phoneticTranscription": "Breen-koos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pulseira",
+            "english": "Bracelet",
+            "phoneticTranscription": "Pool-say-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Algodão",
+            "english": "Cotton",
+            "phoneticTranscription": "Al-go-down",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lã",
+            "english": "Wool",
+            "phoneticTranscription": "Lah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Seda",
+            "english": "Silk",
+            "phoneticTranscription": "Se-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Couro",
+            "english": "Leather",
+            "phoneticTranscription": "Ko-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colorido",
+            "english": "Colorful",
+            "phoneticTranscription": "Ko-lo-ree-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alvo",
+            "english": "Target/White",
+            "phoneticTranscription": "Al-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sombrio",
+            "english": "Dark/Shady",
+            "phoneticTranscription": "Som-bree-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rubro",
+            "english": "Red/Ruby",
+            "phoneticTranscription": "Hoo-broo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Celeste",
+            "english": "Sky blue",
+            "phoneticTranscription": "Se-les-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Esmeralda",
+            "english": "Emerald green",
+            "phoneticTranscription": "Es-me-ral-dah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dourado",
+            "english": "Golden",
+            "phoneticTranscription": "Dow-ra-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Róseo",
+            "english": "Rosy",
+            "phoneticTranscription": "Ho-ze-oo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Violeta",
+            "english": "Violet",
+            "phoneticTranscription": "Vyo-le-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cereja",
+            "english": "Cherry",
+            "phoneticTranscription": "Se-re-zhah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Platinado",
+            "english": "Platinum",
+            "phoneticTranscription": "Pla-chee-na-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escarlate",
+            "english": "Scarlet",
+            "phoneticTranscription": "Es-kar-la-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Luminoso",
+            "english": "Bright/Luminous",
+            "phoneticTranscription": "Loo-mee-no-zoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Opaco",
+            "english": "Opaque",
+            "phoneticTranscription": "O-pa-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dimensão",
+            "english": "Dimension",
+            "phoneticTranscription": "Dee-men-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diminuto",
+            "english": "Tiny",
+            "phoneticTranscription": "Dee-mee-noo-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Médio",
+            "english": "Medium",
+            "phoneticTranscription": "Me-dyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Enorme",
+            "english": "Huge",
+            "phoneticTranscription": "E-nor-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Amplo",
+            "english": "Wide",
+            "phoneticTranscription": "Am-ploo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Justo",
+            "english": "Tight",
+            "phoneticTranscription": "Zhoos-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Extenso",
+            "english": "Long",
+            "phoneticTranscription": "Es-ten-soo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Breve",
+            "english": "Short",
+            "phoneticTranscription": "Bre-vee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comércio",
+            "english": "Commerce",
+            "phoneticTranscription": "Ko-mer-syoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vendedor",
+            "english": "Salesman",
+            "phoneticTranscription": "Ven-de-dor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cliente",
+            "english": "Customer",
+            "phoneticTranscription": "Klee-en-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Valor",
+            "english": "Value",
+            "phoneticTranscription": "Va-lor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Caro",
+            "english": "Expensive",
+            "phoneticTranscription": "Ka-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Barato",
+            "english": "Cheap",
+            "phoneticTranscription": "Ba-ra-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Promoção",
+            "english": "Sale/Promotion",
+            "phoneticTranscription": "Pro-mo-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desconto",
+            "english": "Discount",
+            "phoneticTranscription": "Des-kon-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dinheiro",
+            "english": "Money",
+            "phoneticTranscription": "Dee-nyay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cartão",
+            "english": "Card",
+            "phoneticTranscription": "Kar-town",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Troco",
+            "english": "Change",
+            "phoneticTranscription": "Tro-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Recibo",
+            "english": "Receipt",
+            "phoneticTranscription": "Re-see-boo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sacola",
+            "english": "Shopping bag",
+            "phoneticTranscription": "Sa-ko-la",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Provar",
+            "english": "To try on",
+            "phoneticTranscription": "Pro-var",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vestir",
+            "english": "To wear/dress",
+            "phoneticTranscription": "Ves-cheer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trocar",
+            "english": "To exchange",
+            "phoneticTranscription": "Tro-kar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Adquirir",
+            "english": "To acquire",
+            "phoneticTranscription": "Ad-kee-reer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Custar",
+            "english": "To cost",
+            "phoneticTranscription": "Koos-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escolher",
+            "english": "To choose",
+            "phoneticTranscription": "Es-ko-lyer",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pesquisar",
+            "english": "To research",
+            "phoneticTranscription": "Pes-kee-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Localizar",
+            "english": "To locate",
+            "phoneticTranscription": "Lo-ka-lee-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Liquidar",
+            "english": "To settle/pay off",
+            "phoneticTranscription": "Lee-kwee-dar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gastar",
+            "english": "To spend",
+            "phoneticTranscription": "Gas-tar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Economizar",
+            "english": "To save",
+            "phoneticTranscription": "E-ko-no-mee-zar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Brinde",
+            "english": "Gift/Bonus",
+            "phoneticTranscription": "Breen-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vitrine",
+            "english": "Display window",
+            "phoneticTranscription": "Vee-tree-nee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Moda",
+            "english": "Fashion",
+            "phoneticTranscription": "Mo-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estilo",
+            "english": "Style",
+            "phoneticTranscription": "Es-chee-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Elegante",
+            "english": "Elegant",
+            "phoneticTranscription": "E-le-gan-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Simples",
+            "english": "Simple",
+            "phoneticTranscription": "Seem-plees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Moderno",
+            "english": "Modern",
+            "phoneticTranscription": "Mo-der-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clássico",
+            "english": "Classic",
+            "phoneticTranscription": "Kla-see-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Confortável",
+            "english": "Comfortable",
+            "phoneticTranscription": "Kon-for-ta-vel",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Recente",
+            "english": "Recent",
+            "phoneticTranscription": "He-sen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Usado",
+            "english": "Used",
+            "phoneticTranscription": "Oo-za-doo",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Costume",
+        "correctVersion": "Means a 'Habit' or 'Custom', not a set of clothes like a 'Suit' (which is 'Terno').",
+        "explanation": "Trap level: High"
+    }
+}

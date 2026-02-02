@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_b1_m08",
+    "language": "hi",
+    "level": "b1",
+    "theme": "Environment & Ecological Policy",
+    "order": 28,
+    "lessons": [
+        {
+            "word": "पारिस्थितिक-विज्ञान",
+            "translation": "Ecological Science / Ecology",
+            "phonetic": "Paristhitik-vigyan"
+        },
+        {
+            "word": "परिवेश-विज्ञान",
+            "translation": "Science of surroundings / Environment",
+            "phonetic": "Parivesh-vigyan"
+        },
+        {
+            "word": "जैव-विविधता",
+            "translation": "Biodiversity",
+            "phonetic": "Jaiv-vividhata"
+        },
+        {
+            "word": "पारिस्थितिक तंत्र",
+            "translation": "Ecosystem",
+            "phonetic": "Paristhitik tantra"
+        },
+        {
+            "word": "पर्यावरण-संतुलन",
+            "translation": "Environmental Balance",
+            "phonetic": "Paryavaran-santulan"
+        },
+        {
+            "word": "जलवायु",
+            "translation": "Climate",
+            "phonetic": "Jalvayu"
+        },
+        {
+            "word": "मौसम-विज्ञान",
+            "translation": "Meteorology",
+            "phonetic": "Mausam-vigyan"
+        },
+        {
+            "word": "वायु-गुणवत्ता",
+            "translation": "Air Quality",
+            "phonetic": "Vayu-gunvatta"
+        },
+        {
+            "word": "प्रदूषण-नियंत्रण",
+            "translation": "Pollution Control",
+            "phonetic": "Pradushan-niyantran"
+        },
+        {
+            "word": "अपशिष्ट-प्रबंधन",
+            "translation": "Waste Management",
+            "phonetic": "Apshisht-prabandhan"
+        },
+        {
+            "word": "चक्रीय-पुनर्चक्रण",
+            "translation": "Cyclic Recycling",
+            "phonetic": "Chakriya-punarchakran"
+        },
+        {
+            "word": "नवीकरणीय ऊर्जा",
+            "translation": "Renewable Energy",
+            "phonetic": "Navikarniya urja"
+        },
+        {
+            "word": "सौर-ऊर्जा",
+            "translation": "Solar Energy",
+            "phonetic": "Saur-urja"
+        },
+        {
+            "word": "पवन-ऊर्जा",
+            "translation": "Wind Energy",
+            "phonetic": "Pavan-urja"
+        },
+        {
+            "word": "जल-विद्युत",
+            "translation": "Hydro-electricity",
+            "phonetic": "Jal-vidyut"
+        },
+        {
+            "word": "भूतापीय ऊर्जा",
+            "translation": "Geothermal Energy",
+            "phonetic": "Bhutaapiya urja"
+        },
+        {
+            "word": "जीवाश्म ईंधन",
+            "translation": "Fossil Fuel",
+            "phonetic": "Jivashm indhan"
+        },
+        {
+            "word": "कार्बन पदचिह्न",
+            "translation": "Carbon Footprint",
+            "phonetic": "Carbon padchihna"
+        },
+        {
+            "word": "उत्सर्जन-कटौती",
+            "translation": "Emission Cut",
+            "phonetic": "Utsarjan-katauti"
+        },
+        {
+            "word": "हरितगृह प्रभाव",
+            "translation": "Greenhouse Effect",
+            "phonetic": "Haritgrih prabhav"
+        },
+        {
+            "word": "ओज़ोन परत",
+            "translation": "Ozone Layer",
+            "phonetic": "Ozone parat"
+        },
+        {
+            "word": "क्षरण",
+            "translation": "Erosion / Depletion",
+            "phonetic": "Ksharan"
+        },
+        {
+            "word": "मृदा-संरक्षण",
+            "translation": "Soil Conservation",
+            "phonetic": "Mrida-sanrakshan"
+        },
+        {
+            "word": "मरुस्थलीकरण",
+            "translation": "Desertification",
+            "phonetic": "Marusthalikaran"
+        },
+        {
+            "word": "वृक्षादि-रोपण",
+            "translation": "Planting of trees / Afforestation",
+            "phonetic": "Vrikshadi-ropan"
+        },
+        {
+            "word": "पुनर्वनीकरण",
+            "translation": "Reforestation",
+            "phonetic": "Punarvanikaran"
+        },
+        {
+            "word": "वनोन्मूलन",
+            "translation": "Deforestation",
+            "phonetic": "Vanonmoolan"
+        },
+        {
+            "word": "जैव-सुरक्षा",
+            "translation": "Biosafety",
+            "phonetic": "Jaiv-suraksha"
+        },
+        {
+            "word": "पारिस्थितिक संकट",
+            "translation": "Ecological Crisis",
+            "phonetic": "Paristhitik sankat"
+        },
+        {
+            "word": "पर्यावरणीय प्रभाव",
+            "translation": "Environmental Impact",
+            "phonetic": "Paryavaraniya prabhav"
+        },
+        {
+            "word": "आकलन",
+            "translation": "Assessment",
+            "phonetic": "Aakalan"
+        },
+        {
+            "word": "सतत-उपभोग",
+            "translation": "Sustainable Consumption",
+            "phonetic": "Satat-upbhog"
+        },
+        {
+            "word": "प्राकृतिक संसाधन",
+            "translation": "Natural Resources",
+            "phonetic": "Prakritik sansadhan"
+        },
+        {
+            "word": "दोहन",
+            "translation": "Exploitation / Extraction",
+            "phonetic": "Dohan"
+        },
+        {
+            "word": "अति-दोहन",
+            "translation": "Over-exploitation",
+            "phonetic": "Ati-dohan"
+        },
+        {
+            "word": "पर्यावरण मित्र",
+            "translation": "Eco-friendly",
+            "phonetic": "Paryavaran mitr"
+        },
+        {
+            "word": "पर्यावरण-जागरूकता",
+            "translation": "Environmental Awareness",
+            "phonetic": "Paryavaran-jagrukta"
+        },
+        {
+            "word": "संरक्षित क्षेत्र",
+            "translation": "Protected Area",
+            "phonetic": "Sanrakshit kshetra"
+        },
+        {
+            "word": "अभयारण्य",
+            "translation": "Sanctuary",
+            "phonetic": "Abhayaranya"
+        },
+        {
+            "word": "राष्ट्रीय उद्यान",
+            "translation": "National Park",
+            "phonetic": "Rashtriya udyan"
+        },
+        {
+            "word": "वन्यजीव संरक्षण",
+            "translation": "Wildlife Conservation",
+            "phonetic": "Vanyajiv sanrakshan"
+        },
+        {
+            "word": "संकटग्रस्त प्रजाति",
+            "translation": "Endangered Species",
+            "phonetic": "Sankatgrast prajati"
+        },
+        {
+            "word": "विलुप्ति",
+            "translation": "Extinction",
+            "phonetic": "Vilupti"
+        },
+        {
+            "word": "पारिस्थितिक तंत्र बहाली",
+            "translation": "Ecosystem Restoration",
+            "phonetic": "Paristhitik tantra bahali"
+        },
+        {
+            "word": "जल-संचयन",
+            "translation": "Water Harvesting",
+            "phonetic": "Jal-sanchayan"
+        },
+        {
+            "word": "भूजल-स्तर",
+            "translation": "Groundwater Level",
+            "phonetic": "Bhujal-star"
+        },
+        {
+            "word": "नदी-मंथन",
+            "translation": "River Churning / Cleaning (Eco context)",
+            "phonetic": "Nadi-manthan"
+        },
+        {
+            "word": "बाढ़-नियंत्रण",
+            "translation": "Flood Control",
+            "phonetic": "Badh-niyantran"
+        },
+        {
+            "word": "सूखा-प्रबंधन",
+            "translation": "Drought Management",
+            "phonetic": "Sukha-prabandhan"
+        },
+        {
+            "word": "पर्यावरणीय नीति",
+            "translation": "Environmental Policy",
+            "phonetic": "Paryavaraniya neeti"
+        },
+        {
+            "word": "कानूनी ढांचा",
+            "translation": "Legal Framework",
+            "phonetic": "Kanooni dhancha"
+        },
+        {
+            "word": "नियामक निकाय",
+            "translation": "Regulatory Body",
+            "phonetic": "Niyamak nikay"
+        },
+        {
+            "word": "दंड-विधान",
+            "translation": "Penal Code / Penalties (Eco)",
+            "phonetic": "Dand-vidhan"
+        },
+        {
+            "word": "पर्यावरण कर",
+            "translation": "Environment Tax / Green Tax",
+            "phonetic": "Paryavaran kar"
+        },
+        {
+            "word": "अनुपालन",
+            "translation": "Compliance",
+            "phonetic": "Anupalan"
+        },
+        {
+            "word": "निगरानी",
+            "translation": "Surveillance / Monitoring",
+            "phonetic": "Nigrani"
+        },
+        {
+            "word": "वैश्विक प्रोटोकॉल",
+            "translation": "Global Protocol",
+            "phonetic": "Vaishvik protocol"
+        },
+        {
+            "word": "क्योटो प्रोटोकॉल",
+            "translation": "Kyoto Protocol",
+            "phonetic": "Kyoto Protocol"
+        },
+        {
+            "word": "मॉन्ट्रियल प्रोटोकॉल",
+            "translation": "Montreal Protocol",
+            "phonetic": "Montreal Protocol"
+        },
+        {
+            "word": "कार्बन-क्रेडिट",
+            "translation": "Carbon Credit",
+            "phonetic": "Carbon-credit"
+        },
+        {
+            "word": "कार्बन-ट्रेडिंग",
+            "translation": "Carbon Trading",
+            "phonetic": "Carbon-trading"
+        },
+        {
+            "word": "प्रदूषक भुगतान",
+            "translation": "Polluter Pays",
+            "phonetic": "Pradushak bhugtan"
+        },
+        {
+            "word": "सतत जीवनशैली",
+            "translation": "Sustainable Lifestyle",
+            "phonetic": "Satat jivanshaili"
+        },
+        {
+            "word": "प्राकृतिक कृषि",
+            "translation": "Natural Farming",
+            "phonetic": "Prakritik krishi"
+        },
+        {
+            "word": "जैविक खेती",
+            "translation": "Organic Farming",
+            "phonetic": "Jaivik kheti"
+        },
+        {
+            "word": "कीटनाशक-मुक्त",
+            "translation": "Pesticide-free",
+            "phonetic": "Keetnashak-mukt"
+        },
+        {
+            "word": "उर्वरक-नियमन",
+            "translation": "Fertilizer Regulation",
+            "phonetic": "Urvarak-niyaman"
+        },
+        {
+            "word": "भूमि-उर्वरता",
+            "translation": "Soil Fertility",
+            "phonetic": "Bhumi-urvarta"
+        },
+        {
+            "word": "पारिस्थितिक प्रभाव",
+            "translation": "Ecological Footprint / Impact",
+            "phonetic": "Paristhitik prabhav"
+        },
+        {
+            "word": "शून्य अपशिष्ट",
+            "translation": "Zero Waste",
+            "phonetic": "Shunya apshisht"
+        },
+        {
+            "word": "बायोडिग्रेडेबल",
+            "translation": "Biodegradable (Pure: जैव-अपघटनीय)",
+            "phonetic": "Biodegradable"
+        },
+        {
+            "word": "जैव-अपघटनीय",
+            "translation": "Biodegradable",
+            "phonetic": "Jaiv-apghataniya"
+        },
+        {
+            "word": "एकल-उपयोग प्लास्टिक",
+            "translation": "Single-use Plastic",
+            "phonetic": "Ekal-upayog plastic"
+        },
+        {
+            "word": "प्रतिबंध-नीति",
+            "translation": "Ban Policy",
+            "phonetic": "Pratibandh-neeti"
+        },
+        {
+            "word": "पर्यावरणीय न्याय",
+            "translation": "Environmental Justice",
+            "phonetic": "Paryavaraniya nyaya"
+        },
+        {
+            "word": "जन-भागीदारी",
+            "translation": "Public Participation",
+            "phonetic": "Jan-bhagidari"
+        },
+        {
+            "word": "सामुदायिक वन",
+            "translation": "Community Forest",
+            "phonetic": "Samudayik van"
+        },
+        {
+            "word": "चिपको आंदोलन",
+            "translation": "Chipko Movement (Eco history)",
+            "phonetic": "Chipko andolan"
+        },
+        {
+            "word": "नर्मदा बचाओ",
+            "translation": "Save Narmada (Eco history)",
+            "phonetic": "Narmada bachao"
+        },
+        {
+            "word": "पर्यावरण कार्यकर्ता",
+            "translation": "Environmental Activist",
+            "phonetic": "Paryavaran karyakarta"
+        },
+        {
+            "word": "ग्रीन-पीस",
+            "translation": "Greenpeace",
+            "phonetic": "Greenpeace"
+        },
+        {
+            "word": "पर्यावरणीय शिक्षा",
+            "translation": "Environmental Education",
+            "phonetic": "Paryavaraniya shiksha"
+        },
+        {
+            "word": "जागरूकता अभियान",
+            "translation": "Awareness Campaign",
+            "phonetic": "Jagrukta abhiyan"
+        },
+        {
+            "word": "पारिस्थितिक नैतिकता",
+            "translation": "Environmental Ethics",
+            "phonetic": "Paristhitik naitikta"
+        },
+        {
+            "word": "प्राकृतिक चिकित्सा",
+            "translation": "Naturopathy",
+            "phonetic": "Prakritik chikitsa"
+        },
+        {
+            "word": "कायाकल्प",
+            "translation": "Rejuvenation",
+            "phonetic": "Kayakalp"
+        },
+        {
+            "word": "हरित पट्टी",
+            "translation": "Green Belt",
+            "phonetic": "Harit patti"
+        },
+        {
+            "word": "नगरी वन",
+            "translation": "Urban Forest",
+            "phonetic": "Shahari van"
+        },
+        {
+            "word": "स्मार्ट नगर",
+            "translation": "Smart City (Eco context)",
+            "phonetic": "Smart shehar"
+        },
+        {
+            "word": "कूड़ा-करकट",
+            "translation": "Litter / Garbage",
+            "phonetic": "Kooda-karkat"
+        },
+        {
+            "word": "निस्तारण",
+            "translation": "Disposal",
+            "phonetic": "Nistaran"
+        },
+        {
+            "word": "जलनिकासी प्रणाली",
+            "translation": "Sewage/Drainage System",
+            "phonetic": "Jalnikasi pranali"
+        },
+        {
+            "word": "स्वच्छता अभियान",
+            "translation": "Cleanliness Campaign",
+            "phonetic": "Swachhta abhiyan"
+        },
+        {
+            "word": "पर्यावरणीय क्षरण",
+            "translation": "Environmental Degradation",
+            "phonetic": "Paryavaraniya ksharan"
+        },
+        {
+            "word": "पारिस्थितिक संतुलन",
+            "translation": "Ecological Equilibrium",
+            "phonetic": "Paristhitik santulan"
+        },
+        {
+            "word": "जीवाश्म-मुक्त",
+            "translation": "Fossil-fuel free",
+            "phonetic": "Jivashm-mukt"
+        },
+        {
+            "word": "ऊर्जा-दक्षता",
+            "translation": "Energy Efficiency",
+            "phonetic": "Urja-dakshata"
+        },
+        {
+            "word": "सतत कृषि",
+            "translation": "Sustainable Agriculture",
+            "phonetic": "Satat krishi"
+        },
+        {
+            "word": "खाद्य सुरक्षा",
+            "translation": "Food Security",
+            "phonetic": "Khadyu suraksha"
+        },
+        {
+            "word": "विश्व पर्यावरण दिवस",
+            "translation": "World Environment Day",
+            "phonetic": "Vishwa paryavaran divas"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Jaiv-apghataniya' Secret",
+        "question": "If a product is labeled as 'Jaiv-apghataniya' (जैव-अपघटनीय), what is its key feature?",
+        "options": [
+            "It is made of gold",
+            "It is biodegradable",
+            "It is indestructible",
+            "It is toxic"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Jaiv' (Bio) + 'Apghataniya' (Degradable). This is the pure Hindi term for biodegradable materials, crucial for ecological policy."
+    }
+}

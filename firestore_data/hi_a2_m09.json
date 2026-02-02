@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a2_m09",
+    "language": "hi",
+    "level": "a2",
+    "theme": "Technology & Science",
+    "order": 19,
+    "lessons": [
+        {
+            "word": "विशिष्ज्ञान",
+            "translation": "Science / Specific knowledge (Formal)",
+            "phonetic": "Vishishgyan"
+        },
+        {
+            "word": "विद्याधर्ता",
+            "translation": "Scientist / Knowledge-holder (Formal)",
+            "phonetic": "Vidyadharta"
+        },
+        {
+            "word": "प्रविधिक",
+            "translation": "Technical (Formal)",
+            "phonetic": "Pravidhik"
+        },
+        {
+            "word": "प्रयोगात्मक",
+            "translation": "Experimental",
+            "phonetic": "Prayogatmak"
+        },
+        {
+            "word": "अनुसंधान",
+            "translation": "Research (Formal Sanskrit)",
+            "phonetic": "Anusandhan"
+        },
+        {
+            "word": "अन्वेषण",
+            "translation": "Exploration / Investigation",
+            "phonetic": "Anveshan"
+        },
+        {
+            "word": "विश्लेषण",
+            "translation": "Analysis",
+            "phonetic": "Vishleshan"
+        },
+        {
+            "word": "संश्लेषण",
+            "translation": "Synthesis",
+            "phonetic": "Sanshleshan"
+        },
+        {
+            "word": "अवलोकन",
+            "translation": "Observation",
+            "phonetic": "Avalokan"
+        },
+        {
+            "word": "परिकल्पना",
+            "translation": "Hypothesis",
+            "phonetic": "Parikalpana"
+        },
+        {
+            "word": "सूत्र",
+            "translation": "Formula / Theory (Formal)",
+            "phonetic": "Sutra"
+        },
+        {
+            "word": "परमाणु",
+            "translation": "Atom",
+            "phonetic": "Paramanu"
+        },
+        {
+            "word": "अणु",
+            "translation": "Molecule",
+            "phonetic": "Anu"
+        },
+        {
+            "word": "नाभिक",
+            "translation": "Nucleus",
+            "phonetic": "Nabhik"
+        },
+        {
+            "word": "तत्व",
+            "translation": "Element",
+            "phonetic": "Tatva"
+        },
+        {
+            "word": "यौगिक",
+            "translation": "Compound",
+            "phonetic": "Yaugik"
+        },
+        {
+            "word": "मिश्रण",
+            "translation": "Mixture",
+            "phonetic": "Mishran"
+        },
+        {
+            "word": "द्रव्यमान",
+            "translation": "Mass",
+            "phonetic": "Dravyaman"
+        },
+        {
+            "word": "तेजस्",
+            "translation": "Energy / Radiance (Formal Sanskrit)",
+            "phonetic": "Tejas"
+        },
+        {
+            "word": "गति",
+            "translation": "Motion / Speed",
+            "phonetic": "Gati"
+        },
+        {
+            "word": "वेग",
+            "translation": "Velocity",
+            "phonetic": "Veg"
+        },
+        {
+            "word": "त्वरण",
+            "translation": "Acceleration",
+            "phonetic": "Twaran"
+        },
+        {
+            "word": "बल",
+            "translation": "Force",
+            "phonetic": "Bal"
+        },
+        {
+            "word": "घर्षण",
+            "translation": "Friction",
+            "phonetic": "Gharshan"
+        },
+        {
+            "word": "गुरुत्वाकर्षण",
+            "translation": "Gravity",
+            "phonetic": "Gurutvakarshan"
+        },
+        {
+            "word": "चुंबकत्व",
+            "translation": "Magnetism",
+            "phonetic": "Chumbaktva"
+        },
+        {
+            "word": "विद्युत",
+            "translation": "Electricity",
+            "phonetic": "Vidyut"
+        },
+        {
+            "word": "धारा",
+            "translation": "Current",
+            "phonetic": "Dhara"
+        },
+        {
+            "word": "चालकता",
+            "translation": "Conductivity",
+            "phonetic": "Chalakta"
+        },
+        {
+            "word": "कुचालक",
+            "translation": "Insulator",
+            "phonetic": "Kuchalak"
+        },
+        {
+            "word": "ऊष्मा",
+            "translation": "Heat / Thermal energy",
+            "phonetic": "Ushma"
+        },
+        {
+            "word": "तापमान",
+            "translation": "Temperature",
+            "phonetic": "Tapman"
+        },
+        {
+            "word": "तापमापी",
+            "translation": "Thermometer",
+            "phonetic": "Tapmaapi"
+        },
+        {
+            "word": "दूरदर्शी",
+            "translation": "Telescope (Formal Hindi)",
+            "phonetic": "Doordarshi"
+        },
+        {
+            "word": "सूक्ष्मदर्शी",
+            "translation": "Microscope",
+            "phonetic": "Sukshmadarshi"
+        },
+        {
+            "word": "विशोषशाला",
+            "translation": "Laboratory / Special hall (Formal)",
+            "phonetic": "Vishoshshala"
+        },
+        {
+            "word": "अभिकर्मक",
+            "translation": "Reagent / Reactant",
+            "phonetic": "Abhikarmak"
+        },
+        {
+            "word": "अभिक्रिया",
+            "translation": "Reaction (Chemical)",
+            "phonetic": "Abhikriya"
+        },
+        {
+            "word": "उत्प्रेरक",
+            "translation": "Catalyst",
+            "phonetic": "Utprerak"
+        },
+        {
+            "word": "आनुवंशिकी",
+            "translation": "Genetics",
+            "phonetic": "Anuvanshikiki"
+        },
+        {
+            "word": "गुणसूत्र",
+            "translation": "Chromosome",
+            "phonetic": "Gunsutra"
+        },
+        {
+            "word": "कोशिका",
+            "translation": "Cell (Biological)",
+            "phonetic": "Koshika"
+        },
+        {
+            "word": "ऊतक",
+            "translation": "Tissue (Biological)",
+            "phonetic": "Uutak"
+        },
+        {
+            "word": "तंत्रिका",
+            "translation": "Nerve",
+            "phonetic": "Tantrika"
+        },
+        {
+            "word": "मस्तिष्क",
+            "translation": "Brain",
+            "phonetic": "Mastishk"
+        },
+        {
+            "word": "प्रतिरक्षी",
+            "translation": "Antibody",
+            "phonetic": "Pratirakshi"
+        },
+        {
+            "word": "जीवाणु",
+            "translation": "Bacteria",
+            "phonetic": "Jivanu"
+        },
+        {
+            "word": "विषाणु",
+            "translation": "Virus",
+            "phonetic": "Vishanu"
+        },
+        {
+            "word": "कवक",
+            "translation": "Fungi",
+            "phonetic": "Kavak"
+        },
+        {
+            "word": "क्षेपास्त्र",
+            "translation": "Rocket / Missile",
+            "phonetic": "Kshepastra"
+        },
+        {
+            "word": "कृत्रिम बुद्धिमत्ता",
+            "translation": "Artificial Intelligence",
+            "phonetic": "Kritrim buddhimatta"
+        },
+        {
+            "word": "यंत्रिकीकरण",
+            "translation": "Mechanization",
+            "phonetic": "Yantrikikaran"
+        },
+        {
+            "word": "स्वचालन",
+            "translation": "Automation",
+            "phonetic": "Swachalan"
+        },
+        {
+            "word": "रोबोटिक्स",
+            "translation": "Robotics",
+            "phonetic": "Robotics"
+        },
+        {
+            "word": "नैनो तकनीक",
+            "translation": "Nanotechnology",
+            "phonetic": "Nano takneek"
+        },
+        {
+            "word": "अंतरिक्ष यान",
+            "translation": "Spacecraft",
+            "phonetic": "Antariksh yaan"
+        },
+        {
+            "word": "चंद्रयान",
+            "translation": "Moon craft",
+            "phonetic": "Chandrayaan"
+        },
+        {
+            "word": "प्रक्षेपण",
+            "translation": "Launch / Projection",
+            "phonetic": "Prakshepan"
+        },
+        {
+            "word": "मण्डल",
+            "translation": "Orbit / Circle (Formal Sanskrit)",
+            "phonetic": "Mandal"
+        },
+        {
+            "word": "विकिरण",
+            "translation": "Radiation",
+            "phonetic": "Vikiran"
+        },
+        {
+            "word": "परमाणु ऊर्जा",
+            "translation": "Nuclear energy",
+            "phonetic": "Paramanu urja"
+        },
+        {
+            "word": "विखंडन",
+            "translation": "Fission",
+            "phonetic": "Vikhandan"
+        },
+        {
+            "word": "संलयन",
+            "translation": "Fusion",
+            "phonetic": "Sanlayan"
+        },
+        {
+            "word": "आंकड़ा चित्रण",
+            "translation": "Data Visualization",
+            "phonetic": "Aankda chitran"
+        },
+        {
+            "word": "कूटलेखन",
+            "translation": "Coding / Cryptography",
+            "phonetic": "Koot-lekhan"
+        },
+        {
+            "word": "कलन विधि",
+            "translation": "Algorithm",
+            "phonetic": "Kalan vidhi"
+        },
+        {
+            "word": "आंकड़ा कोश",
+            "translation": "Database",
+            "phonetic": "Aankda kosh"
+        },
+        {
+            "word": "मेघ अभिकलन",
+            "translation": "Cloud computing",
+            "phonetic": "Megh abhikalun"
+        },
+        {
+            "word": "श्रृंखला-खंड",
+            "translation": "Blockchain",
+            "phonetic": "Shrinkhala-khand"
+        },
+        {
+            "word": "आभासी वास्तविकता",
+            "translation": "Virtual Reality",
+            "phonetic": "Aabhasi vastavikta"
+        },
+        {
+            "word": "संवर्धित वास्तविकता",
+            "translation": "Augmented Reality",
+            "phonetic": "Samvardhit vastavikta"
+        },
+        {
+            "word": "संजाल सुरक्षा",
+            "translation": "Cybersecurity",
+            "phonetic": "Sanjal suraksha"
+        },
+        {
+            "word": "प्रगुप्तीकरण",
+            "translation": "Encryption",
+            "phonetic": "Praguptikaran"
+        },
+        {
+            "word": "विगुप्तीकरण",
+            "translation": "Decryption",
+            "phonetic": "Viguptikaran"
+        },
+        {
+            "word": "अवरोधक",
+            "translation": "Firewall / Blocker",
+            "phonetic": "Avrodhak"
+        },
+        {
+            "word": "परिचारक",
+            "translation": "Server / Attendant",
+            "phonetic": "Paricharak"
+        },
+        {
+            "word": "वाई-फाई",
+            "translation": "Wi-Fi",
+            "phonetic": "Wi-Fi"
+        },
+        {
+            "word": "ब्लूटूथ",
+            "translation": "Bluetooth",
+            "phonetic": "Bluetooth"
+        },
+        {
+            "word": "उपग्रह संचार",
+            "translation": "Satellite communication",
+            "phonetic": "Upgrah sanchar"
+        },
+        {
+            "word": "तंतु प्रकाशिकी",
+            "translation": "Fiber optics",
+            "phonetic": "Tantu prakashiki"
+        },
+        {
+            "word": "अर्धचालक",
+            "translation": "Semiconductor",
+            "phonetic": "Ardh-chaalak"
+        },
+        {
+            "word": "प्रसंसाधक",
+            "translation": "Processor (Formal)",
+            "phonetic": "Prasansadhak"
+        },
+        {
+            "word": "विप्रतिस्मृति",
+            "translation": "Memory / Reflection (Formal)",
+            "phonetic": "Vipratismriti"
+        },
+        {
+            "word": "भंडारण",
+            "translation": "Storage / Warehousing",
+            "phonetic": "Bhandaran"
+        },
+        {
+            "word": "प्रचलन तंत्र",
+            "translation": "Operating System",
+            "phonetic": "Prachalan tantra"
+        },
+        {
+            "word": "अंतराफलम्क",
+            "translation": "Interface (Formal)",
+            "phonetic": "Antaraphalak"
+        },
+        {
+            "word": "अनुप्रयोग",
+            "translation": "Application",
+            "phonetic": "Anuprayog"
+        },
+        {
+            "word": "दोष",
+            "translation": "Bug / Fault",
+            "phonetic": "Dosh"
+        },
+        {
+            "word": "संस्करण",
+            "translation": "Version / Edition",
+            "phonetic": "Sanskarann"
+        },
+        {
+            "word": "अंकिकी हस्ताक्षर",
+            "translation": "Digital signature",
+            "phonetic": "Ankiki hastakshar"
+        },
+        {
+            "word": "ई-वाणिज्य",
+            "translation": "E-commerce",
+            "phonetic": "E-vanijya"
+        },
+        {
+            "word": "पूर्वानुमान",
+            "translation": "Prediction / Forecast",
+            "phonetic": "Pooranuman"
+        },
+        {
+            "word": "सूक्ष्म चिप",
+            "translation": "Microchip",
+            "phonetic": "Sukshma chip"
+        },
+        {
+            "word": "अतिचालकता",
+            "translation": "Superconductivity",
+            "phonetic": "Atichalakta"
+        },
+        {
+            "word": "सापेक्षता",
+            "translation": "Relativity",
+            "phonetic": "Sapekshta"
+        },
+        {
+            "word": "क्वांटम",
+            "translation": "Quantum",
+            "phonetic": "Quantum"
+        },
+        {
+            "word": "नवाचार",
+            "translation": "Innovation",
+            "phonetic": "Navachar"
+        },
+        {
+            "word": "सक्षमता",
+            "translation": "Efficiency / Competence",
+            "phonetic": "Sakshamta"
+        },
+        {
+            "word": "गवेषणा",
+            "translation": "Discovery / In-depth search (Formal)",
+            "phonetic": "Gaveshana"
+        },
+        {
+            "word": "विस्तार",
+            "translation": "Expansion / Extension",
+            "phonetic": "Vistar"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Sanganak' Sage",
+        "question": "If a technician refers to a 'Sanganak' (संगणक), what complex machine are they talking about?",
+        "options": [
+            "A calculator",
+            "A computer",
+            "A satellite",
+            "An airplane"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Sanganak' is the official and pure Hindi term for a computer. It comes from 'Ganana' (to calculate/compute) and is used in formal governmental and scientific documents."
+    }
+}

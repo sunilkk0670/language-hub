@@ -1,0 +1,612 @@
+{
+  "module_id": "pt_a1_m03",
+  "theme": "Family & People",
+  "order": 3,
+  "lessons": [
+    {
+      "targetText": "Família",
+      "english": "Family",
+      "phoneticTranscription": "Fa-mee-lya",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Pai",
+      "english": "Father",
+      "phoneticTranscription": "Pie",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Mãe",
+      "english": "Mother",
+      "phoneticTranscription": "My-ee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Filho",
+      "english": "Son",
+      "phoneticTranscription": "Fee-lyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Filha",
+      "english": "Daughter",
+      "phoneticTranscription": "Fee-lya",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Irmão",
+      "english": "Brother",
+      "phoneticTranscription": "Eer-mown",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Irmã",
+      "english": "Sister",
+      "phoneticTranscription": "Eer-mah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Avô",
+      "english": "Grandfather",
+      "phoneticTranscription": "Ah-voh",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Avó",
+      "english": "Grandmother",
+      "phoneticTranscription": "Ah-vaw",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Tio",
+      "english": "Uncle",
+      "phoneticTranscription": "Chee-oo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Tia",
+      "english": "Aunt",
+      "phoneticTranscription": "Chee-ah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Primo",
+      "english": "Cousin (m)",
+      "phoneticTranscription": "Pree-moo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Prima",
+      "english": "Cousin (f)",
+      "phoneticTranscription": "Pree-mah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sobrinho",
+      "english": "Nephew",
+      "phoneticTranscription": "Soh-bree-nyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sobrinha",
+      "english": "Niece",
+      "phoneticTranscription": "Soh-bree-nyah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Marido",
+      "english": "Husband",
+      "phoneticTranscription": "Mah-ree-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Esposa",
+      "english": "Wife",
+      "phoneticTranscription": "Es-poh-zah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Namorado",
+      "english": "Boyfriend",
+      "phoneticTranscription": "Nah-mo-rah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Namorada",
+      "english": "Girlfriend",
+      "phoneticTranscription": "Nah-mo-rah-dah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sogro",
+      "english": "Father-in-law",
+      "phoneticTranscription": "So-groo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sogra",
+      "english": "Mother-in-law",
+      "phoneticTranscription": "So-grah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cunhado",
+      "english": "Brother-in-law",
+      "phoneticTranscription": "Koo-nyah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cunhada",
+      "english": "Sister-in-law",
+      "phoneticTranscription": "Koo-nyah-dah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Padrasto",
+      "english": "Stepfather",
+      "phoneticTranscription": "Pa-dras-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Madrasta",
+      "english": "Stepmother",
+      "phoneticTranscription": "Ma-dras-tah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Enteado",
+      "english": "Stepson",
+      "phoneticTranscription": "En-chee-ah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Nieto",
+      "english": "Grandson",
+      "phoneticTranscription": "Nyeh-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Nieta",
+      "english": "Granddaughter",
+      "phoneticTranscription": "Nyeh-tah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Casado",
+      "english": "Married",
+      "phoneticTranscription": "Kah-zah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Solteiro",
+      "english": "Single",
+      "phoneticTranscription": "Sol-tay-roo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Divorciado",
+      "english": "Divorced",
+      "phoneticTranscription": "Dee-vor-syah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Viúvo",
+      "english": "Widower",
+      "phoneticTranscription": "Vyoo-voo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Bebê",
+      "english": "Baby",
+      "phoneticTranscription": "Beh-beh",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Gêmeos",
+      "english": "Twins",
+      "phoneticTranscription": "Zheh-mee-oos",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Vizinho",
+      "english": "Neighbor",
+      "phoneticTranscription": "Vee-zee-nyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Conhecido",
+      "english": "Acquaintance",
+      "phoneticTranscription": "Kon-ye-see-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Colega",
+      "english": "Colleague",
+      "phoneticTranscription": "Ko-leh-gah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Chefe",
+      "english": "Boss",
+      "phoneticTranscription": "Sheh-fee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Empregado",
+      "english": "Employee",
+      "phoneticTranscription": "Em-pre-gah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Alto",
+      "english": "Tall",
+      "phoneticTranscription": "Al-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Baixo",
+      "english": "Short",
+      "phoneticTranscription": "Bye-shoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Magro",
+      "english": "Thin",
+      "phoneticTranscription": "Mah-groo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Gordo",
+      "english": "Fat",
+      "phoneticTranscription": "Gor-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Bonito",
+      "english": "Beautiful",
+      "phoneticTranscription": "Bo-nee-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Feio",
+      "english": "Ugly",
+      "phoneticTranscription": "Fay-oo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Jovem",
+      "english": "Young",
+      "phoneticTranscription": "Zho-vehm",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Idoso",
+      "english": "Old",
+      "phoneticTranscription": "Veh-lyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Forte",
+      "english": "Strong",
+      "phoneticTranscription": "For-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Fraco",
+      "english": "Weak",
+      "phoneticTranscription": "Frah-koo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Inteligente",
+      "english": "Intelligent",
+      "phoneticTranscription": "In-te-lee-zhen-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Engraçado",
+      "english": "Funny",
+      "phoneticTranscription": "En-gra-sah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sério",
+      "english": "Serious",
+      "phoneticTranscription": "Seh-ryoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Simpático",
+      "english": "Friendly",
+      "phoneticTranscription": "Sim-pah-chee-koo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Chato",
+      "english": "Annoying",
+      "phoneticTranscription": "Shah-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Bravo",
+      "english": "Angry",
+      "phoneticTranscription": "Brah-voo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Triste",
+      "english": "Sad",
+      "phoneticTranscription": "Trees-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Feliz",
+      "english": "Happy",
+      "phoneticTranscription": "Fe-lees",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cansado",
+      "english": "Tired",
+      "phoneticTranscription": "Kan-sah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Doente",
+      "english": "Sick",
+      "phoneticTranscription": "Dwen-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Rico",
+      "english": "Rich",
+      "phoneticTranscription": "Hee-koo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Pobre",
+      "english": "Poor",
+      "phoneticTranscription": "Po-bree",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Famoso",
+      "english": "Famous",
+      "phoneticTranscription": "Fa-mo-zoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Estranho",
+      "english": "Strange",
+      "phoneticTranscription": "Es-tra-nyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Gentil",
+      "english": "Kind",
+      "phoneticTranscription": "Zhen-cheel",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Educado",
+      "english": "Polite",
+      "phoneticTranscription": "E-doo-kah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Grossento",
+      "english": "Rude",
+      "phoneticTranscription": "Gro-sen-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Paciente",
+      "english": "Patient",
+      "phoneticTranscription": "Pa-syen-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Calmo",
+      "english": "Calm",
+      "phoneticTranscription": "Kal-moo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Agitado",
+      "english": "Restless",
+      "phoneticTranscription": "A-zhee-tah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Honesto",
+      "english": "Honest",
+      "phoneticTranscription": "O-nes-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Mentiroso",
+      "english": "Liar",
+      "phoneticTranscription": "Men-chee-ro-zoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Trabalhador",
+      "english": "Hardworking",
+      "phoneticTranscription": "Tra-ba-lya-dor",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Preguiçoso",
+      "english": "Lazy",
+      "phoneticTranscription": "Pre-gee-so-zoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Corajoso",
+      "english": "Brave",
+      "phoneticTranscription": "Ko-ra-zho-zoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Medroso",
+      "english": "Fearful",
+      "phoneticTranscription": "Me-dro-zoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Gringo",
+      "english": "Foreigner",
+      "phoneticTranscription": "Green-goo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cidadão",
+      "english": "Citizen",
+      "phoneticTranscription": "See-da-down",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Humanidade",
+      "english": "Humanity",
+      "phoneticTranscription": "Oo-ma-nee-dah-jee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "População",
+      "english": "Population",
+      "phoneticTranscription": "Po-poo-la-sown",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Comunidade",
+      "english": "Community",
+      "phoneticTranscription": "Ko-moo-nee-dah-jee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Sociedade",
+      "english": "Society",
+      "phoneticTranscription": "So-sye-dah-jee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Público",
+      "english": "Public",
+      "phoneticTranscription": "Poo-blee-koo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Privado",
+      "english": "Private",
+      "phoneticTranscription": "Pree-vah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Nacionalidade",
+      "english": "Nationality",
+      "phoneticTranscription": "Na-syo-na-lee-dah-jee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Naturalidade",
+      "english": "Birth",
+      "phoneticTranscription": "Nas-see-men-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Vida",
+      "english": "Life",
+      "phoneticTranscription": "Vee-dah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Morte",
+      "english": "Death",
+      "phoneticTranscription": "Mor-chee",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Casamento",
+      "english": "Wedding",
+      "phoneticTranscription": "Ka-za-men-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Aniversário",
+      "english": "Birthday",
+      "phoneticTranscription": "A-nee-ver-sa-ryoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Festa",
+      "english": "Party",
+      "phoneticTranscription": "Fes-tah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Convidado",
+      "english": "Guest",
+      "phoneticTranscription": "Kon-vee-dah-doo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Anfitrião",
+      "english": "Host",
+      "phoneticTranscription": "An-fee-try-own",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Encontro",
+      "english": "Meeting/Date",
+      "phoneticTranscription": "En-kon-troo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Relacionamento",
+      "english": "Relationship",
+      "phoneticTranscription": "Re-la-syo-na-men-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Amor",
+      "english": "Love",
+      "phoneticTranscription": "A-mor",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Ódio",
+      "english": "Hate",
+      "phoneticTranscription": "O-dyoo",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Respeito",
+      "english": "Respect",
+      "phoneticTranscription": "Res-pay-too",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Confiança",
+      "english": "Trust",
+      "phoneticTranscription": "Kon-fyan-sah",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Auxiliar",
+      "english": "To help",
+      "phoneticTranscription": "A-zhoo-dar",
+      "radicalBreakdown": ""
+    },
+    {
+      "targetText": "Cuidar",
+      "english": "To take care",
+      "phoneticTranscription": "Kwee-dar",
+      "radicalBreakdown": ""
+    }
+  ],
+  "liarGameData": {
+    "trap": "Parentes",
+    "correctVersion": "Means 'Relatives' (aunts, cousins), not specifically 'Parents' (which is 'Pais').",
+    "explanation": "Trap level: Extreme"
+  }
+}

@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a1_m01",
+    "language": "hi",
+    "level": "a1",
+    "theme": "Core Essentials & Greetings",
+    "order": 1,
+    "lessons": [
+        {
+            "word": "नमस्ते",
+            "translation": "Hello",
+            "phonetic": "Namaste"
+        },
+        {
+            "word": "सुप्रभात",
+            "translation": "Good morning",
+            "phonetic": "Suprabhat"
+        },
+        {
+            "word": "शुभरात्रि",
+            "translation": "Good night",
+            "phonetic": "Shubhratri"
+        },
+        {
+            "word": "धन्यवाद",
+            "translation": "Thank you",
+            "phonetic": "Dhanyavad"
+        },
+        {
+            "word": "साधुवाद",
+            "translation": "Thank you",
+            "phonetic": "Shukriya"
+        },
+        {
+            "word": "कृपया",
+            "translation": "Please",
+            "phonetic": "Kripya"
+        },
+        {
+            "word": "स्वागत",
+            "translation": "Welcome",
+            "phonetic": "Swagat"
+        },
+        {
+            "word": "हाँ",
+            "translation": "Yes",
+            "phonetic": "Haan"
+        },
+        {
+            "word": "नहीं",
+            "translation": "No",
+            "phonetic": "Nahin"
+        },
+        {
+            "word": "आप",
+            "translation": "You (formal)",
+            "phonetic": "Aap"
+        },
+        {
+            "word": "तुम",
+            "translation": "You (informal)",
+            "phonetic": "Tum"
+        },
+        {
+            "word": "तू",
+            "translation": "You (intimate)",
+            "phonetic": "Tu"
+        },
+        {
+            "word": "मैं",
+            "translation": "I / Me",
+            "phonetic": "Main"
+        },
+        {
+            "word": "हम",
+            "translation": "We",
+            "phonetic": "Ham"
+        },
+        {
+            "word": "वे",
+            "translation": "They",
+            "phonetic": "Ve"
+        },
+        {
+            "word": "यह",
+            "translation": "This / He / She",
+            "phonetic": "Yah"
+        },
+        {
+            "word": "वह",
+            "translation": "That / He / She",
+            "phonetic": "Vah"
+        },
+        {
+            "word": "का",
+            "translation": "Of (m)",
+            "phonetic": "Ka"
+        },
+        {
+            "word": "की",
+            "translation": "Of (f)",
+            "phonetic": "Ki"
+        },
+        {
+            "word": "के",
+            "translation": "Of (pl)",
+            "phonetic": "Ke"
+        },
+        {
+            "word": "कल",
+            "translation": "Tomorrow / Yesterday",
+            "phonetic": "Kal"
+        },
+        {
+            "word": "आज",
+            "translation": "Today",
+            "phonetic": "Aaj"
+        },
+        {
+            "word": "अब",
+            "translation": "Now",
+            "phonetic": "Ab"
+        },
+        {
+            "word": "यहाँ",
+            "translation": "Here",
+            "phonetic": "Yahan"
+        },
+        {
+            "word": "वहाँ",
+            "translation": "There",
+            "phonetic": "Wahan"
+        },
+        {
+            "word": "कहाँ",
+            "translation": "Where",
+            "phonetic": "Kahan"
+        },
+        {
+            "word": "कैसे",
+            "translation": "How",
+            "phonetic": "Kaise"
+        },
+        {
+            "word": "क्यों",
+            "translation": "Why",
+            "phonetic": "Kyon"
+        },
+        {
+            "word": "क्या",
+            "translation": "What",
+            "phonetic": "Kya"
+        },
+        {
+            "word": "कौन",
+            "translation": "Who",
+            "phonetic": "Kaun"
+        },
+        {
+            "word": "कितना",
+            "translation": "How much",
+            "phonetic": "Kitna"
+        },
+        {
+            "word": "अच्छा",
+            "translation": "Good / Okay",
+            "phonetic": "Accha"
+        },
+        {
+            "word": "बुरा",
+            "translation": "Bad",
+            "phonetic": "Bura"
+        },
+        {
+            "word": "छोटा",
+            "translation": "Small",
+            "phonetic": "Chhota"
+        },
+        {
+            "word": "बड़ा",
+            "translation": "Big",
+            "phonetic": "Bada"
+        },
+        {
+            "word": "सुन्दर",
+            "translation": "Beautiful",
+            "phonetic": "Sundar"
+        },
+        {
+            "word": "प्रसन्न",
+            "translation": "Happy",
+            "phonetic": "Khush"
+        },
+        {
+            "word": "कष्टी",
+            "translation": "Sad",
+            "phonetic": "Dukhi"
+        },
+        {
+            "word": "नाम",
+            "translation": "Name",
+            "phonetic": "Naam"
+        },
+        {
+            "word": "मित्र",
+            "translation": "Friend",
+            "phonetic": "Dost"
+        },
+        {
+            "word": "शत्रु",
+            "translation": "Enemy",
+            "phonetic": "Dushman"
+        },
+        {
+            "word": "घर",
+            "translation": "Home",
+            "phonetic": "Ghar"
+        },
+        {
+            "word": "कमरा",
+            "translation": "Room",
+            "phonetic": "Kamra"
+        },
+        {
+            "word": "जल",
+            "translation": "Water",
+            "phonetic": "Paani"
+        },
+        {
+            "word": "भोजन",
+            "translation": "Food / To eat",
+            "phonetic": "Khana"
+        },
+        {
+            "word": "चाय",
+            "translation": "Tea",
+            "phonetic": "Chai"
+        },
+        {
+            "word": "दुग्ध",
+            "translation": "Milk",
+            "phonetic": "Doodh"
+        },
+        {
+            "word": "पुत्र",
+            "translation": "Son",
+            "phonetic": "Beta"
+        },
+        {
+            "word": "पुत्री",
+            "translation": "Daughter",
+            "phonetic": "Beti"
+        },
+        {
+            "word": "भ्राता",
+            "translation": "Brother",
+            "phonetic": "Bhai"
+        },
+        {
+            "word": "भगिनी",
+            "translation": "Sister",
+            "phonetic": "Behen"
+        },
+        {
+            "word": "माता",
+            "translation": "Mother",
+            "phonetic": "Maata"
+        },
+        {
+            "word": "पिता",
+            "translation": "Father",
+            "phonetic": "Pita"
+        },
+        {
+            "word": "लड़का",
+            "translation": "Boy",
+            "phonetic": "Ladka"
+        },
+        {
+            "word": "लड़की",
+            "translation": "Girl",
+            "phonetic": "Ladki"
+        },
+        {
+            "word": "नर",
+            "translation": "Man / Male person",
+            "phonetic": "Nar"
+        },
+        {
+            "word": "स्त्री",
+            "translation": "Woman",
+            "phonetic": "Aurat"
+        },
+        {
+            "word": "बालक",
+            "translation": "Child",
+            "phonetic": "Baccha"
+        },
+        {
+            "word": "जन",
+            "translation": "People",
+            "phonetic": "Log"
+        },
+        {
+            "word": "कार्य",
+            "translation": "Work",
+            "phonetic": "Kaam"
+        },
+        {
+            "word": "पुस्तक",
+            "translation": "Book",
+            "phonetic": "Kitaab"
+        },
+        {
+            "word": "पत्र",
+            "translation": "Paper",
+            "phonetic": "Kaagaz"
+        },
+        {
+            "word": "लेखनी",
+            "translation": "Pen",
+            "phonetic": "Kalam"
+        },
+        {
+            "word": "समय",
+            "translation": "Time",
+            "phonetic": "Samay"
+        },
+        {
+            "word": "दिन",
+            "translation": "Day",
+            "phonetic": "Din"
+        },
+        {
+            "word": "रात",
+            "translation": "Night",
+            "phonetic": "Raat"
+        },
+        {
+            "word": "सुबह",
+            "translation": "Morning",
+            "phonetic": "Subah"
+        },
+        {
+            "word": "शाम",
+            "translation": "Evening",
+            "phonetic": "Shaam"
+        },
+        {
+            "word": "एक",
+            "translation": "One",
+            "phonetic": "Ek"
+        },
+        {
+            "word": "दो",
+            "translation": "Two",
+            "phonetic": "Do"
+        },
+        {
+            "word": "तीन",
+            "translation": "Three",
+            "phonetic": "Teen"
+        },
+        {
+            "word": "चार",
+            "translation": "Four",
+            "phonetic": "Chaar"
+        },
+        {
+            "word": "पाँच",
+            "translation": "Five",
+            "phonetic": "Paanch"
+        },
+        {
+            "word": "छह",
+            "translation": "Six",
+            "phonetic": "Cheh"
+        },
+        {
+            "word": "सात",
+            "translation": "Seven",
+            "phonetic": "Saat"
+        },
+        {
+            "word": "आठ",
+            "translation": "Eight",
+            "phonetic": "Aath"
+        },
+        {
+            "word": "नौ",
+            "translation": "Nine",
+            "phonetic": "Nau"
+        },
+        {
+            "word": "दस",
+            "translation": "Ten",
+            "phonetic": "Das"
+        },
+        {
+            "word": "स्कूल",
+            "translation": "School",
+            "phonetic": "School"
+        },
+        {
+            "word": "विपणि",
+            "translation": "Market",
+            "phonetic": "Bazaar"
+        },
+        {
+            "word": "आपण",
+            "translation": "Shop",
+            "phonetic": "Dukaan"
+        },
+        {
+            "word": "मार्ग",
+            "translation": "Path",
+            "phonetic": "Raasta"
+        },
+        {
+            "word": "नगर",
+            "translation": "City",
+            "phonetic": "Shahar"
+        },
+        {
+            "word": "गाँव",
+            "translation": "Village",
+            "phonetic": "Gaon"
+        },
+        {
+            "word": "देश",
+            "translation": "Country",
+            "phonetic": "Desh"
+        },
+        {
+            "word": "प्रेम",
+            "translation": "Love",
+            "phonetic": "Pyaar"
+        },
+        {
+            "word": "क्रोध",
+            "translation": "Anger",
+            "phonetic": "Gussa"
+        },
+        {
+            "word": "डर",
+            "translation": "Fear",
+            "phonetic": "Dar"
+        },
+        {
+            "word": "प्रसन्नी",
+            "translation": "Happiness",
+            "phonetic": "Khushi"
+        },
+        {
+            "word": "कष्ट",
+            "translation": "Sorrow",
+            "phonetic": "Dukh"
+        },
+        {
+            "word": "और",
+            "translation": "And",
+            "phonetic": "Aur"
+        },
+        {
+            "word": "किंतु",
+            "translation": "But",
+            "phonetic": "Lekin"
+        },
+        {
+            "word": "या",
+            "translation": "Or",
+            "phonetic": "Ya"
+        },
+        {
+            "word": "यदि",
+            "translation": "If",
+            "phonetic": "Agar"
+        },
+        {
+            "word": "इसलिए",
+            "translation": "Therefore",
+            "phonetic": "Isliye"
+        },
+        {
+            "word": "भी",
+            "translation": "Also",
+            "phonetic": "Bhee"
+        },
+        {
+            "word": "केवल",
+            "translation": "Only",
+            "phonetic": "Sirf"
+        },
+        {
+            "word": "बहुत",
+            "translation": "Very",
+            "phonetic": "Bahut"
+        },
+        {
+            "word": "थोड़ा",
+            "translation": "A little",
+            "phonetic": "Thoda"
+        },
+        {
+            "word": "सब",
+            "translation": "All",
+            "phonetic": "Sab"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Kal' Paradox",
+        "question": "In Hindi, if someone says 'Main kal aaunga' (I will come कल), when are they coming?",
+        "options": [
+            "Yesterday",
+            "Tomorrow",
+            "Both are possible (context dependent)",
+            "Neither"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "The word कल (Kal) is unique because it means both 'yesterday' and 'tomorrow'. The verb tense determines the meaning. 'Aaunga' is future tense, so here it means 'tomorrow'. This is the ultimate context test for Hindi learners!"
+    }
+}

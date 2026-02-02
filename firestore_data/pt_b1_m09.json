@@ -1,0 +1,611 @@
+{
+    "module_id": "pt_b1_m09",
+    "theme": "Arts & Expression",
+    "order": 29,
+    "lessons": [
+        {
+            "targetText": "Artes plásticas",
+            "english": "Visual arts",
+            "phoneticTranscription": "Ar-chees plas-chee-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Escultura contemporânea",
+            "english": "Contemporary sculpture",
+            "phoneticTranscription": "Es-kool-too-ra kon-tem-po-ra-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pintura a óleo",
+            "english": "Oil painting",
+            "phoneticTranscription": "Peen-too-ra a o-lyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aquarela delicada",
+            "english": "Delicate watercolor",
+            "phoneticTranscription": "A-kwa-he-la de-lee-ka-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Gravura em metal",
+            "english": "Metal engraving",
+            "phoneticTranscription": "Gra-voo-ra em me-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Xilogravura popular",
+            "english": "Popular woodcut",
+            "phoneticTranscription": "Shee-lo-gra-voo-ra po-poo-lar",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Curadoria de arte",
+            "english": "Art curation",
+            "phoneticTranscription": "Koo-ra-do-ryah de ar-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Exposição itinerante",
+            "english": "Traveling exhibition",
+            "phoneticTranscription": "Es-po-zee-sown ee-chee-ne-han-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vanguardismo",
+            "english": "Avant-gardeism",
+            "phoneticTranscription": "Van-gwar-jeez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Surrealismo onírico",
+            "english": "Oneiric surrealism",
+            "phoneticTranscription": "Soo-he-a-leez-moo o-nee-ree-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Expressionismo abstrato",
+            "english": "Abstract expressionism",
+            "phoneticTranscription": "Es-pre-syo-neez-moo ab-stra-too",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cubismo analítico",
+            "english": "Analytical cubism",
+            "phoneticTranscription": "Koo-beez-moo a-na-lee-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estética modernista",
+            "english": "Modernist aesthetics",
+            "phoneticTranscription": "Es-te-chee-ka mo-der-nees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Semana de Arte Moderna",
+            "english": "Modern Art Week",
+            "phoneticTranscription": "Se-ma-na de Ar-chee Mo-der-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Canibalismo artístico",
+            "english": "Artistic cannibalism/anthropophagy",
+            "phoneticTranscription": "Ka-nee-ba-leez-moo ar-chees-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estética e semiótica",
+            "english": "Aesthetics and semiotics",
+            "phoneticTranscription": "Es-te-chee-ka e se-myo-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Roteiro cinematográfico",
+            "english": "Cinematographic script",
+            "phoneticTranscription": "Ho-tay-roo see-ne-ma-to-gra-fee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Direção de fotografia",
+            "english": "Cinematography/Photo direction",
+            "phoneticTranscription": "Jee-re-sown de fo-to-gra-fee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Montagem e edição",
+            "english": "Editing and assembly",
+            "phoneticTranscription": "Mon-ta-zhem e e-jee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sonoplastia envolvente",
+            "english": "Immersive sound design",
+            "phoneticTranscription": "So-no-plas-chee-a en-vol-ven-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trilha sonora original",
+            "english": "Original soundtrack",
+            "phoneticTranscription": "Tree-lya so-no-ra o-ree-zhee-nal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Longa-metragem",
+            "english": "Feature film",
+            "phoneticTranscription": "Lon-ga me-tra-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Documentário crítico",
+            "english": "Critical documentary",
+            "phoneticTranscription": "Do-koo-men-ta-ryoo kree-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cinema de autor",
+            "english": "Auteur cinema",
+            "phoneticTranscription": "See-ne-ma de aw-tor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sétima arte",
+            "english": "Seventh art (cinema)",
+            "phoneticTranscription": "Se-chee-ma ar-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dramaturgia teatral",
+            "english": "Teatrical dramaturgy",
+            "phoneticTranscription": "Dra-ma-toor-zhyah te-a-tral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cenografia criativa",
+            "english": "Creative scenography",
+            "phoneticTranscription": "Se-no-gra-fee-a kree-a-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Figurino de época",
+            "english": "Period costume",
+            "phoneticTranscription": "Fee-goo-ree-noo de e-po-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Iluminação cênica",
+            "english": "Stage lighting",
+            "phoneticTranscription": "Ee-loo-mee-na-sown se-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Interpretação dramática",
+            "english": "Dramatic interpretation",
+            "phoneticTranscription": "In-ter-pre-ta-sown dra-ma-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Monólogo reflexivo",
+            "english": "Reflective monologue",
+            "phoneticTranscription": "Mo-no-lo-goo he-fle-ksee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ensaio geral",
+            "english": "Dress rehearsal",
+            "phoneticTranscription": "En-sa-yoo zhe-hal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estreia mundial",
+            "english": "World premiere",
+            "phoneticTranscription": "Es-tray-a moon-jyal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Palco e bastidores",
+            "english": "Stage and backstage",
+            "phoneticTranscription": "Pal-koo e bas-chee-do-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aplausos de pé",
+            "english": "Standing ovation",
+            "phoneticTranscription": "A-plow-zoos de pe",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Composição harmônica",
+            "english": "Harmonic composition",
+            "phoneticTranscription": "Kom-po-zee-sown ar-mo-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Contraponto musical",
+            "english": "Musical counterpoint",
+            "phoneticTranscription": "Kon-tra-pon-too moo-zee-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Orquestra sinfônica",
+            "english": "Symphony orchestra",
+            "phoneticTranscription": "Or-kes-tra seen-fo-nee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Maestro regente",
+            "english": "Conducting maestro",
+            "phoneticTranscription": "Ma-es-troo he-zhen-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Instrumentos de sopro",
+            "english": "Wind instruments",
+            "phoneticTranscription": "In-stroo-men-toos de so-proo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Instrumentos de corda",
+            "english": "String instruments",
+            "phoneticTranscription": "In-stroo-men-toos de kor-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Percussão rítmica",
+            "english": "Rhythmic percussion",
+            "phoneticTranscription": "Per-koo-sown heet-mee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Solfejo técnico",
+            "english": "Technical solfeggio",
+            "phoneticTranscription": "Sol-fe-zhoo tek-nee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Partitura complexa",
+            "english": "Complex musical score",
+            "phoneticTranscription": "Par-chee-too-ra kom-ple-ksa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Virtuosismo técnico",
+            "english": "Technical virtuosity",
+            "phoneticTranscription": "Veer-two-zees-moo tek-nee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Improvisação de jazz",
+            "english": "Jazz improvisation",
+            "phoneticTranscription": "Eem-pro-vee-za-sown de dzhaz",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coreografia rigorosa",
+            "english": "Rigorous choreography",
+            "phoneticTranscription": "Ko-re-o-gra-fee-a hee-go-ho-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Balé clássico",
+            "english": "Classical ballet",
+            "phoneticTranscription": "Ba-le kla-see-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dança contemporânea",
+            "english": "Contemporary dance",
+            "phoneticTranscription": "Dan-sa kon-tem-po-ra-nyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Passos coordenados",
+            "english": "Coordinated steps",
+            "phoneticTranscription": "Pa-soos ko-or-de-na-doos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Expressão corporal",
+            "english": "Body expression",
+            "phoneticTranscription": "Es-pre-sown kor-po-hal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Performances artísticas",
+            "english": "Artistic performances",
+            "phoneticTranscription": "Per-for-man-sees ar-chees-chee-kas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Instalação sensorial",
+            "english": "Sensory installation",
+            "phoneticTranscription": "In-sta-la-sown sen-so-ryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arte urbana / Grafite",
+            "english": "Urban art / Graffiti",
+            "phoneticTranscription": "Ar-chee oor-ba-na / gra-fee-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Intervenção urbana",
+            "english": "Urban intervention",
+            "phoneticTranscription": "In-ter-ven-sown oor-ba-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Manifesto literário",
+            "english": "Literary manifesto",
+            "phoneticTranscription": "Ma-nee-fes-too lee-te-ra-ryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Exegese textual",
+            "english": "Textual exegesis/criticism",
+            "phoneticTranscription": "E-ze-zhe-zee teks-too-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ensino de artes",
+            "english": "Arts education",
+            "phoneticTranscription": "En-see-noo de ar-cheis",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Teoria das cores",
+            "english": "Color theory",
+            "phoneticTranscription": "Te-o-ree-a das ko-rees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Círculo cromático",
+            "english": "Color wheel",
+            "phoneticTranscription": "Seer-koo-loo kro-ma-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Perspectiva linear",
+            "english": "Linear perspective",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ponto de fuga",
+            "english": "Vanishing point",
+            "phoneticTranscription": "Pon-too de foo-ga",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Luz e sombra",
+            "english": "Light and shadow",
+            "phoneticTranscription": "Loos e som-bra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Contraste e saturação",
+            "english": "Contrast and saturation",
+            "phoneticTranscription": "Kon-tras-chee e sa-too-ra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Textura visual",
+            "english": "Visual texture",
+            "phoneticTranscription": "Tes-too-ra vee-zoo-al",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Design gráfico",
+            "english": "Graphic design",
+            "phoneticTranscription": "De-zahy-nyoo gra-fee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Tipografia elegante",
+            "english": "Elegant typography",
+            "phoneticTranscription": "Chee-po-gra-fee-a e-le-gan-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Layout criativo",
+            "english": "Creative layout",
+            "phoneticTranscription": "Lay-owt kree-a-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Identidade de marca",
+            "english": "Brand identity",
+            "phoneticTranscription": "Ee-den-chee-da-jee de mar-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Publicidade criativa",
+            "english": "Creative advertising",
+            "phoneticTranscription": "Poo-blee-see-da-jee kree-a-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Slogan marcante",
+            "english": "Striking slogan",
+            "phoneticTranscription": "Slo-gan mar-kan-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Marketing digital",
+            "english": "Digital marketing",
+            "phoneticTranscription": "Mar-ke-cheen jee-zhee-tal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Engajamento do público",
+            "english": "Public engagement",
+            "phoneticTranscription": "En-ga-zha-men-too doo poo-blee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mídias sociais",
+            "english": "Social media",
+            "phoneticTranscription": "Mee-jyas so-syays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fenômeno viral",
+            "english": "Viral phenomenon",
+            "phoneticTranscription": "Fe-no-me-noo vee-hal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Narrativa transmídia",
+            "english": "Transmedia narrative",
+            "phoneticTranscription": "Na-ha-chee-va trans-mee-jya",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Storytelling cativante",
+            "english": "Captivating storytelling",
+            "phoneticTranscription": "Sto-ree-te-leen ka-chee-van-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arcabouço teórico",
+            "english": "Theoretical framework",
+            "phoneticTranscription": "Ar-ka-bow-soo te-o-ree-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Empirismo artístico",
+            "english": "Artistic empiricism",
+            "phoneticTranscription": "Em-pee-heez-moo ar-chees-chee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estudo fenomênico",
+            "english": "Phenomenal study",
+            "phoneticTranscription": "Es-too-doo fe-no-me-nee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Diálogo entre textos",
+            "english": "Dialogue between texts / Intertextuality",
+            "phoneticTranscription": "Jy-a-lo-goo en-tree teks-toos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metalinguagem",
+            "english": "Metalanguage",
+            "phoneticTranscription": "Me-ta-leen-gwa-zhem",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Visão subjetiva",
+            "english": "Subjective vision / Subjectivity",
+            "phoneticTranscription": "Vee-zown soob-zhe-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Liberdade criativa",
+            "english": "Creative freedom",
+            "phoneticTranscription": "Lee-ber-da-jee kree-a-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Originalidade pura",
+            "english": "Pure originality",
+            "phoneticTranscription": "O-ree-zhee-na-lee-da-jee poo-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inovação radical",
+            "english": "Radical innovation",
+            "phoneticTranscription": "Ee-no-va-sown ha-jee-kal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ruptura de paradigmas",
+            "english": "Paradigm shift/break",
+            "phoneticTranscription": "Hoop-too-ra de pa-ra-jeeg-mas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sensibilidade artística",
+            "english": "Artistic sensibility",
+            "phoneticTranscription": "Sen-see-bee-lee-da-jee ar-chees-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Apreciação estética",
+            "english": "Aesthetic appreciation",
+            "phoneticTranscription": "A-pre-sya-sown es-te-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Crítico de arte",
+            "english": "Art critic",
+            "phoneticTranscription": "Kree-chee-koo de ar-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mercado das artes",
+            "english": "Art market",
+            "phoneticTranscription": "Mer-ka-doo das ar-chees",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Galerias de renome",
+            "english": "Renowned galleries",
+            "phoneticTranscription": "Ga-le-ryas de he-no-mee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colecionador privado",
+            "english": "Private collector",
+            "phoneticTranscription": "Ko-le-syo-na-dor pree-va-doo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Acervo museológico",
+            "english": "Museological collection",
+            "phoneticTranscription": "A-ser-voo moo-ze-o-lo-zhee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Restauração de obras",
+            "english": "Artwork restoration",
+            "phoneticTranscription": "Hes-ta-oo-ra-sown de o-bras",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Conservação preventiva",
+            "english": "Preventive conservation",
+            "phoneticTranscription": "Kon-ser-va-sown pre-ven-chee-va",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Legado imaterial",
+            "english": "Immaterial legacy / Intangible heritage",
+            "phoneticTranscription": "Le-ga-doo ee-ma-te-ryal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Folclore e tradição",
+            "english": "Folklore and tradition",
+            "phoneticTranscription": "Fol-klo-ree e tra-jee-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Expressão da alma",
+            "english": "Expression of the soul",
+            "phoneticTranscription": "Es-pre-sown da al-ma",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Beleza efêmera",
+            "english": "Ephemeral beauty",
+            "phoneticTranscription": "Be-le-za e-fe-me-ra",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Novela",
+        "correctVersion": "Means 'Soap opera' (television). For 'Novel (literary)', use 'Romance'.",
+        "explanation": "Trap level: Medium"
+    }
+}

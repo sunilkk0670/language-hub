@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a2_m02",
+    "language": "hi",
+    "level": "a2",
+    "theme": "Work & Office Culture",
+    "order": 12,
+    "lessons": [
+        {
+            "word": "नियुक्ति",
+            "translation": "Appointment / Recruitment",
+            "phonetic": "Niyukti"
+        },
+        {
+            "word": "साक्षात्कार",
+            "translation": "Interview",
+            "phonetic": "Sakshatkar"
+        },
+        {
+            "word": "ध्येय",
+            "translation": "Objective / Aim (Formal)",
+            "phonetic": "Dhyey"
+        },
+        {
+            "word": "प्रबंधक",
+            "translation": "Manager",
+            "phonetic": "Prabandhak"
+        },
+        {
+            "word": "निदेशक",
+            "translation": "Director",
+            "phonetic": "Nideshak"
+        },
+        {
+            "word": "सचिव",
+            "translation": "Secretary",
+            "phonetic": "Sachiv"
+        },
+        {
+            "word": "सहकर्मी",
+            "translation": "Colleague / Coworker",
+            "phonetic": "Sahkarmi"
+        },
+        {
+            "word": "सहायक",
+            "translation": "Assistant",
+            "phonetic": "Sahayak"
+        },
+        {
+            "word": "विशेषज्ञ",
+            "translation": "Specialist / Expert",
+            "phonetic": "Visheshagya"
+        },
+        {
+            "word": "परामर्शदाता",
+            "translation": "Consultant / Advisor",
+            "phonetic": "Paramarshdata"
+        },
+        {
+            "word": "अभिकर्ता",
+            "translation": "Representative / Agent (Formal)",
+            "phonetic": "Abhikarta"
+        },
+        {
+            "word": "नियोक्ता",
+            "translation": "Employer",
+            "phonetic": "Niyokta"
+        },
+        {
+            "word": "उद्यमी",
+            "translation": "Entrepreneur",
+            "phonetic": "Udyami"
+        },
+        {
+            "word": "पूंजी",
+            "translation": "Capital / Investment",
+            "phonetic": "Poonji"
+        },
+        {
+            "word": "निवेश",
+            "translation": "Investment",
+            "phonetic": "Nivesh"
+        },
+        {
+            "word": "लाभ",
+            "translation": "Profit / Benefit",
+            "phonetic": "Laabh"
+        },
+        {
+            "word": "हानि",
+            "translation": "Loss",
+            "phonetic": "Haani"
+        },
+        {
+            "word": "जोखिम",
+            "translation": "Risk",
+            "phonetic": "Jokhim"
+        },
+        {
+            "word": "अधिगोपन",
+            "translation": "Insurance (Sanskrit)",
+            "phonetic": "Adhigopan"
+        },
+        {
+            "word": "कर",
+            "translation": "Tax",
+            "phonetic": "Kar"
+        },
+        {
+            "word": "धार्यता",
+            "translation": "Obligation / Liability",
+            "phonetic": "Dharyata"
+        },
+        {
+            "word": "अंशदान",
+            "translation": "Installment / Contribution",
+            "phonetic": "Anshdaan"
+        },
+        {
+            "word": "कुसीद",
+            "translation": "Interest on loan (Sanskrit)",
+            "phonetic": "Kuseed"
+        },
+        {
+            "word": "हस्ताक्षर",
+            "translation": "Signature",
+            "phonetic": "Hastakshar"
+        },
+        {
+            "word": "प्रलेख",
+            "translation": "Document (Formal)",
+            "phonetic": "Pralekh"
+        },
+        {
+            "word": "पंजीकरण",
+            "translation": "Registration",
+            "phonetic": "Panjeekaran"
+        },
+        {
+            "word": "संगणक",
+            "translation": "Computer (Pure Hindi)",
+            "phonetic": "Sanganak"
+        },
+        {
+            "word": "अंक-पट्ट",
+            "translation": "Keyboard (Formal)",
+            "phonetic": "Ank-patt"
+        },
+        {
+            "word": "मूषक",
+            "translation": "Mouse (Formal Hindi/Sanskrit)",
+            "phonetic": "Mooshak"
+        },
+        {
+            "word": "पटल",
+            "translation": "Screen / Table (Formal)",
+            "phonetic": "Patal"
+        },
+        {
+            "word": "मुद्रक",
+            "translation": "Printer (Pure Hindi)",
+            "phonetic": "Mudrak"
+        },
+        {
+            "word": "संचिका",
+            "translation": "File (Pure Hindi)",
+            "phonetic": "Sanchika"
+        },
+        {
+            "word": "सम्पुट",
+            "translation": "Folder (Formal)",
+            "phonetic": "Samput"
+        },
+        {
+            "word": "वैद्युत डाक",
+            "translation": "Email (Formal literal)",
+            "phonetic": "Vaidyut Daak"
+        },
+        {
+            "word": "कूटशब्द",
+            "translation": "Password (Pure Hindi)",
+            "phonetic": "Koot-shabd"
+        },
+        {
+            "word": "परिसंजाल",
+            "translation": "Network (Formal)",
+            "phonetic": "Parisanjal"
+        },
+        {
+            "word": "वेब पोर्टल",
+            "translation": "Web Portal",
+            "phonetic": "Web portal"
+        },
+        {
+            "word": "मृदुतंत्र",
+            "translation": "Software (Formal literal)",
+            "phonetic": "Mrdutantra"
+        },
+        {
+            "word": "कठोरतंत्र",
+            "translation": "Hardware (Formal literal)",
+            "phonetic": "Kathortantra"
+        },
+        {
+            "word": "प्रस्तुतीकरण",
+            "translation": "Presentation (Formal)",
+            "phonetic": "Prastuteekaran"
+        },
+        {
+            "word": "परियोजना",
+            "translation": "Project",
+            "phonetic": "Pariyojana"
+        },
+        {
+            "word": "संविदा",
+            "translation": "Contract (Formal Sanskrit)",
+            "phonetic": "Samvida"
+        },
+        {
+            "word": "शर्तें",
+            "translation": "Terms / Conditions",
+            "phonetic": "Shartein"
+        },
+        {
+            "word": "नीति",
+            "translation": "Policy",
+            "phonetic": "Neeti"
+        },
+        {
+            "word": "प्रक्रिया",
+            "translation": "Process / Procedure",
+            "phonetic": "Prakriya"
+        },
+        {
+            "word": "प्रशिक्षण",
+            "phonetic": "Prashikshan",
+            "translation": "Training"
+        },
+        {
+            "word": "कार्यशाला",
+            "translation": "Workshop",
+            "phonetic": "Karyashala"
+        },
+        {
+            "word": "संगोष्ठी",
+            "translation": "Seminar / Gathering (Formal)",
+            "phonetic": "Sangoshthi"
+        },
+        {
+            "word": "सम्मेलन",
+            "translation": "Conference",
+            "phonetic": "Sammelan"
+        },
+        {
+            "word": "विरामावकाश",
+            "translation": "Break / Rest interval",
+            "phonetic": "Viramavakash"
+        },
+        {
+            "word": "मध्याह्न भोजन",
+            "translation": "Lunch (Formal)",
+            "phonetic": "Madhyahn bhojan"
+        },
+        {
+            "word": "प्रसावकाश",
+            "translation": "Leave / Holiday (Formal)",
+            "phonetic": "Prasavakash"
+        },
+        {
+            "word": "त्यागपत्र",
+            "translation": "Resignation",
+            "phonetic": "Tyagpatra"
+        },
+        {
+            "word": "सेवानिवृत्ति",
+            "translation": "Retirement",
+            "phonetic": "Sevanivrutti"
+        },
+        {
+            "word": "निवृत्ति वेतन",
+            "translation": "Pension (Pure Hindi)",
+            "phonetic": "Nivrutti vetan"
+        },
+        {
+            "word": "अनुभवहीन",
+            "translation": "Inexperienced",
+            "phonetic": "Anubhavheen"
+        },
+        {
+            "word": "कुशल",
+            "translation": "Skilled",
+            "phonetic": "Kushal"
+        },
+        {
+            "word": "रचनात्मक",
+            "translation": "Creative",
+            "phonetic": "Rachnatmak"
+        },
+        {
+            "word": "उत्तरदायित्व",
+            "translation": "Responsibility",
+            "phonetic": "Uttardayitva"
+        },
+        {
+            "word": "कर्तव्य",
+            "translation": "Duty",
+            "phonetic": "Kartavya"
+        },
+        {
+            "word": "अधिकार",
+            "translation": "Authority / Right",
+            "phonetic": "Adhikar"
+        },
+        {
+            "word": "परामर्श",
+            "translation": "Suggestion / Advice (Formal)",
+            "phonetic": "Paramarsh"
+        },
+        {
+            "word": "अभियोग",
+            "translation": "Complaint / Charge",
+            "phonetic": "Abhiyog"
+        },
+        {
+            "word": "समाधान",
+            "translation": "Solution",
+            "phonetic": "Samadhan"
+        },
+        {
+            "word": "परिशोधन",
+            "translation": "Improvement / Refinement",
+            "phonetic": "Parishodhan"
+        },
+        {
+            "word": "उत्पादकता",
+            "translation": "Productivity",
+            "phonetic": "Utpadakta"
+        },
+        {
+            "word": "गुणवत्ता",
+            "translation": "Quality",
+            "phonetic": "Gunvatta"
+        },
+        {
+            "word": "वृत्तिक",
+            "translation": "Professional Service / Occupation",
+            "phonetic": "Vrittik"
+        },
+        {
+            "word": "उत्पाद",
+            "translation": "Product",
+            "phonetic": "Utpad"
+        },
+        {
+            "word": "लांछन",
+            "translation": "Brand / Mark (Formal)",
+            "phonetic": "Lanchhan"
+        },
+        {
+            "word": "अधिसूचना",
+            "translation": "Notification",
+            "phonetic": "Adhisoochna"
+        },
+        {
+            "word": "विपणन",
+            "translation": "Marketing",
+            "phonetic": "Vipnan"
+        },
+        {
+            "word": "विक्रय",
+            "translation": "Sale (Formal)",
+            "phonetic": "Vikray"
+        },
+        {
+            "word": "क्रय",
+            "translation": "Purchase",
+            "phonetic": "Kray"
+        },
+        {
+            "word": "अल्पमूल्य",
+            "translation": "Cheap / Low price",
+            "phonetic": "Alpamoolya"
+        },
+        {
+            "word": "मूल्य",
+            "translation": "Price",
+            "phonetic": "Moolya"
+        },
+        {
+            "word": "रियायत",
+            "translation": "Discount (Wait, Urdu). Use 'छूट' or 'अंश'?",
+            "phonetic": "Riyayat"
+        },
+        {
+            "word": "निःशुल्क",
+            "translation": "Free of cost",
+            "phonetic": "Nihshulk"
+        },
+        {
+            "word": "उपयोग",
+            "translation": "Usage",
+            "phonetic": "Upayog"
+        },
+        {
+            "word": "सुविधाजनक",
+            "translation": "Convenient",
+            "phonetic": "Suvidhajanank"
+        },
+        {
+            "word": "काठिन्य",
+            "translation": "Difficulty",
+            "phonetic": "Kathinya"
+        },
+        {
+            "word": "सहजता",
+            "translation": "Ease",
+            "phonetic": "Sahajta"
+        },
+        {
+            "word": "प्रगति",
+            "translation": "Progress",
+            "phonetic": "Pragati"
+        },
+        {
+            "word": "विकास",
+            "translation": "Development",
+            "phonetic": "Vikaas"
+        },
+        {
+            "word": "निर्माण",
+            "translation": "Construction",
+            "phonetic": "Nirmaan"
+        },
+        {
+            "word": "नवीनीकरण",
+            "translation": "Renovation",
+            "phonetic": "Naveenikaran"
+        },
+        {
+            "word": "रखरखाव",
+            "translation": "Maintenance",
+            "phonetic": "Rakhrakhaav"
+        },
+        {
+            "word": "सुरक्षा कक्ष",
+            "translation": "Security Room",
+            "phonetic": "Suraksha Kaksh"
+        },
+        {
+            "word": "आपातकालीन",
+            "translation": "Emergency",
+            "phonetic": "Aapatkaleen"
+        },
+        {
+            "word": "चेतावनी",
+            "translation": "Warning",
+            "phonetic": "Chetavani"
+        },
+        {
+            "word": "निकास",
+            "translation": "Exit",
+            "phonetic": "Nikaas"
+        },
+        {
+            "word": "अधिगमन",
+            "translation": "Coming near / Entry / Access",
+            "phonetic": "Adhigaman"
+        },
+        {
+            "word": "सोपान",
+            "translation": "Stairs / Ladder (Formal)",
+            "phonetic": "Sopan"
+        },
+        {
+            "word": "श्रृंखला",
+            "translation": "Chain / Series",
+            "phonetic": "Shrinkhala"
+        },
+        {
+            "word": "तल",
+            "translation": "Floor",
+            "phonetic": "Tal"
+        },
+        {
+            "word": "वाहन आस्थान",
+            "translation": "Parking (Formal)",
+            "phonetic": "Vahan aasthan"
+        },
+        {
+            "word": "अभिकल्प",
+            "translation": "Machine / Design (Formal)",
+            "phonetic": "Abhikalp"
+        },
+        {
+            "word": "उपकरण",
+            "translation": "Tool",
+            "phonetic": "Upkaran"
+        },
+        {
+            "word": "प्रतीक चिह्न",
+            "translation": "Badge / Logo symbol",
+            "phonetic": "Prateek chihnu"
+        },
+        {
+            "word": "श्रेणीबद्ध",
+            "translation": "Classified / Categorized",
+            "phonetic": "Shrenibaddh"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Tal' Floor?",
+        "question": "In an office setting, 'Tal' (तल) refers to the floor. What is its common meaning in traditional music?",
+        "options": [
+            "A musical instrument",
+            "The rhythm or beat",
+            "A high-pitched note",
+            "A classical dance"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "While 'Tal' means floor or surface, it is most famous in Indian culture as 'Taal' (ताल), the rhythmic cycle or beat in classical music."
+    }
+}

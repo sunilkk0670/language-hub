@@ -1,0 +1,612 @@
+{
+    "module_id": "pt_b1_m03",
+    "theme": "Literature & Philosophy",
+    "order": 23,
+    "lessons": [
+        {
+            "targetText": "Literatura clássica",
+            "english": "Classical literature",
+            "phoneticTranscription": "Lee-te-ra-too-ra kla-see-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Prosa poética",
+            "english": "Poetic prose",
+            "phoneticTranscription": "Pro-za po-e-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Realismo mágico",
+            "english": "Magical realism",
+            "phoneticTranscription": "He-a-leez-moo ma-zhee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Existencialismo",
+            "english": "Existentialism",
+            "phoneticTranscription": "E-zees-ten-sya-leez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Heteronímia",
+            "english": "Heteronymy",
+            "phoneticTranscription": "E-te-ro-nee-mee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Epopeia camoniana",
+            "english": "Camonian epic",
+            "phoneticTranscription": "E-po-pay-a ka-mo-nyah-na",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metafísica",
+            "english": "Metaphysics",
+            "phoneticTranscription": "Me-ta-fee-zee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Empirismo",
+            "english": "Empiricism",
+            "phoneticTranscription": "Em-pee-reez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Racionalismo cartesiano",
+            "english": "Cartesian rationalism",
+            "phoneticTranscription": "Ha-syo-na-leez-moo kar-te-zyah-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Dialética",
+            "english": "Dialectics",
+            "phoneticTranscription": "Jya-le-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Antropofagia cultural",
+            "english": "Cultural anthropophagy",
+            "phoneticTranscription": "An-tro-po-fa-zhyah kool-too-ral",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Vanguarda",
+            "english": "Avant-garde",
+            "phoneticTranscription": "Van-gwar-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Soneto camoniano",
+            "english": "Camonian sonnet",
+            "phoneticTranscription": "So-ne-too ka-mo-nyah-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Romance de formação",
+            "english": "Coming-of-age novel",
+            "phoneticTranscription": "Ho-man-see de for-ma-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Crônica literária",
+            "english": "Literary chronicle",
+            "phoneticTranscription": "Kron-nee-ka lee-te-ra-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ensaio filosófico",
+            "english": "Philosophical essay",
+            "phoneticTranscription": "En-sahy-o fee-lo-zo-fee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Paradoxo",
+            "english": "Paradox",
+            "phoneticTranscription": "Pa-ra-do-ksoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Premissa",
+            "english": "Premise",
+            "phoneticTranscription": "Pre-mee-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aforismo",
+            "english": "Aphorism",
+            "phoneticTranscription": "A-fo-reez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Niilismo",
+            "english": "Nihilism",
+            "phoneticTranscription": "Nee-ee-leez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Idealismo transcendente",
+            "english": "Transcendent idealism",
+            "phoneticTranscription": "Ee-de-a-leez-moo trans-sen-den-chee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ontologia",
+            "english": "Ontology",
+            "phoneticTranscription": "On-to-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Epistemologia",
+            "english": "Epistemology",
+            "phoneticTranscription": "E-pees-te-mo-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fenomenologia",
+            "english": "Phenomenology",
+            "phoneticTranscription": "Fe-no-me-no-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estética romântica",
+            "english": "Romantic aesthetics",
+            "phoneticTranscription": "Es-te-chee-ka ho-man-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Individualismo",
+            "english": "Individualism",
+            "phoneticTranscription": "In-jee-vee-doo-a-leez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Coletivismo",
+            "english": "Collectivism",
+            "phoneticTranscription": "Ko-le-chee-veez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Determinismo social",
+            "english": "Social determinism",
+            "phoneticTranscription": "De-ter-mee-neez-moo so-syal",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Livre-arbítrio",
+            "english": "Free will",
+            "phoneticTranscription": "Lee-vree ar-bee-tryoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ceticismo",
+            "english": "Skepticism",
+            "phoneticTranscription": "Se-chee-see-zmoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estoicismo",
+            "english": "Stoicism",
+            "phoneticTranscription": "Es-toy-see-zmoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Epicurismo",
+            "english": "Epicureanism",
+            "phoneticTranscription": "E-pee-koo-reez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hedonismo",
+            "english": "Hedonism",
+            "phoneticTranscription": "E-do-neez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Humanismo renascentista",
+            "english": "Renaissance humanism",
+            "phoneticTranscription": "Oo-ma-neez-moo he-na-sen-chees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Iluminismo",
+            "english": "Enlightenment",
+            "phoneticTranscription": "Ee-loo-mee-neez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Modernismo brasileiro",
+            "english": "Brazilian modernism",
+            "phoneticTranscription": "Mo-der-neez-moo bra-zee-lay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Parnasianismo",
+            "english": "Parnassianism",
+            "phoneticTranscription": "Par-na-sya-neez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Simbolismo",
+            "english": "Symbolism",
+            "phoneticTranscription": "Seem-bo-leez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Naturalismo",
+            "english": "Naturalism",
+            "phoneticTranscription": "Na-too-ra-leez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Barroco mineiro",
+            "english": "Minas Gerais Baroque",
+            "phoneticTranscription": "Ba-ho-koo mee-nay-roo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Trovadorismo",
+            "english": "Troubadourism",
+            "phoneticTranscription": "Tro-va-do-reez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Lirismo",
+            "english": "Lyrism",
+            "phoneticTranscription": "Lee-reez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Rimas",
+            "english": "Rhymes",
+            "phoneticTranscription": "Hee-mas",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metrificação",
+            "english": "Metrification",
+            "phoneticTranscription": "Me-tree-fee-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Estrofe",
+            "english": "Stanza",
+            "phoneticTranscription": "Es-tro-fee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Verso livre",
+            "english": "Free verse",
+            "phoneticTranscription": "Ver-soo lee-vree",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Aliteração",
+            "english": "Alliteration",
+            "phoneticTranscription": "A-lee-te-ra-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metáfora",
+            "english": "Metaphor",
+            "phoneticTranscription": "Me-ta-fo-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Metonímia",
+            "english": "Metonymy",
+            "phoneticTranscription": "Me-to-nee-mee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sinestesia",
+            "english": "Synesthesia",
+            "phoneticTranscription": "See-nes-te-zyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Personificação",
+            "english": "Personification",
+            "phoneticTranscription": "Per-so-nee-fee-ka-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Ironia socrática",
+            "english": "Socratic irony",
+            "phoneticTranscription": "Ee-ro-nee-a so-kra-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Intertextualidade",
+            "english": "Intertextuality",
+            "phoneticTranscription": "In-ter-teks-too-a-lee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Narratologia",
+            "english": "Narratology",
+            "phoneticTranscription": "Na-ha-to-lo-zhyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Foco narrativo",
+            "english": "Narrative focus",
+            "phoneticTranscription": "Fo-koo na-ha-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Clímax",
+            "english": "Climax",
+            "phoneticTranscription": "Klee-maks",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Desfecho",
+            "english": "Outcome/Ending",
+            "phoneticTranscription": "Des-fe-shoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Protagonista",
+            "english": "Protagonist",
+            "phoneticTranscription": "Pro-ta-go-nees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Antagonista",
+            "english": "Antagonist",
+            "phoneticTranscription": "An-ta-go-nees-ta",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Arquetípico",
+            "english": "Archetypal",
+            "phoneticTranscription": "Ar-ke-chee-pee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Verossimilhança",
+            "english": "Verisimilitude",
+            "phoneticTranscription": "Ve-ho-see-mee-lyan-sa",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Crítica literária",
+            "english": "Literary criticism",
+            "phoneticTranscription": "Kree-chee-ka lee-te-ra-ryah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Resenha crítica",
+            "english": "Critical review",
+            "phoneticTranscription": "Re-ze-nya kree-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Bibliófilo",
+            "english": "Bibliophile",
+            "phoneticTranscription": "Bee-blyo-fee-loo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Manuscritos antigos",
+            "english": "Ancient manuscripts",
+            "phoneticTranscription": "Ma-noos-kree-toos an-chee-goos",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Incisivo",
+            "english": "Incisive",
+            "phoneticTranscription": "In-see-zee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Subjetividade",
+            "english": "Subjectivity",
+            "phoneticTranscription": "Soob-zhe-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Objetividade",
+            "english": "Objectivity",
+            "phoneticTranscription": "Ob-zhe-chee-vee-da-jee",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pragmatismo",
+            "english": "Pragmatism",
+            "phoneticTranscription": "Prag-ma-cheez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Utilitarismo",
+            "english": "Utilitarianism",
+            "phoneticTranscription": "Oo-chee-lee-ta-reez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Utopia",
+            "english": "Utopia",
+            "phoneticTranscription": "Oo-to-pyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Distopia",
+            "english": "Dystopia",
+            "phoneticTranscription": "Dees-to-pyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Contratualismo",
+            "english": "Contractualism",
+            "phoneticTranscription": "Kon-tra-too-a-leez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Soberano",
+            "english": "Sovereign",
+            "phoneticTranscription": "So-be-ra-noo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alienação",
+            "english": "Alienation",
+            "phoneticTranscription": "A-lye-na-sown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Mais-valia",
+            "english": "Surplus value",
+            "phoneticTranscription": "Mays va-lyah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Superestrutura",
+            "english": "Superstructure",
+            "phoneticTranscription": "Soo-per-es-troo-too-ra",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Materialismo histórico",
+            "english": "Historical materialism",
+            "phoneticTranscription": "Ma-te-rya-leez-moo ees-to-ree-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fatos sociais",
+            "english": "Social facts",
+            "phoneticTranscription": "Fa-toos so-syays",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inconsciente coletivo",
+            "english": "Collective unconscious",
+            "phoneticTranscription": "In-kon-syen-chee ko-le-chee-voo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Pulsão de vida",
+            "english": "Life drive",
+            "phoneticTranscription": "Pool-sown de vee-da",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Inatismo",
+            "english": "Innatism",
+            "phoneticTranscription": "Ee-na-cheez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Comportamentalismo",
+            "english": "Behaviorism",
+            "phoneticTranscription": "Kom-por-ta-men-ta-leez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Cognitivismo",
+            "english": "Cognitivism",
+            "phoneticTranscription": "Ko-gnee-chee-veez-moo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Epifania",
+            "english": "Epiphany",
+            "phoneticTranscription": "E-pee-fa-nee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Catarse",
+            "english": "Catharsis",
+            "phoneticTranscription": "Ka-tar-see",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "DRAMA trágico",
+            "english": "Tragic drama",
+            "phoneticTranscription": "Dra-ma tra-zhee-koo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Sátira política",
+            "english": "Political satire",
+            "phoneticTranscription": "Sa-chee-ra po-lee-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Alegoria em prosa",
+            "english": "Prose allegory",
+            "phoneticTranscription": "A-le-go-ree-a em pro-za",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Solilóquio",
+            "english": "Soliloquy",
+            "phoneticTranscription": "So-lee-lo-kyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Monólogo interior",
+            "english": "Interior monologue",
+            "phoneticTranscription": "Mo-no-lo-goo in-te-ryor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Fluxo de consciência",
+            "english": "Stream of consciousness",
+            "phoneticTranscription": "Floo-ksoo de kon-syen-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Verve poética",
+            "english": "Poetic verve",
+            "phoneticTranscription": "Ver-vee po-e-chee-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Polifonia",
+            "english": "Polyphony",
+            "phoneticTranscription": "Po-lee-fo-nee-a",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Interlocutor",
+            "english": "Interlocutor",
+            "phoneticTranscription": "In-ter-lo-koo-tor",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Colóquio",
+            "english": "Colloquium/Discussion",
+            "phoneticTranscription": "Ko-lo-kyoo",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Retórica",
+            "english": "Rhetoric",
+            "phoneticTranscription": "He-to-ree-ka",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Eloquência",
+            "english": "Eloquence",
+            "phoneticTranscription": "E-lo-kwen-syah",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Persuasão",
+            "english": "Persuasion",
+            "phoneticTranscription": "Per-swa-zown",
+            "radicalBreakdown": ""
+        },
+        {
+            "targetText": "Hermeneutica",
+            "english": "Hermeneutics",
+            "phoneticTranscription": "Er-me-new-chee-ka",
+            "radicalBreakdown": ""
+        }
+    ],
+    "liarGameData": {
+        "trap": "Romance",
+        "correctVersion": "Means 'Novel' (literary). For 'Romance (love affair)', use 'Caso amoroso' or 'Namoro'.",
+        "explanation": "Trap level: High"
+    }
+}

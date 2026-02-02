@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a1_m05",
+    "language": "hi",
+    "level": "a1",
+    "theme": "Daily Actions & Essential Verbs",
+    "order": 5,
+    "lessons": [
+        {
+            "word": "आना",
+            "translation": "To come",
+            "phonetic": "Aana"
+        },
+        {
+            "word": "जाना",
+            "translation": "To go",
+            "phonetic": "Jaana"
+        },
+        {
+            "word": "उठना",
+            "translation": "To wake up / To stand up",
+            "phonetic": "Uthna"
+        },
+        {
+            "word": "बैठना",
+            "translation": "To sit",
+            "phonetic": "Baithna"
+        },
+        {
+            "word": "सोना",
+            "translation": "To sleep",
+            "phonetic": "Sona"
+        },
+        {
+            "word": "खेलना",
+            "translation": "To play",
+            "phonetic": "Khelna"
+        },
+        {
+            "word": "पढ़ना",
+            "translation": "To read / To study",
+            "phonetic": "Padhna"
+        },
+        {
+            "word": "लिखना",
+            "translation": "To write",
+            "phonetic": "Likhna"
+        },
+        {
+            "word": "सुनना",
+            "translation": "To listen",
+            "phonetic": "Sunna"
+        },
+        {
+            "word": "देखना",
+            "translation": "To see / To watch",
+            "phonetic": "Dekhna"
+        },
+        {
+            "word": "बोलना",
+            "translation": "To speak",
+            "phonetic": "Bolna"
+        },
+        {
+            "word": "कहना",
+            "translation": "To say",
+            "phonetic": "Kehna"
+        },
+        {
+            "word": "पूछना",
+            "translation": "To ask",
+            "phonetic": "Poochna"
+        },
+        {
+            "word": "बताना",
+            "translation": "To tell",
+            "phonetic": "Batana"
+        },
+        {
+            "word": "सीखना",
+            "translation": "To learn",
+            "phonetic": "Seekhna"
+        },
+        {
+            "word": "समझना",
+            "translation": "To understand",
+            "phonetic": "Samajhna"
+        },
+        {
+            "word": "जानना",
+            "translation": "To know",
+            "phonetic": "Jaanna"
+        },
+        {
+            "word": "सोचना",
+            "translation": "To think",
+            "phonetic": "Sochna"
+        },
+        {
+            "word": "चाहना",
+            "translation": "To want / To love",
+            "phonetic": "Chahna"
+        },
+        {
+            "word": "देना",
+            "translation": "To give",
+            "phonetic": "Dena"
+        },
+        {
+            "word": "लेना",
+            "translation": "To take",
+            "phonetic": "Lena"
+        },
+        {
+            "word": "खरीदना",
+            "translation": "To buy",
+            "phonetic": "Khareedna"
+        },
+        {
+            "word": "बेचना",
+            "translation": "To sell",
+            "phonetic": "Bechna"
+        },
+        {
+            "word": "मिलना",
+            "translation": "To meet",
+            "phonetic": "Milna"
+        },
+        {
+            "word": "रखना",
+            "translation": "To keep / To put",
+            "phonetic": "Rakhna"
+        },
+        {
+            "word": "लाना",
+            "translation": "To bring",
+            "phonetic": "Laana"
+        },
+        {
+            "word": "भेजना",
+            "translation": "To send",
+            "phonetic": "Bhejna"
+        },
+        {
+            "word": "खोना",
+            "translation": "To lose",
+            "phonetic": "Khona"
+        },
+        {
+            "word": "पाना",
+            "translation": "To find / To get",
+            "phonetic": "Paana"
+        },
+        {
+            "word": "रुकना",
+            "translation": "To stop",
+            "phonetic": "Rukna"
+        },
+        {
+            "word": "चलना",
+            "translation": "To walk",
+            "phonetic": "Chalna"
+        },
+        {
+            "word": "दौड़ना",
+            "translation": "To run",
+            "phonetic": "Daurhna"
+        },
+        {
+            "word": "नाचना",
+            "translation": "To dance",
+            "phonetic": "Naachna"
+        },
+        {
+            "word": "गाना",
+            "translation": "To sing",
+            "phonetic": "Gaana"
+        },
+        {
+            "word": "हँसना",
+            "translation": "To laugh",
+            "phonetic": "Hansna"
+        },
+        {
+            "word": "रोना",
+            "translation": "To cry",
+            "phonetic": "Rona"
+        },
+        {
+            "word": "पढ़ाना",
+            "translation": "To teach / To lecture",
+            "phonetic": "Padhana"
+        },
+        {
+            "word": "खोलना",
+            "translation": "To open",
+            "phonetic": "Kholna"
+        },
+        {
+            "word": "बंद करना",
+            "translation": "To close",
+            "phonetic": "Band Karna"
+        },
+        {
+            "word": "सफाई करना",
+            "translation": "To clean",
+            "phonetic": "Safayi Karna"
+        },
+        {
+            "word": "धोना",
+            "translation": "To wash",
+            "phonetic": "Dhona"
+        },
+        {
+            "word": "सज्ज होना",
+            "translation": "To get ready",
+            "phonetic": "Taiyaar Hona"
+        },
+        {
+            "word": "नहाना",
+            "translation": "To bathe",
+            "phonetic": "Nahana"
+        },
+        {
+            "word": "पहनना",
+            "translation": "To wear",
+            "phonetic": "Pehanna"
+        },
+        {
+            "word": "उतारना",
+            "translation": "To take off (clothes)",
+            "phonetic": "Utarna"
+        },
+        {
+            "word": "ढूँढना",
+            "translation": "To search",
+            "phonetic": "Dhoondhna"
+        },
+        {
+            "word": "पकड़ना",
+            "translation": "To catch",
+            "phonetic": "Pakadna"
+        },
+        {
+            "word": "छोड़ना",
+            "translation": "To leave / To let go",
+            "phonetic": "Chhodna"
+        },
+        {
+            "word": "गिराना",
+            "translation": "To drop",
+            "phonetic": "Girana"
+        },
+        {
+            "word": "उठाना",
+            "translation": "To lift / To pick up",
+            "phonetic": "Uthana"
+        },
+        {
+            "word": "खींचना",
+            "translation": "To pull",
+            "phonetic": "Kheenchna"
+        },
+        {
+            "word": "धकेलना",
+            "translation": "To push",
+            "phonetic": "Dhakelna"
+        },
+        {
+            "word": "दिभोजन",
+            "translation": "To show",
+            "phonetic": "Dikhana"
+        },
+        {
+            "word": "छिपाना",
+            "translation": "To hide",
+            "phonetic": "Chipana"
+        },
+        {
+            "word": "मारना",
+            "translation": "To hit / To kill",
+            "phonetic": "Maarna"
+        },
+        {
+            "word": "बचाना",
+            "translation": "To save",
+            "phonetic": "Bachana"
+        },
+        {
+            "word": "दुआ देना",
+            "translation": "To bless",
+            "phonetic": "Dua Dena"
+        },
+        {
+            "word": "सहायता करना",
+            "translation": "To help",
+            "phonetic": "Madad Karna"
+        },
+        {
+            "word": "कार्य करना",
+            "translation": "To work",
+            "phonetic": "Kaam Karna"
+        },
+        {
+            "word": "आराम करना",
+            "translation": "To rest",
+            "phonetic": "Aaram Karna"
+        },
+        {
+            "word": "प्रतीक्षा करना",
+            "translation": "To wait",
+            "phonetic": "Intazaar Karna"
+        },
+        {
+            "word": "प्रयास करना",
+            "translation": "To try",
+            "phonetic": "Koshish Karna"
+        },
+        {
+            "word": "शुरू करना",
+            "translation": "To start",
+            "phonetic": "Shuru Karna"
+        },
+        {
+            "word": "खत्म करना",
+            "translation": "To finish",
+            "phonetic": "Khatm Karna"
+        },
+        {
+            "word": "बदलना",
+            "translation": "To change",
+            "phonetic": "Badalna"
+        },
+        {
+            "word": "भरना",
+            "translation": "To fill",
+            "phonetic": "Bharna"
+        },
+        {
+            "word": "खाली करना",
+            "translation": "To empty",
+            "phonetic": "Khali Karna"
+        },
+        {
+            "word": "चमकाना",
+            "translation": "To shine / To polish",
+            "phonetic": "Chamkana"
+        },
+        {
+            "word": "तोड़ना",
+            "translation": "To break",
+            "phonetic": "Todna"
+        },
+        {
+            "word": "जोड़ना",
+            "translation": "To join",
+            "phonetic": "Jodna"
+        },
+        {
+            "word": "सुधारना",
+            "translation": "To fix / To improve",
+            "phonetic": "Sudharna"
+        },
+        {
+            "word": "सजाना",
+            "translation": "To decorate",
+            "phonetic": "Sajana"
+        },
+        {
+            "word": "फेंकना",
+            "translation": "To throw",
+            "phonetic": "Phenkna"
+        },
+        {
+            "word": "उड़ना",
+            "translation": "To fly",
+            "phonetic": "Udna"
+        },
+        {
+            "word": "तैरना",
+            "translation": "To swim",
+            "phonetic": "Tairna"
+        },
+        {
+            "word": "जीना",
+            "translation": "To live",
+            "phonetic": "Jeena"
+        },
+        {
+            "word": "मरना",
+            "translation": "To die",
+            "phonetic": "Marna"
+        },
+        {
+            "word": "लड़ना",
+            "translation": "To fight",
+            "phonetic": "Ladna"
+        },
+        {
+            "word": "जीतना",
+            "translation": "To win",
+            "phonetic": "Jeetna"
+        },
+        {
+            "word": "हारना",
+            "translation": "To lose (a match)",
+            "phonetic": "Haarna"
+        },
+        {
+            "word": "चुराना",
+            "translation": "To steal",
+            "phonetic": "Churana"
+        },
+        {
+            "word": "पकड़ा जाना",
+            "translation": "To get caught",
+            "phonetic": "Pakda Jaana"
+        },
+        {
+            "word": "सच्च बोलना",
+            "translation": "To speak truth",
+            "phonetic": "Sacch Bolna"
+        },
+        {
+            "word": "झूठ बोलना",
+            "translation": "To lie",
+            "phonetic": "Jhooth Bolna"
+        },
+        {
+            "word": "याद करना",
+            "translation": "To remember / To miss",
+            "phonetic": "Yaad Karna"
+        },
+        {
+            "word": "भूलना",
+            "translation": "To forget",
+            "phonetic": "Bhoolna"
+        },
+        {
+            "word": "माफ करना",
+            "translation": "To forgive",
+            "phonetic": "Maaf Karna"
+        },
+        {
+            "word": "पसंद करना",
+            "translation": "To like",
+            "phonetic": "Pasand Karna"
+        },
+        {
+            "word": "सफर करना",
+            "translation": "To travel",
+            "phonetic": "Safar Karna"
+        },
+        {
+            "word": "चढ़ना",
+            "translation": "To climb",
+            "phonetic": "Chadhna"
+        },
+        {
+            "word": "उतरना",
+            "translation": "To descend",
+            "phonetic": "Utarna"
+        },
+        {
+            "word": "कूदना",
+            "translation": "To jump",
+            "phonetic": "Koodna"
+        },
+        {
+            "word": "रेंगना",
+            "translation": "To crawl",
+            "phonetic": "Rengna"
+        },
+        {
+            "word": "खिंचना",
+            "translation": "To stretch",
+            "phonetic": "Khinchna"
+        },
+        {
+            "word": "लेटना",
+            "translation": "To lie down",
+            "phonetic": "Letna"
+        },
+        {
+            "word": "खड़ा होना",
+            "translation": "To stand",
+            "phonetic": "Khada Hona"
+        },
+        {
+            "word": "दुआ करना",
+            "translation": "To pray",
+            "phonetic": "Dua Karna"
+        },
+        {
+            "word": "तारीफ करना",
+            "translation": "To praise",
+            "phonetic": "Tarif Karna"
+        },
+        {
+            "word": "डाँटना",
+            "translation": "To scold",
+            "phonetic": "Daantna"
+        },
+        {
+            "word": "अभिवादन करना",
+            "translation": "To greet",
+            "phonetic": "Abhivadan Karna"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Seekhna' Confusion",
+        "question": "If you want to say 'I am learning' vs 'I am teaching', you use 'Seekhna' and 'Sikhana'. How do you remember which is which?",
+        "options": [
+            "They mean the same thing",
+            "Seekhna (Short 'i') is learning, Sikhana (Long 'ee') is teaching",
+            "Sikhana (सिभोजन) is teaching, Seekhna (सीखना) is learning",
+            "One is only for Hindi"
+        ],
+        "correct_answer_index": 2,
+        "explanation": "In Hindi, 'Seekhna' (सीखना) means to learn (self-focused action), while 'Sikhana' (सिभोजन) means to teach (external focus). The causal form changes the meaning entirely!"
+    }
+}

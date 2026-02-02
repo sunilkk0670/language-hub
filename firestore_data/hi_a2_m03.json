@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a2_m03",
+    "language": "hi",
+    "level": "a2",
+    "theme": "Education & Learning",
+    "order": 13,
+    "lessons": [
+        {
+            "word": "शिक्षा",
+            "translation": "Education",
+            "phonetic": "Shiksha"
+        },
+        {
+            "word": "अधिगम",
+            "translation": "Learning (Formal)",
+            "phonetic": "Adhigam"
+        },
+        {
+            "word": "ज्ञान",
+            "translation": "Knowledge",
+            "phonetic": "Gyan"
+        },
+        {
+            "word": "विषय",
+            "translation": "Subject",
+            "phonetic": "Vishay"
+        },
+        {
+            "word": "अनिवार्य",
+            "translation": "Compulsory",
+            "phonetic": "Anivarya"
+        },
+        {
+            "word": "वैकल्पिक",
+            "translation": "Optional / Elective",
+            "phonetic": "Vaikalpik"
+        },
+        {
+            "word": "पाठ्यक्रम",
+            "translation": "Curriculum / Syllabus",
+            "phonetic": "Pathyakram"
+        },
+        {
+            "word": "अध्याय",
+            "translation": "Chapter",
+            "phonetic": "Adhyay"
+        },
+        {
+            "word": "पृष्ठ",
+            "translation": "Page (Formal)",
+            "phonetic": "Prishtha"
+        },
+        {
+            "word": "अनुच्छेद",
+            "translation": "Paragraph",
+            "phonetic": "Anuchhed"
+        },
+        {
+            "word": "सन्दर्भ",
+            "translation": "Reference",
+            "phonetic": "Sandarbh"
+        },
+        {
+            "word": "स्रोत",
+            "translation": "Source",
+            "phonetic": "Srot"
+        },
+        {
+            "word": "विश्वविद्यालय",
+            "translation": "University",
+            "phonetic": "Vishwavidyalay"
+        },
+        {
+            "word": "संस्थान",
+            "translation": "Institute",
+            "phonetic": "Sansthan"
+        },
+        {
+            "word": "विभाग",
+            "translation": "Department",
+            "phonetic": "Vibhag"
+        },
+        {
+            "word": "आचार्य",
+            "translation": "Professor / Master (Formal)",
+            "phonetic": "Aacharya"
+        },
+        {
+            "word": "व्याख्याता",
+            "translation": "Lecturer",
+            "phonetic": "Vyakhyata"
+        },
+        {
+            "word": "विद्वान",
+            "translation": "Scholar",
+            "phonetic": "Vidwan"
+        },
+        {
+            "word": "शोधकर्ता",
+            "translation": "Researcher",
+            "phonetic": "Shodhkarta"
+        },
+        {
+            "word": "उपाधि",
+            "translation": "Degree / Title (Formal)",
+            "phonetic": "Upadhi"
+        },
+        {
+            "word": "सनद",
+            "translation": "Certificate (Formal)",
+            "phonetic": "Sanad"
+        },
+        {
+            "word": "स्नातक",
+            "translation": "Graduate",
+            "phonetic": "Snatak"
+        },
+        {
+            "word": "स्नातकोत्तर",
+            "translation": "Postgraduate",
+            "phonetic": "Snatakottar"
+        },
+        {
+            "word": "प्रवेश पत्र",
+            "translation": "Admit Card",
+            "phonetic": "Pravesh Patra"
+        },
+        {
+            "word": "अंक तालिका",
+            "translation": "Mark sheet",
+            "phonetic": "Ank Taalika"
+        },
+        {
+            "word": "श्रेणी",
+            "translation": "Grade / Category",
+            "phonetic": "Shreni"
+        },
+        {
+            "word": "सत्र",
+            "translation": "Session / Term",
+            "phonetic": "Satra"
+        },
+        {
+            "word": "समय सारणी",
+            "translation": "Timetable",
+            "phonetic": "Samay Saarani"
+        },
+        {
+            "word": "परियोजना कार्य",
+            "translation": "Project Work",
+            "phonetic": "Pariyojana Karya"
+        },
+        {
+            "word": "गृहकार्य",
+            "translation": "Homework",
+            "phonetic": "Grihakarya"
+        },
+        {
+            "word": "लेखन",
+            "translation": "Writing",
+            "phonetic": "Lekhan"
+        },
+        {
+            "word": "वाचन",
+            "translation": "Reading / Speech",
+            "phonetic": "Vaachan"
+        },
+        {
+            "word": "श्रवण",
+            "translation": "Listening",
+            "phonetic": "Shravan"
+        },
+        {
+            "word": "मौखिक",
+            "translation": "Oral / Verbal",
+            "phonetic": "Maukhik"
+        },
+        {
+            "word": "लिखित",
+            "translation": "Written",
+            "phonetic": "Likhit"
+        },
+        {
+            "word": "अनुवाद",
+            "translation": "Translation",
+            "phonetic": "Anuvaad"
+        },
+        {
+            "word": "सारांश",
+            "translation": "Summary",
+            "phonetic": "Saransh"
+        },
+        {
+            "word": "टिप्पणी",
+            "translation": "Note / Comment",
+            "phonetic": "Tippani"
+        },
+        {
+            "word": "परिभाषा",
+            "translation": "Definition",
+            "phonetic": "Paribhasha"
+        },
+        {
+            "word": "उदाहरण",
+            "translation": "Example",
+            "phonetic": "Udaharann"
+        },
+        {
+            "word": "तर्क",
+            "translation": "Logic / Argument",
+            "phonetic": "Tark"
+        },
+        {
+            "word": "सिद्धांत",
+            "translation": "Theory / Principle",
+            "phonetic": "Siddhant"
+        },
+        {
+            "word": "प्रयोग",
+            "translation": "Experiment / Use",
+            "phonetic": "Prayog"
+        },
+        {
+            "word": "खोज",
+            "translation": "Discovery / Search",
+            "phonetic": "Khoj"
+        },
+        {
+            "word": "आविष्कार",
+            "translation": "Invention",
+            "phonetic": "Aavishkar"
+        },
+        {
+            "word": "रसायन विज्ञान",
+            "translation": "Chemistry",
+            "phonetic": "Rasayan Vigyan"
+        },
+        {
+            "word": "जीव विज्ञान",
+            "translation": "Biology",
+            "phonetic": "Jeev Vigyan"
+        },
+        {
+            "word": "भौतिक विज्ञान",
+            "translation": "Physics",
+            "phonetic": "Bhautik Vigyan"
+        },
+        {
+            "word": "अर्थशास्त्र",
+            "translation": "Economics",
+            "phonetic": "Arthashastra"
+        },
+        {
+            "word": "राजनीति शास्त्र",
+            "translation": "Political Science",
+            "phonetic": "Rajneeti Shastra"
+        },
+        {
+            "word": "मनोविज्ञान",
+            "translation": "Psychology",
+            "phonetic": "Manovigyan"
+        },
+        {
+            "word": "समाजशास्त्र",
+            "translation": "Sociology",
+            "phonetic": "Samajshastra"
+        },
+        {
+            "word": "दर्शन शास्त्र",
+            "translation": "Philosophy",
+            "phonetic": "Darshan Shastra"
+        },
+        {
+            "word": "अभियांत्रिकी",
+            "translation": "Engineering (Pure Hindi)",
+            "phonetic": "Abhiyantriki"
+        },
+        {
+            "word": "प्रविधि",
+            "translation": "Technology / Method (Pure Hindi)",
+            "phonetic": "Pravidhi"
+        },
+        {
+            "word": "सूचना",
+            "translation": "Information",
+            "phonetic": "Soochna"
+        },
+        {
+            "word": "आंकड़े",
+            "translation": "Data / Statistics",
+            "phonetic": "Aankde"
+        },
+        {
+            "word": "नक्शानवीसी",
+            "translation": "Drafting / Map making",
+            "phonetic": "Nakshanaveesi"
+        },
+        {
+            "word": "पुस्तकाध्यक्ष",
+            "translation": "Librarian",
+            "phonetic": "Pustakadhyaksh"
+        },
+        {
+            "word": "ऋण-भार लेना",
+            "translation": "To borrow",
+            "phonetic": "Udhaar lena"
+        },
+        {
+            "word": "जमा करना",
+            "translation": "To submit / deposit",
+            "phonetic": "Jama karna"
+        },
+        {
+            "word": "सदस्यता",
+            "translation": "Membership",
+            "phonetic": "Sadasyata"
+        },
+        {
+            "word": "शुल्क",
+            "translation": "Fees / Charges",
+            "phonetic": "Shulk"
+        },
+        {
+            "word": "अर्थदंड",
+            "translation": "Fine / Penalty (Formal)",
+            "phonetic": "Arthadand"
+        },
+        {
+            "word": "अध्ययन कक्ष",
+            "translation": "Study Room",
+            "phonetic": "Adhyayan Kaksh"
+        },
+        {
+            "word": "लिपि",
+            "translation": "Script / Writing system",
+            "phonetic": "Lipi"
+        },
+        {
+            "word": "तूलिका",
+            "translation": "Paintbrush / Writing brush",
+            "phonetic": "Tulika"
+        },
+        {
+            "word": "घर्षक",
+            "translation": "Eraser / Rubber (Formal)",
+            "phonetic": "Gharshak"
+        },
+        {
+            "word": "मापिका",
+            "translation": "Scale / Ruler (Formal)",
+            "phonetic": "Maapika"
+        },
+        {
+            "word": "मसिपात्र",
+            "translation": "Inkwell (Formal)",
+            "phonetic": "Masipatra"
+        },
+        {
+            "word": "काष्ठपीठ",
+            "translation": "Desk / Table (Formal)",
+            "phonetic": "Kasthapeeth"
+        },
+        {
+            "word": "पीठिका",
+            "translation": "Pedestal / Seat (Academic)",
+            "phonetic": "Peethika"
+        },
+        {
+            "word": "श्यामपट्ट",
+            "translation": "Blackboard (Formal)",
+            "phonetic": "Shyampatt"
+        },
+        {
+            "word": "सुधा-खंड",
+            "translation": "Chalk piece (Formal)",
+            "phonetic": "Sudha-khand"
+        },
+        {
+            "word": "नक्शा स्टैंड",
+            "translation": "Map Stand",
+            "phonetic": "Naksha Stand"
+        },
+        {
+            "word": "प्रोजेक्टर",
+            "translation": "Projector",
+            "phonetic": "Projector"
+        },
+        {
+            "word": "प्रेरणा",
+            "translation": "Inspiration",
+            "phonetic": "Prerna"
+        },
+        {
+            "word": "एकाग्रता",
+            "translation": "Concentration",
+            "phonetic": "Ekagrata"
+        },
+        {
+            "word": "स्मरण शक्ति",
+            "translation": "Memory power",
+            "phonetic": "Smaran shakti"
+        },
+        {
+            "word": "बुद्धि",
+            "translation": "Intelligence",
+            "phonetic": "Buddhi"
+        },
+        {
+            "word": "प्रतिभा",
+            "translation": "Talent",
+            "phonetic": "Pratibha"
+        },
+        {
+            "word": "योग्यता",
+            "translation": "Ability / Qualification",
+            "phonetic": "Yogyata"
+        },
+        {
+            "word": "अभ्यास",
+            "translation": "Practice",
+            "phonetic": "Abhyas"
+        },
+        {
+            "word": "अनुदेश",
+            "translation": "Instruction",
+            "phonetic": "Anudesh"
+        },
+        {
+            "word": "मार्गदर्शन",
+            "translation": "Guidance / Mentoring",
+            "phonetic": "Margdarshan"
+        },
+        {
+            "word": "सफलम्ता की कुंजी",
+            "translation": "Key to success",
+            "phonetic": "Safalta ki kunji"
+        },
+        {
+            "word": "लक्ष्य प्राप्ति",
+            "translation": "Goal achievement",
+            "phonetic": "Lakshya prapti"
+        },
+        {
+            "word": "परिश्रम",
+            "translation": "Hard work (Formal)",
+            "phonetic": "Parishram"
+        },
+        {
+            "word": "इच्छाशक्ति",
+            "translation": "Willpower",
+            "phonetic": "Ichhashakti"
+        },
+        {
+            "word": "आत्मविश्वास",
+            "translation": "Self-confidence",
+            "phonetic": "Aatmavishwas"
+        },
+        {
+            "word": "ज्ञानोदय",
+            "translation": "Enlightenment / Awakening",
+            "phonetic": "Gyanoday"
+        },
+        {
+            "word": "साक्षरता",
+            "translation": "Literacy",
+            "phonetic": "Saksharta"
+        },
+        {
+            "word": "अक्षरज्ञान",
+            "translation": "Literacy / Alphabet knowledge",
+            "phonetic": "Akshargyan"
+        },
+        {
+            "word": "शिक्षित",
+            "translation": "Educated",
+            "phonetic": "Shikshit"
+        },
+        {
+            "word": "अधीक्षक",
+            "translation": "Superintendent / Proctor",
+            "phonetic": "Adheekshak"
+        },
+        {
+            "word": "परिमार्जन",
+            "translation": "Refinement / Polishing (Academic)",
+            "phonetic": "Parimarjan"
+        },
+        {
+            "word": "क्रांति",
+            "translation": "Revolution",
+            "phonetic": "Kranti"
+        },
+        {
+            "word": "भविष्य",
+            "translation": "Future",
+            "phonetic": "Bhavishya"
+        },
+        {
+            "word": "अतीत",
+            "translation": "Past",
+            "phonetic": "Ateet"
+        },
+        {
+            "word": "वर्तमान",
+            "translation": "Present",
+            "phonetic": "Vartaman"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Lekhani' Tool",
+        "question": "In formal Hindi, a pen is referred to as 'Lekhani' (लेखनी). What does the word 'Lekh' (लेख) at its core mean?",
+        "options": [
+            "To speak",
+            "To write",
+            "To draw",
+            "To listen"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Lekhani' comes from the root 'Likh' (to write). It is the formal Sanskritized replacement for the common word 'Kalam', which is of Urdu origin."
+    }
+}

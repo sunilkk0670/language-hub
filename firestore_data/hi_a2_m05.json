@@ -1,0 +1,521 @@
+{
+    "moduleId": "hi_a2_m05",
+    "language": "hi",
+    "level": "a2",
+    "theme": "Leisure, Sports & Hobbies",
+    "order": 15,
+    "lessons": [
+        {
+            "word": "अविश्रांति",
+            "translation": "Leisure / Absence of work (Formal)",
+            "phonetic": "Avishranti"
+        },
+        {
+            "word": "मनोरंजन",
+            "translation": "Entertainment",
+            "phonetic": "Manoranjan"
+        },
+        {
+            "word": "अभिरुचि",
+            "translation": "Hobby / Professional interest",
+            "phonetic": "Abhiruchi"
+        },
+        {
+            "word": "रुचि",
+            "translation": "Interest / Liking",
+            "phonetic": "Ruchi"
+        },
+        {
+            "word": "खेलकूद",
+            "translation": "Sports / Games",
+            "phonetic": "Khelkood"
+        },
+        {
+            "word": "क्रीड़ांगन",
+            "translation": "Playground (Formal)",
+            "phonetic": "Kreedangan"
+        },
+        {
+            "word": "स्टेडियम",
+            "translation": "Stadium",
+            "phonetic": "Stadium"
+        },
+        {
+            "word": "स्पर्धा",
+            "translation": "Competition / Rivalry",
+            "phonetic": "Spardha"
+        },
+        {
+            "word": "प्रतिद्वंद्वी",
+            "translation": "Opponent / Rival",
+            "phonetic": "Pratidvandvi"
+        },
+        {
+            "word": "खिलाड़ी",
+            "translation": "Player / Athlete",
+            "phonetic": "Khiladi"
+        },
+        {
+            "word": "कप्तान",
+            "translation": "Captain",
+            "phonetic": "Kaptaan"
+        },
+        {
+            "word": "प्रशिक्षक",
+            "translation": "Coach / Instructor",
+            "phonetic": "Prashikshak"
+        },
+        {
+            "word": "रेफरी",
+            "translation": "Referee",
+            "phonetic": "Referee"
+        },
+        {
+            "word": "विधि",
+            "translation": "Law / Rule (Formal)",
+            "phonetic": "Vidhi"
+        },
+        {
+            "word": "स्कोर",
+            "translation": "Score",
+            "phonetic": "Score"
+        },
+        {
+            "word": "जीत",
+            "translation": "Victory / Win",
+            "phonetic": "Jeet"
+        },
+        {
+            "word": "पराजय",
+            "translation": "Defeat (Formal)",
+            "phonetic": "Parajay"
+        },
+        {
+            "word": "टाई",
+            "translation": "Tie / Draw",
+            "phonetic": "Tie"
+        },
+        {
+            "word": "पारितोषिक",
+            "translation": "Prize / Honor (Formal)",
+            "phonetic": "Paritoshik"
+        },
+        {
+            "word": "पदक",
+            "translation": "Medal",
+            "phonetic": "Padak"
+        },
+        {
+            "word": "ट्रॉफी",
+            "translation": "Trophy",
+            "phonetic": "Trophy"
+        },
+        {
+            "word": "क्रिकेट",
+            "translation": "Cricket",
+            "phonetic": "Cricket"
+        },
+        {
+            "word": "बल्ला",
+            "translation": "Bat",
+            "phonetic": "Balla"
+        },
+        {
+            "word": "गेंद",
+            "translation": "Ball",
+            "phonetic": "Gend"
+        },
+        {
+            "word": "विकेट",
+            "translation": "Wicket",
+            "phonetic": "Wicket"
+        },
+        {
+            "word": "फुटबॉल",
+            "translation": "Football",
+            "phonetic": "Football"
+        },
+        {
+            "word": "हॉकी",
+            "translation": "Hockey",
+            "phonetic": "Hockey"
+        },
+        {
+            "word": "बैडमिंटन",
+            "translation": "Badminton",
+            "phonetic": "Badminton"
+        },
+        {
+            "word": "टेनिस",
+            "translation": "Tennis",
+            "phonetic": "Tennis"
+        },
+        {
+            "word": "वॉलीबॉल",
+            "translation": "Volleyball",
+            "phonetic": "Volleyball"
+        },
+        {
+            "word": "बास्केटबॉल",
+            "translation": "Basketball",
+            "phonetic": "Basketball"
+        },
+        {
+            "word": "मुक्केबाजी",
+            "translation": "Boxing",
+            "phonetic": "Mukkebazi"
+        },
+        {
+            "word": "कुश्ती",
+            "translation": "Wrestling",
+            "phonetic": "Kushti"
+        },
+        {
+            "word": "तीरंदाजी",
+            "translation": "Archery",
+            "phonetic": "Teerandazi"
+        },
+        {
+            "word": "निशानेबाजी",
+            "translation": "Shooting",
+            "phonetic": "Nishanebazi"
+        },
+        {
+            "word": "तैराकी",
+            "translation": "Swimming",
+            "phonetic": "Tairaki"
+        },
+        {
+            "word": "दौड़",
+            "translation": "Race / Running",
+            "phonetic": "Daud"
+        },
+        {
+            "word": "कसरत",
+            "translation": "Drill / Physical exercise",
+            "phonetic": "Kasrat"
+        },
+        {
+            "word": "शतरंज",
+            "translation": "Chess",
+            "phonetic": "Shatranj"
+        },
+        {
+            "word": "ताश",
+            "translation": "Cards",
+            "phonetic": "Taash"
+        },
+        {
+            "word": "पासा",
+            "translation": "Dice",
+            "phonetic": "Paasa"
+        },
+        {
+            "word": "लूडो",
+            "translation": "Ludo",
+            "phonetic": "Ludo"
+        },
+        {
+            "word": "कैरम",
+            "translation": "Carrom",
+            "phonetic": "Carrom"
+        },
+        {
+            "word": "पद्य",
+            "translation": "Verse / Poetry (Formal)",
+            "phonetic": "Padya"
+        },
+        {
+            "word": "कथा",
+            "translation": "Tale / Story (Formal)",
+            "phonetic": "Katha"
+        },
+        {
+            "word": "उपन्यास",
+            "translation": "Novel",
+            "phonetic": "Upanyas"
+        },
+        {
+            "word": "निबंध",
+            "translation": "Essay / Article (Formal)",
+            "phonetic": "Nibandh"
+        },
+        {
+            "word": "डायरी",
+            "translation": "Diary",
+            "phonetic": "Diary"
+        },
+        {
+            "word": "चित्रकारी",
+            "translation": "Painting",
+            "phonetic": "Chitrakari"
+        },
+        {
+            "word": "मूर्तिकला",
+            "translation": "Sculpture",
+            "phonetic": "Moortikala"
+        },
+        {
+            "word": "शिल्पकला",
+            "translation": "Craft",
+            "phonetic": "Shilpkala"
+        },
+        {
+            "word": "संगीत",
+            "translation": "Music",
+            "phonetic": "Sangeet"
+        },
+        {
+            "word": "गायन",
+            "translation": "Singing",
+            "phonetic": "Gaayan"
+        },
+        {
+            "word": "वादन",
+            "translation": "Playing an instrument",
+            "phonetic": "Vaadan"
+        },
+        {
+            "word": "नृत्य",
+            "translation": "Dance",
+            "phonetic": "Nritya"
+        },
+        {
+            "word": "फोटोग्राफी",
+            "translation": "Photography",
+            "phonetic": "Photography"
+        },
+        {
+            "word": "बागवानी",
+            "translation": "Gardening",
+            "phonetic": "Bagwani"
+        },
+        {
+            "word": "पाककला",
+            "translation": "Cooking art (Formal)",
+            "phonetic": "Pak-kala"
+        },
+        {
+            "word": "सीवन कला",
+            "translation": "Sewing art / Tailoring (Formal)",
+            "phonetic": "Seevan-kala"
+        },
+        {
+            "word": "सूचिकला",
+            "translation": "Needlework / Embroidery (Formal)",
+            "phonetic": "Soochikala"
+        },
+        {
+            "word": "भ्रमण",
+            "translation": "Travel / Tour (Formal)",
+            "phonetic": "Bhraman"
+        },
+        {
+            "word": "आरोहण",
+            "translation": "Trekking / Climbing (Formal)",
+            "phonetic": "Aarohan"
+        },
+        {
+            "word": "शिविर",
+            "translation": "Camp",
+            "phonetic": "Shivir"
+        },
+        {
+            "word": "मत्स्य आखेट",
+            "translation": "Fishing (Formal)",
+            "phonetic": "Matsya akhet"
+        },
+        {
+            "word": "चलचित्र",
+            "translation": "Movie / Motion picture (Formal)",
+            "phonetic": "Chalchitra"
+        },
+        {
+            "word": "सिनेमा",
+            "translation": "Cinema",
+            "phonetic": "Cinema"
+        },
+        {
+            "word": "नाटक",
+            "translation": "Drama / Play",
+            "phonetic": "Natak"
+        },
+        {
+            "word": "रंगमंच",
+            "translation": "Theater (Formal)",
+            "phonetic": "Rangmanch"
+        },
+        {
+            "word": "संग्रहालय",
+            "translation": "Museum",
+            "phonetic": "Sangrahalay"
+        },
+        {
+            "word": "चिड़ियाघर",
+            "translation": "Zoo",
+            "phonetic": "Chidiyaghar"
+        },
+        {
+            "word": "मेला",
+            "translation": "Fair",
+            "phonetic": "Mela"
+        },
+        {
+            "word": "त्योहार",
+            "translation": "Festival / Celebration",
+            "phonetic": "Tyohar"
+        },
+        {
+            "word": "उत्सव",
+            "translation": "Festivity / Celebration",
+            "phonetic": "Utsav"
+        },
+        {
+            "word": "समारोह",
+            "translation": "Ceremony",
+            "phonetic": "Samaroh"
+        },
+        {
+            "word": "अवकाश के दिन",
+            "translation": "Holidays",
+            "phonetic": "Avakash ke din"
+        },
+        {
+            "word": "वनभोज",
+            "translation": "Picnic (Formal Hindi)",
+            "phonetic": "Vanbhoj"
+        },
+        {
+            "word": "समुद्र तट",
+            "translation": "Seashore / Beach",
+            "phonetic": "Samudra tat"
+        },
+        {
+            "word": "शैल",
+            "translation": "Mountain / Rock (Formal)",
+            "phonetic": "Shail"
+        },
+        {
+            "word": "प्रपात",
+            "translation": "Waterfall",
+            "phonetic": "Prapat"
+        },
+        {
+            "word": "सरिता",
+            "translation": "River (Formal)",
+            "phonetic": "Sarita"
+        },
+        {
+            "word": "सरोवर",
+            "translation": "Large Lake",
+            "phonetic": "Sarovar"
+        },
+        {
+            "word": "वन",
+            "translation": "Forest (Formal)",
+            "phonetic": "Van"
+        },
+        {
+            "word": "निसर्ग",
+            "translation": "Nature (Formal)",
+            "phonetic": "Nisarg"
+        },
+        {
+            "word": "वीरता",
+            "translation": "Bravery",
+            "phonetic": "Veerta"
+        },
+        {
+            "word": "रोमांच",
+            "translation": "Thrill / Excitement",
+            "phonetic": "Romanch"
+        },
+        {
+            "word": "विश्रामदायक",
+            "translation": "Relaxing",
+            "phonetic": "Vishramdayak"
+        },
+        {
+            "word": "मौन",
+            "translation": "Silence",
+            "phonetic": "Maun"
+        },
+        {
+            "word": "ऊर्जा",
+            "translation": "Energy",
+            "phonetic": "Urja"
+        },
+        {
+            "word": "उल्लास",
+            "translation": "Joy / Jubilation",
+            "phonetic": "Ullas"
+        },
+        {
+            "word": "लगन",
+            "translation": "Devotion / Dedication",
+            "phonetic": "Lagan"
+        },
+        {
+            "word": "दक्षता",
+            "translation": "Proficiency",
+            "phonetic": "Dakshata"
+        },
+        {
+            "word": "सन्नद्धता",
+            "translation": "Readiness",
+            "phonetic": "Sannaddhata"
+        },
+        {
+            "word": "प्रयत्न",
+            "translation": "Effort / endeavor (Formal)",
+            "phonetic": "Prayatna"
+        },
+        {
+            "word": "सिद्धि",
+            "translation": "Accomplishment",
+            "phonetic": "Siddhi"
+        },
+        {
+            "word": "प्रतिष्ठा",
+            "translation": "Prestige / Honor",
+            "phonetic": "Pratishtha"
+        },
+        {
+            "word": "मुस्कुराहट",
+            "translation": "Smile (Long version)",
+            "phonetic": "Muskurahat"
+        },
+        {
+            "word": "स्मृतियां",
+            "translation": "Memories (Formal)",
+            "phonetic": "Smritiyan"
+        },
+        {
+            "word": "स्वप्न",
+            "translation": "Dream (Formal)",
+            "phonetic": "Swapna"
+        },
+        {
+            "word": "मनोरथ",
+            "translation": "Goal / Desire (Formal)",
+            "phonetic": "Manorath"
+        },
+        {
+            "word": "उत्साहवर्धन",
+            "translation": "Encouragement",
+            "phonetic": "Utsahvardhan"
+        }
+    ],
+    "liar_game_data": {
+        "topic": "The 'Tyohar' Fairness",
+        "question": "While 'Tyohar' means festival, in rural India, what is the 'Mela' typically known for?",
+        "options": [
+            "A place for meditation",
+            "A traveling carnival or rural fair",
+            "A government tax office",
+            "A type of food"
+        ],
+        "correct_answer_index": 1,
+        "explanation": "'Mela' is the traditional term for a fair or carnival, often associated with religious festivals or seasonal harvests in rural regions."
+    }
+}
