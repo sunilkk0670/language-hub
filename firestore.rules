@@ -55,6 +55,27 @@ service cloud.firestore {
     }
     
     // ============================================
+    // MASTERY MODULES - PUBLIC READ FOR KANJI/VOCABULARY
+    // ============================================
+    
+    match /mastery_modules/{moduleId} {
+      // TEMPORARY: Allow public read for development
+      allow read: if true;
+      
+      // Only admins can write
+      allow write: if isAdmin();
+      
+      // Lessons sub-collection
+      match /lessons/{lessonId} {
+        // TEMPORARY: Allow public read for development
+        allow read: if true;
+        
+        // Only admins can write
+        allow write: if isAdmin();
+      }
+    }
+    
+    // ============================================
     // USER PROGRESS - Users can read/write their own data
     // ============================================
     

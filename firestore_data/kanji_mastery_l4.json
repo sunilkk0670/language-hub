@@ -1,0 +1,794 @@
+[
+    {
+        "character": "父",
+        "kun_yomi": "ちち",
+        "on_yomi": "フ",
+        "meaning": "Father",
+        "stroke_count": 4,
+        "mnemonic": "A father with a mustache (the top two strokes)."
+    },
+    {
+        "character": "母",
+        "kun_yomi": "はは",
+        "on_yomi": "ボ",
+        "meaning": "Mother",
+        "stroke_count": 5,
+        "mnemonic": "A nurturing mother figure with two dots representing breasts."
+    },
+    {
+        "character": "本",
+        "kun_yomi": "もと",
+        "on_yomi": "ホン",
+        "meaning": "Book / Origin",
+        "stroke_count": 5,
+        "mnemonic": "A tree (木) with a line at the bottom showing its roots/origin."
+    },
+    {
+        "character": "工",
+        "kun_yomi": "-",
+        "on_yomi": "コウ, ク",
+        "meaning": "Craft / Construction",
+        "stroke_count": 3,
+        "mnemonic": "An I-beam used in construction."
+    },
+    {
+        "character": "花",
+        "kun_yomi": "はな",
+        "on_yomi": "カ",
+        "meaning": "Flower",
+        "stroke_count": 7,
+        "mnemonic": "Grass (艹) that changes (化) into a bloom."
+    },
+    {
+        "character": "草",
+        "kun_yomi": "くさ",
+        "on_yomi": "ソウ",
+        "meaning": "Grass",
+        "stroke_count": 9,
+        "mnemonic": "Plants growing under the sun (日)."
+    },
+    {
+        "character": "虫",
+        "kun_yomi": "むし",
+        "on_yomi": "チュウ",
+        "meaning": "Insect",
+        "stroke_count": 6,
+        "mnemonic": "A bug with a head and a tail."
+    },
+    {
+        "character": "犬",
+        "kun_yomi": "いぬ",
+        "on_yomi": "ケン",
+        "meaning": "Dog",
+        "stroke_count": 4,
+        "mnemonic": "A large (大) person-like creature with a tail/dot."
+    },
+    {
+        "character": "休",
+        "kun_yomi": "やす.む",
+        "on_yomi": "キュウ",
+        "meaning": "To Rest",
+        "stroke_count": 6,
+        "mnemonic": "A person (亻) leaning against a tree (木)."
+    },
+    {
+        "character": "早",
+        "kun_yomi": "はや.い",
+        "on_yomi": "ソウ, サッ",
+        "meaning": "Early",
+        "stroke_count": 6,
+        "mnemonic": "The sun (日) over a cross (ten) - starting early."
+    },
+    {
+        "character": "車",
+        "kun_yomi": "くるま",
+        "on_yomi": "シャ",
+        "meaning": "Car / Vehicle",
+        "stroke_count": 7,
+        "mnemonic": "A bird's-eye view of a cart with wheels and an axle."
+    },
+    {
+        "character": "門",
+        "kun_yomi": "かど",
+        "on_yomi": "モン",
+        "meaning": "Gate",
+        "stroke_count": 8,
+        "mnemonic": "Swinging double doors of a gate."
+    },
+    {
+        "character": "間",
+        "kun_yomi": "あいだ, ま",
+        "on_yomi": "カン, ケン",
+        "meaning": "Between / Interval",
+        "stroke_count": 12,
+        "mnemonic": "The sun (日) shining through a gate (門)."
+    },
+    {
+        "character": "毎",
+        "kun_yomi": "つね",
+        "on_yomi": "マイ",
+        "meaning": "Every",
+        "stroke_count": 6,
+        "mnemonic": "A person wearing a hat every day."
+    },
+    {
+        "character": "京",
+        "kun_yomi": "みやこ",
+        "on_yomi": "キョウ, ケイ",
+        "meaning": "Capital",
+        "stroke_count": 8,
+        "mnemonic": "A tall building representing the capital city."
+    },
+    {
+        "character": "州",
+        "kun_yomi": "す",
+        "on_yomi": "シュウ",
+        "meaning": "State / Province",
+        "stroke_count": 6,
+        "mnemonic": "Land divided by three rivers."
+    },
+    {
+        "character": "府",
+        "kun_yomi": "-",
+        "on_yomi": "フ",
+        "meaning": "Urban Prefecture",
+        "stroke_count": 8,
+        "mnemonic": "A government office (付) under a roof (广)."
+    },
+    {
+        "character": "路",
+        "kun_yomi": "じ",
+        "on_yomi": "ロ",
+        "meaning": "Route / Road",
+        "stroke_count": 13,
+        "mnemonic": "Foot (足) stepping on each stop of a road."
+    },
+    {
+        "character": "電",
+        "kun_yomi": "-",
+        "on_yomi": "デン",
+        "meaning": "Electricity",
+        "stroke_count": 13,
+        "mnemonic": "Rain (雨) with a lightning tail (乚)."
+    },
+    {
+        "character": "心",
+        "kun_yomi": "kokoro",
+        "on_yomi": "SHIN",
+        "meaning": "Heart / Mind",
+        "stroke_count": 4,
+        "mnemonic": "A heart with its veins."
+    },
+    {
+        "character": "知",
+        "kun_yomi": "し.る",
+        "on_yomi": "チ",
+        "meaning": "To Know",
+        "stroke_count": 8,
+        "mnemonic": "An arrow (矢) pointing to a mouth (口) - knowledge."
+    },
+    {
+        "character": "回",
+        "kun_yomi": "まわ.す",
+        "on_yomi": "カイ",
+        "meaning": "Times / Rotate",
+        "stroke_count": 6,
+        "mnemonic": "A circle rotating within a square."
+    },
+    {
+        "character": "物",
+        "kun_yomi": "もの",
+        "on_yomi": "ブツ, モツ",
+        "meaning": "Thing / Object",
+        "stroke_count": 8,
+        "mnemonic": "A cow (牛) being treated as an object."
+    },
+    {
+        "character": "酒",
+        "kun_yomi": "さけ, さか-",
+        "on_yomi": "シュ",
+        "meaning": "Alcohol / Sake",
+        "stroke_count": 10,
+        "mnemonic": "Water (氵) and a jug of wine (酉)."
+    },
+    {
+        "character": "魚",
+        "kun_yomi": "さかな, うお",
+        "on_yomi": "ギョ",
+        "meaning": "Fish",
+        "stroke_count": 11,
+        "mnemonic": "A fish with a head, scales, and a tail (灬)."
+    },
+    {
+        "character": "牛",
+        "kun_yomi": "うし",
+        "on_yomi": "ギュウ",
+        "meaning": "Cow / Bull",
+        "stroke_count": 4,
+        "mnemonic": "The head of a cow with horns."
+    },
+    {
+        "character": "羊",
+        "kun_yomi": "ひつじ",
+        "on_yomi": "ヨウ",
+        "meaning": "Sheep",
+        "stroke_count": 6,
+        "mnemonic": "A sheep's head with curved horns."
+    },
+    {
+        "character": "馬",
+        "kun_yomi": "うま",
+        "on_yomi": "バ",
+        "meaning": "Horse",
+        "stroke_count": 10,
+        "mnemonic": "A horse with a mane and four legs."
+    },
+    {
+        "character": "毛",
+        "kun_yomi": "け",
+        "on_yomi": "モウ",
+        "meaning": "Hair / Fur",
+        "stroke_count": 4,
+        "mnemonic": "A single curved strand of hair."
+    },
+    {
+        "character": "良",
+        "kun_yomi": "よ.い",
+        "on_yomi": "リョウ",
+        "meaning": "Good / Fine",
+        "stroke_count": 7,
+        "mnemonic": "A refined grain of rice."
+    },
+    {
+        "character": "悪",
+        "kun_yomi": "わる.い",
+        "on_yomi": "アク",
+        "meaning": "Bad / Evil",
+        "stroke_count": 11,
+        "mnemonic": "A secondary (亜) heart (心) - one that isn't good."
+    },
+    {
+        "character": "色",
+        "kun_yomi": "いろ",
+        "on_yomi": "ショク, シキ",
+        "meaning": "Color",
+        "stroke_count": 6,
+        "mnemonic": "A person kneeling under a seal/color."
+    },
+    {
+        "character": "黄",
+        "kun_yomi": "き",
+        "on_yomi": "コウ",
+        "meaning": "Yellow",
+        "stroke_count": 11,
+        "mnemonic": "Fields under the bright sunlight."
+    },
+    {
+        "character": "重",
+        "kun_yomi": "おも.い, かさ.ねる",
+        "on_yomi": "ジュウ, チョウ",
+        "meaning": "Heavy / Pile up",
+        "stroke_count": 9,
+        "mnemonic": "Stacked items so heavy they look like a car."
+    },
+    {
+        "character": "軽",
+        "kun_yomi": "かる.い",
+        "on_yomi": "ケイ",
+        "meaning": "Light (Weight)",
+        "stroke_count": 12,
+        "mnemonic": "A chariot (車) moving easily through the soil."
+    },
+    {
+        "character": "形",
+        "kun_yomi": "かたち",
+        "on_yomi": "ケイ, ギョウ",
+        "meaning": "Shape / Form",
+        "stroke_count": 7,
+        "mnemonic": "A frame (开) with brush strokes (彡)."
+    },
+    {
+        "character": "丸",
+        "kun_yomi": "まる.い",
+        "on_yomi": "ガン",
+        "meaning": "Round / Circle",
+        "stroke_count": 3,
+        "mnemonic": "A person curled into a round ball."
+    },
+    {
+        "character": "法",
+        "kun_yomi": "のり",
+        "on_yomi": "ホウ",
+        "meaning": "Law / Method",
+        "stroke_count": 8,
+        "mnemonic": "Water (氵) that flows away to the right (去)."
+    },
+    {
+        "character": "点",
+        "kun_yomi": "さ.す",
+        "on_yomi": "テン",
+        "meaning": "Point / Score",
+        "stroke_count": 9,
+        "mnemonic": "A fortune (占) over a fire (灬) - marking points."
+    },
+    {
+        "character": "活",
+        "kun_yomi": "い.きる",
+        "on_yomi": "カツ",
+        "meaning": "Lively / Life",
+        "stroke_count": 9,
+        "mnemonic": "Water (氵) and a moving tongue (舌) - conversation is life."
+    },
+    {
+        "character": "始",
+        "kun_yomi": "はじ.める",
+        "on_yomi": "シ",
+        "meaning": "To Begin",
+        "stroke_count": 8,
+        "mnemonic": "A woman (女) starting a platform (台) - building a new beginning."
+    },
+    {
+        "character": "終",
+        "kun_yomi": "お.わる",
+        "on_yomi": "シュウ",
+        "meaning": "To End",
+        "stroke_count": 11,
+        "mnemonic": "A thread (糸) and winter (冬) - ending the year."
+    },
+    {
+        "character": "死",
+        "kun_yomi": "し.ぬ",
+        "on_yomi": "シ",
+        "meaning": "Death / To Die",
+        "stroke_count": 6,
+        "mnemonic": "A skeleton under a roof - the end of life."
+    },
+    {
+        "character": "部",
+        "kun_yomi": "-",
+        "on_yomi": "ブ",
+        "meaning": "Department / Section",
+        "stroke_count": 11,
+        "mnemonic": "Standing at the edge (阝) of a mouth (口)."
+    },
+    {
+        "character": "窓",
+        "kun_yomi": "まど",
+        "on_yomi": "ソウ",
+        "meaning": "Window",
+        "stroke_count": 11,
+        "mnemonic": "An opening in a hole (穴) with a frame."
+    },
+    {
+        "character": "想",
+        "kun_yomi": "おも.う",
+        "on_yomi": "ソウ",
+        "meaning": "Thought / Aspect",
+        "stroke_count": 13,
+        "mnemonic": "Appearance (相) in the heart (心)."
+    },
+    {
+        "character": "深",
+        "kun_yomi": "ふか.い",
+        "on_yomi": "シン",
+        "meaning": "Deep",
+        "stroke_count": 11,
+        "mnemonic": "Water (氵) in a deep hole reached by hands."
+    },
+    {
+        "character": "浅",
+        "kun_yomi": "あさ.い",
+        "on_yomi": "セン",
+        "meaning": "Shallow",
+        "stroke_count": 9,
+        "mnemonic": "Water (氵) plus two remaining pieces."
+    },
+    {
+        "character": "旅",
+        "kun_yomi": "たび",
+        "on_yomi": "リョ",
+        "meaning": "Journey / Trip",
+        "stroke_count": 10,
+        "mnemonic": "A flag and people moving together."
+    },
+    {
+        "character": "働",
+        "kun_yomi": "はたら.く",
+        "on_yomi": "ドウ",
+        "meaning": "To Work",
+        "stroke_count": 13,
+        "mnemonic": "A person (亻) plus movement (動) equals work."
+    },
+    {
+        "character": "遊",
+        "kun_yomi": "あそ.ぶ",
+        "on_yomi": "ユウ",
+        "meaning": "To Play",
+        "stroke_count": 12,
+        "mnemonic": "Going (辶) with a banner (斿) to have fun."
+    },
+    {
+        "character": "困",
+        "kun_yomi": "こま.る",
+        "on_yomi": "コン",
+        "meaning": "Troubled / Stuck",
+        "stroke_count": 7,
+        "mnemonic": "A tree (木) stuck inside a box (囗)."
+    },
+    {
+        "character": "最",
+        "kun_yomi": "もっと.も",
+        "on_yomi": "サイ",
+        "meaning": "Most / Extreme",
+        "stroke_count": 12,
+        "mnemonic": "Taking the sun (日) with an ear/hand - the very best."
+    },
+    {
+        "character": "指",
+        "kun_yomi": "ゆび, さ.す",
+        "on_yomi": "シ",
+        "meaning": "Finger / To Point",
+        "stroke_count": 9,
+        "mnemonic": "Hand (扌) plus aim (旨)."
+    },
+    {
+        "character": "鼻",
+        "kun_yomi": "はな",
+        "on_yomi": "ビ",
+        "meaning": "Nose",
+        "stroke_count": 14,
+        "mnemonic": "Self (自) over a field with a base - breathing."
+    },
+    {
+        "character": "歯",
+        "kun_yomi": "は",
+        "on_yomi": "シ",
+        "meaning": "Tooth",
+        "stroke_count": 12,
+        "mnemonic": "Stop (止) in the mouth showing teeth."
+    },
+    {
+        "character": "肩",
+        "kun_yomi": "かた",
+        "on_yomi": "ケン",
+        "meaning": "Shoulder",
+        "stroke_count": 8,
+        "mnemonic": "Door (戸) over meat (月) - where the arm hangs."
+    },
+    {
+        "character": "腰",
+        "kun_yomi": "こし",
+        "on_yomi": "ヨウ",
+        "meaning": "Waist / Hips",
+        "stroke_count": 13,
+        "mnemonic": "Meat (月) plus essential/west section."
+    },
+    {
+        "character": "骨",
+        "kun_yomi": "ほね",
+        "on_yomi": "コツ",
+        "meaning": "Bone",
+        "stroke_count": 10,
+        "mnemonic": "A skeleton frame in a box."
+    },
+    {
+        "character": "脳",
+        "kun_yomi": "のう",
+        "on_yomi": "ノウ",
+        "meaning": "Brain",
+        "stroke_count": 11,
+        "mnemonic": "Body part (月) with brain waves/hair."
+    },
+    {
+        "character": "横",
+        "kun_yomi": "よこ",
+        "on_yomi": "オウ",
+        "meaning": "Side / Horizontal",
+        "stroke_count": 15,
+        "mnemonic": "Tree (木) plus yellow (黄) flowers on the side."
+    },
+    {
+        "character": "向",
+        "kun_yomi": "む.く, む.こう",
+        "on_yomi": "コウ",
+        "meaning": "Facing / Opposite",
+        "stroke_count": 6,
+        "mnemonic": "A window facing in one direction."
+    },
+    {
+        "character": "次",
+        "kun_yomi": "つぎ, つ.ぐ",
+        "on_yomi": "ジ, シ",
+        "meaning": "Next",
+        "stroke_count": 6,
+        "mnemonic": "Ice (冫) and a person opening their mouth for the next turn."
+    },
+    {
+        "character": "他",
+        "kun_yomi": "ほか",
+        "on_yomi": "タ",
+        "meaning": "Other",
+        "stroke_count": 5,
+        "mnemonic": "A person (亻) plus irc (scorpion/other)."
+    },
+    {
+        "character": "両",
+        "kun_yomi": "ふたつ",
+        "on_yomi": "リョウ",
+        "meaning": "Both / Money unit",
+        "stroke_count": 6,
+        "mnemonic": "Two things hanging on a scale."
+    },
+    {
+        "character": "内",
+        "kun_yomi": "うち",
+        "on_yomi": "ナイ, ダイ",
+        "meaning": "Inside / Internal",
+        "stroke_count": 4,
+        "mnemonic": "Entering (入) a border (冂)."
+    },
+    {
+        "character": "的",
+        "kun_yomi": "まと",
+        "on_yomi": "テキ",
+        "meaning": "Target / Adjective Suffix",
+        "stroke_count": 8,
+        "mnemonic": "White (白) spoon/target in the center."
+    },
+    {
+        "character": "性",
+        "kun_yomi": "さが",
+        "on_yomi": "セイ, ショウ",
+        "meaning": "Nature / Gender / Property",
+        "stroke_count": 8,
+        "mnemonic": "Heart (忄) and birth (生) - one's internal nature."
+    },
+    {
+        "character": "被",
+        "kun_yomi": "こうむ.る",
+        "on_yomi": "ヒ",
+        "meaning": "Receive / Incur / Suffix",
+        "stroke_count": 10,
+        "mnemonic": "Clothes (衤) plus skin (皮) - to wear or be covered by."
+    },
+    {
+        "character": "制",
+        "kun_yomi": "-",
+        "on_yomi": "セイ",
+        "meaning": "System / Control",
+        "stroke_count": 8,
+        "mnemonic": "A knife (刂) and a cow on a platform - regulation."
+    },
+    {
+        "character": "器",
+        "kun_yomi": "うつわ",
+        "on_yomi": "キ",
+        "meaning": "Vessel / Utensil / Instrument",
+        "stroke_count": 15,
+        "mnemonic": "Four mouths (口) plus a dog - items used in ritual."
+    },
+    {
+        "character": "機",
+        "kun_yomi": "はた",
+        "on_yomi": "キ",
+        "meaning": "Machine / Opportunity",
+        "stroke_count": 16,
+        "mnemonic": "Tree (木) plus a loom mechanism."
+    },
+    {
+        "character": "械",
+        "kun_yomi": "-",
+        "on_yomi": "カイ",
+        "meaning": "Device / Contraption",
+        "stroke_count": 11,
+        "mnemonic": "Tree (木) plus shackles - restricted mechanism."
+    },
+    {
+        "character": "種",
+        "kun_yomi": "たね",
+        "on_yomi": "シュ",
+        "meaning": "Kind / Seed",
+        "stroke_count": 14,
+        "mnemonic": "Grain (禾) plus heavy/weight - sorting seeds by type."
+    },
+    {
+        "character": "類",
+        "kun_yomi": "たぐい",
+        "on_yomi": "ルイ",
+        "meaning": "Category / Class",
+        "stroke_count": 18,
+        "mnemonic": "Large (大) bird/rice plus head - sorting by type."
+    },
+    {
+        "character": "官",
+        "kun_yomi": "-",
+        "on_yomi": "カン",
+        "meaning": "Government Official",
+        "stroke_count": 8,
+        "mnemonic": "A person under a roof representing authority."
+    },
+    {
+        "character": "司",
+        "kun_yomi": "つかさど.る",
+        "on_yomi": "シ",
+        "meaning": "Administer / Official",
+        "stroke_count": 5,
+        "mnemonic": "A mouth shouting commands in an office."
+    },
+    {
+        "character": "庁",
+        "kun_yomi": "-",
+        "on_yomi": "チョウ",
+        "meaning": "Government Agency / Office",
+        "stroke_count": 5,
+        "mnemonic": "A roof (广) plus nails/staff - government office."
+    },
+    {
+        "character": "民",
+        "kun_yomi": "たみ",
+        "on_yomi": "ミン",
+        "meaning": "People / Citizens",
+        "stroke_count": 5,
+        "mnemonic": "People with their eyes partially closed/subjected."
+    },
+    {
+        "character": "表",
+        "kun_yomi": "おもて, あらわ.す",
+        "on_yomi": "ヒョウ",
+        "meaning": "Surface / Table / Chart",
+        "stroke_count": 8,
+        "mnemonic": "Upper part of clothes showing the outside."
+    },
+    {
+        "character": "裏",
+        "kun_yomi": "うら",
+        "on_yomi": "リ",
+        "meaning": "Back / Reverse",
+        "stroke_count": 13,
+        "mnemonic": "Village (里) inside clothes (衣)."
+    },
+    {
+        "character": "側",
+        "kun_yomi": "かわ, そば",
+        "on_yomi": "ソク",
+        "meaning": "Side / Lean",
+        "stroke_count": 8,
+        "mnemonic": "A person (亻) plus rule/measure - aligning to a side."
+    },
+    {
+        "character": "際",
+        "kun_yomi": "きわ",
+        "on_yomi": "サイ",
+        "meaning": "Occasion / Edge / Inter-",
+        "stroke_count": 14,
+        "mnemonic": "A hill (阝) plus ritual/offerings at the edge."
+    },
+    {
+        "character": "等",
+        "kun_yomi": "ひと.しい, など",
+        "on_yomi": "トウ",
+        "meaning": "Equal / Etc.",
+        "stroke_count": 12,
+        "mnemonic": "Bamboo (竹) strips at a temple (寺) sorted into classes."
+    },
+    {
+        "character": "級",
+        "kun_yomi": "-",
+        "on_yomi": "キュウ",
+        "meaning": "Grade / Level",
+        "stroke_count": 9,
+        "mnemonic": "Thread (糸) plus reaching/catching a rank."
+    },
+    {
+        "character": "価",
+        "kun_yomi": "あたい",
+        "on_yomi": "カ",
+        "meaning": "Value / Price",
+        "stroke_count": 15,
+        "mnemonic": "A person (亻) plus a merchant's goods."
+    },
+    {
+        "character": "平",
+        "kun_yomi": "たい.ら, ひら",
+        "on_yomi": "ヘイ, ビョウ",
+        "meaning": "Flat / Peace",
+        "stroke_count": 5,
+        "mnemonic": "A level line through water lily pads."
+    },
+    {
+        "character": "成",
+        "kun_yomi": "な.る, な.す",
+        "on_yomi": "セイ, ジョウ",
+        "meaning": "Become / Form / Achieve",
+        "stroke_count": 6,
+        "mnemonic": "A halberd achieving a result."
+    },
+    {
+        "character": "再",
+        "kun_yomi": "ふたた.び",
+        "on_yomi": "サイ, サ",
+        "meaning": "Again / Re-",
+        "stroke_count": 6,
+        "mnemonic": "A base with two horizontal lines above."
+    },
+    {
+        "character": "共",
+        "kun_yomi": "とも",
+        "on_yomi": "キョウ",
+        "meaning": "Together / Both",
+        "stroke_count": 6,
+        "mnemonic": "Two hands (廿) holding something together."
+    },
+    {
+        "character": "供",
+        "kun_yomi": "そな.える, とも",
+        "on_yomi": "キョウ, ク",
+        "meaning": "Provide / Offer / Companion",
+        "stroke_count": 8,
+        "mnemonic": "A person (亻) offering something together (共)."
+    },
+    {
+        "character": "示",
+        "kun_yomi": "しめ.す",
+        "on_yomi": "ジ, シ",
+        "meaning": "Show / Indicate",
+        "stroke_count": 5,
+        "mnemonic": "An altar showing an offering or sign."
+    },
+    {
+        "character": "説",
+        "kun_yomi": "と.く",
+        "on_yomi": "セツ, ゼイ",
+        "meaning": "Explain / Theory",
+        "stroke_count": 14,
+        "mnemonic": "Words (言) plus a person showing joy after understanding."
+    },
+    {
+        "character": "報",
+        "kun_yomi": "むく.いる",
+        "on_yomi": "ホウ",
+        "meaning": "Report / Reward",
+        "stroke_count": 12,
+        "mnemonic": "Hands and a person kneeling - offering a report."
+    },
+    {
+        "character": "告",
+        "kun_yomi": "つ.げる",
+        "on_yomi": "コク",
+        "meaning": "Tell / Inform",
+        "stroke_count": 7,
+        "mnemonic": "A cow (牛) over a mouth (口) - shouting info."
+    },
+    {
+        "character": "記",
+        "kun_yomi": "しる.す",
+        "on_yomi": "キ",
+        "meaning": "Record / Write down",
+        "stroke_count": 10,
+        "mnemonic": "Words (言) that are self-made (己)."
+    },
+    {
+        "character": "認",
+        "kun_yomi": "みと.める",
+        "on_yomi": "ニン",
+        "meaning": "Recognize / Acknowledge",
+        "stroke_count": 14,
+        "mnemonic": "Words (言) plus patience (忍)."
+    },
+    {
+        "character": "確",
+        "kun_yomi": "たし.か, たし.かめる",
+        "on_yomi": "カク",
+        "meaning": "Confirm / Certain",
+        "stroke_count": 15,
+        "mnemonic": "Stone (石) over a bird house - solid and certain."
+    },
+    {
+        "character": "案",
+        "kun_yomi": "-",
+        "on_yomi": "アン",
+        "meaning": "Plan / Suggestion",
+        "stroke_count": 10,
+        "mnemonic": "A woman (女) under a roof on a wooden (木) table - planning."
+    }
+]

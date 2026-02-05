@@ -1,27 +1,25 @@
-# Privacy Policy for ChirpPolly
+# Privacy Policy (DPDP & GDPR Compliant)
+**Entity:** Hrishikesh Innovations LLP
+**Brand:** ChirPolly
+**Last Updated:** February 2026
 
-*Last Updated: January 5, 2026*
+## 1. Overview
+Hrishikesh Innovations LLP is committed to protecting your personal data.
 
-## 1. Introduction
-Welcome to ChirpPolly. We respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, and safeguard your information.
+## 2. Data Collection
+We collect name, email, payment details, and learning progress to provide personalized services.
 
-## 2. Data Storage & Security
-> [!IMPORTANT]
-> Your data is stored securely using Google Firebase infrastructure. We leverage industry-standard encryption and security protocols to protect your information. Please be aware that your data is hosted in US and Global regions as part of the Firebase cloud infrastructure.
+## 3. Consent
+Your consent for data processing is free, specific, informed, and unambiguous. You may withdraw consent at any time via account settings.
 
-## 3. Information We Collect
-We collect information you provide directly to us, such as when you create an account (email address) and your progress within the language modules.
+## 4. AI Training
+We may use anonymized usage data to improve our AI models. We do not sell personal data to third parties.
 
-## 4. How We Use Your Information
-- To provide and maintain our service.
-- To track your language learning progress.
-- To notify you about changes to our app.
+## 5. User Rights
+You have the right to access, correct, or erase your personal data. You may also nominate a person to manage your data in the event of incapacity.
 
-## 5. Your Rights (GDPR Compliance)
-Under GDPR and other international laws, you have the right to:
-- Access your data.
-- Correct inaccurate data.
-- **Right to Erasure:** You can delete your account and all associated data at any time via the User Profile section in the app.
-
-## 6. Contact Us
-If you have any questions about this Privacy Policy, please contact us at support@chirppolly.com.
+## 6. Grievance Officer
+**Name:** Sunil KK
+**Email:** info@chirpolly.com
+**Address:** Registered Office of Hrishikesh Innovations LLP.
+No 32, 5th main Road, Jayamahal Extension, Bangalore 560046

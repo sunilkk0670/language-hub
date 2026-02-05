@@ -1,22 +1,102 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AboutPage extends StatelessWidget {
+class AboutPage extends StatefulWidget {
   const AboutPage({super.key});
+
+  @override
+  State<AboutPage> createState() => _AboutPageState();
+}
+
+class _AboutPageState extends State<AboutPage> {
+  final ScrollController _scrollController = ScrollController();
+  final FocusNode _focusNode = FocusNode();
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _focusNode.requestFocus();
+    });
+  }
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    _focusNode.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          _buildSliverAppBar(context),
-          SliverToBoxAdapter(
-            child: _buildContent(context),
-          ),
-          SliverToBoxAdapter(
-            child: _buildFooter(context),
-          ),
-        ],
+      body: Focus(
+        focusNode: _focusNode,
+        autofocus: true,
+        onKeyEvent: (node, event) {
+          if (event is KeyDownEvent) {
+            const scrollAmount = 100.0;
+            const pageScrollAmount = 500.0;
+            
+            if (event.logicalKey == LogicalKeyboardKey.arrowDown) {
+              _scrollController.animateTo(
+                _scrollController.offset + scrollAmount,
+                duration: const Duration(milliseconds: 200),
+                curve: Curves.easeOut,
+              );
+              return KeyEventResult.handled;
+            } else if (event.logicalKey == LogicalKeyboardKey.arrowUp) {
+              _scrollController.animateTo(
+                _scrollController.offset - scrollAmount,
+                duration: const Duration(milliseconds: 200),
+                curve: Curves.easeOut,
+              );
+              return KeyEventResult.handled;
+            } else if (event.logicalKey == LogicalKeyboardKey.pageDown) {
+              _scrollController.animateTo(
+                _scrollController.offset + pageScrollAmount,
+                duration: const Duration(milliseconds: 300),
+                curve: Curves.easeOut,
+              );
+              return KeyEventResult.handled;
+            } else if (event.logicalKey == LogicalKeyboardKey.pageUp) {
+              _scrollController.animateTo(
+                _scrollController.offset - pageScrollAmount,
+                duration: const Duration(milliseconds: 300),
+                curve: Curves.easeOut,
+              );
+              return KeyEventResult.handled;
+            } else if (event.logicalKey == LogicalKeyboardKey.home) {
+              _scrollController.animateTo(
+                0,
+                duration: const Duration(milliseconds: 500),
+                curve: Curves.easeOut,
+              );
+              return KeyEventResult.handled;
+            } else if (event.logicalKey == LogicalKeyboardKey.end) {
+              _scrollController.animateTo(
+                _scrollController.position.maxScrollExtent,
+                duration: const Duration(milliseconds: 500),
+                curve: Curves.easeOut,
+              );
+              return KeyEventResult.handled;
+            }
+          }
+          return KeyEventResult.ignored;
+        },
+        child: CustomScrollView(
+          controller: _scrollController,
+          slivers: [
+            _buildSliverAppBar(context),
+            SliverToBoxAdapter(
+              child: _buildContent(context),
+            ),
+            SliverToBoxAdapter(
+              child: _buildFooter(context),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -80,8 +160,8 @@ class AboutPage extends StatelessWidget {
           end: Alignment.bottomCenter,
           colors: [
             Colors.white,
-            const Color(0xFFF3E5F5).withOpacity(0.3),
-            const Color(0xFFE1F5FE).withOpacity(0.3),
+            const Color(0xFFF3E5F5).withValues(alpha: 0.3),
+            const Color(0xFFE1F5FE).withValues(alpha: 0.3),
           ],
         ),
       ),
@@ -265,9 +345,9 @@ class AboutPage extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 32),
-                    _buildMetricRow('Languages Available', '7', 'French, Spanish, Korean, Japanese, Sanskrit, English & German'),
+                    _buildMetricRow('Languages Available', '11', 'English, French, Spanish, Korean, Japanese, German, Sanskrit, Hindi, Portuguese, Chinese & Italian'),
                     const Divider(height: 32),
-                    _buildMetricRow('Total Vocabulary', '21,000 words', '3,000 words per language across all courses'),
+                    _buildMetricRow('Total Vocabulary', '33,000 words', '3,000 words per language across all courses'),
                     const Divider(height: 32),
                     _buildMetricRow('Course Levels', 'A1 to B1', 'Beginner to Intermediate proficiency'),
                     const Divider(height: 32),
@@ -316,7 +396,7 @@ class AboutPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(30),
                         ),
                         elevation: 8,
-                        shadowColor: const Color(0xFF6A4CBC).withOpacity(0.5),
+                        shadowColor: const Color(0xFF6A4CBC).withValues(alpha: 0.5),
                       ),
                       child: Text(
                         'Start your journey today',
@@ -370,7 +450,7 @@ class AboutPage extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 20,
             offset: const Offset(0, 10),
           ),
@@ -427,14 +507,16 @@ class AboutPage extends StatelessWidget {
 
   Widget _buildFooter(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 24),
+      padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 24),
       decoration: const BoxDecoration(
         gradient: LinearGradient(
-          begin: Alignment.bottomLeft,
-          end: Alignment.topRight,
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
           colors: [
-            Color(0xFF2E3192),
-            Color(0xFF6A4CBC),
+            Color(0xFF15163D), // Deep Midnight Blue
+            Color(0xFF2E3192), // Logo Blue
+            Color(0xFF4A348F), // Indigo transition
+            Color(0xFF6A4CBC), // Logo Purple
           ],
         ),
       ),
@@ -444,20 +526,20 @@ class AboutPage extends StatelessWidget {
             'ChirPolly - Where every voice finds its language.',
             textAlign: TextAlign.center,
             style: GoogleFonts.outfit(
-              fontSize: 20,
+              fontSize: 18,
               fontStyle: FontStyle.italic,
-              color: Colors.white.withOpacity(0.9),
+              color: Colors.white.withValues(alpha: 0.9),
               fontWeight: FontWeight.w500,
             ),
           ),
-          const SizedBox(height: 24),
-          const Divider(color: Colors.white24),
-          const SizedBox(height: 24),
+          const SizedBox(height: 20),
+          Divider(color: Colors.white.withValues(alpha: 0.15), height: 1),
+          const SizedBox(height: 20),
           Text(
             '© ${DateTime.now().year} ChirPolly. All rights reserved.',
             style: GoogleFonts.inter(
-              color: Colors.white70,
-              fontSize: 14,
+              color: Colors.white.withValues(alpha: 0.6),
+              fontSize: 12,
             ),
           ),
         ],

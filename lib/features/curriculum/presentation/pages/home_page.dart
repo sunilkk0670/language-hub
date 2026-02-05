@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'levels_page.dart';
+import '../widgets/language_card.dart';
 import '../../../auth/presentation/providers/auth_providers.dart';
 
 class HomePage extends ConsumerStatefulWidget {
@@ -107,7 +108,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(80),
+          preferredSize: const Size.fromHeight(110),
           child: LayoutBuilder(
             builder: (context, constraints) {
               // Check if we're on mobile (width < 600px)
@@ -117,69 +118,85 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                 elevation: 0,
                 backgroundColor: Colors.white,
                 surfaceTintColor: Colors.white,
-                toolbarHeight: 80,
+                toolbarHeight: 110,
                 centerTitle: false,
                 automaticallyImplyLeading: false,
                 title: Padding(
                   padding: const EdgeInsets.only(left: 16.0),
                   child: ConstrainedBox(
                     constraints: BoxConstraints(
-                      maxHeight: isMobile ? 40 : 60,
+                      maxHeight: isMobile ? 60 : 90,
                     ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          mainAxisSize: MainAxisSize.min,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            // Parrot mascot image
-                            Image.asset(
-                              'assets/images/parrot_transparent.png',
-                              height: isMobile ? 32.0 : 48.0,
-                              errorBuilder: (context, error, stackTrace) {
-                                return SizedBox(
-                                  width: isMobile ? 32 : 48,
-                                  height: isMobile ? 32 : 48,
-                                );
-                              },
-                            ),
-                            SizedBox(width: isMobile ? 8.0 : 20.0),
-                            // ChirPolly colorful text
-                            Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                _buildBrandLetter('C', Colors.blue.shade600, isMobile),
-                                _buildBrandLetter('h', Colors.red.shade500, isMobile),
-                                _buildBrandLetter('i', Colors.orange.shade600, isMobile),
-                                _buildBrandLetter('r', Colors.amber.shade700, isMobile),
-                                _buildBrandLetter('P', Colors.green.shade600, isMobile),
-                                _buildBrandLetter('o', Colors.teal.shade600, isMobile),
-                                _buildBrandLetter('l', Colors.purple.shade600, isMobile),
-                                _buildBrandLetter('l', Colors.pink.shade600, isMobile),
-                                _buildBrandLetter('y', Colors.deepPurple.shade600, isMobile),
-                              ],
-                            ),
-                          ],
-                        ),
-                        if (!isMobile) ...[
-                          ShaderMask(
-                            shaderCallback: (bounds) => const LinearGradient(
-                              colors: [Color(0xFF6A4CBC), Color(0xFF2E3192), Color(0xFFFF6B6B)],
-                            ).createShader(bounds),
-                            child: const Text(
-                              'Every voice. Every language. One world !',
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                                letterSpacing: 0.5,
+                    child: MouseRegion(
+                      cursor: SystemMouseCursors.click,
+                      child: GestureDetector(
+                        behavior: HitTestBehavior.opaque,
+                        onTap: () {
+                          if (ModalRoute.of(context)?.settings.name != '/home') {
+                            Navigator.pushNamedAndRemoveUntil(context, '/home', (route) => false);
+                          } else {
+                            _scrollController.animateTo(0, duration: const Duration(milliseconds: 500), curve: Curves.easeInOut);
+                          }
+                        },
+                        child: Container(
+                          color: Colors.transparent,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  // Parrot mascot image
+                                  Image.asset(
+                                    'assets/images/parrot_transparent.png',
+                                    height: isMobile ? 32.0 : 48.0,
+                                    errorBuilder: (context, error, stackTrace) {
+                                      return SizedBox(
+                                        width: isMobile ? 32 : 48,
+                                        height: isMobile ? 32 : 48,
+                                      );
+                                    },
+                                  ),
+                                  SizedBox(width: isMobile ? 8.0 : 20.0),
+                                  // ChirPolly colorful text
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      _buildBrandLetter('C', Colors.blue.shade600, isMobile),
+                                      _buildBrandLetter('h', Colors.red.shade500, isMobile),
+                                      _buildBrandLetter('i', Colors.orange.shade600, isMobile),
+                                      _buildBrandLetter('r', Colors.amber.shade700, isMobile),
+                                      _buildBrandLetter('P', Colors.green.shade600, isMobile),
+                                      _buildBrandLetter('o', Colors.teal.shade600, isMobile),
+                                      _buildBrandLetter('l', Colors.purple.shade600, isMobile),
+                                      _buildBrandLetter('l', Colors.pink.shade600, isMobile),
+                                      _buildBrandLetter('y', Colors.deepPurple.shade600, isMobile),
+                                    ],
+                                  ),
+                                ],
                               ),
-                            ),
+                              if (!isMobile) ...[
+                                ShaderMask(
+                                  shaderCallback: (bounds) => const LinearGradient(
+                                    colors: [Color(0xFF6A4CBC), Color(0xFF2E3192), Color(0xFFFF6B6B)],
+                                  ).createShader(bounds),
+                                  child: const Text(
+                                    'Every voice. Every language. One world !',
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.white,
+                                      letterSpacing: 0.5,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ],
                           ),
-                        ],
-                      ],
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -197,7 +214,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                     : [
                         // Desktop: Show navigation buttons
                         TextButton(
-                          onPressed: () => _scrollToSection(_languagesKey),
+                          onPressed: () => Navigator.pushNamed(context, '/languages'),
                           child: Text(
                             'Languages',
                             style: TextStyle(
@@ -232,7 +249,9 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                                 child: Container(
                                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                   decoration: BoxDecoration(
-                                    color: const Color(0xFF6A4CBC).withOpacity(0.1),
+                                    gradient: LinearGradient(
+                                      colors: [const Color(0xFF6A4CBC).withValues(alpha: 0.3), Colors.transparent],
+                                    ),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Row(
@@ -341,12 +360,12 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
               controller: _scrollController,
               child: Column(
                 children: [
-                  _buildHeroSection(),
+                  _buildHeroSection(languages),
                   _buildFeaturesSection(),
+                  _buildLanguagesSection(languages),
                   _buildLiarGameSection(),
                   _buildAboutSection(),
                   _buildCTASection(context),
-                  _buildLanguagesSection(languages),
                   _buildFooter(),
                 ],
               ),
@@ -376,20 +395,23 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
     );
   }
 
-  Widget _buildHeroSection() {
+  Widget _buildHeroSection(List<QueryDocumentSnapshot> languages) {
     return Container(
       width: double.infinity,
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          stops: const [0.0, 0.4, 0.7, 1.0],
           colors: [
-            Color(0xFFD0E4FF), // Soft Sky Blue
-            Color(0xFFE0D7FF), // Light Lavender
+            const Color(0xFFEDF5FF), // Extremely light blue
+            const Color(0xFFF3EAFF), // Extremely light lavender
+            const Color(0xFFFDF4E3), // Extremely light gold transition
+            const Color(0xFFFFFFFF), // Pure white fade
           ],
         ),
       ),
-      child: Stack(
+      child: Column(
         children: [
           // Content
           Padding(
@@ -465,14 +487,14 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                                   borderRadius: BorderRadius.circular(50),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: const Color(0xFF6A4CBC).withOpacity(0.3),
+                                      color: const Color(0xFF6A4CBC).withValues(alpha: 0.3),
                                       offset: const Offset(0, 4),
                                       blurRadius: 10,
                                     ),
                                   ],
                                 ),
                                 child: ElevatedButton(
-                                  onPressed: () => _scrollToSection(_languagesKey),
+                                  onPressed: () => Navigator.pushNamed(context, '/languages'),
                                   style: ElevatedButton.styleFrom(
                                     backgroundColor: const Color(0xFF6A4CBC), // Solid Purple
                                     foregroundColor: Colors.white,
@@ -538,6 +560,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
               },
             ),
           ),
+          const SizedBox(height: 40),
         ],
       ),
     );
@@ -545,23 +568,19 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
 
   Widget _buildLanguagesSection(List<QueryDocumentSnapshot> languages) {
     if (languages.isEmpty) {
-      return Container(
-        padding: const EdgeInsets.all(40),
-        child: const Center(child: Text('Coming Soon...')),
-      );
+      return const SizedBox.shrink();
     }
 
     return Container(
-      width: double.infinity,
       key: _languagesKey,
+      width: double.infinity,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            const Color(0xFFFFF3E0), // Light orange
-            const Color(0xFFE1F5FE), // Light blue
-            const Color(0xFFF3E5F5), // Light purple
+            const Color(0xFFF3EAFF).withValues(alpha: 0.1), // Very light lavender
+            const Color(0xFFEDF5FF).withValues(alpha: 0.1), // Very light blue
           ],
         ),
       ),
@@ -569,19 +588,33 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
       child: Column(
         children: [
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
-                colors: [Color(0xFFFF6B6B), Color(0xFF4ECDC4)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color(0xFFFF6B6B), // Sunset Coral
+                  Color(0xFF6A4CBC), // ChirPolly Purple
+                  Color(0xFF4ECDC4), // Coastal Teal
+                ],
               ),
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(40),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0xFF6A4CBC).withValues(alpha: 0.25),
+                  blurRadius: 20,
+                  offset: const Offset(0, 10),
+                ),
+              ],
             ),
             child: const Text(
               'Choose Your Language',
               style: TextStyle(
-                fontSize: 32,
+                fontSize: 36,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
+                letterSpacing: 0.5,
               ),
             ),
           ),
@@ -616,23 +649,63 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                     mainAxisSpacing: 24,
                     childAspectRatio: childAspectRatio,
                   ),
-                  itemCount: languages.length,
+                  itemCount: languages.length > 3 ? 3 : languages.length,
                   itemBuilder: (context, index) {
                     final languageDoc = languages[index];
                     final languageData = languageDoc.data() as Map<String, dynamic>;
                     
-                    return _LanguageCard(
+                    return LanguageCard(
                       languageId: languageDoc.id,
                       flag: languageData['flag'] ?? '🌍',
                       name: languageData['name'] ?? 'Unknown',
                       nativeScript: languageData['nativeScript'] ?? languageData['nativeName'] ?? '',
-                      color: _getLanguageColor(languageData['name'] ?? 'Unknown'),
+                      color: LanguageCard.getLanguageColor(languageData['name'] ?? 'Unknown'),
                     );
                   },
                 );
               },
             ),
           ),
+          const SizedBox(height: 48),
+          // View All Languages Button
+          if (languages.length > 3)
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFF6A4CBC).withOpacity(0.2),
+                    offset: const Offset(0, 4),
+                    blurRadius: 10,
+                  ),
+                ],
+              ),
+              child: ElevatedButton(
+                onPressed: () => Navigator.pushNamed(context, '/languages'),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  foregroundColor: const Color(0xFF6A4CBC),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 40,
+                    vertical: 20,
+                  ),
+                  shape: StadiumBorder(
+                    side: BorderSide(
+                      color: const Color(0xFF6A4CBC).withOpacity(0.5),
+                      width: 2,
+                    ),
+                  ),
+                  elevation: 0,
+                ),
+                child: const Text(
+                  'View All Languages',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
         ],
       ),
     );
@@ -688,8 +761,8 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                       ),
                       _buildFeatureCard(
                         icon: '🌍',
-                        title: '7 Languages',
-                        description: 'English, French, Spanish, Korean, Japanese, German & Sanskrit',
+                        title: '11 Languages',
+                        description: 'English, French, Spanish, Korean, Japanese, German, Sanskrit, Hindi, Portuguese, Chinese & Italian',
                         isDesktop: isDesktop,
                       ),
                       _buildFeatureCard(
@@ -700,14 +773,14 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                       ),
                       _buildFeatureCard(
                         icon: '💬',
-                        title: '21,000 Vocabulary Words',
+                        title: '33,000 Vocabulary Words',
                         description: '3,000 words per language for comprehensive mastery',
                         isDesktop: isDesktop,
                       ),
                       _buildFeatureCard(
-                        icon: '🎯',
-                        title: 'Cultural Insights',
-                        description: 'Real conversation practice with cultural context',
+                        icon: '💎',
+                        title: 'Japanese Kanji Mastery',
+                        description: 'Premium Edition: Complete Jōyō Kanji curriculum with mnemonics, stroke counts, and integrated mastery tracking.',
                         isDesktop: isDesktop,
                       ),
                       _buildFeatureCard(
@@ -914,7 +987,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      '7 major languages • 21,000+ vocabulary words • A1 to B1 levels • Web & Mobile',
+                      '11 major languages • 33,000+ vocabulary words • A1 to B1 levels • Web & Mobile',
                       style: TextStyle(
                         fontSize: 14,
                         color: Colors.grey.shade700,
@@ -972,7 +1045,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                     borderRadius: BorderRadius.circular(50),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFF6A4CBC).withOpacity(0.3),
+                        color: const Color(0xFF6A4CBC).withValues(alpha: 0.3),
                         offset: const Offset(0, 4),
                         blurRadius: 10,
                       ),
@@ -1033,24 +1106,60 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
   Widget _buildFooter() {
     return Container(
       width: double.infinity,
-      color: Colors.grey.shade900,
-      padding: const EdgeInsets.symmetric(vertical: 48, horizontal: 24),
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Color(0xFF0D0E2B), // Deepest Midnight
+            Color(0xFF15163D), // Deep Midnight Blue
+            Color(0xFF2E3192), // Logo Blue
+            Color(0xFF4A348F), // Indigo transition
+            Color(0xFF6648B1), // Logo Purple
+          ],
+          stops: [0.0, 0.2, 0.5, 0.8, 1.0],
+        ),
+      ),
+      padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 24),
       child: Column(
         children: [
           const Text(
             'ChirPolly',
             style: TextStyle(
               color: Colors.white,
-              fontSize: 24,
+              fontSize: 26,
               fontWeight: FontWeight.bold,
+              letterSpacing: 1.2,
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 8),
           Text(
-            '© ${DateTime.now().year} ChirPolly. All rights reserved.',
+            'By Hrishikesh Innovations LLP',
             style: TextStyle(
-              color: Colors.grey.shade400,
-              fontSize: 14,
+              color: Colors.white.withOpacity(0.6),
+              fontSize: 13,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          const SizedBox(height: 24),
+          Wrap(
+            spacing: 24,
+            runSpacing: 12,
+            alignment: WrapAlignment.center,
+            children: [
+              _buildFooterLink('Terms of Service', '/terms'),
+              _buildFooterLink('Privacy Policy', '/privacy'),
+              _buildFooterLink('Refund Policy', '/refund'),
+            ],
+          ),
+          const SizedBox(height: 32),
+          Divider(color: Colors.white.withOpacity(0.15), height: 1),
+          const SizedBox(height: 20),
+          Text(
+            '© 2026 ChirPolly. All rights reserved.',
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.5),
+              fontSize: 11,
             ),
           ),
         ],
@@ -1058,18 +1167,18 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
     );
   }
 
-  Color _getLanguageColor(String language) {
-    switch (language.toLowerCase()) {
-      case 'japanese': return Colors.red;
-      case 'french': return Colors.blue;
-      case 'spanish': return Colors.orange;
-      case 'german': return Colors.amber;
-      case 'chinese': return Colors.red;
-      case 'korean': return Colors.purple;
-      case 'italian': return Colors.green;
-      case 'hindi': return Colors.orange;
-      default: return Colors.blue;
-    }
+  Widget _buildFooterLink(String title, String route) {
+    return TextButton(
+      onPressed: () => Navigator.pushNamed(context, route),
+      style: TextButton.styleFrom(
+        foregroundColor: Colors.grey.shade300,
+        textStyle: const TextStyle(
+          fontSize: 15,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
+      child: Text(title),
+    );
   }
 
   Widget _buildBrandLetter(String char, Color color, [bool isMobile = false]) {
@@ -1119,7 +1228,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
               title: const Text('Languages'),
               onTap: () {
                 Navigator.pop(context);
-                _scrollToSection(_languagesKey);
+                Navigator.pushNamed(context, '/languages');
               },
             ),
             ListTile(
@@ -1218,135 +1327,6 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
             child: const Text('Delete Permanently'),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _LanguageCard extends StatefulWidget {
-  final String languageId;
-  final String flag;
-  final String name;
-  final String nativeScript;
-  final Color color;
-
-  const _LanguageCard({
-    required this.languageId,
-    required this.flag,
-    required this.name,
-    required this.nativeScript,
-    required this.color,
-  });
-
-  @override
-  State<_LanguageCard> createState() => _LanguageCardState();
-}
-
-class _LanguageCardState extends State<_LanguageCard> {
-  bool _isHovered = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return MouseRegion(
-      onEnter: (_) => setState(() => _isHovered = true),
-      onExit: (_) => setState(() => _isHovered = false),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        transform: Matrix4.identity()
-          ..translate(0, _isHovered ? -10.0 : 0.0),
-          child: Card(
-            elevation: _isHovered ? 12 : 4,
-            shadowColor: widget.color.withOpacity(0.4),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-          ),
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  widget.color.withOpacity(0.1),
-                  widget.color.withOpacity(0.3),
-                ],
-              ),
-              border: Border.all(
-                color: widget.color.withOpacity(_isHovered ? 0.8 : 0.5),
-                width: 2,
-              ),
-            ),
-            child: Consumer(
-              builder: (context, ref, child) {
-                return InkWell(
-                  onTap: () {
-                    // User is allowed to navigate to levels page regardless of auth status
-                    // Tiered gating happens inside LevelsPage
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => LevelsPage(
-                          languageId: widget.languageId,
-                          languageName: widget.name,
-                          flag: widget.flag,
-                        ),
-                      ),
-                    );
-                  },
-                  borderRadius: BorderRadius.circular(20),
-                  child: Padding(
-                    padding: const EdgeInsets.all(24),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            shape: BoxShape.circle,
-                            boxShadow: [
-                              BoxShadow(
-                                color: widget.color.withOpacity(0.3),
-                                blurRadius: 12,
-                                spreadRadius: 2,
-                              ),
-                            ],
-                          ),
-                          child: Text(
-                            widget.flag,
-                            style: const TextStyle(fontSize: 48),
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-                        Text(
-                          widget.name,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey.shade900,
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        if (widget.nativeScript.isNotEmpty) ...[
-                          Text(
-                            widget.nativeScript,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.grey.shade700,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
-                      ],
-                    ),
-                  ),
-                );
-              },
-            ),
-          ),
-        ),
       ),
     );
   }

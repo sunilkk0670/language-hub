@@ -1,0 +1,802 @@
+[
+    {
+        "character": "一",
+        "kun_yomi": "ひと.つ",
+        "on_yomi": "イチ, イツ",
+        "meaning": "One",
+        "stroke_count": 1,
+        "mnemonic": "Just one horizontal line. Easy!"
+    },
+    {
+        "character": "二",
+        "kun_yomi": "ふた.つ",
+        "on_yomi": "ニ, ジ",
+        "meaning": "Two",
+        "stroke_count": 2,
+        "mnemonic": "Two horizontal lines. One for you, one for me."
+    },
+    {
+        "character": "三",
+        "kun_yomi": "みっ.つ",
+        "on_yomi": "サン",
+        "meaning": "Three",
+        "stroke_count": 3,
+        "mnemonic": "Three horizontal lines. A middle child between one and ten."
+    },
+    {
+        "character": "四",
+        "kun_yomi": "よっ.つ, よん",
+        "on_yomi": "シ",
+        "meaning": "Four",
+        "stroke_count": 5,
+        "mnemonic": "Four walls of a room with people inside."
+    },
+    {
+        "character": "五",
+        "kun_yomi": "いつ.つ",
+        "on_yomi": "ゴ",
+        "meaning": "Five",
+        "stroke_count": 4,
+        "mnemonic": "Looks like the number 5 if you squint."
+    },
+    {
+        "character": "六",
+        "kun_yomi": "むっ.つ",
+        "on_yomi": "ロク",
+        "meaning": "Six",
+        "stroke_count": 4,
+        "mnemonic": "A person with a hat and two legs."
+    },
+    {
+        "character": "七",
+        "kun_yomi": "なな.つ",
+        "on_yomi": "シチ",
+        "meaning": "Seven",
+        "stroke_count": 2,
+        "mnemonic": "An upside-down 7."
+    },
+    {
+        "character": "八",
+        "kun_yomi": "やっ.つ",
+        "on_yomi": "ハチ",
+        "meaning": "Eight",
+        "stroke_count": 2,
+        "mnemonic": "Mountains opening up."
+    },
+    {
+        "character": "九",
+        "kun_yomi": "ここの.つ",
+        "on_yomi": "キュウ, ク",
+        "meaning": "Nine",
+        "stroke_count": 2,
+        "mnemonic": "A person leaning over."
+    },
+    {
+        "character": "十",
+        "kun_yomi": "とお",
+        "on_yomi": "ジュウ",
+        "meaning": "Ten",
+        "stroke_count": 2,
+        "mnemonic": "A cross, perfect for counting to ten."
+    },
+    {
+        "character": "百",
+        "kun_yomi": "もも",
+        "on_yomi": "ヒャク",
+        "meaning": "Hundred",
+        "stroke_count": 6,
+        "mnemonic": "A white (白) line indicates 'one more' to make a hundred."
+    },
+    {
+        "character": "千",
+        "kun_yomi": "ち",
+        "on_yomi": "セン",
+        "meaning": "Thousand",
+        "stroke_count": 3,
+        "mnemonic": "A needle through a hundred."
+    },
+    {
+        "character": "万",
+        "kun_yomi": "よろず",
+        "on_yomi": "マン, バン",
+        "meaning": "Ten Thousand",
+        "stroke_count": 3,
+        "mnemonic": "A flag for a great multitude."
+    },
+    {
+        "character": "円",
+        "kun_yomi": "まる.い",
+        "on_yomi": "エン",
+        "meaning": "Yen / Round",
+        "stroke_count": 4,
+        "mnemonic": "A coin in a box."
+    },
+    {
+        "character": "日",
+        "kun_yomi": "ひ, -び",
+        "on_yomi": "ニチ, ジツ",
+        "meaning": "Day / Sun",
+        "stroke_count": 4,
+        "mnemonic": "A window looking out at the sun."
+    },
+    {
+        "character": "月",
+        "kun_yomi": "つき",
+        "on_yomi": "ゲツ, ガツ",
+        "meaning": "Month / Moon",
+        "stroke_count": 4,
+        "mnemonic": "A crescent moon with clouds."
+    },
+    {
+        "character": "火",
+        "kun_yomi": "ひ, -び",
+        "on_yomi": "カ",
+        "meaning": "Fire",
+        "stroke_count": 4,
+        "mnemonic": "Sparks flying from a campfire."
+    },
+    {
+        "character": "水",
+        "kun_yomi": "みず",
+        "on_yomi": "スイ",
+        "meaning": "Water",
+        "stroke_count": 4,
+        "mnemonic": "Splashing water."
+    },
+    {
+        "character": "木",
+        "kun_yomi": "き, こ-",
+        "on_yomi": "ボク, モク",
+        "meaning": "Tree",
+        "stroke_count": 4,
+        "mnemonic": "A trunk and branches."
+    },
+    {
+        "character": "金",
+        "kun_yomi": "かね, かな-",
+        "on_yomi": "キン, コン",
+        "meaning": "Gold / Money",
+        "stroke_count": 8,
+        "mnemonic": "A house with gold nuggets hidden in the roof."
+    },
+    {
+        "character": "土",
+        "kun_yomi": "つち",
+        "on_yomi": "ド, ト",
+        "meaning": "Earth / Soil",
+        "stroke_count": 3,
+        "mnemonic": "A plant sprout coming out of the ground."
+    },
+    {
+        "character": "山",
+        "kun_yomi": "やま",
+        "on_yomi": "サン",
+        "meaning": "Mountain",
+        "stroke_count": 3,
+        "mnemonic": "Three mountain peaks."
+    },
+    {
+        "character": "川",
+        "kun_yomi": "かわ",
+        "on_yomi": "セン",
+        "meaning": "River",
+        "stroke_count": 3,
+        "mnemonic": "Three streams of flowing water."
+    },
+    {
+        "character": "田",
+        "kun_yomi": "た",
+        "on_yomi": "デン",
+        "meaning": "Rice Field",
+        "stroke_count": 5,
+        "mnemonic": "A field divided into sections."
+    },
+    {
+        "character": "人",
+        "kun_yomi": "ひと",
+        "on_yomi": "ジン, ニン",
+        "meaning": "Person",
+        "stroke_count": 2,
+        "mnemonic": "Two legs walking."
+    },
+    {
+        "character": "子",
+        "kun_yomi": "こ",
+        "on_yomi": "シ, ス",
+        "meaning": "Child",
+        "stroke_count": 3,
+        "mnemonic": "A baby in swaddling clothes."
+    },
+    {
+        "character": "女",
+        "kun_yomi": "おんな",
+        "on_yomi": "ジョ, ニョ",
+        "meaning": "Woman",
+        "stroke_count": 3,
+        "mnemonic": "A woman sitting cross-legged."
+    },
+    {
+        "character": "男",
+        "kun_yomi": "おとこ",
+        "on_yomi": "ダン, ナン",
+        "meaning": "Man",
+        "stroke_count": 7,
+        "mnemonic": "Rice field (田) plus power (力) - a man working in the fields."
+    },
+    {
+        "character": "見",
+        "kun_yomi": "み.る",
+        "on_yomi": "ケン",
+        "meaning": "To See",
+        "stroke_count": 7,
+        "mnemonic": "An eye (目) on legs (儿)."
+    },
+    {
+        "character": "行",
+        "kun_yomi": "い.く, ゆ.く",
+        "on_yomi": "コウ, ギョウ",
+        "meaning": "To Go",
+        "stroke_count": 6,
+        "mnemonic": "Tracks of a person walking."
+    },
+    {
+        "character": "来",
+        "kun_yomi": "く.る, きた.る",
+        "on_yomi": "ライ",
+        "meaning": "To Come",
+        "stroke_count": 7,
+        "mnemonic": "A tree with fruit coming to maturity."
+    },
+    {
+        "character": "出",
+        "kun_yomi": "で.る, だ.す",
+        "on_yomi": "シュツ",
+        "meaning": "To Exit",
+        "stroke_count": 5,
+        "mnemonic": "One mountain stacking on top of another."
+    },
+    {
+        "character": "入",
+        "kun_yomi": "はい.る, い.れる",
+        "on_yomi": "ニュウ",
+        "meaning": "To Enter",
+        "stroke_count": 2,
+        "mnemonic": "Like 'person' but lean into the entrance."
+    },
+    {
+        "character": "口",
+        "kun_yomi": "くち",
+        "on_yomi": "コウ, ク",
+        "meaning": "Mouth",
+        "stroke_count": 3,
+        "mnemonic": "A square representing an open mouth."
+    },
+    {
+        "character": "目",
+        "kun_yomi": "め",
+        "on_yomi": "モク",
+        "meaning": "Eye",
+        "stroke_count": 5,
+        "mnemonic": "A vertical eye with two eyelids."
+    },
+    {
+        "character": "耳",
+        "kun_yomi": "みみ",
+        "on_yomi": "ジ",
+        "meaning": "Ear",
+        "stroke_count": 6,
+        "mnemonic": "Shaped like an ear."
+    },
+    {
+        "character": "手",
+        "kun_yomi": "て",
+        "on_yomi": "シュ",
+        "meaning": "Hand",
+        "stroke_count": 4,
+        "mnemonic": "Five fingers (bent)."
+    },
+    {
+        "character": "足",
+        "kun_yomi": "あし",
+        "on_yomi": "ソク",
+        "meaning": "Foot / Leg",
+        "stroke_count": 7,
+        "mnemonic": "A foot kicking a ball."
+    },
+    {
+        "character": "力",
+        "kun_yomi": "ちから",
+        "on_yomi": "リョク, リキ",
+        "meaning": "Power",
+        "stroke_count": 2,
+        "mnemonic": "A strong muscle or a plow."
+    },
+    {
+        "character": "大",
+        "kun_yomi": "おお.きい",
+        "on_yomi": "ダイ, タイ",
+        "meaning": "Big",
+        "stroke_count": 3,
+        "mnemonic": "A person stretching their arms out wide."
+    },
+    {
+        "character": "小",
+        "kun_yomi": "ちい.さい",
+        "on_yomi": "ショウ",
+        "meaning": "Small",
+        "stroke_count": 3,
+        "mnemonic": "Droplets of water scattered."
+    },
+    {
+        "character": "中",
+        "kun_yomi": "なか",
+        "on_yomi": "チュウ",
+        "meaning": "Middle / Inside",
+        "stroke_count": 4,
+        "mnemonic": "An arrow through the middle of a target."
+    },
+    {
+        "character": "上",
+        "kun_yomi": "うえ, あ.げる",
+        "on_yomi": "ジョウ",
+        "meaning": "Up / Above",
+        "stroke_count": 3,
+        "mnemonic": "A line above another line."
+    },
+    {
+        "character": "下",
+        "kun_yomi": "した, さ.げる",
+        "on_yomi": "カ, ゲ",
+        "meaning": "Down / Below",
+        "stroke_count": 3,
+        "mnemonic": "A line hanging below another line."
+    },
+    {
+        "character": "左",
+        "kun_yomi": "ひだり",
+        "on_yomi": "サ",
+        "meaning": "Left",
+        "stroke_count": 5,
+        "mnemonic": "Holding a tool (エ) with the left hand."
+    },
+    {
+        "character": "右",
+        "kun_yomi": "みぎ",
+        "on_yomi": "ウ, ユウ",
+        "meaning": "Right",
+        "stroke_count": 5,
+        "mnemonic": "Bringing food to the mouth (口) with the right hand."
+    },
+    {
+        "character": "前",
+        "kun_yomi": "まえ",
+        "on_yomi": "ゼン",
+        "meaning": "Before / Front",
+        "stroke_count": 9,
+        "mnemonic": "A person standing in front of a meat locker."
+    },
+    {
+        "character": "後",
+        "kun_yomi": "あと, うし.ろ",
+        "on_yomi": "ゴ, コウ",
+        "meaning": "After / Behind",
+        "stroke_count": 9,
+        "mnemonic": "Someone walking slowly behind."
+    },
+    {
+        "character": "午",
+        "kun_yomi": "うま",
+        "on_yomi": "ゴ",
+        "meaning": "Noon",
+        "stroke_count": 4,
+        "mnemonic": "The sign of the horse, used for noon."
+    },
+    {
+        "character": "今",
+        "kun_yomi": "いま",
+        "on_yomi": "コン, キン",
+        "meaning": "Now",
+        "stroke_count": 4,
+        "mnemonic": "A clock face."
+    },
+    {
+        "character": "先",
+        "kun_yomi": "さき",
+        "on_yomi": "セン",
+        "meaning": "Previous / Ahead",
+        "stroke_count": 6,
+        "mnemonic": "Feet walking ahead."
+    },
+    {
+        "character": "生",
+        "kun_yomi": "い.きる, う.まれる",
+        "on_yomi": "セイ, ショウ",
+        "meaning": "Life / Birth",
+        "stroke_count": 5,
+        "mnemonic": "A sprout coming out of the soil."
+    },
+    {
+        "character": "学",
+        "kun_yomi": "まな.ぶ",
+        "on_yomi": "ガク",
+        "meaning": "Study / Learning",
+        "stroke_count": 8,
+        "mnemonic": "A child (子) under a roof with sparks of knowledge."
+    },
+    {
+        "character": "校",
+        "kun_yomi": "かせ",
+        "on_yomi": "コウ",
+        "meaning": "School",
+        "stroke_count": 10,
+        "mnemonic": "A wooden building (木) for interactions (交)."
+    },
+    {
+        "character": "年",
+        "kun_yomi": "とし",
+        "on_yomi": "ネン",
+        "meaning": "Year",
+        "stroke_count": 6,
+        "mnemonic": "A person carrying a harvest of grain."
+    },
+    {
+        "character": "時",
+        "kun_yomi": "とき",
+        "on_yomi": "ジ",
+        "meaning": "Time",
+        "stroke_count": 10,
+        "mnemonic": "The sun (日) moving over a temple (寺)."
+    },
+    {
+        "character": "分",
+        "kun_yomi": "わ.かる, わ.ける",
+        "on_yomi": "ブン, フン",
+        "meaning": "Minute / Divide",
+        "stroke_count": 4,
+        "mnemonic": "A knife (刀) dividing something into eight (八) pieces."
+    },
+    {
+        "character": "週",
+        "kun_yomi": "あまだ",
+        "on_yomi": "シュウ",
+        "meaning": "Week",
+        "stroke_count": 11,
+        "mnemonic": "Going (辶) around a circle (周) of seven days."
+    },
+    {
+        "character": "春",
+        "kun_yomi": "はる",
+        "on_yomi": "シュン",
+        "meaning": "Spring",
+        "stroke_count": 9,
+        "mnemonic": "The sun (日) shining on a sprout."
+    },
+    {
+        "character": "夏",
+        "kun_yomi": "なつ",
+        "on_yomi": "カ, ゲ",
+        "meaning": "Summer",
+        "stroke_count": 10,
+        "mnemonic": "Walking in the heat with a hat."
+    },
+    {
+        "character": "秋",
+        "kun_yomi": "あき",
+        "on_yomi": "シュウ",
+        "meaning": "Autumn",
+        "stroke_count": 9,
+        "mnemonic": "Grain (禾) being burned (火) after harvest."
+    },
+    {
+        "character": "冬",
+        "kun_yomi": "ふゆ",
+        "on_yomi": "トウ",
+        "meaning": "Winter",
+        "stroke_count": 5,
+        "mnemonic": "Walking on ice (冫)."
+    },
+    {
+        "character": "国",
+        "kun_yomi": "くに",
+        "on_yomi": "コク",
+        "meaning": "Country",
+        "stroke_count": 8,
+        "mnemonic": "A king (王) inside borders (囗)."
+    },
+    {
+        "character": "長",
+        "kun_yomi": "なが.い",
+        "on_yomi": "チョウ",
+        "meaning": "Long / Leader",
+        "stroke_count": 8,
+        "mnemonic": "A person with long hair."
+    },
+    {
+        "character": "外",
+        "kun_yomi": "そと, はず.れる",
+        "on_yomi": "ガイ",
+        "meaning": "Outside",
+        "stroke_count": 5,
+        "mnemonic": "Moon (夕) and a magic wand (ト) - out at night."
+    },
+    {
+        "character": "高",
+        "kun_yomi": "たか.い",
+        "on_yomi": "コウ",
+        "meaning": "High / Expensive",
+        "stroke_count": 10,
+        "mnemonic": "A tall tower."
+    },
+    {
+        "character": "安",
+        "kun_yomi": "やす.い",
+        "on_yomi": "アン",
+        "meaning": "Cheap / Peace",
+        "stroke_count": 6,
+        "mnemonic": "A woman (女) under a roof (宀) is safe and cheap (to house?)."
+    },
+    {
+        "character": "多",
+        "kun_yomi": "おお.い",
+        "on_yomi": "タ",
+        "meaning": "Many",
+        "stroke_count": 6,
+        "mnemonic": "Two moons (夕) mean many nights."
+    },
+    {
+        "character": "少",
+        "kun_yomi": "すく.ない, すこ.し",
+        "on_yomi": "ショウ",
+        "meaning": "Few / Little",
+        "stroke_count": 4,
+        "mnemonic": "Small (小) with an extra diagonal line."
+    },
+    {
+        "character": "新",
+        "kun_yomi": "あたら.しい",
+        "on_yomi": "シン",
+        "meaning": "New",
+        "stroke_count": 13,
+        "mnemonic": "Standing on a tree and cutting it with an axe."
+    },
+    {
+        "character": "古",
+        "kun_yomi": "ふる.い",
+        "on_yomi": "コ",
+        "meaning": "Old",
+        "stroke_count": 5,
+        "mnemonic": "Something passed down through ten (十) mouths (口)."
+    },
+    {
+        "character": "白",
+        "kun_yomi": "しろ.い",
+        "on_yomi": "ハク",
+        "meaning": "White",
+        "stroke_count": 5,
+        "mnemonic": "A drop of light on the sun."
+    },
+    {
+        "character": "黒",
+        "kun_yomi": "くろ.い",
+        "on_yomi": "コク",
+        "meaning": "Black",
+        "stroke_count": 11,
+        "mnemonic": "Soot from a fire."
+    },
+    {
+        "character": "赤",
+        "kun_yomi": "あか.い",
+        "on_yomi": "セキ",
+        "meaning": "Red",
+        "stroke_count": 7,
+        "mnemonic": "The color of fire."
+    },
+    {
+        "character": "青",
+        "kun_yomi": "あお.い",
+        "on_yomi": "セイ, ショウ",
+        "meaning": "Blue",
+        "stroke_count": 8,
+        "mnemonic": "New sprouts under the sun."
+    },
+    {
+        "character": "見",
+        "kun_yomi": "み.る",
+        "on_yomi": "ケン",
+        "meaning": "To See",
+        "stroke_count": 7,
+        "mnemonic": "An eye on legs."
+    },
+    {
+        "character": "聞",
+        "kun_yomi": "き.く",
+        "on_yomi": "ブン, モン",
+        "meaning": "To Hear",
+        "stroke_count": 14,
+        "mnemonic": "An ear (耳) at the gate (門)."
+    },
+    {
+        "character": "書",
+        "kun_yomi": "か.く",
+        "on_yomi": "ショ",
+        "meaning": "To Write",
+        "stroke_count": 10,
+        "mnemonic": "A brush over a box of ink."
+    },
+    {
+        "character": "読",
+        "kun_yomi": "よ.む",
+        "on_yomi": "ドク",
+        "meaning": "To Read",
+        "stroke_count": 14,
+        "mnemonic": "Speaking (言) about words that are for sale (売)."
+    },
+    {
+        "character": "話",
+        "kun_yomi": "はな.す",
+        "on_yomi": "ワ",
+        "meaning": "To Speak",
+        "stroke_count": 13,
+        "mnemonic": "Words (言) coming out of a tongue (舌)."
+    },
+    {
+        "character": "語",
+        "kun_yomi": "かた.る",
+        "on_yomi": "ゴ",
+        "meaning": "Language",
+        "stroke_count": 14,
+        "mnemonic": "Words (言) used by five (五) mouths (口)."
+    },
+    {
+        "character": "道",
+        "kun_yomi": "みち",
+        "on_yomi": "ドウ",
+        "meaning": "Road / Path",
+        "stroke_count": 12,
+        "mnemonic": "A head (首) on the move (辶)."
+    },
+    {
+        "character": "北",
+        "kun_yomi": "きた",
+        "on_yomi": "ホク",
+        "meaning": "North",
+        "stroke_count": 5,
+        "mnemonic": "Two people sitting back to back in the cold."
+    },
+    {
+        "character": "南",
+        "kun_yomi": "みなみ",
+        "on_yomi": "ナン",
+        "meaning": "South",
+        "stroke_count": 9,
+        "mnemonic": "A sunny place with vegetation."
+    },
+    {
+        "character": "東",
+        "kun_yomi": "ひがし",
+        "on_yomi": "トウ",
+        "meaning": "East",
+        "stroke_count": 8,
+        "mnemonic": "The sun rising behind a tree."
+    },
+    {
+        "character": "西",
+        "kun_yomi": "にし",
+        "on_yomi": "セイ, サイ",
+        "meaning": "West",
+        "stroke_count": 6,
+        "mnemonic": "A bird sitting in its nest as the sun sets."
+    },
+    {
+        "character": "右",
+        "kun_yomi": "みぎ",
+        "on_yomi": "ウ",
+        "meaning": "Right",
+        "stroke_count": 5,
+        "mnemonic": "Mouth plus hand."
+    },
+    {
+        "character": "左",
+        "kun_yomi": "ひだり",
+        "on_yomi": "サ",
+        "meaning": "Left",
+        "stroke_count": 5,
+        "mnemonic": "Work plus hand."
+    },
+    {
+        "character": "名",
+        "kun_yomi": "な",
+        "on_yomi": "メイ, ミョウ",
+        "meaning": "Name",
+        "stroke_count": 6,
+        "mnemonic": "Whispering your name in the evening (夕) with your mouth (口)."
+    },
+    {
+        "character": "友",
+        "kun_yomi": "とも",
+        "on_yomi": "ユウ",
+        "meaning": "Friend",
+        "stroke_count": 4,
+        "mnemonic": "Two hands reaching out to each other."
+    },
+    {
+        "character": "何",
+        "kun_yomi": "なに, なん",
+        "on_yomi": "カ",
+        "meaning": "What",
+        "stroke_count": 7,
+        "mnemonic": "A person carrying a burden, asking 'What is this?'"
+    },
+    {
+        "character": "食",
+        "kun_yomi": "た.べる",
+        "on_yomi": "ショク",
+        "meaning": "To Eat",
+        "stroke_count": 9,
+        "mnemonic": "A roof over a person's bowl of food."
+    },
+    {
+        "character": "飲",
+        "kun_yomi": "の.む",
+        "on_yomi": "イン",
+        "meaning": "To Drink",
+        "stroke_count": 12,
+        "mnemonic": "Eating (食) more liquid."
+    },
+    {
+        "character": "買",
+        "kun_yomi": "か.う",
+        "on_yomi": "バイ",
+        "meaning": "To Buy",
+        "stroke_count": 12,
+        "mnemonic": "A net over a shell (ancient money)."
+    },
+    {
+        "character": "売",
+        "kun_yomi": "う.る",
+        "on_yomi": "バイ",
+        "meaning": "To Sell",
+        "stroke_count": 7,
+        "mnemonic": "Walking away with shells (money)."
+    },
+    {
+        "character": "店",
+        "kun_yomi": "みせ",
+        "on_yomi": "テン",
+        "meaning": "Shop",
+        "stroke_count": 8,
+        "mnemonic": "A fortune telling booth (占) under a roof (广)."
+    },
+    {
+        "character": "空",
+        "kun_yomi": "そら",
+        "on_yomi": "クウ",
+        "meaning": "Sky / Empty",
+        "stroke_count": 8,
+        "mnemonic": "A hole (穴) in the roof."
+    },
+    {
+        "character": "天",
+        "kun_yomi": "あま",
+        "on_yomi": "テン",
+        "meaning": "Heaven / Sky",
+        "stroke_count": 4,
+        "mnemonic": "A line above 'big' (大) - something even bigger than a person."
+    },
+    {
+        "character": "気",
+        "kun_yomi": "いき",
+        "on_yomi": "キ, ケ",
+        "meaning": "Spirit / Air",
+        "stroke_count": 6,
+        "mnemonic": "Steam rising from rice."
+    },
+    {
+        "character": "雨",
+        "kun_yomi": "あめ",
+        "on_yomi": "ウ",
+        "meaning": "Rain",
+        "stroke_count": 8,
+        "mnemonic": "Droplets falling from the clouds."
+    }
+]

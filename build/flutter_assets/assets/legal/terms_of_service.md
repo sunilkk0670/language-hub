@@ -1,28 +1,22 @@
-# Terms of Service for ChirpPolly
+# Terms & Conditions
+**Entity:** Hrishikesh Innovations LLP
+**Brand:** ChirPolly
+**Last Updated:** February 2026
 
-*Last Updated: January 5, 2026*
+## 1. Introduction
+Welcome to ChirPolly, a premium language learning platform owned and operated by Hrishikesh Innovations LLP. By using our service, you agree to these terms.
 
-## 1. Acceptance of Terms
-By accessing or using ChirpPolly, you agree to be bound by these Terms of Service and all applicable laws and regulations.
+## 2. AI Tutor Disclaimer
+ChirPolly uses advanced AI to facilitate learning. While we strive for accuracy, AI-generated content may occasionally contain errors or "hallucinations". The Company is not liable for linguistic inaccuracies in AI outputs.
 
-## 2. Age Requirement
-> [!NOTE]
-> You must be at least 13 years old to use this service. If you are under the required age in your country, you must have parental consent to use ChirpPolly.
+## 3. Ethical Use
+Users agree not to use the service to generate unlawful, obscene, or impersonating content.
 
-## 3. User Accounts
-When you create an account, you must provide accurate and complete information. You are responsible for the security of your account and password.
-
-## 4. Prohibited Conduct
-Users agree not to:
-- Use the service for any illegal purpose.
-- Attempt to gain unauthorized access to our systems.
-- Disrupt the learning experience for other users.
+## 4. Grievance Redressal
+In accordance with the IT Rules 2025, any unlawful content reported will be addressed within 36 hours.
 
 ## 5. Intellectual Property
-All content provided on ChirpPolly, including language modules, graphics, and logos, is the property of ChirpPolly and protected by copyright laws.
+All curriculum content, including Sanskrit and Kannada modules, is the sole intellectual property of Hrishikesh Innovations LLP.
 
-## 6. Termination
-We reserve the right to terminate or suspend your account at our sole discretion, without notice, for conduct that we believe violates these Terms.
-
-## 7. Limitation of Liability
-ChirpPolly is provided "as is" without warranties of any kind. We are not liable for any damages arising from your use of the service.
+## 6. Liability
+Hrishikesh Innovations LLP shall not be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues.

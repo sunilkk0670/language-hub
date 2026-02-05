@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'firebase_options.dart';
+import 'features/curriculum/presentation/pages/all_languages_page.dart';
 import 'features/curriculum/presentation/pages/home_page.dart';
 import 'features/curriculum/presentation/pages/firestore_test_page.dart';
 import 'features/auth/presentation/pages/login_page.dart';
@@ -67,6 +68,11 @@ class ChirpPollyApp extends ConsumerWidget {
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.deepPurple,
         ),
+        splashFactory: NoSplash.splashFactory,
+        highlightColor: Colors.transparent,
+        splashColor: Colors.transparent,
+        hoverColor: Colors.transparent,
+        focusColor: Colors.transparent,
         textTheme: GoogleFonts.notoSansTextTheme().apply(
           fontFamilyFallback: [
             'Noto Sans JP',
@@ -84,7 +90,11 @@ class ChirpPollyApp extends ConsumerWidget {
           final args = ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
           return CompliancePage(initialIndex: args?['initialIndex'] ?? 0);
         },
+        '/terms': (context) => const CompliancePage(initialIndex: 1),
+        '/privacy': (context) => const CompliancePage(initialIndex: 0),
+        '/refund': (context) => const CompliancePage(initialIndex: 2),
         '/about': (context) => const AboutPage(),
+        '/languages': (context) => const AllLanguagesPage(),
       },
     );
   }

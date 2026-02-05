@@ -92,10 +92,15 @@ class _LiarGamePageState extends State<LiarGamePage> {
         title: MouseRegion(
           cursor: SystemMouseCursors.click,
           child: GestureDetector(
+            behavior: HitTestBehavior.opaque,
             onTap: () {
               Navigator.of(context).popUntil((route) => route.isFirst);
             },
-            child: const ChirPollyLogo(fontSize: 24),
+            child: Container(
+              color: Colors.transparent,
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              child: const ChirPollyLogo(fontSize: 24),
+            ),
           ),
         ),
         actions: [
