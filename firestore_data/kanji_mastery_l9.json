@@ -1,0 +1,802 @@
+[
+    {
+        "character": "秀",
+        "on_yomi": "SHUU",
+        "kun_yomi": "hi-ideru",
+        "meaning": "Excellence",
+        "stroke_count": 7,
+        "mnemonic": "Grain growing tall and excellent."
+    },
+    {
+        "character": "松",
+        "on_yomi": "SHOU",
+        "kun_yomi": "matsu",
+        "meaning": "Pine tree",
+        "stroke_count": 8,
+        "mnemonic": "A tree that is a public/common sight."
+    },
+    {
+        "character": "宅",
+        "on_yomi": "TAKU",
+        "kun_yomi": "none",
+        "meaning": "Home / Residence",
+        "stroke_count": 6,
+        "mnemonic": "A house where people live and settle."
+    },
+    {
+        "character": "勤",
+        "on_yomi": "KIN",
+        "kun_yomi": "tsuto-meru",
+        "meaning": "Diligence / Service",
+        "stroke_count": 12,
+        "mnemonic": "Hard work/labor in an office/field."
+    },
+    {
+        "character": "就",
+        "on_yomi": "SHUU",
+        "kun_yomi": "tsu-ku",
+        "meaning": "Take up / Settle",
+        "stroke_count": 12,
+        "mnemonic": "Settling into a capital/office position."
+    },
+    {
+        "character": "託",
+        "on_yomi": "TAKU",
+        "kun_yomi": "none",
+        "meaning": "Consign / Entrust",
+        "stroke_count": 10,
+        "mnemonic": "Words spoken to entrust a home/matter."
+    },
+    {
+        "character": "潜",
+        "on_yomi": "SEN",
+        "kun_yomi": "hiso-mu",
+        "meaning": "Submerge / Latent",
+        "stroke_count": 15,
+        "mnemonic": "Water and a substitute/task; hiding/diving under (替)."
+    },
+    {
+        "character": "微",
+        "on_yomi": "BI",
+        "kun_yomi": "kasu-ka",
+        "meaning": "Minute / Delicate",
+        "stroke_count": 13,
+        "mnemonic": "Steps and a mountain-climb; a tiny/delicate sign."
+    },
+    {
+        "character": "召",
+        "on_yomi": "SHOU",
+        "kun_yomi": "me-su",
+        "meaning": "Summon",
+        "stroke_count": 5,
+        "mnemonic": "A knife/sword and a mouth; calling someone."
+    },
+    {
+        "character": "刑",
+        "on_yomi": "KEI",
+        "kun_yomi": "none",
+        "meaning": "Penalty / Punishment",
+        "stroke_count": 6,
+        "mnemonic": "Sword/knife at a scaffold/post."
+    },
+    {
+        "character": "枯",
+        "on_yomi": "KO",
+        "kun_yomi": "ka-reru",
+        "meaning": "Wither",
+        "stroke_count": 9,
+        "mnemonic": "A tree (木) getting old (古); drying up."
+    },
+    {
+        "character": "劣",
+        "on_yomi": "RETSU",
+        "kun_yomi": "otto-ru",
+        "meaning": "Inferior",
+        "stroke_count": 6,
+        "mnemonic": "Using little (少) power (力); lower quality."
+    },
+    {
+        "character": "執",
+        "on_yomi": "SHITSU",
+        "kun_yomi": "to-ru",
+        "meaning": "Administer / Execute",
+        "stroke_count": 11,
+        "mnemonic": "Hand and a specialized tool being handled."
+    },
+    {
+        "character": "避",
+        "on_yomi": "HI",
+        "kun_yomi": "yo-keru",
+        "meaning": "Avoid",
+        "stroke_count": 16,
+        "mnemonic": "Walking away from a spicy/dangerous point (辛)."
+    },
+    {
+        "character": "監",
+        "on_yomi": "KAN",
+        "kun_yomi": "none",
+        "meaning": "Monitor / Supervise",
+        "stroke_count": 15,
+        "mnemonic": "A vessel and an eye looking closely."
+    },
+    {
+        "character": "削",
+        "on_yomi": "SAKU",
+        "kun_yomi": "kazu-ru",
+        "meaning": "Slice / Whittle",
+        "stroke_count": 9,
+        "mnemonic": "A knife (刂) used on a small/faint shape (肖); shaving off."
+    },
+    {
+        "character": "衆",
+        "on_yomi": "SHUU",
+        "kun_yomi": "none",
+        "meaning": "Masses / Public",
+        "stroke_count": 12,
+        "mnemonic": "Three people under a big sun; the masses."
+    },
+    {
+        "character": "参",
+        "on_yomi": "SAN",
+        "kun_yomi": "mai-ru",
+        "meaning": "Participate / Visit",
+        "stroke_count": 8,
+        "mnemonic": "Connecting three points with hair/feet."
+    },
+    {
+        "character": "継",
+        "on_yomi": "KEI",
+        "kun_yomi": "tsu-gu",
+        "meaning": "Inherit / Succeed",
+        "stroke_count": 13,
+        "mnemonic": "Thread (糸) and a grain/mark (米/乚) of legacy."
+    },
+    {
+        "character": "抑",
+        "on_yomi": "YOKU",
+        "kun_yomi": "osa-eru",
+        "meaning": "Suppress / Curb",
+        "stroke_count": 7,
+        "mnemonic": "Hand and a reverse/high point being pushed down."
+    },
+    {
+        "character": "墓",
+        "on_yomi": "BO",
+        "kun_yomi": "haka",
+        "meaning": "Grave",
+        "stroke_count": 13,
+        "mnemonic": "Earth (土) and items in a field/grass; a burial site."
+    },
+    {
+        "character": "圏",
+        "on_yomi": "KEN",
+        "kun_yomi": "none",
+        "meaning": "Sphere / Circle / Range",
+        "stroke_count": 12,
+        "mnemonic": "An enclosure with a roll/scroll; a defined area."
+    },
+    {
+        "character": "贈",
+        "on_yomi": "ZOU",
+        "kun_yomi": "oku-ru",
+        "meaning": "Gift / Present",
+        "stroke_count": 18,
+        "mnemonic": "Shells (money) given for an occasion (曽)."
+    },
+    {
+        "character": "賞",
+        "on_yomi": "SHOU",
+        "kun_yomi": "none",
+        "meaning": "Prize / Award",
+        "stroke_count": 15,
+        "mnemonic": "Official shells (money) given for an official sign."
+    },
+    {
+        "character": "飾",
+        "on_yomi": "SHOKU",
+        "kun_yomi": "kaza-ru",
+        "meaning": "Decorate / Ornament",
+        "stroke_count": 13,
+        "mnemonic": "Food/diet (食) and a cloth/towel; presentation."
+    },
+    {
+        "character": "獲",
+        "on_yomi": "KAKU",
+        "kun_yomi": "e-ru",
+        "meaning": "Obtain / Capture",
+        "stroke_count": 18,
+        "mnemonic": "Beast (犭) and a bird (隹) captured in grass."
+    },
+    {
+        "character": "輝",
+        "on_yomi": "KI",
+        "kun_yomi": "kagaya-ku",
+        "meaning": "Radiance / Sparkle",
+        "stroke_count": 15,
+        "mnemonic": "Light (光) and an army/warrior position; shining glory."
+    },
+    {
+        "character": "純",
+        "on_yomi": "JUN",
+        "kun_yomi": "none",
+        "meaning": "Pure",
+        "stroke_count": 10,
+        "mnemonic": "Thread that is of high quality/pure."
+    },
+    {
+        "character": "粋",
+        "on_yomi": "SUI",
+        "kun_yomi": "iki",
+        "meaning": "Pure / Chic",
+        "stroke_count": 10,
+        "mnemonic": "Rice grain that is refined/pure."
+    },
+    {
+        "character": "精",
+        "on_yomi": "SEI",
+        "kun_yomi": "none",
+        "meaning": "Spirit / Refined",
+        "stroke_count": 14,
+        "mnemonic": "Rice grain that is clean and pure spirit."
+    },
+    {
+        "character": "憤",
+        "on_yomi": "FUN",
+        "kun_yomi": "iki-doru",
+        "meaning": "Indignant",
+        "stroke_count": 15,
+        "mnemonic": "Heart feeling a violent/angry pulse."
+    },
+    {
+        "character": "悦",
+        "on_yomi": "ETSU",
+        "kun_yomi": "none",
+        "meaning": "Joy / Delight",
+        "stroke_count": 10,
+        "mnemonic": "Heart feeling a gentle/positive flow."
+    },
+    {
+        "character": "哀",
+        "on_yomi": "AI",
+        "kun_yomi": "awa-re",
+        "meaning": "Pathetic / Sorrow",
+        "stroke_count": 9,
+        "mnemonic": "A mouth wrapped in clothes/sorrow."
+    },
+    {
+        "character": "愁",
+        "on_yomi": "SHUU",
+        "kun_yomi": "ure-i",
+        "meaning": "Sorrow / Grief",
+        "stroke_count": 13,
+        "mnemonic": "Autumn (秋) in the heart (心); sadness."
+    },
+    {
+        "character": "憶",
+        "on_yomi": "OKU",
+        "kun_yomi": "none",
+        "meaning": "Memories / Recall",
+        "stroke_count": 15,
+        "mnemonic": "Heart and an idea/thought occurring again."
+    },
+    {
+        "character": "括",
+        "on_yomi": "KATSU",
+        "kun_yomi": "none",
+        "meaning": "Fasten / Summarize",
+        "stroke_count": 9,
+        "mnemonic": "Hand and a tongue; speaking to summarize."
+    },
+    {
+        "character": "訂",
+        "on_yomi": "TEI",
+        "kun_yomi": "none",
+        "meaning": "Revise / Correct",
+        "stroke_count": 9,
+        "mnemonic": "Words spoken to set something right (丁)."
+    },
+    {
+        "character": "糾",
+        "on_yomi": "KYUU",
+        "kun_yomi": "adasu",
+        "meaning": "Twist / Investigate",
+        "stroke_count": 9,
+        "mnemonic": "Thread (糸) being twisted together."
+    },
+    {
+        "character": "脱",
+        "on_yomi": "DATSU",
+        "kun_yomi": "nu-gu",
+        "meaning": "Undress / Escape",
+        "stroke_count": 11,
+        "mnemonic": "Flesh (月) and a task/brotherly flow; taking off."
+    },
+    {
+        "character": "給",
+        "on_yomi": "KYUU",
+        "kun_yomi": "none",
+        "meaning": "Salary / Supply",
+        "stroke_count": 12,
+        "mnemonic": "Thread and a set/match; a total supply."
+    },
+    {
+        "character": "締",
+        "on_yomi": "TEI",
+        "kun_yomi": "shi-meru",
+        "meaning": "Tighten / Tie",
+        "stroke_count": 15,
+        "mnemonic": "Thread and an imperial mark; a firm bond."
+    },
+    {
+        "character": "維",
+        "on_yomi": "I",
+        "kun_yomi": "none",
+        "meaning": "Maintain / Fiber",
+        "stroke_count": 14,
+        "mnemonic": "Thread and a bird indicating a link."
+    },
+    {
+        "character": "綱",
+        "on_yomi": "KOU",
+        "kun_yomi": "tsuna",
+        "meaning": "Cable / Rope",
+        "stroke_count": 14,
+        "mnemonic": "Thread and a hill/mountain peak; a strong rope."
+    },
+    {
+        "character": "網",
+        "on_yomi": "MOU",
+        "kun_yomi": "ami",
+        "meaning": "Net / Network",
+        "stroke_count": 14,
+        "mnemonic": "Thread and a frame/enclosure; a catching net."
+    },
+    {
+        "character": "抵",
+        "on_yomi": "TEI",
+        "kun_yomi": "none",
+        "meaning": "Resist",
+        "stroke_count": 8,
+        "mnemonic": "Hand and a basic/fixed level (氐); reaching a limit."
+    },
+    {
+        "character": "緒",
+        "on_yomi": "SHO",
+        "kun_yomi": "o",
+        "meaning": "Beginning / Cord",
+        "stroke_count": 14,
+        "mnemonic": "Thread and a person acting as a source."
+    },
+    {
+        "character": "織",
+        "on_yomi": "SHIKI",
+        "kun_yomi": "o-ru",
+        "meaning": "Weave / Fabric",
+        "stroke_count": 18,
+        "mnemonic": "Thread and a mark of deep knowledge/pattern."
+    },
+    {
+        "character": "繕",
+        "on_yomi": "ZEN",
+        "kun_yomi": "tsukuro-u",
+        "meaning": "Repair / Mend",
+        "stroke_count": 18,
+        "mnemonic": "Thread and a task that is good/virtuous (善)."
+    },
+    {
+        "character": "繭",
+        "on_yomi": "KEN",
+        "kun_yomi": "mayu",
+        "meaning": "Cocoon",
+        "stroke_count": 18,
+        "mnemonic": "Grass and an insect inside a thread shell."
+    },
+    {
+        "character": "繰",
+        "on_yomi": "SOU",
+        "kun_yomi": "ku-ru",
+        "meaning": "Spin / Wind",
+        "stroke_count": 19,
+        "mnemonic": "Thread and many hands in a tree; winding."
+    },
+    {
+        "character": "缶",
+        "on_yomi": "KAN",
+        "kun_yomi": "none",
+        "meaning": "Can / Tin",
+        "stroke_count": 6,
+        "mnemonic": "A container with a small opening; a jar."
+    },
+    {
+        "character": "罷",
+        "on_yomi": "HI",
+        "kun_yomi": "none",
+        "meaning": "Dismiss / Cease",
+        "stroke_count": 15,
+        "mnemonic": "A net and ability; stopping talent."
+    },
+    {
+        "character": "羅",
+        "on_yomi": "RA",
+        "kun_yomi": "none",
+        "meaning": "Gauze / Rome",
+        "stroke_count": 19,
+        "mnemonic": "A net and a bird flying in a pattern."
+    },
+    {
+        "character": "翻",
+        "on_yomi": "HON",
+        "kun_yomi": "hirugae-su",
+        "meaning": "Flip / Translate",
+        "stroke_count": 18,
+        "mnemonic": "Wings and a specialty/task; flipping over."
+    },
+    {
+        "character": "訳",
+        "on_yomi": "YAKU",
+        "kun_yomi": "wake",
+        "meaning": "Translation / Reason",
+        "stroke_count": 7,
+        "mnemonic": "Words and a scale of measurement; meaning."
+    },
+    {
+        "character": "診",
+        "on_yomi": "SHIN",
+        "kun_yomi": "mi-ru",
+        "meaning": "Diagnosis",
+        "stroke_count": 12,
+        "mnemonic": "Words used by an official (参) for checkup."
+    },
+    {
+        "character": "詳",
+        "on_yomi": "SHOU",
+        "kun_yomi": "kuwa-shii",
+        "meaning": "Detailed",
+        "stroke_count": 13,
+        "mnemonic": "Words that describe items like sheep; detailed."
+    },
+    {
+        "character": "詠",
+        "on_yomi": "EI",
+        "kun_yomi": "yo-mu",
+        "meaning": "Recite / Poetry",
+        "stroke_count": 12,
+        "mnemonic": "Words used for a timeless/long flow (永)."
+    },
+    {
+        "character": "詩",
+        "on_yomi": "SHI",
+        "kun_yomi": "none",
+        "meaning": "Poem",
+        "stroke_count": 13,
+        "mnemonic": "Words spoken at a temple/special place."
+    },
+    {
+        "character": "詰",
+        "on_yomi": "KITSU",
+        "kun_yomi": "tsu-meru",
+        "meaning": "Stuffed / Pressed",
+        "stroke_count": 13,
+        "mnemonic": "Words that are auspicious/fixed (吉); tight."
+    },
+    {
+        "character": "謡",
+        "on_yomi": "YOU",
+        "kun_yomi": "utai",
+        "meaning": "Noh chant / Folk song",
+        "stroke_count": 16,
+        "mnemonic": "Words with a bright/vibrant flow (揺)."
+    },
+    {
+        "character": "謙",
+        "on_yomi": "KEN",
+        "kun_yomi": "none",
+        "meaning": "Humble",
+        "stroke_count": 17,
+        "mnemonic": "Words spoken to bridge the gap (兼)."
+    },
+    {
+        "character": "誰",
+        "on_yomi": "SUI",
+        "kun_yomi": "dare",
+        "meaning": "Who",
+        "stroke_count": 15,
+        "mnemonic": "Words asking about a person/bird."
+    },
+    {
+        "character": "契",
+        "on_yomi": "KEI",
+        "kun_yomi": "chigi-ru",
+        "meaning": "Contract / Pledge",
+        "stroke_count": 9,
+        "mnemonic": "Large (大) and sword (刀) making a pact over grain."
+    },
+    {
+        "character": "襲",
+        "on_yomi": "SHUU",
+        "kun_yomi": "osa-u",
+        "meaning": "Attack / Inherit",
+        "stroke_count": 22,
+        "mnemonic": "Dragon and clothes; a royal armor-clad attack."
+    },
+    {
+        "character": "豚",
+        "on_yomi": "TON",
+        "kun_yomi": "buta",
+        "meaning": "Pork / Pig",
+        "stroke_count": 11,
+        "mnemonic": "Meat (月) of a beast/hog (豕)."
+    },
+    {
+        "character": "融",
+        "on_yomi": "YUU",
+        "kun_yomi": "to-keru",
+        "meaning": "Melt / Fuse",
+        "stroke_count": 16,
+        "mnemonic": "Cauldron and insects; melting things together."
+    },
+    {
+        "character": "豪",
+        "on_yomi": "GOU",
+        "kun_yomi": "none",
+        "meaning": "Splendid / Australia",
+        "stroke_count": 14,
+        "mnemonic": "A tall/noble building with a pig/hog."
+    },
+    {
+        "character": "賄",
+        "on_yomi": "WAI",
+        "kun_yomi": "makanau",
+        "meaning": "Bribe / Feed",
+        "stroke_count": 13,
+        "mnemonic": "Shells (money) that match/possess."
+    },
+    {
+        "character": "赋",
+        "on_yomi": "FU",
+        "kun_yomi": "none",
+        "meaning": "Levy / Endow",
+        "stroke_count": 15,
+        "mnemonic": "Shells (money) and a military/task (武)."
+    },
+    {
+        "character": "賢",
+        "on_yomi": "KEN",
+        "kun_yomi": "kashi-koi",
+        "meaning": "Wise / Clever",
+        "stroke_count": 16,
+        "mnemonic": "Shells (money) and deep subjects."
+    },
+    {
+        "character": "購",
+        "on_yomi": "KOU",
+        "kun_yomi": "none",
+        "meaning": "Purchase",
+        "stroke_count": 17,
+        "mnemonic": "Shells (money) that are a match/joint set."
+    },
+    {
+        "character": "賛",
+        "on_yomi": "SAN",
+        "kun_yomi": "none",
+        "meaning": "Approve / Praise",
+        "stroke_count": 15,
+        "mnemonic": "Shells (money) and a person assisting/praising."
+    },
+    {
+        "character": "賃",
+        "on_yomi": "CHIN",
+        "kun_yomi": "none",
+        "meaning": "Fare / Rent",
+        "stroke_count": 13,
+        "mnemonic": "Shells (money) paid for a task/duty (任)."
+    },
+    {
+        "character": "跡",
+        "on_yomi": "SEKI",
+        "kun_yomi": "ato",
+        "meaning": "Trace / Mark",
+        "stroke_count": 13,
+        "mnemonic": "Feet (足) and a mark left on the world."
+    },
+    {
+        "character": "跨",
+        "on_yomi": "KO",
+        "kun_yomi": "matau",
+        "meaning": "Stride / Across",
+        "stroke_count": 13,
+        "mnemonic": "Feet (足) and a person standing tall/wide."
+    },
+    {
+        "character": "跪",
+        "on_yomi": "KI",
+        "kun_yomi": "hizamazuku",
+        "meaning": "Kneel",
+        "stroke_count": 13,
+        "mnemonic": "Feet (足) and an official/dangerous pose."
+    },
+    {
+        "character": "踏",
+        "on_yomi": "TOU",
+        "kun_yomi": "fu-mu",
+        "meaning": "Step / Tread",
+        "stroke_count": 15,
+        "mnemonic": "Feet (足) and a water/surface being stepped on."
+    },
+    {
+        "character": "躍",
+        "on_yomi": "YAKU",
+        "kun_yomi": "odo-ru",
+        "meaning": "Leap / Jump",
+        "stroke_count": 21,
+        "mnemonic": "Feet (足) and a bird (夭/翟) taking flight."
+    },
+    {
+        "character": "軌",
+        "on_yomi": "KI",
+        "kun_yomi": "none",
+        "meaning": "Rut / Track",
+        "stroke_count": 9,
+        "mnemonic": "A vehicle (車) and nine/many marks/tracks."
+    },
+    {
+        "character": "軟",
+        "on_yomi": "NAN",
+        "kun_yomi": "yawa-rakai",
+        "meaning": "Soft",
+        "stroke_count": 11,
+        "mnemonic": "A vehicle (車) and a person yawning/soft."
+    },
+    {
+        "character": "較",
+        "on_yomi": "KAKU",
+        "kun_yomi": "none",
+        "meaning": "Contrast / Compare",
+        "stroke_count": 13,
+        "mnemonic": "A vehicle (車) and a matching/joint design."
+    },
+    {
+        "character": "震",
+        "on_yomi": "SHIN",
+        "kun_yomi": "furu-eru",
+        "meaning": "Quake / Shake",
+        "stroke_count": 15,
+        "mnemonic": "Rain/weather (雨) and time/dawn (辰) shaking the earth."
+    },
+    {
+        "character": "轄",
+        "on_yomi": "KATSU",
+        "kun_yomi": "none",
+        "meaning": "Control / Administer",
+        "stroke_count": 17,
+        "mnemonic": "A vehicle (車) and a harm/person being managed."
+    },
+    {
+        "character": "辱",
+        "on_yomi": "JOKU",
+        "kun_yomi": "hazukashi-meru",
+        "meaning": "Humiliate",
+        "stroke_count": 10,
+        "mnemonic": "A hand and an inch/rule; feeling low."
+    },
+    {
+        "character": "透",
+        "on_yomi": "TOU",
+        "kun_yomi": "to-ru",
+        "meaning": "Transparent",
+        "stroke_count": 10,
+        "mnemonic": "A road leading to a clear/show state (秀)."
+    },
+    {
+        "character": "遂",
+        "on_yomi": "SUI",
+        "kun_yomi": "to-geru",
+        "meaning": "Accomplish",
+        "stroke_count": 12,
+        "mnemonic": "A road and a task being completed."
+    },
+    {
+        "character": "遇",
+        "on_yomi": "GUU",
+        "kun_yomi": "none",
+        "meaning": "Treat / Meet",
+        "stroke_count": 12,
+        "mnemonic": "A road and a corner/chance meeting."
+    },
+    {
+        "character": "遭",
+        "on_yomi": "SOU",
+        "kun_yomi": "a-u",
+        "meaning": "Encounter / Meet",
+        "stroke_count": 14,
+        "mnemonic": "A road and a task/bent pose (曹); a chance encounter."
+    },
+    {
+        "character": "搬",
+        "on_yomi": "HAN",
+        "kun_yomi": "none",
+        "meaning": "Transport",
+        "stroke_count": 13,
+        "mnemonic": "Hand and a boat being handled through a task (般)."
+    },
+    {
+        "character": "遼",
+        "on_yomi": "RYOU",
+        "kun_yomi": "none",
+        "meaning": "Distant / Far",
+        "stroke_count": 15,
+        "mnemonic": "A road and a fire/vibrant sign; far away."
+    },
+    {
+        "character": "遺",
+        "on_yomi": "I",
+        "kun_yomi": "none",
+        "meaning": "Legacy / Bequeath",
+        "stroke_count": 15,
+        "mnemonic": "A road and shells (money) marking a legacy."
+    },
+    {
+        "character": "還",
+        "on_yomi": "KAN",
+        "kun_yomi": "kae-su",
+        "meaning": "Send back / Return",
+        "stroke_count": 16,
+        "mnemonic": "A road and a circle/ring; coming back."
+    },
+    {
+        "character": "邪",
+        "on_yomi": "JA",
+        "kun_yomi": "none",
+        "meaning": "Evil / Wicked",
+        "stroke_count": 8,
+        "mnemonic": "A fang/tooth and a town/wall; aggressive."
+    },
+    {
+        "character": "邸",
+        "on_yomi": "TEI",
+        "kun_yomi": "yashiki",
+        "meaning": "Residence / Mansion",
+        "stroke_count": 7,
+        "mnemonic": "A town/wall and a person standing (低); a large house."
+    },
+    {
+        "character": "郭",
+        "on_yomi": "KAKU",
+        "kun_yomi": "none",
+        "meaning": "Enclosure / Wall",
+        "stroke_count": 10,
+        "mnemonic": "A town/wall surrounding a center/base."
+    },
+    {
+        "character": "釈",
+        "on_yomi": "SHAKU",
+        "kun_yomi": "none",
+        "meaning": "Explanation / Release",
+        "stroke_count": 11,
+        "mnemonic": "Metal and a scale/measurement marking meaning."
+    },
+    {
+        "character": "鉢",
+        "on_yomi": "HACHI",
+        "kun_yomi": "none",
+        "meaning": "Bowl / Pot",
+        "stroke_count": 13,
+        "mnemonic": "Metal used to make a dish/bowl shape."
+    },
+    {
+        "character": "銃",
+        "on_yomi": "JUU",
+        "kun_yomi": "none",
+        "meaning": "Gun / Rifle",
+        "stroke_count": 14,
+        "mnemonic": "Metal and a filled/full state (充); a weapon."
+    },
+    {
+        "character": "銘",
+        "on_yomi": "MEI",
+        "kun_yomi": "none",
+        "meaning": "Inscription / Brand",
+        "stroke_count": 14,
+        "mnemonic": "Metal and a name marking a brand."
+    }
+]

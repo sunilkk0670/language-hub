@@ -23,7 +23,24 @@ async function uploadKanjiMastery() {
         { id: 'L1', file: 'kanji_mastery_l1.json', name: 'N5 Foundation', level: 'N5' },
         { id: 'L2', file: 'kanji_mastery_l2.json', name: 'N4 Basics Part 1', level: 'N4' },
         { id: 'L3', file: 'kanji_mastery_l3.json', name: 'N4 Basics Part 2', level: 'N4' },
-        { id: 'L4', file: 'kanji_mastery_l4.json', name: 'Daily Living Essentials', level: 'N4' }
+        { id: 'L4', file: 'kanji_mastery_l4.json', name: 'N4 Basics Part 3', level: 'N4' },
+        { id: 'L5', file: 'kanji_mastery_l5.json', name: 'N3 Basics Part 1', level: 'N3' },
+        { id: 'L6', file: 'kanji_mastery_l6.json', name: 'N3 Basics Part 2', level: 'N3' },
+        { id: 'L7', file: 'kanji_mastery_l7.json', name: 'N3 Mastery Part 3', level: 'N3' },
+        { id: 'L8', file: 'kanji_mastery_l8.json', name: 'N3 Mastery Part 4', level: 'N3' },
+        { id: 'L9', file: 'kanji_mastery_l9.json', name: 'N3 Mastery Part 5', level: 'N3' },
+        { id: 'L10', file: 'kanji_mastery_l10.json', name: 'N3 Mastery Part 6', level: 'N3' },
+        { id: 'L11', file: 'kanji_mastery_l11.json', name: 'N3 Completion', level: 'N3' },
+        { id: 'L12', file: 'kanji_mastery_l12.json', name: 'N2 Foundation Part 1', level: 'N2' },
+        { id: 'L13', file: 'kanji_mastery_l13.json', name: 'N2 Foundation Part 2', level: 'N2' },
+        { id: 'L14', file: 'kanji_mastery_l14.json', name: 'N2 Mastery Part 1', level: 'N2' },
+        { id: 'L15', file: 'kanji_mastery_l15.json', name: 'N2 Mastery Part 2', level: 'N2' },
+        { id: 'L16', file: 'kanji_mastery_l16.json', name: 'N2 Mastery Part 3', level: 'N2' },
+        { id: 'L17', file: 'kanji_mastery_l17.json', name: 'N2 Mastery Part 4', level: 'N2' },
+        { id: 'L18', file: 'kanji_mastery_l18.json', name: 'N1 Advanced Part 1', level: 'N1' },
+        { id: 'L19', file: 'kanji_mastery_l19.json', name: 'N1 Advanced Part 2', level: 'N1' },
+        { id: 'L20', file: 'kanji_mastery_l20.json', name: 'N1 Advanced Part 3', level: 'N1' },
+        { id: 'L21', file: 'kanji_mastery_l21.json', name: 'N1 Completion', level: 'N1' }
     ];
 
     // Ensure top-level document exists

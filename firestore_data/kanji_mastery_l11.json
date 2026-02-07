@@ -1,0 +1,386 @@
+[
+    {
+        "character": "宜",
+        "on_yomi": "GI",
+        "kun_yomi": "none",
+        "meaning": "Suitable / Proper",
+        "stroke_count": 8,
+        "mnemonic": "A roof宀 over且; suitable."
+    },
+    {
+        "character": "宇",
+        "on_yomi": "U",
+        "kun_yomi": "none",
+        "meaning": "Universe / Space",
+        "stroke_count": 6,
+        "mnemonic": "A roof宀 over the universe."
+    },
+    {
+        "character": "宙",
+        "on_yomi": "CHUU",
+        "kun_yomi": "none",
+        "meaning": "Space / Midair",
+        "stroke_count": 8,
+        "mnemonic": "A roof宀 over由; the cosmos."
+    },
+    {
+        "character": "宗",
+        "on_yomi": "SHUU",
+        "kun_yomi": "none",
+        "meaning": "Religion / Sect",
+        "stroke_count": 8,
+        "mnemonic": "A roof宀 over示; religion."
+    },
+    {
+        "character": "専",
+        "on_yomi": "SEN",
+        "kun_yomi": "moppa-ra",
+        "meaning": "Exclusive / Solely",
+        "stroke_count": 9,
+        "mnemonic": "A shuttle used in exclusive weaving."
+    },
+    {
+        "character": "系",
+        "on_yomi": "KEI",
+        "kun_yomi": "none",
+        "meaning": "Lineage / System",
+        "stroke_count": 7,
+        "mnemonic": "A line of silk threads; a system."
+    },
+    {
+        "character": "列",
+        "on_yomi": "RETSU",
+        "kun_yomi": "none",
+        "meaning": "Row / Line",
+        "stroke_count": 6,
+        "mnemonic": "A knife cutting things into a line/row."
+    },
+    {
+        "character": "宝",
+        "on_yomi": "HOU",
+        "kun_yomi": "takara",
+        "meaning": "Treasure",
+        "stroke_count": 8,
+        "mnemonic": "A roof宀 over treasure."
+    },
+    {
+        "character": "宴",
+        "on_yomi": "EN",
+        "kun_yomi": "none",
+        "meaning": "Banquet / Feast",
+        "stroke_count": 10,
+        "mnemonic": "A roof宀 over女; a feast."
+    },
+    {
+        "character": "寂",
+        "on_yomi": "JAKU",
+        "kun_yomi": "sabi-shii",
+        "meaning": "Lonely / Quiet",
+        "stroke_count": 11,
+        "mnemonic": "A roof宀 with叔 loneliness."
+    },
+    {
+        "character": "副",
+        "on_yomi": "FUKU",
+        "kun_yomi": "none",
+        "meaning": "Deputy / Vice",
+        "stroke_count": 11,
+        "mnemonic": "A knife and a full jar; a second part."
+    },
+    {
+        "character": "複",
+        "on_yomi": "FUKU",
+        "kun_yomi": "none",
+        "meaning": "Complex / Double",
+        "stroke_count": 14,
+        "mnemonic": "Clothing with double layers; complex."
+    },
+    {
+        "character": "寝",
+        "on_yomi": "SHIN",
+        "kun_yomi": "ne-ru",
+        "meaning": "Sleep / Lie down",
+        "stroke_count": 13,
+        "mnemonic": "A roof宀 where侵 one sleeps."
+    },
+    {
+        "character": "老",
+        "on_yomi": "ROU",
+        "kun_yomi": "o-iru",
+        "meaning": "Old / Elder",
+        "stroke_count": 6,
+        "mnemonic": "An elder leaning on a staff."
+    },
+    {
+        "character": "倍",
+        "on_yomi": "BAI",
+        "kun_yomi": "none",
+        "meaning": "Double / Times",
+        "stroke_count": 10,
+        "mnemonic": "A person standing by a multi-leveled pile."
+    },
+    {
+        "character": "了",
+        "on_yomi": "RYOU",
+        "kun_yomi": "none",
+        "meaning": "Complete / Done",
+        "stroke_count": 2,
+        "mnemonic": "A person with arms finished; done."
+    },
+    {
+        "character": "寛",
+        "on_yomi": "KAN",
+        "kun_yomi": "none",
+        "meaning": "Tolerant / Generous",
+        "stroke_count": 13,
+        "mnemonic": "A roof宀 with萈 generosity."
+    },
+    {
+        "character": "序",
+        "on_yomi": "JO",
+        "kun_yomi": "none",
+        "meaning": "Preface / Order",
+        "stroke_count": 7,
+        "mnemonic": "A building with a sequence/order."
+    },
+    {
+        "character": "幕",
+        "on_yomi": "MAKU",
+        "kun_yomi": "none",
+        "meaning": "Curtain / Act",
+        "stroke_count": 13,
+        "mnemonic": "Cloth莫 hanging as a curtain."
+    },
+    {
+        "character": "寮",
+        "on_yomi": "RYOU",
+        "kun_yomi": "none",
+        "meaning": "Dormitory",
+        "stroke_count": 15,
+        "mnemonic": "A roof宀 for僚 students."
+    },
+    {
+        "character": "端",
+        "on_yomi": "TAN",
+        "kun_yomi": "hashi",
+        "meaning": "Edge / End",
+        "stroke_count": 14,
+        "mnemonic": "Standing立 at the edge of a mountain."
+    },
+    {
+        "character": "縁",
+        "on_yomi": "EN",
+        "kun_yomi": "fuchi",
+        "meaning": "Edge / Fate",
+        "stroke_count": 15,
+        "mnemonic": "Thread糸 connecting豕 by fate."
+    },
+    {
+        "character": "寵",
+        "on_yomi": "CHOU",
+        "kun_yomi": "none",
+        "meaning": "Favor / Affection",
+        "stroke_count": 19,
+        "mnemonic": "A roof宀 with龍 favor."
+    },
+    {
+        "character": "寧",
+        "on_yomi": "NEI",
+        "kun_yomi": "none",
+        "meaning": "Rather / Peaceful",
+        "stroke_count": 14,
+        "mnemonic": "A roof宀 with丁 peace."
+    },
+    {
+        "character": "寡",
+        "on_yomi": "KA",
+        "kun_yomi": "none",
+        "meaning": "Few / Widow",
+        "stroke_count": 14,
+        "mnemonic": "A roof宀 with頁 few people."
+    },
+    {
+        "character": "寿",
+        "on_yomi": "JU",
+        "kun_yomi": "kotobuki",
+        "meaning": "Longevity",
+        "stroke_count": 7,
+        "mnemonic": "A roof宀 with寸 long life."
+    },
+    {
+        "character": "封",
+        "on_yomi": "FUU",
+        "kun_yomi": "none",
+        "meaning": "Seal /封",
+        "stroke_count": 9,
+        "mnemonic": "A hand寸 sealing土 a letter."
+    },
+    {
+        "character": "射",
+        "on_yomi": "SHA",
+        "kun_yomi": "i-ru",
+        "meaning": "Shoot / Inject",
+        "stroke_count": 10,
+        "mnemonic": "A body身 shooting寸 an arrow."
+    },
+    {
+        "character": "緩",
+        "on_yomi": "KAN",
+        "kun_yomi": "yuru-i",
+        "meaning": "Loose / Slow",
+        "stroke_count": 15,
+        "mnemonic": "Thread糸 loosely爰 tied."
+    },
+    {
+        "character": "繁",
+        "on_yomi": "HAN",
+        "kun_yomi": "shige-ru",
+        "meaning": "Luxuriant / Busy",
+        "stroke_count": 16,
+        "mnemonic": "Thread糸 and every敏 strand; dense."
+    },
+    {
+        "character": "将",
+        "on_yomi": "SHOU",
+        "kun_yomi": "none",
+        "meaning": "General / Future",
+        "stroke_count": 10,
+        "mnemonic": "A hand爿 holding寸 command."
+    },
+    {
+        "character": "尉",
+        "on_yomi": "I",
+        "kun_yomi": "none",
+        "meaning": "Officer / Rank",
+        "stroke_count": 11,
+        "mnemonic": "A military寸 officer尸."
+    },
+    {
+        "character": "縄",
+        "on_yomi": "JOU",
+        "kun_yomi": "nawa",
+        "meaning": "Rope / Cord",
+        "stroke_count": 15,
+        "mnemonic": "Thread糸 twisted黽 into rope."
+    },
+    {
+        "character": "縦",
+        "on_yomi": "JUU",
+        "kun_yomi": "tate",
+        "meaning": "Vertical / Length",
+        "stroke_count": 16,
+        "mnemonic": "Thread糸 running從 vertically."
+    },
+    {
+        "character": "尊",
+        "on_yomi": "SON",
+        "kun_yomi": "touto-i",
+        "meaning": "Respect / Noble",
+        "stroke_count": 12,
+        "mnemonic": "Wine酉 and寸 hands; respect."
+    },
+    {
+        "character": "尼",
+        "on_yomi": "NI",
+        "kun_yomi": "none",
+        "meaning": "Nun / Priestess",
+        "stroke_count": 5,
+        "mnemonic": "A corpse尸 and a spoon匕; a nun."
+    },
+    {
+        "character": "紡",
+        "on_yomi": "BOU",
+        "kun_yomi": "tsumu-gu",
+        "meaning": "Spin / Thread",
+        "stroke_count": 10,
+        "mnemonic": "Thread糸 being方 spun."
+    },
+    {
+        "character": "紋",
+        "on_yomi": "MON",
+        "kun_yomi": "none",
+        "meaning": "Crest / Pattern",
+        "stroke_count": 10,
+        "mnemonic": "Thread糸 forming文 a pattern."
+    },
+    {
+        "character": "紳",
+        "on_yomi": "SHIN",
+        "kun_yomi": "none",
+        "meaning": "Gentleman",
+        "stroke_count": 11,
+        "mnemonic": "Thread糸 of a申 gentleman's sash."
+    },
+    {
+        "character": "紺",
+        "on_yomi": "KON",
+        "kun_yomi": "none",
+        "meaning": "Navy blue",
+        "stroke_count": 11,
+        "mnemonic": "Thread糸 dyed甘 navy blue."
+    },
+    {
+        "character": "紹",
+        "on_yomi": "SHOU",
+        "kun_yomi": "none",
+        "meaning": "Introduce / Inherit",
+        "stroke_count": 11,
+        "mnemonic": "Thread糸 connecting召 lineages."
+    },
+    {
+        "character": "紛",
+        "on_yomi": "FUN",
+        "kun_yomi": "magi-reru",
+        "meaning": "Confuse / Distract",
+        "stroke_count": 10,
+        "mnemonic": "Thread糸 tangled分 in confusion."
+    },
+    {
+        "character": "紫",
+        "on_yomi": "SHI",
+        "kun_yomi": "murasaki",
+        "meaning": "Purple / Violet",
+        "stroke_count": 12,
+        "mnemonic": "This止 thread糸; purple color."
+    },
+    {
+        "character": "紅",
+        "on_yomi": "KOU",
+        "kun_yomi": "beni",
+        "meaning": "Crimson / Red",
+        "stroke_count": 9,
+        "mnemonic": "Thread糸 and工 工; crimson dye."
+    },
+    {
+        "character": "納",
+        "on_yomi": "NOU",
+        "kun_yomi": "osa-meru",
+        "meaning": "Supply / Accept",
+        "stroke_count": 10,
+        "mnemonic": "Thread糸 inside内; storing/納納."
+    },
+    {
+        "character": "尺",
+        "on_yomi": "SHAKU",
+        "kun_yomi": "none",
+        "meaning": "Measure / Foot",
+        "stroke_count": 4,
+        "mnemonic": "A hand measuring尸 length."
+    },
+    {
+        "character": "紙",
+        "on_yomi": "SHI",
+        "kun_yomi": "kami",
+        "meaning": "Paper",
+        "stroke_count": 10,
+        "mnemonic": "Thread糸 from氏 plant; paper."
+    },
+    {
+        "character": "索",
+        "on_yomi": "SAKU",
+        "kun_yomi": "none",
+        "meaning": "Search / Rope",
+        "stroke_count": 10,
+        "mnemonic": "Thread糸 used十 to search/bind."
+    }
+]

@@ -1,0 +1,802 @@
+[
+  {
+    "character": "逼",
+    "on_yomi": "HITSU",
+    "kun_yomi": "none",
+    "meaning": "Urge / Coerce / Close",
+    "stroke_count": 13,
+    "mnemonic": "Walking a path that is full and pressing close."
+  },
+  {
+    "character": "逾",
+    "on_yomi": "YU",
+    "kun_yomi": "none",
+    "meaning": "Surpass / Exceed",
+    "stroke_count": 13,
+    "mnemonic": "Walking a path that exceeds a certain point/mark."
+  },
+  {
+    "character": "遒",
+    "on_yomi": "SHUU",
+    "kun_yomi": "none",
+    "meaning": "Vigorous / Force / Strong",
+    "stroke_count": 11,
+    "mnemonic": "Walking a path with power/sake; vigorous force."
+  },
+  {
+    "character": "遑",
+    "on_yomi": "KOU",
+    "kun_yomi": "none",
+    "meaning": "Leisure / Spare time",
+    "stroke_count": 13,
+    "mnemonic": "Walking a path under the sun; leisure time."
+  },
+  {
+    "character": "遐",
+    "on_yomi": "KA",
+    "kun_yomi": "none",
+    "meaning": "Distant / Remote / Far",
+    "stroke_count": 13,
+    "mnemonic": "A path that is distant and coarse like a hide."
+  },
+  {
+    "character": "邀",
+    "on_yomi": "YOU",
+    "kun_yomi": "none",
+    "meaning": "Invite / Meet / Summon",
+    "stroke_count": 17,
+    "mnemonic": "Walking a path to invite/summon a visitor."
+  },
+  {
+    "character": "邂",
+    "on_yomi": "KAI",
+    "kun_yomi": "none",
+    "meaning": "Unexpected meeting",
+    "stroke_count": 17,
+    "mnemonic": "Walking a path to a meeting with a horn/mark."
+  },
+  {
+    "character": "邃",
+    "on_yomi": "SUI",
+    "kun_yomi": "none",
+    "meaning": "Deep / Profound / Remote",
+    "stroke_count": 18,
+    "mnemonic": "A path that is deep and cave-like/profound."
+  },
+  {
+    "character": "邁",
+    "on_yomi": "MAI",
+    "kun_yomi": "none",
+    "meaning": "Stride / Excel / Go",
+    "stroke_count": 13,
+    "mnemonic": "A path that is wide/many and excelled."
+  },
+  {
+    "character": "躬",
+    "on_yomi": "KYUU",
+    "kun_yomi": "mi-zukara",
+    "meaning": "Personally / Self / Body",
+    "stroke_count": 10,
+    "mnemonic": "The body and a bow; bowing personally."
+  },
+  {
+    "character": "躯",
+    "on_yomi": "KU",
+    "kun_yomi": "mukuro",
+    "meaning": "Corpse / Body / Frame",
+    "stroke_count": 11,
+    "mnemonic": "The body inside a district or frame."
+  },
+  {
+    "character": "躾",
+    "on_yomi": "none",
+    "kun_yomi": "shitsuke",
+    "meaning": "Discipline / Training",
+    "stroke_count": 15,
+    "mnemonic": "The body achieving a beautiful/refined state."
+  },
+  {
+    "character": "酬",
+    "on_yomi": "SHUU",
+    "kun_yomi": "none",
+    "meaning": "Reward / Repay / Retribution",
+    "stroke_count": 13,
+    "mnemonic": "Sake jar and a state; rewarding a helper/guest."
+  },
+  {
+    "character": "酪",
+    "on_yomi": "RAKU",
+    "kun_yomi": "none",
+    "meaning": "Dairy / Whey / Broth",
+    "stroke_count": 13,
+    "mnemonic": "Sake jar and each/every; dairy/whey distribution."
+  },
+  {
+    "character": "醍",
+    "on_yomi": "DAI",
+    "kun_yomi": "none",
+    "meaning": "Whey / Good taste",
+    "stroke_count": 16,
+    "mnemonic": "Sake jar and the sun/is; essence of good taste."
+  },
+  {
+    "character": "醐",
+    "on_yomi": "GO",
+    "kun_yomi": "none",
+    "meaning": "Butter / Ghee",
+    "stroke_count": 16,
+    "mnemonic": "Sake jar and an ancient person/moon; ghee."
+  },
+  {
+    "character": "醒",
+    "on_yomi": "SEI",
+    "kun_yomi": "none",
+    "meaning": "Awaken / Sober up",
+    "stroke_count": 16,
+    "mnemonic": "Sake jar and a star; waking up at night/sobering."
+  },
+  {
+    "character": "醗",
+    "on_yomi": "HATSU",
+    "kun_yomi": "none",
+    "meaning": "Ferment / Brew",
+    "stroke_count": 16,
+    "mnemonic": "Sake jar and departure; starting the brew."
+  },
+  {
+    "character": "廊",
+    "on_yomi": "ROU",
+    "kun_yomi": "none",
+    "meaning": "Corridor / Hall / Gallery",
+    "stroke_count": 12,
+    "mnemonic": "Long corridor under a roof in a specific district."
+  },
+  {
+    "character": "廓",
+    "on_yomi": "KAKU",
+    "kun_yomi": "none",
+    "meaning": "Fortification / District",
+    "stroke_count": 14,
+    "mnemonic": "Wide walled area under a roof."
+  },
+  {
+    "character": "廟",
+    "on_yomi": "BYOU",
+    "kun_yomi": "tamaya",
+    "meaning": "Shrine / Mausoleum",
+    "stroke_count": 15,
+    "mnemonic": "Roof over a sacred hall for ancestors."
+  },
+  {
+    "character": "廠",
+    "on_yomi": "SHOU",
+    "kun_yomi": "none",
+    "meaning": "Workshop / Factory",
+    "stroke_count": 15,
+    "mnemonic": "Roof over a specialized honor/work field."
+  },
+  {
+    "character": "廖",
+    "on_yomi": "RYOU",
+    "kun_yomi": "none",
+    "meaning": "Silent / Empty",
+    "stroke_count": 14,
+    "mnemonic": "Roof over a person in a quiet valley."
+  },
+  {
+    "character": "慶",
+    "on_yomi": "KEI",
+    "kun_yomi": "yoroko-bu",
+    "meaning": "Rejoice / Congratulate",
+    "stroke_count": 15,
+    "mnemonic": "Heart under a roof and a deer; joyful celebration."
+  },
+  {
+    "character": "庇",
+    "on_yomi": "HI",
+    "kun_yomi": "none",
+    "meaning": "Eaves / Protect / Shield",
+    "stroke_count": 7,
+    "mnemonic": "A roof and a comparison/shielding hand."
+  },
+  {
+    "character": "庄",
+    "on_yomi": "SHOU",
+    "kun_yomi": "none",
+    "meaning": "Manor / Village / Villa",
+    "stroke_count": 6,
+    "mnemonic": "Earth and a roof; a small country estate."
+  },
+  {
+    "character": "廁",
+    "on_yomi": "SHI",
+    "kun_yomi": "none",
+    "meaning": "Toilet / Privy",
+    "stroke_count": 12,
+    "mnemonic": "A roof and a rule/measure; private room."
+  },
+  {
+    "character": "庸",
+    "on_yomi": "YOU",
+    "kun_yomi": "none",
+    "meaning": "Mediocre / Ordinary / Use",
+    "stroke_count": 11,
+    "mnemonic": "Roof and a person using a tool; commonplace."
+  },
+  {
+    "character": "廂",
+    "on_yomi": "SHOU",
+    "kun_yomi": "none",
+    "meaning": "Eaves / Side room",
+    "stroke_count": 12,
+    "mnemonic": "Roof and a tree/shining side; eaves."
+  },
+  {
+    "character": "庶",
+    "on_yomi": "SHO",
+    "kun_yomi": "none",
+    "meaning": "Common / All / Populace",
+    "stroke_count": 11,
+    "mnemonic": "Fire and a roof; many hearths/commoners."
+  },
+  {
+    "character": "庵",
+    "on_yomi": "AN",
+    "kun_yomi": "iori",
+    "meaning": "Hermitage / Retreat",
+    "stroke_count": 11,
+    "mnemonic": "Roof over a person/big area; a small retreat."
+  },
+  {
+    "character": "庚",
+    "on_yomi": "KOU",
+    "kun_yomi": "none",
+    "meaning": "Age / Year / Seventh",
+    "stroke_count": 8,
+    "mnemonic": "A roof over a person/hand; counting time."
+  },
+  {
+    "character": "蹂",
+    "on_yomi": "JUU",
+    "kun_yomi": "none",
+    "meaning": "Trample / Crush",
+    "stroke_count": 16,
+    "mnemonic": "A foot crushing something under it like a snake."
+  },
+  {
+    "character": "蹄",
+    "on_yomi": "TEI",
+    "kun_yomi": "hizume",
+    "meaning": "Hoof",
+    "stroke_count": 16,
+    "mnemonic": "A foot that is determined and hard like a hoof."
+  },
+  {
+    "character": "踵",
+    "on_yomi": "SHOU",
+    "kun_yomi": "kakato",
+    "meaning": "Heel",
+    "stroke_count": 16,
+    "mnemonic": "A foot and a heavy/duty mark; the heel."
+  },
+  {
+    "character": "躁",
+    "on_yomi": "SOU",
+    "kun_yomi": "none",
+    "meaning": "Fidgety / Impatient",
+    "stroke_count": 20,
+    "mnemonic": "A foot and a tree/birds; moving restlessly."
+  },
+  {
+    "character": "躇",
+    "on_yomi": "CHO",
+    "kun_yomi": "none",
+    "meaning": "Hesitate",
+    "stroke_count": 19,
+    "mnemonic": "A foot and a building/stopping; hesitating."
+  },
+  {
+    "character": "蹲",
+    "on_yomi": "SON",
+    "kun_yomi": "none",
+    "meaning": "Crouch / Squat",
+    "stroke_count": 19,
+    "mnemonic": "A foot and a person standing; squatting down."
+  },
+  {
+    "character": "躓",
+    "on_yomi": "CHI",
+    "kun_yomi": "none",
+    "meaning": "Stumble",
+    "stroke_count": 22,
+    "mnemonic": "A foot and a matter/quality; stumbling over value."
+  },
+  {
+    "character": "蹴",
+    "on_yomi": "SHUU",
+    "kun_yomi": "ke-ru",
+    "meaning": "Kick",
+    "stroke_count": 19,
+    "mnemonic": "A foot striking out at a target."
+  },
+  {
+    "character": "蹈",
+    "on_yomi": "TOU",
+    "kun_yomi": "none",
+    "meaning": "Tread / Trample / Step",
+    "stroke_count": 17,
+    "mnemonic": "A foot and a measurement/dipper; treading."
+  },
+  {
+    "character": "趾",
+    "on_yomi": "SHI",
+    "kun_yomi": "none",
+    "meaning": "Toe",
+    "stroke_count": 11,
+    "mnemonic": "Stop footprint foot."
+  },
+  {
+    "character": "踪",
+    "on_yomi": "SOU",
+    "kun_yomi": "none",
+    "meaning": "Trace / Footprint / Trail",
+    "stroke_count": 15,
+    "mnemonic": "A foot and an ancestor/hall; marking a trail."
+  },
+  {
+    "character": "跋",
+    "on_yomi": "BATSU",
+    "kun_yomi": "none",
+    "meaning": "Tread / Step / Epilogue",
+    "stroke_count": 12,
+    "mnemonic": "A foot and a hand/friend; stepping along."
+  },
+  {
+    "character": "践",
+    "on_yomi": "SEN",
+    "kun_yomi": "none",
+    "meaning": "Tread / Practice / Carry out",
+    "stroke_count": 13,
+    "mnemonic": "A foot and two small weapons; carrying out a task."
+  },
+  {
+    "character": "踉",
+    "on_yomi": "RYOU",
+    "kun_yomi": "none",
+    "meaning": "Stumble / Reel / Totter",
+    "stroke_count": 14,
+    "mnemonic": "A foot and a good/proper state; staggering."
+  },
+  {
+    "character": "踝",
+    "on_yomi": "KA",
+    "kun_yomi": "kurubushi",
+    "meaning": "Ankle",
+    "stroke_count": 15,
+    "mnemonic": "A foot and fruit/result; the ankle bone."
+  },
+  {
+    "character": "踟",
+    "on_yomi": "CHI",
+    "kun_yomi": "none",
+    "meaning": "Hesitate",
+    "stroke_count": 15,
+    "mnemonic": "A foot and knowledge/arrow; hesitating."
+  },
+  {
+    "character": "蹉",
+    "on_yomi": "SA",
+    "kun_yomi": "none",
+    "meaning": "Slip / Error / Stumble",
+    "stroke_count": 17,
+    "mnemonic": "A foot and differences/scraps; a slip."
+  },
+  {
+    "character": "躑",
+    "on_yomi": "TEKI",
+    "kun_yomi": "none",
+    "meaning": "Totter",
+    "stroke_count": 22,
+    "mnemonic": "A foot tottering near a district/building."
+  },
+  {
+    "character": "迹",
+    "on_yomi": "SEKI",
+    "kun_yomi": "ato",
+    "meaning": "Remains / Trace / Mark",
+    "stroke_count": 10,
+    "mnemonic": "Walking a path that is red/clear; a trace."
+  },
+  {
+    "character": "遁",
+    "on_yomi": "TON",
+    "kun_yomi": "none",
+    "meaning": "Escape / Flee / Hide",
+    "stroke_count": 13,
+    "mnemonic": "Walking a path to shield or flee/hide."
+  },
+  {
+    "character": "遘",
+    "on_yomi": "KOU",
+    "kun_yomi": "none",
+    "meaning": "Encounter / Meet",
+    "stroke_count": 14,
+    "mnemonic": "Walking a path to a formal meeting/encounter."
+  },
+  {
+    "character": "遏",
+    "on_yomi": "ATSU",
+    "kun_yomi": "none",
+    "meaning": "Prevent / Stop / Check",
+    "stroke_count": 13,
+    "mnemonic": "Walking a path to stop an omen/sign."
+  },
+  {
+    "character": "遄",
+    "on_yomi": "SEN",
+    "kun_yomi": "none",
+    "meaning": "Hurry / Rapid / Fast",
+    "stroke_count": 12,
+    "mnemonic": "Walking a path that is dedicated/specialized; fast."
+  },
+  {
+    "character": "躅",
+    "on_yomi": "CHOKU",
+    "kun_yomi": "none",
+    "meaning": "Trace / Footprint / Hesitate",
+    "stroke_count": 20,
+    "mnemonic": "A foot and an insect/insect-track; a trace."
+  },
+  {
+    "character": "逢",
+    "on_yomi": "HOU",
+    "kun_yomi": "a-u",
+    "meaning": "Meet / Encounter",
+    "stroke_count": 11,
+    "mnemonic": "Walking a path to meet someone."
+  },
+  {
+    "character": "逗",
+    "on_yomi": "TOU",
+    "kun_yomi": "none",
+    "meaning": "Pause / Stay",
+    "stroke_count": 11,
+    "mnemonic": "Walking a path and pausing at a bean/stop."
+  },
+  {
+    "character": "逮",
+    "on_yomi": "TAI",
+    "kun_yomi": "none",
+    "meaning": "Arrest / Catch",
+    "stroke_count": 11,
+    "mnemonic": "Walking a path to catch/arrest someone."
+  },
+  {
+    "character": "逞",
+    "on_yomi": "TEI",
+    "kun_yomi": "none",
+    "meaning": "Flaunt / Boast",
+    "stroke_count": 11,
+    "mnemonic": "Walking a path showing off."
+  },
+  {
+    "character": "逍",
+    "on_yomi": "SHOU",
+    "kun_yomi": "none",
+    "meaning": "Loiter / Ramble",
+    "stroke_count": 11,
+    "mnemonic": "Walking a path leisurely."
+  },
+  {
+    "character": "逖",
+    "on_yomi": "TEKI",
+    "kun_yomi": "none",
+    "meaning": "Distant / Remote",
+    "stroke_count": 11,
+    "mnemonic": "Walking a path far away."
+  },
+  {
+    "character": "逶",
+    "on_yomi": "I",
+    "kun_yomi": "none",
+    "meaning": "Winding / Meandering",
+    "stroke_count": 11,
+    "mnemonic": "Walking a winding path."
+  },
+  {
+    "character": "逵",
+    "on_yomi": "KI",
+    "kun_yomi": "none",
+    "meaning": "Crossroads",
+    "stroke_count": 11,
+    "mnemonic": "Walking to a crossroads."
+  },
+  {
+    "character": "逋",
+    "on_yomi": "HO",
+    "kun_yomi": "none",
+    "meaning": "Flee / Escape tax",
+    "stroke_count": 11,
+    "mnemonic": "Walking a path to flee."
+  },
+  {
+    "character": "逡",
+    "on_yomi": "SHUN",
+    "kun_yomi": "none",
+    "meaning": "Retreat / Hesitate",
+    "stroke_count": 11,
+    "mnemonic": "Walking a path and retreating."
+  },
+  {
+    "character": "遯",
+    "on_yomi": "TON",
+    "kun_yomi": "none",
+    "meaning": "Flee / Escape",
+    "stroke_count": 14,
+    "mnemonic": "Walking a path to escape."
+  },
+  {
+    "character": "遡",
+    "on_yomi": "SO",
+    "kun_yomi": "saka-noboru",
+    "meaning": "Go upstream / Trace back",
+    "stroke_count": 13,
+    "mnemonic": "Walking a path going back/upstream."
+  },
+  {
+    "character": "遍",
+    "on_yomi": "HEN",
+    "kun_yomi": "none",
+    "meaning": "Everywhere / All over",
+    "stroke_count": 12,
+    "mnemonic": "Walking a path everywhere."
+  },
+  {
+    "character": "遮",
+    "on_yomi": "SHA",
+    "kun_yomi": "none",
+    "meaning": "Intercept / Block",
+    "stroke_count": 14,
+    "mnemonic": "Walking a path to block."
+  },
+  {
+    "character": "遷",
+    "on_yomi": "SEN",
+    "kun_yomi": "none",
+    "meaning": "Transition / Move",
+    "stroke_count": 15,
+    "mnemonic": "Walking a path to move/transition."
+  },
+  {
+    "character": "邇",
+    "on_yomi": "JI",
+    "kun_yomi": "none",
+    "meaning": "Near / Approach",
+    "stroke_count": 16,
+    "mnemonic": "Walking a path approaching."
+  },
+  {
+    "character": "邉",
+    "on_yomi": "HEN",
+    "kun_yomi": "none",
+    "meaning": "Edge / Border",
+    "stroke_count": 16,
+    "mnemonic": "Walking a path at the edge."
+  },
+  {
+    "character": "邊",
+    "on_yomi": "HEN",
+    "kun_yomi": "none",
+    "meaning": "Border / Vicinity",
+    "stroke_count": 18,
+    "mnemonic": "Walking a path at the border."
+  },
+  {
+    "character": "躰",
+    "on_yomi": "TAI",
+    "kun_yomi": "karada",
+    "meaning": "Body / Form",
+    "stroke_count": 17,
+    "mnemonic": "The body and its form."
+  },
+  {
+    "character": "躱",
+    "on_yomi": "TA",
+    "kun_yomi": "none",
+    "meaning": "Dodge / Evade",
+    "stroke_count": 18,
+    "mnemonic": "The body dodging."
+  },
+  {
+    "character": "酎",
+    "on_yomi": "CHUU",
+    "kun_yomi": "none",
+    "meaning": "Sake / Refined sake",
+    "stroke_count": 10,
+    "mnemonic": "Sake jar and a inch; refined sake."
+  },
+  {
+    "character": "酌",
+    "on_yomi": "SHAKU",
+    "kun_yomi": "ku-mu",
+    "meaning": "Pour sake / Serve",
+    "stroke_count": 10,
+    "mnemonic": "Sake jar and a ladle; pouring sake."
+  },
+  {
+    "character": "酢",
+    "on_yomi": "SAKU",
+    "kun_yomi": "su",
+    "meaning": "Vinegar",
+    "stroke_count": 12,
+    "mnemonic": "Sake jar and a past; vinegar."
+  },
+  {
+    "character": "酩",
+    "on_yomi": "MEI",
+    "kun_yomi": "none",
+    "meaning": "Drunk / Tipsy",
+    "stroke_count": 13,
+    "mnemonic": "Sake jar and a name; drunk."
+  },
+  {
+    "character": "酵",
+    "on_yomi": "KOU",
+    "kun_yomi": "none",
+    "meaning": "Ferment / Yeast",
+    "stroke_count": 14,
+    "mnemonic": "Sake jar and a filial; ferment."
+  },
+  {
+    "character": "酷",
+    "on_yomi": "KOKU",
+    "kun_yomi": "none",
+    "meaning": "Cruel / Harsh",
+    "stroke_count": 14,
+    "mnemonic": "Sake jar and a inform; cruel."
+  },
+  {
+    "character": "酸",
+    "on_yomi": "SAN",
+    "kun_yomi": "su-i",
+    "meaning": "Acid / Sour",
+    "stroke_count": 14,
+    "mnemonic": "Sake jar and a scatter; sour."
+  },
+  {
+    "character": "酔",
+    "on_yomi": "SUI",
+    "kun_yomi": "yo-u",
+    "meaning": "Drunk / Intoxicated",
+    "stroke_count": 11,
+    "mnemonic": "Sake jar and a ninth; drunk."
+  },
+  {
+    "character": "醇",
+    "on_yomi": "JUN",
+    "kun_yomi": "none",
+    "meaning": "Pure / Genuine sake",
+    "stroke_count": 15,
+    "mnemonic": "Sake jar and a enjoy; pure."
+  },
+  {
+    "character": "醉",
+    "on_yomi": "SUI",
+    "kun_yomi": "none",
+    "meaning": "Drunk",
+    "stroke_count": 15,
+    "mnemonic": "Sake jar and a soldier; drunk."
+  },
+  {
+    "character": "醜",
+    "on_yomi": "SHUU",
+    "kun_yomi": "minikui",
+    "meaning": "Ugly / Shameful",
+    "stroke_count": 17,
+    "mnemonic": "Sake jar and a ghost; ugly."
+  },
+  {
+    "character": "醤",
+    "on_yomi": "SHOU",
+    "kun_yomi": "none",
+    "meaning": "Soy sauce / Paste",
+    "stroke_count": 17,
+    "mnemonic": "Sake jar and a general; soy sauce."
+  },
+  {
+    "character": "醪",
+    "on_yomi": "ROU",
+    "kun_yomi": "moromi",
+    "meaning": "Unrefined sake / Mash",
+    "stroke_count": 18,
+    "mnemonic": "Sake jar and a consider; mash."
+  },
+  {
+    "character": "醫",
+    "on_yomi": "I",
+    "kun_yomi": "none",
+    "meaning": "Medicine / Doctor",
+    "stroke_count": 18,
+    "mnemonic": "Sake jar and a heal; medicine."
+  },
+  {
+    "character": "醴",
+    "on_yomi": "REI",
+    "kun_yomi": "none",
+    "meaning": "Sweet sake",
+    "stroke_count": 20,
+    "mnemonic": "Sake jar and a ritual; sweet sake."
+  },
+  {
+    "character": "醺",
+    "on_yomi": "KUN",
+    "kun_yomi": "none",
+    "meaning": "Tipsy / Drunk",
+    "stroke_count": 20,
+    "mnemonic": "Sake jar and a smoke; tipsy."
+  },
+  {
+    "character": "醼",
+    "on_yomi": "EN",
+    "kun_yomi": "none",
+    "meaning": "Banquet / Feast",
+    "stroke_count": 20,
+    "mnemonic": "Sake jar and a feast; banquet."
+  },
+  {
+    "character": "醾",
+    "on_yomi": "MI",
+    "kun_yomi": "none",
+    "meaning": "Unrefined sake",
+    "stroke_count": 21,
+    "mnemonic": "Sake jar and a beauty; unrefined sake."
+  },
+  {
+    "character": "庖",
+    "on_yomi": "HOU",
+    "kun_yomi": "none",
+    "meaning": "Kitchen / Cook",
+    "stroke_count": 8,
+    "mnemonic": "Roof and a wrap; kitchen."
+  },
+  {
+    "character": "庠",
+    "on_yomi": "SHOU",
+    "kun_yomi": "none",
+    "meaning": "School / Academy",
+    "stroke_count": 9,
+    "mnemonic": "Roof and a sheep; school."
+  },
+  {
+    "character": "庥",
+    "on_yomi": "YUU",
+    "kun_yomi": "none",
+    "meaning": "Shade / Shelter",
+    "stroke_count": 9,
+    "mnemonic": "Roof and a rest; shade."
+  },
+  {
+    "character": "庤",
+    "on_yomi": "CHI",
+    "kun_yomi": "none",
+    "meaning": "Prepare / Store",
+    "stroke_count": 9,
+    "mnemonic": "Roof and a spoon; prepare."
+  },
+  {
+    "character": "庾",
+    "on_yomi": "YU",
+    "kun_yomi": "none",
+    "meaning": "Granary / Storehouse",
+    "stroke_count": 11,
+    "mnemonic": "Roof and a hand; granary."
+  },
+  {
+    "character": "庹",
+    "on_yomi": "TAKU",
+    "kun_yomi": "none",
+    "meaning": "Fathom / Measure",
+    "stroke_count": 11,
+    "mnemonic": "Roof and a hand measuring; fathom."
+  }
+]

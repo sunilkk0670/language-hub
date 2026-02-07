@@ -1,0 +1,810 @@
+[
+    {
+        "character": "感",
+        "on_yomi": "KAN",
+        "kun_yomi": "none",
+        "meaning": "Feeling / Emotion",
+        "stroke_count": 13,
+        "mnemonic": "A heart feeling the strike of an emotion."
+    },
+    {
+        "character": "像",
+        "on_yomi": "ZOU",
+        "kun_yomi": "none",
+        "meaning": "Image / Statue",
+        "stroke_count": 14,
+        "mnemonic": "A person creating the image of an elephant."
+    },
+    {
+        "character": "情",
+        "on_yomi": "JOU",
+        "kun_yomi": "none",
+        "meaning": "Sentiment / Condition",
+        "stroke_count": 11,
+        "mnemonic": "Heart and clean/pure; a sincere feeling."
+    },
+    {
+        "character": "論",
+        "on_yomi": "RON",
+        "kun_yomi": "none",
+        "meaning": "Theory / Argument",
+        "stroke_count": 15,
+        "mnemonic": "Words used in an organized book or scroll."
+    },
+    {
+        "character": "識",
+        "on_yomi": "SHIKI",
+        "kun_yomi": "none",
+        "meaning": "Knowledge / Discern",
+        "stroke_count": 19,
+        "mnemonic": "Words and a mark of deep understanding."
+    },
+    {
+        "character": "頼",
+        "on_yomi": "RAI",
+        "kun_yomi": "tano-mu",
+        "meaning": "Request / Rely",
+        "stroke_count": 16,
+        "mnemonic": "Bundling items to request help."
+    },
+    {
+        "character": "造",
+        "on_yomi": "ZOU",
+        "kun_yomi": "tsuku-ru",
+        "meaning": "Construct / Create",
+        "stroke_count": 10,
+        "mnemonic": "Walking on a road to build something."
+    },
+    {
+        "character": "完",
+        "on_yomi": "KAN",
+        "kun_yomi": "none",
+        "meaning": "Perfect / Complete",
+        "stroke_count": 7,
+        "mnemonic": "A roof built perfectly to the top."
+    },
+    {
+        "character": "期",
+        "on_yomi": "KI",
+        "kun_yomi": "none",
+        "meaning": "Period / Term",
+        "stroke_count": 12,
+        "mnemonic": "The moon rising over a village/sieve."
+    },
+    {
+        "character": "欲",
+        "on_yomi": "YOKU",
+        "kun_yomi": "ho-shii",
+        "meaning": "Greed / Want",
+        "stroke_count": 11,
+        "mnemonic": "A person yawning for more valley/greed."
+    },
+    {
+        "character": "招",
+        "on_yomi": "SHOU",
+        "kun_yomi": "mane-ku",
+        "meaning": "Beckon / Invite",
+        "stroke_count": 8,
+        "mnemonic": "A hand waving to invite someone in."
+    },
+    {
+        "character": "初",
+        "on_yomi": "SHO",
+        "kun_yomi": "haji-me",
+        "meaning": "First / Beginning",
+        "stroke_count": 7,
+        "mnemonic": "Cutting cloth for the first time."
+    },
+    {
+        "character": "準",
+        "on_yomi": "JUN",
+        "kun_yomi": "none",
+        "meaning": "Standard / Semi-",
+        "stroke_count": 13,
+        "mnemonic": "Water at the same level as a falcon; standard."
+    },
+    {
+        "character": "探",
+        "on_yomi": "TAN",
+        "kun_yomi": "saga-su",
+        "meaning": "Search / Probe",
+        "stroke_count": 11,
+        "mnemonic": "Hand searching a hole in a tree."
+    },
+    {
+        "character": "派",
+        "on_yomi": "HAI",
+        "kun_yomi": "none",
+        "meaning": "Sect / Faction",
+        "stroke_count": 9,
+        "mnemonic": "Water branching out like hands; a faction."
+    },
+    {
+        "character": "僚",
+        "on_yomi": "RYOU",
+        "kun_yomi": "none",
+        "meaning": "Colleague / Official",
+        "stroke_count": 12,
+        "mnemonic": "A person standing in the bright of office."
+    },
+    {
+        "character": "促",
+        "on_yomi": "SOKU",
+        "kun_yomi": "unaga-su",
+        "meaning": "Prompt / Urge",
+        "stroke_count": 9,
+        "mnemonic": "A person pushing someone forward on foot."
+    },
+    {
+        "character": "催",
+        "on_yomi": "SAI",
+        "kun_yomi": "moyo-osu",
+        "meaning": "Sponsor / Hold",
+        "stroke_count": 13,
+        "mnemonic": "A person gathering a mountain of items."
+    },
+    {
+        "character": "併",
+        "on_yomi": "HEI",
+        "kun_yomi": "awa-seru",
+        "meaning": "Combine / Jointly",
+        "stroke_count": 8,
+        "mnemonic": "A person putting two together."
+    },
+    {
+        "character": "依",
+        "on_yomi": "I",
+        "kun_yomi": "yo-ru",
+        "meaning": "Depend / Rely",
+        "stroke_count": 8,
+        "mnemonic": "A person wearing clothes; dependency."
+    },
+    {
+        "character": "侵",
+        "on_yomi": "SHIN",
+        "kun_yomi": "oka-su",
+        "meaning": "Invade / Encroach",
+        "stroke_count": 9,
+        "mnemonic": "A person using a tool to sweep over land."
+    },
+    {
+        "character": "俗",
+        "on_yomi": "ZOKU",
+        "kun_yomi": "none",
+        "meaning": "Custom / Vulgar",
+        "stroke_count": 9,
+        "mnemonic": "A person living in a valley; common custom."
+    },
+    {
+        "character": "倒",
+        "on_yomi": "TOU",
+        "kun_yomi": "tao-reru",
+        "meaning": "Collapse / Overthrow",
+        "stroke_count": 10,
+        "mnemonic": "A person arriving at their limit; falling."
+    },
+    {
+        "character": "傍",
+        "on_yomi": "BOU",
+        "kun_yomi": "kata-wara",
+        "meaning": "Side / Beside",
+        "stroke_count": 12,
+        "mnemonic": "A person standing on the side of a square."
+    },
+    {
+        "character": "償",
+        "on_yomi": "SHOU",
+        "kun_yomi": "tsuguna-u",
+        "meaning": "Compensate",
+        "stroke_count": 17,
+        "mnemonic": "A person giving a reward to settle a debt."
+    },
+    {
+        "character": "儒",
+        "on_yomi": "JU",
+        "kun_yomi": "none",
+        "meaning": "Confucian Scholar",
+        "stroke_count": 16,
+        "mnemonic": "A person who is needed like rain."
+    },
+    {
+        "character": "僧",
+        "on_yomi": "SOU",
+        "kun_yomi": "none",
+        "meaning": "Buddhist Priest",
+        "stroke_count": 13,
+        "mnemonic": "A person who has lived many years."
+    },
+    {
+        "character": "儀",
+        "on_yomi": "GI",
+        "kun_yomi": "none",
+        "meaning": "Ritual / Ceremony",
+        "stroke_count": 15,
+        "mnemonic": "A person acting with righteousness."
+    },
+    {
+        "character": "僅",
+        "on_yomi": "KIN",
+        "kun_yomi": "wazu-ka",
+        "meaning": "Slight / Only",
+        "stroke_count": 13,
+        "mnemonic": "A person with a narrow gap; tiny amount."
+    },
+    {
+        "character": "倫",
+        "on_yomi": "RIN",
+        "kun_yomi": "none",
+        "meaning": "Ethics / Logic",
+        "stroke_count": 10,
+        "mnemonic": "A person with an order/scroll."
+    },
+    {
+        "character": "俵",
+        "on_yomi": "HYOU",
+        "kun_yomi": "tawara",
+        "meaning": "Straw Bale",
+        "stroke_count": 10,
+        "mnemonic": "A person expressing the weight of grain."
+    },
+    {
+        "character": "倹",
+        "on_yomi": "KEN",
+        "kun_yomi": "none",
+        "meaning": "Frugal / Thrifty",
+        "stroke_count": 10,
+        "mnemonic": "A person being strict with coins."
+    },
+    {
+        "character": "健",
+        "on_yomi": "KEN",
+        "kun_yomi": "suko-yaka",
+        "meaning": "Healthy / Strong",
+        "stroke_count": 11,
+        "mnemonic": "A person writing a record of health."
+    },
+    {
+        "character": "傑",
+        "on_yomi": "KETSU",
+        "kun_yomi": "sugu-reru",
+        "meaning": "Greatness",
+        "stroke_count": 13,
+        "mnemonic": "A person standing like a tree."
+    },
+    {
+        "character": "偽",
+        "on_yomi": "GI",
+        "kun_yomi": "nise",
+        "meaning": "Fake / False",
+        "stroke_count": 11,
+        "mnemonic": "A person using an artificial action."
+    },
+    {
+        "character": "傘",
+        "on_yomi": "SAN",
+        "kun_yomi": "kasa",
+        "meaning": "Umbrella",
+        "stroke_count": 12,
+        "mnemonic": "Shelter for four people."
+    },
+    {
+        "character": "僻",
+        "on_yomi": "HEKI",
+        "kun_yomi": "hine-kureru",
+        "meaning": "Remote / Biased",
+        "stroke_count": 15,
+        "mnemonic": "A person in a wall-side place."
+    },
+    {
+        "character": "伝",
+        "on_yomi": "DEN",
+        "kun_yomi": "tsuta-eru",
+        "meaning": "Transmit / Report",
+        "stroke_count": 6,
+        "mnemonic": "A person carrying a cloud/message."
+    },
+    {
+        "character": "偶",
+        "on_yomi": "GUU",
+        "kun_yomi": "tama",
+        "meaning": "Accidentally / Chance",
+        "stroke_count": 11,
+        "mnemonic": "A person seeing a cornered monkey."
+    },
+    {
+        "character": "傲",
+        "on_yomi": "GOU",
+        "kun_yomi": "ogoru",
+        "meaning": "Pride / Haughty",
+        "stroke_count": 13,
+        "mnemonic": "A person standing tall over land."
+    },
+    {
+        "character": "優",
+        "on_yomi": "YUU",
+        "kun_yomi": "yasa-shii",
+        "meaning": "Excellent / Gentle",
+        "stroke_count": 17,
+        "mnemonic": "A person showing care/concern."
+    },
+    {
+        "character": "儲",
+        "on_yomi": "CHO",
+        "kun_yomi": "mou-keru",
+        "meaning": "Profit / Earn",
+        "stroke_count": 17,
+        "mnemonic": "A person with a diverse income."
+    },
+    {
+        "character": "傭",
+        "on_yomi": "YOU",
+        "kun_yomi": "none",
+        "meaning": "Employ / Hire",
+        "stroke_count": 13,
+        "mnemonic": "A person using a tool for a task."
+    },
+    {
+        "character": "傀",
+        "on_yomi": "KAI",
+        "kun_yomi": "none",
+        "meaning": "Puppet / Great",
+        "stroke_count": 12,
+        "mnemonic": "A person who is ghost-like/heavy."
+    },
+    {
+        "character": "倣",
+        "on_yomi": "HOU",
+        "kun_yomi": "nara-u",
+        "meaning": "Imitate / Follow",
+        "stroke_count": 10,
+        "mnemonic": "A person following a plan/direction."
+    },
+    {
+        "character": "俺",
+        "on_yomi": "EN",
+        "kun_yomi": "ore",
+        "meaning": "I (Male / Rough)",
+        "stroke_count": 10,
+        "mnemonic": "A person who is distinct/rough."
+    },
+    {
+        "character": "倦",
+        "on_yomi": "KEN",
+        "kun_yomi": "none",
+        "meaning": "Tired / Bored",
+        "stroke_count": 11,
+        "mnemonic": "A person wrapping up their day."
+    },
+    {
+        "character": "傾",
+        "on_yomi": "KEI",
+        "kun_yomi": "kata-muku",
+        "meaning": "Tilt / Lean",
+        "stroke_count": 13,
+        "mnemonic": "A person with a head leaning over."
+    },
+    {
+        "character": "傅",
+        "on_yomi": "FU",
+        "kun_yomi": "none",
+        "meaning": "Tutor / Nurse",
+        "stroke_count": 12,
+        "mnemonic": "A person assisting a specialist/child."
+    },
+    {
+        "character": "侶",
+        "on_yomi": "RYO",
+        "kun_yomi": "tomo",
+        "meaning": "Companion / Mate",
+        "stroke_count": 9,
+        "mnemonic": "A person standing with another in a spine-like bond."
+    },
+    {
+        "character": "侮",
+        "on_yomi": "BU",
+        "kun_yomi": "anado-ru",
+        "meaning": "Insult / Despise",
+        "stroke_count": 8,
+        "mnemonic": "A person treating someone like a small mother/nothing."
+    },
+    {
+        "character": "偵",
+        "on_yomi": "TEI",
+        "kun_yomi": "none",
+        "meaning": "Spy / Detective",
+        "stroke_count": 11,
+        "mnemonic": "A person standing straight for info."
+    },
+    {
+        "character": "倡",
+        "on_yomi": "SHOU",
+        "kun_yomi": "none",
+        "meaning": "Leader / Prostitute",
+        "stroke_count": 10,
+        "mnemonic": "A person with a bright sun-like voice."
+    },
+    {
+        "character": "倨",
+        "on_yomi": "KYO",
+        "kun_yomi": "none",
+        "meaning": "Haughty / Arrogant",
+        "stroke_count": 10,
+        "mnemonic": "A person sitting old and proud."
+    },
+    {
+        "character": "倩",
+        "on_yomi": "SEN",
+        "kun_yomi": "none",
+        "meaning": "Handsome / Borrow",
+        "stroke_count": 10,
+        "mnemonic": "A person with a clear blue/green spirit."
+    },
+    {
+        "character": "倪",
+        "on_yomi": "GEI",
+        "kun_yomi": "none",
+        "meaning": "Glance / To look",
+        "stroke_count": 10,
+        "mnemonic": "A person looking like a child/rising sun."
+    },
+    {
+        "character": "倬",
+        "on_yomi": "TAKU",
+        "kun_yomi": "none",
+        "meaning": "Great / Large",
+        "stroke_count": 10,
+        "mnemonic": "A person standing in the high sun."
+    },
+    {
+        "character": "倭",
+        "on_yomi": "WA",
+        "kun_yomi": "Yamato",
+        "meaning": "Japan / Yamato",
+        "stroke_count": 10,
+        "mnemonic": "A person who is harmonious/compliant."
+    },
+    {
+        "character": "倶",
+        "on_yomi": "GU",
+        "kun_yomi": "tomo-ni",
+        "meaning": "Together / Both",
+        "stroke_count": 10,
+        "mnemonic": "A person standing with a set of tools."
+    },
+    {
+        "character": "偃",
+        "on_yomi": "EN",
+        "kun_yomi": "none",
+        "meaning": "Rest / Lie down",
+        "stroke_count": 11,
+        "mnemonic": "A person lying on a platform."
+    },
+    {
+        "character": "偕",
+        "on_yomi": "KAI",
+        "kun_yomi": "tomo-ni",
+        "meaning": "Together",
+        "stroke_count": 11,
+        "mnemonic": "A person in a group/set."
+    },
+    {
+        "character": "偈",
+        "on_yomi": "GE",
+        "kun_yomi": "none",
+        "meaning": "Buddhist Verse",
+        "stroke_count": 11,
+        "mnemonic": "A person with a bright morning-chant."
+    },
+    {
+        "character": "偲",
+        "on_yomi": "SAI",
+        "kun_yomi": "shino-bu",
+        "meaning": "Reminisce",
+        "stroke_count": 11,
+        "mnemonic": "A person with many thoughts in the heart."
+    },
+    {
+        "character": "偏",
+        "on_yomi": "HEN",
+        "kun_yomi": "kata-yoru",
+        "meaning": "Bias / Partial",
+        "stroke_count": 11,
+        "mnemonic": "A person leaning too far toward one door."
+    },
+    {
+        "character": "偬",
+        "on_yomi": "SOU",
+        "kun_yomi": "isoga-shii",
+        "meaning": "Busy / Hurried",
+        "stroke_count": 11,
+        "mnemonic": "A person with a hurried heart."
+    },
+    {
+        "character": "偉",
+        "on_yomi": "I",
+        "kun_yomi": "era-i",
+        "meaning": "Great / Famous",
+        "stroke_count": 12,
+        "mnemonic": "A person standing out in leather/gear."
+    },
+    {
+        "character": "伴",
+        "on_yomi": "HAN",
+        "kun_yomi": "tomo-nau",
+        "meaning": "Accompany",
+        "stroke_count": 7,
+        "mnemonic": "A person who is half of a pair."
+    },
+    {
+        "character": "仰",
+        "on_yomi": "GYOU",
+        "kun_yomi": "ao-gu",
+        "meaning": "Look up / Respect",
+        "stroke_count": 6,
+        "mnemonic": "A person looking up at a stamp/authority."
+    },
+    {
+        "character": "伸",
+        "on_yomi": "SHIN",
+        "kun_yomi": "no-biru",
+        "meaning": "Extend / Stretch",
+        "stroke_count": 7,
+        "mnemonic": "A person standing straight for a report."
+    },
+    {
+        "character": "伺",
+        "on_yomi": "SHI",
+        "kun_yomi": "unuka-u",
+        "meaning": "Inquire / Visit",
+        "stroke_count": 7,
+        "mnemonic": "A person visiting an officer/command."
+    },
+    {
+        "character": "但",
+        "on_yomi": "TAN",
+        "kun_yomi": "tada-shi",
+        "meaning": "However / But",
+        "stroke_count": 7,
+        "mnemonic": "A person standing at sunrise with a limit."
+    },
+    {
+        "character": "伶",
+        "on_yomi": "REI",
+        "kun_yomi": "none",
+        "meaning": "Actor / Musician",
+        "stroke_count": 7,
+        "mnemonic": "A person who is clever in command."
+    },
+    {
+        "character": "侃",
+        "on_yomi": "KAN",
+        "kun_yomi": "none",
+        "meaning": "Upright / Strong",
+        "stroke_count": 8,
+        "mnemonic": "A person with a mouth and two poles; steady."
+    },
+    {
+        "character": "侑",
+        "on_yomi": "YUU",
+        "kun_yomi": "none",
+        "meaning": "Help / Urge",
+        "stroke_count": 8,
+        "mnemonic": "A person with a right hand/friend."
+    },
+    {
+        "character": "佼",
+        "on_yomi": "KOU",
+        "kun_yomi": "none",
+        "meaning": "Beautiful / Clever",
+        "stroke_count": 8,
+        "mnemonic": "A person matching high standards."
+    },
+    {
+        "character": "俘",
+        "on_yomi": "FU",
+        "kun_yomi": "none",
+        "meaning": "Captive",
+        "stroke_count": 9,
+        "mnemonic": "A person caught like a hatchling."
+    },
+    {
+        "character": "俟",
+        "on_yomi": "SHI",
+        "kun_yomi": "ma-tsu",
+        "meaning": "Wait / Expect",
+        "stroke_count": 9,
+        "mnemonic": "A person waiting at an altar/field."
+    },
+    {
+        "character": "俑",
+        "on_yomi": "YOU",
+        "kun_yomi": "none",
+        "meaning": "Burial Figurine",
+        "stroke_count": 9,
+        "mnemonic": "A person shape made of clay/case."
+    },
+    {
+        "character": "俔",
+        "on_yomi": "KEN",
+        "kun_yomi": "none",
+        "meaning": "Spy / Glimpse",
+        "stroke_count": 9,
+        "mnemonic": "A person watching like a child."
+    },
+    {
+        "character": "侠",
+        "on_yomi": "KYOU",
+        "kun_yomi": "none",
+        "meaning": "Chivalry",
+        "stroke_count": 8,
+        "mnemonic": "A person standing between two smaller ones."
+    },
+    {
+        "character": "僑",
+        "on_yomi": "KYOU",
+        "kun_yomi": "none",
+        "meaning": "Emigrant",
+        "stroke_count": 14,
+        "mnemonic": "A person who is tall/high above hometown."
+    },
+    {
+        "character": "僥",
+        "on_yomi": "GYOU",
+        "kun_yomi": "none",
+        "meaning": "Lucky / Chance",
+        "stroke_count": 14,
+        "mnemonic": "A person in a high/rare spot."
+    },
+    {
+        "character": "儚",
+        "on_yomi": "BOU",
+        "kun_yomi": "haka-nai",
+        "meaning": "Ephemeral / Faint",
+        "stroke_count": 13,
+        "mnemonic": "A person with a dream-like fragility."
+    },
+    {
+        "character": "僭",
+        "on_yomi": "SEN",
+        "kun_yomi": "none",
+        "meaning": "Usurp",
+        "stroke_count": 13,
+        "mnemonic": "A person taking a position by force."
+    },
+    {
+        "character": "僮",
+        "on_yomi": "DOU",
+        "kun_yomi": "none",
+        "meaning": "Servant / Youth",
+        "stroke_count": 15,
+        "mnemonic": "A person standing in the village/sun."
+    },
+    {
+        "character": "僵",
+        "on_yomi": "KYOU",
+        "kun_yomi": "none",
+        "meaning": "Stiff / Frozen",
+        "stroke_count": 15,
+        "mnemonic": "A person restricted as if in a frame."
+    },
+    {
+        "character": "儺",
+        "on_yomi": "NA",
+        "kun_yomi": "none",
+        "meaning": "Exorcism",
+        "stroke_count": 21,
+        "mnemonic": "A person clearing a home of birds/ghosts."
+    },
+    {
+        "character": "儼",
+        "on_yomi": "GEN",
+        "kun_yomi": "none",
+        "meaning": "Solemn / Dignified",
+        "stroke_count": 22,
+        "mnemonic": "A person standing strict and stern."
+    },
+    {
+        "character": "兆",
+        "on_yomi": "CHOU",
+        "kun_yomi": "kizashi",
+        "meaning": "Omen / Trillion",
+        "stroke_count": 6,
+        "mnemonic": "Cracks on a tortoise shell marking an omen."
+    },
+    {
+        "character": "兜",
+        "on_yomi": "TOU",
+        "kun_yomi": "kabuto",
+        "meaning": "Helmet",
+        "stroke_count": 11,
+        "mnemonic": "A person shape with a cap/head guard."
+    },
+    {
+        "character": "兢",
+        "on_yomi": "KYOU",
+        "kun_yomi": "none",
+        "meaning": "Cautious / Careful",
+        "stroke_count": 14,
+        "mnemonic": "Two people standing carefully on ice."
+    },
+    {
+        "character": "凋",
+        "on_yomi": "CHOU",
+        "kun_yomi": "shibo-mu",
+        "meaning": "Wither / Fade",
+        "stroke_count": 10,
+        "mnemonic": "Ice and a period of time; fading away."
+    },
+    {
+        "character": "凌",
+        "on_yomi": "RYOU",
+        "kun_yomi": "shino-gu",
+        "meaning": "Endure / Surpass",
+        "stroke_count": 10,
+        "mnemonic": "Ice and walking to the limit; enduring."
+    },
+    {
+        "character": "凛",
+        "on_yomi": "RIN",
+        "kun_yomi": "none",
+        "meaning": "Dignified / Cold",
+        "stroke_count": 15,
+        "mnemonic": "Ice and a storehouse-altar; noble cold."
+    },
+    {
+        "character": "凝",
+        "on_yomi": "GYOU",
+        "kun_yomi": "ko-ru",
+        "meaning": "Freeze / Congeal",
+        "stroke_count": 16,
+        "mnemonic": "Ice and suspicious steps; slowing to a stop."
+    },
+    {
+        "character": "凭",
+        "on_yomi": "HYOU",
+        "kun_yomi": "mota-reru",
+        "meaning": "Lean / Rest",
+        "stroke_count": 8,
+        "mnemonic": "Task/task on a desk/table; leaning on it."
+    },
+    {
+        "character": "凶",
+        "on_yomi": "KYOU",
+        "kun_yomi": "none",
+        "meaning": "Misfortune",
+        "stroke_count": 4,
+        "mnemonic": "A box with an X; bad omen."
+    },
+    {
+        "character": "凸",
+        "on_yomi": "TOTSU",
+        "kun_yomi": "none",
+        "meaning": "Convex / Bulge",
+        "stroke_count": 5,
+        "mnemonic": "Shape of something bulging out."
+    },
+    {
+        "character": "凹",
+        "on_yomi": "KOU",
+        "kun_yomi": "none",
+        "meaning": "Concave / Hollow",
+        "stroke_count": 5,
+        "mnemonic": "Shape of something hollowed out."
+    },
+    {
+        "character": "刀",
+        "on_yomi": "TOU",
+        "kun_yomi": "katana",
+        "meaning": "Sword / Blade",
+        "stroke_count": 2,
+        "mnemonic": "Shape of a curved blade."
+    },
+    {
+        "character": "刃",
+        "on_yomi": "JIN",
+        "kun_yomi": "ha",
+        "meaning": "Edge / Blade",
+        "stroke_count": 3,
+        "mnemonic": "A mark indicating the sharp edge of a sword."
+    }
+]

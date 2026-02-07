@@ -1,0 +1,802 @@
+[
+    {
+        "character": "治",
+        "kun_yomi": "おさ.まる, なお.す",
+        "on_yomi": "ジ, チ",
+        "meaning": "Govern / Cure",
+        "stroke_count": 8,
+        "mnemonic": "Watering (氵) and managing a platform (台) to keep things in order."
+    },
+    {
+        "character": "経",
+        "kun_yomi": "へ.る",
+        "on_yomi": "ケイ, キョウ",
+        "meaning": "Manage / Pass through",
+        "stroke_count": 11,
+        "mnemonic": "Thread (糸) passing through a loom's vertical warp."
+    },
+    {
+        "character": "済",
+        "kun_yomi": "す.む",
+        "on_yomi": "サイ, セイ",
+        "meaning": "Settle / Finish",
+        "stroke_count": 11,
+        "mnemonic": "Water (氵) crossing over to settle a debt or finish a task."
+    },
+    {
+        "character": "律",
+        "kun_yomi": "-",
+        "on_yomi": "リツ, リチ",
+        "meaning": "Law / Rhythm",
+        "stroke_count": 9,
+        "mnemonic": "Walking (彳) strictly by a written brush (聿) rule."
+    },
+    {
+        "character": "関",
+        "kun_yomi": "せき",
+        "on_yomi": "カン",
+        "meaning": "Relation / Barrier",
+        "stroke_count": 14,
+        "mnemonic": "Threads (𠔿) closing a gate (門) barrier; a connection."
+    },
+    {
+        "character": "係",
+        "kun_yomi": "かかり",
+        "on_yomi": "ケイ",
+        "meaning": "Connection / Charge",
+        "stroke_count": 9,
+        "mnemonic": "A person (亻) tied to a thread (系) of duty."
+    },
+    {
+        "character": "義",
+        "kun_yomi": "-",
+        "on_yomi": "ギ",
+        "meaning": "Justice / Meaning",
+        "stroke_count": 13,
+        "mnemonic": "A sheep (羊) over a weapon (我); sacrifice for a higher meaning."
+    },
+    {
+        "character": "議",
+        "kun_yomi": "-",
+        "on_yomi": "ギ",
+        "meaning": "Deliberation / Council",
+        "stroke_count": 20,
+        "mnemonic": "Words (言) used to discuss justice (義) in a meeting."
+    },
+    {
+        "character": "党",
+        "kun_yomi": "-",
+        "on_yomi": "トウ",
+        "meaning": "Political Party",
+        "stroke_count": 10,
+        "mnemonic": "A group under one roof (𝚫) with a brotherly (兄) bond."
+    },
+    {
+        "character": "予",
+        "kun_yomi": "あらかじ.め",
+        "on_yomi": "ヨ, シャ",
+        "meaning": "In advance",
+        "stroke_count": 4,
+        "mnemonic": "A shuttle used in weaving; everything is pre-planned."
+    },
+    {
+        "character": "約",
+        "kun_yomi": "-",
+        "on_yomi": "ヤク",
+        "meaning": "Promise / Shorten",
+        "stroke_count": 9,
+        "mnemonic": "Tying threads (糸) to create a binding promise."
+    },
+    {
+        "character": "権",
+        "kun_yomi": "おもり",
+        "on__yomi": "ケン, コン",
+        "meaning": "Authority / Rights",
+        "stroke_count": 15,
+        "mnemonic": "Wood (木) and a balanced bird (⻗); the power of the scale."
+    },
+    {
+        "character": "判",
+        "kun_yomi": "わか.る",
+        "on_yomi": "ハン, バン",
+        "meaning": "Judge / Signature",
+        "stroke_count": 7,
+        "mnemonic": "A knife (刂) dividing half (半) for a judgment."
+    },
+    {
+        "character": "状",
+        "kun_yomi": "-",
+        "on_yomi": "ジョウ",
+        "meaning": "Status / Condition",
+        "stroke_count": 7,
+        "mnemonic": "A dog (犬) and a turtle shell marker showing status."
+    },
+    {
+        "character": "因",
+        "kun_yomi": "よ.る",
+        "on_yomi": "イン",
+        "meaning": "Cause",
+        "stroke_count": 6,
+        "mnemonic": "A person (大) lying on a mat (囗); the original cause."
+    },
+    {
+        "character": "協",
+        "kun_yomi": "-",
+        "on_yomi": "キョウ",
+        "meaning": "Cooperation",
+        "stroke_count": 8,
+        "mnemonic": "Three powers (力) working together under a cross."
+    },
+    {
+        "character": "策",
+        "kun_yomi": "-",
+        "on_yomi": "サク",
+        "meaning": "Policy / Plan",
+        "stroke_count": 12,
+        "mnemonic": "Bamboo (竹) slips tied together as a written plan."
+    },
+    {
+        "character": "視",
+        "kun_yomi": "み.る",
+        "on_yomi": "シ",
+        "meaning": "Inspection / View",
+        "stroke_count": 11,
+        "mnemonic": "Looking (見) at an altar (示) for an omen or inspection."
+    },
+    {
+        "character": "選",
+        "kun_yomi": "えら.ぶ",
+        "on_yomi": "セン",
+        "meaning": "Select / Choose",
+        "stroke_count": 15,
+        "mnemonic": "Two people (㠯) together on a road (辶), choosing the path."
+    },
+    {
+        "character": "挙",
+        "kun_yomi": "あ.げる",
+        "on_yomi": "キョ",
+        "meaning": "Raise / Nominate",
+        "stroke_count": 10,
+        "mnemonic": "Hands lifting something up for a public vote."
+    },
+    {
+        "character": "果",
+        "kun_yomi": "は.たす",
+        "on_yomi": "カ",
+        "meaning": "Fruit / Result",
+        "stroke_count": 8,
+        "mnemonic": "Fruit growing on a tree (木) in a field (田)."
+    },
+    {
+        "character": "適",
+        "kun_yomi": "かな.う",
+        "on_yomi": "テキ",
+        "meaning": "Suitable",
+        "stroke_count": 14,
+        "mnemonic": "A road (辶) leading to the right ancient (古) spot."
+    },
+    {
+        "character": "誤",
+        "kun_yomi": "あやま.る",
+        "on_yomi": "GO",
+        "meaning": "Error / Mistake",
+        "stroke_count": 14,
+        "mnemonic": "Words (言) spoken that are too loud (呉) and wrong."
+    },
+    {
+        "character": "直",
+        "kun_yomi": "なお.す, ただ.ちに",
+        "on_yomi": "チョク, ジキ",
+        "meaning": "Fix / Direct",
+        "stroke_count": 8,
+        "mnemonic": "Ten (十) eyes (目) looking straight down at the line."
+    },
+    {
+        "character": "企",
+        "kun_yomi": "くわだ.てる",
+        "on_yomi": "キ",
+        "meaning": "Plan / Undertake",
+        "stroke_count": 6,
+        "mnemonic": "Stopping (止) under a roof (人) to plan the next move."
+    },
+    {
+        "character": "構",
+        "kun_yomi": "かま.える",
+        "on_yomi": "KOU",
+        "meaning": "Structure / Build",
+        "stroke_count": 14,
+        "mnemonic": "Wood (木) used to build a frame and interact (冓) parts."
+    },
+    {
+        "character": "欠",
+        "kun_yomi": "か.ける",
+        "on_yomi": "ケツ, ケン",
+        "meaning": "Lack / Gap",
+        "stroke_count": 4,
+        "mnemonic": "A person yawning; a gap in the breath or count."
+    },
+    {
+        "character": "設",
+        "kun_yomi": "もう.ける",
+        "on_yomi": "セツ",
+        "meaning": "Establish / Setup",
+        "stroke_count": 11,
+        "mnemonic": "Words (言) used to direct a tool task (殳)."
+    },
+    {
+        "character": "備",
+        "kun_yomi": "そな.える",
+        "on_yomi": "ビ",
+        "meaning": "Prepare",
+        "stroke_count": 12,
+        "mnemonic": "A person (亻) with many arrows in a quiver, ready."
+    },
+    {
+        "character": "営",
+        "kun_yomi": "いとな.む",
+        "on_yomi": "エイ",
+        "meaning": "Management / Run a shop",
+        "stroke_count": 12,
+        "mnemonic": "Managing fire ( fire) under a roof (宀) of a workplace."
+    },
+    {
+        "character": "害",
+        "kun_yomi": "-",
+        "on_yomi": "ガイ",
+        "meaning": "Harm / Damage",
+        "stroke_count": 10,
+        "mnemonic": "A mouth (口) under a roof causing words of injury."
+    },
+    {
+        "character": "配",
+        "kun_yomi": "くば.る",
+        "on_yomi": "ハイ",
+        "meaning": "Distribute",
+        "stroke_count": 10,
+        "mnemonic": "Handing out sake jars (酉) to people in order (已)."
+    },
+    {
+        "character": "検",
+        "kun_yomi": "-",
+        "on_yomi": "ケン",
+        "meaning": "Examination / Investigate",
+        "stroke_count": 12,
+        "mnemonic": "Wood (木) and a bundle (僉) of items for checking."
+    },
+    {
+        "character": "独",
+        "kun_yomi": "ひとり",
+        "on_yomi": "ドク",
+        "meaning": "Alone / Germany",
+        "stroke_count": 9,
+        "mnemonic": "A dog (犭) and an insect-like (虫) creature; unique/alone."
+    },
+    {
+        "character": "占",
+        "kun_yomi": "うらな.う",
+        "on_yomi": "セン",
+        "meaning": "Occupy / Fortune",
+        "stroke_count": 5,
+        "mnemonic": "A mouth (口) telling what the cracks (卜) in an oracle bone mean."
+    },
+    {
+        "character": "税",
+        "kun_yomi": "-",
+        "on_yomi": "ゼイ",
+        "meaning": "Tax",
+        "stroke_count": 12,
+        "mnemonic": "Grain (禾) harvested and exchanged (兑) for tax."
+    },
+    {
+        "character": "支",
+        "kun_yomi": "ささ.える",
+        "on_yomi": "シ",
+        "meaning": "Support / Branch",
+        "stroke_count": 4,
+        "mnemonic": "A hand (支) holding a branch for support."
+    },
+    {
+        "character": "比",
+        "kun_yomi": "くら.べる",
+        "on_yomi": "ヒ",
+        "meaning": "Compare",
+        "stroke_count": 4,
+        "mnemonic": "Two people standing side by side to compare."
+    },
+    {
+        "character": "収",
+        "kun_yomi": "おさ.める",
+        "on_yomi": "シュウ",
+        "meaning": "Income / Obtain",
+        "stroke_count": 4,
+        "mnemonic": "A hand (攵) gathering items into a net."
+    },
+    {
+        "character": "与",
+        "kun_yomi": "あた.える",
+        "on_yomi": "ヨ",
+        "meaning": "Give / Provide",
+        "stroke_count": 3,
+        "mnemonic": "Handing something over to another person."
+    },
+    {
+        "character": "及",
+        "kun_yomi": "およ.ぶ",
+        "on_yomi": "キュウ",
+        "meaning": "Reach / Extend",
+        "stroke_count": 3,
+        "mnemonic": "A hand catching up to a person from behind."
+    },
+    {
+        "character": "限",
+        "kun_yomi": "かぎ.る",
+        "on_yomi": "ゲン",
+        "meaning": "Limit",
+        "stroke_count": 9,
+        "mnemonic": "A silver (銀) barrier marking the boundary or limit."
+    },
+    {
+        "character": "額",
+        "kun_yomi": "ひたい",
+        "on_yomi": "ガク",
+        "meaning": "Amount / Forehead",
+        "stroke_count": 18,
+        "mnemonic": "The top/head (頁) of a value or important amount."
+    },
+    {
+        "character": "含",
+        "kun_yomi": "ふく.む",
+        "on_yomi": "ガン",
+        "meaning": "Include",
+        "stroke_count": 7,
+        "mnemonic": "Keeping something (今) in the mouth (口) right now."
+    },
+    {
+        "character": "領",
+        "kun_yomi": "-",
+        "on_yomi": "リョウ",
+        "meaning": "Territory / Domain",
+        "stroke_count": 14,
+        "mnemonic": "Leading (令) the head (頁) of a territory."
+    },
+    {
+        "character": "域",
+        "kun_yomi": "-",
+        "on_yomi": "イキ",
+        "meaning": "Region / Zone",
+        "stroke_count": 11,
+        "mnemonic": "Earth (土) with a wall/boundary (或) around it."
+    },
+    {
+        "character": "接",
+        "kun_yomi": "つ.ぐ",
+        "on_yomi": "セツ, ショウ",
+        "meaning": "Touch / Contact",
+        "stroke_count": 11,
+        "mnemonic": "Hand (扌) touching a standing (立) figure or receiver (女)."
+    },
+    {
+        "character": "反",
+        "kun_yomi": "そ.る",
+        "on_yomi": "ハン, ホン",
+        "meaning": "Anti / Opposite",
+        "stroke_count": 4,
+        "mnemonic": "A cliff (𠂆) and a hand (又) reaching back in opposition."
+    },
+    {
+        "character": "対",
+        "kun_yomi": "-",
+        "on_yomi": "タイ, ツイ",
+        "meaning": "Opposite / Versus",
+        "stroke_count": 7,
+        "mnemonic": "Holding (寸) a mark (文) to show the other side's match."
+    },
+    {
+        "character": "格",
+        "kun_yomi": "-",
+        "on_yomi": "カク, コウ",
+        "meaning": "Status / Case",
+        "stroke_count": 10,
+        "mnemonic": "Wood (木) that fits a particular standard or platform (各)."
+    },
+    {
+        "character": "規",
+        "kun_yomi": "-",
+        "on_yomi": "キ",
+        "meaning": "Rule / Standard",
+        "stroke_count": 11,
+        "mnemonic": "Watching (見) a husband's/man's (夫) compass for a rule."
+    },
+    {
+        "character": "財",
+        "kun_yomi": "-",
+        "on_yomi": "ザイ, サイ",
+        "meaning": "Finance / Wealth",
+        "stroke_count": 10,
+        "mnemonic": "Shells (貝) representing talent (才) and wealth."
+    },
+    {
+        "character": "様",
+        "kun_yomi": "さま",
+        "on_yomi": "ヨウ, ショウ",
+        "meaning": "Way / Honorific",
+        "stroke_count": 14,
+        "mnemonic": "Wood (木) and sheep (羊) in water; the formal way."
+    },
+    {
+        "character": "望",
+        "kun_yomi": "のぞ.む",
+        "on_yomi": "ボウ, モウ",
+        "meaning": "Hope / Desire",
+        "stroke_count": 11,
+        "mnemonic": "A person (𡈼) standing on ground watching the moon (月)."
+    },
+    {
+        "character": "調",
+        "kun_yomi": "しら.べる",
+        "on_yomi": "チョウ",
+        "meaning": "Investigate / Tone",
+        "stroke_count": 15,
+        "mnemonic": "Words (言) used for a formal survey or harmony (周)."
+    },
+    {
+        "character": "術",
+        "kun_yomi": "すべ",
+        "on_yomi": "ジュツ",
+        "meaning": "Art / Technique",
+        "stroke_count": 11,
+        "mnemonic": "A road (𡔇) and a plant center; a skilled procedure."
+    },
+    {
+        "character": "修",
+        "kun_yomi": "おさ.める",
+        "on_yomi": "シュウ, シュ",
+        "meaning": "Master / Discipline",
+        "stroke_count": 10,
+        "mnemonic": "Polishing a person with water (氵) and a brush."
+    },
+    {
+        "character": "証",
+        "kun_yomi": "あかし",
+        "on_yomi": "ショウ",
+        "meaning": "Proof / Evidence",
+        "stroke_count": 12,
+        "mnemonic": "Correct (正) words (言) used as undeniable proof."
+    },
+    {
+        "character": "録",
+        "kun_yomi": "しる.す",
+        "on_yomi": "ロク",
+        "meaning": "Record / Tape",
+        "stroke_count": 16,
+        "mnemonic": "Metal (金) and water (录) carved into a permanent record."
+    },
+    {
+        "character": "過",
+        "kun_yomi": "す.ぎる",
+        "on_yomi": "カ",
+        "meaning": "Overdo / Pass",
+        "stroke_count": 12,
+        "mnemonic": "Walking (辶) too far past a market marker (咼)."
+    },
+    {
+        "character": "能",
+        "kun_yomi": "あた.う",
+        "on_yomi": "ノウ",
+        "meaning": "Ability / Talent",
+        "stroke_count": 10,
+        "mnemonic": "A strong bear-like shape representing raw talent/ability."
+    },
+    {
+        "character": "昨",
+        "kun_yomi": "-",
+        "on_yomi": "サク",
+        "meaning": "Yesterday / Previous",
+        "stroke_count": 9,
+        "mnemonic": "The sun (日) of the previous (𠂉) day."
+    },
+    {
+        "character": "暮",
+        "kun_yomi": "く.らす",
+        "on_yomi": "ボ",
+        "meaning": "Live / Sunset",
+        "stroke_count": 14,
+        "mnemonic": "The sun (日) setting under the grass (艹) at day's end."
+    },
+    {
+        "character": "慣",
+        "kun_yomi": "な.れる",
+        "on_yomi": "カン",
+        "meaning": "Accustomed / Habit",
+        "stroke_count": 14,
+        "mnemonic": "Heart (忄) and shells (貫); getting used to money/life."
+    },
+    {
+        "character": "競",
+        "kun_yomi": "きそ.う",
+        "on_yomi": "キョウ, ケイ",
+        "meaning": "Compete",
+        "stroke_count": 20,
+        "mnemonic": "Two brothers (兄) standing up to compete for rank."
+    },
+    {
+        "character": "徒",
+        "kun_yomi": "いたずら",
+        "on_yomi": "ト",
+        "meaning": "Pupil / On foot",
+        "stroke_count": 10,
+        "mnemonic": "Walking (彳) on a path (走) as a learner."
+    },
+    {
+        "character": "復",
+        "kun_yomi": "また",
+        "on_yomi": "フク",
+        "meaning": "Restore / Return",
+        "stroke_count": 12,
+        "mnemonic": "Going back (彳) over the complex road (复)."
+    },
+    {
+        "character": "得",
+        "kun_yomi": "え.る",
+        "on_yomi": "トク",
+        "meaning": "Gain / Acquire",
+        "stroke_count": 11,
+        "mnemonic": "A hand (寸) and sun; gaining time or value through effort."
+    },
+    {
+        "character": "役",
+        "kun_yomi": "-",
+        "on_yomi": "ヤク, エキ",
+        "meaning": "Role / Use / Service",
+        "stroke_count": 7,
+        "mnemonic": "Walking (彳) to do a task with a tool (殳)."
+    },
+    {
+        "character": "必",
+        "kun_yomi": "かなら.ず",
+        "on_yomi": "ヒツ",
+        "meaning": "Necessary / Inevitable",
+        "stroke_count": 5,
+        "mnemonic": "A heart (心) crossed with a vital vital slash."
+    },
+    {
+        "character": "念",
+        "kun_yomi": "-",
+        "on_yomi": "ネン",
+        "meaning": "Thought / Sense",
+        "stroke_count": 8,
+        "mnemonic": "What is in the heart (心) right now (今)."
+    },
+    {
+        "character": "怒",
+        "kun_yomi": "おこ.る",
+        "on_yomi": "ド",
+        "meaning": "Angry",
+        "stroke_count": 9,
+        "mnemonic": "A slave girl's (𡚽) heart (心); being angry at one's status."
+    },
+    {
+        "character": "怖",
+        "kun_yomi": "こわ.い",
+        "on_yomi": "フ, ホ",
+        "meaning": "Scary / Frightened",
+        "stroke_count": 8,
+        "mnemonic": "Heart (忄) and cloth (布); shaking like a thin cloth."
+    },
+    {
+        "character": "恥",
+        "kun_yomi": "は.ず",
+        "on_yomi": "チ",
+        "meaning": "Shame / Dishonor",
+        "stroke_count": 10,
+        "mnemonic": "Ear (耳) and heart (心); ears turning red from shame."
+    },
+    {
+        "character": "息",
+        "kun_yomi": "いき",
+        "on_yomi": "ソク",
+        "meaning": "Breath / Son",
+        "stroke_count": 10,
+        "mnemonic": "One's self (自/nose) and heart (心); breathing in and out."
+    },
+    {
+        "character": "祈",
+        "kun_yomi": "いの.る",
+        "on_yomi": "キ",
+        "meaning": "To Pray",
+        "stroke_count": 8,
+        "mnemonic": "Altar (礻) and axe (斤); a sacrificial prayer or plea."
+    },
+    {
+        "character": "幸",
+        "kun_yomi": "さいわ.い, しあわ.せ",
+        "on_yomi": "コウ",
+        "meaning": "Happiness / Luck",
+        "stroke_count": 8,
+        "mnemonic": "Avoiding the earth and shackles; being fortunate."
+    },
+    {
+        "character": "福",
+        "kun_yomi": "-",
+        "on_yomi": "フク",
+        "meaning": "Fortune / Blessing",
+        "stroke_count": 13,
+        "mnemonic": "An altar (礻) and a jar (畐) full of wine/grain."
+    },
+    {
+        "character": "豊",
+        "kun_yomi": "ゆた.か",
+        "on_yomi": "ホウ, ブ",
+        "meaning": "Abundant",
+        "stroke_count": 13,
+        "mnemonic": "A tall bean (豆) on a mountain; plenty of food."
+    },
+    {
+        "character": "富",
+        "kun_yomi": "と.み",
+        "on_yomi": "フ, フウ",
+        "meaning": "Wealth / Enriched",
+        "stroke_count": 12,
+        "mnemonic": "A roof (宀) over a full field (畐); having much."
+    },
+    {
+        "character": "貧",
+        "kun_yomi": "まず.しい",
+        "on_yomi": "ヒン, ビン",
+        "meaning": "Poor / Needy",
+        "stroke_count": 11,
+        "mnemonic": "Dividing (分) shells (貝/money); having little left."
+    },
+    {
+        "character": "乏",
+        "kun_yomi": "とぼ.しい",
+        "on_yomi": "ボウ",
+        "meaning": "Scarce / Destitute",
+        "stroke_count": 4,
+        "mnemonic": "A person missing a step/line; lacking essentials."
+    },
+    {
+        "character": "凍",
+        "kun_yomi": "こお.る",
+        "on_yomi": "トウ",
+        "meaning": "Freeze",
+        "stroke_count": 10,
+        "mnemonic": "Ice (冫) and the east (東) wind; the freezing cold."
+    },
+    {
+        "character": "温",
+        "kun_yomi": "あたた.かい",
+        "on_yomi": "オン",
+        "meaning": "Warm (Liquid/Thing)",
+        "stroke_count": 12,
+        "mnemonic": "Water (氵) and sun (日) over a plate (皿); soup temperature."
+    },
+    {
+        "character": "湿",
+        "kun_yomi": "しめ.る",
+        "on_yomi": "シツ, シュウ",
+        "meaning": "Damp / Humid",
+        "stroke_count": 12,
+        "mnemonic": "Water (氵) and a sun over a hidden sun; very humid."
+    },
+    {
+        "character": "乾",
+        "kun_yomi": "かわ.く",
+        "on_yomi": "カン, ケン",
+        "meaning": "Dry / Drought",
+        "stroke_count": 11,
+        "mnemonic": "The sun (日) and steam rising from the ground."
+    },
+    {
+        "character": "騒",
+        "kun_yomi": "さわ.ぐ",
+        "on_yomi": "ソウ",
+        "meaning": "Noisy / Boisterous",
+        "stroke_count": 18,
+        "mnemonic": "A horse (馬) and a flea (蚤); jumping around noisily."
+    },
+    {
+        "character": "劇",
+        "kun_yomi": "-",
+        "on_yomi": "ゲキ",
+        "meaning": "Drama / Play / Sudden",
+        "stroke_count": 15,
+        "mnemonic": "A tiger (虍), a pig, and a knife (刂) in a dramatic scene."
+    },
+    {
+        "character": "舞",
+        "kun_yomi": "ま.う, まい",
+        "on_yomi": "ブ",
+        "meaning": "Dance / Flit",
+        "stroke_count": 15,
+        "mnemonic": "Feet moving under a person's formal clothes."
+    },
+    {
+        "character": "演",
+        "kun_yomi": "-",
+        "on_yomi": "エン",
+        "meaning": "Performance / Stage",
+        "stroke_count": 14,
+        "mnemonic": "Water (氵) and a person performing with a roof/frame."
+    },
+    {
+        "character": "奏",
+        "kun_yomi": "かな.でる",
+        "on_yomi": "ソウ",
+        "meaning": "Play music / Report",
+        "stroke_count": 9,
+        "mnemonic": "Hands holding a flute toward the sun to play."
+    },
+    {
+        "character": "芸",
+        "kun_yomi": "-",
+        "on_yomi": "ゲイ",
+        "meaning": "Art / Craft / Talent",
+        "stroke_count": 7,
+        "mnemonic": "Grass (艹) and a person (云/to say); skilled craft."
+    },
+    {
+        "character": "技",
+        "kun_yomi": "わざ",
+        "on_yomi": "ギ",
+        "meaning": "Skill / Technique",
+        "stroke_count": 7,
+        "mnemonic": "Hand (扌) and a branch/tool (支) showing mastery."
+    },
+    {
+        "character": "巧",
+        "kun_yomi": "たく.み",
+        "on_yomi": "コウ",
+        "meaning": "Adroit / Clever",
+        "stroke_count": 5,
+        "mnemonic": "Work (工) and a curved line (丂) showing dexterity."
+    },
+    {
+        "character": "妙",
+        "kun_yomi": "たえ",
+        "on_yomi": "ミョウ",
+        "meaning": "Strange / Exquisite",
+        "stroke_count": 7,
+        "mnemonic": "A young woman (女) appearing mysterious or exquisite (少)."
+    },
+    {
+        "character": "奇",
+        "kun_yomi": "く.しき",
+        "on_yomi": "キ",
+        "meaning": "Strange / Odd / Curious",
+        "stroke_count": 8,
+        "mnemonic": "A large person (大) over a mouth/jar (可); something out of the ordinary."
+    },
+    {
+        "character": "凡",
+        "kun_yomi": "-",
+        "on_yomi": "ボン, ハン",
+        "meaning": "Ordinary / Common",
+        "stroke_count": 3,
+        "mnemonic": "A simple table/frame with a single dot inside."
+    },
+    {
+        "character": "聖",
+        "kun_yomi": "ひじり",
+        "on_yomi": "セイ, ショウ",
+        "meaning": "Holy / Saint",
+        "stroke_count": 13,
+        "mnemonic": "Ear (耳), mouth (口), and king (𡈼); one who hears and speaks for the divine."
+    },
+    {
+        "character": "預",
+        "kun_yomi": "あず.ける",
+        "on_yomi": "ヨ",
+        "meaning": "Deposit / Entrust",
+        "stroke_count": 13,
+        "mnemonic": "Entrusting in advance (予) the head (頁) of a task or sum."
+    },
+    {
+        "character": "担",
+        "kun_yomi": "かなた.ぐ",
+        "on_yomi": "タン",
+        "meaning": "Shoulder / Carry / Head",
+        "stroke_count": 8,
+        "mnemonic": "Hand (扌) and sun (日); carrying the load from dawn."
+    }
+]

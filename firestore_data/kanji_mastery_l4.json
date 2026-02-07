@@ -790,5 +790,13 @@
         "meaning": "Plan / Suggestion",
         "stroke_count": 10,
         "mnemonic": "A woman (女) under a roof on a wooden (木) table - planning."
+    },
+    {
+        "character": "題",
+        "kun_yomi": "-",
+        "on_yomi": "ダイ",
+        "meaning": "Topic / Subject",
+        "stroke_count": 18,
+        "mnemonic": "The head (頁) of a correct (是) topic."
     }
 ]

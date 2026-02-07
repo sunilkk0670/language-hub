@@ -1,0 +1,802 @@
+[
+  {
+    "character": "駁",
+    "on_yomi": "BAKU",
+    "kun_yomi": "none",
+    "meaning": "Refute / Contradict / Mixed",
+    "stroke_count": 14,
+    "mnemonic": "A horse and a cross/crossing; clashing or refuting."
+  },
+  {
+    "character": "馴",
+    "on_yomi": "JUN",
+    "kun_yomi": "na-reru",
+    "meaning": "Tame / Familiar / Accustomed",
+    "stroke_count": 13,
+    "mnemonic": "A horse and a stream/river; flowing into a tame state."
+  },
+  {
+    "character": "馳",
+    "on_yomi": "CHI",
+    "kun_yomi": "ha-seru",
+    "meaning": "Run / Gallop / Dispatch",
+    "stroke_count": 13,
+    "mnemonic": "A horse and a person/also; galloping quickly."
+  },
+  {
+    "character": "馼",
+    "on_yomi": "BUN",
+    "kun_yomi": "none",
+    "meaning": "Red-maned horse",
+    "stroke_count": 14,
+    "mnemonic": "A horse with a literary/patterned mane."
+  },
+  {
+    "character": "騨",
+    "on_yomi": "TAN",
+    "kun_yomi": "none",
+    "meaning": "Dapple-grey horse",
+    "stroke_count": 19,
+    "mnemonic": "A horse with a simple/pure patterned skin."
+  },
+  {
+    "character": "驍",
+    "on_yomi": "GYOU",
+    "kun_yomi": "none",
+    "meaning": "Brave / Good horse",
+    "stroke_count": 22,
+    "mnemonic": "A horse and a high/shining peak; a brave steed."
+  },
+  {
+    "character": "驟",
+    "on_yomi": "SHUU",
+    "kun_yomi": "none",
+    "meaning": "Sudden / Frequent",
+    "stroke_count": 24,
+    "mnemonic": "A horse and a bunch/cluster; a sudden stampede."
+  },
+  {
+    "character": "驥",
+    "on_yomi": "KI",
+    "kun_yomi": "none",
+    "meaning": "Great horse / Talent",
+    "stroke_count": 27,
+    "mnemonic": "A horse with a specialized/field-like talent."
+  },
+  {
+    "character": "驩",
+    "on_yomi": "KAN",
+    "kun_yomi": "none",
+    "meaning": "Joy / Happy horse",
+    "stroke_count": 28,
+    "mnemonic": "A horse and an owl/shouting; a joyful trot."
+  },
+  {
+    "character": "驫",
+    "on_yomi": "HYOU",
+    "kun_yomi": "none",
+    "meaning": "Horses running",
+    "stroke_count": 30,
+    "mnemonic": "Three horses together; a massive stampede."
+  },
+  {
+    "character": "粒",
+    "on_yomi": "RYUU",
+    "kun_yomi": "tsubu",
+    "meaning": "Grain / Particle",
+    "stroke_count": 11,
+    "mnemonic": "Rice that stands up as a single grain."
+  },
+  {
+    "character": "粗",
+    "on_yomi": "SO",
+    "kun_yomi": "ara-i",
+    "meaning": "Coarse / Rough",
+    "stroke_count": 11,
+    "mnemonic": "Rice in its original or coarse state."
+  },
+  {
+    "character": "粘",
+    "on_yomi": "NEN",
+    "kun_yomi": "neba-ru",
+    "meaning": "Sticky / Glutinous / Persist",
+    "stroke_count": 11,
+    "mnemonic": "Rice that sticks to a point or station."
+  },
+  {
+    "character": "粧",
+    "on_yomi": "SHOU",
+    "kun_yomi": "none",
+    "meaning": "Cosmetics / Adorn",
+    "stroke_count": 12,
+    "mnemonic": "Rice and a hall standing together; makeup."
+  },
+  {
+    "character": "粥",
+    "on_yomi": "SHUKU",
+    "kun_yomi": "kayu",
+    "meaning": "Rice porridge / Gruel",
+    "stroke_count": 12,
+    "mnemonic": "Rice and a bow; thin, weak porridge."
+  },
+  {
+    "character": "糖",
+    "on_yomi": "TOU",
+    "kun_yomi": "none",
+    "meaning": "Sugar",
+    "stroke_count": 16,
+    "mnemonic": "Rice and a building standing on earth; sweet."
+  },
+  {
+    "character": "糞",
+    "on_yomi": "FUN",
+    "kun_yomi": "kuso",
+    "meaning": "Excrement / Feces",
+    "stroke_count": 17,
+    "mnemonic": "Rice and different items discarded as waste."
+  },
+  {
+    "character": "糟",
+    "on_yomi": "SOU",
+    "kun_yomi": "kasu",
+    "meaning": "Dregs / Sediment / Waste",
+    "stroke_count": 17,
+    "mnemonic": "Rice and an official/manager's leftovers; dregs."
+  },
+  {
+    "character": "糠",
+    "on_yomi": "KOU",
+    "kun_yomi": "nuka",
+    "meaning": "Rice bran",
+    "stroke_count": 17,
+    "mnemonic": "Rice and a healthy/stable measure; bran."
+  },
+  {
+    "character": "糧",
+    "on_yomi": "RYOU",
+    "kun_yomi": "kate",
+    "meaning": "Provisions / Food / Rations",
+    "stroke_count": 18,
+    "mnemonic": "Rice measured out for the village; sustenance."
+  },
+  {
+    "character": "糯",
+    "on_yomi": "DA",
+    "kun_yomi": "mochi",
+    "meaning": "Glutinous rice",
+    "stroke_count": 20,
+    "mnemonic": "Rice that is soft and sticky like a helper."
+  },
+  {
+    "character": "糴",
+    "on_yomi": "TEKI",
+    "kun_yomi": "none",
+    "meaning": "Buying grain",
+    "stroke_count": 22,
+    "mnemonic": "Rice and entering; buying grain into storage."
+  },
+  {
+    "character": "糶",
+    "on_yomi": "CHOU",
+    "kun_yomi": "none",
+    "meaning": "Selling grain",
+    "stroke_count": 25,
+    "mnemonic": "Rice and a dipper; selling grain out."
+  },
+  {
+    "character": "綴",
+    "on_yomi": "TEI",
+    "kun_yomi": "tsuzu-ru",
+    "meaning": "Compose / Spell / Bind",
+    "stroke_count": 14,
+    "mnemonic": "Threads and a stop/stay; binding a text."
+  },
+  {
+    "character": "緯",
+    "on_yomi": "I",
+    "kun_yomi": "none",
+    "meaning": "Latitude / Woof",
+    "stroke_count": 15,
+    "mnemonic": "Threads and a leather/hide; horizontal weave."
+  },
+  {
+    "character": "纂",
+    "on_yomi": "SAN",
+    "kun_yomi": "none",
+    "meaning": "Compile / Edit",
+    "stroke_count": 19,
+    "mnemonic": "Bamboo slips and threads; compiling a text."
+  },
+  {
+    "character": "纜",
+    "on_yomi": "RAN",
+    "kun_yomi": "tomozuna",
+    "meaning": "Cable / Hawser / Rope",
+    "stroke_count": 27,
+    "mnemonic": "Threads that are thick and seen as a sample."
+  },
+  {
+    "character": "駄",
+    "on_yomi": "DA",
+    "kun_yomi": "none",
+    "meaning": "Burdensome / Pack horse / Futile",
+    "stroke_count": 14,
+    "mnemonic": "A horse and a large/big burden; a pack horse."
+  },
+  {
+    "character": "駕",
+    "on_yomi": "GA",
+    "kun_yomi": "none",
+    "meaning": "Palanquin / Vehicle",
+    "stroke_count": 15,
+    "mnemonic": "A horse and a frame/addition; a carriage."
+  },
+  {
+    "character": "駿",
+    "on_yomi": "SHUN",
+    "kun_yomi": "none",
+    "meaning": "Excellent horse / Swift",
+    "stroke_count": 17,
+    "mnemonic": "A horse and a high/peak; a swift steed."
+  },
+  {
+    "character": "騎",
+    "on_yomi": "KI",
+    "kun_yomi": "none",
+    "meaning": "Ride / Cavalry",
+    "stroke_count": 18,
+    "mnemonic": "A horse that is strange/odd; riding."
+  },
+  {
+    "character": "粉",
+    "on_yomi": "FUN",
+    "kun_yomi": "kona",
+    "meaning": "Powder / Flour",
+    "stroke_count": 10,
+    "mnemonic": "Rice and a divide/split; ground powder."
+  },
+  {
+    "character": "粛",
+    "on_yomi": "SHUKU",
+    "kun_yomi": "none",
+    "meaning": "Solemn / Respectful / Purge",
+    "stroke_count": 11,
+    "mnemonic": "Rice and a person/respect; solemn."
+  },
+  {
+    "character": "粟",
+    "on_yomi": "ZOKU",
+    "kun_yomi": "awa",
+    "meaning": "Millet / Grain",
+    "stroke_count": 12,
+    "mnemonic": "West and rice; a grain type."
+  },
+  {
+    "character": "粳",
+    "on_yomi": "KOU",
+    "kun_yomi": "uruchi",
+    "meaning": "Non-glutinous rice",
+    "stroke_count": 13,
+    "mnemonic": "Rice and a more/further; regular rice."
+  },
+  {
+    "character": "粽",
+    "on_yomi": "SAKU",
+    "kun_yomi": "chimaki",
+    "meaning": "Rice dumpling",
+    "stroke_count": 14,
+    "mnemonic": "Rice and a bundle/wrap; wrapped rice."
+  },
+  {
+    "character": "糀",
+    "on_yomi": "KOU",
+    "kun_yomi": "kouji",
+    "meaning": "Rice malt / Koji",
+    "stroke_count": 14,
+    "mnemonic": "Rice and a flower/bloom; fermented rice."
+  },
+  {
+    "character": "糊",
+    "on_yomi": "KO",
+    "kun_yomi": "nori",
+    "meaning": "Paste / Glue / Starch",
+    "stroke_count": 15,
+    "mnemonic": "Rice and a lake/old; sticky paste."
+  },
+  {
+    "character": "糎",
+    "on_yomi": "SENCHI",
+    "kun_yomi": "none",
+    "meaning": "Centimeter",
+    "stroke_count": 9,
+    "mnemonic": "Rice and a unit/measure; metric unit."
+  },
+  {
+    "character": "糒",
+    "on_yomi": "HI",
+    "kun_yomi": "hoshii",
+    "meaning": "Dried rice / Provisions",
+    "stroke_count": 16,
+    "mnemonic": "Rice and a prepare/ready; dried food."
+  },
+  {
+    "character": "糜",
+    "on_yomi": "BI",
+    "kun_yomi": "none",
+    "meaning": "Porridge / Decay",
+    "stroke_count": 17,
+    "mnemonic": "Rice and a deer/beauty; soft porridge."
+  },
+  {
+    "character": "糲",
+    "on_yomi": "REI",
+    "kun_yomi": "none",
+    "meaning": "Unpolished rice",
+    "stroke_count": 25,
+    "mnemonic": "Rice and a severe/strict; rough rice."
+  },
+  {
+    "character": "紀",
+    "on_yomi": "KI",
+    "kun_yomi": "none",
+    "meaning": "Chronicle / Record / Era",
+    "stroke_count": 9,
+    "mnemonic": "Thread and self/oneself; recording."
+  },
+  {
+    "character": "紐",
+    "on_yomi": "CHUU",
+    "kun_yomi": "himo",
+    "meaning": "String / Cord / Strap",
+    "stroke_count": 10,
+    "mnemonic": "Thread and a ball/circle; a cord."
+  },
+  {
+    "character": "紗",
+    "on_yomi": "SHA",
+    "kun_yomi": "none",
+    "meaning": "Gauze / Thin silk",
+    "stroke_count": 10,
+    "mnemonic": "Thread and a few/little; thin fabric."
+  },
+  {
+    "character": "累",
+    "on_yomi": "RUI",
+    "kun_yomi": "none",
+    "meaning": "Accumulate / Involve / Trouble",
+    "stroke_count": 11,
+    "mnemonic": "Thread and a rice/field; piling up."
+  },
+  {
+    "character": "紬",
+    "on_yomi": "CHUU",
+    "kun_yomi": "tsumugi",
+    "meaning": "Pongee / Tsumugi silk",
+    "stroke_count": 11,
+    "mnemonic": "Thread and a reason/cause; woven silk."
+  },
+  {
+    "character": "組",
+    "on_yomi": "SO",
+    "kun_yomi": "kumi",
+    "meaning": "Group / Set / Assemble",
+    "stroke_count": 11,
+    "mnemonic": "Thread and a moreover/also; organizing."
+  },
+  {
+    "character": "絞",
+    "on_yomi": "KOU",
+    "kun_yomi": "shibo-ru",
+    "meaning": "Strangle / Wring / Squeeze",
+    "stroke_count": 12,
+    "mnemonic": "Thread and a mix/cross; wringing."
+  },
+  {
+    "character": "絡",
+    "on_yomi": "RAKU",
+    "kun_yomi": "kara-mu",
+    "meaning": "Entwine / Connect / Link",
+    "stroke_count": 12,
+    "mnemonic": "Thread and a each/every; entangling."
+  },
+  {
+    "character": "絢",
+    "on_yomi": "KEN",
+    "kun_yomi": "none",
+    "meaning": "Brilliant / Gorgeous",
+    "stroke_count": 12,
+    "mnemonic": "Thread and a revolve/rotate; gorgeous."
+  },
+  {
+    "character": "統",
+    "on_yomi": "TOU",
+    "kun_yomi": "su-beru",
+    "meaning": "Unify / Control / Lineage",
+    "stroke_count": 12,
+    "mnemonic": "Thread and a fill/충; unifying."
+  },
+  {
+    "character": "絵",
+    "on_yomi": "KAI",
+    "kun_yomi": "e",
+    "meaning": "Picture / Painting / Drawing",
+    "stroke_count": 12,
+    "mnemonic": "Thread and a meeting/会; a picture."
+  },
+  {
+    "character": "絶",
+    "on_yomi": "ZETSU",
+    "kun_yomi": "ta-eru",
+    "meaning": "Discontinue / Sever / Cut off",
+    "stroke_count": 12,
+    "mnemonic": "Thread and a color/色; cutting off."
+  },
+  {
+    "character": "絹",
+    "on_yomi": "KEN",
+    "kun_yomi": "kinu",
+    "meaning": "Silk",
+    "stroke_count": 13,
+    "mnemonic": "Thread and a mouth/opening; silk fabric."
+  },
+  {
+    "character": "続",
+    "on_yomi": "ZOKU",
+    "kun_yomi": "tsuzu-ku",
+    "meaning": "Continue / Series / Sequel",
+    "stroke_count": 13,
+    "mnemonic": "Thread and a sell/売; continuing."
+  },
+  {
+    "character": "綜",
+    "on_yomi": "SOU",
+    "kun_yomi": "none",
+    "meaning": "Arrange / Synthesize",
+    "stroke_count": 14,
+    "mnemonic": "Thread and a religion/宗; synthesizing."
+  },
+  {
+    "character": "綸",
+    "on_yomi": "RIN",
+    "kun_yomi": "none",
+    "meaning": "Silk thread / Fishing line",
+    "stroke_count": 14,
+    "mnemonic": "Thread and a wheel/倫; silk thread."
+  },
+  {
+    "character": "綺",
+    "on_yomi": "KI",
+    "kun_yomi": "none",
+    "meaning": "Beautiful / Elegant / Figured",
+    "stroke_count": 14,
+    "mnemonic": "Thread and a strange/奇; elegant."
+  },
+  {
+    "character": "綾",
+    "on_yomi": "RIN",
+    "kun_yomi": "aya",
+    "meaning": "Twill / Pattern / Figured cloth",
+    "stroke_count": 14,
+    "mnemonic": "Thread and a hill/陵; patterned fabric."
+  },
+  {
+    "character": "緑",
+    "on_yomi": "RYOKU",
+    "kun_yomi": "midori",
+    "meaning": "Green / Verdant",
+    "stroke_count": 14,
+    "mnemonic": "Thread and a record/録; green color."
+  },
+  {
+    "character": "線",
+    "on_yomi": "SEN",
+    "kun_yomi": "none",
+    "meaning": "Line / Wire / Track",
+    "stroke_count": 15,
+    "mnemonic": "Thread and a spring/泉; a line."
+  },
+  {
+    "character": "縞",
+    "on_yomi": "KOU",
+    "kun_yomi": "shima",
+    "meaning": "Stripe / Stripe pattern",
+    "stroke_count": 16,
+    "mnemonic": "Thread and a marquis/侯; striped."
+  },
+  {
+    "character": "縮",
+    "on_yomi": "SHUKU",
+    "kun_yomi": "chiji-mu",
+    "meaning": "Shrink / Contract / Reduce",
+    "stroke_count": 17,
+    "mnemonic": "Thread and a lodge/宿; shrinking."
+  },
+  {
+    "character": "繋",
+    "on_yomi": "KEI",
+    "kun_yomi": "tsuna-gu",
+    "meaning": "Connect / Tie / Link",
+    "stroke_count": 17,
+    "mnemonic": "Thread and a system/系; connecting."
+  },
+  {
+    "character": "繹",
+    "on_yomi": "YAKU",
+    "kun_yomi": "none",
+    "meaning": "Unravel / Deduce / Explain",
+    "stroke_count": 19,
+    "mnemonic": "Thread and a easy/睪; unraveling."
+  },
+  {
+    "character": "繻",
+    "on_yomi": "JU",
+    "kun_yomi": "none",
+    "meaning": "Silk fabric / Satin",
+    "stroke_count": 19,
+    "mnemonic": "Thread and a demand/需; silk."
+  },
+  {
+    "character": "纈",
+    "on_yomi": "KETSU",
+    "kun_yomi": "none",
+    "meaning": "Tie-dye / Figured cloth",
+    "stroke_count": 20,
+    "mnemonic": "Thread and a decide/穴; tie-dye."
+  },
+  {
+    "character": "纉",
+    "on_yomi": "SAN",
+    "kun_yomi": "none",
+    "meaning": "Inherit / Succeed",
+    "stroke_count": 20,
+    "mnemonic": "Thread and a continue/算; inheriting."
+  },
+  {
+    "character": "續",
+    "on_yomi": "ZOKU",
+    "kun_yomi": "none",
+    "meaning": "Continue / Sequel",
+    "stroke_count": 21,
+    "mnemonic": "Thread and a sell/賣; continuing."
+  },
+  {
+    "character": "計",
+    "on_yomi": "KEI",
+    "kun_yomi": "haka-ru",
+    "meaning": "Measure / Plan / Total",
+    "stroke_count": 9,
+    "mnemonic": "Word and a ten/十; calculating."
+  },
+  {
+    "character": "訟",
+    "on_yomi": "SHOU",
+    "kun_yomi": "none",
+    "meaning": "Lawsuit / Litigation",
+    "stroke_count": 11,
+    "mnemonic": "Word and a public/公; legal suit."
+  },
+  {
+    "character": "誄",
+    "on_yomi": "RUI",
+    "kun_yomi": "none",
+    "meaning": "Condolence / Eulogy",
+    "stroke_count": 13,
+    "mnemonic": "Word and a accumulate/累; eulogy."
+  },
+  {
+    "character": "誅",
+    "on_yomi": "CHUU",
+    "kun_yomi": "none",
+    "meaning": "Punish / Kill / Execute",
+    "stroke_count": 13,
+    "mnemonic": "Word and a vermillion/朱; punishment."
+  },
+  {
+    "character": "誉",
+    "on_yomi": "YO",
+    "kun_yomi": "home-ru",
+    "meaning": "Honor / Praise / Glory",
+    "stroke_count": 13,
+    "mnemonic": "Tiger and word; honor."
+  },
+  {
+    "character": "誦",
+    "on_yomi": "SHOU",
+    "kun_yomi": "none",
+    "meaning": "Recite / Chant",
+    "stroke_count": 14,
+    "mnemonic": "Word and a public/公; reciting."
+  },
+  {
+    "character": "誨",
+    "on_yomi": "KAI",
+    "kun_yomi": "oshi-eru",
+    "meaning": "Teach / Instruct / Admonish",
+    "stroke_count": 14,
+    "mnemonic": "Word and a every/毎; teaching."
+  },
+  {
+    "character": "誡",
+    "on_yomi": "KAI",
+    "kun_yomi": "none",
+    "meaning": "Admonish / Warn / Commandment",
+    "stroke_count": 14,
+    "mnemonic": "Word and a guard/戒; warning."
+  },
+  {
+    "character": "誑",
+    "on_yomi": "KOU",
+    "kun_yomi": "none",
+    "meaning": "Deceive / Delude / Cheat",
+    "stroke_count": 14,
+    "mnemonic": "Word and a wild/狂; deceiving."
+  },
+  {
+    "character": "誚",
+    "on_yomi": "SHOU",
+    "kun_yomi": "none",
+    "meaning": "Ridicule / Blame / Scold",
+    "stroke_count": 14,
+    "mnemonic": "Word and a small/肖; ridiculing."
+  },
+  {
+    "character": "誹",
+    "on_yomi": "HI",
+    "kun_yomi": "none",
+    "meaning": "Slander / Defame / Criticize",
+    "stroke_count": 15,
+    "mnemonic": "Word and a not/非; slander."
+  },
+  {
+    "character": "諂",
+    "on_yomi": "TEN",
+    "kun_yomi": "none",
+    "meaning": "Flatter / Fawn / Cajole",
+    "stroke_count": 15,
+    "mnemonic": "Word and a flat/扁; flattery."
+  },
+  {
+    "character": "諄",
+    "on_yomi": "JUN",
+    "kun_yomi": "none",
+    "meaning": "Tedious / Verbose / Repetitious",
+    "stroke_count": 15,
+    "mnemonic": "Word and a enjoy/享; tedious."
+  },
+  {
+    "character": "諌",
+    "on_yomi": "KAN",
+    "kun_yomi": "none",
+    "meaning": "Admonish / Remonstrate / Warn",
+    "stroke_count": 15,
+    "mnemonic": "Word and a bundle/東; admonishing."
+  },
+  {
+    "character": "諍",
+    "on_yomi": "SOU",
+    "kun_yomi": "none",
+    "meaning": "Dispute / Argue / Quarrel",
+    "stroke_count": 15,
+    "mnemonic": "Word and a contend/爭; arguing."
+  },
+  {
+    "character": "諏",
+    "on_yomi": "SHU",
+    "kun_yomi": "none",
+    "meaning": "Consult / Confer / Visit shrine",
+    "stroke_count": 15,
+    "mnemonic": "Word and a take/取; consulting."
+  },
+  {
+    "character": "諒",
+    "on_yomi": "RYOU",
+    "kun_yomi": "none",
+    "meaning": "Understand / Forgive / Excuse",
+    "stroke_count": 15,
+    "mnemonic": "Word and a capital/京; understanding."
+  },
+  {
+    "character": "諡",
+    "on_yomi": "SHI",
+    "kun_yomi": "none",
+    "meaning": "Posthumous name / Title",
+    "stroke_count": 16,
+    "mnemonic": "Word and a benefit/益; posthumous."
+  },
+  {
+    "character": "諤",
+    "on_yomi": "GAKU",
+    "kun_yomi": "none",
+    "meaning": "Speak frankly / Honest speech",
+    "stroke_count": 16,
+    "mnemonic": "Word and a jaw/顎; frank speech."
+  },
+  {
+    "character": "諳",
+    "on_yomi": "AN",
+    "kun_yomi": "none",
+    "meaning": "Memorize / Recite / Know by heart",
+    "stroke_count": 16,
+    "mnemonic": "Word and a sound/音; memorizing."
+  },
+  {
+    "character": "諶",
+    "on_yomi": "SHIN",
+    "kun_yomi": "none",
+    "meaning": "Sincerity / Truth / Fidelity",
+    "stroke_count": 16,
+    "mnemonic": "Word and a deep/甚; sincerity."
+  },
+  {
+    "character": "謄",
+    "on_yomi": "TOU",
+    "kun_yomi": "none",
+    "meaning": "Transcribe / Copy / Duplicate",
+    "stroke_count": 17,
+    "mnemonic": "Word and a moon/月; transcribing."
+  },
+  {
+    "character": "謗",
+    "on_yomi": "BOU",
+    "kun_yomi": "none",
+    "meaning": "Slander / Defame / Libel",
+    "stroke_count": 17,
+    "mnemonic": "Word and a side/旁; slander."
+  },
+  {
+    "character": "謚",
+    "on_yomi": "SHI",
+    "kun_yomi": "none",
+    "meaning": "Posthumous name / Epithet",
+    "stroke_count": 17,
+    "mnemonic": "Word and a benefit/益; posthumous."
+  },
+  {
+    "character": "謠",
+    "on_yomi": "YOU",
+    "kun_yomi": "none",
+    "meaning": "Ballad / Song / Rumor",
+    "stroke_count": 17,
+    "mnemonic": "Word and a shake/搖; a ballad."
+  },
+  {
+    "character": "謾",
+    "on_yomi": "MAN",
+    "kun_yomi": "none",
+    "meaning": "Ridicule / Slander / Abuse",
+    "stroke_count": 18,
+    "mnemonic": "Word and a wide/曼; ridicule."
+  },
+  {
+    "character": "譁",
+    "on_yomi": "KA",
+    "kun_yomi": "none",
+    "meaning": "Noisy / Clamor / Uproar",
+    "stroke_count": 18,
+    "mnemonic": "Word and a flower/華; clamor."
+  },
+  {
+    "character": "譎",
+    "on_yomi": "KETSU",
+    "kun_yomi": "none",
+    "meaning": "Cunning / Deceit / Stratagem",
+    "stroke_count": 19,
+    "mnemonic": "Word and a decide/矍; cunning."
+  },
+  {
+    "character": "譏",
+    "on_yomi": "KI",
+    "kun_yomi": "none",
+    "meaning": "Ridicule / Jeer / Criticize",
+    "stroke_count": 19,
+    "mnemonic": "Word and a how/幾; ridicule."
+  },
+  {
+    "character": "譖",
+    "on_yomi": "SHI",
+    "kun_yomi": "none",
+    "meaning": "Slander / False accusation",
+    "stroke_count": 20,
+    "mnemonic": "Word and a advance/替; slander."
+  }
+]
