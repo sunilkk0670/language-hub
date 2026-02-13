@@ -1,26 +1,35 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_vertexai/firebase_vertexai.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import '../models/chat_message.dart';
 import '../models/ai_tutor_response.dart';
 import '../models/ai_usage_tracker.dart';
 
 class AITutorService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  late final GenerativeModel _model;
   bool _initialized = false;
 
   /// Initialize Vertex AI model with function calling and grounding
   Future<void> initialize() async {
     if (_initialized) return;
 
-    // Ensure user is authenticated (required for Vertex AI)
-    if (FirebaseAuth.instance.currentUser == null) {
-      try {
-        await FirebaseAuth.instance.signInAnonymously();
-      } catch (e) {
-        print('Error signing in anonymously for AI: $e');
-      }
-    }
+    final vertexAI = FirebaseVertexAI.instance;
+    
+    _model = vertexAI.generativeModel(
+      model: 'gemini-2.0-flash-exp',
+      generationConfig: GenerationConfig(
+        temperature: 0.7,
+        maxOutputTokens: 1024,
+        topP: 0.95,
+      ),
+      tools: [
+        Tool(functionDeclarations: [
+          _getVocabularyFunction(),
+          _getKanjiFunction(),
+          _getModuleInfoFunction(),
+        ]),
+      ],
+    );
     
     _initialized = true;
   }
@@ -49,27 +58,8 @@ class AITutorService {
       currentModule: progress['currentModule'] ?? 1,
     );
 
-    // Create model dynamically to ensure system instruction matches current language
-    final vertexAI = FirebaseVertexAI.instance;
-    final model = vertexAI.generativeModel(
-      model: 'gemini-2.5-flash',
-      generationConfig: GenerationConfig(
-        temperature: 0.7,
-        maxOutputTokens: 1024,
-        topP: 0.95,
-      ),
-      systemInstruction: Content.system(systemInstruction),
-      tools: [
-        Tool(functionDeclarations: [
-          _getVocabularyFunction(),
-          _getKanjiFunction(),
-          _getModuleInfoFunction(),
-        ]),
-      ],
-    );
-
     // Create chat with history
-    final chat = model.startChat(
+    final chat = _model.startChat(
       history: _convertHistory(conversationHistory),
     );
 
@@ -79,13 +69,13 @@ class AITutorService {
     );
 
     // Handle function calls if present
-    if (response.functionCalls != null && response.functionCalls!.isNotEmpty) {
-      final functionResults = await _executeFunctionCalls(response.functionCalls!.toList());
+    if (response.functionCalls.isNotEmpty) {
+      final functionResults = await _executeFunctionCalls(response.functionCalls);
       
       // Send function results back to model
       final functionResponse = await chat.sendMessage(
         Content.functionResponses(
-          response.functionCalls!.map((call) {
+          response.functionCalls.map((call) {
             return FunctionResponse(
               call.name,
               functionResults[call.name] ?? {},
@@ -120,8 +110,7 @@ Student Profile:
 - Current module: Module $currentModule (out of 30)
 
 Guidelines:
-1. CRITICAL: You MUST respond in $targetLanguage only. Do not use other languages unless explicitly asked.
-2. Respond primarily in $targetLanguage with $nativeLanguage explanations when needed
+1. Respond primarily in $targetLanguage with $nativeLanguage explanations when needed
 2. Adjust vocabulary and grammar complexity to $cefrLevel level
 3. Use vocabulary from modules 1-$currentModule only
 4. Correct mistakes gently with explanations
@@ -275,37 +264,27 @@ Use these functions when the student asks about specific vocabulary or topics.
     try {
       final kanji = args['kanji'] as String;
 
-      // Search across all lessons in mastery_modules/japanese_kanji/lessons
-      final lessonsSnapshot = await _firestore
-          .collection('mastery_modules')
-          .doc('japanese_kanji')
-          .collection('lessons')
+      final kanjiDoc = await _firestore
+          .collection('languages')
+          .doc('japanese')
+          .collection('kanji')
+          .doc(kanji)
           .get();
 
-      // Search through each lesson's kanji_data array
-      for (final lessonDoc in lessonsSnapshot.docs) {
-        final kanjiDataList = lessonDoc.data()['kanji_data'] as List?;
-        if (kanjiDataList == null) continue;
-
-        // Find the matching Kanji character
-        for (final kanjiItem in kanjiDataList) {
-          if (kanjiItem['character'] == kanji) {
-            // Return the Kanji data in the expected format
-            return {
-              'kanji': kanji,
-              'meaning': kanjiItem['meaning'],
-              'on_yomi': kanjiItem['on_yomi'],
-              'kun_yomi': kanjiItem['kun_yomi'],
-              'stroke_count': kanjiItem['stroke_count'],
-              'mnemonic': kanjiItem['mnemonic'],
-              'jlpt_level': lessonDoc.data()['level'],
-              'lesson_name': lessonDoc.data()['name'],
-            };
-          }
-        }
+      if (!kanjiDoc.exists) {
+        return {'error': 'Kanji not found in database'};
       }
 
-      return {'error': 'Kanji not found in database'};
+      final data = kanjiDoc.data()!;
+      return {
+        'kanji': kanji,
+        'meanings': data['meanings'],
+        'onyomi': data['onyomi'],
+        'kunyomi': data['kunyomi'],
+        'strokeCount': data['strokeCount'],
+        'radicals': data['radicals'],
+        'exampleWords': data['exampleWords'],
+      };
     } catch (e) {
       return {'error': e.toString()};
     }
@@ -350,10 +329,6 @@ Use these functions when the student asks about specific vocabulary or topics.
     String userId,
     String targetLanguage,
   ) async {
-    if (userId == 'guest') {
-      return {'level': 'a1', 'currentModule': 1};
-    }
-
     try {
       final progressDoc = await _firestore
           .collection('users')
@@ -390,9 +365,6 @@ Use these functions when the student asks about specific vocabulary or topics.
 
   /// Check and enforce rate limiting
   Future<void> _checkRateLimit(String userId) async {
-    // Skip rate limiting for guest users (or handle locally if needed)
-    if (userId == 'guest') return;
-
     final today = DateTime.now().toIso8601String().split('T')[0];
     
     final usageDoc = await _firestore
@@ -433,8 +405,6 @@ Use these functions when the student asks about specific vocabulary or topics.
 
   /// Get remaining requests for today
   Future<int> getRemainingRequests(String userId) async {
-    if (userId == 'guest') return 50;
-
     final today = DateTime.now().toIso8601String().split('T')[0];
     
     final usageDoc = await _firestore

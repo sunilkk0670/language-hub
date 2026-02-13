@@ -9,11 +9,9 @@ import 'features/curriculum/presentation/pages/firestore_test_page.dart';
 import 'features/auth/presentation/pages/login_page.dart';
 import 'features/legal/presentation/pages/compliance_page.dart';
 import 'features/info/presentation/pages/about_page.dart';
-import 'features/auth/domain/entities/user_entity.dart';
 import 'features/auth/presentation/providers/auth_providers.dart';
 import 'features/curriculum/presentation/providers/curriculum_provider.dart';
 import 'screens/ai_tutor_screen.dart';
-
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -104,14 +102,15 @@ class ChirpPollyApp extends ConsumerWidget {
           return MaterialPageRoute(
             builder: (context) {
               // Import the AI Tutor screen
-              // AI Tutor has its own language selector, no need for provider
+              // We'll use a Consumer to get the selected language
               return Consumer(
                 builder: (context, ref, _) {
                   final user = ref.watch(authStateProvider).valueOrNull;
+                  final selectedLanguage = ref.watch(selectedLanguageProvider);
                   
                   // Import the screen here to avoid circular dependencies
                   return _buildAITutorScreen(
-                    targetLanguage: 'Spanish', // Default, user can change via dropdown
+                    targetLanguage: selectedLanguage ?? 'Spanish',
                     nativeLanguage: 'English',
                     userId: user?.uid ?? 'guest',
                   );
@@ -120,7 +119,6 @@ class ChirpPollyApp extends ConsumerWidget {
             },
           );
         }
-
         return null;
       },
     );
@@ -139,6 +137,4 @@ Widget _buildAITutorScreen({
     userId: userId,
   );
 }
-
-
 
