@@ -49,6 +49,16 @@ class AppDrawer extends StatelessWidget {
                 ),
                 _buildDrawerItem(
                   context,
+                  icon: Icons.psychology_rounded,
+                  title: 'AI Tutor',
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/ai-tutor');
+                  },
+                ),
+
+                _buildDrawerItem(
+                  context,
                   icon: Icons.person_rounded,
                   title: 'Profile',
                   onTap: () {

@@ -13,11 +13,18 @@ class HomePage extends ConsumerStatefulWidget {
   ConsumerState<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderStateMixin {
+class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMixin {
   final ScrollController _scrollController = ScrollController();
   final GlobalKey _languagesKey = GlobalKey();
   late AnimationController _parrotController;
   late Animation<double> _parrotAnimation;
+  late AnimationController _pulseController;
+  late Animation<double> _pulseAnimation;
+  late AnimationController _headlineController;
+  late Animation<double> _headlineFadeStart;
+  late Animation<double> _headlineFadeChirp;
+  late Animation<Offset> _headlineSlideStart;
+  late Animation<Offset> _headlineSlideChirp;
 
   void _scrollToSection(GlobalKey key) {
     final context = key.currentContext;
@@ -33,20 +40,73 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
   @override
   void initState() {
     super.initState();
+    // 1. Slow Parrot Float Animation (4.5s)
     _parrotController = AnimationController(
-      duration: const Duration(seconds: 3),
+      duration: const Duration(milliseconds: 4500),
       vsync: this,
     )..repeat(reverse: true);
     
-    _parrotAnimation = Tween<double>(begin: -10, end: 10).animate(
-      CurvedAnimation(parent: _parrotController, curve: Curves.easeInOut),
+    _parrotAnimation = Tween<double>(begin: -15, end: 15).animate(
+      CurvedAnimation(parent: _parrotController, curve: Curves.easeInOutSine),
     );
+
+    // 2. Continuous Pulse Animation for CTA (4s cycle)
+    _pulseController = AnimationController(
+      duration: const Duration(seconds: 4),
+      vsync: this,
+    )..repeat();
+
+    _pulseAnimation = TweenSequence<double>([
+      TweenSequenceItem(tween: ConstantTween<double>(1.0), weight: 70), // Stay still for ~2.8s
+      TweenSequenceItem(
+        tween: Tween<double>(begin: 1.0, end: 1.05).chain(CurveTween(curve: Curves.easeOut)), 
+        weight: 15
+      ), // Pulse up
+      TweenSequenceItem(
+        tween: Tween<double>(begin: 1.05, end: 1.0).chain(CurveTween(curve: Curves.easeIn)), 
+        weight: 15
+      ), // Return
+    ]).animate(_pulseController);
+
+    // 3. Staggered Headline Entrance (0ms and 300ms)
+    _headlineController = AnimationController(
+      duration: const Duration(milliseconds: 2000),
+      vsync: this,
+    );
+
+    _headlineFadeStart = CurvedAnimation(
+      parent: _headlineController,
+      curve: const Interval(0.0, 0.4, curve: Curves.easeOut),
+    );
+    _headlineSlideStart = Tween<Offset>(
+      begin: const Offset(0, 0.3),
+      end: Offset.zero,
+    ).animate(CurvedAnimation(
+      parent: _headlineController,
+      curve: const Interval(0.0, 0.4, curve: Curves.easeOutCubic),
+    ));
+
+    _headlineFadeChirp = CurvedAnimation(
+      parent: _headlineController,
+      curve: const Interval(0.15, 0.55, curve: Curves.easeOut),
+    );
+    _headlineSlideChirp = Tween<Offset>(
+      begin: const Offset(0, 0.3),
+      end: Offset.zero,
+    ).animate(CurvedAnimation(
+      parent: _headlineController,
+      curve: const Interval(0.15, 0.55, curve: Curves.easeOutCubic),
+    ));
+
+    _headlineController.forward();
   }
 
   @override
   void dispose() {
     _scrollController.dispose();
     _parrotController.dispose();
+    _pulseController.dispose();
+    _headlineController.dispose();
     super.dispose();
   }
 
@@ -233,6 +293,35 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                               color: Colors.grey.shade800,
                               fontSize: 16,
                               fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        // AI Tutor button
+                        Container(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [
+                                const Color(0xFF6A4CBC).withValues(alpha: 0.15),
+                                const Color(0xFF2E3192).withValues(alpha: 0.15),
+                              ],
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: TextButton.icon(
+                            onPressed: () => Navigator.pushNamed(context, '/ai-tutor'),
+                            icon: const Icon(
+                              Icons.psychology_rounded,
+                              color: Color(0xFF6A4CBC),
+                              size: 20,
+                            ),
+                            label: const Text(
+                              'AI Tutor',
+                              style: TextStyle(
+                                color: Color(0xFF6A4CBC),
+                                fontSize: 16,
+                                fontWeight: FontWeight.w700,
+                              ),
                             ),
                           ),
                         ),
@@ -439,26 +528,65 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                             children: [
                               Padding(
                                 padding: const EdgeInsets.only(bottom: 20),
-                                child: FittedBox(
-                                  fit: BoxFit.scaleDown,
-                                  child: ShaderMask(
-                                    shaderCallback: (bounds) => const LinearGradient(
-                                      colors: [Color(0xFF2E3192), Color(0xFF6A4CBC)],
-                                    ).createShader(bounds),
-                                    child: Text(
-                                      'Don\'t Just Learn.\nStart Chirping.',
-                                      style: TextStyle(
-                                        fontSize: isDesktop ? 64 : 42,
-                                        fontWeight: FontWeight.bold, // Bold
-                                        color: Colors.white,
-                                        height: 1.25,
-                                        letterSpacing: -0.5, // Tight letter spacing
+                                child: AnimatedBuilder(
+                                  animation: _headlineController,
+                                  builder: (context, child) {
+                                    return FittedBox(
+                                      fit: BoxFit.scaleDown,
+                                      child: ShaderMask(
+                                        shaderCallback: (bounds) => const LinearGradient(
+                                          colors: [Color(0xFF2E3192), Color(0xFF6A4CBC)],
+                                        ).createShader(bounds),
+                                        child: Column(
+                                          crossAxisAlignment: isDesktop
+                                              ? CrossAxisAlignment.start
+                                              : CrossAxisAlignment.center,
+                                          children: [
+                                            // "Don't Just Learn."
+                                            FadeTransition(
+                                              opacity: _headlineFadeStart,
+                                              child: SlideTransition(
+                                                position: _headlineSlideStart,
+                                                child: Text(
+                                                  'Don\'t Just Learn.',
+                                                  style: TextStyle(
+                                                    fontSize: isDesktop ? 64 : 42,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
+                                                    height: 1.1,
+                                                    letterSpacing: -0.5,
+                                                  ),
+                                                  textAlign: isDesktop
+                                                      ? TextAlign.start
+                                                      : TextAlign.center,
+                                                ),
+                                              ),
+                                            ),
+                                            // "Start Chirping."
+                                            FadeTransition(
+                                              opacity: _headlineFadeChirp,
+                                              child: SlideTransition(
+                                                position: _headlineSlideChirp,
+                                                child: Text(
+                                                  'Start Chirping.',
+                                                  style: TextStyle(
+                                                    fontSize: isDesktop ? 64 : 42,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
+                                                    height: 1.1,
+                                                    letterSpacing: -0.5,
+                                                  ),
+                                                  textAlign: isDesktop
+                                                      ? TextAlign.start
+                                                      : TextAlign.center,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
-                                      textAlign: isDesktop
-                                          ? TextAlign.start
-                                          : TextAlign.center,
-                                    ),
-                                  ),
+                                    );
+                                  },
                                 ),
                               ),
                               const SizedBox(height: 24),
@@ -482,32 +610,41 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                               const SizedBox(height: 48),
                               
                               // CTA Button
-                              Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(50),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: const Color(0xFF6A4CBC).withValues(alpha: 0.3),
-                                      offset: const Offset(0, 4),
-                                      blurRadius: 10,
-                                    ),
-                                  ],
-                                ),
-                                child: ElevatedButton(
-                                  onPressed: () => Navigator.pushNamed(context, '/languages'),
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: const Color(0xFF6A4CBC), // Solid Purple
-                                    foregroundColor: Colors.white,
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 48, vertical: 24),
-                                    shape: const StadiumBorder(), // Fully rounded
-                                    elevation: 0, // Using Container shadow instead for specific look
+                              AnimatedBuilder(
+                                animation: _pulseAnimation,
+                                builder: (context, child) {
+                                  return Transform.scale(
+                                    scale: _pulseAnimation.value,
+                                    child: child,
+                                  );
+                                },
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(50),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: const Color(0xFF6A4CBC).withValues(alpha: 0.3),
+                                        offset: const Offset(0, 4),
+                                        blurRadius: 10,
+                                      ),
+                                    ],
                                   ),
-                                  child: const Text(
-                                    'Start Learning Now',
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
+                                  child: ElevatedButton(
+                                    onPressed: () => Navigator.pushNamed(context, '/languages'),
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor: const Color(0xFF6A4CBC), // Solid Purple
+                                      foregroundColor: Colors.white,
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 48, vertical: 24),
+                                      shape: const StadiumBorder(), // Fully rounded
+                                      elevation: 0, // Using Container shadow instead for specific look
+                                    ),
+                                    child: const Text(
+                                      'Start Learning Now',
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -1237,6 +1374,20 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/about');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.psychology_rounded, color: Color(0xFF6A4CBC)),
+              title: const Text(
+                'AI Tutor',
+                style: TextStyle(
+                  color: Color(0xFF6A4CBC),
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/ai-tutor');
               },
             ),
             const Divider(),

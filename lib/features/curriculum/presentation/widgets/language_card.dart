@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../pages/levels_page.dart';
 import '../pages/language_mastery_paths_page.dart';
+import '../providers/curriculum_provider.dart';
 
 class LanguageCard extends StatefulWidget {
   final String languageId;
@@ -77,6 +78,9 @@ class _LanguageCardState extends State<LanguageCard> {
               builder: (context, ref, child) {
                 return InkWell(
                   onTap: () {
+                    // Update the selected language provider
+                    ref.read(selectedLanguageProvider.notifier).state = widget.name;
+                    
                     if (widget.languageId.toLowerCase() == 'japanese') {
                       Navigator.push(
                         context,

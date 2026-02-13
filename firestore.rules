@@ -43,6 +43,15 @@ service cloud.firestore {
           allow write: if isAdmin();
         }
       }
+      
+      // Kanji sub-collection (for Japanese language)
+      match /kanji/{kanjiId} {
+        // TEMPORARY: Allow public read for development
+        allow read: if true;
+        
+        // Only admins can write
+        allow write: if isAdmin();
+      }
     }
     
     // ============================================
@@ -90,6 +99,17 @@ service cloud.firestore {
       match /progress/{document=**} {
         allow read: if isAuthenticated() && request.auth.uid == userId;
         allow write: if isAuthenticated() && request.auth.uid == userId;
+      }
+      
+      // AI usage tracking
+      match /ai_usage/{date} {
+        // Users can read their own usage
+        allow read: if isAuthenticated() && request.auth.uid == userId;
+        
+        // Users can write their own usage (for incrementing counter)
+        allow write: if isAuthenticated() && 
+                        request.auth.uid == userId &&
+                        request.resource.data.requestCount <= 50; // Enforce limit
       }
       
       match /achievements/{document=**} {

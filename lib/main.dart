@@ -11,6 +11,9 @@ import 'features/legal/presentation/pages/compliance_page.dart';
 import 'features/info/presentation/pages/about_page.dart';
 import 'features/auth/domain/entities/user_entity.dart';
 import 'features/auth/presentation/providers/auth_providers.dart';
+import 'features/curriculum/presentation/providers/curriculum_provider.dart';
+import 'screens/ai_tutor_screen.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -96,7 +99,46 @@ class ChirpPollyApp extends ConsumerWidget {
         '/about': (context) => const AboutPage(),
         '/languages': (context) => const AllLanguagesPage(),
       },
+      onGenerateRoute: (settings) {
+        if (settings.name == '/ai-tutor') {
+          return MaterialPageRoute(
+            builder: (context) {
+              // Import the AI Tutor screen
+              // AI Tutor has its own language selector, no need for provider
+              return Consumer(
+                builder: (context, ref, _) {
+                  final user = ref.watch(authStateProvider).valueOrNull;
+                  
+                  // Import the screen here to avoid circular dependencies
+                  return _buildAITutorScreen(
+                    targetLanguage: 'Spanish', // Default, user can change via dropdown
+                    nativeLanguage: 'English',
+                    userId: user?.uid ?? 'guest',
+                  );
+                },
+              );
+            },
+          );
+        }
+
+        return null;
+      },
     );
   }
 }
+
+// Helper function to build AI Tutor screen
+Widget _buildAITutorScreen({
+  required String targetLanguage,
+  required String nativeLanguage,
+  required String userId,
+}) {
+  return AITutorScreen(
+    targetLanguage: targetLanguage,
+    nativeLanguage: nativeLanguage,
+    userId: userId,
+  );
+}
+
+
 

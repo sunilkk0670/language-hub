@@ -63,8 +63,7 @@ class _FirestoreTestPageState extends State<FirestoreTestPage> {
       final modules = await _repository.getModules('japanese', 'a2');
       
       setState(() {
-        _output = '✅ SUCCESS! Fetched ${modules.length} Japanese A2 modules:\n\n' +
-            modules.map((m) => '• ${m.theme} (${m.lessons.length} lessons)').join('\n');
+        _output = '✅ SUCCESS! Fetched ${modules.length} Japanese A2 modules:\n\n${modules.map((m) => '• ${m.theme} (${m.lessons.length} lessons)').join('\n')}';
         _loading = false;
       });
     } catch (e) {
@@ -85,8 +84,7 @@ class _FirestoreTestPageState extends State<FirestoreTestPage> {
       final modules = await _repository.getModules('korean', 'a2');
       
       setState(() {
-        _output = '✅ SUCCESS! Fetched ${modules.length} Korean A2 modules:\n\n' +
-            modules.map((m) => '• ${m.theme} (${m.lessons.length} lessons)').join('\n');
+        _output = '✅ SUCCESS! Fetched ${modules.length} Korean A2 modules:\n\n${modules.map((m) => '• ${m.theme} (${m.lessons.length} lessons)').join('\n')}';
         _loading = false;
       });
     } catch (e) {
