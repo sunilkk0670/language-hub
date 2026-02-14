@@ -70,7 +70,7 @@ class AITutorService {
 
     // Handle function calls if present
     if (response.functionCalls.isNotEmpty) {
-      final functionResults = await _executeFunctionCalls(response.functionCalls);
+      final functionResults = await _executeFunctionCalls(response.functionCalls.toList());
       
       // Send function results back to model
       final functionResponse = await chat.sendMessage(
