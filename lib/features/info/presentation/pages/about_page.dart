@@ -532,7 +532,23 @@ class _AboutPageState extends State<AboutPage> {
               fontWeight: FontWeight.w500,
             ),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 16),
+          Wrap(
+            spacing: 16,
+            runSpacing: 8,
+            alignment: WrapAlignment.center,
+            children: [
+              TextButton(
+                onPressed: () => Navigator.pushNamed(context, '/contact'),
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.grey.shade300,
+                  textStyle: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                ),
+                child: const Text('Contact Us'),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
           Divider(color: Colors.white.withValues(alpha: 0.15), height: 1),
           const SizedBox(height: 20),
           Text(

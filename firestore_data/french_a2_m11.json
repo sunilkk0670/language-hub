@@ -2,8 +2,9 @@
   "id": "fr_a2_m11",
   "moduleId": "fr_a2_m11",
   "name": "A2 French - Module 11: Travel & Health",
-  "theme": "A2 French - Module 11: Travel & Health",
+  "theme": "Travel & Health",
   "order": 11,
+  "outcome": "After this, you can handle travel emergencies, explain symptoms at the doctor, and book appointments.",
   "count": 100,
   "vocabularyItems": [
     {

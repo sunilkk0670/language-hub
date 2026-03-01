@@ -1,7 +1,11 @@
 {
   "id": "fr_a1_m1",
+  "moduleId": "fr_a1_m1",
   "name": "A1 French - Module 1: Survival Basics",
+  "theme": "Survival Basics",
+  "order": 1,
   "description": "Essential greetings, emergency words, and basic introductions.",
+  "outcome": "After this, you can greet people, introduce yourself, and handle basic interactions.",
   "count": 100,
   "vocabularyItems": [
     {

@@ -9,8 +9,11 @@ import 'features/curriculum/presentation/pages/firestore_test_page.dart';
 import 'features/auth/presentation/pages/login_page.dart';
 import 'features/legal/presentation/pages/compliance_page.dart';
 import 'features/info/presentation/pages/about_page.dart';
+import 'features/info/presentation/pages/contact_page.dart';
 import 'features/auth/presentation/providers/auth_providers.dart';
 import 'features/curriculum/presentation/providers/curriculum_provider.dart';
+import 'features/subscription/presentation/pages/pricing_page.dart';
+import 'features/auth/presentation/widgets/welcome_dialog.dart';
 import 'screens/ai_tutor_screen.dart';
 
 void main() async {
@@ -45,7 +48,6 @@ class ChirpPollyApp extends ConsumerWidget {
       
       if (previousUser == null && user != null) {
         debugPrint('User just logged in. Current user: ${user.email}');
-        // User just logged in, if they are on login page, move them to home
         final context = navigatorKey.currentContext;
         if (context != null) {
           final currentRoute = ModalRoute.of(context)?.settings.name;
@@ -53,6 +55,19 @@ class ChirpPollyApp extends ConsumerWidget {
           if (currentRoute == '/login') {
             debugPrint('Redirecting from /login to /home via global listener');
             navigatorKey.currentState?.pushReplacementNamed('/home');
+            // Show welcome dialog for new users after navigation settles
+            Future.delayed(const Duration(milliseconds: 600), () {
+              final ctx = navigatorKey.currentContext;
+              if (ctx != null && ctx.mounted) {
+                final userName = user.email?.split('@').first ?? 'there';
+                WelcomeDialog.show(
+                  ctx,
+                  userName: userName,
+                  languageName: 'your chosen language',
+                  onStartLesson: () {},
+                );
+              }
+            });
           }
         } else {
           debugPrint('Navigator context is null, cannot redirect globally');
@@ -95,7 +110,9 @@ class ChirpPollyApp extends ConsumerWidget {
         '/privacy': (context) => const CompliancePage(initialIndex: 0),
         '/refund': (context) => const CompliancePage(initialIndex: 2),
         '/about': (context) => const AboutPage(),
+        '/contact': (context) => const ContactPage(),
         '/languages': (context) => const AllLanguagesPage(),
+        '/pricing': (context) => const PricingPage(),
       },
       onGenerateRoute: (settings) {
         if (settings.name == '/ai-tutor') {
@@ -137,4 +154,5 @@ Widget _buildAITutorScreen({
     userId: userId,
   );
 }
+
 

@@ -476,7 +476,7 @@ class ModulesPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      '$wordCount words to learn',
+                      moduleData['outcome'] as String? ?? '$wordCount words to learn',
                       style: TextStyle(
                         fontSize: 14,
                         color: Colors.grey.shade600,

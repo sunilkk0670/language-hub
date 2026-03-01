@@ -1,6 +1,10 @@
 {
   "id": "fr_a1_m4",
+  "moduleId": "fr_a1_m4",
   "name": "A1 French - Module 4: Travel",
+  "theme": "Travel",
+  "order": 4,
+  "outcome": "After this, you can navigate through a city, ask for directions, and talk about travel plans.",
   "count": 100,
   "vocabularyItems": [
     {

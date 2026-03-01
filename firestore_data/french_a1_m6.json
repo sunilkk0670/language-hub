@@ -1,6 +1,10 @@
 {
   "id": "fr_a1_m6",
+  "moduleId": "fr_a1_m6",
   "name": "A1 French - Module 6: Hobbies",
+  "theme": "Hobbies",
+  "order": 6,
+  "outcome": "After this, you can share your interests, talk about your hobbies, and discuss leisure activities.",
   "count": 100,
   "vocabularyItems": [
     {

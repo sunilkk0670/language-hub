@@ -1,6 +1,10 @@
 {
   "id": "fr_a1_m8",
+  "moduleId": "fr_a1_m8",
   "name": "A1 French - Module 8: Health & Body",
+  "theme": "Health & Body",
+  "order": 8,
+  "outcome": "After this, you can talk about physical well-being, describe symptoms, and discuss health habits.",
   "count": 100,
   "vocabularyItems": [
     {

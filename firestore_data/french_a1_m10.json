@@ -1,6 +1,10 @@
 {
   "id": "fr_a1_m10",
+  "moduleId": "fr_a1_m10",
   "name": "A1 French - Module 10: Advanced Communication",
+  "theme": "Advanced Communication",
+  "order": 10,
+  "outcome": "After this, you can express opinions, discuss social plans, and engage in more nuanced conversations.",
   "count": 100,
   "vocabularyItems": [
     {

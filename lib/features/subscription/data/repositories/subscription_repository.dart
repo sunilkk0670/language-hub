@@ -1,63 +1,83 @@
 import '../models/subscription_plan.dart';
 
 class SubscriptionRepository {
-  List<SubscriptionPlan> getPlans() {
-    return [
-      const SubscriptionPlan(
-        id: 'free',
-        name: 'Free (A1)',
-        description: 'Perfect for beginners starting their journey.',
-        monthlyPricing: {'USD': 0, 'EUR': 0, 'INR': 0},
-        annualPricing: {'USD': 0, 'EUR': 0, 'INR': 0},
-        features: [
-          '1,000 Words Core Content',
-          'N5 Japanese Intro',
-          'Basic Liar Game',
-        ],
-        differentiator: 'Basic Liar Game',
-        depth: 'N5 Intro',
-        wordCount: 1000,
-        isAdSupported: true,
-        hasOfflineMode: false,
-      ),
-      const SubscriptionPlan(
-        id: 'standard',
-        name: 'Standard (A2)',
-        description: 'Accelerate your learning with more depth.',
-        monthlyPricing: {'USD': 12.99, 'EUR': 12.99, 'INR': 199},
-        annualPricing: {'USD': 89.99, 'EUR': 89.99, 'INR': 999},
-        features: [
-          '2,000 Words Total Content',
-          'N5 & N4 Kanji Mastery',
-          'Full Grammar Suite',
-          'Ad-Free Experience',
-        ],
-        differentiator: 'Full Grammar Suite',
-        depth: 'N5 & N4 Kanji',
-        wordCount: 2000,
-        isAdSupported: false,
-        hasOfflineMode: false,
-        isMostPopular: true,
-      ),
-      const SubscriptionPlan(
-        id: 'premium',
-        name: 'Premium (B1)',
-        description: 'Complete mastery for serious polyglots.',
-        monthlyPricing: {'USD': 19.99, 'EUR': 19.99, 'INR': 299},
-        annualPricing: {'USD': 134.99, 'EUR': 134.99, 'INR': 1499},
-        features: [
-          '3,000 Words Total Content',
-          'N3 & N2 Fluency Mastery',
-          'AI Speaking Trainer',
-          'Ad-Free Experience',
-          'Offline Mode Support',
-        ],
-        differentiator: 'AI Speaking Trainer',
-        depth: 'N3 & N2 Mastery',
-        wordCount: 3000,
-        isAdSupported: false,
-        hasOfflineMode: true,
-      ),
-    ];
-  }
+  static const List<SubscriptionPlan> _plans = [
+    SubscriptionPlan(
+      id: 'free',
+      name: 'Free',
+      tagline: 'A1 — Starter',
+      description: 'Begin your language journey at zero cost.',
+      annualPricing: {'USD': 0, 'EUR': 0, 'INR': 0},
+      monthlyPricing: {'USD': 0, 'EUR': 0, 'INR': 0},
+      aiTutorDailyLimit: 5,
+      aiTutorHardCap: 5,
+      features: [
+        '1,000 Words (A1 Curriculum)',
+        'N5 Japanese Intro',
+        'Basic Liar Game',
+        'AI Tutor — 5 messages/day',
+        'Online Only',
+      ],
+      curriculumLevel: 'A1',
+      wordCount: 1000,
+      isAdFree: false,
+      hasOfflineMode: false,
+      badgeLabel: '',
+    ),
+    SubscriptionPlan(
+      id: 'standard',
+      name: 'Standard',
+      tagline: 'A2 — Practice',
+      description: 'Accelerate with deeper content and no distractions.',
+      annualPricing: {'USD': 69.99, 'EUR': 69.99, 'INR': 1299},
+      monthlyPricing: {'USD': 6.99, 'EUR': 6.99, 'INR': 129.99},
+      aiTutorDailyLimit: 50,
+      aiTutorHardCap: 50,
+      features: [
+        '2,000 Words (A1 + A2 Curriculum)',
+        'N5 & N4 Kanji Mastery',
+        'Full Grammar Suite',
+        'Ad-Free Experience',
+        'AI Tutor — 50 messages/day',
+        'Online Only',
+      ],
+      curriculumLevel: 'A2',
+      wordCount: 2000,
+      isAdFree: true,
+      hasOfflineMode: false,
+      isMostPopular: true,
+      badgeLabel: 'Most Popular',
+    ),
+    SubscriptionPlan(
+      id: 'premium',
+      name: 'Premium',
+      tagline: 'B1 — Mastery',
+      description: 'Full fluency with AI coaching and offline access.',
+      annualPricing: {'USD': 99.99, 'EUR': 99.99, 'INR': 1599},
+      monthlyPricing: {'USD': 9.99, 'EUR': 9.99, 'INR': 159.99},
+      // null = unlimited for user; hard cap protects against bot abuse
+      aiTutorDailyLimit: null,
+      aiTutorHardCap: 200,
+      features: [
+        '3,000 Words (A1 + A2 + B1 Curriculum)',
+        'N3 & N2 Fluency Mastery',
+        'AI Speaking Trainer — Unlimited',
+        'Ad-Free Experience',
+        'Offline Mode',
+      ],
+      curriculumLevel: 'B1',
+      wordCount: 3000,
+      isAdFree: true,
+      hasOfflineMode: true,
+      badgeLabel: 'Best Value',
+    ),
+  ];
+
+  static const KanjiLiarAddon kanjiLiarAddon = KanjiLiarAddon(
+    pricing: {'USD': 3.99, 'EUR': 3.99, 'INR': 69.99},
+    description: 'One-time purchase. Unlock the advanced Kanji Liar challenge game.',
+  );
+
+  List<SubscriptionPlan> getPlans() => _plans;
+  KanjiLiarAddon getKanjiLiarAddon() => kanjiLiarAddon;
 }

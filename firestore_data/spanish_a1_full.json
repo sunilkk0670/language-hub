@@ -564,53 +564,60 @@
           "example_sentence": "Mi perro se llama Toby."
         },
         {
-          "word": "Comer",
+          "word": "Embarazada",
           "reading": null,
-          "meaning": "To eat (Var 11)",
-          "example_sentence": "Quiero comer una manzana."
+          "meaning": "Pregnant",
+          "example_sentence": "Ella está embarazada de tres meses.",
+          "isLiarTrap": true
         },
         {
-          "word": "Agua",
+          "word": "Molestar",
           "reading": null,
-          "meaning": "Water (Var 11)",
-          "example_sentence": "Bebemos mucha agua."
+          "meaning": "To bother/annoy",
+          "example_sentence": "No me molestes mientras estudio.",
+          "isLiarTrap": true
         },
         {
-          "word": "Familia",
+          "word": "Sensible",
           "reading": null,
-          "meaning": "Family (Var 11)",
-          "example_sentence": "Mi familia es grande."
+          "meaning": "Sensitive",
+          "example_sentence": "Es muy sensible a las críticas.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hola",
+          "word": "Ropa",
           "reading": null,
-          "meaning": "Hello (Var 12)",
-          "example_sentence": "Hola, ¿cómo estás?"
+          "meaning": "Clothes",
+          "example_sentence": "Tengo mucha ropa en el armario.",
+          "isLiarTrap": true
         },
         {
-          "word": "Gracias",
+          "word": "Sopa",
           "reading": null,
-          "meaning": "Thank you (Var 12)",
-          "example_sentence": "Muchas gracias por la comida."
+          "meaning": "Soup",
+          "example_sentence": "La sopa está caliente.",
+          "isLiarTrap": true
         },
         {
-          "word": "Amigo",
+          "word": "Nudo",
           "reading": null,
-          "meaning": "Friend (Var 12)",
-          "example_sentence": "Juan es mi mejor amigo."
+          "meaning": "Knot",
+          "example_sentence": "Haz un nudo con la cuerda.",
+          "isLiarTrap": true
         },
         {
-          "word": "Casa",
+          "word": "Largo",
           "reading": null,
-          "meaning": "House (Var 12)",
-          "example_sentence": "Vivo en una casa blanca."
+          "meaning": "Long",
+          "example_sentence": "El río es muy largo.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Fundamentals for A1",
-        "correctVersion": "The correct way to use these A1 concepts.",
-        "explanation": "Detailed linguistic focus for A1 learners in Fundamentals."
+        "trap": "Embarazada",
+        "correctVersion": "embarazada = PREGNANT, avergonzado/a = embarrassed",
+        "explanation": "Classic false friend: saying \"Estoy embarazada\" as an English speaker means \"I am pregnant\", not \"I am embarrassed\"."
       }
     },
     {
@@ -1177,53 +1184,60 @@
           "example_sentence": "Muchas gracias por la comida."
         },
         {
-          "word": "Amigo",
+          "word": "Lectura",
           "reading": null,
-          "meaning": "Friend (Var 11)",
-          "example_sentence": "Juan es mi mejor amigo."
+          "meaning": "Reading",
+          "example_sentence": "La lectura es mi hobby favorito.",
+          "isLiarTrap": true
         },
         {
-          "word": "Casa",
+          "word": "Librería",
           "reading": null,
-          "meaning": "House (Var 11)",
-          "example_sentence": "Vivo en una casa blanca."
+          "meaning": "Bookshop",
+          "example_sentence": "Compré este libro en la librería.",
+          "isLiarTrap": true
         },
         {
-          "word": "Perro",
+          "word": "Enviar",
           "reading": null,
-          "meaning": "Dog (Var 11)",
-          "example_sentence": "Mi perro se llama Toby."
+          "meaning": "To send",
+          "example_sentence": "Voy a enviar un correo electrónico.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comer",
+          "word": "Carpeta",
           "reading": null,
-          "meaning": "To eat (Var 12)",
-          "example_sentence": "Quiero comer una manzana."
+          "meaning": "Folder",
+          "example_sentence": "Guarda el documento en la carpeta.",
+          "isLiarTrap": true
         },
         {
-          "word": "Agua",
+          "word": "Idioma",
           "reading": null,
-          "meaning": "Water (Var 12)",
-          "example_sentence": "Bebemos mucha agua."
+          "meaning": "Language",
+          "example_sentence": "El idioma oficial es el español.",
+          "isLiarTrap": true
         },
         {
-          "word": "Familia",
+          "word": "Noticia",
           "reading": null,
-          "meaning": "Family (Var 12)",
-          "example_sentence": "Mi familia es grande."
+          "meaning": "News (item)",
+          "example_sentence": "Vi la noticia en la televisión.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hola",
+          "word": "Carta",
           "reading": null,
-          "meaning": "Hello (Var 12)",
-          "example_sentence": "Hola, ¿cómo estás?"
+          "meaning": "Letter / Menu",
+          "example_sentence": "Le escribí una carta a mi madre.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Communication for A1",
-        "correctVersion": "The correct way to use these A1 concepts.",
-        "explanation": "Detailed linguistic focus for A1 learners in Communication."
+        "trap": "Lectura",
+        "correctVersion": "lectura = reading (not a lecture)",
+        "explanation": "A university lecture in Spanish is una conferencia or clase magistral. Lectura means the act of reading."
       }
     },
     {
@@ -1790,53 +1804,60 @@
           "example_sentence": "Bebemos mucha agua."
         },
         {
-          "word": "Familia",
+          "word": "Éxito",
           "reading": null,
-          "meaning": "Family (Var 11)",
-          "example_sentence": "Mi familia es grande."
+          "meaning": "Success",
+          "example_sentence": "Su último álbum fue un gran éxito.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hola",
+          "word": "Recordar",
           "reading": null,
-          "meaning": "Hello (Var 11)",
-          "example_sentence": "Hola, ¿cómo estás?"
+          "meaning": "To remember",
+          "example_sentence": "¿Recuerdas su nombre?",
+          "isLiarTrap": true
         },
         {
-          "word": "Gracias",
+          "word": "Asistir",
           "reading": null,
-          "meaning": "Thank you (Var 11)",
-          "example_sentence": "Muchas gracias por la comida."
+          "meaning": "To attend",
+          "example_sentence": "Asistí a la reunión ayer.",
+          "isLiarTrap": true
         },
         {
-          "word": "Amigo",
+          "word": "Soportar",
           "reading": null,
-          "meaning": "Friend (Var 12)",
-          "example_sentence": "Juan es mi mejor amigo."
+          "meaning": "To tolerate/bear",
+          "example_sentence": "No soporto el calor del verano.",
+          "isLiarTrap": true
         },
         {
-          "word": "Casa",
+          "word": "Pretender",
           "reading": null,
-          "meaning": "House (Var 12)",
-          "example_sentence": "Vivo en una casa blanca."
+          "meaning": "To claim/aim to",
+          "example_sentence": "Pretendo aprobar el examen.",
+          "isLiarTrap": true
         },
         {
-          "word": "Perro",
+          "word": "Intención",
           "reading": null,
-          "meaning": "Dog (Var 12)",
-          "example_sentence": "Mi perro se llama Toby."
+          "meaning": "Intent",
+          "example_sentence": "Tengo la intención de estudiar más.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comer",
+          "word": "Grabar",
           "reading": null,
-          "meaning": "To eat (Var 12)",
-          "example_sentence": "Quiero comer una manzana."
+          "meaning": "To record",
+          "example_sentence": "Grabó el concierto con su teléfono.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Daily Life for A1",
-        "correctVersion": "The correct way to use these A1 concepts.",
-        "explanation": "Detailed linguistic focus for A1 learners in Daily Life."
+        "trap": "Éxito",
+        "correctVersion": "éxito = success (not exit)",
+        "explanation": "Exit/way out in Spanish is salida. Éxito means achievement or success."
       }
     },
     {
@@ -2403,53 +2424,60 @@
           "example_sentence": "Vivo en una casa blanca."
         },
         {
-          "word": "Perro",
+          "word": "Vaso",
           "reading": null,
-          "meaning": "Dog (Var 11)",
-          "example_sentence": "Mi perro se llama Toby."
+          "meaning": "Glass (drinking)",
+          "example_sentence": "Bebe un vaso de agua al día.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comer",
+          "word": "Cena",
           "reading": null,
-          "meaning": "To eat (Var 11)",
-          "example_sentence": "Quiero comer una manzana."
+          "meaning": "Dinner",
+          "example_sentence": "La cena está lista a las ocho.",
+          "isLiarTrap": true
         },
         {
-          "word": "Agua",
+          "word": "Pan",
           "reading": null,
-          "meaning": "Water (Var 11)",
-          "example_sentence": "Bebemos mucha agua."
+          "meaning": "Bread",
+          "example_sentence": "Compra pan en la panadería.",
+          "isLiarTrap": true
         },
         {
-          "word": "Familia",
+          "word": "Pie",
           "reading": null,
-          "meaning": "Family (Var 12)",
-          "example_sentence": "Mi familia es grande."
+          "meaning": "Foot",
+          "example_sentence": "Me duele el pie derecho.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hola",
+          "word": "Once",
           "reading": null,
-          "meaning": "Hello (Var 12)",
-          "example_sentence": "Hola, ¿cómo estás?"
+          "meaning": "Eleven",
+          "example_sentence": "El tren llega a las once.",
+          "isLiarTrap": true
         },
         {
-          "word": "Gracias",
+          "word": "Actual",
           "reading": null,
-          "meaning": "Thank you (Var 12)",
-          "example_sentence": "Muchas gracias por la comida."
+          "meaning": "Current/Present-day",
+          "example_sentence": "El presidente actual firmó la ley.",
+          "isLiarTrap": true
         },
         {
-          "word": "Amigo",
+          "word": "Pariente",
           "reading": null,
-          "meaning": "Friend (Var 12)",
-          "example_sentence": "Juan es mi mejor amigo."
+          "meaning": "Relative",
+          "example_sentence": "Es un pariente lejano de mi familia.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Travel for A1",
-        "correctVersion": "The correct way to use these A1 concepts.",
-        "explanation": "Detailed linguistic focus for A1 learners in Travel."
+        "trap": "Vaso",
+        "correctVersion": "vaso = drinking glass (not a vase)",
+        "explanation": "A flower vase in Spanish is un jarrón. Vaso is the glass you drink from."
       }
     },
     {
@@ -3016,53 +3044,60 @@
           "example_sentence": "Hola, ¿cómo estás?"
         },
         {
-          "word": "Gracias",
+          "word": "Firma",
           "reading": null,
-          "meaning": "Thank you (Var 11)",
-          "example_sentence": "Muchas gracias por la comida."
+          "meaning": "Signature",
+          "example_sentence": "Necesito tu firma en el documento.",
+          "isLiarTrap": true
         },
         {
-          "word": "Amigo",
+          "word": "Quitar",
           "reading": null,
-          "meaning": "Friend (Var 11)",
-          "example_sentence": "Juan es mi mejor amigo."
+          "meaning": "To remove",
+          "example_sentence": "Quita los zapatos en la entrada.",
+          "isLiarTrap": true
         },
         {
-          "word": "Casa",
+          "word": "Mayor",
           "reading": null,
-          "meaning": "House (Var 11)",
-          "example_sentence": "Vivo en una casa blanca."
+          "meaning": "Older/Greater",
+          "example_sentence": "Mi hermana mayor tiene veinte años.",
+          "isLiarTrap": true
         },
         {
-          "word": "Perro",
+          "word": "Constipado",
           "reading": null,
-          "meaning": "Dog (Var 12)",
-          "example_sentence": "Mi perro se llama Toby."
+          "meaning": "Having a cold",
+          "example_sentence": "Estoy constipado y tengo fiebre.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comer",
+          "word": "Embarcar",
           "reading": null,
-          "meaning": "To eat (Var 12)",
-          "example_sentence": "Quiero comer una manzana."
+          "meaning": "To board (a vehicle)",
+          "example_sentence": "Vamos a embarcar en el avión.",
+          "isLiarTrap": true
         },
         {
-          "word": "Agua",
+          "word": "Casual",
           "reading": null,
-          "meaning": "Water (Var 12)",
-          "example_sentence": "Bebemos mucha agua."
+          "meaning": "Coincidental/random",
+          "example_sentence": "Fue un encuentro muy casual.",
+          "isLiarTrap": true
         },
         {
-          "word": "Familia",
+          "word": "Ganga",
           "reading": null,
-          "meaning": "Family (Var 12)",
-          "example_sentence": "Mi familia es grande."
+          "meaning": "Bargain/deal",
+          "example_sentence": "¡Esta chaqueta fue una ganga!",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Socializing for A1",
-        "correctVersion": "The correct way to use these A1 concepts.",
-        "explanation": "Detailed linguistic focus for A1 learners in Socializing."
+        "trap": "Firma",
+        "correctVersion": "firma = signature (not firm/company)",
+        "explanation": "A business firm/company in Spanish is empresa. Firma means a person's signature."
       }
     },
     {
@@ -3629,53 +3664,60 @@
           "example_sentence": "Quiero comer una manzana."
         },
         {
-          "word": "Agua",
+          "word": "Red",
           "reading": null,
-          "meaning": "Water (Var 11)",
-          "example_sentence": "Bebemos mucha agua."
+          "meaning": "Network",
+          "example_sentence": "La red social tiene millones de usuarios.",
+          "isLiarTrap": true
         },
         {
-          "word": "Familia",
+          "word": "Mano",
           "reading": null,
-          "meaning": "Family (Var 11)",
-          "example_sentence": "Mi familia es grande."
+          "meaning": "Hand",
+          "example_sentence": "Dame la mano, por favor.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hola",
+          "word": "Copa",
           "reading": null,
-          "meaning": "Hello (Var 11)",
-          "example_sentence": "Hola, ¿cómo estás?"
+          "meaning": "Cup/goblet/trophy",
+          "example_sentence": "Levantó la copa para brindar.",
+          "isLiarTrap": true
         },
         {
-          "word": "Gracias",
+          "word": "Débil",
           "reading": null,
-          "meaning": "Thank you (Var 12)",
-          "example_sentence": "Muchas gracias por la comida."
+          "meaning": "Weak",
+          "example_sentence": "El enfermo está muy débil.",
+          "isLiarTrap": true
         },
         {
-          "word": "Amigo",
+          "word": "Golpe",
           "reading": null,
-          "meaning": "Friend (Var 12)",
-          "example_sentence": "Juan es mi mejor amigo."
+          "meaning": "Blow/hit",
+          "example_sentence": "Recibió un golpe en la cabeza.",
+          "isLiarTrap": true
         },
         {
-          "word": "Casa",
+          "word": "Sin",
           "reading": null,
-          "meaning": "House (Var 12)",
-          "example_sentence": "Vivo en una casa blanca."
+          "meaning": "Without",
+          "example_sentence": "Café sin azúcar, por favor.",
+          "isLiarTrap": true
         },
         {
-          "word": "Perro",
+          "word": "Salida",
           "reading": null,
-          "meaning": "Dog (Var 12)",
-          "example_sentence": "Mi perro se llama Toby."
+          "meaning": "Exit/departure",
+          "example_sentence": "La salida del tren es a las diez.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Nature for A1",
-        "correctVersion": "The correct way to use these A1 concepts.",
-        "explanation": "Detailed linguistic focus for A1 learners in Nature."
+        "trap": "Red",
+        "correctVersion": "red = network (not the color red)",
+        "explanation": "The color red in Spanish is rojo. Red means a net or network."
       }
     },
     {
@@ -4242,53 +4284,60 @@
           "example_sentence": "Juan es mi mejor amigo."
         },
         {
-          "word": "Casa",
+          "word": "Banco",
           "reading": null,
-          "meaning": "House (Var 11)",
-          "example_sentence": "Vivo en una casa blanca."
+          "meaning": "Bank or bench",
+          "example_sentence": "Me senté en el banco del parque.",
+          "isLiarTrap": true
         },
         {
-          "word": "Perro",
+          "word": "Bigote",
           "reading": null,
-          "meaning": "Dog (Var 11)",
-          "example_sentence": "Mi perro se llama Toby."
+          "meaning": "Moustache",
+          "example_sentence": "Mi abuelo tiene un bigote enorme.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comer",
+          "word": "Borracho",
           "reading": null,
-          "meaning": "To eat (Var 11)",
-          "example_sentence": "Quiero comer una manzana."
+          "meaning": "Drunk/drunkard",
+          "example_sentence": "Estaba borracho en la fiesta.",
+          "isLiarTrap": true
         },
         {
-          "word": "Agua",
+          "word": "Calceta",
           "reading": null,
-          "meaning": "Water (Var 12)",
-          "example_sentence": "Bebemos mucha agua."
+          "meaning": "Knitting/sock",
+          "example_sentence": "Mi abuela hace calceta por las noches.",
+          "isLiarTrap": true
         },
         {
-          "word": "Familia",
+          "word": "Decepción",
           "reading": null,
-          "meaning": "Family (Var 12)",
-          "example_sentence": "Mi familia es grande."
+          "meaning": "Disappointment",
+          "example_sentence": "Su actitud fue una gran decepción.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hola",
+          "word": "Discusión",
           "reading": null,
-          "meaning": "Hello (Var 12)",
-          "example_sentence": "Hola, ¿cómo estás?"
+          "meaning": "Argument/quarrel",
+          "example_sentence": "Tuvieron una discusión muy seria.",
+          "isLiarTrap": true
         },
         {
-          "word": "Gracias",
+          "word": "Embarazo",
           "reading": null,
-          "meaning": "Thank you (Var 12)",
-          "example_sentence": "Muchas gracias por la comida."
+          "meaning": "Pregnancy",
+          "example_sentence": "El embarazo dura nueve meses.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Work & Study for A1",
-        "correctVersion": "The correct way to use these A1 concepts.",
-        "explanation": "Detailed linguistic focus for A1 learners in Work & Study."
+        "trap": "Banco",
+        "correctVersion": "banco = bank (financial) OR bench (park seat)",
+        "explanation": "Context determines meaning: banco in a park = bench; banco in finance = bank. Don't confuse it with the English \"blank\"."
       }
     },
     {
@@ -4855,53 +4904,60 @@
           "example_sentence": "Mi familia es grande."
         },
         {
-          "word": "Hola",
+          "word": "Fábrica",
           "reading": null,
-          "meaning": "Hello (Var 11)",
-          "example_sentence": "Hola, ¿cómo estás?"
+          "meaning": "Factory",
+          "example_sentence": "Trabaja en una fábrica de coches.",
+          "isLiarTrap": true
         },
         {
-          "word": "Gracias",
+          "word": "Gracioso",
           "reading": null,
-          "meaning": "Thank you (Var 11)",
-          "example_sentence": "Muchas gracias por la comida."
+          "meaning": "Funny/amusing",
+          "example_sentence": "El payaso es muy gracioso.",
+          "isLiarTrap": true
         },
         {
-          "word": "Amigo",
+          "word": "Ignorar",
           "reading": null,
-          "meaning": "Friend (Var 11)",
-          "example_sentence": "Juan es mi mejor amigo."
+          "meaning": "To not know (be unaware)",
+          "example_sentence": "Ignoraba la respuesta correcta.",
+          "isLiarTrap": true
         },
         {
-          "word": "Casa",
+          "word": "Introducir",
           "reading": null,
-          "meaning": "House (Var 12)",
-          "example_sentence": "Vivo en una casa blanca."
+          "meaning": "To insert/enter",
+          "example_sentence": "Introdujo la llave en la cerradura.",
+          "isLiarTrap": true
         },
         {
-          "word": "Perro",
+          "word": "Molestar",
           "reading": null,
-          "meaning": "Dog (Var 12)",
-          "example_sentence": "Mi perro se llama Toby."
+          "meaning": "To bother (revisit)",
+          "example_sentence": "¿Te molesta si abro la ventana?",
+          "isLiarTrap": true
         },
         {
-          "word": "Comer",
+          "word": "Notorio",
           "reading": null,
-          "meaning": "To eat (Var 12)",
-          "example_sentence": "Quiero comer una manzana."
+          "meaning": "Well-known/notable",
+          "example_sentence": "Es un artista notorio en España.",
+          "isLiarTrap": true
         },
         {
-          "word": "Agua",
+          "word": "Polución",
           "reading": null,
-          "meaning": "Water (Var 12)",
-          "example_sentence": "Bebemos mucha agua."
+          "meaning": "Air/environmental pollution",
+          "example_sentence": "La polución en la ciudad es alta.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Emotions for A1",
-        "correctVersion": "The correct way to use these A1 concepts.",
-        "explanation": "Detailed linguistic focus for A1 learners in Emotions."
+        "trap": "Fábrica",
+        "correctVersion": "fábrica = factory (not fabric/cloth)",
+        "explanation": "Fabric/cloth in Spanish is tela. Fábrica is a manufacturing plant."
       }
     },
     {
@@ -5468,53 +5524,60 @@
           "example_sentence": "Mi perro se llama Toby."
         },
         {
-          "word": "Comer",
+          "word": "Arena",
           "reading": null,
-          "meaning": "To eat (Var 11)",
-          "example_sentence": "Quiero comer una manzana."
+          "meaning": "Sand/arena",
+          "example_sentence": "La arena de la playa es blanca.",
+          "isLiarTrap": true
         },
         {
-          "word": "Agua",
+          "word": "Boda",
           "reading": null,
-          "meaning": "Water (Var 11)",
-          "example_sentence": "Bebemos mucha agua."
+          "meaning": "Wedding",
+          "example_sentence": "La boda fue en la iglesia.",
+          "isLiarTrap": true
         },
         {
-          "word": "Familia",
+          "word": "Bromear",
           "reading": null,
-          "meaning": "Family (Var 11)",
-          "example_sentence": "Mi familia es grande."
+          "meaning": "To joke",
+          "example_sentence": "Solo estaba bromeando, no te enfades.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hola",
+          "word": "Cadera",
           "reading": null,
-          "meaning": "Hello (Var 12)",
-          "example_sentence": "Hola, ¿cómo estás?"
+          "meaning": "Hip (body part)",
+          "example_sentence": "Me duele la cadera.",
+          "isLiarTrap": true
         },
         {
-          "word": "Gracias",
+          "word": "Disfrutar",
           "reading": null,
-          "meaning": "Thank you (Var 12)",
-          "example_sentence": "Muchas gracias por la comida."
+          "meaning": "To enjoy",
+          "example_sentence": "Disfruto mucho de la música.",
+          "isLiarTrap": true
         },
         {
-          "word": "Amigo",
+          "word": "Embarcar",
           "reading": null,
-          "meaning": "Friend (Var 12)",
-          "example_sentence": "Juan es mi mejor amigo."
+          "meaning": "To board (ship/plane)",
+          "example_sentence": "Embarcamos en el crucero a medianoche.",
+          "isLiarTrap": true
         },
         {
-          "word": "Casa",
+          "word": "Finca",
           "reading": null,
-          "meaning": "House (Var 12)",
-          "example_sentence": "Vivo en una casa blanca."
+          "meaning": "Rural property/estate",
+          "example_sentence": "Tienen una finca en Andalucía.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Culture for A1",
-        "correctVersion": "The correct way to use these A1 concepts.",
-        "explanation": "Detailed linguistic focus for A1 learners in Culture."
+        "trap": "Arena",
+        "correctVersion": "arena = sand OR an arena/stadium",
+        "explanation": "Arena (sports venue) is a cognate, but the primary everyday meaning in Spanish is sand. Don't confuse them."
       }
     },
     {
@@ -6081,53 +6144,60 @@
           "example_sentence": "Muchas gracias por la comida."
         },
         {
-          "word": "Amigo",
+          "word": "Genial",
           "reading": null,
-          "meaning": "Friend (Var 11)",
-          "example_sentence": "Juan es mi mejor amigo."
+          "meaning": "Great/brilliant",
+          "example_sentence": "¡Qué idea tan genial!",
+          "isLiarTrap": true
         },
         {
-          "word": "Casa",
+          "word": "Gracioso",
           "reading": null,
-          "meaning": "House (Var 11)",
-          "example_sentence": "Vivo en una casa blanca."
+          "meaning": "Funny/amusing",
+          "example_sentence": "Contó un chiste muy gracioso.",
+          "isLiarTrap": true
         },
         {
-          "word": "Perro",
+          "word": "Honesto",
           "reading": null,
-          "meaning": "Dog (Var 11)",
-          "example_sentence": "Mi perro se llama Toby."
+          "meaning": "Decent/honourable (broader)",
+          "example_sentence": "Es una persona honesta y trabajadora.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comer",
+          "word": "Idiota",
           "reading": null,
-          "meaning": "To eat (Var 12)",
-          "example_sentence": "Quiero comer una manzana."
+          "meaning": "Idiot (strong insult)",
+          "example_sentence": "No seas idiota.",
+          "isLiarTrap": true
         },
         {
-          "word": "Agua",
+          "word": "Largo",
           "reading": null,
-          "meaning": "Water (Var 12)",
-          "example_sentence": "Bebemos mucha agua."
+          "meaning": "Long",
+          "example_sentence": "Tiene el pelo muy largo.",
+          "isLiarTrap": true
         },
         {
-          "word": "Familia",
+          "word": "Molestia",
           "reading": null,
-          "meaning": "Family (Var 12)",
-          "example_sentence": "Mi familia es grande."
+          "meaning": "Inconvenience/nuisance",
+          "example_sentence": "Perdona la molestia.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hola",
+          "word": "Realizar",
           "reading": null,
-          "meaning": "Hello (Var 12)",
-          "example_sentence": "Hola, ¿cómo estás?"
+          "meaning": "To carry out/perform",
+          "example_sentence": "Realizó el experimento con cuidado.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Review for A1",
-        "correctVersion": "The correct way to use these A1 concepts.",
-        "explanation": "Detailed linguistic focus for A1 learners in Review."
+        "trap": "Genial",
+        "correctVersion": "genial = great/brilliant/awesome (not genial/kindly)",
+        "explanation": "Genial in English means warmly friendly. In Spanish, genial means excellent or brilliant."
       }
     }
   ]

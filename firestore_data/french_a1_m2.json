@@ -1,7 +1,11 @@
 {
   "id": "fr_a1_m2",
+  "moduleId": "fr_a1_m2",
   "name": "A1 French - Module 2: Family & Home",
+  "theme": "Family & Home",
+  "order": 2,
   "description": "Vocabulary for family members, household items, and basic descriptions.",
+  "outcome": "After this, you can talk about your family members and describe your home and living environment.",
   "count": 100,
   "vocabularyItems": [
     {

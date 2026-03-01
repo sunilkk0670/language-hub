@@ -3,6 +3,7 @@
     {
       "moduleId": "de_a2_m1",
       "theme": "Fundamentals",
+      "outcome": "Master case endings (Nominative/Accusative) and basic greetings.",
       "order": 11,
       "vocabularyItems": [
         {
@@ -616,6 +617,7 @@
     {
       "moduleId": "de_a2_m2",
       "theme": "Communication",
+      "outcome": "Engage in social dialogues and express simple opinions.",
       "order": 12,
       "vocabularyItems": [
         {
@@ -1229,6 +1231,7 @@
     {
       "moduleId": "de_a2_m3",
       "theme": "Daily Life",
+      "outcome": "Describe daily routines and navigate supermarket interactions.",
       "order": 13,
       "vocabularyItems": [
         {
@@ -1842,6 +1845,7 @@
     {
       "moduleId": "de_a2_m4",
       "theme": "Travel",
+      "outcome": "Book accommodation and handle airport/train station scenarios.",
       "order": 14,
       "vocabularyItems": [
         {
@@ -2455,6 +2459,7 @@
     {
       "moduleId": "de_a2_m5",
       "theme": "Socializing",
+      "outcome": "Accept/decline invitations and participate in hobby discussions.",
       "order": 15,
       "vocabularyItems": [
         {
@@ -3068,6 +3073,7 @@
     {
       "moduleId": "de_a2_m6",
       "theme": "Nature",
+      "outcome": "Discuss weather patterns and environmental protection basics.",
       "order": 16,
       "vocabularyItems": [
         {
@@ -3681,6 +3687,7 @@
     {
       "moduleId": "de_a2_m7",
       "theme": "Work & Study",
+      "outcome": "Discuss professions and navigate workplace/university settings.",
       "order": 17,
       "vocabularyItems": [
         {
@@ -4294,6 +4301,7 @@
     {
       "moduleId": "de_a2_m8",
       "theme": "Emotions",
+      "outcome": "Articulate feelings and express empathy in conversations.",
       "order": 18,
       "vocabularyItems": [
         {
@@ -4907,6 +4915,7 @@
     {
       "moduleId": "de_a2_m9",
       "theme": "Culture",
+      "outcome": "Identify German traditions and discuss cultural events.",
       "order": 19,
       "vocabularyItems": [
         {
@@ -5520,6 +5529,7 @@
     {
       "moduleId": "de_a2_m10",
       "theme": "Review",
+      "outcome": "Reinforce A2 grammar and transition to B1 fluency level.",
       "order": 20,
       "vocabularyItems": [
         {

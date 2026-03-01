@@ -1,6 +1,10 @@
 {
   "id": "fr_a1_m7",
+  "moduleId": "fr_a1_m7",
   "name": "A1 French - Module 7: Shopping & Fashion",
+  "theme": "Shopping & Fashion",
+  "order": 7,
+  "outcome": "After this, you can shop for clothes, discuss prices, and express your personal style.",
   "count": 100,
   "vocabularyItems": [
     {

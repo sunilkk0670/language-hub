@@ -43,35 +43,39 @@ class LanguageMasteryPathsPage extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(
-        child: Container(
-          constraints: const BoxConstraints(maxWidth: 900),
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                '$flag $languageName',
-                style: const TextStyle(
-                  fontSize: 36,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: -0.5,
+      body: SingleChildScrollView(
+        child: Center(
+          child: Container(
+            constraints: const BoxConstraints(maxWidth: 900),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  '$flag $languageName',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: -0.5,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 12),
-              Text(
-                'Choose your learning path',
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.grey.shade600,
-                  fontWeight: FontWeight.w500,
+                const SizedBox(height: 12),
+                Text(
+                  'Choose your learning path',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.grey.shade600,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 60),
-              Row(
-                children: [
-                  Expanded(
-                    child: _buildPathCard(
+                const SizedBox(height: 48),
+                LayoutBuilder(
+                  builder: (context, constraints) {
+                    final isWide = constraints.maxWidth >= 600;
+                    final vocabCard = _buildPathCard(
                       context,
                       title: 'Vocabulary Mastery',
                       subtitle: 'Master 3,000+ words across A1, A2, and B1 levels.',
@@ -89,11 +93,8 @@ class LanguageMasteryPathsPage extends StatelessWidget {
                           ),
                         );
                       },
-                    ),
-                  ),
-                  const SizedBox(width: 32),
-                  Expanded(
-                    child: _buildPathCard(
+                    );
+                    final kanjiCard = _buildPathCard(
                       context,
                       title: 'Kanji Mastery',
                       subtitle: 'Learn 2,100+ Kanji with mnemonics and stroke counts.',
@@ -112,11 +113,30 @@ class LanguageMasteryPathsPage extends StatelessWidget {
                           ),
                         );
                       },
-                    ),
-                  ),
-                ],
-              ),
-            ],
+                    );
+                    if (isWide) {
+                      return Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(child: vocabCard),
+                          const SizedBox(width: 24),
+                          Expanded(child: kanjiCard),
+                        ],
+                      );
+                    } else {
+                      return Column(
+                        children: [
+                          vocabCard,
+                          const SizedBox(height: 20),
+                          kanjiCard,
+                        ],
+                      );
+                    }
+                  },
+                ),
+                const SizedBox(height: 40),
+              ],
+            ),
           ),
         ),
       ),

@@ -1,6 +1,10 @@
 {
   "id": "fr_a1_m9",
+  "moduleId": "fr_a1_m9",
   "name": "A1 French - Module 9: Nature & Weather",
+  "theme": "Nature & Weather",
+  "order": 9,
+  "outcome": "After this, you can talk about the weather, describe natural surroundings, and discuss environmental topics.",
   "count": 100,
   "vocabularyItems": [
     {

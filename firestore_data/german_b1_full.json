@@ -2,7 +2,8 @@
   "modules": [
     {
       "moduleId": "de_b1_m1",
-      "theme": "Fundamentals",
+      "theme": "Feelings & Relationships",
+      "outcome": "Nuanced relationship vocabulary and expressing emotional states.",
       "order": 21,
       "vocabularyItems": [
         {
@@ -615,7 +616,8 @@
     },
     {
       "moduleId": "de_b1_m2",
-      "theme": "Communication",
+      "theme": "Media & Digital Society",
+      "outcome": "Digital ethics and participating in tech/social media debates.",
       "order": 22,
       "vocabularyItems": [
         {
@@ -1228,7 +1230,8 @@
     },
     {
       "moduleId": "de_b1_m3",
-      "theme": "Daily Life",
+      "theme": "Modern Work & Mobility",
+      "outcome": "Job interview preparation and discussing workplace rights.",
       "order": 23,
       "vocabularyItems": [
         {
@@ -1841,7 +1844,8 @@
     },
     {
       "moduleId": "de_b1_m4",
-      "theme": "Travel",
+      "theme": "Culture & Traditions",
+      "outcome": "Historical milestones and discussing national identity/heritage.",
       "order": 24,
       "vocabularyItems": [
         {
@@ -2454,7 +2458,8 @@
     },
     {
       "moduleId": "de_b1_m5",
-      "theme": "Socializing",
+      "theme": "Consumption & Money",
+      "outcome": "Financial literacy and discussing consumer habits.",
       "order": 25,
       "vocabularyItems": [
         {
@@ -3067,7 +3072,8 @@
     },
     {
       "moduleId": "de_b1_m6",
-      "theme": "Nature",
+      "theme": "Learning & Career",
+      "outcome": "Academic research terminology and career planning.",
       "order": 26,
       "vocabularyItems": [
         {
@@ -3680,7 +3686,8 @@
     },
     {
       "moduleId": "de_b1_m7",
-      "theme": "Work & Study",
+      "theme": "Environment & Future",
+      "outcome": "Discussing climate change and sustainability basics.",
       "order": 27,
       "vocabularyItems": [
         {
@@ -4293,7 +4300,8 @@
     },
     {
       "moduleId": "de_b1_m8",
-      "theme": "Emotions",
+      "theme": "Health & Healthcare",
+      "outcome": "Medical terminology and navigating healthcare systems.",
       "order": 28,
       "vocabularyItems": [
         {
@@ -4906,7 +4914,8 @@
     },
     {
       "moduleId": "de_b1_m9",
-      "theme": "Culture",
+      "theme": "Politics & Society",
+      "outcome": "Legal rights and participating in civic duty dialogues.",
       "order": 29,
       "vocabularyItems": [
         {
@@ -5519,7 +5528,8 @@
     },
     {
       "moduleId": "de_b1_m10",
-      "theme": "Review",
+      "theme": "Review & Advanced Idioms",
+      "outcome": "German idiomatic mastery and complex linguistic nuances.",
       "order": 30,
       "vocabularyItems": [
         {

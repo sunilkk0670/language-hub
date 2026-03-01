@@ -564,53 +564,60 @@
           "example_sentence": "El tren va a llegar pronto."
         },
         {
-          "word": "Estación",
+          "word": "Suceso",
           "reading": null,
-          "meaning": "Station (Var 11)",
-          "example_sentence": "Nos vemos en la estación."
+          "meaning": "Event/happening",
+          "example_sentence": "El suceso ocurrió a medianoche.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comprar",
+          "word": "Ancianos",
           "reading": null,
-          "meaning": "To buy (Var 11)",
-          "example_sentence": "Ayer compré un libro nuevo."
+          "meaning": "Elderly people",
+          "example_sentence": "Los ancianos merecen respeto.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dormir",
+          "word": "Padres",
           "reading": null,
-          "meaning": "To sleep (Var 11)",
-          "example_sentence": "Dormí muy bien anoche."
+          "meaning": "Parents",
+          "example_sentence": "Mis padres viven en Madrid.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hablé",
+          "word": "Parientes",
           "reading": null,
-          "meaning": "I spoke (Past) (Var 12)",
-          "example_sentence": "Ayer hablé con mi madre."
+          "meaning": "Relatives",
+          "example_sentence": "Tengo muchos parientes en México.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comió",
+          "word": "Jubilación",
           "reading": null,
-          "meaning": "He/She ate (Past) (Var 12)",
-          "example_sentence": "Él comió mucho en la fiesta."
+          "meaning": "Retirement",
+          "example_sentence": "Su jubilación fue celebrada con una fiesta.",
+          "isLiarTrap": true
         },
         {
-          "word": "Viaje",
+          "word": "Historia",
           "reading": null,
-          "meaning": "Trip (Var 12)",
-          "example_sentence": "El viaje a Madrid fue increíble."
+          "meaning": "Story or History",
+          "example_sentence": "Me contó una historia increíble.",
+          "isLiarTrap": true
         },
         {
-          "word": "Maleta",
+          "word": "Pasado",
           "reading": null,
-          "meaning": "Suitcase (Var 12)",
-          "example_sentence": "Tengo que hacer la maleta."
+          "meaning": "Past (time)",
+          "example_sentence": "En el pasado las cosas eran diferentes.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Fundamentals for A2",
-        "correctVersion": "The correct way to use these A2 concepts.",
-        "explanation": "Detailed linguistic focus for A2 learners in Fundamentals."
+        "trap": "Suceso",
+        "correctVersion": "suceso = event/happening (not success)",
+        "explanation": "Success in Spanish is éxito. Suceso is an event, often newsworthy."
       }
     },
     {
@@ -1177,53 +1184,60 @@
           "example_sentence": "Él comió mucho en la fiesta."
         },
         {
-          "word": "Viaje",
+          "word": "Compromiso",
           "reading": null,
-          "meaning": "Trip (Var 11)",
-          "example_sentence": "El viaje a Madrid fue increíble."
+          "meaning": "Commitment/engagement",
+          "example_sentence": "Tengo un compromiso a las tres.",
+          "isLiarTrap": true
         },
         {
-          "word": "Maleta",
+          "word": "Medida",
           "reading": null,
-          "meaning": "Suitcase (Var 11)",
-          "example_sentence": "Tengo que hacer la maleta."
+          "meaning": "Measure/size",
+          "example_sentence": "Toma las medidas de la habitación.",
+          "isLiarTrap": true
         },
         {
-          "word": "Llegar",
+          "word": "Receta",
           "reading": null,
-          "meaning": "To arrive (Var 11)",
-          "example_sentence": "El tren va a llegar pronto."
+          "meaning": "Recipe / Prescription",
+          "example_sentence": "Sigue la receta del médico.",
+          "isLiarTrap": true
         },
         {
-          "word": "Estación",
+          "word": "Registro",
           "reading": null,
-          "meaning": "Station (Var 12)",
-          "example_sentence": "Nos vemos en la estación."
+          "meaning": "Record/search/register",
+          "example_sentence": "La policía hizo un registro del piso.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comprar",
+          "word": "Subir",
           "reading": null,
-          "meaning": "To buy (Var 12)",
-          "example_sentence": "Ayer compré un libro nuevo."
+          "meaning": "To go up/upload",
+          "example_sentence": "Sube la escalera hasta el tercer piso.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dormir",
+          "word": "Bajar",
           "reading": null,
-          "meaning": "To sleep (Var 12)",
-          "example_sentence": "Dormí muy bien anoche."
+          "meaning": "To go down/download",
+          "example_sentence": "Baja el volumen de la música.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hablé",
+          "word": "Tarjeta",
           "reading": null,
-          "meaning": "I spoke (Past) (Var 12)",
-          "example_sentence": "Ayer hablé con mi madre."
+          "meaning": "Card (credit/ID)",
+          "example_sentence": "Paga con tarjeta de crédito.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Communication for A2",
-        "correctVersion": "The correct way to use these A2 concepts.",
-        "explanation": "Detailed linguistic focus for A2 learners in Communication."
+        "trap": "Compromiso",
+        "correctVersion": "compromiso = commitment/appointment (not compromise)",
+        "explanation": "To compromise (find a middle ground) in Spanish is llegar a un acuerdo. Compromiso means an obligation or engagement."
       }
     },
     {
@@ -1790,53 +1804,60 @@
           "example_sentence": "Ayer compré un libro nuevo."
         },
         {
-          "word": "Dormir",
+          "word": "Agencia",
           "reading": null,
-          "meaning": "To sleep (Var 11)",
-          "example_sentence": "Dormí muy bien anoche."
+          "meaning": "Agency (also travel)",
+          "example_sentence": "Reservé el vuelo por una agencia.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hablé",
+          "word": "Carpintería",
           "reading": null,
-          "meaning": "I spoke (Past) (Var 11)",
-          "example_sentence": "Ayer hablé con mi madre."
+          "meaning": "Carpentry (and the carpenter's shop)",
+          "example_sentence": "Compré los muebles en la carpintería.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comió",
+          "word": "Delito",
           "reading": null,
-          "meaning": "He/She ate (Past) (Var 11)",
-          "example_sentence": "Él comió mucho en la fiesta."
+          "meaning": "Crime/offence",
+          "example_sentence": "Cometer un delito tiene consecuencias.",
+          "isLiarTrap": true
         },
         {
-          "word": "Viaje",
+          "word": "Disgusto",
           "reading": null,
-          "meaning": "Trip (Var 12)",
-          "example_sentence": "El viaje a Madrid fue increíble."
+          "meaning": "Upset/unpleasant feeling",
+          "example_sentence": "Fue un disgusto enterarse de la noticia.",
+          "isLiarTrap": true
         },
         {
-          "word": "Maleta",
+          "word": "Empresa",
           "reading": null,
-          "meaning": "Suitcase (Var 12)",
-          "example_sentence": "Tengo que hacer la maleta."
+          "meaning": "Company/business",
+          "example_sentence": "Trabajo en una empresa tecnológica.",
+          "isLiarTrap": true
         },
         {
-          "word": "Llegar",
+          "word": "Extraño",
           "reading": null,
-          "meaning": "To arrive (Var 12)",
-          "example_sentence": "El tren va a llegar pronto."
+          "meaning": "Strange/stranger",
+          "example_sentence": "Hay un hombre extraño en la puerta.",
+          "isLiarTrap": true
         },
         {
-          "word": "Estación",
+          "word": "Grosería",
           "reading": null,
-          "meaning": "Station (Var 12)",
-          "example_sentence": "Nos vemos en la estación."
+          "meaning": "Rude remark/rudeness",
+          "example_sentence": "Fue una grosería no saludar.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Daily Life for A2",
-        "correctVersion": "The correct way to use these A2 concepts.",
-        "explanation": "Detailed linguistic focus for A2 learners in Daily Life."
+        "trap": "Agencia",
+        "correctVersion": "agencia = agency (correct cognate — but used for travel too)",
+        "explanation": "In Spanish agencia is used very broadly: agencia de viajes (travel agency), agencia inmobiliaria (estate agency), etc."
       }
     },
     {
@@ -2403,53 +2424,60 @@
           "example_sentence": "Tengo que hacer la maleta."
         },
         {
-          "word": "Llegar",
+          "word": "Habitación",
           "reading": null,
-          "meaning": "To arrive (Var 11)",
-          "example_sentence": "El tren va a llegar pronto."
+          "meaning": "Room (in a house/hotel)",
+          "example_sentence": "La habitación del hotel es muy bonita.",
+          "isLiarTrap": true
         },
         {
-          "word": "Estación",
+          "word": "Humilde",
           "reading": null,
-          "meaning": "Station (Var 11)",
-          "example_sentence": "Nos vemos en la estación."
+          "meaning": "Poor/lowly (stronger)",
+          "example_sentence": "Son personas humildes pero felices.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comprar",
+          "word": "Largo",
           "reading": null,
-          "meaning": "To buy (Var 11)",
-          "example_sentence": "Ayer compré un libro nuevo."
+          "meaning": "Long",
+          "example_sentence": "El discurso fue muy largo.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dormir",
+          "word": "Local",
           "reading": null,
-          "meaning": "To sleep (Var 12)",
-          "example_sentence": "Dormí muy bien anoche."
+          "meaning": "Premises/venue (noun)",
+          "example_sentence": "El local está cerrado por vacaciones.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hablé",
+          "word": "Molestar",
           "reading": null,
-          "meaning": "I spoke (Past) (Var 12)",
-          "example_sentence": "Ayer hablé con mi madre."
+          "meaning": "To bother",
+          "example_sentence": "¿Te molesta el ruido?",
+          "isLiarTrap": true
         },
         {
-          "word": "Comió",
+          "word": "Parade",
           "reading": null,
-          "meaning": "He/She ate (Past) (Var 12)",
-          "example_sentence": "Él comió mucho en la fiesta."
+          "meaning": "Stop (bus stop)",
+          "example_sentence": "Espera en la parada del autobús.",
+          "isLiarTrap": true
         },
         {
-          "word": "Viaje",
+          "word": "Pasar",
           "reading": null,
-          "meaning": "Trip (Var 12)",
-          "example_sentence": "El viaje a Madrid fue increíble."
+          "meaning": "To happen / to pass",
+          "example_sentence": "¿Qué pasó ayer?",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Travel for A2",
-        "correctVersion": "The correct way to use these A2 concepts.",
-        "explanation": "Detailed linguistic focus for A2 learners in Travel."
+        "trap": "Habitación",
+        "correctVersion": "habitación = room (not habitation/dwelling)",
+        "explanation": "Habitation (place to live) in Spanish is vivienda or hábitat. Habitación is an individual room."
       }
     },
     {
@@ -3016,53 +3044,60 @@
           "example_sentence": "Ayer hablé con mi madre."
         },
         {
-          "word": "Comió",
+          "word": "Constipado",
           "reading": null,
-          "meaning": "He/She ate (Past) (Var 11)",
-          "example_sentence": "Él comió mucho en la fiesta."
+          "meaning": "Having a cold",
+          "example_sentence": "Estoy constipado, me duele la cabeza.",
+          "isLiarTrap": true
         },
         {
-          "word": "Viaje",
+          "word": "Sano",
           "reading": null,
-          "meaning": "Trip (Var 11)",
-          "example_sentence": "El viaje a Madrid fue increíble."
+          "meaning": "Healthy",
+          "example_sentence": "Come sano y haz ejercicio.",
+          "isLiarTrap": true
         },
         {
-          "word": "Maleta",
+          "word": "Gripe",
           "reading": null,
-          "meaning": "Suitcase (Var 11)",
-          "example_sentence": "Tengo que hacer la maleta."
+          "meaning": "Flu/influenza",
+          "example_sentence": "Tengo gripe y fiebre alta.",
+          "isLiarTrap": true
         },
         {
-          "word": "Llegar",
+          "word": "Herida",
           "reading": null,
-          "meaning": "To arrive (Var 12)",
-          "example_sentence": "El tren va a llegar pronto."
+          "meaning": "Wound/injury",
+          "example_sentence": "Tiene una herida profunda en el brazo.",
+          "isLiarTrap": true
         },
         {
-          "word": "Estación",
+          "word": "Cura",
           "reading": null,
-          "meaning": "Station (Var 12)",
-          "example_sentence": "Nos vemos en la estación."
+          "meaning": "Priest (m.) / cure (f.)",
+          "example_sentence": "El cura bendijo la boda.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comprar",
+          "word": "Remedio",
           "reading": null,
-          "meaning": "To buy (Var 12)",
-          "example_sentence": "Ayer compré un libro nuevo."
+          "meaning": "Solution/cure",
+          "example_sentence": "No hay remedio para esa situación.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dormir",
+          "word": "Receta",
           "reading": null,
-          "meaning": "To sleep (Var 12)",
-          "example_sentence": "Dormí muy bien anoche."
+          "meaning": "Recipe / Prescription (revisit)",
+          "example_sentence": "Pide una receta al médico.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Socializing for A2",
-        "correctVersion": "The correct way to use these A2 concepts.",
-        "explanation": "Detailed linguistic focus for A2 learners in Socializing."
+        "trap": "Constipado",
+        "correctVersion": "constipado = having a cold (NOT constipated)",
+        "explanation": "This is the single most dangerous Spanish-English false friend. Constipated (bowel issue) in Spanish is estreñido."
       }
     },
     {
@@ -3629,53 +3664,60 @@
           "example_sentence": "Nos vemos en la estación."
         },
         {
-          "word": "Comprar",
+          "word": "Bomberos",
           "reading": null,
-          "meaning": "To buy (Var 11)",
-          "example_sentence": "Ayer compré un libro nuevo."
+          "meaning": "Firefighters",
+          "example_sentence": "Los bomberos apagaron el incendio.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dormir",
+          "word": "Dirección",
           "reading": null,
-          "meaning": "To sleep (Var 11)",
-          "example_sentence": "Dormí muy bien anoche."
+          "meaning": "Address / Direction",
+          "example_sentence": "¿Cuál es tu dirección de correo?",
+          "isLiarTrap": true
         },
         {
-          "word": "Hablé",
+          "word": "Molestar",
           "reading": null,
-          "meaning": "I spoke (Past) (Var 11)",
-          "example_sentence": "Ayer hablé con mi madre."
+          "meaning": "To bother/disturb (third revisit)",
+          "example_sentence": "No molestes al perro mientras come.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comió",
+          "word": "Polvo",
           "reading": null,
-          "meaning": "He/She ate (Past) (Var 12)",
-          "example_sentence": "Él comió mucho en la fiesta."
+          "meaning": "Dust/powder",
+          "example_sentence": "Hay mucho polvo en los muebles.",
+          "isLiarTrap": true
         },
         {
-          "word": "Viaje",
+          "word": "Renta",
           "reading": null,
-          "meaning": "Trip (Var 12)",
-          "example_sentence": "El viaje a Madrid fue increíble."
+          "meaning": "Income / Rent",
+          "example_sentence": "Declara su renta cada año.",
+          "isLiarTrap": true
         },
         {
-          "word": "Maleta",
+          "word": "Respeto",
           "reading": null,
-          "meaning": "Suitcase (Var 12)",
-          "example_sentence": "Tengo que hacer la maleta."
+          "meaning": "Respect (correct cognate — but...)",
+          "example_sentence": "Siempre trata a los demás con respeto.",
+          "isLiarTrap": true
         },
         {
-          "word": "Llegar",
+          "word": "Soportar",
           "reading": null,
-          "meaning": "To arrive (Var 12)",
-          "example_sentence": "El tren va a llegar pronto."
+          "meaning": "To tolerate/bear",
+          "example_sentence": "No soporto el ruido.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Nature for A2",
-        "correctVersion": "The correct way to use these A2 concepts.",
-        "explanation": "Detailed linguistic focus for A2 learners in Nature."
+        "trap": "Bomberos",
+        "correctVersion": "bomberos = firefighters (not bombardiers)",
+        "explanation": "Bombardier/bomber pilot in Spanish is bombardero. Bomberos are the firefighters who come when you call 112."
       }
     },
     {
@@ -4242,53 +4284,60 @@
           "example_sentence": "El viaje a Madrid fue increíble."
         },
         {
-          "word": "Maleta",
+          "word": "Agenda",
           "reading": null,
-          "meaning": "Suitcase (Var 11)",
-          "example_sentence": "Tengo que hacer la maleta."
+          "meaning": "Diary/planner/agenda",
+          "example_sentence": "Apunto todos mis citas en la agenda.",
+          "isLiarTrap": true
         },
         {
-          "word": "Llegar",
+          "word": "Cifra",
           "reading": null,
-          "meaning": "To arrive (Var 11)",
-          "example_sentence": "El tren va a llegar pronto."
+          "meaning": "Number/figure",
+          "example_sentence": "Las cifras del paro son alarmantes.",
+          "isLiarTrap": true
         },
         {
-          "word": "Estación",
+          "word": "Discusión",
           "reading": null,
-          "meaning": "Station (Var 11)",
-          "example_sentence": "Nos vemos en la estación."
+          "meaning": "Argument (stronger)",
+          "example_sentence": "Tuvieron una discusión acalorada.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comprar",
+          "word": "Envión",
           "reading": null,
-          "meaning": "To buy (Var 12)",
-          "example_sentence": "Ayer compré un libro nuevo."
+          "meaning": "Push/shove",
+          "example_sentence": "Le dio un envión y cayó.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dormir",
+          "word": "Horno",
           "reading": null,
-          "meaning": "To sleep (Var 12)",
-          "example_sentence": "Dormí muy bien anoche."
+          "meaning": "Oven",
+          "example_sentence": "Pon el pavo en el horno.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hablé",
+          "word": "Lectura",
           "reading": null,
-          "meaning": "I spoke (Past) (Var 12)",
-          "example_sentence": "Ayer hablé con mi madre."
+          "meaning": "Reading",
+          "example_sentence": "La lectura de este libro es difícil.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comió",
+          "word": "Mando",
           "reading": null,
-          "meaning": "He/She ate (Past) (Var 12)",
-          "example_sentence": "Él comió mucho en la fiesta."
+          "meaning": "Remote control / Command",
+          "example_sentence": "Pasa el mando de la tele.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Work & Study for A2",
-        "correctVersion": "The correct way to use these A2 concepts.",
-        "explanation": "Detailed linguistic focus for A2 learners in Work & Study."
+        "trap": "Agenda",
+        "correctVersion": "agenda = diary/organiser (also agenda of a meeting)",
+        "explanation": "In English, agenda usually means a meeting's list of topics. In Spanish it primarily means a personal diary/planner."
       }
     },
     {
@@ -4855,53 +4904,60 @@
           "example_sentence": "Dormí muy bien anoche."
         },
         {
-          "word": "Hablé",
+          "word": "Casual",
           "reading": null,
-          "meaning": "I spoke (Past) (Var 11)",
-          "example_sentence": "Ayer hablé con mi madre."
+          "meaning": "Coincidental",
+          "example_sentence": "Fue un encuentro casual en el mercado.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comió",
+          "word": "Comprensivo",
           "reading": null,
-          "meaning": "He/She ate (Past) (Var 11)",
-          "example_sentence": "Él comió mucho en la fiesta."
+          "meaning": "Understanding/sympathetic",
+          "example_sentence": "Es una profesora muy comprensiva.",
+          "isLiarTrap": true
         },
         {
-          "word": "Viaje",
+          "word": "Curiosidad",
           "reading": null,
-          "meaning": "Trip (Var 11)",
-          "example_sentence": "El viaje a Madrid fue increíble."
+          "meaning": "Curiosity (correct — but watch the verb)",
+          "example_sentence": "Tengo curiosidad por saber la verdad.",
+          "isLiarTrap": true
         },
         {
-          "word": "Maleta",
+          "word": "Decepción",
           "reading": null,
-          "meaning": "Suitcase (Var 12)",
-          "example_sentence": "Tengo que hacer la maleta."
+          "meaning": "Disappointment (revisited)",
+          "example_sentence": "Fue una decepción no conseguir el trabajo.",
+          "isLiarTrap": true
         },
         {
-          "word": "Llegar",
+          "word": "Pretender",
           "reading": null,
-          "meaning": "To arrive (Var 12)",
-          "example_sentence": "El tren va a llegar pronto."
+          "meaning": "To seek/claim/intend",
+          "example_sentence": "Pretende ser actor cuando sea mayor.",
+          "isLiarTrap": true
         },
         {
-          "word": "Estación",
+          "word": "Sensación",
           "reading": null,
-          "meaning": "Station (Var 12)",
-          "example_sentence": "Nos vemos en la estación."
+          "meaning": "Feeling/sensation",
+          "example_sentence": "Tengo una sensación extraña.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comprar",
+          "word": "Situación",
           "reading": null,
-          "meaning": "To buy (Var 12)",
-          "example_sentence": "Ayer compré un libro nuevo."
+          "meaning": "Situation — and \"estar en mala situación\"",
+          "example_sentence": "La situación económica es complicada.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Emotions for A2",
-        "correctVersion": "The correct way to use these A2 concepts.",
-        "explanation": "Detailed linguistic focus for A2 learners in Emotions."
+        "trap": "Casual",
+        "correctVersion": "casual = coincidental/chance (not casual/relaxed)",
+        "explanation": "Reinforced for A2: casual clothing in Spanish is ropa informal. Casual describes a chance encounter."
       }
     },
     {
@@ -5468,53 +5524,60 @@
           "example_sentence": "El tren va a llegar pronto."
         },
         {
-          "word": "Estación",
+          "word": "Actualmente",
           "reading": null,
-          "meaning": "Station (Var 11)",
-          "example_sentence": "Nos vemos en la estación."
+          "meaning": "Currently/nowadays",
+          "example_sentence": "Actualmente vivo en Barcelona.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comprar",
+          "word": "Conveniente",
           "reading": null,
-          "meaning": "To buy (Var 11)",
-          "example_sentence": "Ayer compré un libro nuevo."
+          "meaning": "Advisable/suitable",
+          "example_sentence": "No es conveniente llegar tarde.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dormir",
+          "word": "Eventualmente",
           "reading": null,
-          "meaning": "To sleep (Var 11)",
-          "example_sentence": "Dormí muy bien anoche."
+          "meaning": "Possibly/from time to time",
+          "example_sentence": "Eventualmente nos veremos.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hablé",
+          "word": "Ignorar",
           "reading": null,
-          "meaning": "I spoke (Past) (Var 12)",
-          "example_sentence": "Ayer hablé con mi madre."
+          "meaning": "To not know / to ignore",
+          "example_sentence": "Ignoro los detalles del caso.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comió",
+          "word": "Pretexto",
           "reading": null,
-          "meaning": "He/She ate (Past) (Var 12)",
-          "example_sentence": "Él comió mucho en la fiesta."
+          "meaning": "Excuse/pretext",
+          "example_sentence": "Usó un pretexto para no ir.",
+          "isLiarTrap": true
         },
         {
-          "word": "Viaje",
+          "word": "Realizar",
           "reading": null,
-          "meaning": "Trip (Var 12)",
-          "example_sentence": "El viaje a Madrid fue increíble."
+          "meaning": "To carry out/make real",
+          "example_sentence": "Realizó su sueño de viajar.",
+          "isLiarTrap": true
         },
         {
-          "word": "Maleta",
+          "word": "Soportar",
           "reading": null,
-          "meaning": "Suitcase (Var 12)",
-          "example_sentence": "Tengo que hacer la maleta."
+          "meaning": "To tolerate",
+          "example_sentence": "No soporta el frío.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Culture for A2",
-        "correctVersion": "The correct way to use these A2 concepts.",
-        "explanation": "Detailed linguistic focus for A2 learners in Culture."
+        "trap": "Actualmente",
+        "correctVersion": "actualmente = currently/nowadays (not actually)",
+        "explanation": "Actually in Spanish is en realidad or de hecho. Actualmente means at the present time."
       }
     },
     {
@@ -6081,53 +6144,60 @@
           "example_sentence": "Él comió mucho en la fiesta."
         },
         {
-          "word": "Viaje",
+          "word": "Adecuado",
           "reading": null,
-          "meaning": "Trip (Var 11)",
-          "example_sentence": "El viaje a Madrid fue increíble."
+          "meaning": "Suitable/appropriate",
+          "example_sentence": "Este vestido es adecuado para la boda.",
+          "isLiarTrap": true
         },
         {
-          "word": "Maleta",
+          "word": "Cargo",
           "reading": null,
-          "meaning": "Suitcase (Var 11)",
-          "example_sentence": "Tengo que hacer la maleta."
+          "meaning": "Position/charge/cargo",
+          "example_sentence": "Ocupa un cargo importante en la empresa.",
+          "isLiarTrap": true
         },
         {
-          "word": "Llegar",
+          "word": "Decente",
           "reading": null,
-          "meaning": "To arrive (Var 11)",
-          "example_sentence": "El tren va a llegar pronto."
+          "meaning": "Decent (correct) — but watch the colloquial use",
+          "example_sentence": "Busca un trabajo decente.",
+          "isLiarTrap": true
         },
         {
-          "word": "Estación",
+          "word": "Disgustar",
           "reading": null,
-          "meaning": "Station (Var 12)",
-          "example_sentence": "Nos vemos en la estación."
+          "meaning": "To displease/upset",
+          "example_sentence": "Me disgustó su comentario.",
+          "isLiarTrap": true
         },
         {
-          "word": "Comprar",
+          "word": "Forma",
           "reading": null,
-          "meaning": "To buy (Var 12)",
-          "example_sentence": "Ayer compré un libro nuevo."
+          "meaning": "Shape/way/form",
+          "example_sentence": "Lo hizo de forma correcta.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dormir",
+          "word": "Negocio",
           "reading": null,
-          "meaning": "To sleep (Var 12)",
-          "example_sentence": "Dormí muy bien anoche."
+          "meaning": "Business/deal",
+          "example_sentence": "Tiene un negocio de importación.",
+          "isLiarTrap": true
         },
         {
-          "word": "Hablé",
+          "word": "Privado",
           "reading": null,
-          "meaning": "I spoke (Past) (Var 12)",
-          "example_sentence": "Ayer hablé con mi madre."
+          "meaning": "Private (adjective)",
+          "example_sentence": "Es una empresa privada.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Review for A2",
-        "correctVersion": "The correct way to use these A2 concepts.",
-        "explanation": "Detailed linguistic focus for A2 learners in Review."
+        "trap": "Adecuado",
+        "correctVersion": "adecuado = appropriate/suitable (cognate — but implies fit for purpose, not just \"okay\")",
+        "explanation": "Adequate in English can mean barely enough. Adecuado in Spanish means genuinely suitable/fitting."
       }
     }
   ]

@@ -320,7 +320,7 @@ class _LessonContentPageState extends ConsumerState<LessonContentPage> {
           final mapped = Map<String, dynamic>.from(rawItem);
           final standardized = {
             'target_text': mapped['word'] ?? mapped['targetText'] ?? mapped['target_text'] ?? mapped['kanji'] ?? '[LOADING ERROR]',
-            'english': mapped['translation'] ?? mapped['meaning'] ?? mapped['english'] ?? '[LOADING ERROR]',
+            'english': mapped['translation'] ?? mapped['meaning'] ?? mapped['english'] ?? mapped['usage'] ?? '[LOADING ERROR]',
             'phonetic_transcription': mapped['phonetic'] ?? mapped['reading'] ?? mapped['phoneticTranscription'] ?? mapped['phonetic_transcription'] ?? mapped['romaji'] ?? '',
             'radical_breakdown': mapped['radical_breakdown'] ?? mapped['radicalBreakdown'] ?? (mapped['liarGame'] == true ? 'Liar Game Trap!' : null),
             'example_sentence': mapped['example_sentence'] ?? mapped['example'] ?? '',

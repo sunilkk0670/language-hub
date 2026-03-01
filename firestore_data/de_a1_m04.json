@@ -5,6 +5,7 @@
     "level": "a1",
     "language": "german",
     "order": 4,
+    "outcome": "Ask for directions and understand travel-related announcements.",
     "lessons": [
         {
             "order": 1,

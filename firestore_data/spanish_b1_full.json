@@ -564,53 +564,60 @@
           "example_sentence": "Es un sentimiento muy profundo."
         },
         {
-          "word": "Probablemente",
+          "word": "Compromiso",
           "reading": null,
-          "meaning": "Probably (Var 11)",
-          "example_sentence": "Probablemente iré mañana."
+          "meaning": "Commitment/engagement",
+          "example_sentence": "Firmaron un compromiso oficial.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dudar",
+          "word": "Discusión",
           "reading": null,
-          "meaning": "To doubt (Var 11)",
-          "example_sentence": "Dudo que él venga hoy."
+          "meaning": "Argument (B1 revisit)",
+          "example_sentence": "Tuvieron una discusión por el dinero.",
+          "isLiarTrap": true
         },
         {
-          "word": "Creer",
+          "word": "Casualidad",
           "reading": null,
-          "meaning": "To believe (Var 11)",
-          "example_sentence": "Creo que tienes razón."
+          "meaning": "Coincidence",
+          "example_sentence": "¡Qué casualidad encontrarte aquí!",
+          "isLiarTrap": true
         },
         {
-          "word": "Ojalá",
+          "word": "Cita",
           "reading": null,
-          "meaning": "Hopefully / If only (Var 12)",
-          "example_sentence": "Ojalá que haga buen tiempo."
+          "meaning": "Appointment / Date / Quote",
+          "example_sentence": "Tengo una cita con el médico.",
+          "isLiarTrap": true
         },
         {
-          "word": "Subjuntivo",
+          "word": "Familiar",
           "reading": null,
-          "meaning": "Subjunctive (Var 12)",
-          "example_sentence": "Estamos aprendiendo el subjuntivo."
+          "meaning": "Relative (noun) / Familiar (adj.)",
+          "example_sentence": "Es un ambiente muy familiar.",
+          "isLiarTrap": true
         },
         {
-          "word": "Opinión",
+          "word": "Afecto",
           "reading": null,
-          "meaning": "Opinion (Var 12)",
-          "example_sentence": "En mi opinión, es importante."
+          "meaning": "Affection",
+          "example_sentence": "Le tiene mucho afecto a su profesora.",
+          "isLiarTrap": true
         },
         {
-          "word": "Desarrollo",
+          "word": "Gracia",
           "reading": null,
-          "meaning": "Development (Var 12)",
-          "example_sentence": "El desarrollo tecnológico es rápido."
+          "meaning": "Humour/funny (also grace)",
+          "example_sentence": "Tiene mucha gracia contando chistes.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Fundamentals for B1",
-        "correctVersion": "The correct way to use these B1 concepts.",
-        "explanation": "Detailed linguistic focus for B1 learners in Fundamentals."
+        "trap": "Compromiso",
+        "correctVersion": "compromiso = commitment/engagement (not compromise as a middle ground)",
+        "explanation": "Reinforced for B1: a negotiated compromise in Spanish is un acuerdo or un término medio."
       }
     },
     {
@@ -1177,53 +1184,60 @@
           "example_sentence": "Estamos aprendiendo el subjuntivo."
         },
         {
-          "word": "Opinión",
+          "word": "Actual",
           "reading": null,
-          "meaning": "Opinion (Var 11)",
-          "example_sentence": "En mi opinión, es importante."
+          "meaning": "Current/present-day (B1 revisit)",
+          "example_sentence": "El gobierno actual tiene pocos apoyos.",
+          "isLiarTrap": true
         },
         {
-          "word": "Desarrollo",
+          "word": "Invertir",
           "reading": null,
-          "meaning": "Development (Var 11)",
-          "example_sentence": "El desarrollo tecnológico es rápido."
+          "meaning": "To invest / to invert",
+          "example_sentence": "Invirtió todo su dinero en acciones.",
+          "isLiarTrap": true
         },
         {
-          "word": "Sentimiento",
+          "word": "Red",
           "reading": null,
-          "meaning": "Feeling (Var 11)",
-          "example_sentence": "Es un sentimiento muy profundo."
+          "meaning": "Network (B1 revisit)",
+          "example_sentence": "La red ferroviaria española es muy extensa.",
+          "isLiarTrap": true
         },
         {
-          "word": "Probablemente",
+          "word": "Mando",
           "reading": null,
-          "meaning": "Probably (Var 12)",
-          "example_sentence": "Probablemente iré mañana."
+          "meaning": "Remote control / Command (B1)",
+          "example_sentence": "El presidente tiene el mando de las fuerzas.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dudar",
+          "word": "Subir",
           "reading": null,
-          "meaning": "To doubt (Var 12)",
-          "example_sentence": "Dudo que él venga hoy."
+          "meaning": "To upload/increase/climb",
+          "example_sentence": "Han subido los precios otra vez.",
+          "isLiarTrap": true
         },
         {
-          "word": "Creer",
+          "word": "Bajar",
           "reading": null,
-          "meaning": "To believe (Var 12)",
-          "example_sentence": "Creo que tienes razón."
+          "meaning": "To download/decrease/descend",
+          "example_sentence": "Los tipos de interés han bajado.",
+          "isLiarTrap": true
         },
         {
-          "word": "Ojalá",
+          "word": "Enlace",
           "reading": null,
-          "meaning": "Hopefully / If only (Var 12)",
-          "example_sentence": "Ojalá que haga buen tiempo."
+          "meaning": "Link (web) / Bond / Junction",
+          "example_sentence": "Envíame el enlace del artículo.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Communication for B1",
-        "correctVersion": "The correct way to use these B1 concepts.",
-        "explanation": "Detailed linguistic focus for B1 learners in Communication."
+        "trap": "Actual",
+        "correctVersion": "actual = current (not actual/real) — reinforced at B1",
+        "explanation": "B1 reinforcement: English \"actual facts\" = los hechos reales. Actual in Spanish only means present-day."
       }
     },
     {
@@ -1790,53 +1804,60 @@
           "example_sentence": "Dudo que él venga hoy."
         },
         {
-          "word": "Creer",
+          "word": "Realizar",
           "reading": null,
-          "meaning": "To believe (Var 11)",
-          "example_sentence": "Creo que tienes razón."
+          "meaning": "To carry out/achieve (B1)",
+          "example_sentence": "El equipo realizó un trabajo excelente.",
+          "isLiarTrap": true
         },
         {
-          "word": "Ojalá",
+          "word": "Oficio",
           "reading": null,
-          "meaning": "Hopefully / If only (Var 11)",
-          "example_sentence": "Ojalá que haga buen tiempo."
+          "meaning": "Trade/craft/job",
+          "example_sentence": "El oficio de carpintero es muy valorado.",
+          "isLiarTrap": true
         },
         {
-          "word": "Subjuntivo",
+          "word": "Cargo",
           "reading": null,
-          "meaning": "Subjunctive (Var 11)",
-          "example_sentence": "Estamos aprendiendo el subjuntivo."
+          "meaning": "Job position/charge (B1)",
+          "example_sentence": "Asumió el cargo de directora general.",
+          "isLiarTrap": true
         },
         {
-          "word": "Opinión",
+          "word": "Sueldo",
           "reading": null,
-          "meaning": "Opinion (Var 12)",
-          "example_sentence": "En mi opinión, es importante."
+          "meaning": "Salary/wage",
+          "example_sentence": "Su sueldo ha aumentado este año.",
+          "isLiarTrap": true
         },
         {
-          "word": "Desarrollo",
+          "word": "Carrera",
           "reading": null,
-          "meaning": "Development (Var 12)",
-          "example_sentence": "El desarrollo tecnológico es rápido."
+          "meaning": "Degree course / Race / Career",
+          "example_sentence": "Estudia la carrera de medicina.",
+          "isLiarTrap": true
         },
         {
-          "word": "Sentimiento",
+          "word": "Solicitud",
           "reading": null,
-          "meaning": "Feeling (Var 12)",
-          "example_sentence": "Es un sentimiento muy profundo."
+          "meaning": "Application/request",
+          "example_sentence": "Rellena la solicitud de empleo.",
+          "isLiarTrap": true
         },
         {
-          "word": "Probablemente",
+          "word": "Empresa",
           "reading": null,
-          "meaning": "Probably (Var 12)",
-          "example_sentence": "Probablemente iré mañana."
+          "meaning": "Company (B1 revisit)",
+          "example_sentence": "Fundó su propia empresa con 30 años.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Daily Life for B1",
-        "correctVersion": "The correct way to use these B1 concepts.",
-        "explanation": "Detailed linguistic focus for B1 learners in Daily Life."
+        "trap": "Realizar",
+        "correctVersion": "realizar = to carry out/execute (not to realize/notice)",
+        "explanation": "B1 reinforcement: realizar is essential in formal writing. To realize (notice) is darse cuenta de."
       }
     },
     {
@@ -2403,53 +2424,60 @@
           "example_sentence": "El desarrollo tecnológico es rápido."
         },
         {
-          "word": "Sentimiento",
+          "word": "Emocionante",
           "reading": null,
-          "meaning": "Feeling (Var 11)",
-          "example_sentence": "Es un sentimiento muy profundo."
+          "meaning": "Exciting/thrilling",
+          "example_sentence": "El partido fue muy emocionante.",
+          "isLiarTrap": true
         },
         {
-          "word": "Probablemente",
+          "word": "Extraño",
           "reading": null,
-          "meaning": "Probably (Var 11)",
-          "example_sentence": "Probablemente iré mañana."
+          "meaning": "Strange / A stranger",
+          "example_sentence": "Se comportó de manera extraña.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dudar",
+          "word": "Sensato",
           "reading": null,
-          "meaning": "To doubt (Var 11)",
-          "example_sentence": "Dudo que él venga hoy."
+          "meaning": "Sensible/wise (what English meant by sensible)",
+          "example_sentence": "Es la decisión más sensata.",
+          "isLiarTrap": true
         },
         {
-          "word": "Creer",
+          "word": "Ilusión",
           "reading": null,
-          "meaning": "To believe (Var 12)",
-          "example_sentence": "Creo que tienes razón."
+          "meaning": "Hope/excitement (not illusion)",
+          "example_sentence": "Tengo mucha ilusión por el viaje.",
+          "isLiarTrap": true
         },
         {
-          "word": "Ojalá",
+          "word": "Tópico",
           "reading": null,
-          "meaning": "Hopefully / If only (Var 12)",
-          "example_sentence": "Ojalá que haga buen tiempo."
+          "meaning": "Cliché/stereotype",
+          "example_sentence": "Ese es un tópico sobre los españoles.",
+          "isLiarTrap": true
         },
         {
-          "word": "Subjuntivo",
+          "word": "Simpático",
           "reading": null,
-          "meaning": "Subjunctive (Var 12)",
-          "example_sentence": "Estamos aprendiendo el subjuntivo."
+          "meaning": "Likeable/friendly",
+          "example_sentence": "Es una persona muy simpática.",
+          "isLiarTrap": true
         },
         {
-          "word": "Opinión",
+          "word": "Logro",
           "reading": null,
-          "meaning": "Opinion (Var 12)",
-          "example_sentence": "En mi opinión, es importante."
+          "meaning": "Achievement/accomplishment",
+          "example_sentence": "Publicar un libro fue su mayor logro.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Travel for B1",
-        "correctVersion": "The correct way to use these B1 concepts.",
-        "explanation": "Detailed linguistic focus for B1 learners in Travel."
+        "trap": "Emocionante",
+        "correctVersion": "emocionante = exciting/thrilling (not emotional)",
+        "explanation": "Emotional (showing feelings) in Spanish is emotivo or sentimental. Emocionante means causing excitement."
       }
     },
     {
@@ -3016,53 +3044,60 @@
           "example_sentence": "Ojalá que haga buen tiempo."
         },
         {
-          "word": "Subjuntivo",
+          "word": "Argumento",
           "reading": null,
-          "meaning": "Subjunctive (Var 11)",
-          "example_sentence": "Estamos aprendiendo el subjuntivo."
+          "meaning": "Plot / Argument (reasoning)",
+          "example_sentence": "El argumento de la novela es complejo.",
+          "isLiarTrap": true
         },
         {
-          "word": "Opinión",
+          "word": "Colega",
           "reading": null,
-          "meaning": "Opinion (Var 11)",
-          "example_sentence": "En mi opinión, es importante."
+          "meaning": "Mate/colleague (informal)",
+          "example_sentence": "Salí a cenar con mis colegas.",
+          "isLiarTrap": true
         },
         {
-          "word": "Desarrollo",
+          "word": "Denunciar",
           "reading": null,
-          "meaning": "Development (Var 11)",
-          "example_sentence": "El desarrollo tecnológico es rápido."
+          "meaning": "To report (to police) / to denounce",
+          "example_sentence": "Denunció el robo en la comisaría.",
+          "isLiarTrap": true
         },
         {
-          "word": "Sentimiento",
+          "word": "Expediente",
           "reading": null,
-          "meaning": "Feeling (Var 12)",
-          "example_sentence": "Es un sentimiento muy profundo."
+          "meaning": "File / Academic record / Disciplinary case",
+          "example_sentence": "Tiene un buen expediente académico.",
+          "isLiarTrap": true
         },
         {
-          "word": "Probablemente",
+          "word": "Formación",
           "reading": null,
-          "meaning": "Probably (Var 12)",
-          "example_sentence": "Probablemente iré mañana."
+          "meaning": "Training/education",
+          "example_sentence": "Necesita formación profesional.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dudar",
+          "word": "Interesado",
           "reading": null,
-          "meaning": "To doubt (Var 12)",
-          "example_sentence": "Dudo que él venga hoy."
+          "meaning": "Self-interested/selfish (often)",
+          "example_sentence": "Es una persona muy interesada.",
+          "isLiarTrap": true
         },
         {
-          "word": "Creer",
+          "word": "Planteamiento",
           "reading": null,
-          "meaning": "To believe (Var 12)",
-          "example_sentence": "Creo que tienes razón."
+          "meaning": "Approach/framing of a problem",
+          "example_sentence": "El planteamiento del problema es clave.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Socializing for B1",
-        "correctVersion": "The correct way to use these B1 concepts.",
-        "explanation": "Detailed linguistic focus for B1 learners in Socializing."
+        "trap": "Argumento",
+        "correctVersion": "argumento = plot of a story OR a reasoned argument",
+        "explanation": "Argumento does not mean a verbal fight (pelea, discusión). It means a narrative plot or a logical argument."
       }
     },
     {
@@ -3629,53 +3664,60 @@
           "example_sentence": "Probablemente iré mañana."
         },
         {
-          "word": "Dudar",
+          "word": "Actualidad",
           "reading": null,
-          "meaning": "To doubt (Var 11)",
-          "example_sentence": "Dudo que él venga hoy."
+          "meaning": "Current affairs / The present day",
+          "example_sentence": "En la actualidad, todo cambia rápido.",
+          "isLiarTrap": true
         },
         {
-          "word": "Creer",
+          "word": "Condescendiente",
           "reading": null,
-          "meaning": "To believe (Var 11)",
-          "example_sentence": "Creo que tienes razón."
+          "meaning": "Condescending (correct — but watch Spanish use)",
+          "example_sentence": "Su tono condescendiente molestó a todos.",
+          "isLiarTrap": true
         },
         {
-          "word": "Ojalá",
+          "word": "Cuestión",
           "reading": null,
-          "meaning": "Hopefully / If only (Var 11)",
-          "example_sentence": "Ojalá que haga buen tiempo."
+          "meaning": "Issue/matter (not just a question)",
+          "example_sentence": "Es una cuestión de principios.",
+          "isLiarTrap": true
         },
         {
-          "word": "Subjuntivo",
+          "word": "Evidencia",
           "reading": null,
-          "meaning": "Subjunctive (Var 12)",
-          "example_sentence": "Estamos aprendiendo el subjuntivo."
+          "meaning": "Evidence (also false cognate nuance)",
+          "example_sentence": "La evidencia señala al sospechoso.",
+          "isLiarTrap": true
         },
         {
-          "word": "Opinión",
+          "word": "Particular",
           "reading": null,
-          "meaning": "Opinion (Var 12)",
-          "example_sentence": "En mi opinión, es importante."
+          "meaning": "Private individual / Specific",
+          "example_sentence": "Es mi coche particular.",
+          "isLiarTrap": true
         },
         {
-          "word": "Desarrollo",
+          "word": "Término",
           "reading": null,
-          "meaning": "Development (Var 12)",
-          "example_sentence": "El desarrollo tecnológico es rápido."
+          "meaning": "Term / End / Word",
+          "example_sentence": "A término de la reunión, todos firmaron.",
+          "isLiarTrap": true
         },
         {
-          "word": "Sentimiento",
+          "word": "Virtud",
           "reading": null,
-          "meaning": "Feeling (Var 12)",
-          "example_sentence": "Es un sentimiento muy profundo."
+          "meaning": "Virtue (correct — but \"en virtud de\")",
+          "example_sentence": "Gracias a su virtud y honestidad triunfó.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Nature for B1",
-        "correctVersion": "The correct way to use these B1 concepts.",
-        "explanation": "Detailed linguistic focus for B1 learners in Nature."
+        "trap": "Actualidad",
+        "correctVersion": "actualidad = current affairs / present time (not a philosophical actuality)",
+        "explanation": "Actuality (philosophical reality) in Spanish is realidad. Actualidad refers to what is happening right now in the news."
       }
     },
     {
@@ -4242,53 +4284,60 @@
           "example_sentence": "En mi opinión, es importante."
         },
         {
-          "word": "Desarrollo",
+          "word": "Apuntar",
           "reading": null,
-          "meaning": "Development (Var 11)",
-          "example_sentence": "El desarrollo tecnológico es rápido."
+          "meaning": "To note down / to point / to sign up",
+          "example_sentence": "Apunta tu nombre en la lista.",
+          "isLiarTrap": true
         },
         {
-          "word": "Sentimiento",
+          "word": "Cargar",
           "reading": null,
-          "meaning": "Feeling (Var 11)",
-          "example_sentence": "Es un sentimiento muy profundo."
+          "meaning": "To load / to charge (battery) / to carry",
+          "example_sentence": "Carga las maletas en el coche.",
+          "isLiarTrap": true
         },
         {
-          "word": "Probablemente",
+          "word": "Destacar",
           "reading": null,
-          "meaning": "Probably (Var 11)",
-          "example_sentence": "Probablemente iré mañana."
+          "meaning": "To stand out / to highlight",
+          "example_sentence": "Destaca por su inteligencia.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dudar",
+          "word": "Existir",
           "reading": null,
-          "meaning": "To doubt (Var 12)",
-          "example_sentence": "Dudo que él venga hoy."
+          "meaning": "To exist (correct — but no existir for exist is a common error)",
+          "example_sentence": "El problema todavía existe.",
+          "isLiarTrap": true
         },
         {
-          "word": "Creer",
+          "word": "Proponer",
           "reading": null,
-          "meaning": "To believe (Var 12)",
-          "example_sentence": "Creo que tienes razón."
+          "meaning": "To propose (suggest) / to put forward",
+          "example_sentence": "Le propuse un nuevo proyecto.",
+          "isLiarTrap": true
         },
         {
-          "word": "Ojalá",
+          "word": "Suponer",
           "reading": null,
-          "meaning": "Hopefully / If only (Var 12)",
-          "example_sentence": "Ojalá que haga buen tiempo."
+          "meaning": "To involve / to assume",
+          "example_sentence": "La decisión supone muchos cambios.",
+          "isLiarTrap": true
         },
         {
-          "word": "Subjuntivo",
+          "word": "Tratar",
           "reading": null,
-          "meaning": "Subjunctive (Var 12)",
-          "example_sentence": "Estamos aprendiendo el subjuntivo."
+          "meaning": "To deal with / to treat / to try to",
+          "example_sentence": "El libro trata de la guerra civil.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Work & Study for B1",
-        "correctVersion": "The correct way to use these B1 concepts.",
-        "explanation": "Detailed linguistic focus for B1 learners in Work & Study."
+        "trap": "Apuntar",
+        "correctVersion": "apuntar = to jot down / to point at / to sign up (versatile verb)",
+        "explanation": "To appoint (a person to a role) in Spanish is nombrar or designar. Apuntar has many everyday meanings."
       }
     },
     {
@@ -4855,53 +4904,60 @@
           "example_sentence": "Creo que tienes razón."
         },
         {
-          "word": "Ojalá",
+          "word": "Asistencia",
           "reading": null,
-          "meaning": "Hopefully / If only (Var 11)",
-          "example_sentence": "Ojalá que haga buen tiempo."
+          "meaning": "Attendance / Welfare aid / Assistance",
+          "example_sentence": "La asistencia a clase es obligatoria.",
+          "isLiarTrap": true
         },
         {
-          "word": "Subjuntivo",
+          "word": "Atender",
           "reading": null,
-          "meaning": "Subjunctive (Var 11)",
-          "example_sentence": "Estamos aprendiendo el subjuntivo."
+          "meaning": "To attend to / to serve / to pay attention",
+          "example_sentence": "El médico atiende a los pacientes.",
+          "isLiarTrap": true
         },
         {
-          "word": "Opinión",
+          "word": "Convencer",
           "reading": null,
-          "meaning": "Opinion (Var 11)",
-          "example_sentence": "En mi opinión, es importante."
+          "meaning": "To convince (correct — but note \"me convence el argumento\")",
+          "example_sentence": "Su argumento me convence.",
+          "isLiarTrap": true
         },
         {
-          "word": "Desarrollo",
+          "word": "Facilitar",
           "reading": null,
-          "meaning": "Development (Var 12)",
-          "example_sentence": "El desarrollo tecnológico es rápido."
+          "meaning": "To facilitate / to provide",
+          "example_sentence": "El banco facilitó los fondos necesarios.",
+          "isLiarTrap": true
         },
         {
-          "word": "Sentimiento",
+          "word": "Instalar",
           "reading": null,
-          "meaning": "Feeling (Var 12)",
-          "example_sentence": "Es un sentimiento muy profundo."
+          "meaning": "To install (correct) — and to settle in",
+          "example_sentence": "Se instalaron en el nuevo piso rápidamente.",
+          "isLiarTrap": true
         },
         {
-          "word": "Probablemente",
+          "word": "Marcar",
           "reading": null,
-          "meaning": "Probably (Var 12)",
-          "example_sentence": "Probablemente iré mañana."
+          "meaning": "To mark / to score / to dial a number",
+          "example_sentence": "Marcó tres goles en el partido.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dudar",
+          "word": "Seguir",
           "reading": null,
-          "meaning": "To doubt (Var 12)",
-          "example_sentence": "Dudo que él venga hoy."
+          "meaning": "To follow / to continue / to keep on",
+          "example_sentence": "Sigue estudiando aunque es difícil.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Emotions for B1",
-        "correctVersion": "The correct way to use these B1 concepts.",
-        "explanation": "Detailed linguistic focus for B1 learners in Emotions."
+        "trap": "Asistencia",
+        "correctVersion": "asistencia = attendance OR social/medical assistance (not just \"assistance\")",
+        "explanation": "While asistencia can mean assistance, it primarily means attendance (asistencia a clase = class attendance) or social welfare."
       }
     },
     {
@@ -5468,53 +5524,60 @@
           "example_sentence": "Es un sentimiento muy profundo."
         },
         {
-          "word": "Probablemente",
+          "word": "Constitución",
           "reading": null,
-          "meaning": "Probably (Var 11)",
-          "example_sentence": "Probablemente iré mañana."
+          "meaning": "Constitution (law) / Physical constitution",
+          "example_sentence": "Aprobaron la nueva constitución.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dudar",
+          "word": "Ley",
           "reading": null,
-          "meaning": "To doubt (Var 11)",
-          "example_sentence": "Dudo que él venga hoy."
+          "meaning": "Law",
+          "example_sentence": "La ley prohíbe fumar en espacios públicos.",
+          "isLiarTrap": true
         },
         {
-          "word": "Creer",
+          "word": "Derecho",
           "reading": null,
-          "meaning": "To believe (Var 11)",
-          "example_sentence": "Creo que tienes razón."
+          "meaning": "Right (legal) / Straight / Law (field)",
+          "example_sentence": "Estudia la carrera de Derecho.",
+          "isLiarTrap": true
         },
         {
-          "word": "Ojalá",
+          "word": "Cortes",
           "reading": null,
-          "meaning": "Hopefully / If only (Var 12)",
-          "example_sentence": "Ojalá que haga buen tiempo."
+          "meaning": "Parliament (Spain) / Haircuts",
+          "example_sentence": "Las Cortes aprobaron el presupuesto.",
+          "isLiarTrap": true
         },
         {
-          "word": "Subjuntivo",
+          "word": "Voto",
           "reading": null,
-          "meaning": "Subjunctive (Var 12)",
-          "example_sentence": "Estamos aprendiendo el subjuntivo."
+          "meaning": "Vote / Vow (religious)",
+          "example_sentence": "El candidato ganó por un amplio margen de votos.",
+          "isLiarTrap": true
         },
         {
-          "word": "Opinión",
+          "word": "Estado",
           "reading": null,
-          "meaning": "Opinion (Var 12)",
-          "example_sentence": "En mi opinión, es importante."
+          "meaning": "State (political) / State (condition)",
+          "example_sentence": "El Estado garantiza la sanidad pública.",
+          "isLiarTrap": true
         },
         {
-          "word": "Desarrollo",
+          "word": "Gobierno",
           "reading": null,
-          "meaning": "Development (Var 12)",
-          "example_sentence": "El desarrollo tecnológico es rápido."
+          "meaning": "Government",
+          "example_sentence": "El gobierno tomó medidas urgentes.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Culture for B1",
-        "correctVersion": "The correct way to use these B1 concepts.",
-        "explanation": "Detailed linguistic focus for B1 learners in Culture."
+        "trap": "Constitución",
+        "correctVersion": "constitución = constitutional document AND physical build (tener buena constitución)",
+        "explanation": "Tener buena constitución means to have a strong physical constitution (body build), not just to have a good constitution."
       }
     },
     {
@@ -6081,53 +6144,60 @@
           "example_sentence": "Estamos aprendiendo el subjuntivo."
         },
         {
-          "word": "Opinión",
+          "word": "Conclusión",
           "reading": null,
-          "meaning": "Opinion (Var 11)",
-          "example_sentence": "En mi opinión, es importante."
+          "meaning": "Conclusion (correct — but \"en conclusión\" vs \"por tanto\")",
+          "example_sentence": "En conclusión, el proyecto fue un éxito.",
+          "isLiarTrap": true
         },
         {
-          "word": "Desarrollo",
+          "word": "Perspectiva",
           "reading": null,
-          "meaning": "Development (Var 11)",
-          "example_sentence": "El desarrollo tecnológico es rápido."
+          "meaning": "Perspective / Prospect",
+          "example_sentence": "Hay que ver el asunto en perspectiva.",
+          "isLiarTrap": true
         },
         {
-          "word": "Sentimiento",
+          "word": "Pretexto",
           "reading": null,
-          "meaning": "Feeling (Var 11)",
-          "example_sentence": "Es un sentimiento muy profundo."
+          "meaning": "Excuse/pretext",
+          "example_sentence": "Usó el trabajo como pretexto para no ir.",
+          "isLiarTrap": true
         },
         {
-          "word": "Probablemente",
+          "word": "Rendimiento",
           "reading": null,
-          "meaning": "Probably (Var 12)",
-          "example_sentence": "Probablemente iré mañana."
+          "meaning": "Performance / yield",
+          "example_sentence": "El rendimiento del equipo fue excelente.",
+          "isLiarTrap": true
         },
         {
-          "word": "Dudar",
+          "word": "Trayectoria",
           "reading": null,
-          "meaning": "To doubt (Var 12)",
-          "example_sentence": "Dudo que él venga hoy."
+          "meaning": "Career path / Trajectory",
+          "example_sentence": "Tiene una brillante trayectoria profesional.",
+          "isLiarTrap": true
         },
         {
-          "word": "Creer",
+          "word": "Vigente",
           "reading": null,
-          "meaning": "To believe (Var 12)",
-          "example_sentence": "Creo que tienes razón."
+          "meaning": "In force / Currently valid",
+          "example_sentence": "La ley vigente prohíbe esa práctica.",
+          "isLiarTrap": true
         },
         {
-          "word": "Ojalá",
+          "word": "Vocación",
           "reading": null,
-          "meaning": "Hopefully / If only (Var 12)",
-          "example_sentence": "Ojalá que haga buen tiempo."
+          "meaning": "Vocation/calling",
+          "example_sentence": "Tiene una clara vocación por la medicina.",
+          "isLiarTrap": true
         }
       ],
       "count": 100,
       "liarGameData": {
-        "trap": "Common mistake in Review for B1",
-        "correctVersion": "The correct way to use these B1 concepts.",
-        "explanation": "Detailed linguistic focus for B1 learners in Review."
+        "trap": "Conclusión",
+        "correctVersion": "conclusión = conclusion (correct — but note connective phrases)",
+        "explanation": "En conclusión and en definitiva are more formal. Por tanto and así que are colloquial B1 connectives — all important at this level."
       }
     }
   ]

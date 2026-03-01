@@ -1,7 +1,11 @@
 {
   "id": "fr_a1_m3",
+  "moduleId": "fr_a1_m3",
   "name": "A1 French - Module 3: Food & Dining",
+  "theme": "Food & Dining",
+  "order": 3,
   "description": "Essential vocabulary for eating out, common foods, and ordering.",
+  "outcome": "After this, you can order food at a restaurant, talk about meals, and discuss your culinary preferences.",
   "count": 100,
   "vocabularyItems": [
     {

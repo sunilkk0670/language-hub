@@ -1,11 +1,11 @@
 {
-    "name": "chirp_polly",
-    "short_name": "chirp_polly",
+    "name": "ChirpPolly",
+    "short_name": "ChirpPolly",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#6A4CBC",
     "theme_color": "#6A4CBC",
-    "description": "ChirpPolly: Master 11 languages with immersive AI-powered lessons.",
+    "description": "Learn 11 languages free with AI-powered lessons, JLPT prep & gamified vocabulary.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

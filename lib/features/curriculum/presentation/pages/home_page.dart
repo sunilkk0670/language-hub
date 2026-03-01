@@ -1,3 +1,5 @@
+import 'dart:async';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -12,11 +14,47 @@ class HomePage extends ConsumerStatefulWidget {
   ConsumerState<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderStateMixin {
+// ─── Brand colours ────────────────────────────────────────────────────────
+const _kPurple = Color(0xFF6A4CBC); // "Start Learning Now" button purple
+const _kTeal   = Color(0xFF4ECDC4); // Polly's wing teal
+
+class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMixin {
   final ScrollController _scrollController = ScrollController();
   final GlobalKey _languagesKey = GlobalKey();
+
+  // ── Existing float ──────────────────────────────────────────────────────
   late AnimationController _parrotController;
-  late Animation<double> _parrotAnimation;
+  late Animation<double>   _parrotAnimation;
+
+  // ── Entrance bounce ─────────────────────────────────────────────────────
+  late AnimationController _entranceController;
+  late Animation<double>   _entranceScale;
+
+  // ── Staggered headline ──────────────────────────────────────────────────
+  late AnimationController    _staggerController;
+  late Animation<double>      _line1Opacity;
+  late Animation<Offset>      _line1Slide;
+  late Animation<double>      _line2Opacity;
+  late Animation<Offset>      _line2Slide;
+
+  // ── Shimmer on "Chirping" ───────────────────────────────────────────────
+  late AnimationController _shimmerController;
+
+  // ── Button glow ─────────────────────────────────────────────────────────
+  late AnimationController _glowController;
+  late Animation<double>   _glowBlur;
+
+  // ── Speech bubble ───────────────────────────────────────────────────────
+  late AnimationController _bubbleController;
+  late Animation<double>   _bubbleOpacity;
+  late Animation<Offset>   _bubbleSlide;
+  final ValueNotifier<String> _bubbleTextNotifier = ValueNotifier('');
+  bool   _bubbleDone  = false;
+  Timer? _typeTimer;
+  Timer? _bubbleDelay;
+  static const _fullBubbleText = "Hi! I'm Polly.\nReady to chirp? 🦜";
+
+  // (Parallax hover removed — consistent behaviour on all screen sizes)
 
   void _scrollToSection(GlobalKey key) {
     final context = key.currentContext;
@@ -32,20 +70,102 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
   @override
   void initState() {
     super.initState();
+
+    // ── Float (existing, unchanged) ──────────────────────────────────────
     _parrotController = AnimationController(
       duration: const Duration(seconds: 3),
       vsync: this,
     )..repeat(reverse: true);
-    
     _parrotAnimation = Tween<double>(begin: -10, end: 10).animate(
       CurvedAnimation(parent: _parrotController, curve: Curves.easeInOut),
     );
+
+    // ── Entrance bounce ──────────────────────────────────────────────────
+    _entranceController = AnimationController(
+      duration: const Duration(milliseconds: 700),
+      vsync: this,
+    );
+    _entranceScale = TweenSequence<double>([
+      TweenSequenceItem(tween: Tween(begin: 0.88, end: 1.04), weight: 60),
+      TweenSequenceItem(tween: Tween(begin: 1.04, end: 0.98), weight: 20),
+      TweenSequenceItem(tween: Tween(begin: 0.98, end: 1.00), weight: 20),
+    ]).animate(CurvedAnimation(parent: _entranceController, curve: Curves.easeOut));
+    _entranceController.forward();
+
+    // ── Staggered headline ───────────────────────────────────────────────
+    _staggerController = AnimationController(
+      duration: const Duration(milliseconds: 1200),
+      vsync: this,
+    );
+    _line1Opacity = Tween<double>(begin: 0, end: 1).animate(
+      CurvedAnimation(parent: _staggerController,
+          curve: const Interval(0.0, 0.5, curve: Curves.easeOut)));
+    _line1Slide = Tween<Offset>(begin: const Offset(-0.15, 0), end: Offset.zero).animate(
+      CurvedAnimation(parent: _staggerController,
+          curve: const Interval(0.0, 0.5, curve: Curves.easeOut)));
+    _line2Opacity = Tween<double>(begin: 0, end: 1).animate(
+      CurvedAnimation(parent: _staggerController,
+          curve: const Interval(0.4, 0.9, curve: Curves.easeOut)));
+    _line2Slide = Tween<Offset>(begin: const Offset(-0.15, 0), end: Offset.zero).animate(
+      CurvedAnimation(parent: _staggerController,
+          curve: const Interval(0.4, 0.9, curve: Curves.easeOut)));
+    // Start immediately — no delay avoids the invisible-flash on first render
+    _staggerController.forward();
+
+    // ── Shimmer ──────────────────────────────────────────────────────────
+    _shimmerController = AnimationController(
+      duration: const Duration(seconds: 3),
+      vsync: this,
+    )..repeat();
+
+    // ── Button glow ──────────────────────────────────────────────────────
+    _glowController = AnimationController(
+      duration: const Duration(milliseconds: 2000),
+      vsync: this,
+    )..repeat(reverse: true);
+    _glowBlur = Tween<double>(begin: 8, end: 28)
+        .animate(CurvedAnimation(parent: _glowController, curve: Curves.easeInOut));
+
+    // ── Speech bubble (delayed) ──────────────────────────────────────────
+    _bubbleController = AnimationController(
+      duration: const Duration(milliseconds: 500),
+      vsync: this,
+    );
+    _bubbleOpacity = Tween<double>(begin: 0, end: 1).animate(
+      CurvedAnimation(parent: _bubbleController, curve: Curves.easeOut));
+    _bubbleSlide = Tween<Offset>(begin: const Offset(0, 0.3), end: Offset.zero).animate(
+      CurvedAnimation(parent: _bubbleController, curve: Curves.easeOut));
+
+    // Start bubble after entrance settles
+    _bubbleDelay = Timer(const Duration(milliseconds: 1100), () {
+      if (!mounted) return;
+      _bubbleController.forward();
+      // Typewriter — use ValueNotifier to avoid rebuilding the entire widget tree
+      int idx = 0;
+      _typeTimer = Timer.periodic(const Duration(milliseconds: 55), (t) {
+        if (!mounted) { t.cancel(); return; }
+        if (idx < _fullBubbleText.length) {
+          _bubbleTextNotifier.value = _fullBubbleText.substring(0, ++idx);
+        } else {
+          setState(() => _bubbleDone = true);
+          t.cancel();
+        }
+      });
+    });
   }
 
   @override
   void dispose() {
     _scrollController.dispose();
     _parrotController.dispose();
+    _entranceController.dispose();
+    _staggerController.dispose();
+    _shimmerController.dispose();
+    _glowController.dispose();
+    _bubbleController.dispose();
+    _bubbleTextNotifier.dispose();
+    _typeTimer?.cancel();
+    _bubbleDelay?.cancel();
     super.dispose();
   }
 
@@ -225,9 +345,34 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                         ),
                         const SizedBox(width: 16),
                         TextButton(
+                          onPressed: () => Navigator.pushNamed(context, '/pricing'),
+                          child: Text(
+                            'Pricing',
+                            style: TextStyle(
+                              color: Colors.grey.shade800,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        TextButton(
                           onPressed: () => Navigator.pushNamed(context, '/about'),
                           child: Text(
                             'About',
+                            style: TextStyle(
+                              color: Colors.grey.shade800,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        // AI Tutor button
+                        TextButton(
+                          onPressed: () => Navigator.pushNamed(context, '/ai-tutor'),
+                          child: Text(
+                            'AI Tutor',
                             style: TextStyle(
                               color: Colors.grey.shade800,
                               fontSize: 16,
@@ -397,80 +542,182 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
   Widget _buildHeroSection(List<QueryDocumentSnapshot> languages) {
     return Container(
       width: double.infinity,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          stops: const [0.0, 0.4, 0.7, 1.0],
+          stops: [0.0, 0.4, 0.7, 1.0],
           colors: [
-            const Color(0xFFEDF5FF), // Extremely light blue
-            const Color(0xFFF3EAFF), // Extremely light lavender
-            const Color(0xFFFDF4E3), // Extremely light gold transition
-            const Color(0xFFFFFFFF), // Pure white fade
+            Color(0xFFEDF5FF),
+            Color(0xFFF3EAFF),
+            Color(0xFFFDF4E3),
+            Color(0xFFFFFFFF),
           ],
         ),
       ),
       child: Column(
         children: [
-          // Content
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 24),
             child: LayoutBuilder(
               builder: (context, constraints) {
-                // Responsive Breakpoint
-                bool isDesktop = constraints.maxWidth > 900;
+                final bool isDesktop = constraints.maxWidth > 900;
 
-                return Center(
-                  child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 1200),
-                    child: Flex(
-                      direction: isDesktop ? Axis.horizontal : Axis.vertical,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        // Left Text Section (Flex 3)
-                        Expanded(
-                          flex: isDesktop ? 3 : 0,
-                          child: Column(
+                // Build left (text) section
+                Widget leftSection = Column(
                             crossAxisAlignment: isDesktop
                                 ? CrossAxisAlignment.start
                                 : CrossAxisAlignment.center,
                             children: [
+
+                              // ── Line 1: "Don't Just Learn." ───────────────
                               Padding(
-                                padding: const EdgeInsets.only(bottom: 20),
-                                child: FittedBox(
-                                  fit: BoxFit.scaleDown,
-                                  child: ShaderMask(
-                                    shaderCallback: (bounds) => const LinearGradient(
-                                      colors: [Color(0xFF2E3192), Color(0xFF6A4CBC)],
-                                    ).createShader(bounds),
-                                    child: Text(
-                                      'Don\'t Just Learn.\nStart Chirping.',
-                                      style: TextStyle(
-                                        fontSize: isDesktop ? 64 : 42,
-                                        fontWeight: FontWeight.bold, // Bold
-                                        color: Colors.white,
-                                        height: 1.25,
-                                        letterSpacing: -0.5, // Tight letter spacing
+                                padding: const EdgeInsets.only(bottom: 4),
+                                child: FadeTransition(
+                                  opacity: _line1Opacity,
+                                  child: SlideTransition(
+                                    position: _line1Slide,
+                                    child: FittedBox(
+                                      fit: BoxFit.scaleDown,
+                                      child: ShaderMask(
+                                        shaderCallback: (bounds) =>
+                                            const LinearGradient(
+                                          colors: [Color(0xFF2E3192), _kPurple],
+                                        ).createShader(bounds),
+                                        child: Text(
+                                          "Don't Just Learn.",
+                                          style: TextStyle(
+                                            fontSize: isDesktop ? 64 : 42,
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.white,
+                                            height: 1.25,
+                                            letterSpacing: -0.5,
+                                          ),
+                                          textAlign: isDesktop
+                                              ? TextAlign.start
+                                              : TextAlign.center,
+                                        ),
                                       ),
-                                      textAlign: isDesktop
-                                          ? TextAlign.start
-                                          : TextAlign.center,
                                     ),
                                   ),
                                 ),
                               ),
-                              const SizedBox(height: 24),
+
+                              // ── Line 2: "Start [Chirping] with Polly." ─────
+                              Padding(
+                                padding: const EdgeInsets.only(bottom: 20),
+                                child: FadeTransition(
+                                  opacity: _line2Opacity,
+                                  child: SlideTransition(
+                                    position: _line2Slide,
+                                    child: FittedBox(
+                                      fit: BoxFit.scaleDown,
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.baseline,
+                                        textBaseline: TextBaseline.alphabetic,
+                                        children: [
+                                          // "Start "
+                                          ShaderMask(
+                                            shaderCallback: (b) =>
+                                                const LinearGradient(
+                                              colors: [
+                                                Color(0xFF2E3192),
+                                                _kPurple
+                                              ],
+                                            ).createShader(b),
+                                            child: Text(
+                                              'Start ',
+                                              style: TextStyle(
+                                                fontSize: isDesktop ? 64 : 42,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.white,
+                                                height: 1.25,
+                                                letterSpacing: -0.5,
+                                              ),
+                                            ),
+                                          ),
+                                          // "Chirping" — animated shimmer
+                                          AnimatedBuilder(
+                                            animation: _shimmerController,
+                                            builder: (context, child) {
+                                              final t =
+                                                  _shimmerController.value;
+                                              return ShaderMask(
+                                                shaderCallback: (bounds) =>
+                                                    LinearGradient(
+                                                  begin: Alignment.centerLeft,
+                                                  end: Alignment.centerRight,
+                                                  colors: const [
+                                                    _kPurple,
+                                                    _kTeal,
+                                                    _kPurple,
+                                                  ],
+                                                  stops: [
+                                                    (t - 0.4).clamp(0.0, 1.0),
+                                                    t.clamp(0.0, 1.0),
+                                                    (t + 0.4).clamp(0.0, 1.0),
+                                                  ],
+                                                ).createShader(bounds),
+                                                child: Text(
+                                                  'Chirping',
+                                                  style: TextStyle(
+                                                    fontSize:
+                                                        isDesktop ? 64 : 42,
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.white,
+                                                    height: 1.25,
+                                                    letterSpacing: -0.5,
+                                                  ),
+                                                ),
+                                              );
+                                            },
+                                          ),
+                                          // " with Polly."
+                                          ShaderMask(
+                                            shaderCallback: (b) =>
+                                                const LinearGradient(
+                                              colors: [
+                                                Color(0xFF2E3192),
+                                                _kPurple
+                                              ],
+                                            ).createShader(b),
+                                            child: Text(
+                                              ' with Polly.',
+                                              style: TextStyle(
+                                                fontSize: isDesktop ? 64 : 42,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.white,
+                                                height: 1.25,
+                                                letterSpacing: -0.5,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                              SizedBox(height: isDesktop ? 24 : 12),
+
+                              // ── Subtitle ───────────────────────────────────
                               ShaderMask(
-                                shaderCallback: (bounds) => const LinearGradient(
-                                  colors: [Color(0xFF2E3192), Color(0xFF4A90E2)],
+                                shaderCallback: (bounds) =>
+                                    const LinearGradient(
+                                  colors: [
+                                    Color(0xFF2E3192),
+                                    Color(0xFF4A90E2)
+                                  ],
                                 ).createShader(bounds),
                                 child: Text(
                                   'Break barriers. Preserve heritage.\nConnect with the world—one conversation at a time.',
-                                  style: TextStyle(
-                                    fontSize: 18, // Size 18
+                                  style: const TextStyle(
+                                    fontSize: 18,
                                     color: Colors.white,
-                                    height: 1.5, // Line height 1.5
+                                    height: 1.5,
                                     fontWeight: FontWeight.w600,
                                   ),
                                   textAlign: isDesktop
@@ -478,84 +725,174 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
                                       : TextAlign.center,
                                 ),
                               ),
-                              const SizedBox(height: 48),
-                              
-                              // CTA Button
-                              Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(50),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: const Color(0xFF6A4CBC).withValues(alpha: 0.3),
-                                      offset: const Offset(0, 4),
-                                      blurRadius: 10,
-                                    ),
-                                  ],
-                                ),
-                                child: ElevatedButton(
-                                  onPressed: () => Navigator.pushNamed(context, '/languages'),
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: const Color(0xFF6A4CBC), // Solid Purple
-                                    foregroundColor: Colors.white,
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 48, vertical: 24),
-                                    shape: const StadiumBorder(), // Fully rounded
-                                    elevation: 0, // Using Container shadow instead for specific look
-                                  ),
-                                  child: const Text(
-                                    'Start Learning Now',
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              if (!isDesktop) const SizedBox(height: 40),
-                            ],
-                          ),
-                        ),
-                        
-                        // Right Image Section (Flex 2)
-                        if (isDesktop) const SizedBox(width: 20),
-                        
-                        Expanded( // Changed from Flexible to Expanded for strict 3:2 ratio implementation in flex
-                          flex: isDesktop ? 2 : 0,
-                          child: ConstrainedBox(
-                            constraints: BoxConstraints(
-                              maxHeight: isDesktop ? 600 : 400,
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.only(right: 20.0), // Slight padding to right
-                              child: AnimatedBuilder(
-                                animation: _parrotAnimation,
+
+                              SizedBox(height: isDesktop ? 48 : 20),
+
+                              // ── CTA Button with glow pulse ─────────────────
+                              AnimatedBuilder(
+                                animation: _glowBlur,
                                 builder: (context, child) {
-                                  return Transform.translate(
-                                    offset: Offset(0, _parrotAnimation.value),
-                                    child: child,
+                                  return Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(50),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color:
+                                              _kPurple.withValues(alpha: 0.7),
+                                          offset: Offset.zero,
+                                          blurRadius: _glowBlur.value,
+                                          spreadRadius:
+                                              _glowBlur.value * 0.25,
+                                        ),
+                                      ],
+                                    ),
+                                    child: ElevatedButton(
+                                      onPressed: () => Navigator.pushNamed(
+                                          context, '/languages'),
+                                      style: ElevatedButton.styleFrom(
+                                        backgroundColor: _kPurple,
+                                        foregroundColor: Colors.white,
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 48, vertical: 24),
+                                        shape: const StadiumBorder(),
+                                        elevation: 0,
+                                      ),
+                                      child: const Text(
+                                        'Start Learning Now',
+                                        style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
                                   );
                                 },
-                                child: Image.asset(
-                                  'assets/images/parrot_transparent.png',
-                                  fit: BoxFit.contain,
-                                  errorBuilder: (context, error, stackTrace) {
-                                    return const SizedBox(
-                                      height: 200,
-                                      child: Center(
-                                        child: Icon(Icons.image_not_supported,
-                                            size: 64, color: Colors.black26),
+                              ),
+
+                              if (!isDesktop) const SizedBox(height: 16),
+                            ],
+                          );
+
+                // Build right (parrot) section
+                Widget rightSection = ConstrainedBox(
+                             constraints: BoxConstraints(
+                              maxHeight: isDesktop ? 600 : double.infinity,
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 20.0),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+
+                                  // Mobile bubble — centred above Polly
+                                  if (!isDesktop)
+                                    FadeTransition(
+                                      opacity: _bubbleOpacity,
+                                      child: SlideTransition(
+                                        position: _bubbleSlide,
+                                        child: _buildBubble(isMobile: true),
                                       ),
-                                    );
-                                  },
-                                ),
+                                    ),
+
+                                  if (!isDesktop) const SizedBox(height: 8),
+
+                                  // Parrot: entrance bounce + float + parallax
+                                  Stack(
+                                    clipBehavior: Clip.none,
+                                    alignment: Alignment.center,
+                                    children: [
+                                      // Desktop bubble — beside Polly
+                                      if (isDesktop)
+                                        Positioned(
+                                          left: -20,
+                                          top: 20,
+                                          child: FadeTransition(
+                                            opacity: _bubbleOpacity,
+                                            child: SlideTransition(
+                                              position: _bubbleSlide,
+                                              child: _buildBubble(
+                                                  isMobile: false),
+                                            ),
+                                          ),
+                                        ),
+
+                                      // Bounce entrance wraps float animation
+                                      ScaleTransition(
+                                        scale: _entranceScale,
+                                        child: AnimatedBuilder(
+                                          animation: _parrotAnimation,
+                                          builder: (context, child) {
+                                            return Transform.translate(
+                                              offset: Offset(
+                                                  0, _parrotAnimation.value),
+                                              child: child,
+                                            );
+                                          },
+                                          child: ConstrainedBox(
+                                            constraints: BoxConstraints(
+                                              maxHeight: isDesktop ? 480 : 320,
+                                            ),
+                                            child: Image.asset(
+                                              'assets/images/parrot_transparent.png',
+                                              fit: BoxFit.contain,
+                                              errorBuilder: (context, error,
+                                                  stackTrace) {
+                                                return const SizedBox(
+                                                  height: 200,
+                                                  child: Center(
+                                                    child: Icon(
+                                                      Icons.image_not_supported,
+                                                      size: 64,
+                                                      color: Colors.black26,
+                                                    ),
+                                                  ),
+                                                );
+                                              },
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+
+                                  const SizedBox(height: 4),
+                                  Text(
+                                    'Meet Polly',
+                                    style: TextStyle(
+                                      fontSize: isDesktop ? 15 : 13,
+                                      fontStyle: FontStyle.italic,
+                                      color: Colors.grey.shade500,
+                                      letterSpacing: 0.3,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
+                          );
+                // Assemble layout
+                return Center(
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 1200),
+                    child: isDesktop
+                        ? Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Expanded(flex: 3, child: leftSection),
+                              const SizedBox(width: 20),
+                              Expanded(flex: 2, child: rightSection),
+                            ],
+                          )
+                        : Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              leftSection,
+                              rightSection,
+                            ],
                           ),
-                        ),
-                      ],
-                    ),
                   ),
                 );
+
               },
             ),
           ),
@@ -565,6 +902,89 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
     );
   }
 
+  // ── Glassmorphic speech bubble ───────────────────────────────────────────
+  Widget _buildBubble({required bool isMobile}) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(16),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+        child: Container(
+          constraints: BoxConstraints(maxWidth: isMobile ? 220 : 200),
+          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+          decoration: BoxDecoration(
+            color: Colors.white.withValues(alpha: 0.55),
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(
+              color: Colors.white.withValues(alpha: 0.7),
+              width: 1.2,
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: _kPurple.withValues(alpha: 0.12),
+                blurRadius: 16,
+                offset: const Offset(0, 4),
+              ),
+            ],
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: isMobile
+                ? CrossAxisAlignment.center
+                : CrossAxisAlignment.start,
+            children: [
+              // Decorative dot-tail indicator
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  _dot(6, _kPurple.withValues(alpha: 0.7)),
+                  const SizedBox(width: 3),
+                  _dot(4, _kTeal.withValues(alpha: 0.6)),
+                  const SizedBox(width: 3),
+                  _dot(3, _kPurple.withValues(alpha: 0.4)),
+                ],
+              ),
+              const SizedBox(height: 6),
+              ValueListenableBuilder<String>(
+                valueListenable: _bubbleTextNotifier,
+                builder: (context, text, _) => Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      text,
+                      style: TextStyle(
+                        fontSize: isMobile ? 12 : 13,
+                        color: const Color(0xFF2E3192),
+                        fontWeight: FontWeight.w600,
+                        height: 1.4,
+                      ),
+                      textAlign:
+                          isMobile ? TextAlign.center : TextAlign.left,
+                    ),
+                    if (!_bubbleDone)
+                      const Text(
+                        '|',
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: _kPurple,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _dot(double size, Color color) => Container(
+        width: size,
+        height: size,
+        decoration: BoxDecoration(color: color, shape: BoxShape.circle),
+      );
+
   Widget _buildLanguagesSection(List<QueryDocumentSnapshot> languages) {
     if (languages.isEmpty) {
       return const SizedBox.shrink();
@@ -573,15 +993,8 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
     return Container(
       key: _languagesKey,
       width: double.infinity,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            const Color(0xFFF3EAFF).withValues(alpha: 0.1), // Very light lavender
-            const Color(0xFFEDF5FF).withValues(alpha: 0.1), // Very light blue
-          ],
-        ),
+      decoration: const BoxDecoration(
+        color: Color(0xFF080808),
       ),
       padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
       child: Column(
@@ -622,7 +1035,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
             'Explore our growing collection of comprehensive language courses.',
             style: TextStyle(
               fontSize: 18,
-              color: Colors.grey.shade800,
+              color: Colors.grey.shade400,
               fontWeight: FontWeight.w500,
             ),
           ),
@@ -710,92 +1123,128 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
     );
   }
 
-  Widget _buildFeaturesSection() {
-    return Container(
-      width: double.infinity,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Colors.white,
-            const Color(0xFFF3E5F5).withOpacity(0.2),
-          ],
-        ),
-      ),
-      padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
-      child: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 1200),
-          child: Column(
-            children: [
-              ShaderMask(
-                shaderCallback: (bounds) => const LinearGradient(
-                  colors: [Color(0xFF6A4CBC), Color(0xFF2E3192)],
-                ).createShader(bounds),
-                child: const Text(
-                  'What Makes ChirPolly Different',
-                  style: TextStyle(
-                    fontSize: 36,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              const SizedBox(height: 48),
-              LayoutBuilder(
-                builder: (context, constraints) {
-                  final isDesktop = constraints.maxWidth > 900;
-                  return Wrap(
-                    spacing: 24,
-                    runSpacing: 24,
-                    alignment: WrapAlignment.center,
-                    children: [
-                      _buildFeatureCard(
-                        icon: '🎮',
-                        title: 'Unique Liar Game Challenge',
-                        description: 'Test your learning with our signature game-based assessment',
-                        isDesktop: isDesktop,
-                      ),
-                      _buildFeatureCard(
-                        icon: '🌍',
-                        title: '11 Languages',
-                        description: 'English, French, Spanish, Korean, Japanese, German, Sanskrit, Hindi, Portuguese, Chinese & Italian',
-                        isDesktop: isDesktop,
-                      ),
-                      _buildFeatureCard(
-                        icon: '📚',
-                        title: 'Structured A1 to B1 Courses',
-                        description: 'Progressive learning from beginner to intermediate',
-                        isDesktop: isDesktop,
-                      ),
-                      _buildFeatureCard(
-                        icon: '💬',
-                        title: '33,000 Vocabulary Words',
-                        description: '3,000 words per language for comprehensive mastery',
-                        isDesktop: isDesktop,
-                      ),
-                      _buildFeatureCard(
-                        icon: '💎',
-                        title: 'Japanese Kanji Mastery',
-                        description: 'Premium Edition: Complete Jōyō Kanji curriculum with mnemonics, stroke counts, and integrated mastery tracking.',
-                        isDesktop: isDesktop,
-                      ),
-                      _buildFeatureCard(
-                        icon: '📱',
-                        title: 'Web & Mobile',
-                        description: 'Seamless experience across all your devices',
-                        isDesktop: isDesktop,
-                      ),
-                    ],
-                  );
-                },
-              ),
-            ],
+  Widget _buildDynamicGradientText(String text, {required double startOffset, required double endOffset, double fontSize = 36}) {
+    return AnimatedBuilder(
+      animation: _scrollController,
+      builder: (context, child) {
+        final offset = _scrollController.hasClients ? _scrollController.offset : 0.0;
+        final progress = ((offset - startOffset) / (endOffset - startOffset)).clamp(0.0, 1.0);
+        
+        final List<Color> colors = [
+          const Color(0xFF4ECDC4), // Teal
+          const Color(0xFF2E3192), // Deep Blue
+          const Color(0xFF6A4CBC), // Purple
+          const Color(0xFFFF6B6B), // Coral
+          const Color(0xFFFFA726), // Orange
+          const Color(0xFF4ECDC4), // Teal
+        ];
+
+        return ShaderMask(
+          shaderCallback: (bounds) {
+            return LinearGradient(
+              begin: Alignment(-2.0 + (progress * 4), -1.0), 
+              end: Alignment(0.0 + (progress * 4), 1.0),
+              colors: colors,
+            ).createShader(bounds);
+          },
+          child: Text(
+            text,
+            style: TextStyle(
+              fontSize: fontSize,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+            textAlign: TextAlign.center,
           ),
-        ),
-      ),
+        );
+      },
+    );
+  }
+
+  Widget _buildFeaturesSection() {
+    return AnimatedBuilder(
+      animation: _scrollController,
+      builder: (context, child) {
+        final offset = _scrollController.hasClients ? _scrollController.offset : 0.0;
+        final progress = ((offset - 300) / 400).clamp(0.0, 1.0);
+        
+        return Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: Color.lerp(Colors.white, const Color(0xFF080808), progress),
+          ),
+          padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 1200),
+              child: Column(
+                children: [
+                  _buildDynamicGradientText(
+                    'What Makes ChirPolly Different',
+                    startOffset: 300,
+                    endOffset: 900,
+                  ),
+                  const SizedBox(height: 48),
+                  LayoutBuilder(
+                    builder: (context, constraints) {
+                      final isDesktop = constraints.maxWidth > 900;
+                      return Wrap(
+                        spacing: 24,
+                        runSpacing: 24,
+                        alignment: WrapAlignment.center,
+                        children: [
+                          _buildFeatureCard(
+                            icon: '🎮',
+                            title: 'Unique Liar Game Challenge',
+                            description: 'Test your learning with our signature game-based assessment',
+                            isDesktop: isDesktop,
+                            progress: progress,
+                          ),
+                          _buildFeatureCard(
+                            icon: '🌍',
+                            title: '11 Languages',
+                            description: 'English, French, Spanish, Korean, Japanese, German, Sanskrit, Hindi, Portuguese, Chinese & Italian',
+                            isDesktop: isDesktop,
+                            progress: progress,
+                          ),
+                          _buildFeatureCard(
+                            icon: '📚',
+                            title: 'Structured A1 to B1 Courses',
+                            description: 'Progressive learning from beginner to intermediate',
+                            isDesktop: isDesktop,
+                            progress: progress,
+                          ),
+                          _buildFeatureCard(
+                            icon: '💬',
+                            title: '33,000 Vocabulary Words',
+                            description: '3,000 words per language for comprehensive mastery',
+                            isDesktop: isDesktop,
+                            progress: progress,
+                          ),
+                          _buildFeatureCard(
+                            icon: '💎',
+                            title: 'Japanese Kanji Mastery',
+                            description: 'Premium Edition: Complete Jōyō Kanji curriculum with mnemonics, stroke counts, and integrated mastery tracking.',
+                            isDesktop: isDesktop,
+                            progress: progress,
+                          ),
+                          _buildFeatureCard(
+                            icon: '📱',
+                            title: 'Web & Mobile',
+                            description: 'Seamless experience across all your devices',
+                            isDesktop: isDesktop,
+                            progress: progress,
+                          ),
+                        ],
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 
@@ -804,12 +1253,22 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
     required String title,
     required String description,
     required bool isDesktop,
+    double progress = 0.0,
   }) {
+    final bgColor = Color.lerp(Colors.white, const Color(0xFF151515), progress)!;
+    final titleColor = Color.lerp(const Color(0xFF2E3192), Colors.white, progress)!;
+    final descColor = Color.lerp(Colors.grey.shade700, Colors.grey.shade400, progress)!;
+    final borderColor = Color.lerp(
+      const Color(0xFF6A4CBC).withOpacity(0.1),
+      Colors.white.withOpacity(0.1),
+      progress,
+    )!;
+
     return Container(
       width: isDesktop ? 350 : double.infinity,
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: bgColor,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
@@ -819,7 +1278,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
           ),
         ],
         border: Border.all(
-          color: const Color(0xFF6A4CBC).withOpacity(0.1),
+          color: borderColor,
           width: 1,
         ),
       ),
@@ -833,10 +1292,10 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
           const SizedBox(height: 16),
           Text(
             title,
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
-              color: Color(0xFF2E3192),
+              color: titleColor,
             ),
           ),
           const SizedBox(height: 8),
@@ -844,7 +1303,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
             description,
             style: TextStyle(
               fontSize: 14,
-              color: Colors.grey.shade700,
+              color: descColor,
               height: 1.5,
             ),
           ),
@@ -857,15 +1316,8 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 24),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            const Color(0xFF6A4CBC).withOpacity(0.1),
-            const Color(0xFF2E3192).withOpacity(0.1),
-          ],
-        ),
+      decoration: const BoxDecoration(
+        color: Color(0xFF080808),
       ),
       child: Center(
         child: ConstrainedBox(
@@ -892,15 +1344,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
             ),
             child: Column(
               children: [
-                const Text(
-                  '🎯 The Liar Game',
-                  style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
+                _buildDynamicGradientText('🎯 The Liar Game', startOffset: 1200, endOffset: 1800, fontSize: 32),
                 const SizedBox(height: 24),
                 Text(
                   'Our innovative learning verification system. Instead of passive multiple choice, you actively hunt for the "liar" - the one incorrect translation hidden among correct ones. This neurological approach strengthens pattern recognition and genuine language understanding.',
@@ -920,87 +1364,84 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
   }
 
   Widget _buildAboutSection() {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
-      color: Colors.white,
-      child: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 900),
-          child: Column(
-            children: [
-              ShaderMask(
-                shaderCallback: (bounds) => const LinearGradient(
-                  colors: [Color(0xFF6A4CBC), Color(0xFF2E3192)],
-                ).createShader(bounds),
-                child: const Text(
-                  'About ChirPolly',
-                  style: TextStyle(
-                    fontSize: 36,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              const SizedBox(height: 32),
-              Text(
-                'ChirPolly is a language learning platform founded by Sunil Kumar Krishnan, a technology entrepreneur passionate about breaking language barriers and preserving cultural heritage. We believe everyone deserves a voice in the global conversation.',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.grey.shade800,
-                  height: 1.6,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 24),
-              Text(
-                'Our mission: Make language learning simple, beautiful, and culturally rooted. ChirPolly works seamlessly across web and mobile, offering structured courses from beginner (A1) to intermediate (B1) levels.',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.grey.shade800,
-                  height: 1.6,
-                ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 24),
-              Container(
-                padding: const EdgeInsets.all(24),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFF3E5F5).withOpacity(0.3),
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(
-                    color: const Color(0xFF6A4CBC).withOpacity(0.2),
-                    width: 1,
-                  ),
-                ),
-                child: Column(
-                  children: [
-                    Text(
-                      'Current Status: Live',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey.shade900,
-                      ),
-                    ),
-                    const SizedBox(height: 16),
-                    Text(
-                      '11 major languages • 33,000+ vocabulary words • A1 to B1 levels • Web & Mobile',
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.grey.shade700,
-                        height: 1.5,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
-                ),
-              ),
-            ],
+    return AnimatedBuilder(
+      animation: _scrollController,
+      builder: (context, child) {
+        final offset = _scrollController.hasClients ? _scrollController.offset : 0.0;
+        final progress = ((offset - 1600) / 400).clamp(0.0, 1.0);
+        
+        return Container(
+          width: double.infinity,
+          padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
+          decoration: BoxDecoration(
+            color: Color.lerp(const Color(0xFF080808), Colors.white, progress),
           ),
-        ),
-      ),
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 900),
+              child: Column(
+                children: [
+                  _buildDynamicGradientText('About ChirPolly', startOffset: 1800, endOffset: 2400),
+                  const SizedBox(height: 32),
+                  Text(
+                    'ChirPolly is a language learning platform founded by Sunil Kumar Krishnan, a technology entrepreneur passionate about breaking language barriers and preserving cultural heritage. We believe everyone deserves a voice in the global conversation.',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Color.lerp(Colors.grey.shade400, Colors.grey.shade800, progress),
+                      height: 1.6,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 24),
+                  Text(
+                    'Our mission: Make language learning simple, beautiful, and culturally rooted. ChirPolly works seamlessly across web and mobile, offering structured courses from beginner (A1) to intermediate (B1) levels.',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Color.lerp(Colors.grey.shade400, Colors.grey.shade800, progress),
+                      height: 1.6,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 24),
+                  Container(
+                    padding: const EdgeInsets.all(24),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFF3E5F5).withOpacity(0.3),
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(
+                        color: const Color(0xFF6A4CBC).withOpacity(0.2),
+                        width: 1,
+                      ),
+                    ),
+                    child: Column(
+                      children: [
+                        Text(
+                          'Current Status: Live',
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Color.lerp(Colors.white, Colors.grey.shade900, progress),
+                          ),
+                        ),
+                        const SizedBox(height: 16),
+                        Text(
+                          '11 major languages • 33,000+ vocabulary words • A1 to B1 levels • Web & Mobile',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Color.lerp(Colors.grey.shade400, Colors.grey.shade700, progress),
+                            height: 1.5,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 
@@ -1149,6 +1590,7 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
               _buildFooterLink('Terms of Service', '/terms'),
               _buildFooterLink('Privacy Policy', '/privacy'),
               _buildFooterLink('Refund Policy', '/refund'),
+              _buildFooterLink('Contact Us', '/contact'),
             ],
           ),
           const SizedBox(height: 32),
@@ -1228,6 +1670,22 @@ class _HomePageState extends ConsumerState<HomePage> with SingleTickerProviderSt
               onTap: () {
                 Navigator.pop(context);
                 Navigator.pushNamed(context, '/languages');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.psychology_rounded, color: Colors.grey.shade700),
+              title: const Text('AI Tutor'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/ai-tutor');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.payments, color: Colors.grey.shade700),
+              title: const Text('Pricing'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/pricing');
               },
             ),
             ListTile(

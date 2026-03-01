@@ -75,6 +75,15 @@ class AppDrawer extends StatelessWidget {
                     // TODO: Navigate to settings page
                   },
                 ),
+                _buildDrawerItem(
+                  context,
+                  icon: Icons.payments_outlined,
+                  title: 'Pricing',
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/pricing');
+                  },
+                ),
                 const Divider(height: 32),
                 _buildDrawerItem(
                   context,

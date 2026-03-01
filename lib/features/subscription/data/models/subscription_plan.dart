@@ -1,25 +1,56 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
+/// Represents a subscription tier for ChirpPolly.
+class SubscriptionPlan {
+  final String id;
+  final String name;
+  final String tagline;
+  final String description;
 
-part 'subscription_plan.freezed.dart';
-part 'subscription_plan.g.dart';
+  /// Localized annual pricing. Keys: 'USD', 'EUR', 'INR'. 0 = Free.
+  final Map<String, double> annualPricing;
 
-@freezed
-class SubscriptionPlan with _$SubscriptionPlan {
-  const factory SubscriptionPlan({
-    required String id,
-    required String name,
-    required String description,
-    required Map<String, double> monthlyPricing, // Localized pricing: {'USD': 12.99, 'EUR': 12.99, 'INR': 199}
-    required Map<String, double> annualPricing,  // Localized pricing: {'USD': 89.99, 'EUR': 89.99, 'INR': 999}
-    required List<String> features,
-    required String differentiator,
-    required String depth,
-    required int wordCount,
-    required bool isAdSupported,
-    required bool hasOfflineMode,
-    @Default(false) bool isMostPopular,
-  }) = _SubscriptionPlan;
+  /// Localized monthly pricing. Keys: 'USD', 'EUR', 'INR'. 0 = Free.
+  final Map<String, double> monthlyPricing;
 
-  factory SubscriptionPlan.fromJson(Map<String, dynamic> json) =>
-      _$SubscriptionPlanFromJson(json);
+  /// AI Tutor messages per day. null = unlimited (subject to hard cap).
+  final int? aiTutorDailyLimit;
+
+  /// Technical hard cap for bot-abuse protection. Only applies to Premium.
+  final int? aiTutorHardCap;
+
+  final List<String> features;
+  final String curriculumLevel; // 'A1', 'A2', 'B1'
+  final int wordCount;
+  final bool isAdFree;
+  final bool hasOfflineMode;
+  final bool isMostPopular;
+  final String badgeLabel;
+
+  const SubscriptionPlan({
+    required this.id,
+    required this.name,
+    required this.tagline,
+    required this.description,
+    required this.annualPricing,
+    required this.monthlyPricing,
+    this.aiTutorDailyLimit,
+    this.aiTutorHardCap,
+    required this.features,
+    required this.curriculumLevel,
+    required this.wordCount,
+    required this.isAdFree,
+    required this.hasOfflineMode,
+    this.isMostPopular = false,
+    this.badgeLabel = '',
+  });
+}
+
+/// Represents the Kanji Liar standalone add-on (one-time purchase).
+class KanjiLiarAddon {
+  final Map<String, double> pricing; // 'USD', 'EUR', 'INR'
+  final String description;
+
+  const KanjiLiarAddon({
+    required this.pricing,
+    required this.description,
+  });
 }

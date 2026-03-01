@@ -1,6 +1,10 @@
 {
   "id": "fr_a1_m5",
+  "moduleId": "fr_a1_m5",
   "name": "A1 French - Module 5: Work",
+  "theme": "Work",
+  "order": 5,
+  "outcome": "After this, you can describe your daily routine and discuss professional activities and workplace settings.",
   "count": 100,
   "vocabularyItems": [
     {
