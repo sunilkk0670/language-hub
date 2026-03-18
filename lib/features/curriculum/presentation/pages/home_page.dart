@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../widgets/language_card.dart';
 import '../../../auth/presentation/providers/auth_providers.dart';
 
@@ -1594,6 +1597,11 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
             ],
           ),
           const SizedBox(height: 32),
+
+          // ── Social Share ─────────────────────────────────────────────
+          _buildShareSection(),
+
+          const SizedBox(height: 32),
           Divider(color: Colors.white.withOpacity(0.15), height: 1),
           const SizedBox(height: 20),
           Text(
@@ -1604,6 +1612,140 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildShareSection() {
+    const shareText = 'Check out ChirPolly! https://chirpolly.com';
+    const shareSubject = 'Learn languages with Polly!';
+
+    return Column(
+      children: [
+        // Section title
+        Text(
+          'Share ChirPolly',
+          style: TextStyle(
+            color: Colors.white.withOpacity(0.9),
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 0.5,
+          ),
+        ),
+        const SizedBox(height: 16),
+
+        // Platform icon buttons
+        Wrap(
+          spacing: 16,
+          runSpacing: 12,
+          alignment: WrapAlignment.center,
+          children: [
+            _buildShareIconButton(
+              iconWidget: const FaIcon(FontAwesomeIcons.whatsapp, color: Colors.white, size: 22),
+              label: 'WhatsApp',
+              color: const Color(0xFF25D366),
+              onTap: () {
+                launchUrl(
+                  Uri.parse('https://wa.me/?text=${Uri.encodeComponent(shareText)}'),
+                  webOnlyWindowName: '_blank',
+                );
+              },
+            ),
+            _buildShareIconButton(
+              iconWidget: const Icon(Icons.email_rounded, color: Colors.white, size: 24),
+              label: 'Email',
+              color: const Color(0xFFEA4335),
+              onTap: () {
+                launchUrl(
+                  Uri.parse(
+                    'mailto:?subject=${Uri.encodeComponent(shareSubject)}&body=${Uri.encodeComponent(shareText)}',
+                  ),
+                );
+              },
+            ),
+            _buildShareIconButton(
+              iconWidget: const FaIcon(FontAwesomeIcons.linkedinIn, color: Colors.white, size: 22),
+              label: 'LinkedIn',
+              color: const Color(0xFF0A66C2),
+              onTap: () {
+                launchUrl(
+                  Uri.parse('https://www.linkedin.com/sharing/share-offsite/?url=${Uri.encodeComponent('https://chirpolly.com')}'),
+                  webOnlyWindowName: '_blank',
+                );
+              },
+            ),
+            _buildShareIconButton(
+              iconWidget: const FaIcon(FontAwesomeIcons.pinterest, color: Colors.white, size: 22),
+              label: 'Pinterest',
+              color: const Color(0xFFE60023),
+              onTap: () {
+                launchUrl(
+                  Uri.parse('https://pinterest.com/pin/create/button/?url=${Uri.encodeComponent('https://chirpolly.com')}&description=${Uri.encodeComponent(shareText)}'),
+                  webOnlyWindowName: '_blank',
+                );
+              },
+            ),
+          ],
+        ),
+
+        const SizedBox(height: 20),
+
+        // System / generic share button
+        ElevatedButton.icon(
+          onPressed: () async {
+            try {
+              await Share.share(shareText, subject: shareSubject);
+            } catch (_) {
+              // Fallback for browsers without Web Share API
+              launchUrl(
+                Uri.parse('mailto:?subject=${Uri.encodeComponent(shareSubject)}&body=${Uri.encodeComponent(shareText)}'),
+              );
+            }
+          },
+          icon: const Icon(Icons.share_rounded, size: 18),
+          label: const Text(
+            'Share',
+            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+          ),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color(0xFF6A4CBC),
+            foregroundColor: Colors.white,
+            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
+            shape: const StadiumBorder(),
+            elevation: 0,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildShareIconButton({
+    required Widget iconWidget,
+    required String label,
+    required Color color,
+    required VoidCallback onTap,
+  }) {
+    return Tooltip(
+      message: label,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(50),
+        child: Container(
+          width: 52,
+          height: 52,
+          decoration: BoxDecoration(
+            color: color,
+            shape: BoxShape.circle,
+            boxShadow: [
+              BoxShadow(
+                color: color.withOpacity(0.4),
+                blurRadius: 10,
+                offset: const Offset(0, 4),
+              ),
+            ],
+          ),
+          child: Center(child: iconWidget),
+        ),
       ),
     );
   }

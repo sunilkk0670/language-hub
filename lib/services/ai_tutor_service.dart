@@ -13,10 +13,12 @@ class AITutorService {
   Future<void> initialize() async {
     if (_initialized) return;
 
-    final vertexAI = FirebaseVertexAI.instance;
+    final vertexAI = FirebaseVertexAI.instanceFor(
+      location: 'us-central1',
+    );
     
     _model = vertexAI.generativeModel(
-      model: 'gemini-2.0-flash-exp',
+      model: 'gemini-2.5-flash',
       generationConfig: GenerationConfig(
         temperature: 0.7,
         maxOutputTokens: 1024,

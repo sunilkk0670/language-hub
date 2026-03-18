@@ -29,6 +29,12 @@ class _KanjiContentPageState extends State<KanjiContentPage> {
   }
 
   @override
+  void dispose() {
+    WebTtsService.stop();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
