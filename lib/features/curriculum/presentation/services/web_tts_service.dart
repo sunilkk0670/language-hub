@@ -2,15 +2,10 @@ import 'dart:async';
 import 'dart:html' as html;
 
 class WebTtsService {
-  static int _activeSpeechId = 0;
-
   static Future<void> speak(String text, String languageCode) async {
     try {
-      // Cancel any ongoing speech first (Immediate)
+      // Cancel any ongoing speech first
       html.window.speechSynthesis?.cancel();
-
-      // Wait for voices to load (especially important in Chrome)
-      await _waitForVoices();
 
       // excessive asterisks or markdown symbols can cause TTS to say "asterisk"
       final cleanText = _cleanMarkdown(text);
@@ -21,14 +16,9 @@ class WebTtsService {
       utterance.pitch = 1.0;
       utterance.volume = 1.0;
       
-      final voice = _getBestVoice(languageCode);
-      if (voice != null) {
-        utterance.voice = voice;
-      }
-      
       html.window.speechSynthesis?.speak(utterance);
     } catch (e) {
-      // TTS Error: $e
+      print('TTS Error: $e');
     }
   }
 
@@ -39,7 +29,6 @@ class WebTtsService {
     String fallbackLang,
   ) async {
     try {
-      final mySpeechId = ++_activeSpeechId;
       html.window.speechSynthesis?.cancel();
       
       // Voices are often empty on the first call in Chrome.
@@ -52,9 +41,9 @@ class WebTtsService {
       if (segments.isEmpty) return;
 
       // Chain utterances sequentially using onEnd callbacks
-      await _speakSegmentsSequentially(segments, targetLangCode, fallbackLang, mySpeechId);
+      await _speakSegmentsSequentially(segments, targetLangCode, fallbackLang);
     } catch (e) {
-      // TTS Multilingual Error: $e
+      print('TTS Multilingual Error: $e');
     }
   }
 
@@ -248,11 +237,8 @@ class WebTtsService {
     List<_TtsSegment> segments,
     String targetLangCode,
     String fallbackLang,
-    int mySpeechId,
   ) async {
     for (int i = 0; i < segments.length; i++) {
-      if (mySpeechId != _activeSpeechId) return; // Abort if a new speech was triggered
-
       final segment = segments[i];
 
       if (segment.isTargetLanguage && !_isVoiceAvailable(targetLangCode)) {
@@ -274,11 +260,6 @@ class WebTtsService {
       final utterance = html.SpeechSynthesisUtterance(text);
       utterance.lang = langCode;
       utterance.rate = 0.8;
-      
-      final voice = _getBestVoice(langCode);
-      if (voice != null) {
-        utterance.voice = voice;
-      }
       utterance.onEnd.first.then((_) { if (!completer.isCompleted) completer.complete(); });
       utterance.onError.first.then((_) { if (!completer.isCompleted) completer.complete(); });
       html.window.speechSynthesis?.speak(utterance);
@@ -295,9 +276,7 @@ class WebTtsService {
       if (voices.isEmpty) return false;
       final normalizedCode = langCode.toLowerCase().replaceAll('_', '-');
       return voices.any((v) {
-        final vLang = v.lang;
-        if (vLang == null) return false;
-        final vCode = vLang.toLowerCase().replaceAll('_', '-');
+        final vCode = v.lang.toLowerCase().replaceAll('_', '-');
         return vCode == normalizedCode || vCode.startsWith('$normalizedCode-');
       });
     } catch (e) { return false; }
@@ -317,39 +296,6 @@ class WebTtsService {
         } else { buffer.write(' '); }
     }
     return buffer.toString().replaceAll(RegExp(r'\s+'), ' ').trim();
-  }
-
-  static html.SpeechSynthesisVoice? _getBestVoice(String langCode) {
-    try {
-      final voices = html.window.speechSynthesis?.getVoices() ?? [];
-      if (voices.isEmpty) return null;
-
-      final normalizedCode = langCode.toLowerCase().replaceAll('_', '-');
-      final candidates = voices.where((v) {
-        final vLang = v.lang?.toLowerCase().replaceAll('_', '-') ?? '';
-        return vLang == normalizedCode || vLang.startsWith('$normalizedCode-');
-      }).toList();
-
-      if (candidates.isEmpty) return null;
-
-      if (normalizedCode == 'ja-jp') {
-        for (final v in candidates) {
-          final name = v.name?.toLowerCase() ?? '';
-          if (name.contains('female') || name.contains('google 日本語') || 
-              name.contains('ayumi') || name.contains('haruka')) {
-            return v;
-          }
-        }
-      }
-
-      for (final v in candidates) {
-        if (v.name?.toLowerCase().contains('female') == true) return v;
-      }
-
-      return candidates.first;
-    } catch (e) {
-      return null;
-    }
   }
 
   static void stop() => html.window.speechSynthesis?.cancel();
