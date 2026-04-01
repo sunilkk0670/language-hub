@@ -9,6 +9,7 @@ import 'features/curriculum/presentation/pages/firestore_test_page.dart';
 import 'features/auth/presentation/pages/login_page.dart';
 import 'features/legal/presentation/pages/compliance_page.dart';
 import 'features/info/presentation/pages/about_page.dart';
+import 'features/info/presentation/pages/contact_page.dart';
 import 'features/auth/presentation/providers/auth_providers.dart';
 import 'features/curriculum/presentation/providers/curriculum_provider.dart';
 import 'features/subscription/presentation/pages/pricing_page.dart';
@@ -109,6 +110,7 @@ class ChirpPollyApp extends ConsumerWidget {
         '/privacy': (context) => const CompliancePage(initialIndex: 0),
         '/refund': (context) => const CompliancePage(initialIndex: 2),
         '/about': (context) => const AboutPage(),
+        '/contact': (context) => const ContactPage(),
         '/languages': (context) => const AllLanguagesPage(),
         '/pricing': (context) => const PricingPage(),
       },
