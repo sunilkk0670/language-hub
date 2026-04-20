@@ -276,7 +276,7 @@ class WebTtsService {
       if (voices.isEmpty) return false;
       final normalizedCode = langCode.toLowerCase().replaceAll('_', '-');
       return voices.any((v) {
-        final vCode = v.lang.toLowerCase().replaceAll('_', '-');
+        final vCode = v.lang?.toLowerCase().replaceAll('_', '-') ?? '';
         return vCode == normalizedCode || vCode.startsWith('$normalizedCode-');
       });
     } catch (e) { return false; }

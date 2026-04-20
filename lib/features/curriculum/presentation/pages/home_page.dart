@@ -1547,84 +1547,237 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
   }
 
   Widget _buildFooter() {
-    return Container(
-      width: double.infinity,
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            Color(0xFF0D0E2B), // Deepest Midnight
-            Color(0xFF15163D), // Deep Midnight Blue
-            Color(0xFF2E3192), // Logo Blue
-            Color(0xFF4A348F), // Indigo transition
-            Color(0xFF6648B1), // Logo Purple
-          ],
-          stops: [0.0, 0.2, 0.5, 0.8, 1.0],
-        ),
-      ),
-      padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 24),
-      child: Column(
-        children: [
-          const Text(
-            'ChirPolly',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 26,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 1.2,
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final isMobile = constraints.maxWidth < 768;
+        
+        return Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                const Color(0xFF0D0E2B), // Deepest Midnight
+                const Color(0xFF15163D), // Deep Midnight Blue
+                const Color(0xFF2E3192), // Logo Blue
+                const Color(0xFF4A348F), // Indigo transition
+                const Color(0xFF6648B1), // Logo Purple
+              ],
+              stops: const [0.0, 0.2, 0.5, 0.8, 1.0],
             ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'By Hrishikesh Innovations LLP',
-            style: TextStyle(
-              color: Colors.white.withOpacity(0.6),
-              fontSize: 13,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-          const SizedBox(height: 24),
-          Wrap(
-            spacing: 24,
-            runSpacing: 12,
-            alignment: WrapAlignment.center,
-            children: [
-              _buildFooterLink('Terms of Service', '/terms'),
-              _buildFooterLink('Privacy Policy', '/privacy'),
-              _buildFooterLink('Refund Policy', '/refund'),
-              _buildFooterLink('Contact Us', '/contact'),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.3),
+                blurRadius: 20,
+                offset: const Offset(0, -10),
+              ),
             ],
           ),
-          const SizedBox(height: 32),
-
-          // ── Social Share ─────────────────────────────────────────────
-          _buildShareSection(),
-
-          const SizedBox(height: 32),
-          Divider(color: Colors.white.withOpacity(0.15), height: 1),
-          const SizedBox(height: 20),
-          Text(
-            '© 2026 ChirPolly. All rights reserved.',
-            style: TextStyle(
-              color: Colors.white.withOpacity(0.5),
-              fontSize: 11,
-            ),
+          child: Column(
+            children: [
+              // Top decorative wave
+              Container(
+                height: 4,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      _kTeal.withOpacity(0.6),
+                      _kPurple.withOpacity(0.6),
+                      Colors.pink.withOpacity(0.6),
+                    ],
+                  ),
+                ),
+              ),
+              
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  vertical: isMobile ? 32 : 48,
+                  horizontal: isMobile ? 24 : 48,
+                ),
+                child: isMobile ? _buildMobileFooterLayout() : _buildDesktopFooterLayout(),
+              ),
+              
+              // Bottom copyright section
+              Container(
+                padding: EdgeInsets.symmetric(
+                  vertical: isMobile ? 16 : 20,
+                  horizontal: isMobile ? 24 : 48,
+                ),
+                decoration: BoxDecoration(
+                  border: Border(
+                    top: BorderSide(
+                      color: Colors.white.withOpacity(0.1),
+                      width: 1,
+                    ),
+                  ),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Flexible(
+                      child: Text(
+                        '© 2026 ChirPolly. All rights reserved.',
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.5),
+                          fontSize: isMobile ? 10 : 11,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                    ),
+                    if (!isMobile) ...[
+                      Row(
+                        children: [
+                          _buildBottomLink('Privacy', '/privacy'),
+                          _buildBottomLink('Terms', '/terms'),
+                          _buildBottomLink('Cookies', '/cookies'),
+                        ],
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+            ],
           ),
-        ],
-      ),
+        );
+      },
     );
   }
 
-  Widget _buildShareSection() {
-    const shareText = 'Check out ChirPolly! https://chirpolly.com';
-    const shareSubject = 'Learn languages with Polly!';
-
+  Widget _buildDesktopFooterLayout() {
     return Column(
       children: [
-        // Section title
+        // Main content grid
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Brand column
+            Expanded(
+              flex: 2,
+              child: _buildBrandColumn(),
+            ),
+            
+            const SizedBox(width: 48),
+            
+            // Quick Links column
+            Expanded(
+              flex: 1,
+              child: _buildLinksColumn(),
+            ),
+            
+            const SizedBox(width: 48),
+            
+            // Legal column
+            Expanded(
+              flex: 1,
+              child: _buildLegalColumn(),
+            ),
+            
+            const SizedBox(width: 48),
+            
+            // Social column
+            Expanded(
+              flex: 1,
+              child: _buildSocialColumn(),
+            ),
+          ],
+        ),
+        
+        const SizedBox(height: 40),
+        
+        // Bottom share section
+        _buildEnhancedShareSection(),
+      ],
+    );
+  }
+
+  Widget _buildMobileFooterLayout() {
+    return Column(
+      children: [
+        _buildBrandColumn(),
+        const SizedBox(height: 32),
+        _buildLinksColumn(),
+        const SizedBox(height: 32),
+        _buildLegalColumn(),
+        const SizedBox(height: 32),
+        _buildSocialColumn(),
+        const SizedBox(height: 32),
+        _buildEnhancedShareSection(),
+      ],
+    );
+  }
+
+  Widget _buildBrandColumn() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // Logo and brand name
+        Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [_kPurple, _kTeal],
+                ),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Image.asset(
+                'assets/images/parrot_transparent.png',
+                height: 32,
+                errorBuilder: (context, error, stackTrace) {
+                  return const Icon(
+                    Icons.pets,
+                    color: Colors.white,
+                    size: 24,
+                  );
+                },
+              ),
+            ),
+            const SizedBox(width: 12),
+            const Text(
+              'ChirPolly',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1.2,
+              ),
+            ),
+          ],
+        ),
+        
+        const SizedBox(height: 12),
+        
         Text(
-          'Share ChirPolly',
+          'By Hrishikesh Innovations LLP',
+          style: TextStyle(
+            color: Colors.white.withOpacity(0.7),
+            fontSize: 14,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+        
+        const SizedBox(height: 16),
+        
+        Text(
+          'Learn languages the fun way with Polly, your AI-powered language companion.',
+          style: TextStyle(
+            color: Colors.white.withOpacity(0.5),
+            fontSize: 13,
+            height: 1.5,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildLinksColumn() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Quick Links',
           style: TextStyle(
             color: Colors.white.withOpacity(0.9),
             fontSize: 16,
@@ -1633,134 +1786,331 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
           ),
         ),
         const SizedBox(height: 16),
+        _buildFooterLink('All Languages', '/languages'),
+        const SizedBox(height: 8),
+        _buildFooterLink('Pricing Plans', '/pricing'),
+        const SizedBox(height: 8),
+        _buildFooterLink('AI Tutor', '/ai-tutor'),
+        const SizedBox(height: 8),
+        _buildFooterLink('About Us', '/about'),
+      ],
+    );
+  }
 
-        // Platform icon buttons
+  Widget _buildLegalColumn() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Legal',
+          style: TextStyle(
+            color: Colors.white.withOpacity(0.9),
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 0.5,
+          ),
+        ),
+        const SizedBox(height: 16),
+        _buildFooterLink('Terms of Service', '/terms'),
+        const SizedBox(height: 8),
+        _buildFooterLink('Privacy Policy', '/privacy'),
+        const SizedBox(height: 8),
+        _buildFooterLink('Refund Policy', '/refund'),
+        const SizedBox(height: 8),
+        _buildFooterLink('Contact Us', '/contact'),
+      ],
+    );
+  }
+
+  Widget _buildSocialColumn() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          'Connect With Us',
+          style: TextStyle(
+            color: Colors.white.withOpacity(0.9),
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 0.5,
+          ),
+        ),
+        const SizedBox(height: 16),
         Wrap(
-          spacing: 16,
+          spacing: 12,
           runSpacing: 12,
-          alignment: WrapAlignment.center,
           children: [
-            _buildShareIconButton(
-              iconWidget: const FaIcon(FontAwesomeIcons.whatsapp, color: Colors.white, size: 22),
-              label: 'WhatsApp',
+            _buildSocialIcon(
+              icon: FontAwesomeIcons.whatsapp,
               color: const Color(0xFF25D366),
-              onTap: () {
-                launchUrl(
-                  Uri.parse('https://wa.me/?text=${Uri.encodeComponent(shareText)}'),
-                  webOnlyWindowName: '_blank',
-                );
-              },
+              url: 'https://wa.me/?text=${Uri.encodeComponent('Check out ChirPolly! https://chirpolly.com')}',
             ),
-            _buildShareIconButton(
-              iconWidget: const Icon(Icons.email_rounded, color: Colors.white, size: 24),
-              label: 'Email',
-              color: const Color(0xFFEA4335),
-              onTap: () {
-                launchUrl(
-                  Uri.parse(
-                    'mailto:?subject=${Uri.encodeComponent(shareSubject)}&body=${Uri.encodeComponent(shareText)}',
-                  ),
-                );
-              },
-            ),
-            _buildShareIconButton(
-              iconWidget: const FaIcon(FontAwesomeIcons.linkedinIn, color: Colors.white, size: 22),
-              label: 'LinkedIn',
+            _buildSocialIcon(
+              icon: FontAwesomeIcons.linkedinIn,
               color: const Color(0xFF0A66C2),
-              onTap: () {
-                launchUrl(
-                  Uri.parse('https://www.linkedin.com/sharing/share-offsite/?url=${Uri.encodeComponent('https://chirpolly.com')}'),
-                  webOnlyWindowName: '_blank',
-                );
-              },
+              url: 'https://www.linkedin.com/company/chirpolly',
             ),
-            _buildShareIconButton(
-              iconWidget: const FaIcon(FontAwesomeIcons.pinterest, color: Colors.white, size: 22),
-              label: 'Pinterest',
-              color: const Color(0xFFE60023),
-              onTap: () {
-                launchUrl(
-                  Uri.parse('https://pinterest.com/pin/create/button/?url=${Uri.encodeComponent('https://chirpolly.com')}&description=${Uri.encodeComponent(shareText)}'),
-                  webOnlyWindowName: '_blank',
-                );
-              },
+            _buildSocialIcon(
+              icon: FontAwesomeIcons.xTwitter,
+              color: const Color(0xFF1DA1F2),
+              url: 'https://twitter.com/chirpolly',
+            ),
+            _buildSocialIcon(
+              icon: FontAwesomeIcons.instagram,
+              color: const Color(0xFFE4405F),
+              url: 'https://instagram.com/chirpolly',
             ),
           ],
-        ),
-
-        const SizedBox(height: 20),
-
-        // System / generic share button
-        ElevatedButton.icon(
-          onPressed: () async {
-            try {
-              await Share.share(shareText, subject: shareSubject);
-            } catch (_) {
-              // Fallback for browsers without Web Share API
-              launchUrl(
-                Uri.parse('mailto:?subject=${Uri.encodeComponent(shareSubject)}&body=${Uri.encodeComponent(shareText)}'),
-              );
-            }
-          },
-          icon: const Icon(Icons.share_rounded, size: 18),
-          label: const Text(
-            'Share',
-            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
-          ),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: const Color(0xFF6A4CBC),
-            foregroundColor: Colors.white,
-            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 14),
-            shape: const StadiumBorder(),
-            elevation: 0,
-          ),
         ),
       ],
     );
   }
 
-  Widget _buildShareIconButton({
-    required Widget iconWidget,
+  Widget _buildSocialIcon({
+    required FaIconData icon,
+    required Color color,
+    required String url,
+  }) {
+    return Tooltip(
+      message: url.split('//').last.split('/').first,
+      child: InkWell(
+        onTap: () => launchUrl(
+          Uri.parse(url),
+          webOnlyWindowName: '_blank',
+        ),
+        borderRadius: BorderRadius.circular(8),
+        child: Container(
+          width: 40,
+          height: 40,
+          decoration: BoxDecoration(
+            color: color.withOpacity(0.1),
+            border: Border.all(
+              color: color.withOpacity(0.3),
+              width: 1,
+            ),
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: FaIcon(
+            icon,
+            color: color,
+            size: 18,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBottomLink(String title, String route) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 16),
+      child: InkWell(
+        onTap: () => Navigator.pushNamed(context, route),
+        borderRadius: BorderRadius.circular(4),
+        child: Text(
+          title,
+          style: TextStyle(
+            color: Colors.white.withOpacity(0.6),
+            fontSize: 11,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildEnhancedShareSection() {
+    const shareText = 'Check out ChirPolly! https://chirpolly.com';
+    const shareSubject = 'Learn languages with Polly!';
+
+    return Container(
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Colors.white.withOpacity(0.05),
+            Colors.white.withOpacity(0.02),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: Colors.white.withOpacity(0.1),
+          width: 1,
+        ),
+      ),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.share_rounded,
+                color: _kTeal,
+                size: 20,
+              ),
+              const SizedBox(width: 8),
+              Text(
+                'Share ChirPolly',
+                style: TextStyle(
+                  color: Colors.white.withOpacity(0.9),
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                  letterSpacing: 0.5,
+                ),
+              ),
+            ],
+          ),
+          
+          const SizedBox(height: 20),
+          
+          // Share buttons
+          Wrap(
+            spacing: 12,
+            runSpacing: 12,
+            alignment: WrapAlignment.center,
+            children: [
+              _buildModernShareButton(
+                icon: FontAwesomeIcons.whatsapp,
+                label: 'WhatsApp',
+                color: const Color(0xFF25D366),
+                onTap: () => launchUrl(
+                  Uri.parse('https://wa.me/?text=${Uri.encodeComponent(shareText)}'),
+                  webOnlyWindowName: '_blank',
+                ),
+              ),
+              _buildModernShareButton(
+                icon: Icons.email_rounded,
+                label: 'Email',
+                color: const Color(0xFFEA4335),
+                onTap: () => launchUrl(
+                  Uri.parse(
+                    'mailto:?subject=${Uri.encodeComponent(shareSubject)}&body=${Uri.encodeComponent(shareText)}',
+                  ),
+                ),
+              ),
+              _buildModernShareButton(
+                icon: FontAwesomeIcons.linkedinIn,
+                label: 'LinkedIn',
+                color: const Color(0xFF0A66C2),
+                onTap: () => launchUrl(
+                  Uri.parse('https://www.linkedin.com/sharing/share-offsite/?url=${Uri.encodeComponent('https://chirpolly.com')}'),
+                  webOnlyWindowName: '_blank',
+                ),
+              ),
+              _buildModernShareButton(
+                icon: FontAwesomeIcons.pinterest,
+                label: 'Pinterest',
+                color: const Color(0xFFE60023),
+                onTap: () => launchUrl(
+                  Uri.parse('https://pinterest.com/pin/create/button/?url=${Uri.encodeComponent('https://chirpolly.com')}&description=${Uri.encodeComponent(shareText)}'),
+                  webOnlyWindowName: '_blank',
+                ),
+              ),
+            ],
+          ),
+          
+          const SizedBox(height: 16),
+          
+          // System share button
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton.icon(
+              onPressed: () async {
+                try {
+                  await Share.share(shareText, subject: shareSubject);
+                } catch (_) {
+                  launchUrl(
+                    Uri.parse('mailto:?subject=${Uri.encodeComponent(shareSubject)}&body=${Uri.encodeComponent(shareText)}'),
+                  );
+                }
+              },
+              icon: const Icon(Icons.share_rounded, size: 18),
+              label: const Text(
+                'Share with More Options',
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+              ),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: _kPurple,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                elevation: 0,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildModernShareButton({
+    required dynamic icon,
     required String label,
     required Color color,
     required VoidCallback onTap,
   }) {
-    return Tooltip(
-      message: label,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(50),
-        child: Container(
-          width: 52,
-          height: 52,
-          decoration: BoxDecoration(
-            color: color,
-            shape: BoxShape.circle,
-            boxShadow: [
-              BoxShadow(
-                color: color.withOpacity(0.4),
-                blurRadius: 10,
-                offset: const Offset(0, 4),
-              ),
-            ],
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(8),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        decoration: BoxDecoration(
+          color: color.withOpacity(0.1),
+          border: Border.all(
+            color: color.withOpacity(0.3),
+            width: 1,
           ),
-          child: Center(child: iconWidget),
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (icon is FaIconData)
+              FaIcon(
+                icon,
+                color: color,
+                size: 16,
+              )
+            else
+              Icon(
+                icon,
+                color: color,
+                size: 16,
+              ),
+            const SizedBox(width: 8),
+            Text(
+              label,
+              style: TextStyle(
+                color: color,
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
 
   Widget _buildFooterLink(String title, String route) {
-    return TextButton(
-      onPressed: () => Navigator.pushNamed(context, route),
-      style: TextButton.styleFrom(
-        foregroundColor: Colors.grey.shade300,
-        textStyle: const TextStyle(
-          fontSize: 15,
-          fontWeight: FontWeight.w500,
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: InkWell(
+        onTap: () => Navigator.pushNamed(context, route),
+        borderRadius: BorderRadius.circular(6),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          child: Text(
+            title,
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.7),
+              fontSize: 14,
+              fontWeight: FontWeight.w400,
+            ),
+          ),
         ),
       ),
-      child: Text(title),
     );
   }
 
