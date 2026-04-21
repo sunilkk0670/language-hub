@@ -1840,7 +1840,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
             _buildSocialIcon(
               icon: FontAwesomeIcons.linkedinIn,
               color: const Color(0xFF0A66C2),
-              url: 'https://www.linkedin.com/company/chirpolly',
+              url: 'https://www.linkedin.com/company/chirpolly/',
             ),
             const SizedBox(width: 16),
             _buildSocialIcon(

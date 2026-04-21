@@ -51522,7 +51522,7 @@ return A.aP(A.b([A.U("Quick Links",r,r,r,r,A.ak(r,r,A.a0(B.d.ai(229.5),B.e.p()>>
 RY(){var s=this,r=null
 return A.aP(A.b([A.U("Legal",r,r,r,r,A.ak(r,r,A.a0(B.d.ai(229.5),B.e.p()>>>16&255,B.e.p()>>>8&255,B.e.p()&255),r,r,r,r,r,r,r,r,16,r,r,B.ar,r,r,!0,r,0.5,r,r,r,r,r,r),r,r),B.ad,s.nR("Terms of Service","/terms"),B.aK,s.nR("Privacy Policy","/privacy"),B.aK,s.nR("Refund Policy","/refund"),B.aK,s.nR("Contact Us","/contact")],t.p),B.B,r,B.i,B.m)},
 S5(){var s=this,r=null,q=t.p
-return A.aP(A.b([A.U("Follow Us",r,r,r,r,A.ak(r,r,A.a0(B.d.ai(229.5),B.e.p()>>>16&255,B.e.p()>>>8&255,B.e.p()&255),r,r,r,r,r,r,r,r,16,r,r,B.u,r,r,!0,r,r,r,r,r,r,r,r),r,r),B.ad,A.bd(A.b([s.Ad(B.IT,B.Mj,"https://www.linkedin.com/company/chirpolly"),B.b3,s.Ad(B.II,B.Mm,"https://pinterest.com/chirpolly"),B.b3,s.Ad(B.IR,B.Ml,"https://twitter.com/chirpolly"),B.b3,s.Ad(B.JU,B.Mk,"https://instagram.com/chirpolly")],q),B.o,B.i,B.m,0,r)],q),B.B,r,B.i,B.m)},
+return A.aP(A.b([A.U("Follow Us",r,r,r,r,A.ak(r,r,A.a0(B.d.ai(229.5),B.e.p()>>>16&255,B.e.p()>>>8&255,B.e.p()&255),r,r,r,r,r,r,r,r,16,r,r,B.u,r,r,!0,r,r,r,r,r,r,r,r),r,r),B.ad,A.bd(A.b([s.Ad(B.IT,B.Mj,"https://www.linkedin.com/company/chirpolly/"),B.b3,s.Ad(B.II,B.Mm,"https://pinterest.com/chirpolly"),B.b3,s.Ad(B.IR,B.Ml,"https://twitter.com/chirpolly"),B.b3,s.Ad(B.JU,B.Mk,"https://instagram.com/chirpolly")],q),B.o,B.i,B.m,0,r)],q),B.B,r,B.i,B.m)},
 Ad(a,b,c){var s=null,r=B.b.gV(B.b.gW(c.split("//")).split("/"))
 return A.a_b(A.fy(!1,A.ay(4),!0,A.aZs(b,a,24),s,!0,s,s,s,s,s,s,s,s,new A.aHT(c),s,s,s,s,s,s,s),r)},
 H5(a,b){var s=null
