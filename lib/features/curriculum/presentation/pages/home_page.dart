@@ -1827,34 +1827,34 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Connect With Us',
+          'Follow Us',
           style: TextStyle(
             color: Colors.white.withOpacity(0.9),
             fontSize: 16,
-            fontWeight: FontWeight.w600,
-            letterSpacing: 0.5,
+            fontWeight: FontWeight.bold,
           ),
         ),
         const SizedBox(height: 16),
-        Wrap(
-          spacing: 12,
-          runSpacing: 12,
+        Row(
           children: [
-            _buildSocialIcon(
-              icon: FontAwesomeIcons.whatsapp,
-              color: const Color(0xFF25D366),
-              url: 'https://wa.me/?text=${Uri.encodeComponent('Check out ChirPolly! https://chirpolly.com')}',
-            ),
             _buildSocialIcon(
               icon: FontAwesomeIcons.linkedinIn,
               color: const Color(0xFF0A66C2),
               url: 'https://www.linkedin.com/company/chirpolly',
             ),
+            const SizedBox(width: 16),
+            _buildSocialIcon(
+              icon: FontAwesomeIcons.pinterest,
+              color: const Color(0xFFE60023),
+              url: 'https://pinterest.com/chirpolly',
+            ),
+            const SizedBox(width: 16),
             _buildSocialIcon(
               icon: FontAwesomeIcons.xTwitter,
               color: const Color(0xFF1DA1F2),
               url: 'https://twitter.com/chirpolly',
             ),
+            const SizedBox(width: 16),
             _buildSocialIcon(
               icon: FontAwesomeIcons.instagram,
               color: const Color(0xFFE4405F),
@@ -1878,23 +1878,11 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
           Uri.parse(url),
           webOnlyWindowName: '_blank',
         ),
-        borderRadius: BorderRadius.circular(8),
-        child: Container(
-          width: 40,
-          height: 40,
-          decoration: BoxDecoration(
-            color: color.withOpacity(0.1),
-            border: Border.all(
-              color: color.withOpacity(0.3),
-              width: 1,
-            ),
-            borderRadius: BorderRadius.circular(8),
-          ),
-          child: FaIcon(
-            icon,
-            color: color,
-            size: 18,
-          ),
+        borderRadius: BorderRadius.circular(4),
+        child: FaIcon(
+          icon,
+          color: color,
+          size: 24,
         ),
       ),
     );
@@ -1985,24 +1973,6 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                   Uri.parse(
                     'mailto:?subject=${Uri.encodeComponent(shareSubject)}&body=${Uri.encodeComponent(shareText)}',
                   ),
-                ),
-              ),
-              _buildModernShareButton(
-                icon: FontAwesomeIcons.linkedinIn,
-                label: 'LinkedIn',
-                color: const Color(0xFF0A66C2),
-                onTap: () => launchUrl(
-                  Uri.parse('https://www.linkedin.com/sharing/share-offsite/?url=${Uri.encodeComponent('https://chirpolly.com')}'),
-                  webOnlyWindowName: '_blank',
-                ),
-              ),
-              _buildModernShareButton(
-                icon: FontAwesomeIcons.pinterest,
-                label: 'Pinterest',
-                color: const Color(0xFFE60023),
-                onTap: () => launchUrl(
-                  Uri.parse('https://pinterest.com/pin/create/button/?url=${Uri.encodeComponent('https://chirpolly.com')}&description=${Uri.encodeComponent(shareText)}'),
-                  webOnlyWindowName: '_blank',
                 ),
               ),
             ],

@@ -519,8 +519,6 @@ class _PlanCardState extends State<_PlanCard> {
                           accentColor: _accentColor,
                         )),
                     const SizedBox(height: 8),
-                    // AI Tutor limit chip
-                    _AiTutorChip(plan: plan, accentColor: _accentColor),
                     const SizedBox(height: 24),
                     // CTA
                     SizedBox(
@@ -792,7 +790,6 @@ class _FeatureComparisonTable extends StatelessWidget {
       ['Ads', 'Yes', 'No', 'No'],
       ['Liar Game', 'Basic', 'Full', 'Full'],
       ['Grammar Suite', '—', '✓', '✓'],
-      ['AI Tutor', '5/day', '50/day', 'Unlimited'],
       ['Offline Mode', '—', '—', '✓'],
     ];
 
