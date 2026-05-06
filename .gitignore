@@ -29,3 +29,27 @@ android/app/google-services.json
 ios/Runner/GoogleService-Info.plist
 lib/firebase_options.dart
 .dart_tool/
+
+# Flutter/Dart build artifacts
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+
+# Android specific build files
+.gradle/
+app/*.symbols
+app/*.resource_archive
+build-report.xml
+build-report.html
+
+# iOS specific build files
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/.symlinks/
+ios/Pods/
+
+# Web build artifacts
+web/build/
