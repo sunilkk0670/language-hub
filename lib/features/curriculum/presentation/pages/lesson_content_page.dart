@@ -31,6 +31,16 @@ class LessonContentPage extends ConsumerStatefulWidget {
 class _LessonContentPageState extends ConsumerState<LessonContentPage> {
   String get languageCode => _getLanguageCode(widget.languageId);
 
+  // Cached target text style — resolved once in initState to avoid
+  // repeated GoogleFonts network lookups on every vocabulary card.
+  late TextStyle _targetTextStyle;
+
+  @override
+  void initState() {
+    super.initState();
+    _targetTextStyle = _getTargetTextStyle(widget.languageId);
+  }
+
   String _getLanguageCode(String languageId) {
     switch (languageId.toLowerCase()) {
       case 'japanese':
@@ -289,9 +299,7 @@ class _LessonContentPageState extends ConsumerState<LessonContentPage> {
   /// Handles both flat structure (lessons array) and nested structure (lessons with vocabularyItems)
   List<Map<String, dynamic>> _extractVocabularyItems(Map<String, dynamic> moduleData) {
     final List<Map<String, dynamic>> items = [];
-    
-    print('🔍 Extracting vocabulary from module: ${moduleData['theme']}');
-    
+
     // Unified extraction and standardization logic
     List<dynamic>? rawItems;
     if (moduleData['vocabularyItems'] != null && moduleData['vocabularyItems'] is List) {
@@ -332,7 +340,6 @@ class _LessonContentPageState extends ConsumerState<LessonContentPage> {
       }
     }
 
-    print('✅ Extracted ${items.length} total vocabulary items');
     return items;
   }
 
@@ -358,7 +365,6 @@ class _LessonContentPageState extends ConsumerState<LessonContentPage> {
   }
 
   Widget _buildVocabularyCard(BuildContext context, Map<String, dynamic> lesson, int number) {
-    print('🎴 Rendering card $number. target_text: ${lesson['target_text']}, english: ${lesson['english']}');
     return Container(
       margin: const EdgeInsets.only(bottom: 16),
       padding: const EdgeInsets.all(20),
@@ -408,7 +414,7 @@ class _LessonContentPageState extends ConsumerState<LessonContentPage> {
                 // Target text
                 Text(
                   lesson['target_text'] ?? '[LOADING ERROR]',
-                  style: _getTargetTextStyle(widget.languageId).copyWith(
+                  style: _targetTextStyle.copyWith(
                     color: (lesson['target_text'] == '[LOADING ERROR]') ? Colors.red : Colors.black,
                   ),
                 ),

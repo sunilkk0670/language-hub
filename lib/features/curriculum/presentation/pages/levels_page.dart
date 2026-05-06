@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../auth/presentation/providers/auth_providers.dart';
 import '../widgets/chirpolly_logo.dart';
+
 import 'lesson_content_page.dart';
 
-class LevelsPage extends ConsumerWidget {
+class LevelsPage extends ConsumerStatefulWidget {
   final String languageId;
   final String languageName;
   final String flag;
@@ -18,83 +20,153 @@ class LevelsPage extends ConsumerWidget {
   });
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<LevelsPage> createState() => _LevelsPageState();
+}
+
+class _LevelsPageState extends ConsumerState<LevelsPage> {
+  final ScrollController _scrollController = ScrollController();
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  KeyEventResult _handleKeyEvent(FocusNode node, KeyEvent event) {
+    if (event is! KeyDownEvent) return KeyEventResult.ignored;
+    if (!_scrollController.hasClients) return KeyEventResult.ignored;
+
+    const scrollAmount = 100.0;
+    const pageScrollAmount = 500.0;
+
+    if (event.logicalKey == LogicalKeyboardKey.arrowDown) {
+      _scrollController.animateTo(
+        _scrollController.offset + scrollAmount,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.arrowUp) {
+      _scrollController.animateTo(
+        _scrollController.offset - scrollAmount,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.pageDown) {
+      _scrollController.animateTo(
+        _scrollController.offset + pageScrollAmount,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.pageUp) {
+      _scrollController.animateTo(
+        _scrollController.offset - pageScrollAmount,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.home) {
+      _scrollController.animateTo(
+        0,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.end) {
+      _scrollController.animateTo(
+        _scrollController.position.maxScrollExtent,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    }
+
+    return KeyEventResult.ignored;
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final currentUser = ref.watch(currentUserProvider);
     final isGuest = currentUser == null;
 
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        elevation: 0,
+    return Focus(
+      autofocus: true,
+      onKeyEvent: _handleKeyEvent,
+      child: Scaffold(
         backgroundColor: Colors.white,
-        forceMaterialTransparency: false,
-        toolbarHeight: 80,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => Navigator.pop(context),
-        ),
-        title: MouseRegion(
-          cursor: SystemMouseCursors.click,
-          child: GestureDetector(
-            behavior: HitTestBehavior.opaque,
-            onTap: () {
-              Navigator.of(context).popUntil((route) => route.isFirst);
-            },
-            child: Container(
-              color: Colors.transparent,
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              child: const ChirPollyLogo(fontSize: 24),
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: Colors.white,
+          forceMaterialTransparency: false,
+          toolbarHeight: 80,
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () => Navigator.pop(context),
+          ),
+          title: MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: () => Navigator.pushNamedAndRemoveUntil(context, '/home', (route) => false),
+              child: Container(
+                color: Colors.transparent,
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                child: const ChirPollyLogo(fontSize: 24),
+              ),
             ),
           ),
         ),
-      ),
-      body: Column(
-        children: [
-          if (isGuest) _buildGuestNudge(context),
-          Expanded(
-            child: StreamBuilder<QuerySnapshot>(
-              stream: FirebaseFirestore.instance
-                  .collection('languages')
-                  .doc(languageId)
-                  .collection('levels')
-                  .snapshots(),
-              builder: (context, levelsSnapshot) {
-                if (levelsSnapshot.hasError) {
-                  return Center(child: Text('Error: ${levelsSnapshot.error}'));
-                }
+        body: Column(
+          children: [
+            if (isGuest) _buildGuestNudge(context),
+            Expanded(
+              child: StreamBuilder<QuerySnapshot>(
+                stream: FirebaseFirestore.instance
+                    .collection('languages')
+                    .doc(widget.languageId)
+                    .collection('levels')
+                    .snapshots(),
+                builder: (context, levelsSnapshot) {
+                  if (levelsSnapshot.hasError) {
+                    return Center(child: Text('Error: ${levelsSnapshot.error}'));
+                  }
 
-                if (levelsSnapshot.connectionState == ConnectionState.waiting) {
-                  return const Center(child: CircularProgressIndicator());
-                }
+                  if (levelsSnapshot.connectionState == ConnectionState.waiting) {
+                    return const Center(child: CircularProgressIndicator());
+                  }
 
-                final levels = levelsSnapshot.data?.docs ?? [];
+                  final levels = levelsSnapshot.data?.docs ?? [];
 
-                if (levels.isEmpty) {
-                  return const Center(child: Text('No levels available'));
-                }
+                  if (levels.isEmpty) {
+                    return const Center(child: Text('No levels available'));
+                  }
 
-                return ListView.builder(
-                  padding: const EdgeInsets.all(20),
-                  itemCount: levels.length,
-                  itemBuilder: (context, index) {
-                    final levelDoc = levels[index];
-                    final levelData = levelDoc.data() as Map<String, dynamic>;
-                    final levelId = levelDoc.id;
+                  return ListView.builder(
+                    controller: _scrollController,
+                    padding: const EdgeInsets.all(20),
+                    itemCount: levels.length,
+                    itemBuilder: (context, index) {
+                      final levelDoc = levels[index];
+                      final levelData = levelDoc.data() as Map<String, dynamic>;
+                      final levelId = levelDoc.id;
 
-                    return _buildLevelCard(
-                      context,
-                      ref,
-                      isGuest: isGuest,
-                      levelId: levelId,
-                      levelName: levelData['name'] ?? 'Unknown',
-                      description: levelData['description'] ?? '',
-                    );
-                  },
-                );
-              },
+                      return _buildLevelCard(
+                        context,
+                        ref,
+                        isGuest: isGuest,
+                        levelId: levelId,
+                        levelName: levelData['name'] ?? 'Unknown',
+                        description: levelData['description'] ?? '',
+                      );
+                    },
+                  );
+                },
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -104,7 +176,7 @@ class LevelsPage extends ConsumerWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
       decoration: BoxDecoration(
-        color: const Color(0xFF6A4CBC).withOpacity(0.1),
+        color: const Color(0xFF6A4CBC).withValues(alpha: 0.1),
         border: const Border(
           bottom: BorderSide(color: Color(0xFF6A4CBC), width: 0.5),
         ),
@@ -162,11 +234,11 @@ class LevelsPage extends ConsumerWidget {
               context,
               MaterialPageRoute(
                 builder: (context) => ModulesPage(
-                  languageId: languageId,
-                  languageName: languageName,
+                  languageId: widget.languageId,
+                  languageName: widget.languageName,
                   levelId: levelId,
                   levelName: levelName,
-                  flag: flag,
+                  flag: widget.flag,
                 ),
               ),
             );
@@ -310,7 +382,7 @@ class LevelsPage extends ConsumerWidget {
   }
 }
 
-class ModulesPage extends StatelessWidget {
+class ModulesPage extends StatefulWidget {
   final String languageId;
   final String languageName;
   final String levelId;
@@ -327,102 +399,171 @@ class ModulesPage extends StatelessWidget {
   });
 
   @override
+  State<ModulesPage> createState() => _ModulesPageState();
+}
+
+class _ModulesPageState extends State<ModulesPage> {
+  final ScrollController _scrollController = ScrollController();
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  KeyEventResult _handleKeyEvent(FocusNode node, KeyEvent event) {
+    if (event is! KeyDownEvent) return KeyEventResult.ignored;
+    if (!_scrollController.hasClients) return KeyEventResult.ignored;
+
+    const scrollAmount = 100.0;
+    const pageScrollAmount = 500.0;
+
+    if (event.logicalKey == LogicalKeyboardKey.arrowDown) {
+      _scrollController.animateTo(
+        _scrollController.offset + scrollAmount,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.arrowUp) {
+      _scrollController.animateTo(
+        _scrollController.offset - scrollAmount,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.pageDown) {
+      _scrollController.animateTo(
+        _scrollController.offset + pageScrollAmount,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.pageUp) {
+      _scrollController.animateTo(
+        _scrollController.offset - pageScrollAmount,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.home) {
+      _scrollController.animateTo(
+        0,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    } else if (event.logicalKey == LogicalKeyboardKey.end) {
+      _scrollController.animateTo(
+        _scrollController.position.maxScrollExtent,
+        duration: const Duration(milliseconds: 500),
+        curve: Curves.easeOut,
+      );
+      return KeyEventResult.handled;
+    }
+
+    return KeyEventResult.ignored;
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey.shade50,
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        forceMaterialTransparency: true,
-        toolbarHeight: 80,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => Navigator.pop(context),
-        ),
-        title: MouseRegion(
-          cursor: SystemMouseCursors.click,
-          child: GestureDetector(
-            onTap: () {
-              Navigator.of(context).popUntil((route) => route.isFirst);
-            },
-            child: const ChirPollyLogo(fontSize: 24),
+    return Focus(
+      autofocus: true,
+      onKeyEvent: _handleKeyEvent,
+      child: Scaffold(
+        backgroundColor: Colors.grey.shade50,
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          forceMaterialTransparency: true,
+          toolbarHeight: 80,
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () => Navigator.pop(context),
+          ),
+          title: MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTap: () => Navigator.pushNamedAndRemoveUntil(context, '/home', (route) => false),
+              child: const ChirPollyLogo(fontSize: 24),
+            ),
           ),
         ),
-      ),
-      body: StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance
-            .collection('languages')
-            .doc(languageId)
-            .collection('levels')
-            .doc(levelId)
-            .collection('modules')
-            .orderBy('order')
-            .snapshots(),
-        builder: (context, snapshot) {
-          if (snapshot.hasError) {
-            return Center(child: Text('Error: ${snapshot.error}'));
-          }
+        body: StreamBuilder<QuerySnapshot>(
+          stream: FirebaseFirestore.instance
+              .collection('languages')
+              .doc(widget.languageId)
+              .collection('levels')
+              .doc(widget.levelId)
+              .collection('modules')
+              .orderBy('order')
+              .snapshots(),
+          builder: (context, snapshot) {
+            if (snapshot.hasError) {
+              return Center(child: Text('Error: ${snapshot.error}'));
+            }
 
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
-          }
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const Center(child: CircularProgressIndicator());
+            }
 
-          final modules = snapshot.data?.docs ?? [];
-          
-          if (modules.isEmpty) {
-            return const Center(child: Text('No modules available'));
-          }
+            final modules = snapshot.data?.docs ?? [];
 
-          // Calculate total words in level
-          int totalWords = 0;
-          for (var mod in modules) {
-            final data = mod.data() as Map<String, dynamic>;
-            totalWords += _countVocabularyItems(data);
-          }
+            if (modules.isEmpty) {
+              return const Center(child: Text('No modules available'));
+            }
 
-          return Column(
-            children: [
-              // Level Summary Header
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(Icons.auto_awesome, color: Colors.amber.shade700),
-                    const SizedBox(width: 8),
-                    Text(
-                      'Level Total: $totalWords words',
-                      style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
+            // Calculate total words in level
+            int totalWords = 0;
+            for (var mod in modules) {
+              final data = mod.data() as Map<String, dynamic>;
+              totalWords += _countVocabularyItems(data);
+            }
+
+            return Column(
+              children: [
+                // Level Summary Header
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                  color: Colors.white,
+                  child: Row(
+                    children: [
+                      Icon(Icons.auto_awesome, color: Colors.amber.shade700),
+                      const SizedBox(width: 8),
+                      Text(
+                        'Level Total: $totalWords words',
+                        style: const TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-              Expanded(
-                child: ListView.builder(
-                  padding: const EdgeInsets.all(20),
-                  itemCount: modules.length,
-                  itemBuilder: (context, index) {
-                    final moduleDoc = modules[index];
-                    final moduleData = moduleDoc.data() as Map<String, dynamic>;
+                Expanded(
+                  child: ListView.builder(
+                    controller: _scrollController,
+                    padding: const EdgeInsets.all(20),
+                    itemCount: modules.length,
+                    itemBuilder: (context, index) {
+                      final moduleDoc = modules[index];
+                      final moduleData = moduleDoc.data() as Map<String, dynamic>;
 
-                    return _buildModuleCard(context, moduleData);
-                  },
+                      return _buildModuleCard(context, moduleData);
+                    },
+                  ),
                 ),
-              ),
-            ],
-          );
-        },
+              ],
+            );
+          },
+        ),
       ),
     );
   }
 
   Widget _buildModuleCard(BuildContext context, Map<String, dynamic> moduleData) {
     final wordCount = _countVocabularyItems(moduleData);
-    final liarGameData = moduleData['liarGameData'] as Map<String, dynamic>?;
 
     return Card(
       margin: const EdgeInsets.only(bottom: 16),
@@ -435,12 +576,12 @@ class ModulesPage extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) => LessonContentPage(
-                languageId: languageId,
-                languageName: languageName,
-                levelId: levelId,
+                languageId: widget.languageId,
+                languageName: widget.languageName,
+                levelId: widget.levelId,
                 moduleTheme: moduleData['theme'] ?? 'Unknown Theme',
                 moduleData: moduleData,
-                flag: flag,
+                flag: widget.flag,
               ),
             ),
           );
@@ -511,11 +652,11 @@ class ModulesPage extends StatelessWidget {
           // Check for nested vocabulary (modern schema)
           if (lesson['vocabulary'] != null && lesson['vocabulary'] is List) {
             count += (lesson['vocabulary'] as List).length;
-          } 
+          }
           // Check for nested vocabularyItems (legacy schema)
           else if (lesson['vocabularyItems'] != null && lesson['vocabularyItems'] is List) {
             count += (lesson['vocabularyItems'] as List).length;
-          } 
+          }
           else {
             // Flat structure - the lesson themselves are vocabulary items
             count++;

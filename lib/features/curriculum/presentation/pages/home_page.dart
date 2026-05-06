@@ -57,18 +57,25 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
   Timer? _bubbleDelay;
   static const _fullBubbleText = "Hi! I'm Polly.\nReady to chirp? 🦜";
 
-  // (Parallax hover removed — consistent behaviour on all screen sizes)
 
-  void _scrollToSection(GlobalKey key) {
-    final context = key.currentContext;
-    if (context != null) {
-      Scrollable.ensureVisible(
-        context,
-        duration: const Duration(milliseconds: 600),
-        curve: Curves.easeInOutCubic,
-      );
-    }
-  }
+  // ── Parrot wing flap ─────────────────────────────────────────────────────
+  late AnimationController _wingController;
+  late Animation<double>   _wingRotation;
+
+  // ── Gradient background animation ─────────────────────────────────────────
+  late AnimationController _gradientController;
+  late Animation<double>   _gradientShift;
+
+  // ── Floating decorative elements ───────────────────────────────────────────
+  late AnimationController _floatController1;
+  late AnimationController _floatController2;
+  late AnimationController _floatController3;
+  late Animation<Offset> _floatOffset1;
+  late Animation<Offset> _floatOffset2;
+  late Animation<Offset> _floatOffset3;
+
+  // ── Scroll-triggered animations ───────────────────────────────────────────
+  // (Parallax hover removed — consistent behaviour on all screen sizes)
 
   @override
   void initState() {
@@ -83,35 +90,36 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
       CurvedAnimation(parent: _parrotController, curve: Curves.easeInOut),
     );
 
-    // ── Entrance bounce ──────────────────────────────────────────────────
+    // ── Entrance bounce with spring physics ────────────────────────────────
     _entranceController = AnimationController(
-      duration: const Duration(milliseconds: 700),
+      duration: const Duration(milliseconds: 800),
       vsync: this,
     );
     _entranceScale = TweenSequence<double>([
-      TweenSequenceItem(tween: Tween(begin: 0.88, end: 1.04), weight: 60),
-      TweenSequenceItem(tween: Tween(begin: 1.04, end: 0.98), weight: 20),
-      TweenSequenceItem(tween: Tween(begin: 0.98, end: 1.00), weight: 20),
-    ]).animate(CurvedAnimation(parent: _entranceController, curve: Curves.easeOut));
+      TweenSequenceItem(tween: Tween(begin: 0.85, end: 1.08), weight: 50),
+      TweenSequenceItem(tween: Tween(begin: 1.08, end: 0.96), weight: 25),
+      TweenSequenceItem(tween: Tween(begin: 0.96, end: 1.02), weight: 15),
+      TweenSequenceItem(tween: Tween(begin: 1.02, end: 1.00), weight: 10),
+    ]).animate(CurvedAnimation(parent: _entranceController, curve: Curves.elasticOut));
     _entranceController.forward();
 
-    // ── Staggered headline ───────────────────────────────────────────────
+    // ── Staggered headline with spring physics ────────────────────────────
     _staggerController = AnimationController(
-      duration: const Duration(milliseconds: 1200),
+      duration: const Duration(milliseconds: 1400),
       vsync: this,
     );
     _line1Opacity = Tween<double>(begin: 0, end: 1).animate(
       CurvedAnimation(parent: _staggerController,
-          curve: const Interval(0.0, 0.5, curve: Curves.easeOut)));
-    _line1Slide = Tween<Offset>(begin: const Offset(-0.15, 0), end: Offset.zero).animate(
+          curve: const Interval(0.0, 0.5, curve: Curves.elasticOut)));
+    _line1Slide = Tween<Offset>(begin: const Offset(-0.2, 0), end: Offset.zero).animate(
       CurvedAnimation(parent: _staggerController,
-          curve: const Interval(0.0, 0.5, curve: Curves.easeOut)));
+          curve: const Interval(0.0, 0.5, curve: Curves.elasticOut)));
     _line2Opacity = Tween<double>(begin: 0, end: 1).animate(
       CurvedAnimation(parent: _staggerController,
-          curve: const Interval(0.4, 0.9, curve: Curves.easeOut)));
-    _line2Slide = Tween<Offset>(begin: const Offset(-0.15, 0), end: Offset.zero).animate(
+          curve: const Interval(0.35, 0.85, curve: Curves.elasticOut)));
+    _line2Slide = Tween<Offset>(begin: const Offset(-0.2, 0), end: Offset.zero).animate(
       CurvedAnimation(parent: _staggerController,
-          curve: const Interval(0.4, 0.9, curve: Curves.easeOut)));
+          curve: const Interval(0.35, 0.85, curve: Curves.elasticOut)));
     // Start immediately — no delay avoids the invisible-flash on first render
     _staggerController.forward();
 
@@ -155,6 +163,52 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
         }
       });
     });
+
+    // ── Wing flap animation ─────────────────────────────────────────────────
+    _wingController = AnimationController(
+      duration: const Duration(milliseconds: 800),
+      vsync: this,
+    )..repeat(reverse: true);
+    _wingRotation = Tween<double>(begin: -0.05, end: 0.05).animate(
+      CurvedAnimation(parent: _wingController, curve: Curves.easeInOut),
+    );
+
+    // ── Gradient background animation ───────────────────────────────────────
+    _gradientController = AnimationController(
+      duration: const Duration(seconds: 8),
+      vsync: this,
+    )..repeat();
+    _gradientShift = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(parent: _gradientController, curve: Curves.linear),
+    );
+
+    // ── Floating decorative elements ─────────────────────────────────────────
+    _floatController1 = AnimationController(
+      duration: const Duration(seconds: 6),
+      vsync: this,
+    )..repeat(reverse: true);
+    _floatOffset1 = Tween<Offset>(
+      begin: const Offset(0, 0),
+      end: const Offset(0, -20),
+    ).animate(CurvedAnimation(parent: _floatController1, curve: Curves.easeInOut));
+
+    _floatController2 = AnimationController(
+      duration: const Duration(seconds: 8),
+      vsync: this,
+    )..repeat(reverse: true);
+    _floatOffset2 = Tween<Offset>(
+      begin: const Offset(0, 0),
+      end: const Offset(0, -25),
+    ).animate(CurvedAnimation(parent: _floatController2, curve: Curves.easeInOut));
+
+    _floatController3 = AnimationController(
+      duration: const Duration(seconds: 7),
+      vsync: this,
+    )..repeat(reverse: true);
+    _floatOffset3 = Tween<Offset>(
+      begin: const Offset(0, 0),
+      end: const Offset(0, -15),
+    ).animate(CurvedAnimation(parent: _floatController3, curve: Curves.easeInOut));
   }
 
   @override
@@ -169,8 +223,85 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
     _bubbleTextNotifier.dispose();
     _typeTimer?.cancel();
     _bubbleDelay?.cancel();
+    _wingController.dispose();
+    _gradientController.dispose();
+    _floatController1.dispose();
+    _floatController2.dispose();
+    _floatController3.dispose();
     super.dispose();
   }
+
+  double _getScrollProgress(double startOffset, double endOffset) {
+    if (!_scrollController.hasClients) return 0.0;
+    final offset = _scrollController.offset;
+    return ((offset - startOffset) / (endOffset - startOffset)).clamp(0.0, 1.0);
+  }
+
+
+  Widget _buildFloatingShape({
+    required double size,
+    required Color color,
+    required Animation<Offset> animation,
+    required Offset position,
+    double opacity = 0.15,
+  }) {
+    return AnimatedBuilder(
+      animation: animation,
+      builder: (context, child) {
+        return Positioned(
+          left: position.dx,
+          top: position.dy + animation.value.dy,
+          child: Opacity(
+            opacity: opacity,
+            child: Container(
+              width: size,
+              height: size,
+              decoration: BoxDecoration(
+                color: color,
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: color.withOpacity(0.3),
+                    blurRadius: 20,
+                    spreadRadius: 5,
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildNavButton(String text, VoidCallback onPressed) {
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          color: Colors.transparent,
+        ),
+        child: InkWell(
+          onTap: onPressed,
+          borderRadius: BorderRadius.circular(8),
+          splashColor: _kPurple.withValues(alpha: 0.1),
+          hoverColor: _kPurple.withValues(alpha: 0.05),
+          child: Text(
+            text,
+            style: TextStyle(
+              color: Colors.grey.shade800,
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -335,54 +466,14 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                       ]
                     : [
                         // Desktop: Show navigation buttons
-                        TextButton(
-                          onPressed: () => Navigator.pushNamed(context, '/languages'),
-                          child: Text(
-                            'Languages',
-                            style: TextStyle(
-                              color: Colors.grey.shade800,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
+                        _buildNavButton('Languages', () => Navigator.pushNamed(context, '/languages')),
                         const SizedBox(width: 16),
-                        TextButton(
-                          onPressed: () => Navigator.pushNamed(context, '/pricing'),
-                          child: Text(
-                            'Pricing',
-                            style: TextStyle(
-                              color: Colors.grey.shade800,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
+                        _buildNavButton('Pricing', () => Navigator.pushNamed(context, '/pricing')),
                         const SizedBox(width: 16),
-                        TextButton(
-                          onPressed: () => Navigator.pushNamed(context, '/about'),
-                          child: Text(
-                            'About',
-                            style: TextStyle(
-                              color: Colors.grey.shade800,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
+                        _buildNavButton('About', () => Navigator.pushNamed(context, '/about')),
                         const SizedBox(width: 16),
                         // AI Tutor button
-                        TextButton(
-                          onPressed: () => Navigator.pushNamed(context, '/ai-tutor'),
-                          child: Text(
-                            'AI Tutor',
-                            style: TextStyle(
-                              color: Colors.grey.shade800,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
+                        _buildNavButton('AI Tutor', () => Navigator.pushNamed(context, '/ai-tutor')),
                         const SizedBox(width: 16),
                         // Login/Logout button
                         Consumer(
@@ -543,35 +634,65 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
   }
 
   Widget _buildHeroSection(List<QueryDocumentSnapshot> languages) {
-    return Container(
-      width: double.infinity,
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          stops: [0.0, 0.4, 0.7, 1.0],
-          colors: [
-            Color(0xFFEDF5FF),
-            Color(0xFFF3EAFF),
-            Color(0xFFFDF4E3),
-            Color(0xFFFFFFFF),
-          ],
-        ),
-      ),
-      child: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 24),
-            child: LayoutBuilder(
-              builder: (context, constraints) {
-                final bool isDesktop = constraints.maxWidth > 900;
-
-                // Build left (text) section
-                Widget leftSection = Column(
-                            crossAxisAlignment: isDesktop
-                                ? CrossAxisAlignment.start
-                                : CrossAxisAlignment.center,
-                            children: [
+    return AnimatedBuilder(
+      animation: _gradientController,
+      builder: (context, child) {
+        final t = _gradientShift.value;
+        return Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              stops: [0.0, 0.4, 0.7, 1.0],
+              colors: [
+                Color.lerp(const Color(0xFFEDF5FF), const Color(0xFFE8F0FF), t)!,
+                Color.lerp(const Color(0xFFF3EAFF), const Color(0xFFEDE4FF), t)!,
+                Color.lerp(const Color(0xFFFDF4E3), const Color(0xFFF8F0E0), t)!,
+                Color.lerp(const Color(0xFFFFFFFF), const Color(0xFFF8F8FF), t)!,
+              ],
+            ),
+          ),
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final bool isDesktop = constraints.maxWidth > 900;
+              return Stack(
+                children: [
+                  // Floating decorative shapes
+                  if (constraints.maxWidth > 600) ...[
+                    _buildFloatingShape(
+                      size: 120,
+                      color: _kPurple,
+                      animation: _floatOffset1,
+                      position: const Offset(50, 100),
+                      opacity: 0.08,
+                    ),
+                    _buildFloatingShape(
+                      size: 80,
+                      color: _kTeal,
+                      animation: _floatOffset2,
+                      position: Offset(constraints.maxWidth - 150, 200),
+                      opacity: 0.1,
+                    ),
+                    _buildFloatingShape(
+                      size: 60,
+                      color: const Color(0xFFFF6B6B),
+                      animation: _floatOffset3,
+                      position: const Offset(100, 300),
+                      opacity: 0.12,
+                    ),
+                  ],
+                  Column(
+                    children: [
+                      Builder(builder: (context) {
+                 // Build left (text/CTA) section
+                 final Widget leftSection = Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 24),
+                        child: Column(
+                          crossAxisAlignment: isDesktop
+                              ? CrossAxisAlignment.start
+                              : CrossAxisAlignment.center,
+                          children: [
 
                               // ── Line 1: "Don't Just Learn." ───────────────
                               Padding(
@@ -731,7 +852,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
 
                               SizedBox(height: isDesktop ? 48 : 20),
 
-                              // ── CTA Button with glow pulse ─────────────────
+                              // ── CTA Button with gradient and glow pulse ─────────
                               AnimatedBuilder(
                                 animation: _glowBlur,
                                 builder: (context, child) {
@@ -750,21 +871,32 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                                       ],
                                     ),
                                     child: ElevatedButton(
-                                      onPressed: () => Navigator.pushNamed(
-                                          context, '/languages'),
+                                      onPressed: () => Navigator.pushNamed(context, '/languages'),
                                       style: ElevatedButton.styleFrom(
-                                        backgroundColor: _kPurple,
+                                        backgroundColor: Colors.transparent,
                                         foregroundColor: Colors.white,
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 48, vertical: 24),
                                         shape: const StadiumBorder(),
                                         elevation: 0,
                                       ),
-                                      child: const Text(
-                                        'Start Learning Now',
-                                        style: TextStyle(
-                                          fontSize: 18,
-                                          fontWeight: FontWeight.bold,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          gradient: const LinearGradient(
+                                            colors: [_kPurple, Color(0xFF8B5CF6)],
+                                            begin: Alignment.topLeft,
+                                            end: Alignment.bottomRight,
+                                          ),
+                                          borderRadius: BorderRadius.circular(50),
+                                        ),
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 48, vertical: 24),
+                                        child: const Text(
+                                          'Start Learning Now',
+                                          style: TextStyle(
+                                            fontSize: 18,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -774,7 +906,8 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
 
                               if (!isDesktop) const SizedBox(height: 16),
                             ],
-                          );
+                          ),
+                        );
 
                 // Build right (parrot) section
                 Widget rightSection = ConstrainedBox(
@@ -823,12 +956,15 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                                       ScaleTransition(
                                         scale: _entranceScale,
                                         child: AnimatedBuilder(
-                                          animation: _parrotAnimation,
+                                          animation: Listenable.merge([_parrotAnimation, _wingController]),
                                           builder: (context, child) {
                                             return Transform.translate(
                                               offset: Offset(
                                                   0, _parrotAnimation.value),
-                                              child: child,
+                                              child: Transform.rotate(
+                                                angle: _wingRotation.value,
+                                                child: child,
+                                              ),
                                             );
                                           },
                                           child: ConstrainedBox(
@@ -895,37 +1031,54 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                           ),
                   ),
                 );
-
-              },
-            ),
-          ),
-          const SizedBox(height: 40),
-        ],
+                      },
+                    ),
+                  const SizedBox(height: 40),
+                ],
+              ),
+            ],
+          );
+        },
       ),
     );
-  }
+  },
+  );
+}
 
-  // ── Glassmorphic speech bubble ───────────────────────────────────────────
+
+  // ── Enhanced glassmorphic speech bubble ───────────────────────────────────
   Widget _buildBubble({required bool isMobile}) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(16),
       child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+        filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
         child: Container(
           constraints: BoxConstraints(maxWidth: isMobile ? 220 : 200),
           padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
           decoration: BoxDecoration(
-            color: Colors.white.withValues(alpha: 0.55),
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.white.withValues(alpha: 0.6),
+                Colors.white.withValues(alpha: 0.4),
+              ],
+            ),
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
-              color: Colors.white.withValues(alpha: 0.7),
-              width: 1.2,
+              color: Colors.white.withValues(alpha: 0.8),
+              width: 1.5,
             ),
             boxShadow: [
               BoxShadow(
-                color: _kPurple.withValues(alpha: 0.12),
-                blurRadius: 16,
-                offset: const Offset(0, 4),
+                color: _kPurple.withValues(alpha: 0.15),
+                blurRadius: 20,
+                offset: const Offset(0, 6),
+              ),
+              BoxShadow(
+                color: Colors.white.withValues(alpha: 0.3),
+                blurRadius: 10,
+                offset: const Offset(0, 2),
               ),
             ],
           ),
@@ -1069,12 +1222,28 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                     final languageDoc = languages[index];
                     final languageData = languageDoc.data() as Map<String, dynamic>;
                     
-                    return LanguageCard(
-                      languageId: languageDoc.id,
-                      flag: languageData['flag'] ?? '🌍',
-                      name: languageData['name'] ?? 'Unknown',
-                      nativeScript: languageData['nativeScript'] ?? languageData['nativeName'] ?? '',
-                      color: LanguageCard.getLanguageColor(languageData['name'] ?? 'Unknown'),
+                    return AnimatedBuilder(
+                      animation: _scrollController,
+                      builder: (context, child) {
+                        final progress = _getScrollProgress(600, 900);
+                        final cardProgress = ((progress - (index * 0.15)) / 0.3).clamp(0.0, 1.0);
+                        final opacity = Curves.easeOut.transform(cardProgress);
+                        final slide = Offset(0, 30 * (1 - cardProgress));
+                        return Opacity(
+                          opacity: opacity,
+                          child: Transform.translate(
+                            offset: slide,
+                            child: child,
+                          ),
+                        );
+                      },
+                      child: LanguageCard(
+                        languageId: languageDoc.id,
+                        flag: languageData['flag'] ?? '🌍',
+                        name: languageData['name'] ?? 'Unknown',
+                        nativeScript: languageData['nativeScript'] ?? languageData['nativeName'] ?? '',
+                        color: LanguageCard.getLanguageColor(languageData['name'] ?? 'Unknown'),
+                      ),
                     );
                   },
                 );
@@ -1165,89 +1334,75 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
   }
 
   Widget _buildFeaturesSection() {
-    return AnimatedBuilder(
-      animation: _scrollController,
-      builder: (context, child) {
-        final offset = _scrollController.hasClients ? _scrollController.offset : 0.0;
-        final progress = ((offset - 300) / 400).clamp(0.0, 1.0);
-        
-        return Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            color: Color.lerp(Colors.white, const Color(0xFF080808), progress),
-          ),
-          padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
-          child: Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 1200),
-              child: Column(
-                children: [
-                  _buildDynamicGradientText(
-                    'What Makes ChirPolly Different',
-                    startOffset: 300,
-                    endOffset: 900,
-                  ),
-                  const SizedBox(height: 48),
-                  LayoutBuilder(
-                    builder: (context, constraints) {
-                      final isDesktop = constraints.maxWidth > 900;
-                      return Wrap(
-                        spacing: 24,
-                        runSpacing: 24,
-                        alignment: WrapAlignment.center,
-                        children: [
-                          _buildFeatureCard(
-                            icon: '🎮',
-                            title: 'Unique Liar Game Challenge',
-                            description: 'Test your learning with our signature game-based assessment',
-                            isDesktop: isDesktop,
-                            progress: progress,
-                          ),
-                          _buildFeatureCard(
-                            icon: '🌍',
-                            title: '11 Languages',
-                            description: 'English, French, Spanish, Korean, Japanese, German, Sanskrit, Hindi, Portuguese, Chinese & Italian',
-                            isDesktop: isDesktop,
-                            progress: progress,
-                          ),
-                          _buildFeatureCard(
-                            icon: '📚',
-                            title: 'Structured A1 to B1 Courses',
-                            description: 'Progressive learning from beginner to intermediate',
-                            isDesktop: isDesktop,
-                            progress: progress,
-                          ),
-                          _buildFeatureCard(
-                            icon: '💬',
-                            title: '33,000 Vocabulary Words',
-                            description: '3,000 words per language for comprehensive mastery',
-                            isDesktop: isDesktop,
-                            progress: progress,
-                          ),
-                          _buildFeatureCard(
-                            icon: '💎',
-                            title: 'Japanese Kanji Mastery',
-                            description: 'Premium Edition: Complete Jōyō Kanji curriculum with mnemonics, stroke counts, and integrated mastery tracking.',
-                            isDesktop: isDesktop,
-                            progress: progress,
-                          ),
-                          _buildFeatureCard(
-                            icon: '📱',
-                            title: 'Web & Mobile',
-                            description: 'Seamless experience across all your devices',
-                            isDesktop: isDesktop,
-                            progress: progress,
-                          ),
-                        ],
-                      );
-                    },
-                  ),
-                ],
+    return Container(
+      width: double.infinity,
+      decoration: const BoxDecoration(
+        color: Color(0xFF080808),
+      ),
+      padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
+      child: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 1200),
+          child: Column(
+            children: [
+              _buildDynamicGradientText(
+                'What Makes ChirPolly Different',
+                startOffset: 300,
+                endOffset: 900,
               ),
-            ),
+              const SizedBox(height: 48),
+              LayoutBuilder(
+                builder: (context, constraints) {
+                  final isDesktop = constraints.maxWidth > 900;
+                  return Wrap(
+                    spacing: 24,
+                    runSpacing: 24,
+                    alignment: WrapAlignment.center,
+                    children: [
+                      _buildFeatureCard(
+                        icon: '🎮',
+                        title: 'Unique Liar Game Challenge',
+                        description: 'Test your learning with our signature game-based assessment',
+                        isDesktop: isDesktop,
+                      ),
+                      _buildFeatureCard(
+                        icon: '🌍',
+                        title: '11 Languages',
+                        description: 'English, French, Spanish, Korean, Japanese, German, Sanskrit, Hindi, Portuguese, Chinese & Italian',
+                        isDesktop: isDesktop,
+                      ),
+                      _buildFeatureCard(
+                        icon: '📚',
+                        title: 'Structured A1 to B1 Courses',
+                        description: 'Progressive learning from beginner to intermediate',
+                        isDesktop: isDesktop,
+                      ),
+                      _buildFeatureCard(
+                        icon: '💬',
+                        title: '33,000 Vocabulary Words',
+                        description: '3,000 words per language for comprehensive mastery',
+                        isDesktop: isDesktop,
+                      ),
+                      _buildFeatureCard(
+                        icon: '💎',
+                        title: 'Japanese Kanji Mastery',
+                        description: 'Premium Edition: Complete Jōyō Kanji curriculum with mnemonics, stroke counts, and integrated mastery tracking.',
+                        isDesktop: isDesktop,
+                      ),
+                      _buildFeatureCard(
+                        icon: '📱',
+                        title: 'Web & Mobile',
+                        description: 'Seamless experience across all your devices',
+                        isDesktop: isDesktop,
+                      ),
+                    ],
+                  );
+                },
+              ),
+            ],
           ),
-        );
-      },
+        ),
+      ),
     );
   }
 
@@ -1256,22 +1411,12 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
     required String title,
     required String description,
     required bool isDesktop,
-    double progress = 0.0,
   }) {
-    final bgColor = Color.lerp(Colors.white, const Color(0xFF151515), progress)!;
-    final titleColor = Color.lerp(const Color(0xFF2E3192), Colors.white, progress)!;
-    final descColor = Color.lerp(Colors.grey.shade700, Colors.grey.shade400, progress)!;
-    final borderColor = Color.lerp(
-      const Color(0xFF6A4CBC).withOpacity(0.1),
-      Colors.white.withOpacity(0.1),
-      progress,
-    )!;
-
     return Container(
       width: isDesktop ? 350 : double.infinity,
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: bgColor,
+        color: const Color(0xFF151515),
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
@@ -1281,7 +1426,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
           ),
         ],
         border: Border.all(
-          color: borderColor,
+          color: Colors.white.withOpacity(0.1),
           width: 1,
         ),
       ),
@@ -1295,10 +1440,10 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
           const SizedBox(height: 16),
           Text(
             title,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
-              color: titleColor,
+              color: Colors.white,
             ),
           ),
           const SizedBox(height: 8),
@@ -1306,7 +1451,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
             description,
             style: TextStyle(
               fontSize: 14,
-              color: descColor,
+              color: Colors.grey.shade400,
               height: 1.5,
             ),
           ),
@@ -1367,84 +1512,76 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
   }
 
   Widget _buildAboutSection() {
-    return AnimatedBuilder(
-      animation: _scrollController,
-      builder: (context, child) {
-        final offset = _scrollController.hasClients ? _scrollController.offset : 0.0;
-        final progress = ((offset - 1600) / 400).clamp(0.0, 1.0);
-        
-        return Container(
-          width: double.infinity,
-          padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
-          decoration: BoxDecoration(
-            color: Color.lerp(const Color(0xFF080808), Colors.white, progress),
-          ),
-          child: Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 900),
-              child: Column(
-                children: [
-                  _buildDynamicGradientText('About ChirPolly', startOffset: 1800, endOffset: 2400),
-                  const SizedBox(height: 32),
-                  Text(
-                    'ChirPolly is a language learning platform founded by Sunil Kumar Krishnan, a technology entrepreneur passionate about breaking language barriers and preserving cultural heritage. We believe everyone deserves a voice in the global conversation.',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Color.lerp(Colors.grey.shade400, Colors.grey.shade800, progress),
-                      height: 1.6,
-                    ),
-                    textAlign: TextAlign.center,
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
+      decoration: const BoxDecoration(
+        color: Colors.white,
+      ),
+      child: Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 900),
+          child: Column(
+            children: [
+              _buildDynamicGradientText('About ChirPolly', startOffset: 1800, endOffset: 2400),
+              const SizedBox(height: 32),
+              Text(
+                'ChirPolly is a language learning platform founded by Sunil Kumar Krishnan, a technology entrepreneur passionate about breaking language barriers and preserving cultural heritage. We believe everyone deserves a voice in the global conversation.',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.grey.shade800,
+                  height: 1.6,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 24),
+              Text(
+                'Our mission: Make language learning simple, beautiful, and culturally rooted. ChirPolly works seamlessly across web and mobile, offering structured courses from beginner (A1) to intermediate (B1) levels.',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.grey.shade800,
+                  height: 1.6,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 24),
+              Container(
+                padding: const EdgeInsets.all(24),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFF3E5F5).withOpacity(0.3),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: const Color(0xFF6A4CBC).withOpacity(0.2),
+                    width: 1,
                   ),
-                  const SizedBox(height: 24),
-                  Text(
-                    'Our mission: Make language learning simple, beautiful, and culturally rooted. ChirPolly works seamlessly across web and mobile, offering structured courses from beginner (A1) to intermediate (B1) levels.',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Color.lerp(Colors.grey.shade400, Colors.grey.shade800, progress),
-                      height: 1.6,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 24),
-                  Container(
-                    padding: const EdgeInsets.all(24),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFF3E5F5).withOpacity(0.3),
-                      borderRadius: BorderRadius.circular(16),
-                      border: Border.all(
-                        color: const Color(0xFF6A4CBC).withOpacity(0.2),
-                        width: 1,
+                ),
+                child: Column(
+                  children: [
+                    Text(
+                      'Current Status: Live',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey.shade900,
                       ),
                     ),
-                    child: Column(
-                      children: [
-                        Text(
-                          'Current Status: Live',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Color.lerp(Colors.white, Colors.grey.shade900, progress),
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-                        Text(
-                          '11 major languages • 33,000+ vocabulary words • A1 to B1 levels • Web & Mobile',
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Color.lerp(Colors.grey.shade400, Colors.grey.shade700, progress),
-                            height: 1.5,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
+                    const SizedBox(height: 16),
+                    Text(
+                      '11 major languages • 33,000+ vocabulary words • A1 to B1 levels • Web & Mobile',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.grey.shade700,
+                        height: 1.5,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
+            ],
           ),
-        );
-      },
+        ),
+      ),
     );
   }
 
@@ -1747,17 +1884,6 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
           ],
         ),
         
-        const SizedBox(height: 12),
-        
-        Text(
-          'By Hrishikesh Innovations LLP',
-          style: TextStyle(
-            color: Colors.white.withOpacity(0.7),
-            fontSize: 14,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        
         const SizedBox(height: 16),
         
         Text(
@@ -1850,9 +1976,9 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
             ),
             const SizedBox(width: 16),
             _buildSocialIcon(
-              icon: FontAwesomeIcons.xTwitter,
-              color: const Color(0xFF1DA1F2),
-              url: 'https://twitter.com/chirpolly',
+              icon: FontAwesomeIcons.facebook,
+              color: const Color(0xFF1877F2),
+              url: 'https://facebook.com/chirpolly',
             ),
             const SizedBox(width: 16),
             _buildSocialIcon(
