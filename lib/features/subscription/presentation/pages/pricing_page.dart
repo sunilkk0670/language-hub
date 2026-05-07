@@ -47,10 +47,38 @@ class _PricingBody extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final plans = ref.watch(subscriptionPlansProvider);
+    final rawPlans = ref.watch(subscriptionPlansProvider);
+    final plans = [
+      rawPlans.firstWhere((p) => p.id == 'free', orElse: () => rawPlans.first),
+      const SubscriptionPlan(
+        id: 'premium',
+        name: 'Premium',
+        tagline: 'A2 & B1 — Full Mastery',
+        description: 'Complete curriculum for serious learners.',
+        annualPricing: {'USD': 63.99, 'EUR': 63.99, 'INR': 1899.0},
+        monthlyPricing: {'USD': 6.99, 'EUR': 6.99, 'INR': 189.99},
+        features: [
+          '3,000 Words (A1 + A2 + B1 Curriculum)',
+          'N5 to N1 Kanji & Fluency Mastery',
+          'Full Grammar Suite',
+          'Ad-Free Experience',
+          'Offline Mode',
+        ],
+        curriculumLevel: 'B1',
+        wordCount: 3000,
+        isAdFree: true,
+        hasOfflineMode: true,
+        isMostPopular: true,
+        badgeLabel: 'Best Value',
+      ),
+    ];
     final cycle = ref.watch(billingCycleProvider);
     final currency = ref.watch(selectedCurrencyProvider);
-    final addon = ref.watch(kanjiLiarAddonProvider);
+    final rawAddon = ref.watch(kanjiLiarAddonProvider);
+    final addon = KanjiLiarAddon(
+      pricing: const {'USD': 6.99, 'EUR': 6.99, 'INR': 189.99},
+      description: rawAddon.description,
+    );
 
     return ScrollConfiguration(
       behavior: const _PricingScrollBehavior(),
@@ -785,12 +813,12 @@ class _FeatureComparisonTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final rows = [
-      ['Words', '1,000', '2,000', '3,000'],
-      ['Japanese Depth', 'N5 Intro', 'N5 & N4', 'N3 & N2'],
-      ['Ads', 'Yes', 'No', 'No'],
-      ['Liar Game', 'Basic', 'Full', 'Full'],
-      ['Grammar Suite', '—', '✓', '✓'],
-      ['Offline Mode', '—', '—', '✓'],
+      ['Words', '1,000', '3,000'],
+      ['Japanese Depth', 'N5 Intro', 'N5 to N1 Mastery'],
+      ['Ads', 'Yes', 'No'],
+      ['Liar Game', 'Basic', 'Full'],
+      ['Grammar Suite', '—', '✓'],
+      ['Offline Mode', '—', '✓'],
     ];
 
     return Padding(
@@ -827,7 +855,6 @@ class _FeatureComparisonTable extends StatelessWidget {
                   0: FlexColumnWidth(2),
                   1: FlexColumnWidth(1.2),
                   2: FlexColumnWidth(1.2),
-                  3: FlexColumnWidth(1.2),
                 },
                 children: [
                   // Header
@@ -843,7 +870,6 @@ class _FeatureComparisonTable extends StatelessWidget {
                     children: [
                       _tableCell('Feature', isHeader: true),
                       _tableCell('Free', isHeader: true),
-                      _tableCell('Standard', isHeader: true),
                       _tableCell('Premium', isHeader: true),
                     ],
                   ),
@@ -861,7 +887,6 @@ class _FeatureComparisonTable extends StatelessWidget {
                         _tableCell(row[0], isFeature: true),
                         _tableCell(row[1]),
                         _tableCell(row[2]),
-                        _tableCell(row[3]),
                       ],
                     );
                   }),
