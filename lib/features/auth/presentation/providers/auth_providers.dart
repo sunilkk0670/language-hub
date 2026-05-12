@@ -8,6 +8,7 @@ import '../../domain/usecases/sign_in_usecase.dart';
 import '../../domain/usecases/sign_up_usecase.dart';
 import '../../domain/usecases/sign_out_usecase.dart';
 import '../../domain/usecases/delete_account_usecase.dart';
+import '../../domain/usecases/send_password_reset_email_usecase.dart';
 
 // Firebase Auth instance provider
 final firebaseAuthProvider = Provider<FirebaseAuth>((ref) {
@@ -45,6 +46,11 @@ final signOutUseCaseProvider = Provider<SignOutUseCase>((ref) {
 final deleteAccountUseCaseProvider = Provider<DeleteAccountUseCase>((ref) {
   final repository = ref.watch(authRepositoryProvider);
   return DeleteAccountUseCase(repository);
+});
+
+final sendPasswordResetEmailUseCaseProvider = Provider<SendPasswordResetEmailUseCase>((ref) {
+  final repository = ref.watch(authRepositoryProvider);
+  return SendPasswordResetEmailUseCase(repository);
 });
 
 // Auth state stream provider
@@ -94,12 +100,14 @@ class AuthController extends StateNotifier<AuthUIState> {
   final SignUpUseCase _signUpUseCase;
   final SignOutUseCase _signOutUseCase;
   final DeleteAccountUseCase _deleteAccountUseCase;
+  final SendPasswordResetEmailUseCase _sendPasswordResetEmailUseCase;
 
   AuthController(
     this._signInUseCase,
     this._signUpUseCase,
     this._signOutUseCase,
     this._deleteAccountUseCase,
+    this._sendPasswordResetEmailUseCase,
   ) : super(AuthUIState());
 
   void toggleMode() {
@@ -165,6 +173,21 @@ class AuthController extends StateNotifier<AuthUIState> {
     }
   }
 
+  Future<void> sendPasswordResetEmail(String email) async {
+    state = state.copyWith(isLoading: true, errorMessage: null);
+    
+    try {
+      await _sendPasswordResetEmailUseCase(email);
+      state = state.copyWith(isLoading: false);
+    } catch (e) {
+      state = state.copyWith(
+        isLoading: false,
+        errorMessage: e.toString().replaceAll('Exception: ', ''),
+      );
+      rethrow;
+    }
+  }
+
   void clearError() {
     state = state.copyWith(errorMessage: null);
   }
@@ -176,6 +199,13 @@ final authControllerProvider = StateNotifierProvider<AuthController, AuthUIState
   final signUpUseCase = ref.watch(signUpUseCaseProvider);
   final signOutUseCase = ref.watch(signOutUseCaseProvider);
   final deleteAccountUseCase = ref.watch(deleteAccountUseCaseProvider);
+  final sendPasswordResetEmailUseCase = ref.watch(sendPasswordResetEmailUseCaseProvider);
   
-  return AuthController(signInUseCase, signUpUseCase, signOutUseCase, deleteAccountUseCase);
+  return AuthController(
+    signInUseCase,
+    signUpUseCase,
+    signOutUseCase,
+    deleteAccountUseCase,
+    sendPasswordResetEmailUseCase,
+  );
 });
