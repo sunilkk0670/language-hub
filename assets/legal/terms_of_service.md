@@ -37,14 +37,14 @@ If you are using the Service on behalf of an organisation, you represent that yo
 
 ChirPolly offers multiple tiers to suit your learning journey. The features included in each tier are as follows:
 
-| Feature | Free (A1 - Starter) | Standard (A2 - Practice) | Premium (B1 - Mastery) |
-| :--- | :--- | :--- | :--- |
-| **Curriculum Depth** | A1 (1,000 Words) | A1 + A2 (2,000 Words) | A1 + A2 + B1 (3,000 Words) |
-| **Japanese Mastery** | N5 Intro | N5 & N4 Kanji Mastery | N3 & N2 Fluency Mastery |
-| **Liar Game** | Basic | Full Access | Full Access |
-| **Ads** | Supported | Ad-Free | Ad-Free |
-| **Grammar Suite** | ✗ | ✓ | ✓ |
-| **Offline Mode** | ✗ | ✗ | ✓ |
+| Feature | Free (A1 - Starter) | Premium (A2 & B1 - Full Mastery) |
+| :--- | :--- | :--- |
+| **Curriculum Depth** | A1 (1,000 Words) | A1 + A2 + B1 (3,000 Words) |
+| **Japanese Mastery** | N5 Intro | N5 to N1 Kanji & Fluency Mastery |
+| **Liar Game** | Basic | Full Access |
+| **Ads** | Supported | Ad-Free |
+| **Grammar Suite** | ✗ | ✓ |
+| **Offline Mode** | ✗ | ✓ |
 
 ChirPolly reserves the right to modify tier features with at least **14 days' prior notice** to active paid subscribers.
 

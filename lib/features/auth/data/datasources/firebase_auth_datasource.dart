@@ -37,6 +37,15 @@ class FirebaseAuthDataSource {
     await _firebaseAuth.signOut();
   }
 
+  /// Send password reset email
+  Future<void> sendPasswordResetEmail(String email) async {
+    try {
+      await _firebaseAuth.sendPasswordResetEmail(email: email);
+    } on FirebaseAuthException catch (e) {
+      throw _handleFirebaseAuthException(e);
+    }
+  }
+
   /// Delete current user account
   Future<void> deleteAccount() async {
     try {

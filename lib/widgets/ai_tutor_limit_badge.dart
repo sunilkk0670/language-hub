@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class RateLimitIndicator extends StatelessWidget {
+class AiTutorLimitBadge extends StatelessWidget {
   final int remaining;
   final int total;
 
-  const RateLimitIndicator({
+  const AiTutorLimitBadge({
     required this.remaining,
     required this.total,
     super.key,

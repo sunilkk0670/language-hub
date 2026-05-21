@@ -1,28 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../features/subscription/presentation/providers/subscription_providers.dart';
 import '../models/chat_message.dart';
 import '../services/ai_tutor_service.dart';
 import '../widgets/chat_bubble.dart';
 import '../widgets/typing_indicator.dart';
 import '../widgets/quick_action_buttons.dart';
-import '../widgets/rate_limit_indicator.dart';
+import '../widgets/ai_tutor_limit_badge.dart';
 
-class AITutorScreen extends StatefulWidget {
+class AITutorScreen extends ConsumerStatefulWidget {
   final String targetLanguage;
   final String nativeLanguage;
   final String userId;
+  final String userTier; // Added to know the tier
 
   const AITutorScreen({
     required this.targetLanguage,
     required this.nativeLanguage,
     required this.userId,
+    this.userTier = 'free', // Default to free
     super.key,
   });
 
   @override
-  State<AITutorScreen> createState() => _AITutorScreenState();
+  ConsumerState<AITutorScreen> createState() => _AITutorScreenState();
 }
 
-class _AITutorScreenState extends State<AITutorScreen> {
+class _AITutorScreenState extends ConsumerState<AITutorScreen> {
   final List<ChatMessage> _messages = [];
   final TextEditingController _textController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
@@ -97,7 +101,8 @@ class _AITutorScreenState extends State<AITutorScreen> {
 
   Future<void> _loadRemainingRequests() async {
     try {
-      final remaining = await _aiService.getRemainingRequests(widget.userId);
+      final limit = ref.read(aiTutorLimitProvider(widget.userTier));
+      final remaining = await _aiService.getRemainingRequests(widget.userId, limit);
       setState(() {
         _remainingRequests = remaining;
       });
@@ -148,9 +153,9 @@ class _AITutorScreenState extends State<AITutorScreen> {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 16),
-            child: RateLimitIndicator(
+            child: AiTutorLimitBadge(
               remaining: _remainingRequests,
-              total: 50,
+              total: ref.watch(aiTutorLimitProvider(widget.userTier)),
             ),
           ),
         ],
@@ -283,12 +288,14 @@ class _AITutorScreenState extends State<AITutorScreen> {
     _scrollToBottom();
 
     try {
+      final limit = ref.read(aiTutorLimitProvider(widget.userTier));
       final response = await _aiService.getResponse(
         userId: widget.userId,
         targetLanguage: _selectedLanguage,
         nativeLanguage: widget.nativeLanguage,
         userMessage: userMessage,
         conversationHistory: _messages.where((m) => !m.isLoading).toList(),
+        dailyLimit: limit,
       );
 
       setState(() {
@@ -305,8 +312,9 @@ class _AITutorScreenState extends State<AITutorScreen> {
       final errorMessage = e.toString();
       
       if (errorMessage.contains('Daily AI request limit reached')) {
+        final limit = ref.read(aiTutorLimitProvider(widget.userTier));
         _showErrorDialog(
-          'You\'ve reached your daily limit of 50 AI requests. '
+          'You\'ve reached your daily limit of $limit AI requests. '
           'Your limit will reset at midnight UTC. '
           'Come back tomorrow to continue learning! 🌙',
         );

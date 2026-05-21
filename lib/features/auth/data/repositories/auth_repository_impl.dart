@@ -36,4 +36,9 @@ class AuthRepositoryImpl implements AuthRepository {
   Future<void> deleteAccount() async {
     return await _dataSource.deleteAccount();
   }
+
+  @override
+  Future<void> sendPasswordResetEmail(String email) async {
+    return await _dataSource.sendPasswordResetEmail(email);
+  }
 }

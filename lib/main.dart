@@ -3,6 +3,8 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'firebase_options.dart';
 import 'features/curriculum/presentation/pages/all_languages_page.dart';
 import 'features/curriculum/presentation/pages/home_page.dart';
@@ -102,6 +104,15 @@ class ChirpPollyApp extends ConsumerWidget {
       ),
       // Changed from AuthGate to HomePage for public access
       home: const HomePage(),
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('en'),
+      ],
       routes: {
         '/home': (context) => const HomePage(),
         '/test-firestore': (context) => const FirestoreTestPage(),

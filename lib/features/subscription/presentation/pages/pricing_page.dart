@@ -47,10 +47,15 @@ class _PricingBody extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final plans = ref.watch(subscriptionPlansProvider);
+    final rawPlans = ref.watch(subscriptionPlansProvider);
+    final plans = rawPlans;
     final cycle = ref.watch(billingCycleProvider);
     final currency = ref.watch(selectedCurrencyProvider);
-    final addon = ref.watch(kanjiLiarAddonProvider);
+    final rawAddon = ref.watch(kanjiLiarAddonProvider);
+    final addon = KanjiLiarAddon(
+      pricing: const {'USD': 6.99, 'EUR': 6.99, 'INR': 189.99},
+      description: rawAddon.description,
+    );
 
     return ScrollConfiguration(
       behavior: const _PricingScrollBehavior(),
@@ -518,7 +523,8 @@ class _PlanCardState extends State<_PlanCard> {
                           feature: f,
                           accentColor: _accentColor,
                         )),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: 16),
+                    _AiTutorChip(plan: plan, accentColor: _accentColor),
                     const SizedBox(height: 24),
                     // CTA
                     SizedBox(
@@ -590,17 +596,17 @@ class _FeatureRow extends StatelessWidget {
   }
 }
 
-class _AiTutorChip extends StatelessWidget {
+class _AiTutorChip extends ConsumerWidget {
   final SubscriptionPlan plan;
   final Color accentColor;
 
   const _AiTutorChip({required this.plan, required this.accentColor});
 
   @override
-  Widget build(BuildContext context) {
-    final limit = plan.aiTutorDailyLimit;
-    final label = limit == null ? 'AI Tutor: Unlimited' : 'AI Tutor: $limit msg/day';
-    final sublabel = plan.id == 'premium' ? '(Hard cap: 200/day for fair use)' : null;
+  Widget build(BuildContext context, WidgetRef ref) {
+    final limit = ref.watch(aiTutorLimitProvider(plan.id));
+    final label = 'AI Tutor: $limit msg/day';
+    final sublabel = plan.id == 'premium' ? '(Priority Access)' : null;
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -785,12 +791,12 @@ class _FeatureComparisonTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final rows = [
-      ['Words', '1,000', '2,000', '3,000'],
-      ['Japanese Depth', 'N5 Intro', 'N5 & N4', 'N3 & N2'],
-      ['Ads', 'Yes', 'No', 'No'],
-      ['Liar Game', 'Basic', 'Full', 'Full'],
-      ['Grammar Suite', '—', '✓', '✓'],
-      ['Offline Mode', '—', '—', '✓'],
+      ['Words', '1,000', '3,000'],
+      ['Japanese Depth', 'N5 Intro', 'N5 to N1 Mastery'],
+      ['Ads', 'Yes', 'No'],
+      ['Liar Game', 'Basic', 'Full'],
+      ['Grammar Suite', '—', '✓'],
+      ['Offline Mode', '—', '✓'],
     ];
 
     return Padding(
@@ -827,7 +833,6 @@ class _FeatureComparisonTable extends StatelessWidget {
                   0: FlexColumnWidth(2),
                   1: FlexColumnWidth(1.2),
                   2: FlexColumnWidth(1.2),
-                  3: FlexColumnWidth(1.2),
                 },
                 children: [
                   // Header
@@ -843,7 +848,6 @@ class _FeatureComparisonTable extends StatelessWidget {
                     children: [
                       _tableCell('Feature', isHeader: true),
                       _tableCell('Free', isHeader: true),
-                      _tableCell('Standard', isHeader: true),
                       _tableCell('Premium', isHeader: true),
                     ],
                   ),
@@ -861,7 +865,6 @@ class _FeatureComparisonTable extends StatelessWidget {
                         _tableCell(row[0], isFeature: true),
                         _tableCell(row[1]),
                         _tableCell(row[2]),
-                        _tableCell(row[3]),
                       ],
                     );
                   }),

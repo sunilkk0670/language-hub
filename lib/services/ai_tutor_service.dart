@@ -43,11 +43,12 @@ class AITutorService {
     required String nativeLanguage,
     required String userMessage,
     List<ChatMessage>? conversationHistory,
+    required int dailyLimit,
   }) async {
     if (!_initialized) await initialize();
 
     // Check rate limit
-    await _checkRateLimit(userId);
+    await _checkRateLimit(userId, dailyLimit);
 
     // Fetch user progress
     final progress = await _getUserProgress(userId, targetLanguage);
@@ -366,7 +367,7 @@ Use these functions when the student asks about specific vocabulary or topics.
   }
 
   /// Check and enforce rate limiting
-  Future<void> _checkRateLimit(String userId) async {
+  Future<void> _checkRateLimit(String userId, int dailyLimit) async {
     final today = DateTime.now().toIso8601String().split('T')[0];
     
     final usageDoc = await _firestore
@@ -401,12 +402,12 @@ Use these functions when the student asks about specific vocabulary or topics.
       'userId': userId,
       'date': today,
       'requestCount': FieldValue.increment(1),
-      'dailyLimit': 50,
+      'dailyLimit': dailyLimit,
     }, SetOptions(merge: true));
   }
 
   /// Get remaining requests for today
-  Future<int> getRemainingRequests(String userId) async {
+  Future<int> getRemainingRequests(String userId, int dailyLimit) async {
     final today = DateTime.now().toIso8601String().split('T')[0];
     
     final usageDoc = await _firestore
@@ -416,9 +417,9 @@ Use these functions when the student asks about specific vocabulary or topics.
         .doc(today)
         .get();
 
-    if (!usageDoc.exists) return 50;
+    if (!usageDoc.exists) return dailyLimit;
 
     final usage = AIUsageTracker.fromJson(usageDoc.data()!);
-    return usage.dailyLimit - usage.requestCount;
+    return dailyLimit - usage.requestCount;
   }
 }

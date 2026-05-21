@@ -34,6 +34,24 @@ final selectedCurrencyProvider = StateProvider<AppCurrency>(
   (ref) => AppCurrency.usd,
 );
 
+// ── AI Tutor Limit ─────────────────────────────────────────────────────────────
+
+int getRequestsLimit(String tier) {
+  switch (tier.toLowerCase()) {
+    case 'premium':
+      return 500;
+    case 'standard':
+      return 150;
+    case 'free':
+    default:
+      return 15;
+  }
+}
+
+final aiTutorLimitProvider = Provider.family<int, String>((ref, tier) {
+  return getRequestsLimit(tier);
+});
+
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 extension AppCurrencyX on AppCurrency {

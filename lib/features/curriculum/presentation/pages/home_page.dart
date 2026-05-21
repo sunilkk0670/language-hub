@@ -1983,8 +1983,19 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
             const SizedBox(width: 16),
             _buildSocialIcon(
               icon: FontAwesomeIcons.instagram,
-              color: const Color(0xFFE4405F),
-              url: 'https://instagram.com/chirpolly',
+              color: Colors.white,
+              url: 'https://www.instagram.com/chirpolly_app',
+              gradient: const LinearGradient(
+                colors: [
+                  Color(0xFFF09433),
+                  Color(0xFFE6683C),
+                  Color(0xFFDC2743),
+                  Color(0xFFCC2366),
+                  Color(0xFFBC1888),
+                ],
+                begin: Alignment.bottomLeft,
+                end: Alignment.topRight,
+              ),
             ),
           ],
         ),
@@ -1996,20 +2007,31 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
     required FaIconData icon,
     required Color color,
     required String url,
+    Gradient? gradient,
   }) {
     return Tooltip(
       message: url.split('//').last.split('/').first,
       child: InkWell(
         onTap: () => launchUrl(
           Uri.parse(url),
+          mode: LaunchMode.externalApplication,
           webOnlyWindowName: '_blank',
         ),
         borderRadius: BorderRadius.circular(4),
-        child: FaIcon(
-          icon,
-          color: color,
-          size: 24,
-        ),
+        child: gradient != null
+            ? ShaderMask(
+                shaderCallback: (bounds) => gradient.createShader(bounds),
+                child: FaIcon(
+                  icon,
+                  color: Colors.white,
+                  size: 24,
+                ),
+              )
+            : FaIcon(
+                icon,
+                color: color,
+                size: 24,
+              ),
       ),
     );
   }

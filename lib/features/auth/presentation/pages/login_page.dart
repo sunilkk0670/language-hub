@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:chirp_polly/l10n/app_localizations.dart';
 import '../providers/auth_providers.dart';
 import '../widgets/auth_text_field.dart';
 
@@ -112,6 +113,31 @@ class _LoginPageState extends ConsumerState<LoginPage> {
     }
   }
 
+  Future<void> _handleForgotPassword() async {
+    final l10n = AppLocalizations.of(context)!;
+    final email = _emailController.text.trim();
+    
+    if (email.isEmpty) {
+      setState(() => _emailError = l10n.emailRequired);
+      return;
+    }
+
+    final authController = ref.read(authControllerProvider.notifier);
+    try {
+      await authController.sendPasswordResetEmail(email);
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(l10n.passwordResetSent),
+            backgroundColor: const Color(0xFF6A4CBC),
+          ),
+        );
+      }
+    } catch (e) {
+      // Error is handled by AuthController and shown in the UI
+    }
+  }
+
   Widget _buildBrandLetter(String char, Color color) {
     return Text(
       char,
@@ -140,6 +166,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
     
     final authState = ref.watch(authControllerProvider);
     final isSignUpMode = authState.isSignUpMode;
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       body: Container(
@@ -167,7 +194,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                   borderRadius: BorderRadius.circular(24),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF6A4CBC).withOpacity(0.2),
+                      color: const Color(0xFF6A4CBC).withValues(alpha: 0.2),
                       blurRadius: 30,
                       offset: const Offset(0, 10),
                     ),
@@ -210,7 +237,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                     const SizedBox(height: 8),
                     
                     Text(
-                      isSignUpMode ? 'Create Your Account' : 'Welcome Back',
+                      isSignUpMode ? l10n.signupTitle : l10n.loginTitle,
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
@@ -220,8 +247,8 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                     const SizedBox(height: 8),
                     Text(
                       isSignUpMode
-                          ? 'Start your language learning journey'
-                          : 'Sign in to continue learning',
+                          ? l10n.signupSubtitle
+                          : l10n.loginSubtitle,
                       style: TextStyle(
                         fontSize: 14,
                         color: Colors.grey.shade600,
@@ -259,8 +286,8 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                     // Email field
                     AuthTextField(
                       controller: _emailController,
-                      label: 'Email',
-                      hint: 'Enter your email',
+                      label: l10n.emailLabel,
+                      hint: l10n.emailHint,
                       icon: Icons.email_outlined,
                       errorText: _emailError,
                       onChanged: (_) {
@@ -275,8 +302,8 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                     // Password field
                     AuthTextField(
                       controller: _passwordController,
-                      label: 'Password',
-                      hint: 'Enter your password',
+                      label: l10n.passwordLabel,
+                      hint: l10n.passwordHint,
                       icon: Icons.lock_outline,
                       isPassword: true,
                       errorText: _passwordError,
@@ -287,6 +314,26 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                         ref.read(authControllerProvider.notifier).clearError();
                       },
                     ),
+                    
+                    if (!isSignUpMode) ...[
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: TextButton(
+                          onPressed: authState.isLoading ? null : _handleForgotPassword,
+                          style: TextButton.styleFrom(
+                            foregroundColor: const Color(0xFF6A4CBC),
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                          ),
+                          child: Text(
+                            l10n.forgotPassword,
+                            style: const TextStyle(
+                              fontSize: 13,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                     const SizedBox(height: 32),
 
                     if (isSignUpMode) ...[
@@ -315,7 +362,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                               },
                               child: Text.rich(
                                 TextSpan(
-                                  text: 'I agree to the ',
+                                  text: l10n.agreeToTerms,
                                   style: TextStyle(
                                     fontSize: 13,
                                     color: Colors.grey.shade700,
@@ -330,9 +377,9 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                                             arguments: {'initialIndex': 1},
                                           );
                                         },
-                                        child: const Text(
-                                          'Terms of Service',
-                                          style: TextStyle(
+                                        child: Text(
+                                          l10n.termsOfService,
+                                          style: const TextStyle(
                                             fontSize: 13,
                                             color: Color(0xFF6A4CBC),
                                             fontWeight: FontWeight.bold,
@@ -340,7 +387,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                                         ),
                                       ),
                                     ),
-                                    const TextSpan(text: ' and '),
+                                    TextSpan(text: l10n.and),
                                     WidgetSpan(
                                       child: GestureDetector(
                                         onTap: () {
@@ -350,9 +397,9 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                                             arguments: {'initialIndex': 0},
                                           );
                                         },
-                                        child: const Text(
-                                          'Privacy Policy',
-                                          style: TextStyle(
+                                        child: Text(
+                                          l10n.privacyPolicy,
+                                          style: const TextStyle(
                                             fontSize: 13,
                                             color: Color(0xFF6A4CBC),
                                             fontWeight: FontWeight.bold,
@@ -393,7 +440,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                                 setState(() => _isAgeVerified = !_isAgeVerified);
                               },
                               child: Text(
-                                'I confirm that I am at least 13 years old (or the required age in my country)',
+                                l10n.ageVerification,
                                 style: TextStyle(
                                   fontSize: 13,
                                   color: Colors.grey.shade700,
@@ -433,7 +480,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                                 ),
                               )
                             : Text(
-                                isSignUpMode ? 'Sign Up' : 'Sign In',
+                                isSignUpMode ? l10n.signUpButton : l10n.signInButton,
                                 style: const TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
@@ -449,8 +496,8 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                       children: [
                         Text(
                           isSignUpMode
-                              ? 'Already have an account? '
-                              : 'Don\'t have an account? ',
+                              ? l10n.alreadyHaveAccount
+                              : l10n.dontHaveAccount,
                           style: TextStyle(
                             color: Colors.grey.shade600,
                             fontSize: 14,
@@ -465,7 +512,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                             });
                           },
                           child: Text(
-                            isSignUpMode ? 'Sign In' : 'Sign Up',
+                            isSignUpMode ? l10n.signInButton : l10n.signUpButton,
                             style: const TextStyle(
                               color: Color(0xFF6A4CBC),
                               fontSize: 14,
