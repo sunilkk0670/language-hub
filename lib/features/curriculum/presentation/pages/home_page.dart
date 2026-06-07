@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -18,20 +17,16 @@ class HomePage extends ConsumerStatefulWidget {
 }
 
 // ─── Brand colours ────────────────────────────────────────────────────────
-const _kPurple = Color(0xFF6A4CBC); // "Start Learning Now" button purple
-const _kTeal   = Color(0xFF4ECDC4); // Polly's wing teal
+const _kPurple = Color(0xFF6366F1); // Royal Indigo (premium material 3 brand color)
+const _kTeal   = Color(0xFF14B8A6); // Neon Turquoise / Teal
+const _kCoral  = Color(0xFFF43F5E); // Sunset Warm Coral
 
 class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMixin {
   final ScrollController _scrollController = ScrollController();
   final GlobalKey _languagesKey = GlobalKey();
 
-  // ── Existing float ──────────────────────────────────────────────────────
-  late AnimationController _parrotController;
-  late Animation<double>   _parrotAnimation;
-
-  // ── Entrance bounce ─────────────────────────────────────────────────────
-  late AnimationController _entranceController;
-  late Animation<double>   _entranceScale;
+  // ── Firestore Cached Query Stream ──────────────────────────────────────────
+  late final Stream<QuerySnapshot> _languagesStream;
 
   // ── Staggered headline ──────────────────────────────────────────────────
   late AnimationController    _staggerController;
@@ -46,21 +41,6 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
   // ── Button glow ─────────────────────────────────────────────────────────
   late AnimationController _glowController;
   late Animation<double>   _glowBlur;
-
-  // ── Speech bubble ───────────────────────────────────────────────────────
-  late AnimationController _bubbleController;
-  late Animation<double>   _bubbleOpacity;
-  late Animation<Offset>   _bubbleSlide;
-  final ValueNotifier<String> _bubbleTextNotifier = ValueNotifier('');
-  bool   _bubbleDone  = false;
-  Timer? _typeTimer;
-  Timer? _bubbleDelay;
-  static const _fullBubbleText = "Hi! I'm Polly.\nReady to chirp? 🦜";
-
-
-  // ── Parrot wing flap ─────────────────────────────────────────────────────
-  late AnimationController _wingController;
-  late Animation<double>   _wingRotation;
 
   // ── Gradient background animation ─────────────────────────────────────────
   late AnimationController _gradientController;
@@ -81,45 +61,31 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
   void initState() {
     super.initState();
 
-    // ── Float (existing, unchanged) ──────────────────────────────────────
-    _parrotController = AnimationController(
-      duration: const Duration(seconds: 3),
-      vsync: this,
-    )..repeat(reverse: true);
-    _parrotAnimation = Tween<double>(begin: -10, end: 10).animate(
-      CurvedAnimation(parent: _parrotController, curve: Curves.easeInOut),
-    );
-
-    // ── Entrance bounce with spring physics ────────────────────────────────
-    _entranceController = AnimationController(
-      duration: const Duration(milliseconds: 800),
-      vsync: this,
-    );
-    _entranceScale = TweenSequence<double>([
-      TweenSequenceItem(tween: Tween(begin: 0.85, end: 1.08), weight: 50),
-      TweenSequenceItem(tween: Tween(begin: 1.08, end: 0.96), weight: 25),
-      TweenSequenceItem(tween: Tween(begin: 0.96, end: 1.02), weight: 15),
-      TweenSequenceItem(tween: Tween(begin: 1.02, end: 1.00), weight: 10),
-    ]).animate(CurvedAnimation(parent: _entranceController, curve: Curves.elasticOut));
-    _entranceController.forward();
+    // Cache the Firestore collection stream to prevent inline re-fetching on build
+    _languagesStream = FirebaseFirestore.instance
+        .collection('languages')
+        .where('enabled', isEqualTo: true)
+        .snapshots();
 
     // ── Staggered headline with spring physics ────────────────────────────
     _staggerController = AnimationController(
-      duration: const Duration(milliseconds: 1400),
+      duration: const Duration(milliseconds: 1600),
       vsync: this,
     );
+    // Opacity should use a smooth ease curve, not elastic, to prevent clamping issues
     _line1Opacity = Tween<double>(begin: 0, end: 1).animate(
       CurvedAnimation(parent: _staggerController,
-          curve: const Interval(0.0, 0.5, curve: Curves.elasticOut)));
+          curve: const Interval(0.1, 0.5, curve: Curves.easeOut)));
     _line1Slide = Tween<Offset>(begin: const Offset(-0.2, 0), end: Offset.zero).animate(
       CurvedAnimation(parent: _staggerController,
-          curve: const Interval(0.0, 0.5, curve: Curves.elasticOut)));
+          curve: const Interval(0.1, 0.7, curve: Curves.elasticOut)));
+          
     _line2Opacity = Tween<double>(begin: 0, end: 1).animate(
       CurvedAnimation(parent: _staggerController,
-          curve: const Interval(0.35, 0.85, curve: Curves.elasticOut)));
+          curve: const Interval(0.3, 0.7, curve: Curves.easeOut)));
     _line2Slide = Tween<Offset>(begin: const Offset(-0.2, 0), end: Offset.zero).animate(
       CurvedAnimation(parent: _staggerController,
-          curve: const Interval(0.35, 0.85, curve: Curves.elasticOut)));
+          curve: const Interval(0.3, 0.9, curve: Curves.elasticOut)));
     // Start immediately — no delay avoids the invisible-flash on first render
     _staggerController.forward();
 
@@ -136,42 +102,6 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
     )..repeat(reverse: true);
     _glowBlur = Tween<double>(begin: 8, end: 28)
         .animate(CurvedAnimation(parent: _glowController, curve: Curves.easeInOut));
-
-    // ── Speech bubble (delayed) ──────────────────────────────────────────
-    _bubbleController = AnimationController(
-      duration: const Duration(milliseconds: 500),
-      vsync: this,
-    );
-    _bubbleOpacity = Tween<double>(begin: 0, end: 1).animate(
-      CurvedAnimation(parent: _bubbleController, curve: Curves.easeOut));
-    _bubbleSlide = Tween<Offset>(begin: const Offset(0, 0.3), end: Offset.zero).animate(
-      CurvedAnimation(parent: _bubbleController, curve: Curves.easeOut));
-
-    // Start bubble after entrance settles
-    _bubbleDelay = Timer(const Duration(milliseconds: 1100), () {
-      if (!mounted) return;
-      _bubbleController.forward();
-      // Typewriter — use ValueNotifier to avoid rebuilding the entire widget tree
-      int idx = 0;
-      _typeTimer = Timer.periodic(const Duration(milliseconds: 55), (t) {
-        if (!mounted) { t.cancel(); return; }
-        if (idx < _fullBubbleText.length) {
-          _bubbleTextNotifier.value = _fullBubbleText.substring(0, ++idx);
-        } else {
-          setState(() => _bubbleDone = true);
-          t.cancel();
-        }
-      });
-    });
-
-    // ── Wing flap animation ─────────────────────────────────────────────────
-    _wingController = AnimationController(
-      duration: const Duration(milliseconds: 800),
-      vsync: this,
-    )..repeat(reverse: true);
-    _wingRotation = Tween<double>(begin: -0.05, end: 0.05).animate(
-      CurvedAnimation(parent: _wingController, curve: Curves.easeInOut),
-    );
 
     // ── Gradient background animation ───────────────────────────────────────
     _gradientController = AnimationController(
@@ -212,18 +142,18 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Precache assets to prevent any flash or flickers during animations
+    precacheImage(const AssetImage('assets/images/parrot_transparent.png'), context);
+  }
+
+  @override
   void dispose() {
     _scrollController.dispose();
-    _parrotController.dispose();
-    _entranceController.dispose();
     _staggerController.dispose();
     _shimmerController.dispose();
     _glowController.dispose();
-    _bubbleController.dispose();
-    _bubbleTextNotifier.dispose();
-    _typeTimer?.cancel();
-    _bubbleDelay?.cancel();
-    _wingController.dispose();
     _gradientController.dispose();
     _floatController1.dispose();
     _floatController2.dispose();
@@ -251,21 +181,23 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
         return Positioned(
           left: position.dx,
           top: position.dy + animation.value.dy,
-          child: Opacity(
-            opacity: opacity,
-            child: Container(
-              width: size,
-              height: size,
-              decoration: BoxDecoration(
-                color: color,
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: color.withOpacity(0.3),
-                    blurRadius: 20,
-                    spreadRadius: 5,
+          child: RepaintBoundary(
+            child: Opacity(
+              opacity: opacity,
+              child: Container(
+                width: size,
+                height: size,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: RadialGradient(
+                    colors: [
+                      color.withValues(alpha: 0.6),
+                      color.withValues(alpha: 0.25),
+                      color.withValues(alpha: 0.0),
+                    ],
+                    stops: const [0.0, 0.5, 1.0],
                   ),
-                ],
+                ),
               ),
             ),
           ),
@@ -578,62 +510,27 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
         endDrawer: MediaQuery.of(context).size.width < 600
             ? _buildMobileDrawer(context)
             : null,
-        body: StreamBuilder<QuerySnapshot>(
-          stream: FirebaseFirestore.instance
-              .collection('languages')
-              .where('enabled', isEqualTo: true)
-              .snapshots(),
-          builder: (context, snapshot) {
-            if (snapshot.hasError) {
-              return _buildErrorState();
-            }
-
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return _buildLoadingState();
-            }
-
-            final languages = snapshot.data?.docs ?? [];
-
-            return SingleChildScrollView(
-              controller: _scrollController,
-              child: Column(
-                children: [
-                  _buildHeroSection(languages),
-                  _buildFeaturesSection(),
-                  _buildLanguagesSection(languages),
-                  _buildLiarGameSection(),
-                  _buildAboutSection(),
-                  _buildCTASection(context),
-                  _buildFooter(),
-                ],
-              ),
-            );
-          },
+        body: SingleChildScrollView(
+          controller: _scrollController,
+          child: Column(
+            children: [
+              _buildHeroSection(),
+              _buildFeaturesSection(),
+              _buildLanguagesSection(),
+              _buildLiarGameSection(),
+              _buildAboutSection(),
+              _buildCTASection(context),
+              _buildFooter(),
+            ],
+          ),
         ),
       ),
     );
   }
 
-  Widget _buildErrorState() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(Icons.error_outline, size: 64, color: Colors.red.shade300),
-          const SizedBox(height: 16),
-          Text('Error loading languages', style: TextStyle(color: Colors.grey.shade700)),
-        ],
-      ),
-    );
-  }
 
-  Widget _buildLoadingState() {
-    return Center(
-      child: CircularProgressIndicator(color: Colors.blue.shade600),
-    );
-  }
 
-  Widget _buildHeroSection(List<QueryDocumentSnapshot> languages) {
+  Widget _buildHeroSection() {
     return AnimatedBuilder(
       animation: _gradientController,
       builder: (context, child) {
@@ -644,12 +541,12 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
-              stops: [0.0, 0.4, 0.7, 1.0],
+              stops: const [0.0, 0.3, 0.6, 1.0],
               colors: [
-                Color.lerp(const Color(0xFFEDF5FF), const Color(0xFFE8F0FF), t)!,
-                Color.lerp(const Color(0xFFF3EAFF), const Color(0xFFEDE4FF), t)!,
-                Color.lerp(const Color(0xFFFDF4E3), const Color(0xFFF8F0E0), t)!,
-                Color.lerp(const Color(0xFFFFFFFF), const Color(0xFFF8F8FF), t)!,
+                Color.lerp(const Color(0xFFEEF2FF), const Color(0xFFE0E7FF), t)!, // Indigo Mesh
+                Color.lerp(const Color(0xFFFAF5FF), const Color(0xFFF3E8FF), t)!, // Violet Mesh
+                Color.lerp(const Color(0xFFFDF2F8), const Color(0xFFFCE7F3), t)!, // Rose Mesh
+                Color.lerp(const Color(0xFFF0FDFA), const Color(0xFFCCFBF1), t)!, // Teal Mesh
               ],
             ),
           ),
@@ -658,28 +555,28 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
               final bool isDesktop = constraints.maxWidth > 900;
               return Stack(
                 children: [
-                  // Floating decorative shapes
+                  // Beautiful, organic glowing glassmorphic mesh orbs floating in background
                   if (constraints.maxWidth > 600) ...[
                     _buildFloatingShape(
-                      size: 120,
+                      size: 320,
                       color: _kPurple,
                       animation: _floatOffset1,
-                      position: const Offset(50, 100),
-                      opacity: 0.08,
+                      position: const Offset(-60, 40),
+                      opacity: 0.28,
                     ),
                     _buildFloatingShape(
-                      size: 80,
+                      size: 260,
                       color: _kTeal,
                       animation: _floatOffset2,
-                      position: Offset(constraints.maxWidth - 150, 200),
-                      opacity: 0.1,
+                      position: Offset(constraints.maxWidth - 200, 60),
+                      opacity: 0.25,
                     ),
                     _buildFloatingShape(
-                      size: 60,
-                      color: const Color(0xFFFF6B6B),
+                      size: 220,
+                      color: _kCoral,
                       animation: _floatOffset3,
-                      position: const Offset(100, 300),
-                      opacity: 0.12,
+                      position: const Offset(40, 240),
+                      opacity: 0.22,
                     ),
                   ],
                   Column(
@@ -852,162 +749,18 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
 
                               SizedBox(height: isDesktop ? 48 : 20),
 
-                              // ── CTA Button with gradient and glow pulse ─────────
-                              AnimatedBuilder(
-                                animation: _glowBlur,
-                                builder: (context, child) {
-                                  return Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(50),
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color:
-                                              _kPurple.withValues(alpha: 0.7),
-                                          offset: Offset.zero,
-                                          blurRadius: _glowBlur.value,
-                                          spreadRadius:
-                                              _glowBlur.value * 0.25,
-                                        ),
-                                      ],
-                                    ),
-                                    child: ElevatedButton(
-                                      onPressed: () => Navigator.pushNamed(context, '/languages'),
-                                      style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.transparent,
-                                        foregroundColor: Colors.white,
-                                        padding: const EdgeInsets.symmetric(
-                                            horizontal: 48, vertical: 24),
-                                        shape: const StadiumBorder(),
-                                        elevation: 0,
-                                      ),
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          gradient: const LinearGradient(
-                                            colors: [_kPurple, Color(0xFF8B5CF6)],
-                                            begin: Alignment.topLeft,
-                                            end: Alignment.bottomRight,
-                                          ),
-                                          borderRadius: BorderRadius.circular(50),
-                                        ),
-                                        padding: const EdgeInsets.symmetric(
-                                            horizontal: 48, vertical: 24),
-                                        child: const Text(
-                                          'Start Learning Now',
-                                          style: TextStyle(
-                                            fontSize: 18,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  );
-                                },
+                              // ── High-Fidelity Custom Animated CTA Button ─────────
+                              _CTAButton(
+                                onPressed: () => Navigator.pushNamed(context, '/languages'),
+                                glowBlur: _glowBlur,
                               ),
-
                               if (!isDesktop) const SizedBox(height: 16),
                             ],
                           ),
                         );
 
-                // Build right (parrot) section
-                Widget rightSection = ConstrainedBox(
-                             constraints: BoxConstraints(
-                              maxHeight: isDesktop ? 600 : double.infinity,
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.only(right: 20.0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-
-                                  // Mobile bubble — centred above Polly
-                                  if (!isDesktop)
-                                    FadeTransition(
-                                      opacity: _bubbleOpacity,
-                                      child: SlideTransition(
-                                        position: _bubbleSlide,
-                                        child: _buildBubble(isMobile: true),
-                                      ),
-                                    ),
-
-                                  if (!isDesktop) const SizedBox(height: 8),
-
-                                  // Parrot: entrance bounce + float + parallax
-                                  Stack(
-                                    clipBehavior: Clip.none,
-                                    alignment: Alignment.center,
-                                    children: [
-                                      // Desktop bubble — beside Polly
-                                      if (isDesktop)
-                                        Positioned(
-                                          left: -20,
-                                          top: 20,
-                                          child: FadeTransition(
-                                            opacity: _bubbleOpacity,
-                                            child: SlideTransition(
-                                              position: _bubbleSlide,
-                                              child: _buildBubble(
-                                                  isMobile: false),
-                                            ),
-                                          ),
-                                        ),
-
-                                      // Bounce entrance wraps float animation
-                                      ScaleTransition(
-                                        scale: _entranceScale,
-                                        child: AnimatedBuilder(
-                                          animation: Listenable.merge([_parrotAnimation, _wingController]),
-                                          builder: (context, child) {
-                                            return Transform.translate(
-                                              offset: Offset(
-                                                  0, _parrotAnimation.value),
-                                              child: Transform.rotate(
-                                                angle: _wingRotation.value,
-                                                child: child,
-                                              ),
-                                            );
-                                          },
-                                          child: ConstrainedBox(
-                                            constraints: BoxConstraints(
-                                              maxHeight: isDesktop ? 480 : 320,
-                                            ),
-                                            child: Image.asset(
-                                              'assets/images/parrot_transparent.png',
-                                              fit: BoxFit.contain,
-                                              errorBuilder: (context, error,
-                                                  stackTrace) {
-                                                return const SizedBox(
-                                                  height: 200,
-                                                  child: Center(
-                                                    child: Icon(
-                                                      Icons.image_not_supported,
-                                                      size: 64,
-                                                      color: Colors.black26,
-                                                    ),
-                                                  ),
-                                                );
-                                              },
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-
-                                  const SizedBox(height: 4),
-                                  Text(
-                                    'Meet Polly',
-                                    style: TextStyle(
-                                      fontSize: isDesktop ? 15 : 13,
-                                      fontStyle: FontStyle.italic,
-                                      color: Colors.grey.shade500,
-                                      letterSpacing: 0.3,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          );
+                // Build right (Language Matrix) section
+                Widget rightSection = _LanguageMatrix(isDesktop: isDesktop);
                 // Assemble layout
                 return Center(
                   child: ConstrainedBox(
@@ -1046,108 +799,10 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
 }
 
 
-  // ── Enhanced glassmorphic speech bubble ───────────────────────────────────
-  Widget _buildBubble({required bool isMobile}) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(16),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
-        child: Container(
-          constraints: BoxConstraints(maxWidth: isMobile ? 220 : 200),
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Colors.white.withValues(alpha: 0.6),
-                Colors.white.withValues(alpha: 0.4),
-              ],
-            ),
-            borderRadius: BorderRadius.circular(16),
-            border: Border.all(
-              color: Colors.white.withValues(alpha: 0.8),
-              width: 1.5,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: _kPurple.withValues(alpha: 0.15),
-                blurRadius: 20,
-                offset: const Offset(0, 6),
-              ),
-              BoxShadow(
-                color: Colors.white.withValues(alpha: 0.3),
-                blurRadius: 10,
-                offset: const Offset(0, 2),
-              ),
-            ],
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: isMobile
-                ? CrossAxisAlignment.center
-                : CrossAxisAlignment.start,
-            children: [
-              // Decorative dot-tail indicator
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  _dot(6, _kPurple.withValues(alpha: 0.7)),
-                  const SizedBox(width: 3),
-                  _dot(4, _kTeal.withValues(alpha: 0.6)),
-                  const SizedBox(width: 3),
-                  _dot(3, _kPurple.withValues(alpha: 0.4)),
-                ],
-              ),
-              const SizedBox(height: 6),
-              ValueListenableBuilder<String>(
-                valueListenable: _bubbleTextNotifier,
-                builder: (context, text, _) => Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      text,
-                      style: TextStyle(
-                        fontSize: isMobile ? 12 : 13,
-                        color: const Color(0xFF2E3192),
-                        fontWeight: FontWeight.w600,
-                        height: 1.4,
-                      ),
-                      textAlign:
-                          isMobile ? TextAlign.center : TextAlign.left,
-                    ),
-                    if (!_bubbleDone)
-                      const Text(
-                        '|',
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: _kPurple,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
 
-  Widget _dot(double size, Color color) => Container(
-        width: size,
-        height: size,
-        decoration: BoxDecoration(color: color, shape: BoxShape.circle),
-      );
 
-  Widget _buildLanguagesSection(List<QueryDocumentSnapshot> languages) {
-    if (languages.isEmpty) {
-      return const SizedBox.shrink();
-    }
-
+  Widget _buildLanguagesSkeletonLoader() {
     return Container(
-      key: _languagesKey,
       width: double.infinity,
       decoration: const BoxDecoration(
         color: Color(0xFF080808),
@@ -1155,57 +810,34 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
       padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
       child: Column(
         children: [
+          // Skeleton Title
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+            width: 300,
+            height: 48,
             decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color(0xFFFF6B6B), // Sunset Coral
-                  Color(0xFF6A4CBC), // ChirPolly Purple
-                  Color(0xFF4ECDC4), // Coastal Teal
-                ],
-              ),
-              borderRadius: BorderRadius.circular(40),
-              boxShadow: [
-                BoxShadow(
-                  color: const Color(0xFF6A4CBC).withValues(alpha: 0.25),
-                  blurRadius: 20,
-                  offset: const Offset(0, 10),
-                ),
-              ],
-            ),
-            child: const Text(
-              'Choose Your Language',
-              style: TextStyle(
-                fontSize: 36,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                letterSpacing: 0.5,
-              ),
+              color: Colors.white.withValues(alpha: 0.05),
+              borderRadius: BorderRadius.circular(24),
             ),
           ),
           const SizedBox(height: 16),
-          Text(
-            'Explore our growing collection of comprehensive language courses.',
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.grey.shade400,
-              fontWeight: FontWeight.w500,
+          // Skeleton Subtitle
+          Container(
+            width: 450,
+            height: 20,
+            decoration: BoxDecoration(
+              color: Colors.white.withValues(alpha: 0.05),
+              borderRadius: BorderRadius.circular(10),
             ),
           ),
           const SizedBox(height: 60),
 
-          // Grid
+          // Skeleton Grid of Cards
           Container(
             constraints: const BoxConstraints(maxWidth: 1200),
             child: LayoutBuilder(
               builder: (context, constraints) {
                 final width = constraints.maxWidth;
                 final crossAxisCount = width < 600 ? 1 : (width < 900 ? 2 : 3);
-                // Lower ratio = taller cards. Mobile needs height for Flag + Name + Native Name.
-                // 0.9 ensures plenty of room for 2-3 lines of text.
                 final childAspectRatio = width < 600 ? 0.9 : 1.3;
 
                 return GridView.builder(
@@ -1217,81 +849,236 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                     mainAxisSpacing: 24,
                     childAspectRatio: childAspectRatio,
                   ),
-                  itemCount: languages.length > 3 ? 3 : languages.length,
+                  itemCount: 3,
                   itemBuilder: (context, index) {
-                    final languageDoc = languages[index];
-                    final languageData = languageDoc.data() as Map<String, dynamic>;
-                    
                     return AnimatedBuilder(
-                      animation: _scrollController,
+                      animation: _shimmerController,
                       builder: (context, child) {
-                        final progress = _getScrollProgress(600, 900);
-                        final cardProgress = ((progress - (index * 0.15)) / 0.3).clamp(0.0, 1.0);
-                        final opacity = Curves.easeOut.transform(cardProgress);
-                        final slide = Offset(0, 30 * (1 - cardProgress));
-                        return Opacity(
-                          opacity: opacity,
-                          child: Transform.translate(
-                            offset: slide,
-                            child: child,
+                        final val = _shimmerController.value;
+                        return Container(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [
+                                Colors.white.withValues(alpha: 0.02 + 0.03 * val),
+                                Colors.white.withValues(alpha: 0.05 + 0.03 * val),
+                                Colors.white.withValues(alpha: 0.02 + 0.03 * val),
+                              ],
+                              stops: const [0.0, 0.5, 1.0],
+                            ),
+                            borderRadius: BorderRadius.circular(32),
+                            border: Border.all(
+                              color: Colors.white.withValues(alpha: 0.05),
+                              width: 1.5,
+                            ),
+                          ),
+                          padding: const EdgeInsets.all(24),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 64,
+                                height: 64,
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withValues(alpha: 0.05),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                              const SizedBox(height: 16),
+                              Container(
+                                width: 120,
+                                height: 24,
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withValues(alpha: 0.05),
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                              ),
+                              const SizedBox(height: 8),
+                              Container(
+                                width: 80,
+                                height: 16,
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withValues(alpha: 0.03),
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                            ],
                           ),
                         );
                       },
-                      child: LanguageCard(
-                        languageId: languageDoc.id,
-                        flag: languageData['flag'] ?? '🌍',
-                        name: languageData['name'] ?? 'Unknown',
-                        nativeScript: languageData['nativeScript'] ?? languageData['nativeName'] ?? '',
-                        color: LanguageCard.getLanguageColor(languageData['name'] ?? 'Unknown'),
-                      ),
                     );
                   },
                 );
               },
             ),
           ),
-          const SizedBox(height: 48),
-          // View All Languages Button
-          if (languages.length > 3)
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0xFF6A4CBC).withOpacity(0.2),
-                    offset: const Offset(0, 4),
-                    blurRadius: 10,
-                  ),
-                ],
-              ),
-              child: ElevatedButton(
-                onPressed: () => Navigator.pushNamed(context, '/languages'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white,
-                  foregroundColor: const Color(0xFF6A4CBC),
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 40,
-                    vertical: 20,
-                  ),
-                  shape: StadiumBorder(
-                    side: BorderSide(
-                      color: const Color(0xFF6A4CBC).withOpacity(0.5),
-                      width: 2,
-                    ),
-                  ),
-                  elevation: 0,
-                ),
-                child: const Text(
-                  'View All Languages',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
         ],
       ),
+    );
+  }
+
+  Widget _buildLanguagesSection() {
+    return StreamBuilder<QuerySnapshot>(
+      stream: _languagesStream,
+      builder: (context, snapshot) {
+        final languages = snapshot.data?.docs ?? [];
+        if (languages.isEmpty && snapshot.connectionState == ConnectionState.waiting) {
+          return _buildLanguagesSkeletonLoader();
+        }
+        if (languages.isEmpty) {
+          return const SizedBox.shrink();
+        }
+
+        return Container(
+          key: _languagesKey,
+          width: double.infinity,
+          decoration: const BoxDecoration(
+            color: Color(0xFF080808),
+          ),
+          padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
+          child: Column(
+            children: [
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Color(0xFFFF6B6B), // Sunset Coral
+                      Color(0xFF6A4CBC), // ChirPolly Purple
+                      Color(0xFF4ECDC4), // Coastal Teal
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(40),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xFF6A4CBC).withValues(alpha: 0.25),
+                      blurRadius: 20,
+                      offset: const Offset(0, 10),
+                    ),
+                  ],
+                ),
+                child: const Text(
+                  'Choose Your Language',
+                  style: TextStyle(
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    letterSpacing: 0.5,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              Text(
+                'Explore our growing collection of comprehensive language courses.',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.grey.shade400,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              const SizedBox(height: 60),
+
+              // Grid
+              Container(
+                constraints: const BoxConstraints(maxWidth: 1200),
+                child: LayoutBuilder(
+                  builder: (context, constraints) {
+                    final width = constraints.maxWidth;
+                    final crossAxisCount = width < 600 ? 1 : (width < 900 ? 2 : 3);
+                    // Lower ratio = taller cards. Mobile needs height for Flag + Name + Native Name.
+                    // 0.9 ensures plenty of room for 2-3 lines of text.
+                    final childAspectRatio = width < 600 ? 0.9 : 1.3;
+
+                    return GridView.builder(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: crossAxisCount,
+                        crossAxisSpacing: 24,
+                        mainAxisSpacing: 24,
+                        childAspectRatio: childAspectRatio,
+                      ),
+                      itemCount: languages.length > 3 ? 3 : languages.length,
+                      itemBuilder: (context, index) {
+                        final languageDoc = languages[index];
+                        final languageData = languageDoc.data() as Map<String, dynamic>;
+                        
+                        return AnimatedBuilder(
+                          animation: _scrollController,
+                          builder: (context, child) {
+                            final progress = _getScrollProgress(600, 900);
+                            final cardProgress = ((progress - (index * 0.15)) / 0.3).clamp(0.0, 1.0);
+                            final opacity = Curves.easeOut.transform(cardProgress);
+                            final slide = Offset(0, 30 * (1 - cardProgress));
+                            return Opacity(
+                              opacity: opacity,
+                              child: Transform.translate(
+                                offset: slide,
+                                child: child,
+                              ),
+                            );
+                          },
+                          child: LanguageCard(
+                            languageId: languageDoc.id,
+                            flag: languageData['flag'] ?? '🌍',
+                            name: languageData['name'] ?? 'Unknown',
+                            nativeScript: languageData['nativeScript'] ?? languageData['nativeName'] ?? '',
+                            color: LanguageCard.getLanguageColor(languageData['name'] ?? 'Unknown'),
+                          ),
+                        );
+                      },
+                    );
+                  },
+                ),
+              ),
+              const SizedBox(height: 48),
+              // View All Languages Button
+              if (languages.length > 3)
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFF6A4CBC).withValues(alpha: 0.2),
+                        offset: const Offset(0, 4),
+                        blurRadius: 10,
+                      ),
+                    ],
+                  ),
+                  child: ElevatedButton(
+                    onPressed: () => Navigator.pushNamed(context, '/languages'),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      foregroundColor: const Color(0xFF6A4CBC),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 40,
+                        vertical: 20,
+                      ),
+                      shape: StadiumBorder(
+                        side: BorderSide(
+                          color: const Color(0xFF6A4CBC).withValues(alpha: 0.5),
+                          width: 2,
+                        ),
+                      ),
+                      elevation: 0,
+                    ),
+                    child: const Text(
+                      'View All Languages',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+            ],
+          ),
+        );
+      },
     );
   }
 
@@ -2397,4 +2184,354 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
       ),
     );
   }
+}
+
+class _CTAButton extends StatefulWidget {
+  final VoidCallback onPressed;
+  final Animation<double> glowBlur;
+
+  const _CTAButton({
+    required this.onPressed,
+    required this.glowBlur,
+  });
+
+  @override
+  _CTAButtonState createState() => _CTAButtonState();
+}
+
+class _CTAButtonState extends State<_CTAButton> {
+  bool _isHovered = false;
+
+  @override
+  Widget build(BuildContext context) {
+    const double borderThickness = 2.0;
+
+    return MouseRegion(
+      onEnter: (_) => setState(() => _isHovered = true),
+      onExit: (_) => setState(() => _isHovered = false),
+      cursor: SystemMouseCursors.click,
+      child: AnimatedScale(
+        scale: _isHovered ? 1.05 : 1.0,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeOutBack,
+        child: AnimatedBuilder(
+          animation: widget.glowBlur,
+          builder: (context, child) {
+            final blurVal = widget.glowBlur.value;
+            return Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFF6366F1).withValues(alpha: _isHovered ? 0.6 : 0.4),
+                    blurRadius: blurVal * 1.2,
+                    spreadRadius: _isHovered ? 4 : 2,
+                  ),
+                  BoxShadow(
+                    color: const Color(0xFFF43F5E).withValues(alpha: _isHovered ? 0.4 : 0.25),
+                    blurRadius: blurVal * 0.6,
+                    spreadRadius: _isHovered ? 2 : 0,
+                  ),
+                ],
+              ),
+              child: child,
+            );
+          },
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: const LinearGradient(
+                colors: [
+                  Color(0xFFF43F5E), // Sunset Pink/Coral
+                  Color(0xFF6366F1), // Royal Indigo
+                ],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+              borderRadius: BorderRadius.circular(50),
+              border: Border.all(
+                color: Colors.white.withValues(alpha: 0.5),
+                width: borderThickness,
+              ),
+            ),
+            child: ElevatedButton(
+              onPressed: widget.onPressed,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.transparent,
+                shadowColor: Colors.transparent,
+                padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 24),
+                shape: const StadiumBorder(),
+                elevation: 0,
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Text(
+                    'Start Learning Now',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      letterSpacing: 0.5,
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  AnimatedContainer(
+                    duration: const Duration(milliseconds: 200),
+                    transform: Matrix4.translationValues(_isHovered ? 4.0 : 0.0, 0.0, 0.0),
+                    child: const Icon(
+                      Icons.arrow_forward_rounded,
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Floating Language Matrix Components ─────────────────────────────────────
+
+class _FloatingLanguageChip extends StatefulWidget {
+  final String label;
+  final Alignment alignment;
+  final Color textColor;
+  final Duration animationDuration;
+  final double animationOffset;
+
+  const _FloatingLanguageChip({
+    required this.label,
+    required this.alignment,
+    required this.textColor,
+    required this.animationDuration,
+    required this.animationOffset,
+  });
+
+  @override
+  State<_FloatingLanguageChip> createState() => _FloatingLanguageChipState();
+}
+
+class _FloatingLanguageChipState extends State<_FloatingLanguageChip> with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _animation;
+  bool _isHovered = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: widget.animationDuration,
+    );
+    
+    // Smooth sine-wave translation of ±7 pixels
+    _animation = Tween<double>(begin: -7.0, end: 7.0).animate(
+      CurvedAnimation(
+        parent: _controller,
+        curve: Curves.easeInOut,
+      ),
+    );
+
+    // Stagger the start time/phase using the offset
+    _controller.forward(from: widget.animationOffset);
+    _controller.repeat(reverse: true);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final chip = MouseRegion(
+      onEnter: (_) => setState(() => _isHovered = true),
+      onExit: (_) => setState(() => _isHovered = false),
+      cursor: SystemMouseCursors.click,
+      child: AnimatedScale(
+        scale: _isHovered ? 1.05 : 1.0,
+        duration: const Duration(milliseconds: 200),
+        curve: Curves.easeOutCubic,
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(30),
+            // Crisp, semi-transparent background (no BackdropFilter)
+            color: Colors.white.withValues(alpha: _isHovered ? 0.95 : 0.85),
+            // Sharp border
+            border: Border.all(
+              color: widget.textColor.withValues(alpha: _isHovered ? 0.9 : 0.4),
+              width: 1.5,
+            ),
+            boxShadow: [
+              // Soft, localized glow when hovered
+              BoxShadow(
+                color: _isHovered 
+                    ? widget.textColor.withValues(alpha: 0.35)
+                    : Colors.black.withValues(alpha: 0.03),
+                blurRadius: _isHovered ? 18.0 : 6.0,
+                spreadRadius: _isHovered ? 2.0 : 0.0,
+                offset: _isHovered ? Offset.zero : const Offset(0, 3),
+              ),
+            ],
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Custom localized color dot matching the language tag
+              Container(
+                width: 8,
+                height: 8,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: widget.textColor,
+                ),
+              ),
+              const SizedBox(width: 10),
+              Text(
+                widget.label,
+                style: TextStyle(
+                  color: Colors.grey.shade900,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 0.2,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+
+    return AnimatedBuilder(
+      animation: _animation,
+      builder: (context, child) {
+        return Transform.translate(
+          offset: Offset(0, _animation.value),
+          child: child,
+        );
+      },
+      child: chip,
+    );
+  }
+}
+
+class _LanguageMatrix extends StatelessWidget {
+  final bool isDesktop;
+
+  const _LanguageMatrix({required this.isDesktop});
+
+  @override
+  Widget build(BuildContext context) {
+    // 6 languages with Kanji and Devanagari support as mandated
+    final List<_LanguageConfig> languages = [
+      _LanguageConfig(
+        label: 'Español',
+        alignment: const Alignment(-0.8, -0.6),
+        textColor: const Color(0xFFEF4444), // Coral Red
+        duration: const Duration(seconds: 3),
+        offset: 0.0,
+      ),
+      _LanguageConfig(
+        label: 'Français',
+        alignment: const Alignment(0.7, -0.4),
+        textColor: const Color(0xFF3B82F6), // Premium Blue
+        duration: const Duration(milliseconds: 3200),
+        offset: 0.2,
+      ),
+      _LanguageConfig(
+        label: 'Deutsch',
+        alignment: const Alignment(-0.25, -0.1),
+        textColor: const Color(0xFFF59E0B), // Warm Amber
+        duration: const Duration(milliseconds: 2800),
+        offset: 0.45,
+      ),
+      _LanguageConfig(
+        label: '日本語', // Kanji support
+        alignment: const Alignment(0.75, 0.2),
+        textColor: const Color(0xFFEC4899), // Sakura Pink
+        duration: const Duration(milliseconds: 3500),
+        offset: 0.6,
+      ),
+      _LanguageConfig(
+        label: 'हिन्दी', // Devanagari support
+        alignment: const Alignment(-0.7, 0.5),
+        textColor: const Color(0xFF10B981), // Teal/Green
+        duration: const Duration(milliseconds: 3000),
+        offset: 0.75,
+      ),
+      _LanguageConfig(
+        label: 'Italiano',
+        alignment: const Alignment(0.25, 0.8),
+        textColor: const Color(0xFF8B5CF6), // Royal Iris/Purple
+        duration: const Duration(milliseconds: 3300),
+        offset: 0.35,
+      ),
+    ];
+
+    if (isDesktop) {
+      return RepaintBoundary(
+        child: SizedBox(
+          height: 460,
+          child: Stack(
+            children: languages.map((config) {
+              return Align(
+                alignment: config.alignment,
+                child: _FloatingLanguageChip(
+                  label: config.label,
+                  alignment: config.alignment,
+                  textColor: config.textColor,
+                  animationDuration: config.duration,
+                  animationOffset: config.offset,
+                ),
+              );
+            }).toList(),
+          ),
+        ),
+      );
+    } else {
+      // Mobile & Tablet view: Wrap layout to avoid stack overflow/clipping
+      return RepaintBoundary(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 24.0),
+          child: Wrap(
+            spacing: 12,
+            runSpacing: 16,
+            alignment: WrapAlignment.center,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: languages.map((config) {
+              return _FloatingLanguageChip(
+                label: config.label,
+                alignment: config.alignment,
+                textColor: config.textColor,
+                animationDuration: config.duration,
+                animationOffset: config.offset,
+              );
+            }).toList(),
+          ),
+        ),
+      );
+    }
+  }
+}
+
+class _LanguageConfig {
+  final String label;
+  final Alignment alignment;
+  final Color textColor;
+  final Duration duration;
+  final double offset;
+
+  const _LanguageConfig({
+    required this.label,
+    required this.alignment,
+    required this.textColor,
+    required this.duration,
+    required this.offset,
+  });
 }
