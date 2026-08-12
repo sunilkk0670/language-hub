@@ -3,6 +3,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/subscription_providers.dart';
 import '../../data/models/subscription_plan.dart';
+import '../../../../core/paddle/paddle_service.dart';
+
+final paddlePriceProvider = FutureProvider.autoDispose.family<String, String>((ref, priceId) async {
+  final price = await PaddleService.getPrice(priceId);
+  return price ?? '';
+});
+
+String? getPaddlePriceId(String planId, BillingCycle cycle) {
+  if (planId == 'standard') {
+    return cycle == BillingCycle.annual ? 'pri_01kzqehevbgw84djd650vdbchj' : 'pri_01kzqeheharqanpynxcggdzcfa';
+  } else if (planId == 'premium') {
+    return cycle == BillingCycle.annual ? 'pri_01kzqehftf246rapzhfh23an91' : 'pri_01kzqehfgpmc9m8tgx9rky2h9c';
+  }
+  return null;
+}
 
 class _PricingScrollBehavior extends MaterialScrollBehavior {
   const _PricingScrollBehavior();
@@ -47,10 +62,12 @@ class _PricingBody extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // Initialize Paddle JS Interop (only happens once)
+    PaddleService.init(context);
+
     final rawPlans = ref.watch(subscriptionPlansProvider);
     final plans = rawPlans;
     final cycle = ref.watch(billingCycleProvider);
-    final currency = ref.watch(selectedCurrencyProvider);
     final rawAddon = ref.watch(kanjiLiarAddonProvider);
     final addon = KanjiLiarAddon(
       pricing: const {'USD': 6.99, 'EUR': 6.99, 'INR': 189.99},
@@ -59,16 +76,18 @@ class _PricingBody extends ConsumerWidget {
 
     return ScrollConfiguration(
       behavior: const _PricingScrollBehavior(),
-      child: SingleChildScrollView(
-        primary: true,
-        physics: const AlwaysScrollableScrollPhysics(),
-        child: Column(
-          children: [
-            _HeroSection(cycle: cycle, currency: currency),
-            const SizedBox(height: 32),
-            _PlanCardsSection(plans: plans, cycle: cycle, currency: currency),
+      child: Scrollbar(
+        thumbVisibility: true,
+        child: SingleChildScrollView(
+          primary: true,
+          physics: const BouncingScrollPhysics(),
+          child: Column(
+            children: [
+              _HeroSection(cycle: cycle),
+              const SizedBox(height: 32),
+            _PlanCardsSection(plans: plans, cycle: cycle),
             const SizedBox(height: 48),
-            _KanjiLiarSection(addon: addon, currency: currency),
+            _KanjiLiarSection(addon: addon),
             const SizedBox(height: 48),
             _FeatureComparisonTable(plans: plans),
             const SizedBox(height: 48),
@@ -76,6 +95,7 @@ class _PricingBody extends ConsumerWidget {
             const SizedBox(height: 32),
           ],
         ),
+      ),
       ),
     );
   }
@@ -85,9 +105,8 @@ class _PricingBody extends ConsumerWidget {
 
 class _HeroSection extends ConsumerWidget {
   final BillingCycle cycle;
-  final AppCurrency currency;
 
-  const _HeroSection({required this.cycle, required this.currency});
+  const _HeroSection({required this.cycle});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -122,14 +141,13 @@ class _HeroSection extends ConsumerWidget {
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 32),
-          // Billing Toggle + Currency Selector Row
+          // Billing Toggle Row
           Wrap(
             alignment: WrapAlignment.center,
             spacing: 16,
             runSpacing: 12,
             children: [
               _BillingToggle(cycle: cycle),
-              _CurrencySelector(currency: currency),
             ],
           ),
         ],
@@ -237,53 +255,15 @@ class _ToggleChip extends StatelessWidget {
   }
 }
 
-class _CurrencySelector extends ConsumerWidget {
-  final AppCurrency currency;
-  const _CurrencySelector({required this.currency});
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.08),
-        borderRadius: BorderRadius.circular(50),
-        border: Border.all(color: Colors.white.withOpacity(0.15)),
-      ),
-      child: DropdownButtonHideUnderline(
-        child: DropdownButton<AppCurrency>(
-          value: currency,
-          dropdownColor: const Color(0xFF1A1035),
-          style: const TextStyle(color: Colors.white, fontSize: 14),
-          icon: const Icon(Icons.keyboard_arrow_down, color: Colors.white60, size: 18),
-          items: AppCurrency.values.map((c) {
-            return DropdownMenuItem(
-              value: c,
-              child: Text(c.label, style: const TextStyle(color: Colors.white)),
-            );
-          }).toList(),
-          onChanged: (val) {
-            if (val != null) {
-              ref.read(selectedCurrencyProvider.notifier).state = val;
-            }
-          },
-        ),
-      ),
-    );
-  }
-}
-
 // ── Plan Cards ───────────────────────────────────────────────────────────────
 
 class _PlanCardsSection extends StatelessWidget {
   final List<SubscriptionPlan> plans;
   final BillingCycle cycle;
-  final AppCurrency currency;
 
   const _PlanCardsSection({
     required this.plans,
     required this.cycle,
-    required this.currency,
   });
 
   @override
@@ -303,7 +283,6 @@ class _PlanCardsSection extends StatelessWidget {
                     child: _PlanCard(
                       plan: plan,
                       cycle: cycle,
-                      currency: currency,
                     ),
                   ),
                 );
@@ -317,7 +296,6 @@ class _PlanCardsSection extends StatelessWidget {
                   child: _PlanCard(
                     plan: plan,
                     cycle: cycle,
-                    currency: currency,
                   ),
                 );
               }).toList(),
@@ -329,22 +307,20 @@ class _PlanCardsSection extends StatelessWidget {
   }
 }
 
-class _PlanCard extends StatefulWidget {
+class _PlanCard extends ConsumerStatefulWidget {
   final SubscriptionPlan plan;
   final BillingCycle cycle;
-  final AppCurrency currency;
 
   const _PlanCard({
     required this.plan,
     required this.cycle,
-    required this.currency,
   });
 
   @override
-  State<_PlanCard> createState() => _PlanCardState();
+  ConsumerState<_PlanCard> createState() => _PlanCardState();
 }
 
-class _PlanCardState extends State<_PlanCard> {
+class _PlanCardState extends ConsumerState<_PlanCard> {
   bool _isHovered = false;
 
   List<Color> get _gradientColors {
@@ -372,9 +348,13 @@ class _PlanCardState extends State<_PlanCard> {
   @override
   Widget build(BuildContext context) {
     final plan = widget.plan;
-    final priceStr = plan.formatPrice(widget.currency, widget.cycle);
-    final savings = plan.annualSavingsPercent(widget.currency);
     final isAnnual = widget.cycle == BillingCycle.annual;
+    final priceId = getPaddlePriceId(plan.id, widget.cycle);
+    final paddlePriceAsync = priceId != null ? ref.watch(paddlePriceProvider(priceId)) : const AsyncValue.data('Free');
+
+    // For savings logic, we no longer compute it manually via currency.
+    // We could omit it, or just show it statically if isAnnual and plan is standard/premium.
+    final savings = (plan.id == 'free') ? 0 : 17;
 
     return MouseRegion(
       onEnter: (_) => setState(() => _isHovered = true),
@@ -472,19 +452,23 @@ class _PlanCardState extends State<_PlanCard> {
                     AnimatedSwitcher(
                       duration: const Duration(milliseconds: 300),
                       child: Column(
-                        key: ValueKey('${widget.cycle}-${widget.currency}'),
+                        key: ValueKey('${widget.cycle}'),
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            priceStr,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: priceStr == 'Free' ? 40 : 34,
-                              fontWeight: FontWeight.w900,
-                              letterSpacing: -1,
+                          paddlePriceAsync.when(
+                            data: (priceStr) => Text(
+                              priceStr.isEmpty ? 'Free' : priceStr,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: priceStr == 'Free' || priceStr.isEmpty ? 40 : 34,
+                                fontWeight: FontWeight.w900,
+                                letterSpacing: -1,
+                              ),
                             ),
+                            loading: () => const SizedBox(height: 40, child: CircularProgressIndicator()),
+                            error: (_, __) => const Text('Error', style: TextStyle(color: Colors.red)),
                           ),
-                          if (priceStr != 'Free')
+                          if (plan.id != 'free')
                             Text(
                               isAnnual ? '/ year' : '/ month',
                               style: TextStyle(
@@ -530,7 +514,14 @@ class _PlanCardState extends State<_PlanCard> {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          if (plan.id == 'free') {
+                            Navigator.pushNamed(context, '/register');
+                          } else if (priceId != null) {
+                            // Open Paddle Checkout for this specific price
+                            PaddleService.openCheckout(priceId: priceId);
+                          }
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: plan.id == 'free'
                               ? Colors.white.withOpacity(0.1)
@@ -650,17 +641,15 @@ class _AiTutorChip extends ConsumerWidget {
 
 // ── Kanji Liar Add-on ─────────────────────────────────────────────────────────
 
-class _KanjiLiarSection extends StatelessWidget {
+class _KanjiLiarSection extends ConsumerWidget {
   final dynamic addon;
-  final AppCurrency currency;
 
-  const _KanjiLiarSection({required this.addon, required this.currency});
+  const _KanjiLiarSection({required this.addon});
 
   @override
-  Widget build(BuildContext context) {
-    final price = addon.pricing[currency.key] ?? 3.99;
-    final sym = currency.symbol;
-    final priceStr = '$sym${price.toStringAsFixed(2)}';
+  Widget build(BuildContext context, WidgetRef ref) {
+    const addonPriceId = 'pri_01kzqehgctn7wn5awajj4tdc6z'; // Price ID for Kanji Liar
+    final paddlePriceAsync = ref.watch(paddlePriceProvider(addonPriceId));
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -721,11 +710,17 @@ class _KanjiLiarSection extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        Text(priceStr, style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.w900)),
+                        paddlePriceAsync.when(
+                          data: (priceStr) => Text(priceStr, style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.w900)),
+                          loading: () => const SizedBox(height: 32, child: CircularProgressIndicator()),
+                          error: (_, __) => const Text('Error', style: TextStyle(color: Colors.red)),
+                        ),
                         const Text('one-time', style: TextStyle(color: Colors.white38, fontSize: 12)),
                         const SizedBox(height: 12),
                         ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            PaddleService.openCheckout(priceId: addonPriceId);
+                          },
                           style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF4CAF50), foregroundColor: Colors.white, padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)), elevation: 0),
                           child: const Text('Add to Plan', style: TextStyle(fontWeight: FontWeight.bold)),
                         ),
@@ -763,11 +758,17 @@ class _KanjiLiarSection extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 20),
-                    Text(priceStr, style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.w900)),
+                    paddlePriceAsync.when(
+                      data: (priceStr) => Text(priceStr, style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.w900)),
+                      loading: () => const SizedBox(height: 32, child: CircularProgressIndicator()),
+                      error: (_, __) => const Text('Error', style: TextStyle(color: Colors.red)),
+                    ),
                     const Text('one-time', style: TextStyle(color: Colors.white38, fontSize: 12)),
                     const SizedBox(height: 12),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        PaddleService.openCheckout(priceId: addonPriceId);
+                      },
                       style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF4CAF50), foregroundColor: Colors.white, padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)), elevation: 0),
                       child: const Text('Add to Plan', style: TextStyle(fontWeight: FontWeight.bold)),
                     ),

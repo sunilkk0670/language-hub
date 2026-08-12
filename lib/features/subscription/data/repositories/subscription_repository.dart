@@ -34,7 +34,7 @@ class SubscriptionRepository {
       aiTutorHardCap: 50,
       features: [
         '2,000 Words (A1 + A2 Curriculum)',
-        'N5 & N4 Kanji Mastery',
+        'N4 & N3 Kanji Mastery',
         'Full Grammar Suite',
         'Ad-Free Experience',
         'Online Only',
@@ -58,7 +58,7 @@ class SubscriptionRepository {
       aiTutorHardCap: 200,
       features: [
         '3,000 Words (A1 + A2 + B1 Curriculum)',
-        'N3 & N2 Fluency Mastery',
+        'N2 & N1 Fluency Mastery',
         'Ad-Free Experience',
         'Offline Mode',
       ],

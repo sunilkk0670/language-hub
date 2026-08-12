@@ -8,5 +8,8 @@ class UserEntity with _$UserEntity {
     required String uid,
     required String email,
     String? displayName,
+    @Default(false) bool isPro,
+    String? subscriptionId,
+    String? subscriptionStatus,
   }) = _UserEntity;
 }

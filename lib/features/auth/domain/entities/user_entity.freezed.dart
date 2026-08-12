@@ -19,6 +19,9 @@ mixin _$UserEntity {
   String get uid => throw _privateConstructorUsedError;
   String get email => throw _privateConstructorUsedError;
   String? get displayName => throw _privateConstructorUsedError;
+  bool get isPro => throw _privateConstructorUsedError;
+  String? get subscriptionId => throw _privateConstructorUsedError;
+  String? get subscriptionStatus => throw _privateConstructorUsedError;
 
   /// Create a copy of UserEntity
   /// with the given fields replaced by the non-null parameter values.
@@ -33,7 +36,13 @@ abstract class $UserEntityCopyWith<$Res> {
           UserEntity value, $Res Function(UserEntity) then) =
       _$UserEntityCopyWithImpl<$Res, UserEntity>;
   @useResult
-  $Res call({String uid, String email, String? displayName});
+  $Res call(
+      {String uid,
+      String email,
+      String? displayName,
+      bool isPro,
+      String? subscriptionId,
+      String? subscriptionStatus});
 }
 
 /// @nodoc
@@ -54,6 +63,9 @@ class _$UserEntityCopyWithImpl<$Res, $Val extends UserEntity>
     Object? uid = null,
     Object? email = null,
     Object? displayName = freezed,
+    Object? isPro = null,
+    Object? subscriptionId = freezed,
+    Object? subscriptionStatus = freezed,
   }) {
     return _then(_value.copyWith(
       uid: null == uid
@@ -68,6 +80,18 @@ class _$UserEntityCopyWithImpl<$Res, $Val extends UserEntity>
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
+      isPro: null == isPro
+          ? _value.isPro
+          : isPro // ignore: cast_nullable_to_non_nullable
+              as bool,
+      subscriptionId: freezed == subscriptionId
+          ? _value.subscriptionId
+          : subscriptionId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      subscriptionStatus: freezed == subscriptionStatus
+          ? _value.subscriptionStatus
+          : subscriptionStatus // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -80,7 +104,13 @@ abstract class _$$UserEntityImplCopyWith<$Res>
       __$$UserEntityImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String uid, String email, String? displayName});
+  $Res call(
+      {String uid,
+      String email,
+      String? displayName,
+      bool isPro,
+      String? subscriptionId,
+      String? subscriptionStatus});
 }
 
 /// @nodoc
@@ -99,6 +129,9 @@ class __$$UserEntityImplCopyWithImpl<$Res>
     Object? uid = null,
     Object? email = null,
     Object? displayName = freezed,
+    Object? isPro = null,
+    Object? subscriptionId = freezed,
+    Object? subscriptionStatus = freezed,
   }) {
     return _then(_$UserEntityImpl(
       uid: null == uid
@@ -113,6 +146,18 @@ class __$$UserEntityImplCopyWithImpl<$Res>
           ? _value.displayName
           : displayName // ignore: cast_nullable_to_non_nullable
               as String?,
+      isPro: null == isPro
+          ? _value.isPro
+          : isPro // ignore: cast_nullable_to_non_nullable
+              as bool,
+      subscriptionId: freezed == subscriptionId
+          ? _value.subscriptionId
+          : subscriptionId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      subscriptionStatus: freezed == subscriptionStatus
+          ? _value.subscriptionStatus
+          : subscriptionStatus // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -121,7 +166,12 @@ class __$$UserEntityImplCopyWithImpl<$Res>
 
 class _$UserEntityImpl implements _UserEntity {
   const _$UserEntityImpl(
-      {required this.uid, required this.email, this.displayName});
+      {required this.uid,
+      required this.email,
+      this.displayName,
+      this.isPro = false,
+      this.subscriptionId,
+      this.subscriptionStatus});
 
   @override
   final String uid;
@@ -129,10 +179,17 @@ class _$UserEntityImpl implements _UserEntity {
   final String email;
   @override
   final String? displayName;
+  @override
+  @JsonKey()
+  final bool isPro;
+  @override
+  final String? subscriptionId;
+  @override
+  final String? subscriptionStatus;
 
   @override
   String toString() {
-    return 'UserEntity(uid: $uid, email: $email, displayName: $displayName)';
+    return 'UserEntity(uid: $uid, email: $email, displayName: $displayName, isPro: $isPro, subscriptionId: $subscriptionId, subscriptionStatus: $subscriptionStatus)';
   }
 
   @override
@@ -143,11 +200,17 @@ class _$UserEntityImpl implements _UserEntity {
             (identical(other.uid, uid) || other.uid == uid) &&
             (identical(other.email, email) || other.email == email) &&
             (identical(other.displayName, displayName) ||
-                other.displayName == displayName));
+                other.displayName == displayName) &&
+            (identical(other.isPro, isPro) || other.isPro == isPro) &&
+            (identical(other.subscriptionId, subscriptionId) ||
+                other.subscriptionId == subscriptionId) &&
+            (identical(other.subscriptionStatus, subscriptionStatus) ||
+                other.subscriptionStatus == subscriptionStatus));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, uid, email, displayName);
+  int get hashCode => Object.hash(runtimeType, uid, email, displayName, isPro,
+      subscriptionId, subscriptionStatus);
 
   /// Create a copy of UserEntity
   /// with the given fields replaced by the non-null parameter values.
@@ -162,7 +225,10 @@ abstract class _UserEntity implements UserEntity {
   const factory _UserEntity(
       {required final String uid,
       required final String email,
-      final String? displayName}) = _$UserEntityImpl;
+      final String? displayName,
+      final bool isPro,
+      final String? subscriptionId,
+      final String? subscriptionStatus}) = _$UserEntityImpl;
 
   @override
   String get uid;
@@ -170,6 +236,12 @@ abstract class _UserEntity implements UserEntity {
   String get email;
   @override
   String? get displayName;
+  @override
+  bool get isPro;
+  @override
+  String? get subscriptionId;
+  @override
+  String? get subscriptionStatus;
 
   /// Create a copy of UserEntity
   /// with the given fields replaced by the non-null parameter values.
