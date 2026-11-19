@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../../auth/presentation/providers/auth_providers.dart';
+import '../../../../core/config/admin_config.dart';
 import '../widgets/chirpolly_logo.dart';
 
 import 'lesson_content_page.dart';
@@ -218,7 +219,9 @@ class _LevelsPageState extends ConsumerState<LevelsPage> {
     required String levelName,
     required String description,
   }) {
-    final isGated = isGuest && (levelId.toLowerCase() != 'a1');
+    final currentUser = ref.watch(currentUserProvider);
+    final hasAccess = currentUser != null && (kAdminEmails.contains(currentUser.email) || currentUser.isPro);
+    final isGated = (levelId.toLowerCase() != 'a1') && !hasAccess;
 
     return Card(
       margin: const EdgeInsets.only(bottom: 16),
@@ -228,7 +231,7 @@ class _LevelsPageState extends ConsumerState<LevelsPage> {
         borderRadius: BorderRadius.circular(16),
         onTap: () {
           if (isGated) {
-            _showGatedContentDialog(context);
+            Navigator.pushNamed(context, '/pricing');
           } else {
             Navigator.push(
               context,

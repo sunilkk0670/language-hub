@@ -51,5 +51,18 @@ ios/Flutter/Flutter.podspec
 ios/.symlinks/
 ios/Pods/
 
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.key
+*.pem
+*.p12
+
+# Firebase cache
+.firebase/
+
 # Web build artifacts
 web/build/

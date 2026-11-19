@@ -71,7 +71,7 @@ class SubscriptionRepository {
   ];
 
   static const KanjiLiarAddon kanjiLiarAddon = KanjiLiarAddon(
-    pricing: {'USD': 3.99, 'EUR': 3.99, 'INR': 69.99},
+    pricing: {'USD': 6.99, 'EUR': 6.99, 'INR': 159.99},
     description: 'One-time purchase. Unlock the advanced Kanji Liar challenge game.',
   );
 

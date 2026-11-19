@@ -8,20 +8,30 @@ initializeApp();
 const db = getFirestore();
 
 // Retrieve environment secrets
-const PADDLE_API_KEY = process.env.PADDLE_API_KEY || "";
-const PADDLE_WEBHOOK_SECRET = process.env.PADDLE_WEBHOOK_SECRET || "";
+const PADDLE_API_KEY = () => process.env.PADDLE_API_KEY || "";
+const PADDLE_WEBHOOK_SECRET = () => process.env.PADDLE_WEBHOOK_SECRET || "";
 
-// Initialize Paddle SDK
-const paddle = new Paddle(PADDLE_API_KEY, {
-  environment: Environment.sandbox, // Use sandbox for development
-  logLevel: LogLevel.error,
-});
+// Lazily initialize Paddle SDK to avoid timeouts during deployment introspection
+let _paddle: Paddle | null = null;
+function getPaddle(): Paddle {
+  if (!_paddle) {
+    const apiKey = PADDLE_API_KEY();
+    const isSandbox = apiKey.includes("sdbx");
+    _paddle = new Paddle(apiKey, {
+      environment: isSandbox ? Environment.sandbox : Environment.production,
+      logLevel: LogLevel.error,
+    });
+  }
+  return _paddle;
+}
 
 /**
  * HTTP Cloud Function to handle Paddle Webhooks
  * We use the v2 API which allows us to access the raw request body.
  */
-export const paddleWebhook = functions.https.onRequest(async (req, res) => {
+export const paddleWebhook = functions.https.onRequest(
+  { secrets: ["PADDLE_API_KEY", "PADDLE_WEBHOOK_SECRET"] },
+  async (req, res) => {
   // 1. Verify the request is a POST request
   if (req.method !== "POST") {
     res.status(405).send("Method Not Allowed");
@@ -38,7 +48,7 @@ export const paddleWebhook = functions.https.onRequest(async (req, res) => {
   try {
     // 3. Unmarshal and verify the webhook signature using the RAW body
     const rawBody = (req as any).rawBody.toString();
-    const event = paddle.webhooks.unmarshal(rawBody, PADDLE_WEBHOOK_SECRET, signature);
+    const event = getPaddle().webhooks.unmarshal(rawBody, PADDLE_WEBHOOK_SECRET(), signature);
 
     if (!event) {
       res.status(400).send("Failed to unmarshal event");
@@ -49,11 +59,11 @@ export const paddleWebhook = functions.https.onRequest(async (req, res) => {
 
     // 4. Extract data and customData
     const eventData = event.data as any;
-    const customData = eventData.customData || {};
-    const userId = customData.userId;
+    const customData = eventData.customData || eventData.custom_data || {};
+    const userId = customData.userId || customData.user_id;
 
     if (!userId) {
-      console.log(`No userId found in customData for event ${event.eventId}. Skipping user update.`);
+      console.log(`No userId found in customData/custom_data for event ${event.eventId}. Skipping user update.`);
       res.status(200).send("OK (No userId)");
       return;
     }
@@ -105,7 +115,9 @@ export const paddleWebhook = functions.https.onRequest(async (req, res) => {
 /**
  * Callable Function to create a Customer Portal Session
  */
-export const createCustomerPortalSession = functions.https.onCall(async (request) => {
+export const createCustomerPortalSession = functions.https.onCall(
+  { secrets: ["PADDLE_API_KEY"] },
+  async (request) => {
   // 1. Check if user is authenticated
   if (!request.auth || !request.auth.uid) {
     throw new functions.https.HttpsError("unauthenticated", "User must be logged in to access the portal.");
@@ -133,7 +145,7 @@ export const createCustomerPortalSession = functions.https.onCall(async (request
        throw new functions.https.HttpsError("failed-precondition", "No active subscription found for this user.");
     }
 
-    const subscription = await paddle.subscriptions.get(subscriptionId);
+    const subscription = await getPaddle().subscriptions.get(subscriptionId);
 
     // 4. Return the management URL to the client
     return {
@@ -144,3 +156,92 @@ export const createCustomerPortalSession = functions.https.onCall(async (request
     throw new functions.https.HttpsError("internal", "Failed to create portal session.");
   }
 });
+
+import * as functionsV1 from "firebase-functions/v1";
+
+/**
+ * Auth trigger to send a welcome email when a new user signs up.
+ */
+export const sendWelcomeEmail = functionsV1.runWith({ secrets: ["RESEND_API_KEY"] }).auth.user().onCreate(
+  async (user: functionsV1.auth.UserRecord) => {
+    const email = user.email;
+    const displayName = user.displayName || "there";
+
+    if (!email) {
+      console.log("User does not have an email. Skipping welcome email.");
+      return;
+    }
+
+    const resendApiKey = process.env.RESEND_API_KEY;
+    if (!resendApiKey) {
+      console.error("RESEND_API_KEY is not configured in environment secrets.");
+      return;
+    }
+
+    const htmlContent = `
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8">
+          <style>
+            body { font-family: 'Segoe UI', Roboto, sans-serif; background-color: #f7f9fc; color: #333333; margin: 0; padding: 0; }
+            .container { max-width: 600px; margin: 40px auto; background: #ffffff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+            .logo { font-size: 28px; font-weight: bold; color: #6A4CBC; margin-bottom: 24px; text-align: center; }
+            .greeting { font-size: 20px; font-weight: 600; margin-bottom: 16px; }
+            .body-text { font-size: 16px; line-height: 1.6; color: #555555; margin-bottom: 24px; }
+            .cta-button { display: inline-block; background: linear-gradient(135deg, #6A4CBC, #FF6B6B); color: #ffffff !important; padding: 14px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px; text-align: center; box-shadow: 0 4px 6px rgba(106, 76, 188, 0.2); }
+            .footer { margin-top: 40px; border-top: 1px solid #eeeeee; padding-top: 20px; font-size: 12px; color: #999999; text-align: center; }
+          </style>
+        </head>
+        <body>
+          <div class="container">
+            <div class="logo">ChirPolly 🦜</div>
+            <div class="greeting">Hi ${displayName},</div>
+            <p class="body-text">
+              Welcome to <strong>ChirPolly</strong>! We are absolutely thrilled to have you join our language learning community. 
+              Our mission is to help you master languages naturally through engaging, interactive conversations and real-world exercises.
+            </p>
+            <p class="body-text">
+              To get you started on your journey, we've unlocked the <strong>Level A1 (Beginner)</strong> module for you right away. Start learning today!
+            </p>
+            <div style="text-align: center; margin: 32px 0;">
+              <a href="https://chirpolly.com" class="cta-button">Get Started with Level A1</a>
+            </div>
+            <p class="body-text" style="font-size: 14px; color: #777777;">
+              If you have any questions or feedback along the way, simply reply to this email. We're here to help!
+            </p>
+            <div class="footer">
+              © ${new Date().getFullYear()} ChirPolly. All rights reserved.<br>
+              You received this email because you signed up for ChirPolly.
+            </div>
+          </div>
+        </body>
+      </html>
+    `;
+
+    try {
+      const response = await (globalThis as any).fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${resendApiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from: "ChirPolly <onboarding@resend.dev>",
+          to: [email],
+          subject: "Welcome to ChirPolly! 🦜",
+          html: htmlContent,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(`Resend API error (${response.status}): ${errorText}`);
+      }
+
+      console.log(`Successfully sent welcome email to ${email}`);
+    } catch (error) {
+      console.error("Failed to send welcome email:", error);
+    }
+  }
+);

@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../data/datasources/firebase_auth_datasource.dart';
 import '../../data/repositories/auth_repository_impl.dart';
 import '../../domain/entities/user_entity.dart';
@@ -59,14 +60,30 @@ final authStateProvider = StreamProvider<UserEntity?>((ref) {
   return repository.authStateChanges();
 });
 
+// Stream user's Firestore document to watch isPro status in real-time
+final userStreamProvider = StreamProvider<UserEntity?>((ref) {
+  final authState = ref.watch(authStateProvider).valueOrNull;
+  if (authState == null) return Stream.value(null);
+
+  return FirebaseFirestore.instance
+      .collection('users')
+      .doc(authState.uid)
+      .snapshots()
+      .map((snapshot) {
+        if (!snapshot.exists) {
+          return authState;
+        }
+        final data = snapshot.data();
+        return authState.copyWith(
+          isPro: data?['isPro'] == true || data?['is_pro'] == true,
+        );
+      });
+});
+
 // Current user provider
 final currentUserProvider = Provider<UserEntity?>((ref) {
-  final authState = ref.watch(authStateProvider);
-  return authState.when(
-    data: (user) => user,
-    loading: () => null,
-    error: (_, __) => null,
-  );
+  final userStream = ref.watch(userStreamProvider);
+  return userStream.valueOrNull;
 });
 
 // Auth controller state

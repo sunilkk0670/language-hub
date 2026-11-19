@@ -12,6 +12,10 @@
         "cleanUrls": true,
         "rewrites": [
             {
+                "source": "/paddleWebhook",
+                "function": "paddleWebhook"
+            },
+            {
                 "source": "/privacy",
                 "destination": "/privacy.html"
             },

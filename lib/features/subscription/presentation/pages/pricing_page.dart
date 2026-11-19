@@ -4,17 +4,71 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/subscription_providers.dart';
 import '../../data/models/subscription_plan.dart';
 import '../../../../core/paddle/paddle_service.dart';
+import '../../../auth/presentation/providers/auth_providers.dart';
 
-final paddlePriceProvider = FutureProvider.autoDispose.family<String, String>((ref, priceId) async {
-  final price = await PaddleService.getPrice(priceId);
-  return price ?? '';
+
+final selectedCurrencyProvider = StateProvider<String?>((ref) => null);
+
+String? getCountryCode(String? currency) {
+  if (currency == 'USD') return 'US';
+  if (currency == 'EUR') return 'DE';
+  if (currency == 'GBP') return 'GB';
+  if (currency == 'INR') return 'IN';
+  return null;
+}
+
+final paddlePriceProvider = FutureProvider.autoDispose.family<PriceData?, String>((ref, arg) async {
+  final parts = arg.split(':');
+  final priceId = parts[0];
+  final currencyCode = parts.length > 1 && parts[1] != 'null' ? parts[1] : null;
+  return await PaddleService.getPrice(
+    priceId,
+    currencyCode: currencyCode,
+    countryCode: getCountryCode(currencyCode),
+  );
 });
+
+String getStaticPriceText(String planId, BillingCycle cycle, String currency) {
+  if (planId == 'standard') {
+    if (cycle == BillingCycle.monthly) {
+      if (currency == 'INR') return '₹129.99';
+      if (currency == 'EUR') return '€3.69';
+      if (currency == 'GBP') return '£3.69';
+      return '\$3.69';
+    } else {
+      if (currency == 'INR') return '₹1,299.00';
+      if (currency == 'EUR') return '€36.90';
+      if (currency == 'GBP') return '£36.90';
+      return '\$36.90';
+    }
+  } else if (planId == 'premium') {
+    if (cycle == BillingCycle.monthly) {
+      if (currency == 'INR') return '₹159.99';
+      if (currency == 'EUR') return '€6.99';
+      if (currency == 'GBP') return '£6.99';
+      return '\$6.99';
+    } else {
+      if (currency == 'INR') return '₹1,599.00';
+      if (currency == 'EUR') return '€69.99';
+      if (currency == 'GBP') return '£69.99';
+      return '\$69.99';
+    }
+  }
+  return 'Free';
+}
+
+String getStaticAddonPriceText(String currency) {
+  if (currency == 'INR') return '₹159.99';
+  if (currency == 'EUR') return '€6.99';
+  if (currency == 'GBP') return '£6.99';
+  return '\$6.99';
+}
 
 String? getPaddlePriceId(String planId, BillingCycle cycle) {
   if (planId == 'standard') {
-    return cycle == BillingCycle.annual ? 'pri_01kzqehevbgw84djd650vdbchj' : 'pri_01kzqeheharqanpynxcggdzcfa';
+    return cycle == BillingCycle.annual ? 'pri_01m0735ydpvg1awa1g4p8ecvw1' : 'pri_01m072z30dswgwqkbf54q92bb3';
   } else if (planId == 'premium') {
-    return cycle == BillingCycle.annual ? 'pri_01kzqehftf246rapzhfh23an91' : 'pri_01kzqehfgpmc9m8tgx9rky2h9c';
+    return cycle == BillingCycle.annual ? 'pri_01m073eqm3p2dteyfx16ptsc82' : 'pri_01m073bwfc4y5sm6m52x25jwhh';
   }
   return null;
 }
@@ -36,6 +90,7 @@ class PricingPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final currentUser = ref.watch(currentUserProvider);
     return Scaffold(
       backgroundColor: const Color(0xFF0F0A1E),
       appBar: AppBar(
@@ -68,9 +123,20 @@ class _PricingBody extends ConsumerWidget {
     final rawPlans = ref.watch(subscriptionPlansProvider);
     final plans = rawPlans;
     final cycle = ref.watch(billingCycleProvider);
+    
+    final selectedCurrency = ref.watch(selectedCurrencyProvider);
+    final standardMonthlyPriceId = getPaddlePriceId('standard', BillingCycle.monthly);
+    if (standardMonthlyPriceId != null) {
+      ref.listen(paddlePriceProvider('$standardMonthlyPriceId:$selectedCurrency'), (previous, next) {
+        final data = next.value;
+        if (data != null && ref.read(selectedCurrencyProvider) == null) {
+          ref.read(selectedCurrencyProvider.notifier).state = data.currencyCode;
+        }
+      });
+    }
     final rawAddon = ref.watch(kanjiLiarAddonProvider);
     final addon = KanjiLiarAddon(
-      pricing: const {'USD': 6.99, 'EUR': 6.99, 'INR': 189.99},
+      pricing: const {'USD': 6.99, 'EUR': 6.99, 'INR': 159.99},
       description: rawAddon.description,
     );
 
@@ -144,10 +210,12 @@ class _HeroSection extends ConsumerWidget {
           // Billing Toggle Row
           Wrap(
             alignment: WrapAlignment.center,
+            crossAxisAlignment: WrapCrossAlignment.center,
             spacing: 16,
             runSpacing: 12,
             children: [
               _BillingToggle(cycle: cycle),
+              const _CurrencyDropdown(),
             ],
           ),
         ],
@@ -180,7 +248,7 @@ class _BillingToggle extends ConsumerWidget {
           _ToggleChip(
             label: 'Annual',
             isSelected: isAnnual,
-            badge: 'Save up to 42%',
+            badge: 'Save 17%',
             onTap: () => ref.read(billingCycleProvider.notifier).state = BillingCycle.annual,
           ),
         ],
@@ -249,6 +317,44 @@ class _ToggleChip extends StatelessWidget {
               ),
             ],
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class _CurrencyDropdown extends ConsumerWidget {
+  const _CurrencyDropdown();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final selectedCurrency = ref.watch(selectedCurrencyProvider);
+    final displayValue = selectedCurrency ?? 'USD';
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.08),
+        borderRadius: BorderRadius.circular(50),
+        border: Border.all(color: Colors.white.withOpacity(0.15)),
+      ),
+      child: DropdownButtonHideUnderline(
+        child: DropdownButton<String>(
+          value: displayValue,
+          dropdownColor: const Color(0xFF0F0A1E),
+          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          icon: const Icon(Icons.keyboard_arrow_down, color: Colors.white54),
+          items: const [
+            DropdownMenuItem(value: 'USD', child: Text('USD (\$)')),
+            DropdownMenuItem(value: 'EUR', child: Text('EUR (€)')),
+            DropdownMenuItem(value: 'GBP', child: Text('GBP (£)')),
+            DropdownMenuItem(value: 'INR', child: Text('INR (₹)')),
+          ],
+          onChanged: (val) {
+            if (val != null) {
+              ref.read(selectedCurrencyProvider.notifier).state = val;
+            }
+          },
         ),
       ),
     );
@@ -347,10 +453,14 @@ class _PlanCardState extends ConsumerState<_PlanCard> {
 
   @override
   Widget build(BuildContext context) {
+    final currentUser = ref.watch(currentUserProvider);
+    final selectedCurrency = ref.watch(selectedCurrencyProvider);
     final plan = widget.plan;
     final isAnnual = widget.cycle == BillingCycle.annual;
     final priceId = getPaddlePriceId(plan.id, widget.cycle);
-    final paddlePriceAsync = priceId != null ? ref.watch(paddlePriceProvider(priceId)) : const AsyncValue.data('Free');
+    final paddlePriceAsync = priceId != null 
+        ? ref.watch(paddlePriceProvider('$priceId:$selectedCurrency')) 
+        : const AsyncValue<PriceData?>.data(null);
 
     // For savings logic, we no longer compute it manually via currency.
     // We could omit it, or just show it statically if isAnnual and plan is standard/premium.
@@ -455,18 +565,19 @@ class _PlanCardState extends ConsumerState<_PlanCard> {
                         key: ValueKey('${widget.cycle}'),
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          paddlePriceAsync.when(
-                            data: (priceStr) => Text(
-                              priceStr.isEmpty ? 'Free' : priceStr,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: priceStr == 'Free' || priceStr.isEmpty ? 40 : 34,
-                                fontWeight: FontWeight.w900,
-                                letterSpacing: -1,
-                              ),
-                            ),
-                            loading: () => const SizedBox(height: 40, child: CircularProgressIndicator()),
-                            error: (_, __) => const Text('Error', style: TextStyle(color: Colors.red)),
+                          Builder(
+                            builder: (context) {
+                              final priceStr = getStaticPriceText(plan.id, widget.cycle, selectedCurrency ?? 'USD');
+                              return Text(
+                                priceStr,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: priceStr == 'Free' || priceStr.isEmpty ? 40 : 34,
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: -1,
+                                ),
+                              );
+                            },
                           ),
                           if (plan.id != 'free')
                             Text(
@@ -519,7 +630,13 @@ class _PlanCardState extends ConsumerState<_PlanCard> {
                             Navigator.pushNamed(context, '/register');
                           } else if (priceId != null) {
                             // Open Paddle Checkout for this specific price
-                            PaddleService.openCheckout(priceId: priceId);
+                             PaddleService.openCheckout(
+                              priceId: priceId,
+                              email: currentUser?.email,
+                              userId: currentUser?.uid,
+                              currencyCode: selectedCurrency,
+                              countryCode: getCountryCode(selectedCurrency),
+                            );
                           }
                         },
                         style: ElevatedButton.styleFrom(
@@ -648,8 +765,10 @@ class _KanjiLiarSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    const addonPriceId = 'pri_01kzqehgctn7wn5awajj4tdc6z'; // Price ID for Kanji Liar
-    final paddlePriceAsync = ref.watch(paddlePriceProvider(addonPriceId));
+    final currentUser = ref.watch(currentUserProvider);
+    final selectedCurrency = ref.watch(selectedCurrencyProvider);
+    const addonPriceId = 'pri_01m073vc2nfejgqxzsmsctktx3j'; // Price ID for Kanji Liar
+    final paddlePriceAsync = ref.watch(paddlePriceProvider('$addonPriceId:$selectedCurrency'));
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -710,16 +829,26 @@ class _KanjiLiarSection extends ConsumerWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        paddlePriceAsync.when(
-                          data: (priceStr) => Text(priceStr, style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.w900)),
-                          loading: () => const SizedBox(height: 32, child: CircularProgressIndicator()),
-                          error: (_, __) => const Text('Error', style: TextStyle(color: Colors.red)),
+                        Builder(
+                          builder: (context) {
+                            final priceStr = getStaticAddonPriceText(selectedCurrency ?? 'USD');
+                            return Text(
+                              priceStr,
+                              style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.w900),
+                            );
+                          },
                         ),
                         const Text('one-time', style: TextStyle(color: Colors.white38, fontSize: 12)),
                         const SizedBox(height: 12),
                         ElevatedButton(
                           onPressed: () {
-                            PaddleService.openCheckout(priceId: addonPriceId);
+                            PaddleService.openCheckout(
+                              priceId: addonPriceId,
+                              email: currentUser?.email,
+                              userId: currentUser?.uid,
+                              currencyCode: selectedCurrency,
+                              countryCode: getCountryCode(selectedCurrency),
+                            );
                           },
                           style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF4CAF50), foregroundColor: Colors.white, padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)), elevation: 0),
                           child: const Text('Add to Plan', style: TextStyle(fontWeight: FontWeight.bold)),
@@ -758,16 +887,26 @@ class _KanjiLiarSection extends ConsumerWidget {
                       ],
                     ),
                     const SizedBox(height: 20),
-                    paddlePriceAsync.when(
-                      data: (priceStr) => Text(priceStr, style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.w900)),
-                      loading: () => const SizedBox(height: 32, child: CircularProgressIndicator()),
-                      error: (_, __) => const Text('Error', style: TextStyle(color: Colors.red)),
+                    Builder(
+                      builder: (context) {
+                        final priceStr = getStaticAddonPriceText(selectedCurrency ?? 'USD');
+                        return Text(
+                          priceStr,
+                          style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.w900),
+                        );
+                      },
                     ),
                     const Text('one-time', style: TextStyle(color: Colors.white38, fontSize: 12)),
                     const SizedBox(height: 12),
                     ElevatedButton(
                       onPressed: () {
-                        PaddleService.openCheckout(priceId: addonPriceId);
+                        PaddleService.openCheckout(
+                          priceId: addonPriceId,
+                          email: currentUser?.email,
+                          userId: currentUser?.uid,
+                          currencyCode: selectedCurrency,
+                          countryCode: getCountryCode(selectedCurrency),
+                        );
                       },
                       style: ElevatedButton.styleFrom(backgroundColor: const Color(0xFF4CAF50), foregroundColor: Colors.white, padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)), elevation: 0),
                       child: const Text('Add to Plan', style: TextStyle(fontWeight: FontWeight.bold)),
