@@ -46,12 +46,22 @@ void main() async {
     }
   }
 
+  Object? initError;
+  StackTrace? initStackTrace;
+
   try {
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
-    debugPrint('Firebase initialized successfully for platform');
+    try {
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
+    } on UnsupportedError catch (_) {
+      // Fallback for platforms where DefaultFirebaseOptions.currentPlatform throws UnsupportedError
+      await Firebase.initializeApp();
+    }
+    debugPrint('Firebase initialized successfully');
   } catch (e, stackTrace) {
+    initError = e;
+    initStackTrace = stackTrace;
     FlutterError.reportError(
       FlutterErrorDetails(
         exception: e,
@@ -62,11 +72,95 @@ void main() async {
     );
   }
 
+  if (initError != null) {
+    runApp(
+      FirebaseInitializationErrorApp(
+        error: initError.toString(),
+        stackTrace: initStackTrace?.toString(),
+      ),
+    );
+    return;
+  }
+
   runApp(
     const ProviderScope(
       child: ChirpPollyApp(),
     ),
   );
+}
+
+class FirebaseInitializationErrorApp extends StatelessWidget {
+  final String error;
+  final String? stackTrace;
+
+  const FirebaseInitializationErrorApp({
+    super.key,
+    required this.error,
+    this.stackTrace,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'ChirpPolly - Firebase Error',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(useMaterial3: true),
+      home: Scaffold(
+        backgroundColor: const Color(0xFF1E1E2E),
+        body: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Row(
+                  children: [
+                    Icon(Icons.error_outline, color: Colors.amberAccent, size: 32),
+                    SizedBox(width: 12),
+                    Text(
+                      'Firebase Init Diagnostic',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                const Text(
+                  'Firebase failed to initialize during startup. Diagnostic details:',
+                  style: TextStyle(color: Colors.white70, fontSize: 14),
+                ),
+                const SizedBox(height: 16),
+                Expanded(
+                  child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF11111B),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: Colors.white12),
+                    ),
+                    child: SingleChildScrollView(
+                      child: SelectableText(
+                        'Error:\n$error\n\nStackTrace:\n${stackTrace ?? "N/A"}',
+                        style: const TextStyle(
+                          color: Color(0xFFF38BA8),
+                          fontFamily: 'monospace',
+                          fontSize: 12,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
 }
 
 class ChirpPollyApp extends ConsumerWidget {

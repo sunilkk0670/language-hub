@@ -25,9 +25,9 @@ dist-ssr
 serviceAccountKey.json
 scripts/serviceAccountKey.json
 # Firebase configuration files
-android/app/google-services.json
+# android/app/google-services.json (tracked for Codemagic / CI builds)
 ios/Runner/GoogleService-Info.plist
-lib/firebase_options.dart
+# lib/firebase_options.dart (tracked for Codemagic / CI builds)
 .dart_tool/
 
 # Flutter/Dart build artifacts
