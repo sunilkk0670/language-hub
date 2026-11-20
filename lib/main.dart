@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -23,12 +24,43 @@ import 'features/auth/presentation/widgets/welcome_dialog.dart';
 import 'screens/ai_tutor_screen.dart';
 
 void main() async {
-  usePathUrlStrategy(); // Clean path-based URLs (no # hash) for Paddle/SEO
   WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  // Handle uncaught Flutter framework errors
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.presentError(details);
+    debugPrint('FlutterError caught: ${details.exceptionAsString()}');
+  };
+
+  // Handle uncaught asynchronous errors in the root isolate
+  PlatformDispatcher.instance.onError = (error, stack) {
+    debugPrint('Uncaught asynchronous error: $error\n$stack');
+    return true; // mark handled
+  };
+
+  if (kIsWeb) {
+    try {
+      usePathUrlStrategy(); // Clean path-based URLs (no # hash) for Paddle/SEO
+    } catch (e) {
+      debugPrint('usePathUrlStrategy warning: $e');
+    }
+  }
+
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    debugPrint('Firebase initialized successfully for platform');
+  } catch (e, stackTrace) {
+    FlutterError.reportError(
+      FlutterErrorDetails(
+        exception: e,
+        stack: stackTrace,
+        library: 'Firebase Core',
+        context: ErrorDescription('during Firebase.initializeApp in main()'),
+      ),
+    );
+  }
 
   runApp(
     const ProviderScope(
@@ -65,7 +97,8 @@ class ChirpPollyApp extends ConsumerWidget {
             Future.delayed(const Duration(milliseconds: 600), () {
               final ctx = navigatorKey.currentContext;
               if (ctx != null && ctx.mounted) {
-                final userName = user.email.split('@').first ?? 'there';
+                final email = user.email;
+                final userName = email.contains('@') ? email.split('@').first : 'there';
                 WelcomeDialog.show(
                   ctx,
                   userName: userName,
@@ -142,7 +175,7 @@ class ChirpPollyApp extends ConsumerWidget {
                   
                   // Import the screen here to avoid circular dependencies
                   return AITutorScreen(
-                    targetLanguage: selectedLanguage ?? 'Spanish',
+                    targetLanguage: selectedLanguage,
                     nativeLanguage: 'English',
                     userId: user?.uid ?? 'guest',
                   );
