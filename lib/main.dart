@@ -54,8 +54,8 @@ void main() async {
       await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform,
       );
-    } on UnsupportedError catch (_) {
-      // Fallback for platforms where DefaultFirebaseOptions.currentPlatform throws UnsupportedError
+    } catch (primaryError) {
+      debugPrint('Primary Firebase init with options failed ($primaryError), attempting default fallback...');
       await Firebase.initializeApp();
     }
     debugPrint('Firebase initialized successfully');
