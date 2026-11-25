@@ -10,6 +10,7 @@ class LanguageCard extends StatefulWidget {
   final String name;
   final String nativeScript;
   final Color color;
+  final List<String>? metadataTags;
 
   const LanguageCard({
     super.key,
@@ -18,6 +19,7 @@ class LanguageCard extends StatefulWidget {
     required this.name,
     required this.nativeScript,
     required this.color,
+    this.metadataTags,
   });
 
   @override
@@ -43,121 +45,163 @@ class LanguageCard extends StatefulWidget {
 class _LanguageCardState extends State<LanguageCard> {
   bool _isHovered = false;
 
+  List<String> get _resolvedTags {
+    if (widget.metadataTags != null && widget.metadataTags!.isNotEmpty) {
+      return widget.metadataTags!;
+    }
+    final isJapanese = widget.languageId.toLowerCase() == 'japanese' ||
+        widget.name.toLowerCase() == 'japanese';
+    return [
+      'A1–B1',
+      '3,000 Words',
+      if (isJapanese) 'Kanji',
+    ];
+  }
+
   @override
   Widget build(BuildContext context) {
+    final tags = _resolvedTags;
+
     return MouseRegion(
       onEnter: (_) => setState(() => _isHovered = true),
       onExit: (_) => setState(() => _isHovered = false),
+      cursor: SystemMouseCursors.click,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        transform: Matrix4.identity()
-          ..translate(0, _isHovered ? -10.0 : 0.0),
-        child: Card(
-          elevation: _isHovered ? 12 : 4,
-          shadowColor: widget.color.withOpacity(0.4),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
+        curve: Curves.easeOutCubic,
+        transform: Matrix4.translationValues(0.0, _isHovered ? -6.0 : 0.0, 0.0),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+            color: _isHovered
+                ? widget.color.withValues(alpha: 0.6)
+                : const Color(0xFFE2E8F0),
+            width: _isHovered ? 1.5 : 1.0,
           ),
-          child: Container(
-            decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: _isHovered
+                  ? widget.color.withValues(alpha: 0.14)
+                  : const Color(0xFF0F172A).withValues(alpha: 0.04),
+              blurRadius: _isHovered ? 24 : 12,
+              offset: Offset(0, _isHovered ? 10 : 4),
+            ),
+          ],
+        ),
+        child: Consumer(
+          builder: (context, ref, child) {
+            return Material(
+              color: Colors.transparent,
               borderRadius: BorderRadius.circular(20),
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  widget.color.withOpacity(0.1),
-                  widget.color.withOpacity(0.3),
-                ],
-              ),
-              border: Border.all(
-                color: widget.color.withOpacity(_isHovered ? 0.8 : 0.5),
-                width: 2,
-              ),
-            ),
-            child: Consumer(
-              builder: (context, ref, child) {
-                return InkWell(
-                  onTap: () {
-                    // Update the selected language provider
-                    ref.read(selectedLanguageProvider.notifier).state = widget.name;
-                    
-                    if (widget.languageId.toLowerCase() == 'japanese') {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => LanguageMasteryPathsPage(
-                            languageId: widget.languageId,
-                            languageName: widget.name,
-                            flag: widget.flag,
+              child: InkWell(
+                onTap: () {
+                  // Update the selected language provider
+                  ref.read(selectedLanguageProvider.notifier).state = widget.name;
+
+                  if (widget.languageId.toLowerCase() == 'japanese') {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LanguageMasteryPathsPage(
+                          languageId: widget.languageId,
+                          languageName: widget.name,
+                          flag: widget.flag,
+                        ),
+                      ),
+                    );
+                  } else {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LevelsPage(
+                          languageId: widget.languageId,
+                          languageName: widget.name,
+                          flag: widget.flag,
+                        ),
+                      ),
+                    );
+                  }
+                },
+                borderRadius: BorderRadius.circular(20),
+                child: Padding(
+                  padding: const EdgeInsets.all(22),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: widget.color.withValues(alpha: 0.1),
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: widget.color.withValues(alpha: 0.2),
+                            width: 1,
                           ),
                         ),
-                      );
-                    } else {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => LevelsPage(
-                            languageId: widget.languageId,
-                            languageName: widget.name,
-                            flag: widget.flag,
-                          ),
+                        child: Text(
+                          widget.flag,
+                          style: const TextStyle(fontSize: 40),
                         ),
-                      );
-                    }
-                  },
-                  borderRadius: BorderRadius.circular(20),
-                  child: Padding(
-                    padding: const EdgeInsets.all(24),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            shape: BoxShape.circle,
-                            boxShadow: [
-                              BoxShadow(
-                                color: widget.color.withOpacity(0.3),
-                                blurRadius: 12,
-                                spreadRadius: 2,
-                              ),
-                            ],
-                          ),
-                          child: Text(
-                            widget.flag,
-                            style: const TextStyle(fontSize: 48),
-                          ),
+                      ),
+                      const SizedBox(height: 14),
+                      Text(
+                        widget.name,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFF0F172A),
                         ),
-                        const SizedBox(height: 16),
+                      ),
+                      if (widget.nativeScript.isNotEmpty) ...[
+                        const SizedBox(height: 4),
                         Text(
-                          widget.name,
+                          widget.nativeScript,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey.shade900,
+                          style: const TextStyle(
+                            fontSize: 15,
+                            color: Color(0xFF475569),
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
-                        const SizedBox(height: 8),
-                        if (widget.nativeScript.isNotEmpty) ...[
-                          Text(
-                            widget.nativeScript,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.grey.shade700,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ],
                       ],
-                    ),
+                      const SizedBox(height: 12),
+                      Wrap(
+                        spacing: 6,
+                        runSpacing: 6,
+                        alignment: WrapAlignment.center,
+                        children: tags.map((tag) {
+                          return Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10,
+                              vertical: 4,
+                            ),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFFF8FAFC),
+                              borderRadius: BorderRadius.circular(20),
+                              border: Border.all(
+                                color: const Color(0xFFE2E8F0),
+                                width: 1,
+                              ),
+                            ),
+                            child: Text(
+                              tag,
+                              style: TextStyle(
+                                fontSize: 11.5,
+                                fontWeight: FontWeight.w600,
+                                color: widget.color.withValues(alpha: 0.9),
+                              ),
+                            ),
+                          );
+                        }).toList(),
+                      ),
+                    ],
                   ),
-                );
-              },
-            ),
-          ),
+                ),
+              ),
+            );
+          },
         ),
       ),
     );

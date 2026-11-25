@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -7,6 +8,7 @@ import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../widgets/language_card.dart';
+import '../widgets/polly_ai_companion_card.dart';
 import '../../../auth/presentation/providers/auth_providers.dart';
 
 class HomePage extends ConsumerStatefulWidget {
@@ -291,9 +293,10 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
         return KeyEventResult.ignored;
       },
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color(0xFFF8FAFC),
+        extendBodyBehindAppBar: true,
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(110),
+          preferredSize: const Size.fromHeight(96),
           child: LayoutBuilder(
             builder: (context, constraints) {
               // Check if we're on mobile (width < 600px)
@@ -301,11 +304,28 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
               
               return AppBar(
                 elevation: 0,
-                backgroundColor: Colors.white,
-                surfaceTintColor: Colors.white,
-                toolbarHeight: 110,
+                scrolledUnderElevation: 0,
+                backgroundColor: Colors.transparent,
+                surfaceTintColor: Colors.transparent,
+                toolbarHeight: 96,
                 centerTitle: false,
                 automaticallyImplyLeading: false,
+                flexibleSpace: ClipRect(
+                  child: BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.80),
+                        border: Border(
+                          bottom: BorderSide(
+                            color: const Color(0xFFE2E8F0).withValues(alpha: 0.9),
+                            width: 1,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
                 title: Padding(
                   padding: const EdgeInsets.only(left: 16.0),
                   child: ConstrainedBox(
@@ -484,17 +504,29 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                                 },
                               );
                             } else {
-                              // User is not logged in - show login button
-                              return TextButton(
+                              // User is not logged in - show high-contrast visible login button
+                              return OutlinedButton(
                                 onPressed: () {
                                   Navigator.pushNamed(context, '/login');
                                 },
-                                child: Text(
+                                style: OutlinedButton.styleFrom(
+                                  foregroundColor: _kPurple,
+                                  backgroundColor: _kPurple.withValues(alpha: 0.06),
+                                  side: BorderSide(
+                                    color: _kPurple.withValues(alpha: 0.45),
+                                    width: 1.5,
+                                  ),
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 20,
+                                    vertical: 10,
+                                  ),
+                                  shape: const StadiumBorder(),
+                                ),
+                                child: const Text(
                                   'Login',
                                   style: TextStyle(
-                                    color: Colors.grey.shade800,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w700,
                                   ),
                                 ),
                               );
@@ -581,6 +613,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                   ],
                   Column(
                     children: [
+                      SizedBox(height: isDesktop ? 112 : 104),
                       Builder(builder: (context) {
                  // Build left (text/CTA) section
                  final Widget leftSection = Padding(
@@ -759,8 +792,22 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                           ),
                         );
 
-                // Build right (Language Matrix) section
-                Widget rightSection = _LanguageMatrix(isDesktop: isDesktop);
+                // Build right (Language Matrix + Polly AI Companion) section
+                final Widget rightSection = Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    _LanguageMatrix(isDesktop: isDesktop),
+                    Transform.translate(
+                      offset: Offset(0, isDesktop ? -16 : 0),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: PollyAICompanionCard(
+                          onTap: () => Navigator.pushNamed(context, '/ai-tutor'),
+                        ),
+                      ),
+                    ),
+                  ],
+                );
                 // Assemble layout
                 return Center(
                   child: ConstrainedBox(
@@ -786,8 +833,29 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                 );
                       },
                     ),
-                  const SizedBox(height: 40),
+                  const SizedBox(height: 56),
                 ],
+              ),
+              // Smooth gradient fade into the #F8FAFC body canvas
+              Positioned(
+                left: 0,
+                right: 0,
+                bottom: 0,
+                height: 72,
+                child: IgnorePointer(
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          const Color(0xFFF8FAFC).withValues(alpha: 0.0),
+                          const Color(0xFFF8FAFC),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
               ),
             ],
           );
@@ -805,7 +873,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
     return Container(
       width: double.infinity,
       decoration: const BoxDecoration(
-        color: Color(0xFF080808),
+        color: Color(0xFFF8FAFC),
       ),
       padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
       child: Column(
@@ -815,7 +883,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
             width: 300,
             height: 48,
             decoration: BoxDecoration(
-              color: Colors.white.withValues(alpha: 0.05),
+              color: const Color(0xFFE2E8F0).withValues(alpha: 0.7),
               borderRadius: BorderRadius.circular(24),
             ),
           ),
@@ -825,7 +893,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
             width: 450,
             height: 20,
             decoration: BoxDecoration(
-              color: Colors.white.withValues(alpha: 0.05),
+              color: const Color(0xFFE2E8F0).withValues(alpha: 0.6),
               borderRadius: BorderRadius.circular(10),
             ),
           ),
@@ -861,16 +929,16 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                               begin: Alignment.topLeft,
                               end: Alignment.bottomRight,
                               colors: [
-                                Colors.white.withValues(alpha: 0.02 + 0.03 * val),
-                                Colors.white.withValues(alpha: 0.05 + 0.03 * val),
-                                Colors.white.withValues(alpha: 0.02 + 0.03 * val),
+                                Colors.white,
+                                Color.lerp(Colors.white, const Color(0xFFF1F5F9), val)!,
+                                Colors.white,
                               ],
                               stops: const [0.0, 0.5, 1.0],
                             ),
-                            borderRadius: BorderRadius.circular(32),
+                            borderRadius: BorderRadius.circular(20),
                             border: Border.all(
-                              color: Colors.white.withValues(alpha: 0.05),
-                              width: 1.5,
+                              color: const Color(0xFFE2E8F0),
+                              width: 1,
                             ),
                           ),
                           padding: const EdgeInsets.all(24),
@@ -882,7 +950,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                                 width: 64,
                                 height: 64,
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withValues(alpha: 0.05),
+                                  color: const Color(0xFFE2E8F0).withValues(alpha: 0.7),
                                   shape: BoxShape.circle,
                                 ),
                               ),
@@ -891,7 +959,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                                 width: 120,
                                 height: 24,
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withValues(alpha: 0.05),
+                                  color: const Color(0xFFE2E8F0).withValues(alpha: 0.7),
                                   borderRadius: BorderRadius.circular(12),
                                 ),
                               ),
@@ -900,7 +968,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                                 width: 80,
                                 height: 16,
                                 decoration: BoxDecoration(
-                                  color: Colors.white.withValues(alpha: 0.03),
+                                  color: const Color(0xFFE2E8F0).withValues(alpha: 0.5),
                                   borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
@@ -935,7 +1003,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
           key: _languagesKey,
           width: double.infinity,
           decoration: const BoxDecoration(
-            color: Color(0xFF080808),
+            color: Color(0xFFF8FAFC),
           ),
           padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
           child: Column(
@@ -955,7 +1023,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                   borderRadius: BorderRadius.circular(40),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xFF6A4CBC).withValues(alpha: 0.25),
+                      color: const Color(0xFF6A4CBC).withValues(alpha: 0.2),
                       blurRadius: 20,
                       offset: const Offset(0, 10),
                     ),
@@ -972,11 +1040,12 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                 ),
               ),
               const SizedBox(height: 16),
-              Text(
+              const Text(
                 'Explore our growing collection of comprehensive language courses.',
+                textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,
-                  color: Colors.grey.shade400,
+                  color: Color(0xFF475569),
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -1121,10 +1190,49 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
   }
 
   Widget _buildFeaturesSection() {
+    const features = [
+      (
+        icon: Icons.sports_esports_rounded,
+        accent: _kCoral,
+        title: 'Unique Liar Game Challenge',
+        description: 'Test your learning with our signature game-based assessment',
+      ),
+      (
+        icon: Icons.public_rounded,
+        accent: _kTeal,
+        title: '11 Languages',
+        description: 'English, French, Spanish, Korean, Japanese, German, Sanskrit, Hindi, Portuguese, Chinese & Italian',
+      ),
+      (
+        icon: Icons.menu_book_rounded,
+        accent: _kPurple,
+        title: 'Structured A1 to B1 Courses',
+        description: 'Progressive learning from beginner to intermediate',
+      ),
+      (
+        icon: Icons.forum_rounded,
+        accent: _kTeal,
+        title: '33,000 Vocabulary Words',
+        description: '3,000 words per language for comprehensive mastery',
+      ),
+      (
+        icon: Icons.auto_awesome_rounded,
+        accent: _kPurple,
+        title: 'Japanese Kanji Mastery',
+        description: 'Premium Edition: Complete Jōyō Kanji curriculum with mnemonics, stroke counts, and integrated mastery tracking.',
+      ),
+      (
+        icon: Icons.devices_rounded,
+        accent: _kCoral,
+        title: 'Web & Mobile',
+        description: 'Seamless experience across all your devices',
+      ),
+    ];
+
     return Container(
       width: double.infinity,
       decoration: const BoxDecoration(
-        color: Color(0xFF080808),
+        color: Color(0xFFF8FAFC),
       ),
       padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
       child: Center(
@@ -1137,53 +1245,70 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                 startOffset: 300,
                 endOffset: 900,
               ),
+              const SizedBox(height: 12),
+              const Text(
+                'Crafted for real retention, cultural depth, and effortless daily practice.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Color(0xFF475569),
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
               const SizedBox(height: 48),
               LayoutBuilder(
                 builder: (context, constraints) {
-                  final isDesktop = constraints.maxWidth > 900;
-                  return Wrap(
-                    spacing: 24,
-                    runSpacing: 24,
-                    alignment: WrapAlignment.center,
-                    children: [
-                      _buildFeatureCard(
-                        icon: '🎮',
-                        title: 'Unique Liar Game Challenge',
-                        description: 'Test your learning with our signature game-based assessment',
-                        isDesktop: isDesktop,
+                  final width = constraints.maxWidth;
+                  final crossAxisCount = width > 960 ? 3 : (width > 640 ? 2 : 1);
+
+                  if (crossAxisCount == 1) {
+                    return Column(
+                      children: features
+                          .map(
+                            (f) => Padding(
+                              padding: const EdgeInsets.only(bottom: 20),
+                              child: _buildFeatureCard(
+                                icon: f.icon,
+                                accentColor: f.accent,
+                                title: f.title,
+                                description: f.description,
+                              ),
+                            ),
+                          )
+                          .toList(),
+                    );
+                  }
+
+                  final List<Widget> rows = [];
+                  for (var i = 0; i < features.length; i += crossAxisCount) {
+                    final rowItems = features.skip(i).take(crossAxisCount).toList();
+                    rows.add(
+                      Padding(
+                        padding: EdgeInsets.only(
+                          bottom: i + crossAxisCount < features.length ? 24 : 0,
+                        ),
+                        child: IntrinsicHeight(
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              for (var j = 0; j < rowItems.length; j++) ...[
+                                if (j > 0) const SizedBox(width: 24),
+                                Expanded(
+                                  child: _buildFeatureCard(
+                                    icon: rowItems[j].icon,
+                                    accentColor: rowItems[j].accent,
+                                    title: rowItems[j].title,
+                                    description: rowItems[j].description,
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
+                        ),
                       ),
-                      _buildFeatureCard(
-                        icon: '🌍',
-                        title: '11 Languages',
-                        description: 'English, French, Spanish, Korean, Japanese, German, Sanskrit, Hindi, Portuguese, Chinese & Italian',
-                        isDesktop: isDesktop,
-                      ),
-                      _buildFeatureCard(
-                        icon: '📚',
-                        title: 'Structured A1 to B1 Courses',
-                        description: 'Progressive learning from beginner to intermediate',
-                        isDesktop: isDesktop,
-                      ),
-                      _buildFeatureCard(
-                        icon: '💬',
-                        title: '33,000 Vocabulary Words',
-                        description: '3,000 words per language for comprehensive mastery',
-                        isDesktop: isDesktop,
-                      ),
-                      _buildFeatureCard(
-                        icon: '💎',
-                        title: 'Japanese Kanji Mastery',
-                        description: 'Premium Edition: Complete Jōyō Kanji curriculum with mnemonics, stroke counts, and integrated mastery tracking.',
-                        isDesktop: isDesktop,
-                      ),
-                      _buildFeatureCard(
-                        icon: '📱',
-                        title: 'Web & Mobile',
-                        description: 'Seamless experience across all your devices',
-                        isDesktop: isDesktop,
-                      ),
-                    ],
-                  );
+                    );
+                  }
+                  return Column(children: rows);
                 },
               ),
             ],
@@ -1194,52 +1319,64 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
   }
 
   Widget _buildFeatureCard({
-    required String icon,
+    required IconData icon,
+    required Color accentColor,
     required String title,
     required String description,
-    required bool isDesktop,
   }) {
     return Container(
-      width: isDesktop ? 350 : double.infinity,
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.all(28),
       decoration: BoxDecoration(
-        color: const Color(0xFF151515),
-        borderRadius: BorderRadius.circular(16),
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.08),
-            blurRadius: 20,
-            offset: const Offset(0, 4),
+            color: const Color(0xFF0F172A).withValues(alpha: 0.04),
+            blurRadius: 18,
+            offset: const Offset(0, 6),
           ),
         ],
         border: Border.all(
-          color: Colors.white.withOpacity(0.1),
+          color: const Color(0xFFE2E8F0),
           width: 1,
         ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            icon,
-            style: const TextStyle(fontSize: 40),
+          Container(
+            width: 52,
+            height: 52,
+            decoration: BoxDecoration(
+              color: accentColor.withValues(alpha: 0.12),
+              shape: BoxShape.circle,
+              border: Border.all(
+                color: accentColor.withValues(alpha: 0.22),
+                width: 1,
+              ),
+            ),
+            child: Icon(
+              icon,
+              color: accentColor,
+              size: 26,
+            ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 20),
           Text(
             title,
             style: const TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.bold,
-              color: Colors.white,
+              color: Color(0xFF0F172A),
             ),
           ),
           const SizedBox(height: 8),
           Text(
             description,
-            style: TextStyle(
-              fontSize: 14,
-              color: Colors.grey.shade400,
-              height: 1.5,
+            style: const TextStyle(
+              fontSize: 14.5,
+              color: Color(0xFF475569),
+              height: 1.55,
             ),
           ),
         ],
@@ -1252,13 +1389,13 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 24),
       decoration: const BoxDecoration(
-        color: Color(0xFF080808),
+        color: Color(0xFFF8FAFC),
       ),
       child: Center(
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 900),
           child: Container(
-            padding: const EdgeInsets.all(32),
+            padding: const EdgeInsets.all(36),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 begin: Alignment.topLeft,
@@ -1271,21 +1408,44 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
               borderRadius: BorderRadius.circular(24),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF6A4CBC).withOpacity(0.3),
+                  color: const Color(0xFF6A4CBC).withValues(alpha: 0.22),
                   blurRadius: 30,
-                  offset: const Offset(0, 10),
+                  offset: const Offset(0, 12),
                 ),
               ],
             ),
             child: Column(
               children: [
-                _buildDynamicGradientText('🎯 The Liar Game', startOffset: 1200, endOffset: 1800, fontSize: 32),
-                const SizedBox(height: 24),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.15),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(
+                        Icons.sports_esports_rounded,
+                        color: Colors.white,
+                        size: 28,
+                      ),
+                    ),
+                    const SizedBox(width: 14),
+                    _buildDynamicGradientText(
+                      'The Liar Game',
+                      startOffset: 1200,
+                      endOffset: 1800,
+                      fontSize: 32,
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 20),
                 Text(
                   'Our innovative learning verification system. Instead of passive multiple choice, you actively hunt for the "liar" - the one incorrect translation hidden among correct ones. This neurological approach strengthens pattern recognition and genuine language understanding.',
                   style: TextStyle(
                     fontSize: 16,
-                    color: Colors.white.withOpacity(0.95),
+                    color: Colors.white.withValues(alpha: 0.95),
                     height: 1.6,
                   ),
                   textAlign: TextAlign.center,
@@ -1303,7 +1463,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
       decoration: const BoxDecoration(
-        color: Colors.white,
+        color: Color(0xFFF8FAFC),
       ),
       child: Center(
         child: ConstrainedBox(
@@ -1376,13 +1536,13 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 80, horizontal: 24),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Colors.white,
-            const Color(0xFFE1F5FE).withOpacity(0.3),
+            Color(0xFFF8FAFC),
+            Color(0xFFEEF2FF),
           ],
         ),
       ),
@@ -1885,7 +2045,7 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
           
           const SizedBox(height: 20),
           
-          // Share buttons
+          // Compact centered row of share buttons
           Wrap(
             spacing: 12,
             runSpacing: 12,
@@ -1910,39 +2070,21 @@ class _HomePageState extends ConsumerState<HomePage> with TickerProviderStateMix
                   ),
                 ),
               ),
+              _buildModernShareButton(
+                icon: Icons.share_rounded,
+                label: 'More Options',
+                color: _kPurple,
+                onTap: () async {
+                  try {
+                    await Share.share(shareText, subject: shareSubject);
+                  } catch (_) {
+                    launchUrl(
+                      Uri.parse('mailto:?subject=${Uri.encodeComponent(shareSubject)}&body=${Uri.encodeComponent(shareText)}'),
+                    );
+                  }
+                },
+              ),
             ],
-          ),
-          
-          const SizedBox(height: 16),
-          
-          // System share button
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton.icon(
-              onPressed: () async {
-                try {
-                  await Share.share(shareText, subject: shareSubject);
-                } catch (_) {
-                  launchUrl(
-                    Uri.parse('mailto:?subject=${Uri.encodeComponent(shareSubject)}&body=${Uri.encodeComponent(shareText)}'),
-                  );
-                }
-              },
-              icon: const Icon(Icons.share_rounded, size: 18),
-              label: const Text(
-                'Share with More Options',
-                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
-              ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: _kPurple,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                elevation: 0,
-              ),
-            ),
           ),
         ],
       ),
@@ -2477,7 +2619,7 @@ class _LanguageMatrix extends StatelessWidget {
     if (isDesktop) {
       return RepaintBoundary(
         child: SizedBox(
-          height: 460,
+          height: 360,
           child: Stack(
             children: languages.map((config) {
               return Align(
