@@ -3,12 +3,41 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     
-    // Helper function to check if user is authenticated
+    // =========================================================================
+    // AI TUTOR LIMITS (duplicated from AppConfig, keep in sync)
+    // =========================================================================
+    function getAiLimitFree() { return 5; }
+    function getAiLimitStandard() { return 50; }
+    function getAiLimitPremium() { return 200; }
+
+    function getTierLimit(tier) {
+      return tier == 'premium' ? getAiLimitPremium() :
+             tier == 'standard' ? getAiLimitStandard() :
+             getAiLimitFree();
+    }
+
+    // Resolves effective tier from users/{userId} doc
+    // Fallback for legacy subscribers: if isPro == true and tier missing/free -> 'standard'
+    function getUserTier(userId) {
+      let userDoc = get(/databases/$(database)/documents/users/$(userId)).data;
+      let rawTier = ('subscriptionTier' in userDoc) ? userDoc.subscriptionTier : null;
+      let isPro = ('isPro' in userDoc && userDoc.isPro == true);
+      return rawTier == 'premium' ? 'premium' :
+             rawTier == 'standard' ? 'standard' :
+             isPro ? 'standard' : 'free';
+    }
+
+    function getUserAiCap(userId) {
+      return getTierLimit(getUserTier(userId));
+    }
+
+    // =========================================================================
+    // AUTH HELPERS
+    // =========================================================================
     function isAuthenticated() {
       return request.auth != null;
     }
     
-    // Helper function to check if user is admin
     function isAdmin() {
       return isAuthenticated() && 
              request.auth.token.admin == true;
@@ -20,36 +49,21 @@ service cloud.firestore {
     
     // Languages collection - PUBLIC READ (temporary for development)
     match /languages/{languageId} {
-      // TEMPORARY: Allow public read for development
       allow read: if true;
-      
-      // Only admins can write (create, update, delete)
       allow write: if isAdmin();
       
-      // Levels sub-collection
       match /levels/{levelId} {
-        // TEMPORARY: Allow public read for development
         allow read: if true;
-        
-        // Only admins can write
         allow write: if isAdmin();
         
-        // Modules sub-collection
         match /modules/{moduleId} {
-          // TEMPORARY: Allow public read for development
           allow read: if true;
-          
-          // Only admins can write
           allow write: if isAdmin();
         }
       }
       
-      // Kanji sub-collection (for Japanese language)
       match /kanji/{kanjiId} {
-        // TEMPORARY: Allow public read for development
         allow read: if true;
-        
-        // Only admins can write
         allow write: if isAdmin();
       }
     }
@@ -59,7 +73,6 @@ service cloud.firestore {
     // ============================================
     
     match /metadata/{document=**} {
-      // Only admins can read/write metadata
       allow read, write: if isAdmin();
     }
     
@@ -68,53 +81,73 @@ service cloud.firestore {
     // ============================================
     
     match /mastery_modules/{moduleId} {
-      // TEMPORARY: Allow public read for development
       allow read: if true;
-      
-      // Only admins can write
       allow write: if isAdmin();
       
-      // Lessons sub-collection
       match /lessons/{lessonId} {
-        // TEMPORARY: Allow public read for development
         allow read: if true;
-        
-        // Only admins can write
         allow write: if isAdmin();
       }
     }
     
     // ============================================
-    // USER PROGRESS - Users can read/write their own data
+    // PADDLE EVENTS - Webhook idempotency (Admin SDK only)
+    // ============================================
+    
+    match /paddle_events/{eventId} {
+      allow read, write: if false;
+    }
+
+    // ============================================
+    // USER DATA & PROGRESS - Users can read/write their own data
+    // Protected fields: isPro, subscriptionTier, hasKanjiLiar, subscriptionId, subscriptionStatus
+    // can ONLY be set by Cloud Functions (Admin SDK), never directly by clients.
     // ============================================
     
     match /users/{userId} {
-      // Users can read their own data
+      // Users can only read their own profile
       allow read: if isAuthenticated() && request.auth.uid == userId;
       
-      // Users can write their own data
-      allow write: if isAuthenticated() && request.auth.uid == userId;
+      // When creating their own doc, users cannot grant themselves pro / paid tiers
+      allow create: if isAuthenticated() && request.auth.uid == userId &&
+        (!('isPro' in request.resource.data) || request.resource.data.isPro == false) &&
+        (!('subscriptionTier' in request.resource.data) || request.resource.data.subscriptionTier == 'free') &&
+        (!('hasKanjiLiar' in request.resource.data) || request.resource.data.hasKanjiLiar == false) &&
+        (!('subscriptionId' in request.resource.data) || request.resource.data.subscriptionId == null) &&
+        (!('subscriptionStatus' in request.resource.data) || request.resource.data.subscriptionStatus == null);
+      
+      // When updating, users cannot modify protected billing & tier fields
+      allow update: if isAuthenticated() && request.auth.uid == userId &&
+        !request.resource.data.diff(resource.data).affectedKeys()
+          .hasAny(['isPro', 'subscriptionTier', 'hasKanjiLiar', 'subscriptionId', 'subscriptionStatus']);
+
+      // Allow users to delete their own account/profile document
+      allow delete: if isAuthenticated() && request.auth.uid == userId;
       
       // User progress sub-collections
       match /progress/{document=**} {
-        allow read: if isAuthenticated() && request.auth.uid == userId;
-        allow write: if isAuthenticated() && request.auth.uid == userId;
+        allow read, write: if isAuthenticated() && request.auth.uid == userId;
       }
       
       // AI usage tracking
+      // Cap enforced server-side via getUserAiCap(userId); dailyLimit field is not trusted.
+      // requestCount may only grow by 1 per write.
       match /ai_usage/{date} {
-        // Users can read their own usage
         allow read: if isAuthenticated() && request.auth.uid == userId;
         
-        // Users can write their own usage (for incrementing counter)
-        allow write: if isAuthenticated() && 
-                        request.auth.uid == userId &&
-                        request.resource.data.requestCount <= 50; // Enforce limit
+        allow create: if isAuthenticated() && request.auth.uid == userId &&
+          request.resource.data.requestCount is int &&
+          request.resource.data.requestCount == 1 &&
+          request.resource.data.requestCount <= getUserAiCap(userId);
+
+        allow update: if isAuthenticated() && request.auth.uid == userId &&
+          request.resource.data.requestCount is int &&
+          request.resource.data.requestCount == resource.data.requestCount + 1 &&
+          request.resource.data.requestCount <= getUserAiCap(userId);
       }
       
       match /achievements/{document=**} {
-        allow read: if isAuthenticated() && request.auth.uid == userId;
-        allow write: if isAuthenticated() && request.auth.uid == userId;
+        allow read, write: if isAuthenticated() && request.auth.uid == userId;
       }
     }
     
@@ -122,7 +155,6 @@ service cloud.firestore {
     // DENY ALL OTHER ACCESS
     // ============================================
     
-    // Explicitly deny access to any other collections
     match /{document=**} {
       allow read, write: if false;
     }
