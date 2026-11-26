@@ -3,6 +3,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "test": "tsc && mocha lib/test/paddle_webhook.test.js",
+    "test:rules": "tsc && mocha lib/test/firestore_rules.test.js",
     "build:watch": "tsc --watch",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
@@ -21,6 +23,12 @@
     "jwks-rsa": "^3.2.2"
   },
   "devDependencies": {
+    "@firebase/rules-unit-testing": "^5.0.2",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "chai": "^6.3.0",
+    "mocha": "^11.8.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.0.0"
   },
   "private": true

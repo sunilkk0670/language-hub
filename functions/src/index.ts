@@ -1,19 +1,51 @@
 import * as functions from "firebase-functions/v2";
-import { initializeApp } from "firebase-admin/app";
+import { initializeApp, getApps } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 import { Environment, LogLevel, Paddle } from "@paddle/paddle-node-sdk";
 
 // Initialize Firebase Admin
-initializeApp();
+if (!getApps().length) {
+  initializeApp();
+}
 const db = getFirestore();
 
 // Retrieve environment secrets
 const PADDLE_API_KEY = () => process.env.PADDLE_API_KEY || "";
 const PADDLE_WEBHOOK_SECRET = () => process.env.PADDLE_WEBHOOK_SECRET || "";
 
-// Lazily initialize Paddle SDK to avoid timeouts during deployment introspection
+// Paddle Price IDs for tier and add-on mapping
+export const PADDLE_PRICES = {
+  STANDARD_ANNUAL: "pri_01m0735ydpvg1awa1g4p8ecvw1",
+  STANDARD_MONTHLY: "pri_01m072z30dswgwqkbf54q92bb3",
+  PREMIUM_ANNUAL: "pri_01m073eqm3p2dteyfx16ptsc82",
+  PREMIUM_MONTHLY: "pri_01m073bwfc4y5sm6m52x25jwhh",
+  KANJI_LIAR: "pri_01m073vc2nfejgqxzsmsctktx3j",
+};
+
+const KNOWN_PRICE_IDS = new Set(Object.values(PADDLE_PRICES));
+
+export function extractPriceIds(eventData: any): string[] {
+  const ids: string[] = [];
+  if (Array.isArray(eventData.items)) {
+    for (const item of eventData.items) {
+      if (item.price?.id) ids.push(item.price.id);
+      else if (item.priceId) ids.push(item.priceId);
+      else if (item.price_id) ids.push(item.price_id);
+    }
+  }
+  if (Array.isArray(eventData.details?.lineItems)) {
+    for (const item of eventData.details.lineItems) {
+      if (item.price?.id) ids.push(item.price.id);
+      else if (item.priceId) ids.push(item.priceId);
+      else if (item.price_id) ids.push(item.price_id);
+    }
+  }
+  return ids;
+}
+
+// Lazily initialize Paddle SDK
 let _paddle: Paddle | null = null;
-function getPaddle(): Paddle {
+export function getPaddle(): Paddle {
   if (!_paddle) {
     const apiKey = PADDLE_API_KEY();
     const isSandbox = apiKey.includes("sdbx");
@@ -26,91 +58,335 @@ function getPaddle(): Paddle {
 }
 
 /**
+ * Core event processing logic isolated for unit testability and idempotency.
+ */
+export async function handlePaddleWebhookEvent(
+  event: any,
+  firestoreDb: FirebaseFirestore.Firestore = db
+): Promise<{ status: string; message: string }> {
+  const eventId = event.eventId;
+  const eventType = event.eventType;
+
+  if (!eventId) {
+    throw new Error("Missing eventId in event payload");
+  }
+
+  // 1. Idempotency Check: check if event was already processed
+  const eventRef = firestoreDb.collection("paddle_events").doc(eventId);
+  const eventDoc = await eventRef.get();
+  if (eventDoc.exists) {
+    console.log(`Event ${eventId} (${eventType}) was already processed. Skipping duplicate.`);
+    return { status: "duplicate", message: "Event already processed" };
+  }
+
+  // 2. Extract event data and customData
+  const eventData = event.data || {};
+  const customData = eventData.customData || eventData.custom_data || {};
+  const userId = customData.userId || customData.user_id;
+
+  if (!userId) {
+    console.log(`No userId found in customData for event ${eventId}. Recording event and skipping user update.`);
+    await eventRef.set({
+      eventId,
+      eventType,
+      processedAt: new Date().toISOString(),
+      skipped: true,
+      reason: "No userId found",
+    });
+    return { status: "skipped", message: "No userId found" };
+  }
+
+  const userRef = firestoreDb.collection("users").doc(userId);
+
+  // 3. Process events
+  switch (eventType) {
+    case "transaction.completed":
+    case "subscription.created":
+    case "subscription.updated": {
+      const priceIds = extractPriceIds(eventData);
+      console.log(`Event ${eventType} for user ${userId} with price IDs:`, priceIds);
+
+      // Validate unknown price IDs
+      const unknownIds = priceIds.filter((id) => !KNOWN_PRICE_IDS.has(id));
+      if (unknownIds.length > 0) {
+        console.error(`Unknown price ID(s) received for user ${userId}:`, unknownIds);
+      }
+
+      // Check for standalone Kanji Liar add-on purchase
+      const boughtKanjiLiar = priceIds.includes(PADDLE_PRICES.KANJI_LIAR);
+
+      // Determine subscription tier from recognized price IDs
+      let subscriptionTier: "standard" | "premium" | null = null;
+      if (
+        priceIds.includes(PADDLE_PRICES.PREMIUM_ANNUAL) ||
+        priceIds.includes(PADDLE_PRICES.PREMIUM_MONTHLY)
+      ) {
+        subscriptionTier = "premium";
+      } else if (
+        priceIds.includes(PADDLE_PRICES.STANDARD_ANNUAL) ||
+        priceIds.includes(PADDLE_PRICES.STANDARD_MONTHLY)
+      ) {
+        subscriptionTier = "standard";
+      }
+
+      // If price IDs were provided but NONE matched known IDs and no sub event, grant nothing!
+      if (priceIds.length > 0 && !boughtKanjiLiar && subscriptionTier === null && !eventType.startsWith("subscription")) {
+        console.error(`Transaction contains only unknown price IDs (${priceIds.join(", ")}). Granting nothing.`);
+        await eventRef.set({
+          eventId,
+          eventType,
+          userId,
+          processedAt: new Date().toISOString(),
+          error: "Unknown price IDs only",
+        });
+        return { status: "ignored", message: "Unknown price IDs" };
+      }
+
+      // Determine billing period end / plan expiration
+      const billingPeriodEndsAt =
+        eventData.currentBillingPeriod?.endsAt ||
+        eventData.current_billing_period?.ends_at ||
+        null;
+      const scheduledChange = eventData.scheduledChange || eventData.scheduled_change;
+      const scheduledCancelAt =
+        scheduledChange && scheduledChange.action === "cancel"
+          ? scheduledChange.effectiveAt || scheduledChange.effective_at
+          : null;
+
+      const planExpiresAt = scheduledCancelAt || billingPeriodEndsAt || null;
+
+      const subscriptionId =
+        eventData.subscriptionId ||
+        eventData.subscription_id ||
+        (eventType.startsWith("subscription") ? eventData.id : null);
+      const rawStatus = eventData.status || "active";
+
+      // Build updates map
+      const updates: Record<string, any> = {};
+
+      if (boughtKanjiLiar) {
+        updates.hasKanjiLiar = true;
+        console.log(`Granting hasKanjiLiar=true to user ${userId}`);
+      }
+
+      if (subscriptionTier !== null || eventType.startsWith("subscription")) {
+        // Scheduled cancellation handling: status remains active until scheduled cancel date
+        if (scheduledCancelAt) {
+          updates.isPro = true;
+          updates.subscriptionStatus = "scheduled_cancel";
+          if (subscriptionTier) updates.subscriptionTier = subscriptionTier;
+          updates.planExpiresAt = planExpiresAt;
+        } else if (rawStatus === "paused") {
+          updates.isPro = false;
+          updates.subscriptionTier = "free";
+          updates.subscriptionStatus = "paused";
+        } else if (rawStatus === "canceled") {
+          // Check if current period has ended
+          const isExpired = billingPeriodEndsAt ? new Date(billingPeriodEndsAt) <= new Date() : true;
+          if (isExpired) {
+            updates.isPro = false;
+            updates.subscriptionTier = "free";
+            updates.subscriptionStatus = "canceled";
+          } else {
+            updates.isPro = true;
+            updates.subscriptionStatus = "canceled";
+            updates.planExpiresAt = billingPeriodEndsAt;
+          }
+        } else {
+          // active, trialing, completed, past_due
+          const isPro = rawStatus === "active" || rawStatus === "trialing" || rawStatus === "completed" || rawStatus === "past_due";
+          updates.isPro = isPro;
+          updates.subscriptionStatus = rawStatus;
+          if (subscriptionTier) {
+            updates.subscriptionTier = subscriptionTier;
+          }
+          if (planExpiresAt) {
+            updates.planExpiresAt = planExpiresAt;
+          }
+        }
+
+        if (subscriptionId) {
+          updates.subscriptionId = subscriptionId;
+        }
+      }
+
+      if (Object.keys(updates).length > 0) {
+        await userRef.set(updates, { merge: true });
+        console.log(`Updated user ${userId} with:`, updates);
+      }
+      break;
+    }
+
+    case "subscription.past_due": {
+      // Payment failure retry in progress; keep access during grace period
+      await userRef.set({
+        subscriptionStatus: "past_due",
+      }, { merge: true });
+      console.log(`Marked subscription past_due for user ${userId}`);
+      break;
+    }
+
+    case "subscription.paused": {
+      // Paused: revoke access
+      await userRef.set({
+        isPro: false,
+        subscriptionTier: "free",
+        subscriptionStatus: "paused",
+      }, { merge: true });
+      console.log(`Paused subscription for user ${userId}`);
+      break;
+    }
+
+    case "subscription.resumed": {
+      // Resumed: re-activate access
+      const priceIds = extractPriceIds(eventData);
+      let tier: "standard" | "premium" = "standard";
+      if (
+        priceIds.includes(PADDLE_PRICES.PREMIUM_ANNUAL) ||
+        priceIds.includes(PADDLE_PRICES.PREMIUM_MONTHLY)
+      ) {
+        tier = "premium";
+      }
+      const endsAt =
+        eventData.currentBillingPeriod?.endsAt ||
+        eventData.current_billing_period?.ends_at ||
+        null;
+
+      await userRef.set({
+        isPro: true,
+        subscriptionTier: tier,
+        subscriptionStatus: "active",
+        planExpiresAt: endsAt,
+      }, { merge: true });
+      console.log(`Resumed subscription for user ${userId} (Tier=${tier})`);
+      break;
+    }
+
+    case "subscription.canceled": {
+      // In Paddle, check if ends_at is in the future
+      const billingPeriodEndsAt =
+        eventData.currentBillingPeriod?.endsAt ||
+        eventData.current_billing_period?.ends_at ||
+        null;
+      const isStillInPeriod = billingPeriodEndsAt && new Date(billingPeriodEndsAt) > new Date();
+
+      if (isStillInPeriod) {
+        // Customer paid through billing period end; retain access until planExpiresAt
+        await userRef.set({
+          isPro: true,
+          subscriptionStatus: "canceled",
+          planExpiresAt: billingPeriodEndsAt,
+        }, { merge: true });
+        console.log(`Subscription canceled for user ${userId}, access valid until ${billingPeriodEndsAt}`);
+      } else {
+        // Immediate cancellation / already expired
+        await userRef.set({
+          isPro: false,
+          subscriptionTier: "free",
+          subscriptionStatus: "canceled",
+          planExpiresAt: null,
+        }, { merge: true });
+        console.log(`Canceled subscription for user ${userId} (Access immediately revoked)`);
+      }
+      break;
+    }
+
+    case "adjustment.created":
+    case "adjustment.updated": {
+      // Refund or Chargeback handling
+      const action = eventData.action; // 'refund' | 'chargeback'
+      if (action === "refund" || action === "chargeback") {
+        console.log(`Processing ${action} adjustment for user ${userId}`);
+        const priceIds = extractPriceIds(eventData);
+        const updates: Record<string, any> = {};
+
+        if (priceIds.includes(PADDLE_PRICES.KANJI_LIAR)) {
+          updates.hasKanjiLiar = false;
+          console.log(`Revoking Kanji Liar add-on for refunded user ${userId}`);
+        }
+
+        const isSubRefund =
+          eventData.subscriptionId ||
+          priceIds.some((id) =>
+            [
+              PADDLE_PRICES.STANDARD_ANNUAL,
+              PADDLE_PRICES.STANDARD_MONTHLY,
+              PADDLE_PRICES.PREMIUM_ANNUAL,
+              PADDLE_PRICES.PREMIUM_MONTHLY,
+            ].includes(id)
+          );
+
+        if (isSubRefund || (!priceIds.includes(PADDLE_PRICES.KANJI_LIAR) && priceIds.length === 0)) {
+          updates.isPro = false;
+          updates.subscriptionTier = "free";
+          updates.subscriptionStatus = "refunded";
+          updates.planExpiresAt = null;
+          console.log(`Revoking subscription for refunded user ${userId}`);
+        }
+
+        if (Object.keys(updates).length > 0) {
+          await userRef.set(updates, { merge: true });
+        }
+      }
+      break;
+    }
+
+    default:
+      console.log(`Unhandled event type: ${eventType}`);
+  }
+
+  // 4. Mark event as processed for idempotency
+  await eventRef.set({
+    eventId,
+    eventType,
+    userId,
+    processedAt: new Date().toISOString(),
+  });
+
+  return { status: "processed", message: `Event ${eventId} handled successfully` };
+}
+
+/**
  * HTTP Cloud Function to handle Paddle Webhooks
- * We use the v2 API which allows us to access the raw request body.
  */
 export const paddleWebhook = functions.https.onRequest(
   { secrets: ["PADDLE_API_KEY", "PADDLE_WEBHOOK_SECRET"] },
   async (req, res) => {
-  // 1. Verify the request is a POST request
-  if (req.method !== "POST") {
-    res.status(405).send("Method Not Allowed");
-    return;
-  }
-
-  // 2. Get the signature from headers
-  const signature = req.headers["paddle-signature"];
-  if (typeof signature !== "string") {
-    res.status(400).send("Missing Paddle Signature");
-    return;
-  }
-
-  try {
-    // 3. Unmarshal and verify the webhook signature using the RAW body
-    const rawBody = (req as any).rawBody.toString();
-    const event = getPaddle().webhooks.unmarshal(rawBody, PADDLE_WEBHOOK_SECRET(), signature);
-
-    if (!event) {
-      res.status(400).send("Failed to unmarshal event");
+    // 1. Verify POST
+    if (req.method !== "POST") {
+      res.status(405).send("Method Not Allowed");
       return;
     }
 
-    console.log(`Received Paddle event: ${event.eventType} (ID: ${event.eventId})`);
-
-    // 4. Extract data and customData
-    const eventData = event.data as any;
-    const customData = eventData.customData || eventData.custom_data || {};
-    const userId = customData.userId || customData.user_id;
-
-    if (!userId) {
-      console.log(`No userId found in customData/custom_data for event ${event.eventId}. Skipping user update.`);
-      res.status(200).send("OK (No userId)");
+    // 2. Verify signature header
+    const signature = req.headers["paddle-signature"];
+    if (typeof signature !== "string") {
+      res.status(400).send("Missing Paddle Signature");
       return;
     }
 
-    // 5. Handle relevant events idempotently
-    switch (event.eventType) {
-      case "transaction.completed":
-      case "subscription.created":
-      case "subscription.updated": {
-        // We look for a subscription ID. A transaction might result in a subscription.
-        const subscriptionId = eventData.subscriptionId || (event.eventType.startsWith("subscription") ? eventData.id : null);
-        const status = eventData.status || "completed";
-        
-        // Active or trailing statuses usually mean they are pro.
-        const isPro = status === "active" || status === "trialing" || status === "completed" || status === "past_due";
-        
-        await db.collection("users").doc(userId).set({
-          isPro: isPro,
-          subscriptionId: subscriptionId || null,
-          subscriptionStatus: status,
-        }, { merge: true });
-        
-        console.log(`Updated user ${userId} to Pro=${isPro}, SubId=${subscriptionId}`);
-        break;
-      }
-      
-      case "subscription.canceled": {
-        await db.collection("users").doc(userId).set({
-          isPro: false,
-          subscriptionStatus: "canceled",
-        }, { merge: true });
-        
-        console.log(`Canceled subscription for user ${userId}`);
-        break;
+    try {
+      // 3. Verify signature on RAW body before parsing
+      const rawBody = (req as any).rawBody.toString();
+      const event = getPaddle().webhooks.unmarshal(rawBody, PADDLE_WEBHOOK_SECRET(), signature);
+
+      if (!event) {
+        res.status(400).send("Failed to unmarshal event");
+        return;
       }
 
-      default:
-        console.log(`Unhandled event type: ${event.eventType}`);
+      console.log(`Received valid Paddle event: ${event.eventType} (ID: ${event.eventId})`);
+
+      // 4. Delegate to business logic handler
+      await handlePaddleWebhookEvent(event);
+
+      res.status(200).send("OK");
+    } catch (error) {
+      console.error("Webhook signature verification or processing failed:", error);
+      res.status(400).send("Webhook verification failed");
     }
-
-    // Always return 200 OK to acknowledge receipt
-    res.status(200).send("OK");
-  } catch (error) {
-    console.error("Webhook verification failed:", error);
-    res.status(400).send("Webhook verification failed");
   }
-});
+);
 
 /**
  * Callable Function to create a Customer Portal Session
@@ -118,44 +394,36 @@ export const paddleWebhook = functions.https.onRequest(
 export const createCustomerPortalSession = functions.https.onCall(
   { secrets: ["PADDLE_API_KEY"] },
   async (request) => {
-  // 1. Check if user is authenticated
-  if (!request.auth || !request.auth.uid) {
-    throw new functions.https.HttpsError("unauthenticated", "User must be logged in to access the portal.");
+    if (!request.auth || !request.auth.uid) {
+      throw new functions.https.HttpsError("unauthenticated", "User must be logged in to access the portal.");
+    }
+
+    const userId = request.auth.uid;
+
+    try {
+      const userDoc = await db.collection("users").doc(userId).get();
+      if (!userDoc.exists) {
+        throw new functions.https.HttpsError("not-found", "User document not found.");
+      }
+
+      const userData = userDoc.data() || {};
+      const subscriptionId = userData.subscriptionId;
+
+      if (!subscriptionId) {
+        throw new functions.https.HttpsError("failed-precondition", "No active subscription found for this user.");
+      }
+
+      const subscription = await getPaddle().subscriptions.get(subscriptionId);
+
+      return {
+        url: subscription.managementUrls?.updatePaymentMethod || subscription.managementUrls?.cancel || "",
+      };
+    } catch (error) {
+      console.error("Error creating portal session:", error);
+      throw new functions.https.HttpsError("internal", "Failed to create portal session.");
+    }
   }
-
-  const userId = request.auth.uid;
-
-  try {
-    // 2. Fetch the user's subscription or customer details from Firestore
-    const userDoc = await db.collection("users").doc(userId).get();
-    if (!userDoc.exists) {
-      throw new functions.https.HttpsError("not-found", "User document not found.");
-    }
-
-    const userData = userDoc.data() || {};
-    const subscriptionId = userData.subscriptionId;
-    const customerId = userData.customerId; // Optional: If we save customerId during checkout
-
-    if (!subscriptionId && !customerId) {
-      throw new functions.https.HttpsError("failed-precondition", "No active subscription found for this user.");
-    }
-
-    // 3. Fetch the subscription to get management URLs
-    if (!subscriptionId) {
-       throw new functions.https.HttpsError("failed-precondition", "No active subscription found for this user.");
-    }
-
-    const subscription = await getPaddle().subscriptions.get(subscriptionId);
-
-    // 4. Return the management URL to the client
-    return {
-      url: subscription.managementUrls?.updatePaymentMethod || subscription.managementUrls?.cancel || "", 
-    };
-  } catch (error) {
-    console.error("Error creating portal session:", error);
-    throw new functions.https.HttpsError("internal", "Failed to create portal session.");
-  }
-});
+);
 
 import * as functionsV1 from "firebase-functions/v1";
 
