@@ -1,4 +1,5 @@
-/// Represents a subscription tier for ChirpPolly.
+/// Represents a subscription tier for ChirPolly.
+/// Prices, AI limits, and feature lists live in AppConfig — not here.
 class SubscriptionPlan {
   final String id;
   final String name;
@@ -10,12 +11,6 @@ class SubscriptionPlan {
 
   /// Localized monthly pricing. Keys: 'USD', 'EUR', 'INR'. 0 = Free.
   final Map<String, double> monthlyPricing;
-
-  /// AI Tutor messages per day. null = unlimited (subject to hard cap).
-  final int? aiTutorDailyLimit;
-
-  /// Technical hard cap for bot-abuse protection. Only applies to Premium.
-  final int? aiTutorHardCap;
 
   final List<String> features;
   final String curriculumLevel; // 'A1', 'A2', 'B1'
@@ -32,8 +27,6 @@ class SubscriptionPlan {
     required this.description,
     required this.annualPricing,
     required this.monthlyPricing,
-    this.aiTutorDailyLimit,
-    this.aiTutorHardCap,
     required this.features,
     required this.curriculumLevel,
     required this.wordCount,

@@ -1,14 +1,15 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../data/models/subscription_plan.dart';
 import '../../data/repositories/subscription_repository.dart';
+import '../../../../core/config/app_config.dart';
 
-// ── Repository ──────────────────────────────────────────────────────────────
+// ── Repository ───────────────────────────────────────────────────────────────
 
 final subscriptionRepositoryProvider = Provider<SubscriptionRepository>(
   (ref) => SubscriptionRepository(),
 );
 
-// ── Plans ────────────────────────────────────────────────────────────────────
+// ── Plans ─────────────────────────────────────────────────────────────────────
 
 final subscriptionPlansProvider = Provider<List<SubscriptionPlan>>(
   (ref) => ref.watch(subscriptionRepositoryProvider).getPlans(),
@@ -23,83 +24,34 @@ final kanjiLiarAddonProvider = Provider<KanjiLiarAddon>(
 enum BillingCycle { monthly, annual }
 
 final billingCycleProvider = StateProvider<BillingCycle>(
-  (ref) => BillingCycle.annual, // Default to annual (higher value)
+  (ref) => BillingCycle.annual, // default to annual (better value)
 );
 
-// ── Currency ─────────────────────────────────────────────────────────────────
+// ── AI Tutor Limit ────────────────────────────────────────────────────────────
 
-enum AppCurrency { usd, eur, inr }
-
-final selectedCurrencyProvider = StateProvider<AppCurrency>(
-  (ref) => AppCurrency.usd,
+/// Reads from [AppConfig] — single source of truth.
+/// Pass the user's subscription tier string ('free', 'standard', 'premium').
+final aiTutorLimitProvider = Provider.family<int, String>(
+  (ref, tier) => AppConfig.aiDailyLimit(tier),
 );
 
-// ── AI Tutor Limit ─────────────────────────────────────────────────────────────
-
-int getRequestsLimit(String tier) {
-  switch (tier.toLowerCase()) {
-    case 'premium':
-      return 500;
-    case 'standard':
-      return 150;
-    case 'free':
-    default:
-      return 15;
-  }
-}
-
-final aiTutorLimitProvider = Provider.family<int, String>((ref, tier) {
-  return getRequestsLimit(tier);
-});
-
-// ── Helpers ──────────────────────────────────────────────────────────────────
-
-extension AppCurrencyX on AppCurrency {
-  String get key {
-    switch (this) {
-      case AppCurrency.usd: return 'USD';
-      case AppCurrency.eur: return 'EUR';
-      case AppCurrency.inr: return 'INR';
-    }
-  }
-
-  String get symbol {
-    switch (this) {
-      case AppCurrency.usd: return '\$';
-      case AppCurrency.eur: return '€';
-      case AppCurrency.inr: return '₹';
-    }
-  }
-
-  String get label {
-    switch (this) {
-      case AppCurrency.usd: return 'USD (\$)';
-      case AppCurrency.eur: return 'EUR (€)';
-      case AppCurrency.inr: return 'INR (₹)';
-    }
-  }
-}
+// ── Pricing helpers (String-keyed currency) ───────────────────────────────────
 
 extension SubscriptionPlanPricing on SubscriptionPlan {
-  double getPrice(AppCurrency currency, BillingCycle cycle) {
+  double getPrice(String currencyKey, BillingCycle cycle) {
     final map = cycle == BillingCycle.annual ? annualPricing : monthlyPricing;
-    return map[currency.key] ?? 0;
+    return map[currencyKey] ?? 0;
   }
 
-  String formatPrice(AppCurrency currency, BillingCycle cycle) {
-    final price = getPrice(currency, cycle);
-    if (price == 0) return 'Free';
-    final sym = currency.symbol;
-    if (currency == AppCurrency.inr) {
-      return '$sym${price.toStringAsFixed(price.truncateToDouble() == price ? 0 : 2)}';
-    }
-    return '$sym${price.toStringAsFixed(2)}';
+  String formatPrice(String currencyKey, BillingCycle cycle) {
+    final price = getPrice(currencyKey, cycle);
+    return AppConfig.formatPrice(price, currencyKey);
   }
 
-  /// Annual savings percentage vs monthly × 12
-  int annualSavingsPercent(AppCurrency currency) {
-    final monthly = monthlyPricing[currency.key] ?? 0;
-    final annual = annualPricing[currency.key] ?? 0;
+  /// Annual savings percentage vs paying monthly × 12.
+  int annualSavingsPercent(String currencyKey) {
+    final monthly = monthlyPricing[currencyKey] ?? 0;
+    final annual  = annualPricing[currencyKey]  ?? 0;
     if (monthly == 0) return 0;
     final fullYear = monthly * 12;
     return (((fullYear - annual) / fullYear) * 100).round();
