@@ -220,8 +220,18 @@ class _LevelsPageState extends ConsumerState<LevelsPage> {
     required String description,
   }) {
     final currentUser = ref.watch(currentUserProvider);
-    final hasAccess = currentUser != null && (kAdminEmails.contains(currentUser.email) || currentUser.isPro);
-    final isGated = (levelId.toLowerCase() != 'a1') && !hasAccess;
+    final isAdmin = currentUser != null && kAdminEmails.contains(currentUser.email);
+    final tier = currentUser?.effectiveTier ?? 'free';
+    final isPremium = isAdmin || tier == 'premium';
+    final isStandardOrAbove = isAdmin || tier == 'standard' || tier == 'premium';
+
+    final isGated = () {
+      final lvl = levelId.toLowerCase();
+      if (lvl == 'a1') return false;
+      if (lvl == 'a2') return !isStandardOrAbove;
+      if (lvl == 'b1') return !isPremium;
+      return !isPremium;
+    }();
 
     return Card(
       margin: const EdgeInsets.only(bottom: 16),

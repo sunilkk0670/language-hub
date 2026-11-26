@@ -215,6 +215,55 @@ class _LessonContentPageState extends ConsumerState<LessonContentPage> {
                       const SizedBox(height: 20),
                       ElevatedButton(
                         onPressed: () {
+                          final isJapanese = widget.languageId.toLowerCase() == 'japanese';
+                          final user = ref.read(currentUserProvider);
+                          final hasAccess = !isJapanese ||
+                              (user?.hasKanjiLiar == true) ||
+                              (user?.effectiveTier == 'premium') ||
+                              (user?.isPro == true);
+
+                          if (!hasAccess) {
+                            showDialog(
+                              context: context,
+                              builder: (ctx) => AlertDialog(
+                                backgroundColor: const Color(0xFF1B1433),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(16),
+                                  side: BorderSide(color: Colors.amber.withOpacity(0.3)),
+                                ),
+                                title: const Row(
+                                  children: [
+                                    Icon(Icons.lock_outline, color: Colors.amber),
+                                    SizedBox(width: 8),
+                                    Text('Kanji Liar Add-on', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
+                                  ],
+                                ),
+                                content: const Text(
+                                  'The Kanji Liar challenge requires the Kanji Liar add-on or a Premium plan. Unlock it to test your Kanji knowledge!',
+                                  style: TextStyle(color: Colors.white70, fontSize: 14),
+                                ),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () => Navigator.pop(ctx),
+                                    child: const Text('Maybe Later', style: TextStyle(color: Colors.white60)),
+                                  ),
+                                  ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor: const Color(0xFF6A4CBC),
+                                      foregroundColor: Colors.white,
+                                    ),
+                                    onPressed: () {
+                                      Navigator.pop(ctx);
+                                      Navigator.pushNamed(context, '/pricing');
+                                    },
+                                    child: const Text('View Pricing'),
+                                  ),
+                                ],
+                              ),
+                            );
+                            return;
+                          }
+
                           Navigator.push(
                             context,
                             MaterialPageRoute(

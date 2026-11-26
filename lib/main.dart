@@ -20,6 +20,7 @@ import 'features/info/presentation/pages/contact_page.dart';
 import 'features/auth/presentation/providers/auth_providers.dart';
 import 'features/curriculum/presentation/providers/curriculum_provider.dart';
 import 'features/subscription/presentation/pages/pricing_page.dart';
+import 'features/subscription/presentation/pages/welcome_page.dart';
 import 'features/auth/presentation/widgets/welcome_dialog.dart';
 import 'screens/ai_tutor_screen.dart';
 
@@ -255,6 +256,7 @@ class ChirpPollyApp extends ConsumerWidget {
         '/contact': (context) => const ContactPage(),
         '/languages': (context) => const AllLanguagesPage(),
         '/pricing': (context) => const PricingPage(),
+        '/welcome': (context) => const WelcomePage(),
       },
       onGenerateRoute: (settings) {
         if (settings.name == '/ai-tutor') {
@@ -264,7 +266,7 @@ class ChirpPollyApp extends ConsumerWidget {
               // We'll use a Consumer to get the selected language
               return Consumer(
                 builder: (context, ref, _) {
-                  final user = ref.watch(authStateProvider).valueOrNull;
+                  final user = ref.watch(currentUserProvider);
                   final selectedLanguage = ref.watch(selectedLanguageProvider);
                   
                   // Import the screen here to avoid circular dependencies
@@ -272,6 +274,7 @@ class ChirpPollyApp extends ConsumerWidget {
                     targetLanguage: selectedLanguage,
                     nativeLanguage: 'English',
                     userId: user?.uid ?? 'guest',
+                    userTier: user?.effectiveTier ?? 'free',
                   );
                 },
               );

@@ -74,8 +74,18 @@ final userStreamProvider = StreamProvider<UserEntity?>((ref) {
           return authState;
         }
         final data = snapshot.data();
+        final isPro = data?['isPro'] == true || data?['is_pro'] == true;
+        final tier = (data?['subscriptionTier'] as String?) ??
+            (data?['subscription_tier'] as String?) ??
+            (isPro ? 'standard' : 'free');
+        final hasKanjiLiar = data?['hasKanjiLiar'] == true || data?['has_kanji_liar'] == true;
+
         return authState.copyWith(
-          isPro: data?['isPro'] == true || data?['is_pro'] == true,
+          isPro: isPro,
+          subscriptionTier: tier,
+          hasKanjiLiar: hasKanjiLiar,
+          subscriptionId: data?['subscriptionId'] as String?,
+          subscriptionStatus: data?['subscriptionStatus'] as String?,
         );
       });
 });
@@ -84,6 +94,13 @@ final userStreamProvider = StreamProvider<UserEntity?>((ref) {
 final currentUserProvider = Provider<UserEntity?>((ref) {
   final userStream = ref.watch(userStreamProvider);
   return userStream.valueOrNull;
+});
+
+/// Derived provider returning the user's effective tier: 'free', 'standard', or 'premium'.
+/// Accurately applies legacy fallback (isPro -> 'standard') via [UserEntity.effectiveTier].
+final tierProvider = Provider<String>((ref) {
+  final user = ref.watch(currentUserProvider);
+  return user?.effectiveTier ?? 'free';
 });
 
 // Auth controller state

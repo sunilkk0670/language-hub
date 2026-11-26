@@ -20,6 +20,8 @@ mixin _$UserEntity {
   String get email => throw _privateConstructorUsedError;
   String? get displayName => throw _privateConstructorUsedError;
   bool get isPro => throw _privateConstructorUsedError;
+  String get subscriptionTier => throw _privateConstructorUsedError;
+  bool get hasKanjiLiar => throw _privateConstructorUsedError;
   String? get subscriptionId => throw _privateConstructorUsedError;
   String? get subscriptionStatus => throw _privateConstructorUsedError;
 
@@ -41,6 +43,8 @@ abstract class $UserEntityCopyWith<$Res> {
       String email,
       String? displayName,
       bool isPro,
+      String subscriptionTier,
+      bool hasKanjiLiar,
       String? subscriptionId,
       String? subscriptionStatus});
 }
@@ -64,6 +68,8 @@ class _$UserEntityCopyWithImpl<$Res, $Val extends UserEntity>
     Object? email = null,
     Object? displayName = freezed,
     Object? isPro = null,
+    Object? subscriptionTier = null,
+    Object? hasKanjiLiar = null,
     Object? subscriptionId = freezed,
     Object? subscriptionStatus = freezed,
   }) {
@@ -83,6 +89,14 @@ class _$UserEntityCopyWithImpl<$Res, $Val extends UserEntity>
       isPro: null == isPro
           ? _value.isPro
           : isPro // ignore: cast_nullable_to_non_nullable
+              as bool,
+      subscriptionTier: null == subscriptionTier
+          ? _value.subscriptionTier
+          : subscriptionTier // ignore: cast_nullable_to_non_nullable
+              as String,
+      hasKanjiLiar: null == hasKanjiLiar
+          ? _value.hasKanjiLiar
+          : hasKanjiLiar // ignore: cast_nullable_to_non_nullable
               as bool,
       subscriptionId: freezed == subscriptionId
           ? _value.subscriptionId
@@ -109,6 +123,8 @@ abstract class _$$UserEntityImplCopyWith<$Res>
       String email,
       String? displayName,
       bool isPro,
+      String subscriptionTier,
+      bool hasKanjiLiar,
       String? subscriptionId,
       String? subscriptionStatus});
 }
@@ -130,6 +146,8 @@ class __$$UserEntityImplCopyWithImpl<$Res>
     Object? email = null,
     Object? displayName = freezed,
     Object? isPro = null,
+    Object? subscriptionTier = null,
+    Object? hasKanjiLiar = null,
     Object? subscriptionId = freezed,
     Object? subscriptionStatus = freezed,
   }) {
@@ -150,6 +168,14 @@ class __$$UserEntityImplCopyWithImpl<$Res>
           ? _value.isPro
           : isPro // ignore: cast_nullable_to_non_nullable
               as bool,
+      subscriptionTier: null == subscriptionTier
+          ? _value.subscriptionTier
+          : subscriptionTier // ignore: cast_nullable_to_non_nullable
+              as String,
+      hasKanjiLiar: null == hasKanjiLiar
+          ? _value.hasKanjiLiar
+          : hasKanjiLiar // ignore: cast_nullable_to_non_nullable
+              as bool,
       subscriptionId: freezed == subscriptionId
           ? _value.subscriptionId
           : subscriptionId // ignore: cast_nullable_to_non_nullable
@@ -164,14 +190,17 @@ class __$$UserEntityImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$UserEntityImpl implements _UserEntity {
+class _$UserEntityImpl extends _UserEntity {
   const _$UserEntityImpl(
       {required this.uid,
       required this.email,
       this.displayName,
       this.isPro = false,
+      this.subscriptionTier = 'free',
+      this.hasKanjiLiar = false,
       this.subscriptionId,
-      this.subscriptionStatus});
+      this.subscriptionStatus})
+      : super._();
 
   @override
   final String uid;
@@ -183,13 +212,19 @@ class _$UserEntityImpl implements _UserEntity {
   @JsonKey()
   final bool isPro;
   @override
+  @JsonKey()
+  final String subscriptionTier;
+  @override
+  @JsonKey()
+  final bool hasKanjiLiar;
+  @override
   final String? subscriptionId;
   @override
   final String? subscriptionStatus;
 
   @override
   String toString() {
-    return 'UserEntity(uid: $uid, email: $email, displayName: $displayName, isPro: $isPro, subscriptionId: $subscriptionId, subscriptionStatus: $subscriptionStatus)';
+    return 'UserEntity(uid: $uid, email: $email, displayName: $displayName, isPro: $isPro, subscriptionTier: $subscriptionTier, hasKanjiLiar: $hasKanjiLiar, subscriptionId: $subscriptionId, subscriptionStatus: $subscriptionStatus)';
   }
 
   @override
@@ -202,6 +237,10 @@ class _$UserEntityImpl implements _UserEntity {
             (identical(other.displayName, displayName) ||
                 other.displayName == displayName) &&
             (identical(other.isPro, isPro) || other.isPro == isPro) &&
+            (identical(other.subscriptionTier, subscriptionTier) ||
+                other.subscriptionTier == subscriptionTier) &&
+            (identical(other.hasKanjiLiar, hasKanjiLiar) ||
+                other.hasKanjiLiar == hasKanjiLiar) &&
             (identical(other.subscriptionId, subscriptionId) ||
                 other.subscriptionId == subscriptionId) &&
             (identical(other.subscriptionStatus, subscriptionStatus) ||
@@ -210,7 +249,7 @@ class _$UserEntityImpl implements _UserEntity {
 
   @override
   int get hashCode => Object.hash(runtimeType, uid, email, displayName, isPro,
-      subscriptionId, subscriptionStatus);
+      subscriptionTier, hasKanjiLiar, subscriptionId, subscriptionStatus);
 
   /// Create a copy of UserEntity
   /// with the given fields replaced by the non-null parameter values.
@@ -221,14 +260,17 @@ class _$UserEntityImpl implements _UserEntity {
       __$$UserEntityImplCopyWithImpl<_$UserEntityImpl>(this, _$identity);
 }
 
-abstract class _UserEntity implements UserEntity {
+abstract class _UserEntity extends UserEntity {
   const factory _UserEntity(
       {required final String uid,
       required final String email,
       final String? displayName,
       final bool isPro,
+      final String subscriptionTier,
+      final bool hasKanjiLiar,
       final String? subscriptionId,
       final String? subscriptionStatus}) = _$UserEntityImpl;
+  const _UserEntity._() : super._();
 
   @override
   String get uid;
@@ -238,6 +280,10 @@ abstract class _UserEntity implements UserEntity {
   String? get displayName;
   @override
   bool get isPro;
+  @override
+  String get subscriptionTier;
+  @override
+  bool get hasKanjiLiar;
   @override
   String? get subscriptionId;
   @override

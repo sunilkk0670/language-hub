@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../core/config/app_config.dart';
 import '../features/subscription/presentation/providers/subscription_providers.dart';
 import '../models/chat_message.dart';
 import '../services/ai_tutor_service.dart';
@@ -33,7 +34,7 @@ class _AITutorScreenState extends ConsumerState<AITutorScreen> {
   final AITutorService _aiService = AITutorService();
   
   bool _isLoading = false;
-  int _remainingRequests = 50;
+  int _remainingRequests = AppConfig.aiDailyLimitFree;
   bool _initialized = false;
   
   // Available languages for the dropdown
@@ -65,6 +66,7 @@ class _AITutorScreenState extends ConsumerState<AITutorScreen> {
   @override
   void initState() {
     super.initState();
+    _remainingRequests = AppConfig.aiDailyLimit(widget.userTier);
     _selectedLanguage = widget.targetLanguage;
     _initializeService();
     _loadRemainingRequests();

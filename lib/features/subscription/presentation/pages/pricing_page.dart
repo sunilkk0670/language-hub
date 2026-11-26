@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/subscription_providers.dart';
 import '../../data/models/subscription_plan.dart';
 import '../../../../core/paddle/paddle_service.dart';
+import '../../../../core/config/app_config.dart';
 import '../../../auth/presentation/providers/auth_providers.dart';
 
 
@@ -12,7 +13,6 @@ final selectedCurrencyProvider = StateProvider<String?>((ref) => null);
 String? getCountryCode(String? currency) {
   if (currency == 'USD') return 'US';
   if (currency == 'EUR') return 'DE';
-  if (currency == 'GBP') return 'GB';
   if (currency == 'INR') return 'IN';
   return null;
 }
@@ -30,47 +30,26 @@ final paddlePriceProvider = FutureProvider.autoDispose.family<PriceData?, String
 
 String getStaticPriceText(String planId, BillingCycle cycle, String currency) {
   if (planId == 'standard') {
-    if (cycle == BillingCycle.monthly) {
-      if (currency == 'INR') return '₹129.99';
-      if (currency == 'EUR') return '€3.69';
-      if (currency == 'GBP') return '£3.69';
-      return '\$3.69';
-    } else {
-      if (currency == 'INR') return '₹1,299.00';
-      if (currency == 'EUR') return '€36.90';
-      if (currency == 'GBP') return '£36.90';
-      return '\$36.90';
-    }
+    final price = cycle == BillingCycle.annual
+        ? (AppConfig.standardAnnual[currency] ?? 36.90)
+        : (AppConfig.standardMonthly[currency] ?? 3.69);
+    return AppConfig.formatPrice(price, currency);
   } else if (planId == 'premium') {
-    if (cycle == BillingCycle.monthly) {
-      if (currency == 'INR') return '₹159.99';
-      if (currency == 'EUR') return '€6.99';
-      if (currency == 'GBP') return '£6.99';
-      return '\$6.99';
-    } else {
-      if (currency == 'INR') return '₹1,599.00';
-      if (currency == 'EUR') return '€69.99';
-      if (currency == 'GBP') return '£69.99';
-      return '\$69.99';
-    }
+    final price = cycle == BillingCycle.annual
+        ? (AppConfig.premiumAnnual[currency] ?? 69.99)
+        : (AppConfig.premiumMonthly[currency] ?? 6.99);
+    return AppConfig.formatPrice(price, currency);
   }
   return 'Free';
 }
 
 String getStaticAddonPriceText(String currency) {
-  if (currency == 'INR') return '₹159.99';
-  if (currency == 'EUR') return '€6.99';
-  if (currency == 'GBP') return '£6.99';
-  return '\$6.99';
+  final price = AppConfig.kanjiLiarPrice[currency] ?? 6.99;
+  return AppConfig.formatPrice(price, currency);
 }
 
 String? getPaddlePriceId(String planId, BillingCycle cycle) {
-  if (planId == 'standard') {
-    return cycle == BillingCycle.annual ? 'pri_01m0735ydpvg1awa1g4p8ecvw1' : 'pri_01m072z30dswgwqkbf54q92bb3';
-  } else if (planId == 'premium') {
-    return cycle == BillingCycle.annual ? 'pri_01m073eqm3p2dteyfx16ptsc82' : 'pri_01m073bwfc4y5sm6m52x25jwhh';
-  }
-  return null;
+  return AppConfig.paddlePriceId(planId, annual: cycle == BillingCycle.annual);
 }
 
 class _PricingScrollBehavior extends MaterialScrollBehavior {
@@ -90,7 +69,6 @@ class PricingPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final currentUser = ref.watch(currentUserProvider);
     return Scaffold(
       backgroundColor: const Color(0xFF0F0A1E),
       appBar: AppBar(
@@ -347,7 +325,6 @@ class _CurrencyDropdown extends ConsumerWidget {
           items: const [
             DropdownMenuItem(value: 'USD', child: Text('USD (\$)')),
             DropdownMenuItem(value: 'EUR', child: Text('EUR (€)')),
-            DropdownMenuItem(value: 'GBP', child: Text('GBP (£)')),
             DropdownMenuItem(value: 'INR', child: Text('INR (₹)')),
           ],
           onChanged: (val) {
@@ -458,9 +435,9 @@ class _PlanCardState extends ConsumerState<_PlanCard> {
     final plan = widget.plan;
     final isAnnual = widget.cycle == BillingCycle.annual;
     final priceId = getPaddlePriceId(plan.id, widget.cycle);
-    final paddlePriceAsync = priceId != null 
-        ? ref.watch(paddlePriceProvider('$priceId:$selectedCurrency')) 
-        : const AsyncValue<PriceData?>.data(null);
+    if (priceId != null) {
+      ref.watch(paddlePriceProvider('$priceId:$selectedCurrency'));
+    }
 
     // For savings logic, we no longer compute it manually via currency.
     // We could omit it, or just show it statically if isAnnual and plan is standard/premium.
@@ -627,7 +604,7 @@ class _PlanCardState extends ConsumerState<_PlanCard> {
                       child: ElevatedButton(
                         onPressed: () {
                           if (plan.id == 'free') {
-                            Navigator.pushNamed(context, '/register');
+                            Navigator.pushNamed(context, '/login');
                           } else if (priceId != null) {
                             // Open Paddle Checkout for this specific price
                              PaddleService.openCheckout(
@@ -767,8 +744,8 @@ class _KanjiLiarSection extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final currentUser = ref.watch(currentUserProvider);
     final selectedCurrency = ref.watch(selectedCurrencyProvider);
-    const addonPriceId = 'pri_01m073vc2nfejgqxzsmsctktx3j'; // Price ID for Kanji Liar
-    final paddlePriceAsync = ref.watch(paddlePriceProvider('$addonPriceId:$selectedCurrency'));
+    const addonPriceId = AppConfig.kKanjiLiar; // Price ID for Kanji Liar from AppConfig
+    ref.watch(paddlePriceProvider('$addonPriceId:$selectedCurrency'));
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),

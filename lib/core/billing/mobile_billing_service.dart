@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import '../config/app_config.dart';
 
 class PriceData {
   final String formattedPrice;
@@ -65,27 +66,27 @@ class MobileBillingService {
     //   debugPrint('RevenueCat getOfferings error: $e');
     // }
 
-    // Fallback display prices matching pricing_page.dart tiers:
+    // Fallback display prices using AppConfig as single source of truth:
     switch (priceId) {
-      // Standard Annual ($36.90/yr)
-      case 'pri_01m0735ydpvg1awa1g4p8ecvw1':
-        return PriceData(formattedPrice: '\$36.90', currencyCode: currency);
+      case AppConfig.kStandardAnnual:
+        final amount = AppConfig.standardAnnual[currency] ?? 36.90;
+        return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
 
-      // Standard Monthly ($4.99/mo)
-      case 'pri_01m072z30dswgwqkbf54q92bb3':
-        return PriceData(formattedPrice: '\$4.99', currencyCode: currency);
+      case AppConfig.kStandardMonthly:
+        final amount = AppConfig.standardMonthly[currency] ?? 3.69;
+        return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
 
-      // Premium Annual ($69.99/yr)
-      case 'pri_01m073eqm3p2dteyfx16ptsc82':
-        return PriceData(formattedPrice: '\$69.99', currencyCode: currency);
+      case AppConfig.kPremiumAnnual:
+        final amount = AppConfig.premiumAnnual[currency] ?? 69.99;
+        return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
 
-      // Premium Monthly ($8.99/mo)
-      case 'pri_01m073bwfc4y5sm6m52x25jwhh':
-        return PriceData(formattedPrice: '\$8.99', currencyCode: currency);
+      case AppConfig.kPremiumMonthly:
+        final amount = AppConfig.premiumMonthly[currency] ?? 6.99;
+        return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
 
-      // Kanji Liar Addon ($6.99 one-time)
-      case 'pri_01m073vc2nfejgqxzsmsctktx3j':
-        return PriceData(formattedPrice: '\$6.99', currencyCode: currency);
+      case AppConfig.kKanjiLiar:
+        final amount = AppConfig.kanjiLiarPrice[currency] ?? 6.99;
+        return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
 
       default:
         return PriceData(formattedPrice: '\$9.99', currencyCode: currency);

@@ -108,11 +108,18 @@ class PaddleService {
   static void init(BuildContext context) {
     if (!kIsWeb || _initialized) return;
     var token = const String.fromEnvironment('PADDLE_CLIENT_TOKEN');
-    if (token.isEmpty) {
-      token = 'live_29cb72fd620e6a711753029ed6d';
+    final hasExplicitToken = token.isNotEmpty;
+    if (!hasExplicitToken) {
+      if (kDebugMode) {
+        // In debug mode, default to sandbox so live account is never touched
+        token = const String.fromEnvironment('PADDLE_SANDBOX_TOKEN', defaultValue: 'test_default_sandbox_token');
+      } else {
+        token = 'live_29cb72fd620e6a711753029ed6d';
+      }
     }
 
-    if (token.startsWith('test_')) {
+    final isSandbox = token.startsWith('test_') || (kDebugMode && !hasExplicitToken);
+    if (isSandbox) {
       _paddle?.Environment.set('sandbox');
     }
     _paddle?.Initialize(PaddleInitOptions(
