@@ -744,7 +744,7 @@ class _KanjiLiarSection extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final currentUser = ref.watch(currentUserProvider);
     final selectedCurrency = ref.watch(selectedCurrencyProvider);
-    const addonPriceId = AppConfig.kKanjiLiar; // Price ID for Kanji Liar from AppConfig
+    final addonPriceId = AppConfig.kKanjiLiar; // Price ID for Kanji Liar from AppConfig
     ref.watch(paddlePriceProvider('$addonPriceId:$selectedCurrency'));
 
     return Padding(
@@ -909,6 +909,7 @@ class _FeatureComparisonTable extends StatelessWidget {
   Widget build(BuildContext context) {
     final rows = [
       ['Words', '1,000', '3,000'],
+      ['AI Tutor', '15 msg/day', '500 msg/day'],
       ['Japanese Depth', 'N5 Intro', 'N5 to N1 Mastery'],
       ['Ads', 'Yes', 'No'],
       ['Liar Game', 'Basic', 'Full'],

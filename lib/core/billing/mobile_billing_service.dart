@@ -17,13 +17,25 @@ class MobileBillingService {
   static String? _currentAppUserId;
 
   /// Returns the current active user ID (preferring Firebase Auth UID).
-  static String? get currentUserId =>
-      _currentAppUserId ?? FirebaseAuth.instance.currentUser?.uid;
+  static String? get currentUserId {
+    try {
+      return _currentAppUserId ?? FirebaseAuth.instance.currentUser?.uid;
+    } catch (_) {
+      return _currentAppUserId;
+    }
+  }
 
   /// Initializes the mobile billing client with RevenueCat configuration.
   /// Binds the session to the current Firebase Auth UID.
   static Future<void> init({BuildContext? context, String? userId}) async {
-    final uid = userId ?? FirebaseAuth.instance.currentUser?.uid;
+    String? uid = userId;
+    if (uid == null) {
+      try {
+        uid = FirebaseAuth.instance.currentUser?.uid;
+      } catch (_) {
+        // Firebase not initialized in tests or offline
+      }
+    }
     _currentAppUserId = uid;
 
     debugPrint('MobileBillingService: Initializing for mobile store with UID: $uid');
@@ -67,29 +79,23 @@ class MobileBillingService {
     // }
 
     // Fallback display prices using AppConfig as single source of truth:
-    switch (priceId) {
-      case AppConfig.kStandardAnnual:
-        final amount = AppConfig.standardAnnual[currency] ?? 36.90;
-        return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
-
-      case AppConfig.kStandardMonthly:
-        final amount = AppConfig.standardMonthly[currency] ?? 3.69;
-        return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
-
-      case AppConfig.kPremiumAnnual:
-        final amount = AppConfig.premiumAnnual[currency] ?? 69.99;
-        return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
-
-      case AppConfig.kPremiumMonthly:
-        final amount = AppConfig.premiumMonthly[currency] ?? 6.99;
-        return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
-
-      case AppConfig.kKanjiLiar:
-        final amount = AppConfig.kanjiLiarPrice[currency] ?? 6.99;
-        return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
-
-      default:
-        return PriceData(formattedPrice: '\$9.99', currencyCode: currency);
+    if (priceId == AppConfig.kStandardAnnual) {
+      final amount = AppConfig.standardAnnual[currency] ?? 36.90;
+      return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
+    } else if (priceId == AppConfig.kStandardMonthly) {
+      final amount = AppConfig.standardMonthly[currency] ?? 3.69;
+      return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
+    } else if (priceId == AppConfig.kPremiumAnnual) {
+      final amount = AppConfig.premiumAnnual[currency] ?? 69.99;
+      return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
+    } else if (priceId == AppConfig.kPremiumMonthly) {
+      final amount = AppConfig.premiumMonthly[currency] ?? 6.99;
+      return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
+    } else if (priceId == AppConfig.kKanjiLiar) {
+      final amount = AppConfig.kanjiLiarPrice[currency] ?? 6.99;
+      return PriceData(formattedPrice: AppConfig.formatPrice(amount, currency), currencyCode: currency);
+    } else {
+      return PriceData(formattedPrice: '\$9.99', currencyCode: currency);
     }
   }
 

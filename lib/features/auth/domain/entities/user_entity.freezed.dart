@@ -24,6 +24,7 @@ mixin _$UserEntity {
   bool get hasKanjiLiar => throw _privateConstructorUsedError;
   String? get subscriptionId => throw _privateConstructorUsedError;
   String? get subscriptionStatus => throw _privateConstructorUsedError;
+  String? get planExpiresAt => throw _privateConstructorUsedError;
 
   /// Create a copy of UserEntity
   /// with the given fields replaced by the non-null parameter values.
@@ -46,7 +47,8 @@ abstract class $UserEntityCopyWith<$Res> {
       String subscriptionTier,
       bool hasKanjiLiar,
       String? subscriptionId,
-      String? subscriptionStatus});
+      String? subscriptionStatus,
+      String? planExpiresAt});
 }
 
 /// @nodoc
@@ -72,6 +74,7 @@ class _$UserEntityCopyWithImpl<$Res, $Val extends UserEntity>
     Object? hasKanjiLiar = null,
     Object? subscriptionId = freezed,
     Object? subscriptionStatus = freezed,
+    Object? planExpiresAt = freezed,
   }) {
     return _then(_value.copyWith(
       uid: null == uid
@@ -106,6 +109,10 @@ class _$UserEntityCopyWithImpl<$Res, $Val extends UserEntity>
           ? _value.subscriptionStatus
           : subscriptionStatus // ignore: cast_nullable_to_non_nullable
               as String?,
+      planExpiresAt: freezed == planExpiresAt
+          ? _value.planExpiresAt
+          : planExpiresAt // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -126,7 +133,8 @@ abstract class _$$UserEntityImplCopyWith<$Res>
       String subscriptionTier,
       bool hasKanjiLiar,
       String? subscriptionId,
-      String? subscriptionStatus});
+      String? subscriptionStatus,
+      String? planExpiresAt});
 }
 
 /// @nodoc
@@ -150,6 +158,7 @@ class __$$UserEntityImplCopyWithImpl<$Res>
     Object? hasKanjiLiar = null,
     Object? subscriptionId = freezed,
     Object? subscriptionStatus = freezed,
+    Object? planExpiresAt = freezed,
   }) {
     return _then(_$UserEntityImpl(
       uid: null == uid
@@ -184,6 +193,10 @@ class __$$UserEntityImplCopyWithImpl<$Res>
           ? _value.subscriptionStatus
           : subscriptionStatus // ignore: cast_nullable_to_non_nullable
               as String?,
+      planExpiresAt: freezed == planExpiresAt
+          ? _value.planExpiresAt
+          : planExpiresAt // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -199,7 +212,8 @@ class _$UserEntityImpl extends _UserEntity {
       this.subscriptionTier = 'free',
       this.hasKanjiLiar = false,
       this.subscriptionId,
-      this.subscriptionStatus})
+      this.subscriptionStatus,
+      this.planExpiresAt})
       : super._();
 
   @override
@@ -221,10 +235,12 @@ class _$UserEntityImpl extends _UserEntity {
   final String? subscriptionId;
   @override
   final String? subscriptionStatus;
+  @override
+  final String? planExpiresAt;
 
   @override
   String toString() {
-    return 'UserEntity(uid: $uid, email: $email, displayName: $displayName, isPro: $isPro, subscriptionTier: $subscriptionTier, hasKanjiLiar: $hasKanjiLiar, subscriptionId: $subscriptionId, subscriptionStatus: $subscriptionStatus)';
+    return 'UserEntity(uid: $uid, email: $email, displayName: $displayName, isPro: $isPro, subscriptionTier: $subscriptionTier, hasKanjiLiar: $hasKanjiLiar, subscriptionId: $subscriptionId, subscriptionStatus: $subscriptionStatus, planExpiresAt: $planExpiresAt)';
   }
 
   @override
@@ -244,12 +260,23 @@ class _$UserEntityImpl extends _UserEntity {
             (identical(other.subscriptionId, subscriptionId) ||
                 other.subscriptionId == subscriptionId) &&
             (identical(other.subscriptionStatus, subscriptionStatus) ||
-                other.subscriptionStatus == subscriptionStatus));
+                other.subscriptionStatus == subscriptionStatus) &&
+            (identical(other.planExpiresAt, planExpiresAt) ||
+                other.planExpiresAt == planExpiresAt));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, uid, email, displayName, isPro,
-      subscriptionTier, hasKanjiLiar, subscriptionId, subscriptionStatus);
+  int get hashCode => Object.hash(
+      runtimeType,
+      uid,
+      email,
+      displayName,
+      isPro,
+      subscriptionTier,
+      hasKanjiLiar,
+      subscriptionId,
+      subscriptionStatus,
+      planExpiresAt);
 
   /// Create a copy of UserEntity
   /// with the given fields replaced by the non-null parameter values.
@@ -269,7 +296,8 @@ abstract class _UserEntity extends UserEntity {
       final String subscriptionTier,
       final bool hasKanjiLiar,
       final String? subscriptionId,
-      final String? subscriptionStatus}) = _$UserEntityImpl;
+      final String? subscriptionStatus,
+      final String? planExpiresAt}) = _$UserEntityImpl;
   const _UserEntity._() : super._();
 
   @override
@@ -288,6 +316,8 @@ abstract class _UserEntity extends UserEntity {
   String? get subscriptionId;
   @override
   String? get subscriptionStatus;
+  @override
+  String? get planExpiresAt;
 
   /// Create a copy of UserEntity
   /// with the given fields replaced by the non-null parameter values.

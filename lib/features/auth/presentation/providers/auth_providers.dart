@@ -77,8 +77,10 @@ final userStreamProvider = StreamProvider<UserEntity?>((ref) {
         final isPro = data?['isPro'] == true || data?['is_pro'] == true;
         final tier = (data?['subscriptionTier'] as String?) ??
             (data?['subscription_tier'] as String?) ??
-            (isPro ? 'standard' : 'free');
+            (isPro ? 'premium' : 'free');
         final hasKanjiLiar = data?['hasKanjiLiar'] == true || data?['has_kanji_liar'] == true;
+        final planExpiresAt = (data?['planExpiresAt'] as String?) ??
+            (data?['plan_expires_at'] as String?);
 
         return authState.copyWith(
           isPro: isPro,
@@ -86,6 +88,7 @@ final userStreamProvider = StreamProvider<UserEntity?>((ref) {
           hasKanjiLiar: hasKanjiLiar,
           subscriptionId: data?['subscriptionId'] as String?,
           subscriptionStatus: data?['subscriptionStatus'] as String?,
+          planExpiresAt: planExpiresAt,
         );
       });
 });

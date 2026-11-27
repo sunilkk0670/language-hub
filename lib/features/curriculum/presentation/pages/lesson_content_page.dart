@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../../core/config/admin_config.dart';
 import '../../../auth/presentation/providers/auth_providers.dart';
 import '../services/tts_service.dart';
 import '../widgets/chirpolly_logo.dart';
@@ -215,9 +216,15 @@ class _LessonContentPageState extends ConsumerState<LessonContentPage> {
                       const SizedBox(height: 20),
                       ElevatedButton(
                         onPressed: () {
-                          final isJapanese = widget.languageId.toLowerCase() == 'japanese';
+                          final lvl = widget.levelId.toLowerCase();
+                          final isBasicLevel = lvl == 'a1' || lvl == 'n5';
                           final user = ref.read(currentUserProvider);
-                          final hasAccess = !isJapanese ||
+                          final isAdmin = user != null && kAdminEmails.contains(user.email);
+
+                          // Free & Standard users: Allow access to the Basic Liar Game (A1 / N5 intro modules).
+                          // Full/advanced Liar Game access (A2, B1, N4+ etc.) requires Premium or the Kanji Liar add-on.
+                          final hasAccess = isBasicLevel ||
+                              isAdmin ||
                               (user?.hasKanjiLiar == true) ||
                               (user?.effectiveTier == 'premium') ||
                               (user?.isPro == true);
@@ -235,11 +242,11 @@ class _LessonContentPageState extends ConsumerState<LessonContentPage> {
                                   children: [
                                     Icon(Icons.lock_outline, color: Colors.amber),
                                     SizedBox(width: 8),
-                                    Text('Kanji Liar Add-on', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
+                                    Text('Full Liar Game Access', style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
                                   ],
                                 ),
                                 content: const Text(
-                                  'The Kanji Liar challenge requires the Kanji Liar add-on or a Premium plan. Unlock it to test your Kanji knowledge!',
+                                  'The Basic Liar Game is free on Starter modules (Level A1 / N5). To unlock advanced Liar Game challenges and Kanji Liar, upgrade to Premium or purchase the Kanji Liar add-on!',
                                   style: TextStyle(color: Colors.white70, fontSize: 14),
                                 ),
                                 actions: [
