@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 /// Single source of truth for every plan price, limit, and Paddle price ID.
 ///
 /// To change a price, limit, or feature bullet: edit THIS FILE ONLY.
@@ -43,10 +45,10 @@ class AppConfig {
 
   // ── AI Tutor daily limits ─────────────────────────────────────────────────
   /// These values must stay in sync with the Firestore rule limits in
-  /// firestore.rules → ai_usage → getMaxDailyLimit().
-  static const int aiDailyLimitFree     =   5;
-  static const int aiDailyLimitStandard =  50;
-  static const int aiDailyLimitPremium  = 200;
+  /// firestore.rules → ai_usage → getUserAiCap().
+  static const int aiDailyLimitFree     =  15;
+  static const int aiDailyLimitStandard = 150;
+  static const int aiDailyLimitPremium  = 500;
 
   /// Returns the daily message limit for a given subscription tier string.
   static int aiDailyLimit(String tier) {
@@ -57,12 +59,41 @@ class AppConfig {
     }
   }
 
-  // ── Paddle price IDs ──────────────────────────────────────────────────────
-  static const String kStandardAnnual  = 'pri_01m0735ydpvg1awa1g4p8ecvw1';
-  static const String kStandardMonthly = 'pri_01m072z30dswgwqkbf54q92bb3';
-  static const String kPremiumAnnual   = 'pri_01m073eqm3p2dteyfx16ptsc82';
-  static const String kPremiumMonthly  = 'pri_01m073bwfc4y5sm6m52x25jwhh';
-  static const String kKanjiLiar       = 'pri_01m073vc2nfejgqxzsmsctktx3j';
+  // ── Paddle Price IDs (Live & Sandbox) ─────────────────────────────────────
+  static const Map<String, String> livePriceIds = {
+    'standard_monthly': 'pri_01m072z30dswgwqkbf54q92bb3',
+    'standard_yearly':  'pri_01m0735ydpvg1awa1g4p8ecvw1',
+    'premium_monthly':   'pri_01m073bwfc4y5sm6m52x25jwhh',
+    'premium_yearly':    'pri_01m073eqm3p2dteyfx16ptsc82',
+    'kanji_liar':        'pri_01m073vc2nfejgqxzsmsctktx3j',
+  };
+
+  static const Map<String, String> sandboxPriceIds = {
+    'standard_monthly': 'pri_01kzqeheharqanpynxcggdzcfa',
+    'standard_yearly':  'pri_01kzqehevbgw84djd650vdbchj',
+    'premium_monthly':   'pri_01kzqehfgpmc9m8tgx9rky2h9c',
+    'premium_yearly':    'pri_01kzqehftf246rapzhfh23an91',
+    'kanji_liar':        'pri_01kzqehgctn7wn5awajj4tdc6z',
+  };
+
+  /// Whether running in sandbox mode (via kDebugMode or PADDLE_ENV/PADDLE_CLIENT_TOKEN override)
+  static bool get isSandbox {
+    const env = String.fromEnvironment('PADDLE_ENV');
+    if (env == 'sandbox') return true;
+    if (env == 'live') return false;
+    const token = String.fromEnvironment('PADDLE_CLIENT_TOKEN');
+    if (token.startsWith('test_')) return true;
+    if (token.startsWith('live_')) return false;
+    return kDebugMode;
+  }
+
+  static Map<String, String> get activePriceIds => isSandbox ? sandboxPriceIds : livePriceIds;
+
+  static String get kStandardAnnual  => activePriceIds['standard_yearly']!;
+  static String get kStandardMonthly => activePriceIds['standard_monthly']!;
+  static String get kPremiumAnnual   => activePriceIds['premium_yearly']!;
+  static String get kPremiumMonthly  => activePriceIds['premium_monthly']!;
+  static String get kKanjiLiar       => activePriceIds['kanji_liar']!;
 
   /// Returns the Paddle price ID for a plan + billing cycle.
   /// [annual] = true → annual price; false → monthly price.
@@ -78,18 +109,22 @@ class AppConfig {
   }
 
   /// Maps a Paddle price ID → subscription tier string.
+  /// Supports both live and sandbox Price IDs.
   /// Returns null for add-on products (e.g., Kanji Liar).
   static String? tierForPriceId(String priceId) {
-    switch (priceId) {
-      case kStandardAnnual:
-      case kStandardMonthly:
-        return 'standard';
-      case kPremiumAnnual:
-      case kPremiumMonthly:
-        return 'premium';
-      default:
-        return null;
+    if (priceId == livePriceIds['standard_yearly'] ||
+        priceId == livePriceIds['standard_monthly'] ||
+        priceId == sandboxPriceIds['standard_yearly'] ||
+        priceId == sandboxPriceIds['standard_monthly']) {
+      return 'standard';
     }
+    if (priceId == livePriceIds['premium_yearly'] ||
+        priceId == livePriceIds['premium_monthly'] ||
+        priceId == sandboxPriceIds['premium_yearly'] ||
+        priceId == sandboxPriceIds['premium_monthly']) {
+      return 'premium';
+    }
+    return null;
   }
 
   // ── Plan pricing maps (currency key → amount) ─────────────────────────────
