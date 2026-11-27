@@ -2,6 +2,7 @@ import * as functions from "firebase-functions/v2";
 import { initializeApp, getApps } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 import { Environment, LogLevel, Paddle } from "@paddle/paddle-node-sdk";
+import * as crypto from "crypto";
 
 // Initialize Firebase Admin
 if (!getApps().length) {
@@ -13,16 +14,64 @@ const db = getFirestore();
 const PADDLE_API_KEY = () => process.env.PADDLE_API_KEY || "";
 const PADDLE_WEBHOOK_SECRET = () => process.env.PADDLE_WEBHOOK_SECRET || "";
 
-// Paddle Price IDs for tier and add-on mapping
-export const PADDLE_PRICES = {
-  STANDARD_ANNUAL: "pri_01m0735ydpvg1awa1g4p8ecvw1",
+// LIVE Paddle Price IDs
+export const LIVE_PRICE_IDS = {
   STANDARD_MONTHLY: "pri_01m072z30dswgwqkbf54q92bb3",
-  PREMIUM_ANNUAL: "pri_01m073eqm3p2dteyfx16ptsc82",
-  PREMIUM_MONTHLY: "pri_01m073bwfc4y5sm6m52x25jwhh",
-  KANJI_LIAR: "pri_01m073vc2nfejgqxzsmsctktx3j",
+  STANDARD_ANNUAL:  "pri_01m0735ydpvg1awa1g4p8ecvw1",
+  PREMIUM_MONTHLY:  "pri_01m073bwfc4y5sm6m52x25jwhh",
+  PREMIUM_ANNUAL:   "pri_01m073eqm3p2dteyfx16ptsc82",
+  KANJI_LIAR:       "pri_01m073vc2nfejgqxzsmsctktx3j",
 };
 
-const KNOWN_PRICE_IDS = new Set(Object.values(PADDLE_PRICES));
+// SANDBOX Paddle Price IDs
+export const SANDBOX_PRICE_IDS = {
+  STANDARD_MONTHLY: "pri_01kzqeheharqanpynxcggdzcfa",
+  STANDARD_ANNUAL:  "pri_01kzqehevbgw84djd650vdbchj",
+  PREMIUM_MONTHLY:  "pri_01kzqehfgpmc9m8tgx9rky2h9c",
+  PREMIUM_ANNUAL:   "pri_01kzqehftf246rapzhfh23an91",
+  KANJI_LIAR:       "pri_01kzqehgctn7wn5awajj4tdc6z",
+};
+
+// Compatibility export
+export const PADDLE_PRICES = LIVE_PRICE_IDS;
+
+export function getPriceIdsForEnvironment(apiKey: string = PADDLE_API_KEY()): typeof LIVE_PRICE_IDS {
+  const isSandbox = apiKey.startsWith("test_") || apiKey.includes("sdbx");
+  return isSandbox ? SANDBOX_PRICE_IDS : LIVE_PRICE_IDS;
+}
+
+export function isKnownPriceId(priceId: string): boolean {
+  return (
+    Object.values(LIVE_PRICE_IDS).includes(priceId) ||
+    Object.values(SANDBOX_PRICE_IDS).includes(priceId)
+  );
+}
+
+export function resolvePriceTier(priceId: string): "standard" | "premium" | "kanji_liar" | null {
+  if (
+    priceId === LIVE_PRICE_IDS.STANDARD_ANNUAL ||
+    priceId === LIVE_PRICE_IDS.STANDARD_MONTHLY ||
+    priceId === SANDBOX_PRICE_IDS.STANDARD_ANNUAL ||
+    priceId === SANDBOX_PRICE_IDS.STANDARD_MONTHLY
+  ) {
+    return "standard";
+  }
+  if (
+    priceId === LIVE_PRICE_IDS.PREMIUM_ANNUAL ||
+    priceId === LIVE_PRICE_IDS.PREMIUM_MONTHLY ||
+    priceId === SANDBOX_PRICE_IDS.PREMIUM_ANNUAL ||
+    priceId === SANDBOX_PRICE_IDS.PREMIUM_MONTHLY
+  ) {
+    return "premium";
+  }
+  if (
+    priceId === LIVE_PRICE_IDS.KANJI_LIAR ||
+    priceId === SANDBOX_PRICE_IDS.KANJI_LIAR
+  ) {
+    return "kanji_liar";
+  }
+  return null;
+}
 
 export function extractPriceIds(eventData: any): string[] {
   const ids: string[] = [];
@@ -43,12 +92,44 @@ export function extractPriceIds(eventData: any): string[] {
   return ids;
 }
 
+/**
+ * Verify Paddle HMAC-SHA256 signature against the raw webhook request body.
+ * Header format: ts=1671552777;h1=0a39...
+ */
+export function verifyPaddleSignature(
+  rawBody: string,
+  signatureHeader: string,
+  secretKey: string
+): boolean {
+  if (!rawBody || !signatureHeader || !secretKey) return false;
+  try {
+    const parts = signatureHeader.split(";").reduce((acc, part) => {
+      const [key, val] = part.split("=");
+      if (key && val) acc[key.trim()] = val.trim();
+      return acc;
+    }, {} as Record<string, string>);
+
+    const ts = parts["ts"];
+    const h1 = parts["h1"];
+    if (!ts || !h1) return false;
+
+    const payloadToSign = `${ts}:${rawBody}`;
+    const computed = crypto.createHmac("sha256", secretKey).update(payloadToSign).digest("hex");
+
+    if (computed.length !== h1.length) return false;
+    return crypto.timingSafeEqual(Buffer.from(computed, "utf8"), Buffer.from(h1, "utf8"));
+  } catch (e) {
+    console.error("Error verifying Paddle signature:", e);
+    return false;
+  }
+}
+
 // Lazily initialize Paddle SDK
 let _paddle: Paddle | null = null;
 export function getPaddle(): Paddle {
   if (!_paddle) {
     const apiKey = PADDLE_API_KEY();
-    const isSandbox = apiKey.includes("sdbx");
+    const isSandbox = apiKey.startsWith("test_") || apiKey.includes("sdbx");
     _paddle = new Paddle(apiKey, {
       environment: isSandbox ? Environment.sandbox : Environment.production,
       logLevel: LogLevel.error,
@@ -85,7 +166,8 @@ export async function handlePaddleWebhookEvent(
   const userId = customData.userId || customData.user_id;
 
   if (!userId) {
-    console.log(`No userId found in customData for event ${eventId}. Recording event and skipping user update.`);
+    console.log(`No userId found in customData for event ${eventId}. Skipping user update.`);
+    // Only record idempotency event after skipping
     await eventRef.set({
       eventId,
       eventType,
@@ -107,30 +189,29 @@ export async function handlePaddleWebhookEvent(
       console.log(`Event ${eventType} for user ${userId} with price IDs:`, priceIds);
 
       // Validate unknown price IDs
-      const unknownIds = priceIds.filter((id) => !KNOWN_PRICE_IDS.has(id));
+      const unknownIds = priceIds.filter((id) => !isKnownPriceId(id));
       if (unknownIds.length > 0) {
         console.error(`Unknown price ID(s) received for user ${userId}:`, unknownIds);
       }
 
       // Check for standalone Kanji Liar add-on purchase
-      const boughtKanjiLiar = priceIds.includes(PADDLE_PRICES.KANJI_LIAR);
+      const boughtKanjiLiar = priceIds.some((id) => resolvePriceTier(id) === "kanji_liar");
 
       // Determine subscription tier from recognized price IDs
       let subscriptionTier: "standard" | "premium" | null = null;
-      if (
-        priceIds.includes(PADDLE_PRICES.PREMIUM_ANNUAL) ||
-        priceIds.includes(PADDLE_PRICES.PREMIUM_MONTHLY)
-      ) {
+      if (priceIds.some((id) => resolvePriceTier(id) === "premium")) {
         subscriptionTier = "premium";
-      } else if (
-        priceIds.includes(PADDLE_PRICES.STANDARD_ANNUAL) ||
-        priceIds.includes(PADDLE_PRICES.STANDARD_MONTHLY)
-      ) {
+      } else if (priceIds.some((id) => resolvePriceTier(id) === "standard")) {
         subscriptionTier = "standard";
       }
 
       // If price IDs were provided but NONE matched known IDs and no sub event, grant nothing!
-      if (priceIds.length > 0 && !boughtKanjiLiar && subscriptionTier === null && !eventType.startsWith("subscription")) {
+      if (
+        priceIds.length > 0 &&
+        !boughtKanjiLiar &&
+        subscriptionTier === null &&
+        !eventType.startsWith("subscription")
+      ) {
         console.error(`Transaction contains only unknown price IDs (${priceIds.join(", ")}). Granting nothing.`);
         await eventRef.set({
           eventId,
@@ -194,7 +275,11 @@ export async function handlePaddleWebhookEvent(
           }
         } else {
           // active, trialing, completed, past_due
-          const isPro = rawStatus === "active" || rawStatus === "trialing" || rawStatus === "completed" || rawStatus === "past_due";
+          const isPro =
+            rawStatus === "active" ||
+            rawStatus === "trialing" ||
+            rawStatus === "completed" ||
+            rawStatus === "past_due";
           updates.isPro = isPro;
           updates.subscriptionStatus = rawStatus;
           if (subscriptionTier) {
@@ -211,6 +296,7 @@ export async function handlePaddleWebhookEvent(
       }
 
       if (Object.keys(updates).length > 0) {
+        // 1. Write user updates FIRST
         await userRef.set(updates, { merge: true });
         console.log(`Updated user ${userId} with:`, updates);
       }
@@ -219,20 +305,26 @@ export async function handlePaddleWebhookEvent(
 
     case "subscription.past_due": {
       // Payment failure retry in progress; keep access during grace period
-      await userRef.set({
-        subscriptionStatus: "past_due",
-      }, { merge: true });
+      await userRef.set(
+        {
+          subscriptionStatus: "past_due",
+        },
+        { merge: true }
+      );
       console.log(`Marked subscription past_due for user ${userId}`);
       break;
     }
 
     case "subscription.paused": {
       // Paused: revoke access
-      await userRef.set({
-        isPro: false,
-        subscriptionTier: "free",
-        subscriptionStatus: "paused",
-      }, { merge: true });
+      await userRef.set(
+        {
+          isPro: false,
+          subscriptionTier: "free",
+          subscriptionStatus: "paused",
+        },
+        { merge: true }
+      );
       console.log(`Paused subscription for user ${userId}`);
       break;
     }
@@ -241,10 +333,7 @@ export async function handlePaddleWebhookEvent(
       // Resumed: re-activate access
       const priceIds = extractPriceIds(eventData);
       let tier: "standard" | "premium" = "standard";
-      if (
-        priceIds.includes(PADDLE_PRICES.PREMIUM_ANNUAL) ||
-        priceIds.includes(PADDLE_PRICES.PREMIUM_MONTHLY)
-      ) {
+      if (priceIds.some((id) => resolvePriceTier(id) === "premium")) {
         tier = "premium";
       }
       const endsAt =
@@ -252,12 +341,15 @@ export async function handlePaddleWebhookEvent(
         eventData.current_billing_period?.ends_at ||
         null;
 
-      await userRef.set({
-        isPro: true,
-        subscriptionTier: tier,
-        subscriptionStatus: "active",
-        planExpiresAt: endsAt,
-      }, { merge: true });
+      await userRef.set(
+        {
+          isPro: true,
+          subscriptionTier: tier,
+          subscriptionStatus: "active",
+          planExpiresAt: endsAt,
+        },
+        { merge: true }
+      );
       console.log(`Resumed subscription for user ${userId} (Tier=${tier})`);
       break;
     }
@@ -272,20 +364,26 @@ export async function handlePaddleWebhookEvent(
 
       if (isStillInPeriod) {
         // Customer paid through billing period end; retain access until planExpiresAt
-        await userRef.set({
-          isPro: true,
-          subscriptionStatus: "canceled",
-          planExpiresAt: billingPeriodEndsAt,
-        }, { merge: true });
+        await userRef.set(
+          {
+            isPro: true,
+            subscriptionStatus: "canceled",
+            planExpiresAt: billingPeriodEndsAt,
+          },
+          { merge: true }
+        );
         console.log(`Subscription canceled for user ${userId}, access valid until ${billingPeriodEndsAt}`);
       } else {
         // Immediate cancellation / already expired
-        await userRef.set({
-          isPro: false,
-          subscriptionTier: "free",
-          subscriptionStatus: "canceled",
-          planExpiresAt: null,
-        }, { merge: true });
+        await userRef.set(
+          {
+            isPro: false,
+            subscriptionTier: "free",
+            subscriptionStatus: "canceled",
+            planExpiresAt: null,
+          },
+          { merge: true }
+        );
         console.log(`Canceled subscription for user ${userId} (Access immediately revoked)`);
       }
       break;
@@ -293,40 +391,53 @@ export async function handlePaddleWebhookEvent(
 
     case "adjustment.created":
     case "adjustment.updated": {
-      // Refund or Chargeback handling
-      const action = eventData.action; // 'refund' | 'chargeback'
-      if (action === "refund" || action === "chargeback") {
-        console.log(`Processing ${action} adjustment for user ${userId}`);
-        const priceIds = extractPriceIds(eventData);
-        const updates: Record<string, any> = {};
+      // Strict refund handling: only revoke access when action === 'refund' AND status === 'approved'
+      // and verify it is a full refund rather than a partial adjustment/credit.
+      const action = eventData.action; // 'refund' | 'chargeback' | 'credit'
+      const status = eventData.status; // 'pending_approval' | 'approved' | 'rejected' | 'reversed'
+      const isPartial = eventData.type === "partial";
 
-        if (priceIds.includes(PADDLE_PRICES.KANJI_LIAR)) {
-          updates.hasKanjiLiar = false;
-          console.log(`Revoking Kanji Liar add-on for refunded user ${userId}`);
-        }
+      if (action !== "refund" && action !== "chargeback") {
+        console.log(`Ignoring adjustment event with non-refund action: ${action}`);
+        break;
+      }
 
-        const isSubRefund =
-          eventData.subscriptionId ||
-          priceIds.some((id) =>
-            [
-              PADDLE_PRICES.STANDARD_ANNUAL,
-              PADDLE_PRICES.STANDARD_MONTHLY,
-              PADDLE_PRICES.PREMIUM_ANNUAL,
-              PADDLE_PRICES.PREMIUM_MONTHLY,
-            ].includes(id)
-          );
+      if (status !== "approved" && status !== undefined && status !== null) {
+        console.log(`Adjustment for user ${userId} is not approved (status: ${status}). Skipping revocation.`);
+        break;
+      }
 
-        if (isSubRefund || (!priceIds.includes(PADDLE_PRICES.KANJI_LIAR) && priceIds.length === 0)) {
-          updates.isPro = false;
-          updates.subscriptionTier = "free";
-          updates.subscriptionStatus = "refunded";
-          updates.planExpiresAt = null;
-          console.log(`Revoking subscription for refunded user ${userId}`);
-        }
+      if (isPartial) {
+        console.log(`Adjustment for user ${userId} is a partial refund. Retaining active subscription access.`);
+        break;
+      }
 
-        if (Object.keys(updates).length > 0) {
-          await userRef.set(updates, { merge: true });
-        }
+      console.log(`Processing approved full ${action} adjustment for user ${userId}`);
+      const priceIds = extractPriceIds(eventData);
+      const updates: Record<string, any> = {};
+
+      if (priceIds.some((id) => resolvePriceTier(id) === "kanji_liar")) {
+        updates.hasKanjiLiar = false;
+        console.log(`Revoking Kanji Liar add-on for refunded user ${userId}`);
+      }
+
+      const isSubRefund =
+        eventData.subscriptionId ||
+        priceIds.some((id) => {
+          const t = resolvePriceTier(id);
+          return t === "standard" || t === "premium";
+        });
+
+      if (isSubRefund || (!updates.hasKanjiLiar && priceIds.length === 0)) {
+        updates.isPro = false;
+        updates.subscriptionTier = "free";
+        updates.subscriptionStatus = "refunded";
+        updates.planExpiresAt = null;
+        console.log(`Revoking subscription for refunded user ${userId}`);
+      }
+
+      if (Object.keys(updates).length > 0) {
+        await userRef.set(updates, { merge: true });
       }
       break;
     }
@@ -335,7 +446,7 @@ export async function handlePaddleWebhookEvent(
       console.log(`Unhandled event type: ${eventType}`);
   }
 
-  // 4. Mark event as processed for idempotency
+  // 4. Mark event as processed ONLY AFTER user document update succeeds (ensures retries work on failure)
   await eventRef.set({
     eventId,
     eventType,
@@ -368,10 +479,19 @@ export const paddleWebhook = functions.https.onRequest(
     try {
       // 3. Verify signature on RAW body before parsing
       const rawBody = (req as any).rawBody.toString();
-      const event = getPaddle().webhooks.unmarshal(rawBody, PADDLE_WEBHOOK_SECRET(), signature);
+      const secret = PADDLE_WEBHOOK_SECRET();
 
-      if (!event) {
-        res.status(400).send("Failed to unmarshal event");
+      const isValid = verifyPaddleSignature(rawBody, signature, secret);
+      if (!isValid) {
+        console.error("Invalid Paddle signature received");
+        res.status(400).send("Invalid Paddle Signature");
+        return;
+      }
+
+      const event = JSON.parse(rawBody);
+
+      if (!event || !event.eventId || !event.eventType) {
+        res.status(400).send("Malformed event payload");
         return;
       }
 
@@ -382,8 +502,8 @@ export const paddleWebhook = functions.https.onRequest(
 
       res.status(200).send("OK");
     } catch (error) {
-      console.error("Webhook signature verification or processing failed:", error);
-      res.status(400).send("Webhook verification failed");
+      console.error("Webhook processing failed:", error);
+      res.status(500).send("Webhook processing error");
     }
   }
 );
