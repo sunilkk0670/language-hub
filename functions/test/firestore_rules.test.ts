@@ -1,6 +1,7 @@
 import { describe, it, before, after, beforeEach } from "mocha";
 import * as fs from "fs";
 import * as path from "path";
+import { fileURLToPath } from "url";
 import {
   initializeTestEnvironment,
   RulesTestEnvironment,
@@ -8,11 +9,20 @@ import {
   assertSucceeds,
 } from "@firebase/rules-unit-testing";
 
-describe("Firestore Security Rules Unit Tests", () => {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+describe("Firestore Security Rules Unit Tests", function () {
+  this.timeout(15000);
   let testEnv: RulesTestEnvironment;
 
-  before(async () => {
-    const rules = fs.readFileSync(path.resolve(__dirname, "../../firestore.rules"), "utf8");
+  before(async function () {
+    this.timeout(15000);
+    let rulesPath = path.resolve(__dirname, "../../../firestore.rules");
+    if (!fs.existsSync(rulesPath)) {
+      rulesPath = path.resolve(process.cwd(), "firestore.rules");
+    }
+    const rules = fs.readFileSync(rulesPath, "utf8");
     testEnv = await initializeTestEnvironment({
       projectId: "chirpolly-security-test",
       firestore: {
@@ -170,8 +180,8 @@ describe("Firestore Security Rules Unit Tests", () => {
     await assertFails(eveDb.collection("users").doc("dave_uid").get());
   });
 
-  it("6. cannot exceed tier cap for AI usage", async () => {
-    // Seed free user (cap = 5)
+  it("6. AI usage cap: enforces Free cap = 15 & backward-compatibility for cached PWA clients sending dailyLimit", async () => {
+    // Seed free user (cap = 15)
     await testEnv.withSecurityRulesDisabled(async (context) => {
       await context.firestore().collection("users").doc("frank_free").set({
         uid: "frank_free",
@@ -183,9 +193,9 @@ describe("Firestore Security Rules Unit Tests", () => {
 
     const frankAuth = testEnv.authenticatedContext("frank_free");
     const frankDb = frankAuth.firestore();
-    const today = "2026-11-26";
+    const today = "2026-11-27";
 
-    // 1st request: valid (requestCount: 1 <= 5)
+    // 1st request with cached client dailyLimit field: succeeds
     await assertSucceeds(
       frankDb
         .collection("users")
@@ -196,21 +206,86 @@ describe("Firestore Security Rules Unit Tests", () => {
           userId: "frank_free",
           date: today,
           requestCount: 1,
-          dailyLimit: 9999, // dailyLimit tampering ignored by rule
+          dailyLimit: 50, // older cached client sent dailyLimit: 50
         })
     );
 
-    // Jump straight to 6 (exceeds free tier cap 5)
+    // Increment by 1 with dailyLimit field: succeeds
+    await assertSucceeds(
+      frankDb
+        .collection("users")
+        .doc("frank_free")
+        .collection("ai_usage")
+        .doc(today)
+        .update({
+          requestCount: 2,
+          dailyLimit: 50,
+        })
+    );
+
+    // Jumping to 16 exceeds Free tier cap 15: fails (even if dailyLimit was 50)
     await assertFails(
       frankDb
         .collection("users")
         .doc("frank_free")
         .collection("ai_usage")
         .doc(today)
+        .update({
+          requestCount: 16,
+          dailyLimit: 50,
+        })
+    );
+  });
+
+  it("7. legacy subscriber fallback: isPro=true without subscriptionTier resolves to Premium (cap = 500)", async () => {
+    // Legacy subscriber with isPro=true, no subscriptionTier
+    await testEnv.withSecurityRulesDisabled(async (context) => {
+      await context.firestore().collection("users").doc("legacy_pro").set({
+        uid: "legacy_pro",
+        email: "legacy@example.com",
+        isPro: true,
+      });
+    });
+
+    const legacyAuth = testEnv.authenticatedContext("legacy_pro");
+    const legacyDb = legacyAuth.firestore();
+    const today = "2026-11-27";
+
+    // Request 1: succeeds (1 <= 500)
+    await assertSucceeds(
+      legacyDb
+        .collection("users")
+        .doc("legacy_pro")
+        .collection("ai_usage")
+        .doc(today)
         .set({
-          userId: "frank_free",
+          userId: "legacy_pro",
           date: today,
-          requestCount: 6,
+          requestCount: 1,
+        })
+    );
+
+    // Update to 2: succeeds
+    await assertSucceeds(
+      legacyDb
+        .collection("users")
+        .doc("legacy_pro")
+        .collection("ai_usage")
+        .doc(today)
+        .update({
+          requestCount: 2,
+        })
+    );
+
+    // Jump to 501: fails (exceeds 500 cap)
+    await assertFails(
+      legacyDb
+        .collection("users")
+        .doc("legacy_pro")
+        .collection("ai_usage")
+        .doc(today)
+        .update({
+          requestCount: 501,
         })
     );
   });

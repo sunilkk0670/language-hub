@@ -6,9 +6,9 @@ service cloud.firestore {
     // =========================================================================
     // AI TUTOR LIMITS (duplicated from AppConfig, keep in sync)
     // =========================================================================
-    function getAiLimitFree() { return 5; }
-    function getAiLimitStandard() { return 50; }
-    function getAiLimitPremium() { return 200; }
+    function getAiLimitFree() { return 15; }
+    function getAiLimitStandard() { return 150; }
+    function getAiLimitPremium() { return 500; }
 
     function getTierLimit(tier) {
       return tier == 'premium' ? getAiLimitPremium() :
@@ -17,14 +17,14 @@ service cloud.firestore {
     }
 
     // Resolves effective tier from users/{userId} doc
-    // Fallback for legacy subscribers: if isPro == true and tier missing/free -> 'standard'
+    // Fallback for legacy subscribers: if isPro == true and tier missing/free -> 'premium'
     function getUserTier(userId) {
       let userDoc = get(/databases/$(database)/documents/users/$(userId)).data;
       let rawTier = ('subscriptionTier' in userDoc) ? userDoc.subscriptionTier : null;
       let isPro = ('isPro' in userDoc && userDoc.isPro == true);
       return rawTier == 'premium' ? 'premium' :
              rawTier == 'standard' ? 'standard' :
-             isPro ? 'standard' : 'free';
+             isPro ? 'premium' : 'free';
     }
 
     function getUserAiCap(userId) {
@@ -131,6 +131,7 @@ service cloud.firestore {
       
       // AI usage tracking
       // Cap enforced server-side via getUserAiCap(userId); dailyLimit field is not trusted.
+      // Allows optional dailyLimit for backward compatibility with cached PWA clients.
       // requestCount may only grow by 1 per write.
       match /ai_usage/{date} {
         allow read: if isAuthenticated() && request.auth.uid == userId;
@@ -138,12 +139,14 @@ service cloud.firestore {
         allow create: if isAuthenticated() && request.auth.uid == userId &&
           request.resource.data.requestCount is int &&
           request.resource.data.requestCount == 1 &&
-          request.resource.data.requestCount <= getUserAiCap(userId);
+          request.resource.data.requestCount <= getUserAiCap(userId) &&
+          (!('dailyLimit' in request.resource.data) || request.resource.data.dailyLimit is int);
 
         allow update: if isAuthenticated() && request.auth.uid == userId &&
           request.resource.data.requestCount is int &&
           request.resource.data.requestCount == resource.data.requestCount + 1 &&
-          request.resource.data.requestCount <= getUserAiCap(userId);
+          request.resource.data.requestCount <= getUserAiCap(userId) &&
+          (!('dailyLimit' in request.resource.data) || request.resource.data.dailyLimit is int);
       }
       
       match /achievements/{document=**} {
